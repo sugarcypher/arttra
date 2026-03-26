@@ -1,0 +1,18 @@
+{
+  "siteName": "arttra.art",
+  "checkoutUrl": "#",
+  "currency": "USD",
+  "instagram": {
+    "username": "skbriar",
+    "profileUrl": "https://instagram.com/skbriar"
+  },
+  "firebase": {
+    "enabled": false,
+    "artworksCollection": "artworks",
+    "config": {}
+  },
+  "admin": {
+    "uploadUrl": "#",
+    "passwordHeader": "x-admin-password"
+  }
+}

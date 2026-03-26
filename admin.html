@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Private Upload - arttra.art</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="./">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span class="brand__name">arttra.art</span>
+        </a>
+        <div class="topbar__right">
+          <a class="btn btn--ghost" href="./">Back to gallery</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="adminHero">
+        <div class="hero__copy">
+          <h1>Private upload</h1>
+          <p>
+            Upload images from your phone or Mac. The backend verifies your password, generates thumbnails, and publishes them
+            into the gallery.
+          </p>
+        </div>
+      </section>
+
+      <section class="adminPanel">
+        <div id="authView">
+          <div class="formRow formRow--single">
+            <div class="field">
+              <label for="adminPasswordInput">Upload password</label>
+              <input id="adminPasswordInput" type="password" placeholder="Enter your upload password" autocomplete="current-password" />
+            </div>
+          </div>
+          <div style="margin-top: 14px;">
+            <button id="authBtn" class="btn btn--primary" type="button">Unlock upload</button>
+          </div>
+          <div class="helpText">
+            Your password is only used to authorize requests to the upload endpoint configured in <code>data/config.json</code>.
+          </div>
+        </div>
+
+        <div id="uploadView" hidden>
+          <div class="uploadZone" role="region" aria-label="Upload images">
+            <div class="uploadZone__left">
+              <div class="uploadZone__title">Drop images here</div>
+              <div class="uploadZone__desc">Or tap “Choose images” on mobile. Thumbnails appear after upload completes.</div>
+              <div class="helpText" style="margin-top: 8px;">
+                Supported: JPG/PNG/WEBP/HEIC (iPhone). Larger files may take longer.
+              </div>
+            </div>
+            <div style="flex: 0 0 auto; display:flex; gap:10px; align-items:center;">
+              <input id="fileInput" type="file" multiple accept="image/*" hidden />
+              <button id="chooseFilesBtn" class="btn" type="button">Choose images</button>
+            </div>
+          </div>
+
+          <div class="previewStrip" id="previewStrip" aria-label="Selected files preview"></div>
+
+          <div class="formRow" style="margin-top: 14px;">
+            <div class="field">
+              <label for="startingPriceInput">Starting price (USD)</label>
+              <input id="startingPriceInput" type="number" min="0" step="1" value="79" />
+            </div>
+            <div class="field">
+              <label for="skuPrefixInput">SKU prefix (optional)</label>
+              <input id="skuPrefixInput" type="text" placeholder="e.g. ART-2026" />
+            </div>
+          </div>
+
+          <div class="formRow">
+            <div class="field">
+              <label for="styleInput">Style</label>
+              <input id="styleInput" type="text" value="Uncategorized" />
+            </div>
+            <div class="field">
+              <label for="moodInput">Mood</label>
+              <input id="moodInput" type="text" value="New" />
+            </div>
+          </div>
+
+          <div class="formRow">
+            <div class="field">
+              <label for="useFilenameTitle" style="text-transform:none; letter-spacing:0; color: rgba(245,245,255,.8);">
+                <input id="useFilenameTitle" type="checkbox" checked style="margin-right: 10px;" />
+                Use filename as title
+              </label>
+            </div>
+            <div class="field">
+              <div class="helpText" style="margin-top: 0;">
+                Title is derived from the filename if enabled. Description and SEO can be filled later.
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 14px; display:flex; gap:12px; flex-wrap:wrap;">
+            <button id="uploadBtn" class="btn btn--primary" type="button">Upload & publish</button>
+            <button id="clearBtn" class="btn btn--ghost" type="button">Clear selection</button>
+          </div>
+
+          <div class="progressLine" id="progressLine" hidden>
+            <div class="progressLine__bar" id="progressBar"></div>
+          </div>
+
+          <div class="statusBox" id="statusBox" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./admin.js" type="module"></script>
+  </body>
+</html>
+
