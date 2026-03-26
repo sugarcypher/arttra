@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>arttra.art - Contemporary prints made for real rooms</title>
+    <meta
+      name="description"
+      content="A curated gallery of prints and artworks. Browse by style, room, and color."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="./">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span class="brand__name">arttra.art</span>
+        </a>
+
+        <div class="topbar__right">
+          <div class="search">
+            <input id="searchInput" type="search" placeholder="Search artworks..." autocomplete="off" />
+          </div>
+
+          <a class="btn btn--ghost" href="./video-gallery.html" style="font-size:.85rem;">Videos</a>
+
+          <button id="cartButton" class="iconbtn" type="button" aria-label="Cart">
+            <span class="iconbtn__icon" aria-hidden="true">🛒</span>
+            <span id="cartCount" class="iconbtn__badge" aria-live="polite">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero__copy">
+          <h1>Prints for calm spaces, bold walls, and everything in between.</h1>
+          <p>
+            Browse by <strong>style</strong>, <strong>room</strong>, and <strong>color</strong>. Add pieces to your cart and
+            checkout when you're ready.
+          </p>
+        </div>
+      </section>
+
+      <section class="filters">
+        <div class="filters__grid">
+          <div class="filter">
+            <div class="filter__title">Style</div>
+            <div id="styleFilters" class="pills" role="listbox" aria-label="Filter by style"></div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__title">Room</div>
+            <div id="roomFilters" class="pills" role="listbox" aria-label="Filter by room"></div>
+          </div>
+
+          <div class="filter">
+            <div class="filter__title">Color</div>
+            <div id="colorFilters" class="colorPills" role="listbox" aria-label="Filter by color"></div>
+          </div>
+        </div>
+
+        <div class="filters__actions">
+          <button id="clearFiltersBtn" class="btn btn--ghost" type="button">Clear filters</button>
+          <div id="resultMeta" class="meta" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div id="cardsGrid" class="cardsGrid" aria-label="Artwork gallery"></div>
+      </section>
+
+      <section class="footer">
+        <div class="footer__inner">
+          <div class="footer__col">
+            <div class="footer__title">About</div>
+            <div class="footer__text">Modern art prints designed to look great in real rooms.</div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">Want your catalog connected?</div>
+            <div class="footer__text">
+              Update `data/artworks.json` and set `data/config.json` -> `checkoutUrl`.
+            </div>
+          </div>
+          <div class="footer__col">
+            <div class="footer__title">Tip</div>
+            <div class="footer__text">
+              Use `admin.html` for private uploads. The backend will generate thumbnails and update the catalog.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modalOverlay" class="overlay" hidden>
+      <div class="modal" role="dialog" aria-modal="true" aria-label="Artwork details">
+        <button id="modalCloseBtn" class="modal__close" type="button" aria-label="Close">×</button>
+        <div class="modal__body">
+          <div class="modal__media">
+            <img id="modalImage" class="modal__image" alt="" />
+          </div>
+          <div class="modal__content">
+            <div class="modal__kicker" id="modalSku"></div>
+            <h2 id="modalTitle" class="modal__title"></h2>
+            <p id="modalDescription" class="modal__description"></p>
+
+            <div class="modal__badges">
+              <div id="modalStyleBadge" class="badge"></div>
+              <div id="modalRoomBadge" class="badge"></div>
+            </div>
+
+            <div class="modal__colors" aria-label="Color palette" id="modalColors"></div>
+
+            <div class="modal__actions">
+              <div class="priceRow">
+                <div class="priceRow__label">Starting at</div>
+                <div id="modalPrice" class="priceRow__value"></div>
+              </div>
+              <div class="actionRow">
+                <button id="addToCartBtn" class="btn" type="button">Add to cart</button>
+                <a id="buyNowLink" class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Buy now</a>
+              </div>
+            </div>
+
+            <div class="modal__fineprint">
+              <div class="fineprint__line">
+                Best products: <span id="modalBestProducts"></span>
+              </div>
+              <div class="fineprint__line">
+                SEO keywords: <span id="modalKeywords"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <aside id="cartDrawer" class="drawer" aria-label="Cart" hidden>
+      <div class="drawer__header">
+        <div class="drawer__title">Your cart</div>
+        <button id="cartCloseBtn" class="iconbtn iconbtn--small" type="button" aria-label="Close cart">
+          <span aria-hidden="true">✕</span>
+        </button>
+      </div>
+
+      <div class="drawer__body">
+        <div id="cartEmpty" class="emptyState" hidden>
+          Your cart is empty. Add an artwork to get started.
+        </div>
+        <div id="cartItems" class="cartItems"></div>
+      </div>
+
+      <div class="drawer__footer">
+        <div class="totals">
+          <div class="totals__row">
+            <span class="totals__label">Items</span>
+            <span id="cartItemsCount" class="totals__value">0</span>
+          </div>
+          <div class="totals__row">
+            <span class="totals__label">Estimated total</span>
+            <span id="cartTotal" class="totals__value">$0</span>
+          </div>
+        </div>
+        <a id="checkoutLink" class="btn btn--primary btn--full" href="#" target="_blank" rel="noreferrer">
+          Checkout
+        </a>
+        <div class="drawer__hint">This demo cart is for UI only until you connect payments.</div>
+      </div>
+    </aside>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
+

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video Gallery — arttra.art</title>
+    <meta name="description" content="Video artworks by Briar Morgan Greenway. Future NFT collection." />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
+    <style>
+      .videoHero { padding: 48px 24px 24px; text-align: center; }
+      .videoHero h1 { font-size: 1.8rem; font-weight: 600; margin: 0 0 8px; }
+      .videoHero p { color: rgba(245,245,255,.6); max-width: 600px; margin: 0 auto; }
+
+      .videoGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+        padding: 24px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .videoCard {
+        background: rgba(255,255,255,.04);
+        border: 1px solid rgba(255,255,255,.08);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform .15s, box-shadow .15s;
+      }
+      .videoCard:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,.3);
+      }
+
+      .videoCard video {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        background: #111;
+      }
+
+      .videoCard__body {
+        padding: 16px;
+      }
+      .videoCard__title {
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 0 0 6px;
+      }
+      .videoCard__meta {
+        font-size: .85rem;
+        color: rgba(245,245,255,.5);
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .videoCard__nft {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .nftBadge {
+        font-size: .75rem;
+        padding: 3px 10px;
+        border-radius: 99px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+      }
+      .nftBadge--pending { background: rgba(244,183,64,.15); color: #f4b740; }
+      .nftBadge--minted { background: rgba(57,217,138,.15); color: #39d98a; }
+
+      .emptyState {
+        text-align: center;
+        padding: 80px 24px;
+        color: rgba(245,245,255,.4);
+        font-size: 1.1rem;
+      }
+
+      .videoFilters {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 24px;
+        flex-wrap: wrap;
+      }
+
+      .backLink {
+        display: inline-block;
+        margin-top: 16px;
+        color: rgba(245,245,255,.6);
+        text-decoration: none;
+        font-size: .9rem;
+      }
+      .backLink:hover { color: #fff; }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="./">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span class="brand__name">arttra.art</span>
+        </a>
+        <div class="topbar__right">
+          <a class="btn btn--ghost" href="./">Image Gallery</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="videoHero">
+        <h1>Video Gallery</h1>
+        <p>Moving image works. Each piece is a candidate for future NFT minting.</p>
+        <a class="backLink" href="./">&larr; Back to image gallery</a>
+      </section>
+
+      <section class="videoFilters" id="videoFilters"></section>
+
+      <section class="videoGrid" id="videoGrid">
+        <div class="emptyState">Loading videos...</div>
+      </section>
+    </main>
+
+    <script type="module">
+      let videos = [];
+      let activeStyle = null;
+
+      async function loadVideos() {
+        try {
+          const res = await fetch("./data/videos.json", { cache: "no-store" });
+          if (!res.ok) throw new Error(res.status);
+          videos = await res.json();
+        } catch (e) {
+          console.error("Failed to load videos:", e);
+          videos = [];
+        }
+        renderFilters();
+        renderVideos();
+      }
+
+      function renderFilters() {
+        const styles = [...new Set(videos.map(v => v.style).filter(Boolean))].sort();
+        const container = document.getElementById("videoFilters");
+        container.innerHTML = "";
+
+        const allBtn = document.createElement("button");
+        allBtn.className = "pill pill--active";
+        allBtn.textContent = "All";
+        allBtn.addEventListener("click", () => { activeStyle = null; renderFilters(); renderVideos(); });
+        container.appendChild(allBtn);
+
+        for (const s of styles) {
+          const btn = document.createElement("button");
+          btn.className = "pill" + (activeStyle === s ? " pill--active" : "");
+          btn.textContent = s;
+          btn.addEventListener("click", () => { activeStyle = s; renderFilters(); renderVideos(); });
+          container.appendChild(btn);
+        }
+      }
+
+      function renderVideos() {
+        const grid = document.getElementById("videoGrid");
+        const filtered = activeStyle ? videos.filter(v => v.style === activeStyle) : videos;
+
+        if (filtered.length === 0) {
+          grid.innerHTML = '<div class="emptyState">No videos found. Run the scraper to populate.</div>';
+          return;
+        }
+
+        grid.innerHTML = "";
+
+        for (const vid of filtered) {
+          const card = document.createElement("div");
+          card.className = "videoCard";
+
+          const videoSrc = `./assets/videos/${vid.filename}`;
+          const nftClass = vid.nft_status === "minted" ? "nftBadge--minted" : "nftBadge--pending";
+          const nftLabel = vid.nft_status === "minted" ? "Minted" : "Pending";
+
+          const date = vid.timestamp ? new Date(vid.timestamp).toLocaleDateString() : "";
+
+          card.innerHTML = `
+            <video src="${videoSrc}" preload="metadata" muted playsinline loop
+                   onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0;"></video>
+            <div class="videoCard__body">
+              <div class="videoCard__title">${escapeHtml(vid.title || "Untitled")}</div>
+              <div class="videoCard__meta">
+                <span>${escapeHtml(vid.style || "")}</span>
+                <span>${date}</span>
+                ${vid.likes ? `<span>${vid.likes} likes</span>` : ""}
+              </div>
+              <div class="videoCard__nft">
+                <span class="nftBadge ${nftClass}">${nftLabel}</span>
+                ${vid.nft_token_id ? `<span style="font-size:.8rem;color:rgba(245,245,255,.4)">Token #${vid.nft_token_id}</span>` : ""}
+              </div>
+            </div>
+          `;
+
+          grid.appendChild(card);
+        }
+      }
+
+      function escapeHtml(str) {
+        return String(str).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+      }
+
+      loadVideos();
+    </script>
+  </body>
+</html>

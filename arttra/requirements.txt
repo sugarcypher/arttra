@@ -1,0 +1,7 @@
+# Core scraping
+instaloader>=4.10
+
+# Image processing
+Pillow>=10.0
+
+# Everything else is stdlib
