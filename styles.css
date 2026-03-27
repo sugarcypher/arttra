@@ -666,3 +666,5 @@ body{
   .formRow{grid-template-columns: 1fr;}
 }
 
+.overlay[hidden]{display:none!important}
+.drawer[hidden]{display:none!important}
