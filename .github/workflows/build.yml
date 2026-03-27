@@ -1,8 +1,9 @@
 name: Build arttra.art
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
+  push:
+    paths:
+      - 'gallery-source/**'
   workflow_dispatch:
 
 permissions:
@@ -20,23 +21,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install instaloader Pillow
-          pip install -r arttra/requirements.txt 2>/dev/null || true
+        run: pip install Pillow vtracer
 
       - name: Run pipeline
         working-directory: arttra
-        run: |
-          python arttra.py build --lookback 50
-
-      - name: Copy site outputs to repo root
-        run: |
-          cp -f arttra/site/data/artworks.json data/artworks.json 2>/dev/null || true
-          cp -f arttra/site/data/videos.json data/videos.json 2>/dev/null || true
-          mkdir -p assets/images/gallery
-          cp -rf arttra/site/assets/images/gallery/* assets/images/gallery/ 2>/dev/null || true
-          mkdir -p assets/videos
-          cp -rf arttra/site/assets/videos/* assets/videos/ 2>/dev/null || true
+        run: python3 build_from_folder.py --source ../gallery-source --output ..
 
       - name: Commit and push
         run: |
