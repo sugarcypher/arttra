@@ -450,7 +450,7 @@ async function init() {
     try {
       artworks = await loadJSON("./data/artworks.json");
     } catch (e) {
-      console.error(e);
+      console.warn("[arttra] No artworks.json — gallery empty.");
       artworks = [];
     }
   }
