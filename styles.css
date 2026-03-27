@@ -285,6 +285,7 @@ body{
   background: var(--c,#fff);
 }
 
+.overlay[hidden]{display:none!important}
 .overlay{
   position: fixed;
   inset: 0;
