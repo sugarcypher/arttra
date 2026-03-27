@@ -1,0 +1,4 @@
+cp ~/Desktop/any-test-image.jpg gallery-source/
+git add -A
+git commit -m "Test image"
+git push
