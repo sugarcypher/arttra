@@ -428,6 +428,31 @@ async function loadArtworksFromFirebase() {
   });
 }
 
+// Immediately ensure modal and cart are closed and wire up close handlers
+(function setupUI() {
+  const overlay = document.getElementById("modalOverlay");
+  const drawer = document.getElementById("cartDrawer");
+  if (overlay) overlay.hidden = true;
+  if (drawer) drawer.hidden = true;
+  document.body.style.overflow = "";
+
+  document.getElementById("modalCloseBtn")?.addEventListener("click", closeModal);
+  overlay?.addEventListener("click", (e) => {
+    if (e.target === overlay) closeModal();
+  });
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (overlay && !overlay.hidden) closeModal();
+      if (drawer && !drawer.hidden) closeCart();
+    }
+  });
+  document.getElementById("cartButton")?.addEventListener("click", () => {
+    openCart();
+    renderCart();
+  });
+  document.getElementById("cartCloseBtn")?.addEventListener("click", closeCart);
+})();
+
 async function init() {
   try {
     config = await loadJSON("./data/config.json");
@@ -480,25 +505,6 @@ async function init() {
     setActiveColorPill($("#colorFilters"), null);
     renderCards();
   });
-
-  // Modal close
-  $("#modalCloseBtn").addEventListener("click", closeModal);
-  $("#modalOverlay").addEventListener("click", (e) => {
-    if (e.target === $("#modalOverlay")) closeModal();
-  });
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      if (!$("#modalOverlay").hidden) closeModal();
-      if (!$("#cartDrawer").hidden) closeCart();
-    }
-  });
-
-  // Cart open/close
-  $("#cartButton").addEventListener("click", () => {
-    openCart();
-    renderCart();
-  });
-  $("#cartCloseBtn").addEventListener("click", closeCart);
 }
 
 init();
