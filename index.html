@@ -3,11 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>arttra.art - Contemporary prints made for real rooms</title>
-    <meta
-      name="description"
-      content="A curated gallery of prints and artworks. Browse by style, room, and color."
-    />
+    <title>arttra.art — Original art for walls that deserve it</title>
+    <meta name="description" content="Curated original artwork — laser-cut metal, prints, photography. Browse by style and color." />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
   </head>
@@ -37,24 +34,16 @@
     <main class="page">
       <section class="hero">
         <div class="hero__copy">
-          <h1>Prints for calm spaces, bold walls, and everything in between.</h1>
-          <p>
-            Browse by <strong>style</strong>, <strong>room</strong>, and <strong>color</strong>. Add pieces to your cart and
-            checkout when you're ready.
-          </p>
+          <h1>Original art. Laser-cut metal. Photography. Walls that deserve it.</h1>
+          <p>Every piece is analyzed, classified, and named by machine. Browse by <strong>style</strong> and <strong>color</strong>.</p>
         </div>
       </section>
 
       <section class="filters">
-        <div class="filters__grid">
+        <div class="filters__grid filters__grid--two">
           <div class="filter">
             <div class="filter__title">Style</div>
             <div id="styleFilters" class="pills" role="listbox" aria-label="Filter by style"></div>
-          </div>
-
-          <div class="filter">
-            <div class="filter__title">Room</div>
-            <div id="roomFilters" class="pills" role="listbox" aria-label="Filter by room"></div>
           </div>
 
           <div class="filter">
@@ -76,20 +65,16 @@
       <section class="footer">
         <div class="footer__inner">
           <div class="footer__col">
-            <div class="footer__title">About</div>
-            <div class="footer__text">Modern art prints designed to look great in real rooms.</div>
+            <div class="footer__title">arttra.art</div>
+            <div class="footer__text">Original art — laser-cut metal, prints, and photography. Each piece machine-analyzed and given an archaic name.</div>
           </div>
           <div class="footer__col">
-            <div class="footer__title">Want your catalog connected?</div>
-            <div class="footer__text">
-              Update `data/artworks.json` and set `data/config.json` -> `checkoutUrl`.
-            </div>
+            <div class="footer__title">Process</div>
+            <div class="footer__text">Every image is AI-upscaled, color-profiled, and classified. Pieces suitable for laser cutting are vectorized automatically.</div>
           </div>
           <div class="footer__col">
-            <div class="footer__title">Tip</div>
-            <div class="footer__text">
-              Use `admin.html` for private uploads. The backend will generate thumbnails and update the catalog.
-            </div>
+            <div class="footer__title">Categories</div>
+            <div class="footer__text">Metal Art — laser-cut originals. Art Prints — canvas, framed, acrylic. Photography — captured moments.</div>
           </div>
         </div>
       </section>
@@ -110,7 +95,7 @@
 
             <div class="modal__badges">
               <div id="modalStyleBadge" class="badge"></div>
-              <div id="modalRoomBadge" class="badge"></div>
+              <div id="modalCategoryBadge" class="badge"></div>
             </div>
 
             <div class="modal__colors" aria-label="Color palette" id="modalColors"></div>
@@ -128,10 +113,7 @@
 
             <div class="modal__fineprint">
               <div class="fineprint__line">
-                Best products: <span id="modalBestProducts"></span>
-              </div>
-              <div class="fineprint__line">
-                SEO keywords: <span id="modalKeywords"></span>
+                Available as: <span id="modalBestProducts"></span>
               </div>
             </div>
           </div>
@@ -169,11 +151,9 @@
         <a id="checkoutLink" class="btn btn--primary btn--full" href="#" target="_blank" rel="noreferrer">
           Checkout
         </a>
-        <div class="drawer__hint">This demo cart is for UI only until you connect payments.</div>
       </div>
     </aside>
 
     <script src="./script.js" type="module"></script>
   </body>
 </html>
-

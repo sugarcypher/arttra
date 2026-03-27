@@ -3,15 +3,11 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
 const STORAGE_KEY = "arttra_cart_v1";
 
-/** @type {{siteName:string, checkoutUrl:string, currency:string}} */
 let config = { siteName: "arttra.art", checkoutUrl: "#", currency: "USD" };
-
-/** @type {Array<any>} */
 let artworks = [];
 
 let state = {
   style: null,
-  room: null,
   color: null,
   query: "",
   selectedArtwork: null,
@@ -30,28 +26,20 @@ function getCart() {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed;
-  } catch {
-    return [];
-  }
+    return Array.isArray(parsed) ? parsed : [];
+  } catch { return []; }
 }
 
-function setCart(items) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-}
+function setCart(items) { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); }
 
-function cartCount(items) {
-  return items.reduce((sum, it) => sum + (it.qty || 0), 0);
-}
+function cartCount(items) { return items.reduce((sum, it) => sum + (it.qty || 0), 0); }
 
 function cartEstimatedTotal(items) {
-  // Using "starting price" as an estimate.
   let total = 0;
   for (const it of items) {
     const art = artworks.find((a) => String(a.id) === String(it.artId));
     if (!art) continue;
-    const startPrice = Number(art.priceTiers?.startingPrice ?? art.priceTiers?.low ?? art.price?.startingPrice ?? 0);
+    const startPrice = Number(art.priceTiers?.startingPrice ?? 0);
     total += startPrice * (it.qty || 0);
   }
   return total;
@@ -63,9 +51,10 @@ function uniqueSorted(values) {
 
 function computePaletteSwatches(art) {
   const colors = Array.isArray(art.colorPalette) ? art.colorPalette : [];
-  // Keep short and stable: first 4
   return colors.slice(0, 4);
 }
+
+// ── Pills ──
 
 function renderPill(container, items, onClick, options = {}) {
   container.innerHTML = "";
@@ -89,69 +78,95 @@ function renderPill(container, items, onClick, options = {}) {
 function setActivePill(container, activeValue) {
   const pills = $$(".pill", container);
   for (const p of pills) p.classList.remove("pill--active");
-  if (!activeValue) return;
+  if (!activeValue) {
+    // Activate the "All" button
+    if (pills.length > 0) pills[0].classList.add("pill--active");
+    return;
+  }
   const match = pills.find((p) => p.textContent === String(activeValue));
   if (match) match.classList.add("pill--active");
 }
 
-function renderColorPills(container, artworksList) {
-  const palette = artworksList.flatMap((a) => (Array.isArray(a.colorPalette) ? a.colorPalette : []));
-  const unique = uniqueSorted(palette);
+// ── Named Color Pills ──
+
+function renderNamedColorPills(container, artworksList) {
+  // Collect all named colors from artworks
+  const colorMap = new Map(); // name -> {name, code, hex}
+  for (const a of artworksList) {
+    const named = a.namedColors || [];
+    for (const nc of named) {
+      if (!colorMap.has(nc.name)) {
+        colorMap.set(nc.name, nc);
+      }
+    }
+  }
+
+  const sorted = Array.from(colorMap.values()).sort((a, b) => a.name.localeCompare(b.name));
+
   container.innerHTML = "";
 
   const all = document.createElement("button");
   all.type = "button";
-  all.className = "colorPill";
+  all.className = "colorPill colorPill--active";
   all.dataset.color = "";
   all.innerHTML = `<span class="colorPill__dot" style="--c:#ffffff"></span><span>All</span>`;
   all.addEventListener("click", () => setColor(null));
   container.appendChild(all);
 
-  for (const hex of unique) {
+  for (const nc of sorted) {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "colorPill";
-    btn.dataset.color = hex;
-    btn.innerHTML = `<span class="colorPill__dot" style="--c:${hex}"></span><span>${hex}</span>`;
-    btn.addEventListener("click", () => setColor(hex));
+    btn.dataset.color = nc.name;
+    btn.innerHTML = `<span class="colorPill__dot" style="--c:${nc.hex}"></span><span>${nc.name}</span>`;
+    btn.addEventListener("click", () => setColor(nc.name));
     container.appendChild(btn);
   }
 }
 
-function setActiveColorPill(container, activeHex) {
+function setActiveColorPill(container, activeName) {
   $$(".colorPill", container).forEach((el) => el.classList.remove("colorPill--active"));
-  if (!activeHex) return;
-  const match = $$(".colorPill", container).find((el) => el.dataset.color === activeHex);
+  if (!activeName) {
+    const first = $(".colorPill", container);
+    if (first) first.classList.add("colorPill--active");
+    return;
+  }
+  const match = $$(".colorPill", container).find((el) => el.dataset.color === activeName);
   if (match) match.classList.add("colorPill--active");
 }
 
+// ── Price ──
+
 function priceStarting(art) {
   const tiers = art.priceTiers || {};
-  const v = Number(tiers.startingPrice ?? tiers.low ?? tiers.base ?? art.price?.startingPrice ?? 0);
+  const v = Number(tiers.startingPrice ?? tiers.low ?? tiers.base ?? 0);
   if (!Number.isFinite(v) || v <= 0) return null;
   return v;
 }
 
+// ── Filtering ──
+
 function artworkMatchesFilters(art) {
   const styleOk = !state.style || String(art.style) === String(state.style);
-  const roomOk = !state.room || (Array.isArray(art.roomFit) ? art.roomFit.includes(state.room) : String(art.roomFit) === String(state.room));
-  const colorOk = !state.color || (Array.isArray(art.colorPalette) ? art.colorPalette.includes(state.color) : false);
+
+  // Color filter by named color
+  let colorOk = true;
+  if (state.color) {
+    const named = art.namedColors || [];
+    colorOk = named.some((nc) => nc.name === state.color);
+  }
+
   const queryOk = !state.query
     ? true
-    : [
-        art.title,
-        art.style,
-        art.mood,
-        Array.isArray(art.roomFit) ? art.roomFit.join(" ") : "",
-        Array.isArray(art.seoKeywords) ? art.seoKeywords.join(" ") : "",
-        art.sku,
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase()
-        .includes(state.query.toLowerCase());
-  return styleOk && roomOk && colorOk && queryOk;
+    : [art.title, art.style, art.category, art.sku,
+       Array.isArray(art.seoKeywords) ? art.seoKeywords.join(" ") : "",
+       Array.isArray(art.namedColors) ? art.namedColors.map(c => c.name).join(" ") : "",
+      ].filter(Boolean).join(" ").toLowerCase().includes(state.query.toLowerCase());
+
+  return styleOk && colorOk && queryOk;
 }
+
+// ── Cards ──
 
 function renderCards() {
   const grid = $("#cardsGrid");
@@ -178,15 +193,17 @@ function renderCards() {
 
     const thumb = art.thumb || art.image || "./assets/images/placeholder.svg";
     const swatches = computePaletteSwatches(art);
+    const categoryLabel = art.category || "";
 
     card.innerHTML = `
       <div class="card__imgWrap">
         <img class="card__img" src="${thumb}" alt="${escapeHtml(art.title || "Artwork")}" loading="lazy" />
+        ${categoryLabel ? `<span class="card__category">${escapeHtml(categoryLabel)}</span>` : ""}
       </div>
       <div class="card__body">
         <h3 class="card__title">${escapeHtml(art.title || "Untitled")}</h3>
         <div class="card__sub">
-          <span>${escapeHtml(art.style || "Style")}</span>
+          <span>${escapeHtml(art.style || "")}</span>
           <span class="card__swatches" aria-hidden="true">
             ${swatches
               .map((hex) => `<span class="swatch" style="--c:${hex}"></span>`)
@@ -215,39 +232,36 @@ function escapeHtml(str) {
     .replaceAll("'", "&#039;");
 }
 
+// ── Modal ──
+
 function openModal(art) {
   state.selectedArtwork = art;
-  $("#modalSku").textContent = art.sku ? `SKU ${art.sku}` : "";
+  $("#modalSku").textContent = art.sku || "";
   $("#modalTitle").textContent = art.title || "Untitled";
   $("#modalDescription").textContent = art.description || "";
-  $("#modalStyleBadge").textContent = art.style ? `Style: ${art.style}` : "Style";
-  const roomText = Array.isArray(art.roomFit) ? art.roomFit.slice(0, 3).join(", ") : art.roomFit || "Room";
-  $("#modalRoomBadge").textContent = `Room: ${roomText}`;
+  $("#modalStyleBadge").textContent = art.style || "";
+  $("#modalCategoryBadge").textContent = art.category || "";
 
   const imgSrc = art.image || art.thumb || "./assets/images/placeholder.svg";
   $("#modalImage").src = imgSrc;
   $("#modalImage").alt = art.title || "Artwork image";
 
-  const palette = computePaletteSwatches(art);
+  // Show named colors in modal
   const colorsEl = $("#modalColors");
-  colorsEl.innerHTML = palette
-    .map(
-      (hex) => `
+  const named = art.namedColors || [];
+  colorsEl.innerHTML = named
+    .map((nc) => `
     <div class="colorSwatch">
-      <span class="colorSwatch__dot" style="--c:${hex}"></span>
-      <span class="colorSwatch__hex">${hex}</span>
-    </div>`
-    )
+      <span class="colorSwatch__dot" style="--c:${nc.hex}"></span>
+      <span class="colorSwatch__hex">${nc.name}</span>
+    </div>`)
     .join("");
 
   const start = priceStarting(art);
   $("#modalPrice").textContent = start ? formatMoney(start) : "Contact for pricing";
 
-  const best = Array.isArray(art.bestProducts) ? art.bestProducts.join(", ") : (art.bestProducts || "");
-  $("#modalBestProducts").textContent = best || "—";
-
-  const keys = Array.isArray(art.seoKeywords) ? art.seoKeywords.slice(0, 18).join(", ") : (art.seoKeywords || "");
-  $("#modalKeywords").textContent = keys || "—";
+  const products = Array.isArray(art.bestProducts) ? art.bestProducts.join(", ") : "";
+  $("#modalBestProducts").textContent = products || "—";
 
   const buyUrl = art.buyUrl || "#";
   $("#buyNowLink").href = buyUrl;
@@ -264,41 +278,29 @@ function closeModal() {
   state.selectedArtwork = null;
 }
 
+// ── Filters ──
+
 function setStyle(val) {
   state.style = val;
-  const styleFilters = $("#styleFilters");
-  // Active state is handled by re-rendering; fast path: update active pill.
-  setActivePill(styleFilters, val);
-  renderCards();
-}
-
-function setRoom(val) {
-  state.room = val;
-  const roomFilters = $("#roomFilters");
-  setActivePill(roomFilters, val);
+  setActivePill($("#styleFilters"), val);
   renderCards();
 }
 
 function setColor(val) {
   state.color = val;
-  const colorFilters = $("#colorFilters");
-  setActiveColorPill(colorFilters, val);
+  setActiveColorPill($("#colorFilters"), val);
   renderCards();
 }
 
 function initFilters() {
   const styles = uniqueSorted(artworks.map((a) => a.style));
-  const rooms = uniqueSorted(artworks.flatMap((a) => (Array.isArray(a.roomFit) ? a.roomFit : a.roomFit ? [a.roomFit] : [])));
-
   renderPill($("#styleFilters"), styles, (v) => setStyle(v), { noneLabel: "All styles" });
-  renderPill($("#roomFilters"), rooms, (v) => setRoom(v), { noneLabel: "All rooms" });
-  renderColorPills($("#colorFilters"), artworks);
+  renderNamedColorPills($("#colorFilters"), artworks);
 
-  // Initial active states
   setActivePill($("#styleFilters"), null);
-  setActivePill($("#roomFilters"), null);
-  setActiveColorPill($("#colorFilters"), null);
 }
+
+// ── Cart ──
 
 function addToCart(artId) {
   const items = getCart();
@@ -365,7 +367,7 @@ function renderCart() {
       <div class="cartItem__main">
         <div class="cartItem__title">${escapeHtml(art.title || "Untitled")}</div>
         <div class="cartItem__meta">
-          <span>${escapeHtml(art.style || "Style")}</span>
+          <span>${escapeHtml(art.style || "")}</span>
           <span>${start ? formatMoney(linePrice) : "—"}</span>
         </div>
         <div class="qtyRow" aria-label="Quantity controls">
@@ -384,21 +386,20 @@ function renderCart() {
     listEl.appendChild(row);
   }
 
-  // If you later hook up a real checkout page, this provides the cart in a query param.
   const baseCheckout = config.checkoutUrl || "#";
   if (baseCheckout === "#" || !baseCheckout) {
     $("#checkoutLink").href = "#";
     return;
   }
   const payload = { items, currency: config.currency };
-  const encoded =
-    typeof btoa === "function"
-      ? btoa(unescape(encodeURIComponent(JSON.stringify(payload))))
-      : encodeURIComponent(JSON.stringify(payload));
-
+  const encoded = typeof btoa === "function"
+    ? btoa(unescape(encodeURIComponent(JSON.stringify(payload))))
+    : encodeURIComponent(JSON.stringify(payload));
   const joiner = baseCheckout.includes("?") ? "&" : "?";
   $("#checkoutLink").href = `${baseCheckout}${joiner}cart=${encoded}`;
 }
+
+// ── Data loading ──
 
 async function loadJSON(url) {
   const res = await fetch(url, { cache: "no-store" });
@@ -406,29 +407,8 @@ async function loadJSON(url) {
   return await res.json();
 }
 
-async function loadArtworksFromFirebase() {
-  const fbCfg = config.firebase?.config;
-  if (!fbCfg) throw new Error("Missing Firebase config in data/config.json");
+// ── UI Setup (immediate, before async) ──
 
-  const artworksCollection = config.firebase?.artworksCollection || "artworks";
-
-  // Using CDN modules keeps this repo Surge-friendly (no bundler needed).
-  const { initializeApp } = await import("https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js");
-  const { getFirestore, collection, getDocs } = await import(
-    "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"
-  );
-
-  const app = initializeApp(fbCfg);
-  const db = getFirestore(app);
-  const snap = await getDocs(collection(db, artworksCollection));
-
-  return snap.docs.map((d) => {
-    const data = d.data() || {};
-    return { id: data.id ?? d.id, ...data };
-  });
-}
-
-// Immediately ensure modal and cart are closed and wire up close handlers
 (function setupUI() {
   const overlay = document.getElementById("modalOverlay");
   const drawer = document.getElementById("cartDrawer");
@@ -453,59 +433,41 @@ async function loadArtworksFromFirebase() {
   document.getElementById("cartCloseBtn")?.addEventListener("click", closeCart);
 })();
 
+// ── Init ──
+
 async function init() {
   try {
     config = await loadJSON("./data/config.json");
-  } catch {
-    // Keep defaults.
+  } catch {}
+
+  try {
+    artworks = await loadJSON("./data/artworks.json");
+  } catch (e) {
+    console.warn("[arttra] No artworks.json — gallery empty.");
+    artworks = [];
   }
 
-  let loaded = false;
-  if (config.firebase?.enabled) {
-    try {
-      artworks = await loadArtworksFromFirebase();
-      loaded = true;
-    } catch (e) {
-      console.error("Firebase artworks load failed:", e);
-      loaded = false;
-    }
-  }
-
-  if (!loaded) {
-    try {
-      artworks = await loadJSON("./data/artworks.json");
-    } catch (e) {
-      console.warn("[arttra] No artworks.json — gallery empty.");
-      artworks = [];
-    }
-  }
-
-  document.title = `${config.siteName || "arttra.art"} - Contemporary prints`;
+  document.title = `${config.siteName || "arttra.art"} — Original art`;
 
   initFilters();
   renderCards();
   renderCart();
 
-  // Search
   const search = $("#searchInput");
   search.addEventListener("input", (e) => {
     state.query = e.target.value || "";
     renderCards();
   });
 
-  // Clear
   $("#clearFiltersBtn").addEventListener("click", () => {
     state.style = null;
-    state.room = null;
     state.color = null;
     $("#searchInput").value = "";
     state.query = "";
     setActivePill($("#styleFilters"), null);
-    setActivePill($("#roomFilters"), null);
     setActiveColorPill($("#colorFilters"), null);
     renderCards();
   });
 }
 
 init();
-
