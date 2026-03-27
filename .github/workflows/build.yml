@@ -31,6 +31,7 @@ jobs:
         run: |
           git config user.name "arttra-bot"
           git config user.email "bot@arttra.art"
+          rm -rf assets/images/gallery/print assets/images/gallery/vector
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit"
