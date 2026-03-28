@@ -15,6 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -37,6 +39,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Auto-update: $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main || true
             git push
           fi
