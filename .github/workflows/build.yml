@@ -4,32 +4,33 @@ on:
   push:
     paths:
       - 'gallery-source/**'
+      - 'data/overrides.json'
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install Pillow vtracer
+        run: pip install Pillow vtracer "rembg[cpu]"
 
-      - name: Pull latest before build
+      - name: Pull latest
         run: git pull origin main
 
       - name: Run pipeline
@@ -40,7 +41,7 @@ jobs:
         run: |
           git config user.name "arttra-bot"
           git config user.email "bot@arttra.art"
-          rm -rf assets/images/gallery/print assets/images/gallery/vector
+          rm -rf assets/images/gallery/print assets/images/gallery/vector .bg-removed
           git add -A
           if git diff --staged --quiet; then
             echo "No changes to commit"

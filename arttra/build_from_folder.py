@@ -645,6 +645,36 @@ def setup_vtracer():
             return False
 
 
+def setup_rembg():
+    try:
+        from rembg import remove as _
+        return True
+    except ImportError:
+        try:
+            subprocess.run(
+                [sys.executable, "-m", "pip", "install", "rembg[cpu]", "--break-system-packages"],
+                capture_output=True, check=True, timeout=300)
+            return True
+        except Exception:
+            print("[rembg] Install failed — bg removal unavailable")
+            return False
+
+
+def remove_background(input_path: str, output_path: str) -> bool:
+    """Remove background from image using rembg AI."""
+    try:
+        from rembg import remove
+        with open(input_path, "rb") as f:
+            input_data = f.read()
+        output_data = remove(input_data)
+        with open(output_path, "wb") as f:
+            f.write(output_data)
+        return True
+    except Exception as e:
+        print(f"  [rembg] Failed: {e}")
+        return False
+
+
 # ═══════════════════════════════════════════════════════════════════
 # MAIN
 # ═══════════════════════════════════════════════════════════════════
@@ -676,6 +706,17 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     for d in [thumb_dir, web_dir, print_dir, vector_dir, data_dir]:
         d.mkdir(parents=True, exist_ok=True)
 
+    # Load overrides
+    overrides = {}
+    overrides_path = data_dir / "overrides.json"
+    if overrides_path.exists():
+        try:
+            with open(overrides_path) as f:
+                overrides = json.load(f)
+            print(f"[build] Loaded {len(overrides)} overrides from overrides.json")
+        except Exception as e:
+            print(f"[build] Failed to load overrides: {e}")
+
     manifest_path = data_dir / "build_manifest.json"
     manifest = {}
     if manifest_path.exists():
@@ -685,28 +726,68 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         except Exception:
             manifest = {}
 
+    # Check which images need bg removal (from overrides)
+    bg_removal_ids = {k for k, v in overrides.items() if v.get("removeBg")}
+
     to_process = []
     cached_artworks = []
     for img_path in images:
         stem = img_path.stem
         file_hash = hashlib.md5(open(img_path, "rb").read()).hexdigest()
-        if stem in manifest and manifest[stem].get("hash") == file_hash:
-            if "artwork" in manifest[stem]:
-                cached_artworks.append(manifest[stem]["artwork"])
+
+        # Check if this image's artwork ID is flagged for bg removal
+        # If so, check if bg removal was already done
+        cached = manifest.get(stem, {})
+        artwork_id = cached.get("artwork", {}).get("id", "")
+        needs_bg_redo = artwork_id in bg_removal_ids and not cached.get("bg_removed")
+
+        if stem in manifest and cached.get("hash") == file_hash and not needs_bg_redo:
+            if "artwork" in cached:
+                cached_artworks.append(cached["artwork"])
             continue
         to_process.append(img_path)
 
-    print(f"[build] {len(images)} total, {len(cached_artworks)} cached, {len(to_process)} new")
+    print(f"[build] {len(images)} total, {len(cached_artworks)} cached, {len(to_process)} new/updated")
 
     if not to_process and cached_artworks:
+        # Still apply overrides to cached artworks
+        cached_artworks = _apply_overrides(cached_artworks, overrides)
         cached_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
         with open(data_dir / "artworks.json", "w") as f:
             json.dump(cached_artworks, f, indent=2)
-        print(f"[build] No new images. Done.")
+        print(f"[build] No new images. Overrides applied. Done.")
         return
 
     has_vtracer = setup_vtracer()
+    has_rembg = setup_rembg() if bg_removal_ids else False
     print(f"[build] vtracer: {'yes' if has_vtracer else 'no'}")
+    if bg_removal_ids:
+        print(f"[build] rembg: {'yes' if has_rembg else 'no'} ({len(bg_removal_ids)} flagged for bg removal)")
+
+    # Pre-process: remove backgrounds on flagged source images
+    if has_rembg and bg_removal_ids:
+        print(f"[build] Running background removal...")
+        bg_done_dir = source.parent / ".bg-removed"
+        bg_done_dir.mkdir(exist_ok=True)
+        for img_path in to_process:
+            stem = img_path.stem
+            stable_id = hashlib.md5(img_path.name.encode()).hexdigest()[:8].upper()
+            # Check all possible artwork IDs this image could map to
+            for style_prefix in ["IRO", "CHR", "STA", "NAT", "LUM", "TEN", "INT", "PHO"]:
+                possible_id = f"BRC-{style_prefix}-{stable_id}"
+                if possible_id in bg_removal_ids:
+                    bg_out = str(bg_done_dir / f"{stem}.png")
+                    if remove_background(str(img_path), bg_out):
+                        print(f"  [rembg] {stem} — background removed")
+                        # Replace source with bg-removed version for processing
+                        import shutil as _shutil
+                        _shutil.copy2(bg_out, str(img_path))
+                        # Mark in manifest
+                        if stem not in manifest:
+                            manifest[stem] = {}
+                        manifest[stem]["bg_removed"] = True
+                    break
+
     print(f"[build] Processing {len(to_process)} images with {workers} workers...")
 
     tasks = [
@@ -727,7 +808,12 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
                     stem = result.pop("_stem")
                     file_hash = result.pop("_hash")
                     new_artworks.append(result)
-                    manifest[stem] = {"hash": file_hash, "artwork": result, "route": result["vectorRoute"]}
+                    manifest[stem] = {
+                        "hash": file_hash,
+                        "artwork": result,
+                        "route": result["vectorRoute"],
+                        "bg_removed": manifest.get(stem, {}).get("bg_removed", False),
+                    }
                     print(f"  [{done}/{len(to_process)}] {src} → {result['title']} [{result['style']}] [{result['category']}]")
                 else:
                     print(f"  [{done}/{len(to_process)}] {src} — FAILED")
@@ -735,25 +821,59 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
                 print(f"  [{done}/{len(to_process)}] {src} — ERROR: {e}")
 
     all_artworks = cached_artworks + new_artworks
+
+    # Apply overrides on top of auto-generated data
+    all_artworks = _apply_overrides(all_artworks, overrides)
+
     all_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
 
+    # Filter hidden
+    visible = [a for a in all_artworks if not a.get("hidden")]
+
     with open(data_dir / "artworks.json", "w") as f:
-        json.dump(all_artworks, f, indent=2)
+        json.dump(visible, f, indent=2)
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=2)
 
     # Stats
     categories = {}
     styles = {}
-    for a in all_artworks:
+    for a in visible:
         categories[a.get("category", "?")] = categories.get(a.get("category", "?"), 0) + 1
         styles[a.get("style", "?")] = styles.get(a.get("style", "?"), 0) + 1
 
     print(f"\n{'='*60}")
-    print(f"[build] Complete: {len(all_artworks)} artworks ({len(new_artworks)} new)")
+    print(f"[build] Complete: {len(visible)} visible artworks ({len(new_artworks)} new, {len(all_artworks) - len(visible)} hidden)")
     print(f"  Categories: {json.dumps(categories)}")
     print(f"  Styles: {json.dumps(styles)}")
+    if overrides:
+        print(f"  Overrides applied: {len(overrides)}")
     print(f"{'='*60}")
+
+
+def _apply_overrides(artworks, overrides):
+    """Merge overrides.json on top of auto-generated artwork data. Manual edits always win."""
+    if not overrides:
+        return artworks
+
+    for art in artworks:
+        art_id = art.get("id", "")
+        if art_id in overrides:
+            ovr = overrides[art_id]
+            for key, val in ovr.items():
+                if key == "priceTiers" and isinstance(val, dict):
+                    if "priceTiers" not in art:
+                        art["priceTiers"] = {}
+                    art["priceTiers"].update(val)
+                elif key == "bestProducts" and isinstance(val, list):
+                    art["bestProducts"] = val
+                elif key in ("removeBg",):
+                    # Flag only, don't copy to artwork output
+                    continue
+                else:
+                    art[key] = val
+
+    return artworks
 
 
 if __name__ == "__main__":
