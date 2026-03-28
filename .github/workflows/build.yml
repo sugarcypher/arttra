@@ -17,6 +17,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -24,6 +25,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install Pillow vtracer
+
+      - name: Pull latest before build
+        run: git pull origin main
 
       - name: Run pipeline
         working-directory: arttra
@@ -39,6 +43,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Auto-update: $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase -X theirs origin main || true
-            git push
+            git push origin main --force
           fi
