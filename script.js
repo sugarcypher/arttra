@@ -2,472 +2,243 @@ const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
 const STORAGE_KEY = "arttra_cart_v1";
-
 let config = { siteName: "arttra.art", checkoutUrl: "#", currency: "USD" };
 let artworks = [];
+let state = { category: "all", color: null, query: "", selectedArtwork: null };
 
-let state = {
-  style: null,
-  color: null,
-  query: "",
-  selectedArtwork: null,
-};
-
-function formatMoney(amount) {
-  try {
-    return new Intl.NumberFormat(undefined, { style: "currency", currency: config.currency }).format(amount);
-  } catch {
-    return `$${amount.toFixed(0)}`;
-  }
+function fmt(amount) {
+  try { return new Intl.NumberFormat(undefined, { style: "currency", currency: config.currency }).format(amount); }
+  catch { return `$${amount.toFixed(0)}`; }
 }
+function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
 
-function getCart() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch { return []; }
-}
-
+// ── Cart ──
+function getCart() { try { const r=localStorage.getItem(STORAGE_KEY); return r?JSON.parse(r):[]; } catch { return []; } }
 function setCart(items) { localStorage.setItem(STORAGE_KEY, JSON.stringify(items)); }
-
-function cartCount(items) { return items.reduce((sum, it) => sum + (it.qty || 0), 0); }
-
-function cartEstimatedTotal(items) {
-  let total = 0;
-  for (const it of items) {
-    const art = artworks.find((a) => String(a.id) === String(it.artId));
-    if (!art) continue;
-    const startPrice = Number(art.priceTiers?.startingPrice ?? 0);
-    total += startPrice * (it.qty || 0);
+function cartCount(items) { return items.reduce((s,i)=>s+(i.qty||0),0); }
+function cartTotal(items) {
+  let t=0;
+  for (const i of items) {
+    const a=artworks.find(x=>String(x.id)===String(i.artId));
+    if (a) t+=(a.priceTiers?.startingPrice||0)*(i.qty||0);
   }
-  return total;
-}
-
-function uniqueSorted(values) {
-  return Array.from(new Set(values)).filter(Boolean).sort((a, b) => String(a).localeCompare(String(b)));
-}
-
-function computePaletteSwatches(art) {
-  const colors = Array.isArray(art.colorPalette) ? art.colorPalette : [];
-  return colors.slice(0, 4);
-}
-
-// ── Pills ──
-
-function renderPill(container, items, onClick, options = {}) {
-  container.innerHTML = "";
-  const noneBtn = document.createElement("button");
-  noneBtn.type = "button";
-  noneBtn.className = "pill";
-  noneBtn.textContent = options.noneLabel || "All";
-  noneBtn.addEventListener("click", () => onClick(null));
-  container.appendChild(noneBtn);
-
-  for (const it of items) {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "pill";
-    btn.textContent = it;
-    btn.addEventListener("click", () => onClick(it));
-    container.appendChild(btn);
-  }
-}
-
-function setActivePill(container, activeValue) {
-  const pills = $$(".pill", container);
-  for (const p of pills) p.classList.remove("pill--active");
-  if (!activeValue) {
-    // Activate the "All" button
-    if (pills.length > 0) pills[0].classList.add("pill--active");
-    return;
-  }
-  const match = pills.find((p) => p.textContent === String(activeValue));
-  if (match) match.classList.add("pill--active");
-}
-
-// ── Named Color Pills ──
-
-function renderNamedColorPills(container, artworksList) {
-  // Collect all named colors from artworks
-  const colorMap = new Map(); // name -> {name, code, hex}
-  for (const a of artworksList) {
-    const named = a.namedColors || [];
-    for (const nc of named) {
-      if (!colorMap.has(nc.name)) {
-        colorMap.set(nc.name, nc);
-      }
-    }
-  }
-
-  const sorted = Array.from(colorMap.values()).sort((a, b) => a.name.localeCompare(b.name));
-
-  container.innerHTML = "";
-
-  const all = document.createElement("button");
-  all.type = "button";
-  all.className = "colorPill colorPill--active";
-  all.dataset.color = "";
-  all.innerHTML = `<span class="colorPill__dot" style="--c:#ffffff"></span><span>All</span>`;
-  all.addEventListener("click", () => setColor(null));
-  container.appendChild(all);
-
-  for (const nc of sorted) {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "colorPill";
-    btn.dataset.color = nc.name;
-    btn.innerHTML = `<span class="colorPill__dot" style="--c:${nc.hex}"></span><span>${nc.name}</span>`;
-    btn.addEventListener("click", () => setColor(nc.name));
-    container.appendChild(btn);
-  }
-}
-
-function setActiveColorPill(container, activeName) {
-  $$(".colorPill", container).forEach((el) => el.classList.remove("colorPill--active"));
-  if (!activeName) {
-    const first = $(".colorPill", container);
-    if (first) first.classList.add("colorPill--active");
-    return;
-  }
-  const match = $$(".colorPill", container).find((el) => el.dataset.color === activeName);
-  if (match) match.classList.add("colorPill--active");
-}
-
-// ── Price ──
-
-function priceStarting(art) {
-  const tiers = art.priceTiers || {};
-  const v = Number(tiers.startingPrice ?? tiers.low ?? tiers.base ?? 0);
-  if (!Number.isFinite(v) || v <= 0) return null;
-  return v;
+  return t;
 }
 
 // ── Filtering ──
+function matchesFilters(art) {
+  // Category
+  if (state.category !== "all") {
+    const cat = state.category.toLowerCase();
+    const artCat = (art.category||"").toLowerCase();
+    const artStyle = (art.style||"").toLowerCase();
 
-function artworkMatchesFilters(art) {
-  const styleOk = !state.style || String(art.style) === String(state.style);
-
-  // Color filter by named color
-  let colorOk = true;
-  if (state.color) {
-    const named = art.namedColors || [];
-    colorOk = named.some((nc) => nc.name === state.color);
+    // Map nav categories to art data
+    if (cat === "art prints" && artCat !== "art prints") return false;
+    if (cat === "metal art" && artCat !== "metal art") return false;
+    if (cat === "photography" && artCat !== "photography") return false;
+    if (cat === "painting" && artStyle !== "chromata" && artStyle !== "naturalis") return false;
+    if (cat === "digital" && artStyle !== "luminos" && artStyle !== "intricata") return false;
+    if (cat === "multimedia" && artStyle !== "intricata" && artCat !== "art prints") return false;
+    if (cat === "graphic" && artStyle !== "starkform" && artStyle !== "ironwork") return false;
   }
 
-  const queryOk = !state.query
-    ? true
-    : [art.title, art.style, art.category, art.sku,
-       Array.isArray(art.seoKeywords) ? art.seoKeywords.join(" ") : "",
-       Array.isArray(art.namedColors) ? art.namedColors.map(c => c.name).join(" ") : "",
-      ].filter(Boolean).join(" ").toLowerCase().includes(state.query.toLowerCase());
+  // Color
+  if (state.color) {
+    const named = art.namedColors || [];
+    if (!named.some(nc => nc.name === state.color)) return false;
+  }
 
-  return styleOk && colorOk && queryOk;
+  // Search
+  if (state.query) {
+    const hay = [art.title, art.sku, art.style, art.category,
+      (art.namedColors||[]).map(c=>c.name).join(" "),
+      (art.seoKeywords||[]).join(" ")
+    ].join(" ").toLowerCase();
+    if (!hay.includes(state.query.toLowerCase())) return false;
+  }
+
+  return true;
 }
 
-// ── Cards ──
-
+// ── Render ──
 function renderCards() {
   const grid = $("#cardsGrid");
-  const filtered = artworks.filter(artworkMatchesFilters);
-  grid.innerHTML = "";
-
+  const filtered = artworks.filter(matchesFilters);
   const meta = $("#resultMeta");
-  meta.textContent = `${filtered.length} piece${filtered.length === 1 ? "" : "s"} shown`;
+  meta.textContent = `${filtered.length} piece${filtered.length===1?"":"s"}`;
 
-  if (filtered.length === 0) {
-    const empty = document.createElement("div");
-    empty.className = "emptyState";
-    empty.textContent = "No matches. Try clearing filters.";
-    grid.appendChild(empty);
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="emptyState">No matches. Try a different category or clear search.</div>';
     return;
   }
 
-  for (const art of filtered) {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.tabIndex = 0;
-    card.setAttribute("role", "button");
-    card.setAttribute("aria-label", `View ${art.title}`);
-
-    const thumb = art.thumb || art.image || "./assets/images/placeholder.svg";
-    const swatches = computePaletteSwatches(art);
-    const categoryLabel = art.category || "";
-
-    card.innerHTML = `
+  grid.innerHTML = filtered.map(art => {
+    const thumb = art.thumb || art.image || "";
+    const swatches = (art.colorPalette||[]).slice(0,4);
+    return `<div class="card" data-id="${art.id}">
       <div class="card__imgWrap">
-        <img class="card__img" src="${thumb}" alt="${escapeHtml(art.title || "Artwork")}" loading="lazy" />
-        ${categoryLabel ? `<span class="card__category">${escapeHtml(categoryLabel)}</span>` : ""}
+        <img class="card__img" src="${thumb}" alt="${esc(art.title)}" loading="lazy" />
+        ${art.category ? `<span class="card__category">${esc(art.category)}</span>` : ""}
       </div>
       <div class="card__body">
-        <h3 class="card__title">${escapeHtml(art.title || "Untitled")}</h3>
+        <div class="card__title">${esc(art.title)}</div>
         <div class="card__sub">
-          <span>${escapeHtml(art.style || "")}</span>
-          <span class="card__swatches" aria-hidden="true">
-            ${swatches
-              .map((hex) => `<span class="swatch" style="--c:${hex}"></span>`)
-              .join("")}
-          </span>
+          <span>${esc(art.style||"")}</span>
+          <span class="card__swatches">${swatches.map(h=>`<span class="swatch" style="--c:${h}"></span>`).join("")}</span>
         </div>
       </div>
-    `;
+    </div>`;
+  }).join("");
 
-    const open = () => openModal(art);
-    card.addEventListener("click", open);
-    card.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") open();
-    });
-
-    grid.appendChild(card);
-  }
+  grid.querySelectorAll(".card").forEach(c => {
+    c.addEventListener("click", () => openModal(artworks.find(a=>a.id===c.dataset.id)));
+  });
 }
 
-function escapeHtml(str) {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+// ── Color bar ──
+function renderColorBar() {
+  const bar = $("#colorBar");
+  const map = new Map();
+  for (const a of artworks) {
+    for (const nc of (a.namedColors||[])) {
+      if (!map.has(nc.name)) map.set(nc.name, nc);
+    }
+  }
+  const sorted = Array.from(map.values()).sort((a,b)=>a.name.localeCompare(b.name));
+
+  let html = '<span class="colorbar__label">Color</span>';
+  html += `<button class="cpill cpill--active" data-color="">All</button>`;
+  for (const nc of sorted) {
+    html += `<button class="cpill" data-color="${esc(nc.name)}"><span class="cpill__dot" style="--c:${nc.hex}"></span>${esc(nc.name)}</button>`;
+  }
+  bar.innerHTML = html;
+
+  bar.querySelectorAll(".cpill").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.color = btn.dataset.color || null;
+      bar.querySelectorAll(".cpill").forEach(b=>b.classList.remove("cpill--active"));
+      btn.classList.add("cpill--active");
+      renderCards();
+    });
+  });
+}
+
+// ── Category nav ──
+function initCatNav() {
+  $$(".catnav__link").forEach(btn => {
+    btn.addEventListener("click", () => {
+      $$(".catnav__link").forEach(b=>b.classList.remove("catnav__link--active"));
+      btn.classList.add("catnav__link--active");
+      state.category = btn.dataset.cat;
+      renderCards();
+    });
+  });
 }
 
 // ── Modal ──
-
 function openModal(art) {
+  if (!art) return;
   state.selectedArtwork = art;
   $("#modalSku").textContent = art.sku || "";
   $("#modalTitle").textContent = art.title || "Untitled";
   $("#modalDescription").textContent = art.description || "";
   $("#modalStyleBadge").textContent = art.style || "";
   $("#modalCategoryBadge").textContent = art.category || "";
+  $("#modalImage").src = art.image || art.thumb || "";
+  $("#modalImage").alt = art.title || "";
 
-  const imgSrc = art.image || art.thumb || "./assets/images/placeholder.svg";
-  $("#modalImage").src = imgSrc;
-  $("#modalImage").alt = art.title || "Artwork image";
-
-  // Show named colors in modal
   const colorsEl = $("#modalColors");
-  const named = art.namedColors || [];
-  colorsEl.innerHTML = named
-    .map((nc) => `
-    <div class="colorSwatch">
-      <span class="colorSwatch__dot" style="--c:${nc.hex}"></span>
-      <span class="colorSwatch__hex">${nc.name}</span>
-    </div>`)
-    .join("");
+  colorsEl.innerHTML = (art.namedColors||[]).map(nc =>
+    `<div class="colorSwatch"><span class="colorSwatch__dot" style="--c:${nc.hex}"></span><span class="colorSwatch__hex">${nc.name}</span></div>`
+  ).join("");
 
-  const start = priceStarting(art);
-  $("#modalPrice").textContent = start ? formatMoney(start) : "Contact for pricing";
-
-  const products = Array.isArray(art.bestProducts) ? art.bestProducts.join(", ") : "";
-  $("#modalBestProducts").textContent = products || "—";
-
-  const buyUrl = art.buyUrl || "#";
-  $("#buyNowLink").href = buyUrl;
-
+  const price = art.priceTiers?.startingPrice;
+  $("#modalPrice").textContent = price ? fmt(price) : "Contact for pricing";
+  $("#modalBestProducts").textContent = (art.bestProducts||[]).join(", ") || "—";
+  $("#buyNowLink").href = art.buyUrl || "#";
   $("#addToCartBtn").onclick = () => addToCart(String(art.id));
 
   $("#modalOverlay").hidden = false;
   document.body.style.overflow = "hidden";
 }
-
 function closeModal() {
   $("#modalOverlay").hidden = true;
   document.body.style.overflow = "";
   state.selectedArtwork = null;
 }
 
-// ── Filters ──
-
-function setStyle(val) {
-  state.style = val;
-  setActivePill($("#styleFilters"), val);
-  renderCards();
-}
-
-function setColor(val) {
-  state.color = val;
-  setActiveColorPill($("#colorFilters"), val);
-  renderCards();
-}
-
-function initFilters() {
-  const styles = uniqueSorted(artworks.map((a) => a.style));
-  renderPill($("#styleFilters"), styles, (v) => setStyle(v), { noneLabel: "All styles" });
-  renderNamedColorPills($("#colorFilters"), artworks);
-
-  setActivePill($("#styleFilters"), null);
-}
-
-// ── Cart ──
-
+// ── Cart ops ──
 function addToCart(artId) {
   const items = getCart();
-  const idx = items.findIndex((it) => String(it.artId) === String(artId));
-  if (idx >= 0) items[idx].qty = (items[idx].qty || 0) + 1;
-  else items.push({ artId: String(artId), qty: 1 });
-  setCart(items);
-  renderCart();
+  const idx = items.findIndex(i=>String(i.artId)===String(artId));
+  if (idx>=0) items[idx].qty=(items[idx].qty||0)+1;
+  else items.push({artId,qty:1});
+  setCart(items); renderCart();
 }
-
 function changeQty(artId, delta) {
-  const items = getCart();
-  const idx = items.findIndex((it) => String(it.artId) === String(artId));
-  if (idx < 0) return;
-  items[idx].qty = (items[idx].qty || 0) + delta;
-  if (items[idx].qty <= 0) items.splice(idx, 1);
-  setCart(items);
-  renderCart();
+  const items=getCart();
+  const idx=items.findIndex(i=>String(i.artId)===String(artId));
+  if (idx<0) return;
+  items[idx].qty=(items[idx].qty||0)+delta;
+  if (items[idx].qty<=0) items.splice(idx,1);
+  setCart(items); renderCart();
 }
-
-function openCart() {
-  $("#cartDrawer").hidden = false;
-  document.body.style.overflow = "hidden";
-}
-
-function closeCart() {
-  $("#cartDrawer").hidden = true;
-  document.body.style.overflow = "";
-}
+function openCart() { $("#cartDrawer").hidden=false; document.body.style.overflow="hidden"; }
+function closeCart() { $("#cartDrawer").hidden=true; document.body.style.overflow=""; }
 
 function renderCart() {
-  const items = getCart();
-  const count = cartCount(items);
-  $("#cartCount").textContent = String(count);
-  $("#cartItemsCount").textContent = String(count);
-
-  const total = cartEstimatedTotal(items);
-  $("#cartTotal").textContent = formatMoney(total);
-
-  const emptyEl = $("#cartEmpty");
-  const listEl = $("#cartItems");
-  listEl.innerHTML = "";
-
-  if (items.length === 0) {
-    emptyEl.hidden = false;
-    return;
-  }
-  emptyEl.hidden = true;
-
+  const items=getCart();
+  $("#cartCount").textContent=String(cartCount(items));
+  $("#cartItemsCount").textContent=String(cartCount(items));
+  $("#cartTotal").textContent=fmt(cartTotal(items));
+  const list=$("#cartItems");
+  list.innerHTML="";
+  if (!items.length) { $("#cartEmpty").hidden=false; return; }
+  $("#cartEmpty").hidden=true;
   for (const it of items) {
-    const art = artworks.find((a) => String(a.id) === String(it.artId));
+    const art=artworks.find(a=>String(a.id)===String(it.artId));
     if (!art) continue;
-
-    const thumb = art.thumb || art.image || "./assets/images/placeholder.svg";
-    const start = priceStarting(art);
-    const linePrice = start ? start * (it.qty || 0) : 0;
-
-    const row = document.createElement("div");
-    row.className = "cartItem";
-    row.innerHTML = `
-      <div class="cartItem__img">
-        <img src="${thumb}" alt="${escapeHtml(art.title || "Artwork")}" loading="lazy" />
-      </div>
-      <div class="cartItem__main">
-        <div class="cartItem__title">${escapeHtml(art.title || "Untitled")}</div>
-        <div class="cartItem__meta">
-          <span>${escapeHtml(art.style || "")}</span>
-          <span>${start ? formatMoney(linePrice) : "—"}</span>
-        </div>
-        <div class="qtyRow" aria-label="Quantity controls">
-          <button class="qtyBtn" type="button" aria-label="Decrease quantity">−</button>
-          <div class="qtyVal">${Number(it.qty || 0)}</div>
-          <button class="qtyBtn" type="button" aria-label="Increase quantity">+</button>
-        </div>
-      </div>
-    `;
-
-    const minus = row.querySelectorAll(".qtyBtn")[0];
-    const plus = row.querySelectorAll(".qtyBtn")[1];
-    minus.addEventListener("click", () => changeQty(it.artId, -1));
-    plus.addEventListener("click", () => changeQty(it.artId, +1));
-
-    listEl.appendChild(row);
+    const thumb=art.thumb||art.image||"";
+    const price=art.priceTiers?.startingPrice||0;
+    const row=document.createElement("div"); row.className="cartItem";
+    row.innerHTML=`<div class="cartItem__img"><img src="${thumb}" loading="lazy"/></div>
+      <div class="cartItem__main"><div class="cartItem__title">${esc(art.title)}</div>
+      <div class="cartItem__meta"><span>${esc(art.style||"")}</span><span>${price?fmt(price*it.qty):"—"}</span></div>
+      <div class="qtyRow"><button class="qtyBtn" data-d="-1">−</button><div class="qtyVal">${it.qty}</div><button class="qtyBtn" data-d="1">+</button></div></div>`;
+    row.querySelectorAll(".qtyBtn").forEach(b=>b.addEventListener("click",()=>changeQty(it.artId,Number(b.dataset.d))));
+    list.appendChild(row);
   }
-
-  const baseCheckout = config.checkoutUrl || "#";
-  if (baseCheckout === "#" || !baseCheckout) {
-    $("#checkoutLink").href = "#";
-    return;
-  }
-  const payload = { items, currency: config.currency };
-  const encoded = typeof btoa === "function"
-    ? btoa(unescape(encodeURIComponent(JSON.stringify(payload))))
-    : encodeURIComponent(JSON.stringify(payload));
-  const joiner = baseCheckout.includes("?") ? "&" : "?";
-  $("#checkoutLink").href = `${baseCheckout}${joiner}cart=${encoded}`;
 }
 
-// ── Data loading ──
+// ── UI setup (immediate) ──
+(function() {
+  const ov=document.getElementById("modalOverlay");
+  const dr=document.getElementById("cartDrawer");
+  if (ov) ov.hidden=true;
+  if (dr) dr.hidden=true;
+  document.body.style.overflow="";
 
-async function loadJSON(url) {
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
-  return await res.json();
-}
-
-// ── UI Setup (immediate, before async) ──
-
-(function setupUI() {
-  const overlay = document.getElementById("modalOverlay");
-  const drawer = document.getElementById("cartDrawer");
-  if (overlay) overlay.hidden = true;
-  if (drawer) drawer.hidden = true;
-  document.body.style.overflow = "";
-
-  document.getElementById("modalCloseBtn")?.addEventListener("click", closeModal);
-  overlay?.addEventListener("click", (e) => {
-    if (e.target === overlay) closeModal();
+  document.getElementById("modalCloseBtn")?.addEventListener("click",closeModal);
+  ov?.addEventListener("click",e=>{if(e.target===ov)closeModal();});
+  window.addEventListener("keydown",e=>{
+    if(e.key==="Escape"){if(ov&&!ov.hidden)closeModal();if(dr&&!dr.hidden)closeCart();}
   });
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      if (overlay && !overlay.hidden) closeModal();
-      if (drawer && !drawer.hidden) closeCart();
-    }
-  });
-  document.getElementById("cartButton")?.addEventListener("click", () => {
-    openCart();
-    renderCart();
-  });
-  document.getElementById("cartCloseBtn")?.addEventListener("click", closeCart);
+  document.getElementById("cartButton")?.addEventListener("click",()=>{openCart();renderCart();});
+  document.getElementById("cartCloseBtn")?.addEventListener("click",closeCart);
 })();
 
 // ── Init ──
-
 async function init() {
-  try {
-    config = await loadJSON("./data/config.json");
-  } catch {}
+  try { config = await (await fetch("./data/config.json",{cache:"no-store"})).json(); } catch {}
+  try { artworks = await (await fetch("./data/artworks.json",{cache:"no-store"})).json(); } catch { artworks=[]; }
 
-  try {
-    artworks = await loadJSON("./data/artworks.json");
-  } catch (e) {
-    console.warn("[arttra] No artworks.json — gallery empty.");
-    artworks = [];
-  }
-
-  document.title = `${config.siteName || "arttra.art"} — Original art`;
-
-  initFilters();
+  document.title = "ARTTRA.ART — Original Art";
+  initCatNav();
+  renderColorBar();
   renderCards();
   renderCart();
 
-  const search = $("#searchInput");
-  search.addEventListener("input", (e) => {
-    state.query = e.target.value || "";
-    renderCards();
-  });
-
-  $("#clearFiltersBtn").addEventListener("click", () => {
-    state.style = null;
-    state.color = null;
-    $("#searchInput").value = "";
-    state.query = "";
-    setActivePill($("#styleFilters"), null);
-    setActiveColorPill($("#colorFilters"), null);
-    renderCards();
-  });
+  $("#searchInput").addEventListener("input", e => { state.query=e.target.value||""; renderCards(); });
 }
-
 init();

@@ -1,172 +1,592 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>arttra.art — Original art for walls that deserve it</title>
-    <meta name="description" content="Curated original artwork — laser-cut metal, prints, photography. Browse by style and color." />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="topbar__inner">
-        <a class="brand" href="./">
-          <span class="brand__mark" aria-hidden="true">A</span>
-          <span class="brand__name">arttra.art</span>
-        </a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARTTRA.ART — Original Art</title>
+  <meta name="description" content="Original art — paintings, digital art, laser-cut metal, photography, and more. Every piece machine-analyzed and archaic-named." />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
+  <style>
+    :root {
+      --bg: #06060c;
+      --panel: #0c0c16;
+      --surface: #12122a;
+      --border: rgba(255,255,255,.07);
+      --text: #f0f0f8;
+      --muted: #7a7a9a;
+      --accent: #c840ff;
+      --accent2: #45d7ff;
+      --pink: #ff4fd8;
+      --good: #39d98a;
+      --max: 1280px;
+      --sans: 'DM Sans', system-ui, sans-serif;
+      --display: 'Unbounded', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
 
-        <div class="topbar__right">
-          <div class="search">
-            <input id="searchInput" type="search" placeholder="Search artworks..." autocomplete="off" />
-          </div>
+    /* ═══ HERO ═══ */
+    .hero {
+      position: relative;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px 40px;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(800px 500px at 30% 20%, rgba(200,64,255,.25), transparent 60%),
+        radial-gradient(600px 400px at 70% 30%, rgba(69,215,255,.2), transparent 55%),
+        radial-gradient(500px 400px at 50% 80%, rgba(255,79,216,.15), transparent 50%);
+      pointer-events: none;
+    }
+    .hero__logo {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 40px rgba(200,64,255,.4));
+      position: relative;
+      z-index: 1;
+    }
+    .hero__title {
+      font-family: var(--display);
+      font-weight: 900;
+      font-size: clamp(36px, 7vw, 72px);
+      letter-spacing: -.02em;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent2), var(--accent), var(--pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 16px;
+    }
+    .hero__sub {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 500px;
+      position: relative;
+      z-index: 1;
+    }
 
-          <a class="btn btn--ghost" href="./video-gallery.html" style="font-size:.85rem;">Videos</a>
+    /* ═══ CATEGORY NAV ═══ */
+    .catnav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(6,6,12,.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .catnav__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .catnav__inner::-webkit-scrollbar { display: none; }
+    .catnav__brand {
+      font-family: var(--display);
+      font-weight: 900;
+      font-size: 14px;
+      padding: 14px 20px;
+      white-space: nowrap;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      flex-shrink: 0;
+    }
+    .catnav__link {
+      padding: 14px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: color .15s;
+      border-bottom: 2px solid transparent;
+      flex-shrink: 0;
+    }
+    .catnav__link:hover { color: var(--text); }
+    .catnav__link--active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+    .catnav__right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-right: 16px;
+      flex-shrink: 0;
+    }
+    .catnav__search {
+      padding: 7px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      font-size: 13px;
+      font-family: var(--sans);
+      width: 180px;
+    }
+    .catnav__search:focus { outline: none; border-color: var(--accent); }
+    .catnav__cart {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 12px;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 14px;
+      position: relative;
+    }
+    .catnav__cart:hover { color: var(--text); border-color: rgba(255,255,255,.15); }
+    .catnav__badge {
+      position: absolute;
+      top: -4px; right: -4px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+    }
 
-          <button id="cartButton" class="iconbtn" type="button" aria-label="Cart">
-            <span class="iconbtn__icon" aria-hidden="true">🛒</span>
-            <span id="cartCount" class="iconbtn__badge" aria-live="polite">0</span>
-          </button>
-        </div>
+    /* ═══ COLOR BAR ═══ */
+    .colorbar {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .colorbar__label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-right: 4px;
+    }
+    .cpill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .12s;
+      font-family: var(--sans);
+    }
+    .cpill:hover { color: var(--text); border-color: rgba(255,255,255,.18); }
+    .cpill--active { color: var(--text); border-color: var(--accent); background: rgba(200,64,255,.08); }
+    .cpill__dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--c);
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    /* ═══ GALLERY GRID ═══ */
+    .gallery {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 8px 16px;
+    }
+    .gallery__meta {
+      padding: 8px 4px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .cardsGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.07);
+      background: var(--panel);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform .12s ease, border-color .12s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(255,255,255,.16);
+    }
+    .card__imgWrap {
+      width: 100%;
+      aspect-ratio: 1;
+      background: #000;
+      position: relative;
+      overflow: hidden;
+    }
+    .card__img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .3s ease;
+    }
+    .card:hover .card__img { transform: scale(1.04); }
+    .card__category {
+      position: absolute;
+      top: 8px; left: 8px;
+      background: rgba(0,0,0,.65);
+      backdrop-filter: blur(6px);
+      color: rgba(255,255,255,.9);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .card__body { padding: 12px; }
+    .card__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card__sub {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card__swatches { display: flex; gap: 3px; }
+    .swatch {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--c);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .emptyState {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* ═══ MODAL ═══ */
+    .overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.65);
+      backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      padding: 18px; z-index: 90;
+    }
+    .overlay[hidden] { display: none !important; }
+    .modal {
+      width: min(980px, 100%);
+      border-radius: 20px;
+      background: rgba(12,12,22,.96);
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow: 0 20px 60px rgba(0,0,0,.5);
+      overflow: hidden;
+      position: relative;
+    }
+    .modal__close {
+      position: absolute; top: 10px; right: 14px;
+      background: none; border: none; color: var(--muted);
+      font-size: 28px; cursor: pointer; z-index: 5;
+    }
+    .modal__close:hover { color: var(--text); }
+    .modal__body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .modal__media {
+      background: #000;
+      display: flex; align-items: center; justify-content: center;
+      border-right: 1px solid rgba(255,255,255,.06);
+    }
+    .modal__image {
+      width: 100%; height: 100%;
+      object-fit: contain;
+      max-height: 600px;
+    }
+    .modal__content {
+      padding: 28px;
+      overflow-y: auto;
+      max-height: 600px;
+    }
+    .modal__kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: .05em;
+      margin-bottom: 6px;
+    }
+    .modal__title {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .modal__description { color: var(--muted); font-size: 14px; margin-bottom: 14px; }
+    .modal__badges { display: flex; gap: 8px; margin-bottom: 14px; }
+    .badge {
+      font-size: 12px; font-weight: 700;
+      padding: 4px 10px; border-radius: 6px;
+      background: rgba(200,64,255,.1);
+      color: var(--accent);
+    }
+    .modal__colors { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    .colorSwatch { display: flex; align-items: center; gap: 5px; }
+    .colorSwatch__dot {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--c);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .colorSwatch__hex { font-size: 11px; color: var(--muted); }
+    .priceRow { margin-bottom: 12px; }
+    .priceRow__label { font-size: 12px; color: var(--muted); }
+    .priceRow__value { font-size: 24px; font-weight: 800; }
+    .actionRow { display: flex; gap: 8px; margin-bottom: 16px; }
+    .btn {
+      padding: 10px 20px; border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color: var(--text); cursor: pointer;
+      font-family: var(--sans); font-size: 14px; font-weight: 600;
+      transition: all .15s;
+    }
+    .btn:hover { border-color: var(--accent); background: rgba(200,64,255,.08); }
+    .btn--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn--accent:hover { background: #b030e8; }
+    .fineprint__line { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+
+    /* ═══ FOOTER ═══ */
+    .site-footer {
+      max-width: var(--max);
+      margin: 48px auto 0;
+      padding: 24px 20px;
+      border-top: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .site-footer__title { font-weight: 700; color: var(--text); margin-bottom: 4px; font-size: 13px; }
+
+    /* ═══ CART DRAWER ═══ */
+    .drawer {
+      position: fixed; right: 16px; top: 16px; bottom: 16px;
+      width: min(400px, calc(100vw - 32px));
+      border-radius: 16px;
+      background: rgba(12,12,22,.96);
+      border: 1px solid rgba(255,255,255,.1);
+      box-shadow: 0 20px 60px rgba(0,0,0,.5);
+      z-index: 80;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .drawer[hidden] { display: none !important; }
+    .drawer__header {
+      padding: 14px; border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .drawer__title { font-weight: 800; font-size: 16px; }
+    .drawer__body { flex: 1; overflow-y: auto; padding: 14px; }
+    .drawer__footer { padding: 14px; border-top: 1px solid var(--border); }
+    .cartItem {
+      display: flex; gap: 10px; padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .cartItem__img { width: 60px; height: 60px; border-radius: 8px; overflow: hidden; }
+    .cartItem__img img { width: 100%; height: 100%; object-fit: cover; }
+    .cartItem__main { flex: 1; }
+    .cartItem__title { font-weight: 700; font-size: 13px; }
+    .cartItem__meta { font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; }
+    .qtyRow { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+    .qtyBtn {
+      width: 24px; height: 24px; border-radius: 6px;
+      border: 1px solid var(--border); background: transparent;
+      color: var(--text); cursor: pointer; font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .qtyVal { font-size: 13px; font-weight: 700; min-width: 20px; text-align: center; }
+    .totals { margin-bottom: 12px; }
+    .totals__row { display: flex; justify-content: space-between; font-size: 14px; padding: 4px 0; }
+    .totals__value { font-weight: 800; }
+    .btn--full { width: 100%; text-align: center; display: block; }
+    .btn--primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .iconbtn { background: none; border: none; cursor: pointer; color: var(--muted); font-size: 18px; }
+
+    /* ═══ RESPONSIVE ═══ */
+    @media (max-width: 768px) {
+      .modal__body { grid-template-columns: 1fr; }
+      .modal__media { border-right: none; border-bottom: 1px solid rgba(255,255,255,.06); min-height: 280px; }
+      .site-footer { grid-template-columns: 1fr; }
+      .catnav__search { width: 120px; }
+      .cardsGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 480px) {
+      .cardsGrid { grid-template-columns: 1fr; }
+      .catnav__brand { padding: 14px 12px; }
+      .catnav__link { padding: 14px 10px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__logo" src="./assets/images/logo.png" alt="ARTTRA" onerror="this.style.display='none'" />
+    <h1 class="hero__title">ARTTRA.ART</h1>
+    <p class="hero__sub">Every piece machine-analyzed, archaic-named, and made to order.</p>
+  </section>
+
+  <!-- CATEGORY NAV -->
+  <nav class="catnav" id="catnav">
+    <div class="catnav__inner">
+      <a class="catnav__brand" href="./">ARTTRA</a>
+      <button class="catnav__link catnav__link--active" data-cat="all">All</button>
+      <button class="catnav__link" data-cat="Art Prints">Original Art</button>
+      <button class="catnav__link" data-cat="painting">Paintings</button>
+      <button class="catnav__link" data-cat="digital">Digital Art</button>
+      <button class="catnav__link" data-cat="Metal Art">Laser-Cut Metal</button>
+      <button class="catnav__link" data-cat="Photography">Photography</button>
+      <button class="catnav__link" data-cat="multimedia">Multimedia</button>
+      <button class="catnav__link" data-cat="graphic">Graphic Art</button>
+      <div class="catnav__right">
+        <input class="catnav__search" id="searchInput" type="search" placeholder="Search..." autocomplete="off" />
+        <button class="catnav__cart" id="cartButton" aria-label="Cart">
+          🛒 <span class="catnav__badge" id="cartCount">0</span>
+        </button>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <main class="page">
-      <section class="hero">
-        <div class="hero__copy">
-          <h1>Original art. Laser-cut metal. Photography. Walls that deserve it.</h1>
-          <p>Every piece is analyzed, classified, and named by machine. Browse by <strong>style</strong> and <strong>color</strong>.</p>
-        </div>
-      </section>
+  <!-- COLOR BAR -->
+  <div class="colorbar" id="colorBar">
+    <span class="colorbar__label">Color</span>
+  </div>
 
-      <section class="filters">
-        <div class="filters__grid filters__grid--two">
-          <div class="filter">
-            <div class="filter__title">Style</div>
-            <div id="styleFilters" class="pills" role="listbox" aria-label="Filter by style"></div>
+  <!-- GALLERY -->
+  <main class="gallery">
+    <div class="gallery__meta" id="resultMeta"></div>
+    <div class="cardsGrid" id="cardsGrid"></div>
+  </main>
+
+  <!-- FOOTER -->
+  <section class="site-footer">
+    <div>
+      <div class="site-footer__title">ARTTRA.ART</div>
+      <div>Original art — laser-cut metal, prints, photography. Each piece machine-analyzed and archaic-named.</div>
+    </div>
+    <div>
+      <div class="site-footer__title">Process</div>
+      <div>Every image is AI-upscaled, color-profiled, style-classified, and vectorized when possible.</div>
+    </div>
+    <div>
+      <div class="site-footer__title">Categories</div>
+      <div>Paintings · Digital · Laser-Cut Metal · Photography · Multimedia · Graphic Art</div>
+    </div>
+  </section>
+
+  <!-- TWL Network Footer -->
+  <footer style="margin-top:48px;padding:18px 0;border-top:1px solid rgba(255,255,255,.07);font-size:12px;color:rgba(255,255,255,.45);text-align:center;line-height:1.8">
+    <span style="font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:10px;color:rgba(255,255,255,.35);display:block;margin-bottom:6px">A ThinkWell Labs offering</span>
+    <a href="https://twl.today" style="color:rgba(255,255,255,.6);text-decoration:none">TWL</a>
+    <span style="margin:0 6px;opacity:.3">·</span>
+    <a href="https://arttra.art" style="color:rgba(255,255,255,.8);font-weight:600;text-decoration:none">arttra</a>
+    <span style="margin:0 6px;opacity:.3">·</span>
+    <a href="https://cookiebouncer.app" style="color:rgba(255,255,255,.6);text-decoration:none">CookieBouncer</a>
+    <span style="margin:0 6px;opacity:.3">·</span>
+    <a href="https://errorfect.com" style="color:rgba(255,255,255,.6);text-decoration:none">Errorfect</a>
+    <span style="margin:0 6px;opacity:.3">·</span>
+    <a href="https://acepaste.xyz" style="color:rgba(255,255,255,.6);text-decoration:none">Acepaste</a>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modalOverlay" class="overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <button id="modalCloseBtn" class="modal__close" aria-label="Close">×</button>
+      <div class="modal__body">
+        <div class="modal__media"><img id="modalImage" class="modal__image" alt="" /></div>
+        <div class="modal__content">
+          <div class="modal__kicker" id="modalSku"></div>
+          <h2 id="modalTitle" class="modal__title"></h2>
+          <p id="modalDescription" class="modal__description"></p>
+          <div class="modal__badges">
+            <div id="modalStyleBadge" class="badge"></div>
+            <div id="modalCategoryBadge" class="badge"></div>
           </div>
-
-          <div class="filter">
-            <div class="filter__title">Color</div>
-            <div id="colorFilters" class="colorPills" role="listbox" aria-label="Filter by color"></div>
+          <div class="modal__colors" id="modalColors"></div>
+          <div class="priceRow">
+            <div class="priceRow__label">Starting at</div>
+            <div id="modalPrice" class="priceRow__value"></div>
           </div>
-        </div>
-
-        <div class="filters__actions">
-          <button id="clearFiltersBtn" class="btn btn--ghost" type="button">Clear filters</button>
-          <div id="resultMeta" class="meta" aria-live="polite"></div>
-        </div>
-      </section>
-
-      <section class="gallery">
-        <div id="cardsGrid" class="cardsGrid" aria-label="Artwork gallery"></div>
-      </section>
-
-      <section class="footer">
-        <div class="footer__inner">
-          <div class="footer__col">
-            <div class="footer__title">arttra.art</div>
-            <div class="footer__text">Original art — laser-cut metal, prints, and photography. Each piece machine-analyzed and given an archaic name.</div>
+          <div class="actionRow">
+            <button id="addToCartBtn" class="btn btn--accent">Add to cart</button>
+            <a id="buyNowLink" class="btn" href="#" target="_blank" rel="noreferrer">Buy now</a>
           </div>
-          <div class="footer__col">
-            <div class="footer__title">Process</div>
-            <div class="footer__text">Every image is AI-upscaled, color-profiled, and classified. Pieces suitable for laser cutting are vectorized automatically.</div>
-          </div>
-          <div class="footer__col">
-            <div class="footer__title">Categories</div>
-            <div class="footer__text">Metal Art — laser-cut originals. Art Prints — canvas, framed, acrylic. Photography — captured moments.</div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Modal -->
-    <div id="modalOverlay" class="overlay" hidden>
-      <div class="modal" role="dialog" aria-modal="true" aria-label="Artwork details">
-        <button id="modalCloseBtn" class="modal__close" type="button" aria-label="Close">×</button>
-        <div class="modal__body">
-          <div class="modal__media">
-            <img id="modalImage" class="modal__image" alt="" />
-          </div>
-          <div class="modal__content">
-            <div class="modal__kicker" id="modalSku"></div>
-            <h2 id="modalTitle" class="modal__title"></h2>
-            <p id="modalDescription" class="modal__description"></p>
-
-            <div class="modal__badges">
-              <div id="modalStyleBadge" class="badge"></div>
-              <div id="modalCategoryBadge" class="badge"></div>
-            </div>
-
-            <div class="modal__colors" aria-label="Color palette" id="modalColors"></div>
-
-            <div class="modal__actions">
-              <div class="priceRow">
-                <div class="priceRow__label">Starting at</div>
-                <div id="modalPrice" class="priceRow__value"></div>
-              </div>
-              <div class="actionRow">
-                <button id="addToCartBtn" class="btn" type="button">Add to cart</button>
-                <a id="buyNowLink" class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Buy now</a>
-              </div>
-            </div>
-
-            <div class="modal__fineprint">
-              <div class="fineprint__line">
-                Available as: <span id="modalBestProducts"></span>
-              </div>
-            </div>
-          </div>
+          <div class="fineprint__line">Available as: <span id="modalBestProducts"></span></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Cart Drawer -->
-    <aside id="cartDrawer" class="drawer" aria-label="Cart" hidden>
-      <div class="drawer__header">
-        <div class="drawer__title">Your cart</div>
-        <button id="cartCloseBtn" class="iconbtn iconbtn--small" type="button" aria-label="Close cart">
-          <span aria-hidden="true">✕</span>
-        </button>
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="drawer" hidden>
+    <div class="drawer__header">
+      <div class="drawer__title">Cart</div>
+      <button id="cartCloseBtn" class="iconbtn" aria-label="Close cart">✕</button>
+    </div>
+    <div class="drawer__body">
+      <div id="cartEmpty" class="emptyState" hidden>Your cart is empty.</div>
+      <div id="cartItems" class="cartItems"></div>
+    </div>
+    <div class="drawer__footer">
+      <div class="totals">
+        <div class="totals__row"><span>Items</span><span id="cartItemsCount" class="totals__value">0</span></div>
+        <div class="totals__row"><span>Estimated total</span><span id="cartTotal" class="totals__value">$0</span></div>
       </div>
+      <a id="checkoutLink" class="btn btn--primary btn--full" href="#">Checkout</a>
+    </div>
+  </aside>
 
-      <div class="drawer__body">
-        <div id="cartEmpty" class="emptyState" hidden>
-          Your cart is empty. Add an artwork to get started.
-        </div>
-        <div id="cartItems" class="cartItems"></div>
-      </div>
-
-      <div class="drawer__footer">
-        <div class="totals">
-          <div class="totals__row">
-            <span class="totals__label">Items</span>
-            <span id="cartItemsCount" class="totals__value">0</span>
-          </div>
-          <div class="totals__row">
-            <span class="totals__label">Estimated total</span>
-            <span id="cartTotal" class="totals__value">$0</span>
-          </div>
-        </div>
-        <a id="checkoutLink" class="btn btn--primary btn--full" href="#" target="_blank" rel="noreferrer">
-          Checkout
-        </a>
-      </div>
-    </aside>
-
-    <script src="./script.js" type="module"></script>
-   <!-- ThinkWell Labs Network Footer -->
-<footer style="margin-top:48px;padding:18px 0;border-top:1px solid rgba(255,255,255,.07);font-size:12px;color:rgba(255,255,255,.45);text-align:center;line-height:1.8">
-  <span style="font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:10px;color:rgba(255,255,255,.35);display:block;margin-bottom:6px">A ThinkWell Labs offering</span>
-  <a href="https://twl.today" style="color:rgba(255,255,255,.6);text-decoration:none">TWL</a>
-  <span style="margin:0 6px;opacity:.3">·</span>
-  <a href="https://arttra.art" style="color:rgba(255,255,255,.8);font-weight:600;text-decoration:none">arttra</a>
-  <span style="margin:0 6px;opacity:.3">·</span>
-  <a href="https://cookiebouncer.app" style="color:rgba(255,255,255,.6);text-decoration:none">CookieBouncer</a>
-  <span style="margin:0 6px;opacity:.3">·</span>
-  <a href="https://errorfect.com" style="color:rgba(255,255,255,.6);text-decoration:none">Errorfect</a>
-  <span style="margin:0 6px;opacity:.3">·</span>
-  <a href="https://acepaste.xyz" style="color:rgba(255,255,255,.6);text-decoration:none">Acepaste</a>
-</footer>
-  </body>
+  <script src="./script.js" type="module"></script>
+</body>
 </html>
