@@ -1,21 +1,30 @@
 [
   {
-    "id": "ART-B003834B",
-    "sku": "ART-B003834B",
-    "title": "Tintbus",
+    "id": "BRC-NAT-B003834B",
+    "sku": "BRC-NAT-B003834B",
+    "title": "Shorelight Bloom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#01d4f8",
+      "#01defc",
+      "#01caf4",
       "#01b3e7",
-      "#0193d1",
+      "#019bd7",
+      "#018aca",
       "#0165ac"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#01defc"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#0165ac"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -24,11 +33,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -51,30 +60,51 @@
       "gradient_ratio": 0.0449,
       "detail_frequency": 0.1251,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4922,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "Tintbus.JPG",
-    "timestamp": "2026-03-27T04:49:15.999451"
+    "timestamp": "2026-03-28T07:34:22.470771"
   },
   {
-    "id": "ART-FF5B7063",
-    "sku": "ART-FF5B7063",
-    "title": "Stream Mirror Actors",
+    "id": "BRC-INT-FF5B7063",
+    "sku": "BRC-INT-FF5B7063",
+    "title": "Phantasm Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a1a397",
-      "#6b4e55",
+      "#bcc4b2",
+      "#86827d",
+      "#935362",
+      "#444948",
       "#46232a",
       "#0a0707"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bcc4b2"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#86827d"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#444948"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#0a0707"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -83,11 +113,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -110,43 +140,65 @@
       "gradient_ratio": 0.0515,
       "detail_frequency": 0.678,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2998,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "Stream-mirror-actors.JPG",
-    "timestamp": "2026-03-27T04:49:15.987451"
+    "timestamp": "2026-03-28T07:34:22.460772"
   },
   {
-    "id": "ART-8A947383",
-    "sku": "ART-8A947383",
-    "title": "Untitled (IMG_5392)",
+    "id": "BRC-PHO-8A947383",
+    "sku": "BRC-PHO-8A947383",
+    "title": "Pyralis Mosaic",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Photography",
+    "category": "Photography",
     "colorPalette": [
-      "#cebda1",
-      "#9d8e73",
+      "#dfcab0",
+      "#bdaf91",
+      "#b1906f",
+      "#888c77",
       "#896c54",
       "#4a4b4a"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#dfcab0"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bdaf91"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#888c77"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4a4b4a"
+      }
     ],
     "bestProducts": [
       "Framed Print",
       "Canvas",
-      "Metal Print"
+      "Acrylic",
+      "Poster"
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "photography",
+      "photography",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -169,43 +221,65 @@
       "gradient_ratio": 0.0599,
       "detail_frequency": 0.7931,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4993,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": true,
     "buyUrl": "#",
     "sourceFile": "IMG_5392.jpg",
-    "timestamp": "2026-03-27T04:49:15.978451"
+    "timestamp": "2026-03-28T07:34:22.452773"
   },
   {
-    "id": "ART-F1FC261D",
-    "sku": "ART-F1FC261D",
-    "title": "Untitled (IMG_5391)",
+    "id": "BRC-PHO-F1FC261D",
+    "sku": "BRC-PHO-F1FC261D",
+    "title": "Russet Tapestry",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Photography",
+    "category": "Photography",
     "colorPalette": [
-      "#d8bfa6",
+      "#e7d6be",
+      "#c8a78d",
       "#a6806a",
-      "#81514c",
+      "#8b6153",
+      "#774144",
       "#342e36"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e7d6be"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c8a78d"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a6806a"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#342e36"
+      }
     ],
     "bestProducts": [
       "Framed Print",
       "Canvas",
-      "Metal Print"
+      "Acrylic",
+      "Poster"
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "photography",
+      "photography",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -228,43 +302,65 @@
       "gradient_ratio": 0.0599,
       "detail_frequency": 0.7519,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4625,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": true,
     "buyUrl": "#",
     "sourceFile": "IMG_5391.jpg",
-    "timestamp": "2026-03-27T04:49:15.966451"
+    "timestamp": "2026-03-28T07:34:22.441774"
   },
   {
-    "id": "ART-C2EF2340",
-    "sku": "ART-C2EF2340",
-    "title": "Untitled (IMG_5390)",
+    "id": "BRC-PHO-C2EF2340",
+    "sku": "BRC-PHO-C2EF2340",
+    "title": "Pyralis Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Photography",
+    "category": "Photography",
     "colorPalette": [
-      "#c4b099",
+      "#d7c6af",
+      "#b19a83",
       "#8e7965",
-      "#634c3f",
+      "#6c5947",
+      "#593f36",
       "#312c29"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d7c6af"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b19a83"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8e7965"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#593f36"
+      }
     ],
     "bestProducts": [
       "Framed Print",
       "Canvas",
-      "Metal Print"
+      "Acrylic",
+      "Poster"
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "photography",
+      "photography",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -287,43 +383,65 @@
       "gradient_ratio": 0.06,
       "detail_frequency": 0.8385,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4149,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": true,
     "buyUrl": "#",
     "sourceFile": "IMG_5390.jpg",
-    "timestamp": "2026-03-27T04:49:15.959451"
+    "timestamp": "2026-03-28T07:34:22.436775"
   },
   {
-    "id": "ART-E7F325F0",
-    "sku": "ART-E7F325F0",
-    "title": "Untitled (IMG_5389)",
+    "id": "BRC-PHO-E7F325F0",
+    "sku": "BRC-PHO-E7F325F0",
+    "title": "Copperwynd Assemblage",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Photography",
+    "category": "Photography",
     "colorPalette": [
-      "#dbcab3",
-      "#9f846c",
+      "#e1d0b9",
+      "#d5c4ac",
+      "#ae957c",
+      "#90725b",
       "#754d42",
       "#3f2829"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e1d0b9"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#ae957c"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#90725b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#3f2829"
+      }
     ],
     "bestProducts": [
       "Framed Print",
       "Canvas",
-      "Metal Print"
+      "Acrylic",
+      "Poster"
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "photography",
+      "photography",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -346,43 +464,60 @@
       "gradient_ratio": 0.061,
       "detail_frequency": 0.7265,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4618,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": true,
     "buyUrl": "#",
     "sourceFile": "IMG_5389.jpg",
-    "timestamp": "2026-03-27T04:49:15.948451"
+    "timestamp": "2026-03-28T07:34:22.427776"
   },
   {
-    "id": "ART-AA34E2B1",
-    "sku": "ART-AA34E2B1",
-    "title": "Untitled (IMG_5387)",
+    "id": "BRC-PHO-AA34E2B1",
+    "sku": "BRC-PHO-AA34E2B1",
+    "title": "Copperwynd Palimpsest",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Photography",
+    "category": "Photography",
     "colorPalette": [
-      "#c2b398",
-      "#90806a",
+      "#d1c4a9",
+      "#b2a287",
+      "#a1876e",
+      "#807966",
       "#764b43",
       "#362c2c"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#d1c4a9"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a1876e"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#362c2c"
+      }
     ],
     "bestProducts": [
       "Framed Print",
       "Canvas",
-      "Metal Print"
+      "Acrylic",
+      "Poster"
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "photography",
+      "photography",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -405,30 +540,51 @@
       "gradient_ratio": 0.0589,
       "detail_frequency": 0.8238,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4289,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": true,
     "buyUrl": "#",
     "sourceFile": "IMG_5387.jpg",
-    "timestamp": "2026-03-27T04:49:15.941451"
+    "timestamp": "2026-03-28T07:34:22.422776"
   },
   {
-    "id": "ART-47E261B8",
-    "sku": "ART-47E261B8",
-    "title": "Untitled (IMG_5184)",
+    "id": "BRC-NAT-47E261B8",
+    "sku": "BRC-NAT-47E261B8",
+    "title": "Grimshaw Tapestry",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#8d7593",
+      "#a893b4",
+      "#715772",
       "#50374b",
-      "#2d172e",
+      "#3e1a38",
+      "#1c1424",
       "#090914"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a893b4"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#715772"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#50374b"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#1c1424"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -437,11 +593,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -464,30 +620,56 @@
       "gradient_ratio": 0.0556,
       "detail_frequency": 0.5154,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2528,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_5184.jpg",
-    "timestamp": "2026-03-27T04:49:15.934451"
+    "timestamp": "2026-03-28T07:34:22.417777"
   },
   {
-    "id": "ART-BB3A4848",
-    "sku": "ART-BB3A4848",
-    "title": "Untitled (IMG_5183)",
+    "id": "BRC-INT-BB3A4848",
+    "sku": "BRC-INT-BB3A4848",
+    "title": "Etherveil Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d9dbd7",
-      "#7aa1bb",
+      "#efece2",
+      "#c3c9cc",
+      "#a3a19f",
+      "#51a1d7",
       "#626577",
       "#3b2e36"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#efece2"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#c3c9cc"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a3a19f"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#626577"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#3b2e36"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -496,11 +678,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -523,30 +705,56 @@
       "gradient_ratio": 0.0621,
       "detail_frequency": 0.611,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5252,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_5183.jpg",
-    "timestamp": "2026-03-27T04:49:15.933451"
+    "timestamp": "2026-03-28T07:34:22.416777"
   },
   {
-    "id": "ART-108379DA",
-    "sku": "ART-108379DA",
-    "title": "Untitled (IMG_5182)",
+    "id": "BRC-NAT-108379DA",
+    "sku": "BRC-NAT-108379DA",
+    "title": "Lucent Tangle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#bbc2c0",
+      "#d7cbbe",
+      "#9fbac2",
       "#8a8a8a",
-      "#4d4955",
+      "#6a504c",
+      "#2f415e",
       "#1e161e"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d7cbbe"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#9fbac2"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8a8a8a"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#2f415e"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#1e161e"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -555,11 +763,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -582,30 +790,46 @@
       "gradient_ratio": 0.0583,
       "detail_frequency": 0.5499,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4288,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_5182.jpg",
-    "timestamp": "2026-03-27T04:49:15.931451"
+    "timestamp": "2026-03-28T07:34:22.415777"
   },
   {
-    "id": "ART-843871D1",
-    "sku": "ART-843871D1",
-    "title": "Untitled (IMG_4361)",
+    "id": "BRC-NAT-843871D1",
+    "sku": "BRC-NAT-843871D1",
+    "title": "Sanguine Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#81a660",
+      "#b5a57a",
+      "#4ca845",
       "#836963",
-      "#a52d45",
+      "#a9444c",
+      "#a1153e",
       "#31284d"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b5a57a"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#4ca845"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#31284d"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -614,11 +838,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -641,30 +865,46 @@
       "gradient_ratio": 0.057,
       "detail_frequency": 0.5955,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3836,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4361.PNG",
-    "timestamp": "2026-03-27T04:49:15.930451"
+    "timestamp": "2026-03-28T07:34:22.413777"
   },
   {
-    "id": "ART-209F4508",
-    "sku": "ART-209F4508",
-    "title": "Untitled (IMG_4354)",
+    "id": "BRC-NAT-209F4508",
+    "sku": "BRC-NAT-209F4508",
+    "title": "Penumbral Branchweave",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#827050",
-      "#6e253f",
+      "#8a8e56",
+      "#795149",
+      "#8b2335",
+      "#50274a",
       "#69122e",
       "#150529"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8a8e56"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#8b2335"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#150529"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -673,11 +913,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -700,30 +940,56 @@
       "gradient_ratio": 0.0556,
       "detail_frequency": 0.4914,
       "contrast_range": 0.9255,
+      "avg_luminance": 0.2533,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4354.PNG",
-    "timestamp": "2026-03-27T04:49:15.862451"
+    "timestamp": "2026-03-28T07:34:22.346785"
   },
   {
-    "id": "ART-A7758179",
-    "sku": "ART-A7758179",
-    "title": "Untitled (IMG_4321)",
+    "id": "BRC-NAT-A7758179",
+    "sku": "BRC-NAT-A7758179",
+    "title": "Lumen Bloom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#e2e6d0",
+      "#ecf7e6",
+      "#d9d5b8",
       "#84cdca",
-      "#848e7f",
+      "#af9074",
+      "#598c8b",
       "#605842"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#ecf7e6"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d9d5b8"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#84cdca"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#598c8b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#605842"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -732,11 +998,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -759,30 +1025,51 @@
       "gradient_ratio": 0.0622,
       "detail_frequency": 0.3841,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6077,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4321.PNG",
-    "timestamp": "2026-03-27T04:49:15.822450"
+    "timestamp": "2026-03-28T07:34:22.315789"
   },
   {
-    "id": "ART-86D77DC3",
-    "sku": "ART-86D77DC3",
-    "title": "Untitled (IMG_4293)",
+    "id": "BRC-INT-86D77DC3",
+    "sku": "BRC-INT-86D77DC3",
+    "title": "Dawnspar Vortex",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#97b7d6",
-      "#6b6cb3",
+      "#c3c3e4",
+      "#6baac8",
+      "#9e6eca",
+      "#396b9b",
       "#6b3196",
       "#112260"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#c3c3e4"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#6baac8"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#396b9b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#112260"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -791,11 +1078,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -818,30 +1105,51 @@
       "gradient_ratio": 0.0585,
       "detail_frequency": 0.7563,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4569,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4293.PNG",
-    "timestamp": "2026-03-27T04:49:15.646449"
+    "timestamp": "2026-03-28T07:34:22.138808"
   },
   {
-    "id": "ART-F848E811",
-    "sku": "ART-F848E811",
-    "title": "Untitled (IMG_4292)",
+    "id": "BRC-INT-F848E811",
+    "sku": "BRC-INT-F848E811",
+    "title": "Glintmere Maelstrom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a3b6d6",
+      "#b5d0e0",
+      "#909bcb",
       "#726db0",
-      "#613791",
+      "#803b9e",
+      "#423385",
       "#15205c"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#b5d0e0"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#909bcb"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#803b9e"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#15205c"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -850,11 +1158,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -877,30 +1185,46 @@
       "gradient_ratio": 0.0596,
       "detail_frequency": 0.7354,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4585,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4292.jpg",
-    "timestamp": "2026-03-27T04:49:15.568449"
+    "timestamp": "2026-03-28T07:34:22.075815"
   },
   {
-    "id": "ART-44DF47A0",
-    "sku": "ART-44DF47A0",
-    "title": "Untitled (IMG_4221)",
+    "id": "BRC-INT-44DF47A0",
+    "sku": "BRC-INT-44DF47A0",
+    "title": "Chandral Kaleidoscope",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#999d92",
+      "#adb19b",
+      "#848989",
       "#6c6e76",
-      "#574b66",
+      "#595768",
+      "#553f63",
       "#323556"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#adb19b"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#848989"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#553f63"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -909,11 +1233,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -936,30 +1260,51 @@
       "gradient_ratio": 0.0609,
       "detail_frequency": 0.7505,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4093,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4221.jpg",
-    "timestamp": "2026-03-27T04:49:15.565449"
+    "timestamp": "2026-03-28T07:34:22.072816"
   },
   {
-    "id": "ART-7DAC6C6D",
-    "sku": "ART-7DAC6C6D",
-    "title": "Untitled (IMG_4207)",
+    "id": "BRC-INT-7DAC6C6D",
+    "sku": "BRC-INT-7DAC6C6D",
+    "title": "Solace Mosaic",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d7e2ce",
+      "#ecebdd",
+      "#c3d8bf",
       "#b2b79f",
-      "#9a9582",
+      "#ab9884",
+      "#899380",
       "#86706b"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#ecebdd"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#c3d8bf"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b2b79f"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#899380"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -968,11 +1313,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -995,30 +1340,46 @@
       "gradient_ratio": 0.0628,
       "detail_frequency": 0.6093,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6416,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4207.jpg",
-    "timestamp": "2026-03-27T04:49:15.562449"
+    "timestamp": "2026-03-28T07:34:22.070816"
   },
   {
-    "id": "ART-56D0E9E3",
-    "sku": "ART-56D0E9E3",
-    "title": "Untitled (IMG_3971)",
+    "id": "BRC-NAT-56D0E9E3",
+    "sku": "BRC-NAT-56D0E9E3",
+    "title": "Eidolon Bloom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d1f044",
+      "#fdf710",
+      "#a3e97b",
       "#3f859d",
-      "#562365",
+      "#85253e",
+      "#26218d",
       "#0c2a73"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#fdf710"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a3e97b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#85253e"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1027,11 +1388,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1054,30 +1415,41 @@
       "gradient_ratio": 0.0584,
       "detail_frequency": 0.4605,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4127,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3971.JPG",
-    "timestamp": "2026-03-27T04:49:15.560449"
+    "timestamp": "2026-03-28T07:34:22.069816"
   },
   {
-    "id": "ART-07E0A434",
-    "sku": "ART-07E0A434",
-    "title": "Untitled (IMG_3969)",
+    "id": "BRC-INT-07E0A434",
+    "sku": "BRC-INT-07E0A434",
+    "title": "Cimmerian Tangle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#9ba159",
+      "#baa94a",
+      "#7c9969",
       "#6f655b",
-      "#652e4a",
+      "#882c46",
+      "#41304e",
       "#131c46"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#baa94a"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#41304e"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1086,11 +1458,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1113,30 +1485,46 @@
       "gradient_ratio": 0.057,
       "detail_frequency": 0.6698,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3432,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3969.PNG",
-    "timestamp": "2026-03-27T04:49:15.507448"
+    "timestamp": "2026-03-28T07:34:22.015817"
   },
   {
-    "id": "ART-DC253D43",
-    "sku": "ART-DC253D43",
-    "title": "Untitled (IMG_3830)",
+    "id": "BRC-LUM-DC253D43",
+    "sku": "BRC-LUM-DC253D43",
+    "title": "Lumen Rhizome",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Luminos",
+    "category": "Art Prints",
     "colorPalette": [
       "#ffffff",
+      "#fffffd",
+      "#fffefe",
       "#f8fefd",
       "#b89be0",
       "#360655"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b89be0"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#360655"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1145,11 +1533,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "luminos",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1172,30 +1560,41 @@
       "gradient_ratio": 0.0941,
       "detail_frequency": 0.3294,
       "contrast_range": 1.0,
+      "avg_luminance": 0.7623,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3830.jpg",
-    "timestamp": "2026-03-27T04:49:15.468448"
+    "timestamp": "2026-03-28T07:34:21.978817"
   },
   {
-    "id": "ART-0D48D159",
-    "sku": "ART-0D48D159",
-    "title": "Untitled (IMG_3385)",
+    "id": "BRC-NAT-0D48D159",
+    "sku": "BRC-NAT-0D48D159",
+    "title": "Alabast Undergrowth",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#b4be8d",
+      "#cbda90",
+      "#9da28a",
       "#1bb2c5",
-      "#5d7a94",
+      "#817b90",
+      "#387998",
       "#434ea7"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#cbda90"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#1bb2c5"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1204,11 +1603,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1231,30 +1630,46 @@
       "gradient_ratio": 0.0592,
       "detail_frequency": 0.4595,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5193,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3385.PNG",
-    "timestamp": "2026-03-27T04:49:15.466448"
+    "timestamp": "2026-03-28T07:34:21.975817"
   },
   {
-    "id": "ART-CEEC5965",
-    "sku": "ART-CEEC5965",
-    "title": "Untitled (IMG_3309)",
+    "id": "BRC-NAT-CEEC5965",
+    "sku": "BRC-NAT-CEEC5965",
+    "title": "Sepulchre Tendril",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
       "#535f60",
       "#232329",
       "#020203",
+      "#010001",
+      "#000001",
       "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#535f60"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#232329"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#020203"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1263,11 +1678,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1290,30 +1705,46 @@
       "gradient_ratio": 0.03,
       "detail_frequency": 0.4013,
       "contrast_range": 0.9412,
+      "avg_luminance": 0.1275,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3309.jpg",
-    "timestamp": "2026-03-27T04:49:15.262447"
+    "timestamp": "2026-03-28T07:34:21.768818"
   },
   {
-    "id": "ART-3D050726",
-    "sku": "ART-3D050726",
-    "title": "Untitled (IMG_3290)",
+    "id": "BRC-NAT-3D050726",
+    "sku": "BRC-NAT-3D050726",
+    "title": "Nyx Lichen",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#493f3a",
+      "#a09f77",
+      "#414159",
+      "#210e0b",
       "#010000",
       "#000002",
       "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a09f77"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#414159"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#210e0b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1322,11 +1753,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1349,30 +1780,46 @@
       "gradient_ratio": 0.0077,
       "detail_frequency": 0.2937,
       "contrast_range": 0.8784,
+      "avg_luminance": 0.044,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3290.jpg",
-    "timestamp": "2026-03-27T04:49:15.254447"
+    "timestamp": "2026-03-28T07:34:21.760818"
   },
   {
-    "id": "ART-D2BEA999",
-    "sku": "ART-D2BEA999",
-    "title": "Untitled (IMG_3087)",
+    "id": "BRC-NAT-D2BEA999",
+    "sku": "BRC-NAT-D2BEA999",
+    "title": "Hearthstone Kaleidoscope",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d1b080",
-      "#bb426b",
+      "#dddf87",
+      "#c48279",
+      "#e63e5c",
+      "#8e467b",
       "#ad2450",
       "#230c47"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#dddf87"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8e467b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#230c47"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1381,11 +1828,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1408,30 +1855,41 @@
       "gradient_ratio": 0.0522,
       "detail_frequency": 0.5808,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4231,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3087.PNG",
-    "timestamp": "2026-03-27T04:49:15.253447"
+    "timestamp": "2026-03-28T07:34:21.760818"
   },
   {
-    "id": "ART-95A558B7",
-    "sku": "ART-95A558B7",
-    "title": "Untitled (IMG_2697)",
+    "id": "BRC-INT-95A558B7",
+    "sku": "BRC-INT-95A558B7",
+    "title": "Burnveil Labyrinth",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d0d085",
+      "#e0d382",
+      "#bfcc89",
       "#bcb67e",
-      "#b09d67",
+      "#c29f67",
+      "#9d9b68",
       "#957055"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#e0d382"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9d9b68"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1440,11 +1898,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1467,30 +1925,51 @@
       "gradient_ratio": 0.0596,
       "detail_frequency": 0.7538,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_2697.jpg",
-    "timestamp": "2026-03-27T04:49:15.212446"
+    "timestamp": "2026-03-28T07:34:21.727818"
   },
   {
-    "id": "ART-5F9C0977",
-    "sku": "ART-5F9C0977",
-    "title": "Untitled (IMG_2696)",
+    "id": "BRC-INT-5F9C0977",
+    "sku": "BRC-INT-5F9C0977",
+    "title": "Seraphine Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#cade95",
+      "#f2ec8e",
+      "#a0d09c",
       "#8d8c98",
-      "#5e3c63",
+      "#66546b",
+      "#57235a",
       "#142a50"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#f2ec8e"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a0d09c"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#66546b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#57235a"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1499,11 +1978,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1526,30 +2005,51 @@
       "gradient_ratio": 0.0627,
       "detail_frequency": 0.7824,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4596,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_2696.jpg",
-    "timestamp": "2026-03-27T04:49:15.178446"
+    "timestamp": "2026-03-28T07:34:21.695818"
   },
   {
-    "id": "ART-7BB0770F",
-    "sku": "ART-7BB0770F",
-    "title": "Untitled (IMG_2645)",
+    "id": "BRC-NAT-7BB0770F",
+    "sku": "BRC-NAT-7BB0770F",
+    "title": "Chandral Tangle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#b4af8d",
+      "#c9c79d",
+      "#9e977c",
       "#716a60",
-      "#45394b",
+      "#4b454c",
+      "#3e2d4b",
       "#131821"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c9c79d"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#716a60"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4b454c"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#131821"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1558,11 +2058,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1585,30 +2085,41 @@
       "gradient_ratio": 0.0579,
       "detail_frequency": 0.5509,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3575,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_2645.PNG",
-    "timestamp": "2026-03-27T04:49:15.153446"
+    "timestamp": "2026-03-28T07:34:21.669818"
   },
   {
-    "id": "ART-BC06A3AC",
-    "sku": "ART-BC06A3AC",
-    "title": "F95465A8 E9A1 4534 91Ea 2E83503295A4",
+    "id": "BRC-NAT-BC06A3AC",
+    "sku": "BRC-NAT-BC06A3AC",
+    "title": "Chandral Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a1aaa6",
+      "#aabbab",
+      "#9797a2",
       "#3da5ba",
-      "#5577a5",
+      "#77799f",
+      "#3276ac",
       "#464d97"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#aabbab"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#3da5ba"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1617,11 +2128,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1644,30 +2155,41 @@
       "gradient_ratio": 0.0601,
       "detail_frequency": 0.5969,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5157,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "F95465A8-E9A1-4534-91EA-2E83503295A4.JPEG",
-    "timestamp": "2026-03-27T04:49:15.149446"
+    "timestamp": "2026-03-28T07:34:21.666818"
   },
   {
-    "id": "ART-5656090B",
-    "sku": "ART-5656090B",
-    "title": "F7B49A62 2971 4011 8A1E 07D2E957B7D9",
+    "id": "BRC-NAT-5656090B",
+    "sku": "BRC-NAT-5656090B",
+    "title": "Crysthene Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#4495d7",
-      "#2095e2",
+      "#4c9bd8",
+      "#3b8ed5",
+      "#1f9be5",
+      "#218fde",
       "#3084d3",
       "#2a4a98"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#4c9bd8"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#3b8ed5"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1676,11 +2198,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1703,30 +2225,36 @@
       "gradient_ratio": 0.0619,
       "detail_frequency": 0.5025,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4931,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "F7B49A62-2971-4011-8A1E-07D2E957B7D9.JPEG",
-    "timestamp": "2026-03-27T04:49:15.143446"
+    "timestamp": "2026-03-28T07:34:21.662818"
   },
   {
-    "id": "ART-8A3E5A30",
-    "sku": "ART-8A3E5A30",
-    "title": "F44C36Ab 0992 4649 9Ccc 0538E7B1F9Be",
+    "id": "BRC-NAT-8A3E5A30",
+    "sku": "BRC-NAT-8A3E5A30",
+    "title": "Tenebris Undergrowth",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
       "#4901cd",
       "#3201d2",
-      "#1c02df",
+      "#1704db",
+      "#1c01f9",
+      "#2001c5",
       "#1e00e2"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#4901cd"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1735,11 +2263,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1762,30 +2290,46 @@
       "gradient_ratio": 0.0454,
       "detail_frequency": 0.3459,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3424,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "F44C36AB-0992-4649-9CCC-0538E7B1F9BE.JPG",
-    "timestamp": "2026-03-27T04:49:15.141446"
+    "timestamp": "2026-03-28T07:34:21.660818"
   },
   {
-    "id": "ART-D9395DBB",
-    "sku": "ART-D9395DBB",
-    "title": "F1B5768D 45De 4D04 946E Ed8A1Bf3B58F",
+    "id": "BRC-INT-D9395DBB",
+    "sku": "BRC-INT-D9395DBB",
+    "title": "Stygian Confluence",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
       "#d1a671",
       "#432a5b",
       "#060138",
-      "#000014"
+      "#000046",
+      "#000100",
+      "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#d1a671"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#432a5b"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#060138"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1794,11 +2338,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1821,30 +2365,46 @@
       "gradient_ratio": 0.0291,
       "detail_frequency": 0.6583,
       "contrast_range": 1.0,
+      "avg_luminance": 0.243,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.PNG",
-    "timestamp": "2026-03-27T04:49:15.132446"
+    "timestamp": "2026-03-28T07:34:21.651819"
   },
   {
-    "id": "ART-F1812BA8",
-    "sku": "ART-F1812BA8",
-    "title": "Eec83Cb1 Abfc 4845 8F45 E402319269E6",
+    "id": "BRC-INT-F1812BA8",
+    "sku": "BRC-INT-F1812BA8",
+    "title": "Vesper Vortex",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#8b9457",
+      "#9fac65",
+      "#787b47",
       "#4f4329",
-      "#420d07",
+      "#620c04",
+      "#210e09",
       "#010303"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9fac65"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4f4329"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#210e09"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1853,11 +2413,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1880,30 +2440,41 @@
       "gradient_ratio": 0.0384,
       "detail_frequency": 0.7491,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2149,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "EEC83CB1-ABFC-4845-8F45-E402319269E6.JPEG",
-    "timestamp": "2026-03-27T04:49:15.128446"
+    "timestamp": "2026-03-28T07:34:21.647818"
   },
   {
-    "id": "ART-78643909",
-    "sku": "ART-78643909",
-    "title": "Ed822Ff2 C4C0 469C 8F39 Fd4Bec8C62A1",
+    "id": "BRC-NAT-78643909",
+    "sku": "BRC-NAT-78643909",
+    "title": "Revenant Tangle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#896b75",
+      "#977a86",
+      "#7a5c63",
       "#654a5e",
-      "#663449",
+      "#733545",
+      "#58344d",
       "#3f2e50"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#977a86"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#654a5e"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1912,11 +2483,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1939,30 +2510,46 @@
       "gradient_ratio": 0.0608,
       "detail_frequency": 0.5286,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3434,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.JPEG",
-    "timestamp": "2026-03-27T04:49:15.125446"
+    "timestamp": "2026-03-28T07:34:21.645818"
   },
   {
-    "id": "ART-46186F7E",
-    "sku": "ART-46186F7E",
-    "title": "Eb906953 35Fe 4F74 Ab96 0Be7194B0A29",
+    "id": "BRC-INT-46186F7E",
+    "sku": "BRC-INT-46186F7E",
+    "title": "Pearlescent Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#8e868f",
-      "#6f5c90",
+      "#999990",
+      "#83718e",
+      "#8c5d91",
+      "#515b90",
       "#653a8e",
       "#221f38"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#999990"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#83718e"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#221f38"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -1971,11 +2558,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -1998,30 +2585,41 @@
       "gradient_ratio": 0.0591,
       "detail_frequency": 0.836,
       "contrast_range": 1.0,
+      "avg_luminance": 0.39,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "EB906953-35FE-4F74-AB96-0BE7194B0A29.JPG",
-    "timestamp": "2026-03-27T04:49:15.123446"
+    "timestamp": "2026-03-28T07:34:21.644819"
   },
   {
-    "id": "ART-C75EF6EA",
-    "sku": "ART-C75EF6EA",
-    "title": "Eb8E485D 9B24 4Db0 Bce8 Ac9Fc0Ebce15",
+    "id": "BRC-INT-C75EF6EA",
+    "sku": "BRC-INT-C75EF6EA",
+    "title": "Hearthstone Assemblage",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a6b72f",
-      "#9a852e",
+      "#cfb82b",
+      "#7bb534",
+      "#c28632",
+      "#72842b",
       "#b64f47",
       "#504a36"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#cfb82b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#72842b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2030,11 +2628,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2057,30 +2655,41 @@
       "gradient_ratio": 0.0607,
       "detail_frequency": 0.6787,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4156,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.JPEG",
-    "timestamp": "2026-03-27T04:49:15.072446"
+    "timestamp": "2026-03-28T07:34:21.593819"
   },
   {
-    "id": "ART-E8DDB180",
-    "sku": "ART-E8DDB180",
-    "title": "E8Ca237E 62B2 4265 8Ba6 7F4Cc21Ab133",
+    "id": "BRC-NAT-E8DDB180",
+    "sku": "BRC-NAT-E8DDB180",
+    "title": "Rime Frond",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#5397d4",
+      "#5ea6d6",
+      "#4887d2",
       "#159aea",
-      "#4b5eae",
+      "#486fca",
+      "#4e4c90",
       "#1a49a8"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#5ea6d6"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#159aea"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2089,11 +2698,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2116,30 +2725,46 @@
       "gradient_ratio": 0.0586,
       "detail_frequency": 0.4825,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4812,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "E8CA237E-62B2-4265-8BA6-7F4CC21AB133.JPEG",
-    "timestamp": "2026-03-27T04:49:15.056446"
+    "timestamp": "2026-03-28T07:34:21.577819"
   },
   {
-    "id": "ART-E2B9F448",
-    "sku": "ART-E2B9F448",
-    "title": "E5Bb47Ce 4Be4 45Ea 9D5F 269Eff82F45A",
+    "id": "BRC-INT-E2B9F448",
+    "sku": "BRC-INT-E2B9F448",
+    "title": "Lumen Chronicle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c4cc8c",
-      "#b891a0",
+      "#dbd0af",
+      "#adc868",
+      "#d29298",
+      "#9e90a8",
       "#c454c4",
       "#6f3fac"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#dbd0af"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#adc868"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#c454c4"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2148,11 +2773,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2175,30 +2800,41 @@
       "gradient_ratio": 0.0602,
       "detail_frequency": 0.6599,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6065,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.PNG",
-    "timestamp": "2026-03-27T04:49:15.054446"
+    "timestamp": "2026-03-28T07:34:21.576819"
   },
   {
-    "id": "ART-1B817A3A",
-    "sku": "ART-1B817A3A",
-    "title": "D8A8C501 17A1 435F 9F18 7153Dae6C801",
+    "id": "BRC-INT-1B817A3A",
+    "sku": "BRC-INT-1B817A3A",
+    "title": "Starhollow Nexus",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#417ebf",
+      "#7d7ec5",
+      "#067eba",
       "#8150bb",
-      "#e01e88",
+      "#dd2b95",
+      "#e3117b",
       "#8f29aa"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#7d7ec5"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#067eba"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2207,11 +2843,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2234,30 +2870,41 @@
       "gradient_ratio": 0.059,
       "detail_frequency": 0.7191,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4977,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "D8A8C501-17A1-435F-9F18-7153DAE6C801.JPEG",
-    "timestamp": "2026-03-27T04:49:15.002445"
+    "timestamp": "2026-03-28T07:34:21.533819"
   },
   {
-    "id": "ART-9EE0D039",
-    "sku": "ART-9EE0D039",
-    "title": "Cf745C11 Ec35 403F A6E0 79A18B341587",
+    "id": "BRC-NAT-9EE0D039",
+    "sku": "BRC-NAT-9EE0D039",
+    "title": "Halcyon Seedvault",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d0dbc9",
+      "#d2e4d0",
+      "#ced0c1",
       "#afdbbb",
-      "#b9beab",
+      "#c3bfac",
+      "#adbdaa",
       "#a3a39b"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d2e4d0"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c3bfac"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2266,11 +2913,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2293,30 +2940,41 @@
       "gradient_ratio": 0.0614,
       "detail_frequency": 0.4534,
       "contrast_range": 0.8078,
+      "avg_luminance": 0.733,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "CF745C11-EC35-403F-A6E0-79A18B341587.JPEG",
-    "timestamp": "2026-03-27T04:49:14.987445"
+    "timestamp": "2026-03-28T07:34:21.518819"
   },
   {
-    "id": "ART-695A8543",
-    "sku": "ART-695A8543",
-    "title": "Ca5Ac1E6 B865 4Fbc A7F6 D0Ef1423A2C2",
+    "id": "BRC-NAT-695A8543",
+    "sku": "BRC-NAT-695A8543",
+    "title": "Etherveil Petalwork",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#babea5",
+      "#bfc2a1",
+      "#b5b9ab",
       "#acb2ab",
-      "#9da194",
+      "#aaa691",
+      "#8f9d97",
       "#625e62"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bfc2a1"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#625e62"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2325,11 +2983,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2352,30 +3010,46 @@
       "gradient_ratio": 0.0626,
       "detail_frequency": 0.4113,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5973,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.JPEG",
-    "timestamp": "2026-03-27T04:49:14.976445"
+    "timestamp": "2026-03-28T07:34:21.509819"
   },
   {
-    "id": "ART-0F63CA85",
-    "sku": "ART-0F63CA85",
-    "title": "C8A7C6F1 C72C 4906 A153 E1642A54E19B",
+    "id": "BRC-NAT-0F63CA85",
+    "sku": "BRC-NAT-0F63CA85",
+    "title": "Chandral Vortex",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#bfd0ae",
-      "#97cab6",
+      "#c3d8b6",
+      "#bbc8a7",
+      "#a4cbb2",
+      "#8ac9ba",
       "#98b4a0",
       "#749289"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#c3d8b6"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bbc8a7"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#749289"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2384,11 +3058,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2411,30 +3085,46 @@
       "gradient_ratio": 0.0608,
       "detail_frequency": 0.5285,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6566,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "C8A7C6F1-C72C-4906-A153-E1642A54E19B.JPEG",
-    "timestamp": "2026-03-27T04:49:14.975445"
+    "timestamp": "2026-03-28T07:34:21.508819"
   },
   {
-    "id": "ART-78D20D9E",
-    "sku": "ART-78D20D9E",
-    "title": "C7740735 538A 41D4 8D16 342804C3C984",
+    "id": "BRC-INT-78D20D9E",
+    "sku": "BRC-INT-78D20D9E",
+    "title": "Eidolon Vortex",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#e9c6c9",
+      "#ece0d3",
+      "#e5abbf",
       "#99c0e0",
-      "#ac84b9",
+      "#d684ae",
+      "#8183c5",
       "#9b589a"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#ece0d3"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#99c0e0"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9b589a"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2443,11 +3133,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2470,30 +3160,41 @@
       "gradient_ratio": 0.0693,
       "detail_frequency": 0.6458,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6831,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "C7740735-538A-41D4-8D16-342804C3C984.JPEG",
-    "timestamp": "2026-03-27T04:49:14.973445"
+    "timestamp": "2026-03-28T07:34:21.507819"
   },
   {
-    "id": "ART-2CE9FFD9",
-    "sku": "ART-2CE9FFD9",
-    "title": "C46315D4 2A39 4Bd3 84Db 983Ba9Fa0074",
+    "id": "BRC-NAT-2CE9FFD9",
+    "sku": "BRC-NAT-2CE9FFD9",
+    "title": "Etherveil Thicket",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#aab189",
+      "#b1b66f",
+      "#a2aba9",
       "#9da6aa",
-      "#969fa3",
+      "#9da09a",
+      "#8e9ead",
       "#6a6367"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b1b66f"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#6a6367"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2502,11 +3203,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2529,30 +3230,46 @@
       "gradient_ratio": 0.0611,
       "detail_frequency": 0.4029,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5762,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "C46315D4-2A39-4BD3-84DB-983BA9FA0074.JPEG",
-    "timestamp": "2026-03-27T04:49:14.967445"
+    "timestamp": "2026-03-28T07:34:21.502819"
   },
   {
-    "id": "ART-7FD39F92",
-    "sku": "ART-7FD39F92",
-    "title": "C2F57E14 9Db5 485B B9B9 4B8Bd3Ebf0F0",
+    "id": "BRC-NAT-7FD39F92",
+    "sku": "BRC-NAT-7FD39F92",
+    "title": "Etherveil Nexus",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#ced6b3",
-      "#5bd1b8",
+      "#d6edb7",
+      "#c6bfaf",
+      "#5ee8bd",
+      "#59b8b3",
       "#7d969a",
       "#8159a1"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d6edb7"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c6bfaf"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#59b8b3"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2561,11 +3278,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2588,30 +3305,51 @@
       "gradient_ratio": 0.064,
       "detail_frequency": 0.583,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6194,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.JPEG",
-    "timestamp": "2026-03-27T04:49:14.966445"
+    "timestamp": "2026-03-28T07:34:21.501819"
   },
   {
-    "id": "ART-9317A779",
-    "sku": "ART-9317A779",
-    "title": "C2A09830 Eef8 4F3E Bc68 D76B96Ce3658",
+    "id": "BRC-INT-9317A779",
+    "sku": "BRC-INT-9317A779",
+    "title": "Glintmere Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c4cfd6",
+      "#cbe3e8",
+      "#bdbbc3",
       "#90b6b8",
-      "#74817c",
+      "#898585",
+      "#5e7d73",
       "#424340"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#cbe3e8"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bdbbc3"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#898585"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#424340"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2620,11 +3358,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2647,30 +3385,46 @@
       "gradient_ratio": 0.061,
       "detail_frequency": 0.7638,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5545,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "C2A09830-EEF8-4F3E-BC68-D76B96CE3658.PNG",
-    "timestamp": "2026-03-27T04:49:14.964445"
+    "timestamp": "2026-03-28T07:34:21.499819"
   },
   {
-    "id": "ART-0B74339A",
-    "sku": "ART-0B74339A",
-    "title": "C0190Aff 6596 4359 8F1F 4900663Fcfa1",
+    "id": "BRC-NAT-0B74339A",
+    "sku": "BRC-NAT-0B74339A",
+    "title": "Seraphine Mosaic",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#68a078",
-      "#5f6388",
+      "#62b969",
+      "#6f8787",
+      "#7f6598",
+      "#406079",
       "#702c85",
       "#1c206b"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#62b969"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#6f8787"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#702c85"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2679,11 +3433,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2706,30 +3460,56 @@
       "gradient_ratio": 0.0582,
       "detail_frequency": 0.5985,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3835,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "C0190AFF-6596-4359-8F1F-4900663FCFA1.JPEG",
-    "timestamp": "2026-03-27T04:49:14.927445"
+    "timestamp": "2026-03-28T07:34:21.469819"
   },
   {
-    "id": "ART-2F6DA352",
-    "sku": "ART-2F6DA352",
-    "title": "Behind",
+    "id": "BRC-NAT-2F6DA352",
+    "sku": "BRC-NAT-2F6DA352",
+    "title": "Cimmerian Canopy",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#b8bbce",
-      "#4f4a6c",
+      "#d3e3e4",
+      "#9c92b9",
+      "#6e5580",
+      "#2f3e57",
       "#3b1e39",
       "#13111c"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d3e3e4"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#9c92b9"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#6e5580"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#2f3e57"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#13111c"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2738,11 +3518,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2765,30 +3545,41 @@
       "gradient_ratio": 0.058,
       "detail_frequency": 0.4911,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3496,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "Behind.JPEG",
-    "timestamp": "2026-03-27T04:49:14.922445"
+    "timestamp": "2026-03-28T07:34:21.465819"
   },
   {
-    "id": "ART-FFAAA749",
-    "sku": "ART-FFAAA749",
-    "title": "Bfbd99F9 E59F 47C4 A541 87397C5D8931",
+    "id": "BRC-NAT-FFAAA749",
+    "sku": "BRC-NAT-FFAAA749",
+    "title": "Flamecrest Helix",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a09e53",
+      "#abad58",
+      "#958e4e",
       "#817646",
-      "#745c3b",
+      "#845d34",
+      "#635b43",
       "#663a33"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#abad58"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#635b43"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2797,11 +3588,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2824,30 +3615,46 @@
       "gradient_ratio": 0.0611,
       "detail_frequency": 0.464,
       "contrast_range": 0.9098,
+      "avg_luminance": 0.3926,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "BFBD99F9-E59F-47C4-A541-87397C5D8931.JPEG",
-    "timestamp": "2026-03-27T04:49:14.920445"
+    "timestamp": "2026-03-28T07:34:21.463819"
   },
   {
-    "id": "ART-1EB46DCF",
-    "sku": "ART-1EB46DCF",
-    "title": "Bae460B1 E1F6 4590 9Fe9 41D1840Bff36",
+    "id": "BRC-NAT-1EB46DCF",
+    "sku": "BRC-NAT-1EB46DCF",
+    "title": "Luminesce Rhizome",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#bcbf9e",
-      "#a3a589",
+      "#c1c499",
+      "#b5b7a5",
+      "#aeab84",
+      "#979e8e",
       "#82847c",
       "#4c4b56"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c1c499"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#82847c"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4c4b56"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2856,11 +3663,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2883,30 +3690,41 @@
       "gradient_ratio": 0.0627,
       "detail_frequency": 0.4174,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5316,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "BAE460B1-E1F6-4590-9FE9-41D1840BFF36.JPEG",
-    "timestamp": "2026-03-27T04:49:14.916445"
+    "timestamp": "2026-03-28T07:34:21.459819"
   },
   {
-    "id": "ART-25D6FD93",
-    "sku": "ART-25D6FD93",
-    "title": "Af6693Cf 23Ae 496A 9128 A34D47C51057",
+    "id": "BRC-NAT-25D6FD93",
+    "sku": "BRC-NAT-25D6FD93",
+    "title": "Wintermere Undergrowth",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#4099e8",
+      "#499ee6",
+      "#3693ea",
       "#1f98ec",
-      "#2b8ae7",
+      "#368be6",
+      "#2089e8",
       "#304b97"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#499ee6"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#1f98ec"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2915,11 +3733,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -2942,30 +3760,41 @@
       "gradient_ratio": 0.0578,
       "detail_frequency": 0.4314,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5108,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AF6693CF-23AE-496A-9128-A34D47C51057.JPEG",
-    "timestamp": "2026-03-27T04:49:14.914445"
+    "timestamp": "2026-03-28T07:34:21.458819"
   },
   {
-    "id": "ART-0DA08BE9",
-    "sku": "ART-0DA08BE9",
-    "title": "Af6693Cf 23Ae 496A 9128 A34D47C51057 2",
+    "id": "BRC-NAT-0DA08BE9",
+    "sku": "BRC-NAT-0DA08BE9",
+    "title": "Pelagic Frond",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#4099e8",
+      "#499ee6",
+      "#3693ea",
       "#1f98ec",
-      "#2b8ae7",
+      "#368be6",
+      "#2089e8",
       "#304b97"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#499ee6"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#1f98ec"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -2974,11 +3803,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3001,30 +3830,41 @@
       "gradient_ratio": 0.0578,
       "detail_frequency": 0.4314,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5108,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AF6693CF-23AE-496A-9128-A34D47C51057 2.JPEG",
-    "timestamp": "2026-03-27T04:49:14.913445"
+    "timestamp": "2026-03-28T07:34:21.457819"
   },
   {
-    "id": "ART-C7DD50FD",
-    "sku": "ART-C7DD50FD",
-    "title": "Aec1D9B3 B9Db 4190 9Ab3 795D6E3Daab2",
+    "id": "BRC-NAT-C7DD50FD",
+    "sku": "BRC-NAT-C7DD50FD",
+    "title": "Sepulchre Maelstrom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c7d520",
+      "#d6e324",
+      "#b8c71d",
       "#709a21",
-      "#384437",
+      "#484a38",
+      "#273d36",
       "#1c1d2e"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#d6e324"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#484a38"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3033,11 +3873,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3060,30 +3900,41 @@
       "gradient_ratio": 0.0628,
       "detail_frequency": 0.57,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3359,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.JPEG",
-    "timestamp": "2026-03-27T04:49:14.912445"
+    "timestamp": "2026-03-28T07:34:21.456819"
   },
   {
-    "id": "ART-F6FE587B",
-    "sku": "ART-F6FE587B",
-    "title": "Ae948792 02E2 4443 B1A4 28Ca422F79A3",
+    "id": "BRC-NAT-F6FE587B",
+    "sku": "BRC-NAT-F6FE587B",
+    "title": "Gloaming Canopy",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
       "#5a4539",
       "#2b121f",
       "#13010a",
-      "#000001"
+      "#00000a",
+      "#000100",
+      "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#5a4539"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#2b121f"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3092,11 +3943,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3119,30 +3970,41 @@
       "gradient_ratio": 0.0304,
       "detail_frequency": 0.4659,
       "contrast_range": 0.9137,
+      "avg_luminance": 0.1106,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AE948792-02E2-4443-B1A4-28CA422F79A3.JPEG",
-    "timestamp": "2026-03-27T04:49:14.899445"
+    "timestamp": "2026-03-28T07:34:21.444819"
   },
   {
-    "id": "ART-40BB53C1",
-    "sku": "ART-40BB53C1",
-    "title": "Ac6232A5 Ac25 4397 8730 138C47059Cb6",
+    "id": "BRC-INT-40BB53C1",
+    "sku": "BRC-INT-40BB53C1",
+    "title": "Halcyon Kaleidoscope",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a38593",
+      "#bc8a86",
+      "#8981a0",
       "#906c8b",
-      "#a35574",
+      "#a35d7a",
+      "#a34c6d",
       "#72538a"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bc8a86"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#906c8b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3151,11 +4013,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3178,30 +4040,51 @@
       "gradient_ratio": 0.061,
       "detail_frequency": 0.6186,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5018,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AC6232A5-AC25-4397-8730-138C47059CB6.PNG",
-    "timestamp": "2026-03-27T04:49:14.858444"
+    "timestamp": "2026-03-28T07:34:21.402820"
   },
   {
-    "id": "ART-54094D55",
-    "sku": "ART-54094D55",
-    "title": "Ab1Ccdca D075 4Db5 Bc09 F6760Ce39B21",
+    "id": "BRC-NAT-54094D55",
+    "sku": "BRC-NAT-54094D55",
+    "title": "Chandral Lichen",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#e3f8e8",
+      "#e4fbee",
+      "#e2f6e1",
       "#bae2cd",
-      "#94ab9f",
+      "#bbad90",
+      "#6caaaf",
       "#5c6f81"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#e4fbee"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#bae2cd"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bbad90"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#5c6f81"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3210,11 +4093,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3237,30 +4120,51 @@
       "gradient_ratio": 0.0604,
       "detail_frequency": 0.426,
       "contrast_range": 0.9098,
+      "avg_luminance": 0.7003,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.JPEG",
-    "timestamp": "2026-03-27T04:49:14.845444"
+    "timestamp": "2026-03-28T07:34:21.393820"
   },
   {
-    "id": "ART-8F54BA1F",
-    "sku": "ART-8F54BA1F",
-    "title": "A7829018 Af75 4338 A297 C0E538536188",
+    "id": "BRC-INT-8F54BA1F",
+    "sku": "BRC-INT-8F54BA1F",
+    "title": "Stygian Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d59541",
+      "#eaad43",
+      "#c17d40",
       "#6f4749",
       "#190b34",
-      "#000007"
+      "#00001b",
+      "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#eaad43"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#c17d40"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#190b34"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#00001b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3269,11 +4173,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3296,30 +4200,46 @@
       "gradient_ratio": 0.037,
       "detail_frequency": 0.7635,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2508,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "A7829018-AF75-4338-A297-C0E538536188.PNG",
-    "timestamp": "2026-03-27T04:49:14.821444"
+    "timestamp": "2026-03-28T07:34:21.369820"
   },
   {
-    "id": "ART-F3653351",
-    "sku": "ART-F3653351",
-    "title": "9A6Ebb9B 9C13 4Ada B273 23Eae4C74415",
+    "id": "BRC-NAT-F3653351",
+    "sku": "BRC-NAT-F3653351",
+    "title": "Penumbral Canopy",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#4f7d83",
+      "#598f8d",
+      "#456a78",
       "#3a414c",
-      "#9a0a07",
+      "#e70902",
+      "#4d0c0d",
       "#0e0a0a"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#598f8d"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#3a414c"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#0e0a0a"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3328,11 +4248,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3355,30 +4275,46 @@
       "gradient_ratio": 0.0484,
       "detail_frequency": 0.3958,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2431,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.PNG",
-    "timestamp": "2026-03-27T04:49:14.816444"
+    "timestamp": "2026-03-28T07:34:21.365820"
   },
   {
-    "id": "ART-19C02E80",
-    "sku": "ART-19C02E80",
-    "title": "9A5Db06E 3Ace 4B64 8865 C3D3Cb54C453",
+    "id": "BRC-INT-19C02E80",
+    "sku": "BRC-INT-19C02E80",
+    "title": "Stygian Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
       "#aaa13d",
       "#865119",
       "#490909",
+      "#000402",
+      "#000002",
       "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#aaa13d"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#865119"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#000402"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3387,11 +4323,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3414,30 +4350,41 @@
       "gradient_ratio": 0.0324,
       "detail_frequency": 0.6106,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2245,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.JPEG",
-    "timestamp": "2026-03-27T04:49:14.811444"
+    "timestamp": "2026-03-28T07:34:21.361820"
   },
   {
-    "id": "ART-1272D54A",
-    "sku": "ART-1272D54A",
-    "title": "99A99193 D29D 48Eb B32A C65Eea06Ae14",
+    "id": "BRC-INT-1272D54A",
+    "sku": "BRC-INT-1272D54A",
+    "title": "Zenith Maelstrom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#3883c3",
+      "#6d82c6",
+      "#0384bf",
       "#7755ba",
-      "#e51e87",
+      "#e42b95",
+      "#e71079",
       "#9229a9"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#6d82c6"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#0384bf"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3446,11 +4393,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3473,30 +4420,46 @@
       "gradient_ratio": 0.0584,
       "detail_frequency": 0.6955,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4975,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "99A99193-D29D-48EB-B32A-C65EEA06AE14.PNG",
-    "timestamp": "2026-03-27T04:49:14.809444"
+    "timestamp": "2026-03-28T07:34:21.359820"
   },
   {
-    "id": "ART-2028C8C3",
-    "sku": "ART-2028C8C3",
-    "title": "982Fb1A3 Ea8B 4B73 B7Fa Fa81B95Dc9E8",
+    "id": "BRC-INT-2028C8C3",
+    "sku": "BRC-INT-2028C8C3",
+    "title": "Opaline Tapestry",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#f2e8b9",
+      "#f6f9bf",
+      "#edd7b2",
       "#97d5b7",
-      "#8891a1",
+      "#b09799",
+      "#5f8aa9",
       "#524497"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#f6f9bf"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#97d5b7"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#5f8aa9"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3505,11 +4468,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3532,30 +4495,46 @@
       "gradient_ratio": 0.0676,
       "detail_frequency": 0.7542,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6387,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.JPEG",
-    "timestamp": "2026-03-27T04:49:14.781444"
+    "timestamp": "2026-03-28T07:34:21.336820"
   },
   {
-    "id": "ART-7116BE12",
-    "sku": "ART-7116BE12",
-    "title": "95D1183F 21C3 489C 83E2 154Cf1072442",
+    "id": "BRC-NAT-7116BE12",
+    "sku": "BRC-NAT-7116BE12",
+    "title": "Zenith Maelstrom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#998aa4",
+      "#a99cb0",
+      "#897897",
       "#685e7a",
-      "#453c5c",
+      "#4d3f62",
+      "#3b3856",
       "#222336"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a99cb0"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#897897"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4d3f62"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3564,11 +4543,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3591,30 +4570,41 @@
       "gradient_ratio": 0.0605,
       "detail_frequency": 0.5376,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3681,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "95D1183F-21C3-489C-83E2-154CF1072442.JPEG",
-    "timestamp": "2026-03-27T04:49:14.771444"
+    "timestamp": "2026-03-28T07:34:21.326820"
   },
   {
-    "id": "ART-550FC367",
-    "sku": "ART-550FC367",
-    "title": "92Adaf3C Ea2F 42F1 98Ea 9Ad3F5A7107F",
+    "id": "BRC-NAT-550FC367",
+    "sku": "BRC-NAT-550FC367",
+    "title": "Lumen Gyre",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d901e7",
+      "#d901f5",
+      "#d901d7",
       "#cb01e6",
-      "#be01d8",
+      "#be02d5",
+      "#bf00e0",
       "#9a01a8"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#d901f5"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#9a01a8"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3623,11 +4613,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3650,30 +4640,56 @@
       "gradient_ratio": 0.0441,
       "detail_frequency": 0.4662,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5284,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.JPG",
-    "timestamp": "2026-03-27T04:49:14.770444"
+    "timestamp": "2026-03-28T07:34:21.325820"
   },
   {
-    "id": "ART-F07C4AC4",
-    "sku": "ART-F07C4AC4",
-    "title": "8Dbfdecb 02A4 42E4 A0Fe 2E1A7A520C3A",
+    "id": "BRC-INT-F07C4AC4",
+    "sku": "BRC-INT-F07C4AC4",
+    "title": "Russet Tangle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#e9eae2",
-      "#d0bcad",
+      "#f1f4ec",
+      "#e2e0d8",
+      "#d7cabe",
+      "#caae9b",
       "#a67f6d",
       "#54372f"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#f1f4ec"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e2e0d8"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#caae9b"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a67f6d"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#54372f"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3682,11 +4698,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3709,30 +4725,46 @@
       "gradient_ratio": 0.0612,
       "detail_frequency": 0.6373,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6069,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.JPG",
-    "timestamp": "2026-03-27T04:49:14.760444"
+    "timestamp": "2026-03-28T07:34:21.315820"
   },
   {
-    "id": "ART-8C3AC630",
-    "sku": "ART-8C3AC630",
-    "title": "8Ad582E1 Ad5A 4F81 Bb94 43547594F3Cd",
+    "id": "BRC-INT-8C3AC630",
+    "sku": "BRC-INT-8C3AC630",
+    "title": "Gloaming Nexus",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
       "#a7d3e5",
       "#4a79af",
       "#141829",
+      "#010037",
+      "#030000",
       "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#a7d3e5"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#4a79af"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#141829"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3741,11 +4773,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3768,90 +4800,52 @@
       "gradient_ratio": 0.0396,
       "detail_frequency": 0.708,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3392,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "8AD582E1-AD5A-4F81-BB94-43547594F3CD.PNG",
-    "timestamp": "2026-03-27T04:49:14.757444"
+    "timestamp": "2026-03-28T07:34:21.312820"
   },
   {
-    "id": "ART-96EE21E7",
-    "sku": "ART-96EE21E7",
-    "title": "84Bea453 2B5C 4B7E 8890 9C25E885Aaeb",
+    "id": "BRC-INT-35F1D660",
+    "sku": "BRC-INT-35F1D660",
+    "title": "Starhollow Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#b7927c",
-      "#855c5c",
-      "#563344",
-      "#0b1e4d"
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Metal Print"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "metal art",
-      "wall art",
-      "contemporary",
-      "handmade",
-      "original art"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_84BEA453-2B5C-4B7E-8890-9C25E885AAEB.webp",
-    "image": "./assets/images/gallery/web/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.webp",
-    "printFile": "./assets/images/gallery/print/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.png",
-    "vectorFile": "./assets/images/gallery/vector/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 20.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 6000
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.0841,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0602,
-      "detail_frequency": 0.4124,
-      "contrast_range": 1.0,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "buyUrl": "#",
-    "sourceFile": "84BEA453-2B5C-4B7E-8890-9C25E885AAEB.JPG",
-    "timestamp": "2026-03-27T04:49:14.753443"
-  },
-  {
-    "id": "ART-35F1D660",
-    "sku": "ART-35F1D660",
-    "title": "7D9Cff4C 2931 4638 8783 D16Bf803D66C",
-    "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
-    "colorPalette": [
-      "#ededee",
+      "#f8f7f8",
+      "#e2e2e3",
       "#b5b4b4",
-      "#706e6f",
+      "#807e7f",
+      "#605e5f",
       "#2e2d2e"
     ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#f8f7f8"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b5b4b4"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#807e7f"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#2e2d2e"
+      }
+    ],
     "bestProducts": [
       "Framed Print",
       "Canvas",
@@ -3859,11 +4853,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3886,30 +4880,46 @@
       "gradient_ratio": 0.0634,
       "detail_frequency": 0.7399,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5639,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "7D9CFF4C-2931-4638-8783-D16BF803D66C.JPG",
-    "timestamp": "2026-03-27T04:49:14.752444"
+    "timestamp": "2026-03-28T07:34:21.308820"
   },
   {
-    "id": "ART-CD818078",
-    "sku": "ART-CD818078",
-    "title": "79Dda607 6D45 45B7 9A6A 1D754Aed3D98",
+    "id": "BRC-NAT-96EE21E7",
+    "sku": "BRC-NAT-96EE21E7",
+    "title": "Opaline Canopy",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#cfc472",
-      "#6e6b78",
-      "#412537",
-      "#010306"
+      "#e09c74",
+      "#8b8885",
+      "#855c5c",
+      "#7c3839",
+      "#2f2e4e",
+      "#0b1e4d"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#e09c74"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8b8885"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#2f2e4e"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3918,11 +4928,91 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_84BEA453-2B5C-4B7E-8890-9C25E885AAEB.webp",
+    "image": "./assets/images/gallery/web/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.webp",
+    "printFile": "./assets/images/gallery/print/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.png",
+    "vectorFile": "./assets/images/gallery/vector/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.svg",
+    "printDimensions": {
+      "widthInches": 20.0,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 6000,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.0841,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0602,
+      "detail_frequency": 0.4124,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.3585,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "84BEA453-2B5C-4B7E-8890-9C25E885AAEB.JPG",
+    "timestamp": "2026-03-28T07:34:21.308820"
+  },
+  {
+    "id": "BRC-INT-CD818078",
+    "sku": "BRC-INT-CD818078",
+    "title": "Eventide Maelstrom",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#f3d35f",
+      "#aab585",
+      "#9a7553",
+      "#41619e",
+      "#412537",
+      "#010306"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#f3d35f"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9a7553"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#412537"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#010306"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -3945,30 +5035,41 @@
       "gradient_ratio": 0.0489,
       "detail_frequency": 0.712,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3353,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "79DDA607-6D45-45B7-9A6A-1D754AED3D98.JPEG",
-    "timestamp": "2026-03-27T04:49:14.749444"
+    "timestamp": "2026-03-28T07:34:21.305820"
   },
   {
-    "id": "ART-106BE197",
-    "sku": "ART-106BE197",
-    "title": "79499B46 588B 4336 8B21 0A6E936Cf53C",
+    "id": "BRC-NAT-106BE197",
+    "sku": "BRC-NAT-106BE197",
+    "title": "Tenebris Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#4e8e64",
+      "#4c9e6b",
+      "#517e5d",
       "#4d5f56",
-      "#84294a",
+      "#a82848",
+      "#5f2a4c",
       "#26294b"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#4c9e6b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4d5f56"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -3977,11 +5078,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4004,30 +5105,46 @@
       "gradient_ratio": 0.0601,
       "detail_frequency": 0.5978,
       "contrast_range": 0.9961,
+      "avg_luminance": 0.3207,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "79499B46-588B-4336-8B21-0A6E936CF53C.JPEG",
-    "timestamp": "2026-03-27T04:49:14.733443"
+    "timestamp": "2026-03-28T07:34:21.288820"
   },
   {
-    "id": "ART-056CEE1D",
-    "sku": "ART-056CEE1D",
-    "title": "75603145 7A28 466A A29D Ab78Db6D297A",
+    "id": "BRC-INT-056CEE1D",
+    "sku": "BRC-INT-056CEE1D",
+    "title": "Meridian Chronicle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#e9c6c9",
+      "#ece0d3",
+      "#e5abbf",
       "#99c0e0",
-      "#ac84b9",
+      "#d684ae",
+      "#8183c5",
       "#9b589a"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#ece0d3"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#99c0e0"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9b589a"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4036,11 +5153,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4063,30 +5180,46 @@
       "gradient_ratio": 0.0693,
       "detail_frequency": 0.6458,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6831,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "75603145-7A28-466A-A29D-AB78DB6D297A.JPEG",
-    "timestamp": "2026-03-27T04:49:14.725443"
+    "timestamp": "2026-03-28T07:34:21.282820"
   },
   {
-    "id": "ART-93DC0210",
-    "sku": "ART-93DC0210",
-    "title": "733C6621 6D4F 4Ca4 9E47 0332E33E52F2",
+    "id": "BRC-INT-93DC0210",
+    "sku": "BRC-INT-93DC0210",
+    "title": "Aurelius Palimpsest",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#cfc9b3",
+      "#d1dddb",
+      "#ceb58a",
       "#48ced5",
-      "#9d847e",
+      "#c98265",
+      "#718597",
       "#994296"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d1dddb"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#ceb58a"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#718597"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4095,11 +5228,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4122,30 +5255,41 @@
       "gradient_ratio": 0.0603,
       "detail_frequency": 0.7206,
       "contrast_range": 1.0,
+      "avg_luminance": 0.6093,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "733C6621-6D4F-4CA4-9E47-0332E33E52F2.JPEG",
-    "timestamp": "2026-03-27T04:49:14.719443"
+    "timestamp": "2026-03-28T07:34:21.277820"
   },
   {
-    "id": "ART-E228B495",
-    "sku": "ART-E228B495",
-    "title": "70C651B6 1D9D 4429 B261 8E1528095686",
+    "id": "BRC-NAT-E228B495",
+    "sku": "BRC-NAT-E228B495",
+    "title": "Chandral Tapestry",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c29dce",
-      "#7aa3d1",
+      "#cda2d1",
+      "#b699ca",
+      "#a89acc",
+      "#4bacd7",
       "#a785b9",
       "#50325b"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#cda2d1"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#50325b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4154,11 +5298,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4181,30 +5325,36 @@
       "gradient_ratio": 0.0603,
       "detail_frequency": 0.534,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5829,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "70C651B6-1D9D-4429-B261-8E1528095686.JPG",
-    "timestamp": "2026-03-27T04:49:14.712443"
+    "timestamp": "2026-03-28T07:34:21.269820"
   },
   {
-    "id": "ART-AFEB099B",
-    "sku": "ART-AFEB099B",
-    "title": "6C8Fbf8B 862F 4927 8Cd2 Ccf5Bfcd646A",
+    "id": "BRC-NAT-AFEB099B",
+    "sku": "BRC-NAT-AFEB099B",
+    "title": "Sanguine Seedvault",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#9e7467",
-      "#777784",
+      "#a07b71",
+      "#9b6d5c",
+      "#757d92",
+      "#796f72",
       "#9f6247",
       "#6d5851"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a07b71"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4213,11 +5363,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4240,30 +5390,41 @@
       "gradient_ratio": 0.0606,
       "detail_frequency": 0.3627,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4439,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.JPG",
-    "timestamp": "2026-03-27T04:49:14.710443"
+    "timestamp": "2026-03-28T07:34:21.268820"
   },
   {
-    "id": "ART-D110210B",
-    "sku": "ART-D110210B",
-    "title": "6B6E55B4 0E18 406B 9742 1Ce3038Ef73E",
+    "id": "BRC-INT-D110210B",
+    "sku": "BRC-INT-D110210B",
+    "title": "Gossamer Vortex",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#71924d",
+      "#72ac3f",
+      "#70765c",
       "#655476",
-      "#8421b6",
+      "#9f1fbb",
+      "#6723b0",
       "#2f2074"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#72ac3f"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#2f2074"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4272,11 +5433,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4299,30 +5460,46 @@
       "gradient_ratio": 0.0556,
       "detail_frequency": 0.8344,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3862,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "6B6E55B4-0E18-406B-9742-1CE3038EF73E.JPEG",
-    "timestamp": "2026-03-27T04:49:14.706443"
+    "timestamp": "2026-03-28T07:34:21.264820"
   },
   {
-    "id": "ART-DE55F5CF",
-    "sku": "ART-DE55F5CF",
-    "title": "582A90C6 Be15 4E42 Be51 5Eb08F8694D5",
+    "id": "BRC-INT-DE55F5CF",
+    "sku": "BRC-INT-DE55F5CF",
+    "title": "Gloaming Assemblage",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c58132",
+      "#d59b3b",
+      "#b46729",
       "#854828",
-      "#572533",
+      "#6e2933",
+      "#3f2033",
       "#0e091f"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#d59b3b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#854828"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#0e091f"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4331,11 +5508,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4358,30 +5535,41 @@
       "gradient_ratio": 0.0505,
       "detail_frequency": 0.8161,
       "contrast_range": 1.0,
+      "avg_luminance": 0.279,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "582A90C6-BE15-4E42-BE51-5EB08F8694D5.PNG",
-    "timestamp": "2026-03-27T04:49:14.662443"
+    "timestamp": "2026-03-28T07:34:21.220820"
   },
   {
-    "id": "ART-B820182A",
-    "sku": "ART-B820182A",
-    "title": "57B433A6 62A8 472F 9F0A 30A1E4A21382",
+    "id": "BRC-NAT-B820182A",
+    "sku": "BRC-NAT-B820182A",
+    "title": "Frostholme Bloom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#4399d6",
-      "#2099e4",
+      "#499fd8",
+      "#3b92d4",
+      "#219ee5",
+      "#1f93e2",
       "#3589d1",
       "#2c4e96"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#499fd8"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#3b92d4"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4390,11 +5578,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4417,30 +5605,46 @@
       "gradient_ratio": 0.0654,
       "detail_frequency": 0.4395,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4991,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "57B433A6-62A8-472F-9F0A-30A1E4A21382.JPEG",
-    "timestamp": "2026-03-27T04:49:14.654443"
+    "timestamp": "2026-03-28T07:34:21.213820"
   },
   {
-    "id": "ART-9326B863",
-    "sku": "ART-9326B863",
-    "title": "52De7F0A 08C7 4E34 Afd6 15A738E7399B",
+    "id": "BRC-NAT-9326B863",
+    "sku": "BRC-NAT-9326B863",
+    "title": "Halcyon Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#dce1e6",
-      "#7dd8f5",
+      "#e2f4ea",
+      "#d6cee2",
+      "#9edaf3",
+      "#5cd6f8",
       "#8f9fe0",
       "#5169e6"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#e2f4ea"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d6cee2"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#5cd6f8"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4449,11 +5653,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4476,30 +5680,51 @@
       "gradient_ratio": 0.0693,
       "detail_frequency": 0.5953,
       "contrast_range": 1.0,
+      "avg_luminance": 0.7218,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "52DE7F0A-08C7-4E34-AFD6-15A738E7399B.JPEG",
-    "timestamp": "2026-03-27T04:49:14.652443"
+    "timestamp": "2026-03-28T07:34:21.212821"
   },
   {
-    "id": "ART-2E1A04AD",
-    "sku": "ART-2E1A04AD",
-    "title": "50Dede64 8Ab0 4151 B641 7A9A80828680",
+    "id": "BRC-INT-2E1A04AD",
+    "sku": "BRC-INT-2E1A04AD",
+    "title": "Lucent Palimpsest",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#d1ebf3",
-      "#5878b3",
+      "#fffefe",
+      "#a1d7e8",
+      "#9c7594",
+      "#147ad1",
       "#7d106f",
       "#0f126a"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#fffefe"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#a1d7e8"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9c7594"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#7d106f"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4508,11 +5733,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4535,30 +5760,41 @@
       "gradient_ratio": 0.0619,
       "detail_frequency": 0.6213,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4803,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "50DEDE64-8AB0-4151-B641-7A9A80828680.JPEG",
-    "timestamp": "2026-03-27T04:49:14.649443"
+    "timestamp": "2026-03-28T07:34:21.209821"
   },
   {
-    "id": "ART-A359FE5E",
-    "sku": "ART-A359FE5E",
-    "title": "5094D2B2 0B6C 4E42 B7Aa Fba4E90Ffa58",
+    "id": "BRC-INT-A359FE5E",
+    "sku": "BRC-INT-A359FE5E",
+    "title": "Eidolon Mosaic",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#978c6a",
-      "#3d8155",
+      "#a19975",
+      "#8d7f5e",
+      "#3c8a5d",
+      "#3d774d",
       "#655c43",
       "#1f5536"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a19975"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#655c43"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4567,11 +5803,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4594,30 +5830,56 @@
       "gradient_ratio": 0.061,
       "detail_frequency": 0.6319,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3611,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.JPEG",
-    "timestamp": "2026-03-27T04:49:14.638443"
+    "timestamp": "2026-03-28T07:34:21.199821"
   },
   {
-    "id": "ART-7A3E8027",
-    "sku": "ART-7A3E8027",
-    "title": "395222F3 5Dc3 4252 9002 151A2350054E",
+    "id": "BRC-NAT-7A3E8027",
+    "sku": "BRC-NAT-7A3E8027",
+    "title": "Crysthene Kaleidoscope",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a6f5d8",
+      "#f3f5f3",
+      "#58f5bd",
       "#7678ca",
-      "#7618c1",
+      "#b617ee",
+      "#351993",
       "#01042f"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#f3f5f3"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#58f5bd"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#b617ee"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#351993"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#01042f"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4626,11 +5888,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4653,30 +5915,46 @@
       "gradient_ratio": 0.0588,
       "detail_frequency": 0.5051,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4754,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "395222F3-5DC3-4252-9002-151A2350054E.JPEG",
-    "timestamp": "2026-03-27T04:49:14.634443"
+    "timestamp": "2026-03-28T07:34:21.195821"
   },
   {
-    "id": "ART-63B20F6F",
-    "sku": "ART-63B20F6F",
-    "title": "346847Ba 144F 4Cda Acf5 7230B48Ced72",
+    "id": "BRC-NAT-63B20F6F",
+    "sku": "BRC-NAT-63B20F6F",
+    "title": "Solace Mosaic",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#ada492",
+      "#f3aa78",
+      "#669fad",
       "#806869",
-      "#6b3038",
+      "#96352e",
+      "#3e2b42",
       "#0a2455"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#f3aa78"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#669fad"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#3e2b42"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4685,11 +5963,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4712,30 +5990,46 @@
       "gradient_ratio": 0.058,
       "detail_frequency": 0.5077,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3825,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "346847BA-144F-4CDA-ACF5-7230B48CED72.JPG",
-    "timestamp": "2026-03-27T04:49:14.627443"
+    "timestamp": "2026-03-28T07:34:21.189821"
   },
   {
-    "id": "ART-D3937CC3",
-    "sku": "ART-D3937CC3",
-    "title": "3187Cc58 463C 427D 83E8 66975E41067B",
+    "id": "BRC-NAT-D3937CC3",
+    "sku": "BRC-NAT-D3937CC3",
+    "title": "Cobalt Roothold",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#5b8dc6",
+      "#6194c9",
+      "#5485c2",
       "#2b98e3",
-      "#476bb4",
+      "#5c75b3",
+      "#3361b6",
       "#172661"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#6194c9"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#5485c2"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#172661"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4744,11 +6038,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4771,30 +6065,46 @@
       "gradient_ratio": 0.058,
       "detail_frequency": 0.3754,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4481,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "3187CC58-463C-427D-83E8-66975E41067B.JPEG",
-    "timestamp": "2026-03-27T04:49:14.626443"
+    "timestamp": "2026-03-28T07:34:21.188821"
   },
   {
-    "id": "ART-914B4AB0",
-    "sku": "ART-914B4AB0",
-    "title": "30239C48 D6Fe 4Eb2 Bb78 3F7Ff2639037",
+    "id": "BRC-INT-914B4AB0",
+    "sku": "BRC-INT-914B4AB0",
+    "title": "Meridian Nexus",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#f9f7f4",
+      "#fafffc",
+      "#f9f0ec",
       "#cef2fa",
-      "#c7d6e9",
+      "#e9d7e0",
+      "#a4d5f2",
       "#a1abd7"
+    ],
+    "namedColors": [
+      {
+        "name": "Alabaster",
+        "code": "ALB",
+        "hex": "#fafffc"
+      },
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e9d7e0"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a1abd7"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4803,11 +6113,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4830,30 +6140,41 @@
       "gradient_ratio": 0.0789,
       "detail_frequency": 0.699,
       "contrast_range": 1.0,
+      "avg_luminance": 0.8608,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "30239C48-D6FE-4EB2-BB78-3F7FF2639037.JPEG",
-    "timestamp": "2026-03-27T04:49:14.625443"
+    "timestamp": "2026-03-28T07:34:21.187821"
   },
   {
-    "id": "ART-6632ACF8",
-    "sku": "ART-6632ACF8",
-    "title": "2Bf96480 619F 4B98 8905 4E7C55Caa596",
+    "id": "BRC-INT-6632ACF8",
+    "sku": "BRC-INT-6632ACF8",
+    "title": "Aether Nexus",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#90a6a7",
-      "#7d6c83",
+      "#b0adb3",
+      "#6f9f9a",
+      "#9b6d75",
+      "#5f6b91",
       "#744a88",
       "#423fb3"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b0adb3"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#6f9f9a"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4862,11 +6183,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4889,30 +6210,41 @@
       "gradient_ratio": 0.0611,
       "detail_frequency": 0.6305,
       "contrast_range": 1.0,
+      "avg_luminance": 0.483,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "2BF96480-619F-4B98-8905-4E7C55CAA596.JPEG",
-    "timestamp": "2026-03-27T04:49:14.610443"
+    "timestamp": "2026-03-28T07:34:21.172821"
   },
   {
-    "id": "ART-97F1FF12",
-    "sku": "ART-97F1FF12",
-    "title": "293C3657 601E 4626 9Ce2 Bc1E611727E7",
+    "id": "BRC-INT-97F1FF12",
+    "sku": "BRC-INT-97F1FF12",
+    "title": "Dawnspar Tapestry",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#92ac57",
+      "#9dbc59",
+      "#869b55",
       "#399892",
-      "#517366",
+      "#6a7555",
+      "#387277",
       "#106796"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9dbc59"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#387277"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4921,11 +6253,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -4948,30 +6280,41 @@
       "gradient_ratio": 0.0585,
       "detail_frequency": 0.6397,
       "contrast_range": 0.9961,
+      "avg_luminance": 0.4336,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "293C3657-601E-4626-9CE2-BC1E611727E7.JPEG",
-    "timestamp": "2026-03-27T04:49:14.581442"
+    "timestamp": "2026-03-28T07:34:21.143821"
   },
   {
-    "id": "ART-FAA5294F",
-    "sku": "ART-FAA5294F",
-    "title": "270Ffeaa 79Da 4187 Ad0D A20De0092446",
+    "id": "BRC-NAT-FAA5294F",
+    "sku": "BRC-NAT-FAA5294F",
+    "title": "Copperwynd Helix",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#a2988c",
+      "#c09c77",
+      "#8393a1",
       "#8e7384",
-      "#9f3469",
+      "#ac4264",
+      "#92266e",
       "#7d3282"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c09c77"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8e7384"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -4980,11 +6323,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5007,30 +6350,46 @@
       "gradient_ratio": 0.0584,
       "detail_frequency": 0.3558,
       "contrast_range": 0.8314,
+      "avg_luminance": 0.4796,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "270FFEAA-79DA-4187-AD0D-A20DE0092446.JPEG",
-    "timestamp": "2026-03-27T04:49:14.575442"
+    "timestamp": "2026-03-28T07:34:21.138821"
   },
   {
-    "id": "ART-9D114300",
-    "sku": "ART-9D114300",
-    "title": "24C73992 2C9D 47Af 9A04 Ec6479Bc3936",
+    "id": "BRC-INT-9D114300",
+    "sku": "BRC-INT-9D114300",
+    "title": "Ashgrove Nexus",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c98b37",
-      "#874f2e",
+      "#dea13a",
+      "#b47434",
+      "#a75320",
+      "#67493c",
       "#522630",
       "#0a0719"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#dea13a"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#67493c"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#0a0719"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5039,11 +6398,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5066,30 +6425,46 @@
       "gradient_ratio": 0.0495,
       "detail_frequency": 0.8615,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2838,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "24C73992-2C9D-47AF-9A04-EC6479BC3936.PNG",
-    "timestamp": "2026-03-27T04:49:14.540442"
+    "timestamp": "2026-03-28T07:34:21.102821"
   },
   {
-    "id": "ART-FCA6AA8E",
-    "sku": "ART-FCA6AA8E",
-    "title": "2263D61F 338F 4Fb8 B35D Ad6760D4Fbde",
+    "id": "BRC-NAT-FCA6AA8E",
+    "sku": "BRC-NAT-FCA6AA8E",
+    "title": "Glintmere Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#ada492",
+      "#f3aa78",
+      "#669fad",
       "#806869",
-      "#6b3038",
+      "#96352e",
+      "#3e2b42",
       "#0a2455"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#f3aa78"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#669fad"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#3e2b42"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5098,11 +6473,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5125,30 +6500,41 @@
       "gradient_ratio": 0.058,
       "detail_frequency": 0.5077,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3825,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "2263D61F-338F-4FB8-B35D-AD6760D4FBDE.JPG",
-    "timestamp": "2026-03-27T04:49:14.533442"
+    "timestamp": "2026-03-28T07:34:21.097821"
   },
   {
-    "id": "ART-19063F46",
-    "sku": "ART-19063F46",
-    "title": "20B727Ac A3Ef 4E8F 8023 Dc5D29510Ae1",
+    "id": "BRC-NAT-19063F46",
+    "sku": "BRC-NAT-19063F46",
+    "title": "Lapis Chronicle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#2693da",
-      "#1d6adc",
+      "#35a4d2",
+      "#1681e1",
+      "#1e6adb",
+      "#0068f2",
       "#422e7d",
       "#013fe6"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#35a4d2"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#422e7d"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5157,11 +6543,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5184,30 +6570,41 @@
       "gradient_ratio": 0.05,
       "detail_frequency": 0.5188,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4226,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "20B727AC-A3EF-4E8F-8023-DC5D29510AE1.JPEG",
-    "timestamp": "2026-03-27T04:49:14.532442"
+    "timestamp": "2026-03-28T07:34:21.096821"
   },
   {
-    "id": "ART-48C63EA0",
-    "sku": "ART-48C63EA0",
-    "title": "1E5D6985 596E 418C 8589 5A192976Ef31",
+    "id": "BRC-NAT-48C63EA0",
+    "sku": "BRC-NAT-48C63EA0",
+    "title": "Rime Chronicle",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#219adc",
+      "#2999d7",
+      "#019fee",
       "#1d6fd8",
-      "#593067",
+      "#863a63",
+      "#2c276b",
       "#042fb4"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#2999d7"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#2c276b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5216,11 +6613,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5243,30 +6640,46 @@
       "gradient_ratio": 0.0499,
       "detail_frequency": 0.5744,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4043,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "1E5D6985-596E-418C-8589-5A192976EF31.JPEG",
-    "timestamp": "2026-03-27T04:49:14.523442"
+    "timestamp": "2026-03-28T07:34:21.087821"
   },
   {
-    "id": "ART-1CEBD24B",
-    "sku": "ART-1CEBD24B",
-    "title": "1A324592 2430 447C B21B 342Bfdb845D7",
+    "id": "BRC-NAT-1CEBD24B",
+    "sku": "BRC-NAT-1CEBD24B",
+    "title": "Aether Palimpsest",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#c1beb6",
+      "#cfcdbf",
+      "#b4afad",
       "#9581c4",
-      "#6451bb",
+      "#6f5cbe",
+      "#5845b8",
       "#3226a6"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#cfcdbf"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b4afad"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#5845b8"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5275,11 +6688,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5302,30 +6715,51 @@
       "gradient_ratio": 0.0603,
       "detail_frequency": 0.5256,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5442,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "1A324592-2430-447C-B21B-342BFDB845D7.JPEG",
-    "timestamp": "2026-03-27T04:49:14.513442"
+    "timestamp": "2026-03-28T07:34:21.077821"
   },
   {
-    "id": "ART-9AD67482",
-    "sku": "ART-9AD67482",
-    "title": "196Ca4D5 37D8 458D 88C7 6C025741016F",
+    "id": "BRC-NAT-9AD67482",
+    "sku": "BRC-NAT-9AD67482",
+    "title": "Silvaine Tendril",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#ced1df",
-      "#9cb9c1",
+      "#d4dce7",
+      "#c8c5d5",
+      "#a5c6cc",
+      "#93abb5",
       "#7c909b",
       "#4c5264"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d4dce7"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a5c6cc"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#7c909b"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4c5264"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5334,11 +6768,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5361,30 +6795,41 @@
       "gradient_ratio": 0.0619,
       "detail_frequency": 0.4785,
       "contrast_range": 1.0,
+      "avg_luminance": 0.608,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "196CA4D5-37D8-458D-88C7-6C025741016F.JPEG",
-    "timestamp": "2026-03-27T04:49:14.512442"
+    "timestamp": "2026-03-28T07:34:21.076821"
   },
   {
-    "id": "ART-5047970E",
-    "sku": "ART-5047970E",
-    "title": "13Ed2Df7 04D8 4F87 B3Bb 1F44467E23C0",
+    "id": "BRC-NAT-5047970E",
+    "sku": "BRC-NAT-5047970E",
+    "title": "Obsidian Palimpsest",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#6a854f",
+      "#759b45",
+      "#5e6d5a",
       "#57525e",
-      "#6a3571",
+      "#8c376b",
+      "#483476",
       "#2a3067"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#759b45"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#57525e"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5393,11 +6838,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5420,30 +6865,46 @@
       "gradient_ratio": 0.061,
       "detail_frequency": 0.5669,
       "contrast_range": 1.0,
+      "avg_luminance": 0.3427,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.JPEG",
-    "timestamp": "2026-03-27T04:49:14.508442"
+    "timestamp": "2026-03-28T07:34:21.073821"
   },
   {
-    "id": "ART-D214008C",
-    "sku": "ART-D214008C",
-    "title": "10Aefda4 62A1 41B9 8A74 Cddf261B4051",
+    "id": "BRC-NAT-D214008C",
+    "sku": "BRC-NAT-D214008C",
+    "title": "Opaline Bloom",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#65d0b7",
-      "#56898c",
+      "#67e1c9",
+      "#62bda5",
+      "#62889d",
+      "#4a8a7b",
       "#554565",
       "#302c33"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#67e1c9"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#62889d"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#554565"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5452,11 +6913,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5479,30 +6940,46 @@
       "gradient_ratio": 0.0627,
       "detail_frequency": 0.472,
       "contrast_range": 1.0,
+      "avg_luminance": 0.411,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "10AEFDA4-62A1-41B9-8A74-CDDF261B4051.JPEG",
-    "timestamp": "2026-03-27T04:49:14.466442"
+    "timestamp": "2026-03-28T07:34:21.031821"
   },
   {
-    "id": "ART-A6530E65",
-    "sku": "ART-A6530E65",
-    "title": "108553Bb 3Efa 4816 A4B0 571E39Bb9Ea0",
+    "id": "BRC-NAT-A6530E65",
+    "sku": "BRC-NAT-A6530E65",
+    "title": "Eventide Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
       "#818ea2",
       "#8c4868",
       "#1a0609",
+      "#000101",
+      "#000001",
       "#000000"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#818ea2"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8c4868"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#1a0609"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5511,11 +6988,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5538,30 +7015,46 @@
       "gradient_ratio": 0.033,
       "detail_frequency": 0.5803,
       "contrast_range": 1.0,
+      "avg_luminance": 0.254,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "108553BB-3EFA-4816-A4B0-571E39BB9EA0.PNG",
-    "timestamp": "2026-03-27T04:49:14.452442"
+    "timestamp": "2026-03-28T07:34:21.017822"
   },
   {
-    "id": "ART-E614AA35",
-    "sku": "ART-E614AA35",
-    "title": "0E421941 E0Fd 4E46 B1Bc 21F730Cb6369",
+    "id": "BRC-NAT-E614AA35",
+    "sku": "BRC-NAT-E614AA35",
+    "title": "Rime Helix",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#3e98dd",
-      "#1d9aeb",
+      "#47a8e7",
+      "#3688d4",
+      "#1ca8f5",
+      "#1e8be0",
       "#335ea4",
       "#0e408b"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#47a8e7"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#3688d4"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#0e408b"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5570,11 +7063,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5597,30 +7090,36 @@
       "gradient_ratio": 0.059,
       "detail_frequency": 0.4208,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4531,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "0E421941-E0FD-4E46-B1BC-21F730CB6369.JPEG",
-    "timestamp": "2026-03-27T04:49:14.447442"
+    "timestamp": "2026-03-28T07:34:21.013821"
   },
   {
-    "id": "ART-0B264A11",
-    "sku": "ART-0B264A11",
-    "title": "0A6768C6 C021 4De9 B561 301E204De235",
+    "id": "BRC-NAT-0B264A11",
+    "sku": "BRC-NAT-0B264A11",
+    "title": "Abyssen Compendium",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#329bd3",
-      "#1c76de",
+      "#419cca",
+      "#0195f1",
+      "#2c76d3",
+      "#0176f1",
       "#523b82",
       "#0146ec"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#419cca"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5629,11 +7128,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5656,30 +7155,46 @@
       "gradient_ratio": 0.0522,
       "detail_frequency": 0.5369,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4454,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "0A6768C6-C021-4DE9-B561-301E204DE235.JPEG",
-    "timestamp": "2026-03-27T04:49:14.446442"
+    "timestamp": "2026-03-28T07:34:21.012821"
   },
   {
-    "id": "ART-8E3FCFCB",
-    "sku": "ART-8E3FCFCB",
-    "title": "070Ac899 5D62 43E0 8205 574048Ed81Fd",
+    "id": "BRC-INT-8E3FCFCB",
+    "sku": "BRC-INT-8E3FCFCB",
+    "title": "Nocturne Labyrinth",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#458f94",
+      "#3ea5a8",
+      "#4c787f",
       "#5f5754",
-      "#4c284d",
+      "#692d57",
+      "#2e2442",
       "#05070d"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#3ea5a8"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#692d57"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#05070d"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5688,11 +7203,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5715,30 +7230,46 @@
       "gradient_ratio": 0.0466,
       "detail_frequency": 0.6806,
       "contrast_range": 1.0,
+      "avg_luminance": 0.2763,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "070AC899-5D62-43E0-8205-574048ED81FD.PNG",
-    "timestamp": "2026-03-27T04:49:14.436442"
+    "timestamp": "2026-03-28T07:34:21.003822"
   },
   {
-    "id": "ART-4379F1E3",
-    "sku": "ART-4379F1E3",
-    "title": "056Cd596 6B3E 456F 819C 180Da6876Cce",
+    "id": "BRC-INT-4379F1E3",
+    "sku": "BRC-INT-4379F1E3",
+    "title": "Burnveil Labyrinth",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#b7bb7f",
-      "#938a7b",
+      "#f8bf63",
+      "#74b69b",
+      "#eb8a45",
+      "#3a8ab2",
       "#cf4f28",
       "#474353"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#f8bf63"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#3a8ab2"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#474353"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5747,11 +7278,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5774,30 +7305,46 @@
       "gradient_ratio": 0.0628,
       "detail_frequency": 0.7126,
       "contrast_range": 1.0,
+      "avg_luminance": 0.4758,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "056CD596-6B3E-456F-819C-180DA6876CCE.JPEG",
-    "timestamp": "2026-03-27T04:49:14.411441"
+    "timestamp": "2026-03-28T07:34:20.982822"
   },
   {
-    "id": "ART-45844E75",
-    "sku": "ART-45844E75",
-    "title": "024980Be 6011 4B81 Aeb3 6Cf4B5C3E3Bc",
+    "id": "BRC-INT-45844E75",
+    "sku": "BRC-INT-45844E75",
+    "title": "Nyx Phantasmagoria",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Intricata",
+    "category": "Art Prints",
     "colorPalette": [
-      "#73854e",
-      "#5e5a34",
+      "#9c8624",
+      "#498478",
+      "#895c17",
+      "#335951",
       "#7c1f10",
       "#030708"
+    ],
+    "namedColors": [
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9c8624"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#895c17"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#030708"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5806,11 +7353,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "intricata",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5833,30 +7380,46 @@
       "gradient_ratio": 0.0436,
       "detail_frequency": 0.7236,
       "contrast_range": 0.9804,
+      "avg_luminance": 0.2464,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.JPEG",
-    "timestamp": "2026-03-27T04:49:14.398441"
+    "timestamp": "2026-03-28T07:34:20.970822"
   },
   {
-    "id": "ART-9BC80EAB",
-    "sku": "ART-9BC80EAB",
-    "title": "00619E4E Aff8 4A86 8Ee6 D823D4Bc2580",
+    "id": "BRC-NAT-9BC80EAB",
+    "sku": "BRC-NAT-9BC80EAB",
+    "title": "Etherveil Vortex",
     "description": "",
-    "style": "Metal Art",
-    "mood": "Industrial / Sculptural",
-    "roomFit": [
-      "Living Room",
-      "Entryway",
-      "Office"
-    ],
+    "style": "Naturalis",
+    "category": "Art Prints",
     "colorPalette": [
-      "#b2b9bc",
-      "#5aaac6",
+      "#bececd",
+      "#a6a3aa",
+      "#4ebfd9",
+      "#6794b4",
       "#6d7597",
       "#623e82"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#bececd"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a6a3aa"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#6d7597"
+      }
     ],
     "bestProducts": [
       "Framed Print",
@@ -5865,11 +7428,11 @@
     ],
     "seoKeywords": [
       "arttra",
-      "metal art",
+      "naturalis",
+      "art prints",
       "wall art",
       "contemporary",
-      "handmade",
-      "original art"
+      "handmade"
     ],
     "priceTiers": {
       "startingPrice": 79
@@ -5892,11 +7455,13 @@
       "gradient_ratio": 0.0606,
       "detail_frequency": 0.5802,
       "contrast_range": 1.0,
+      "avg_luminance": 0.5495,
       "route": "raster",
       "route_reason": "Complex image"
     },
+    "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "00619E4E-AFF8-4A86-8EE6-D823D4BC2580.JPEG",
-    "timestamp": "2026-03-27T04:49:14.394441"
+    "timestamp": "2026-03-28T07:34:20.967822"
   }
 ]
