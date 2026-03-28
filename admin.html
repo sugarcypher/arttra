@@ -7,135 +7,79 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #08080e; --panel: #0e0e18; --panel2: #13132a; --surface: #1a1a2e;
-      --border: rgba(255,255,255,.08); --border2: rgba(255,255,255,.14);
-      --text: #e8e8f0; --muted: #8888a8;
-      --accent: #ff4fd8; --accent2: #45d7ff; --good: #39d98a; --danger: #ff5964;
-      --radius: 12px; --mono: 'JetBrains Mono', monospace; --sans: 'DM Sans', system-ui, sans-serif;
+      --bg:#08080e;--panel:#0e0e18;--panel2:#13132a;--surface:#1a1a2e;
+      --border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.14);
+      --text:#e8e8f0;--muted:#8888a8;
+      --accent:#ff4fd8;--accent2:#45d7ff;--good:#39d98a;--danger:#ff5964;--warn:#ffc145;
+      --mono:'JetBrains Mono',monospace;--sans:'DM Sans',system-ui,sans-serif;
     }
-    * { box-sizing: border-box; margin: 0; }
-    html, body { height: 100%; }
-    body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.5; }
+    *{box-sizing:border-box;margin:0}
+    html,body{height:100%}
+    body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.5;user-select:none}
 
-    .topbar {
-      position: sticky; top: 0; z-index: 50; background: rgba(8,8,14,.85);
-      backdrop-filter: blur(12px); border-bottom: 1px solid var(--border);
-      padding: 12px 20px; display: flex; align-items: center; justify-content: space-between;
-    }
-    .topbar__title {
-      font-weight: 900; font-size: 18px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .topbar__actions { display: flex; gap: 8px; align-items: center; }
-    .topbar__stat { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-right: 12px; }
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(8,8,14,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;align-items:center;justify-content:space-between}
+    .topbar__title{font-weight:900;font-size:16px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .topbar__actions{display:flex;gap:6px;align-items:center}
+    .topbar__stat{font-family:var(--mono);font-size:11px;color:var(--muted);margin-right:8px}
 
-    .btn {
-      padding: 8px 16px; border-radius: 8px; border: 1px solid var(--border2);
-      background: var(--surface); color: var(--text); cursor: pointer;
-      font-family: var(--sans); font-size: 13px; font-weight: 600; transition: all .15s;
-    }
-    .btn:hover { border-color: var(--accent); background: rgba(255,79,216,.08); }
-    .btn--accent { background: var(--accent); border-color: var(--accent); color: #fff; }
-    .btn--accent:hover { background: #e040c0; }
-    .btn--good { background: rgba(57,217,138,.15); border-color: var(--good); color: var(--good); }
-    .btn--danger { background: rgba(255,89,100,.1); border-color: var(--danger); color: var(--danger); }
-    .btn--small { padding: 5px 10px; font-size: 12px; }
+    .btn{padding:6px 14px;border-radius:7px;border:1px solid var(--border2);background:var(--surface);color:var(--text);cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;transition:all .12s}
+    .btn:hover{border-color:var(--accent);background:rgba(255,79,216,.08)}
+    .btn--accent{background:var(--accent);border-color:var(--accent);color:#fff}
+    .btn--good{background:rgba(57,217,138,.15);border-color:var(--good);color:var(--good)}
+    .btn--danger{background:rgba(255,89,100,.1);border-color:var(--danger);color:var(--danger)}
+    .btn--warn{background:rgba(255,193,69,.1);border-color:var(--warn);color:var(--warn)}
+    .btn--sm{padding:4px 10px;font-size:11px}
 
-    .toolbar {
-      padding: 12px 20px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
-      border-bottom: 1px solid var(--border); background: var(--panel);
-    }
-    .toolbar__search {
-      flex: 1; min-width: 200px; padding: 8px 12px; border-radius: 8px;
-      border: 1px solid var(--border2); background: var(--surface);
-      color: var(--text); font-size: 14px; font-family: var(--sans);
-    }
-    .toolbar__search:focus { outline: none; border-color: var(--accent); }
-    .toolbar__filter {
-      padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border);
-      background: transparent; color: var(--muted); font-size: 12px; cursor: pointer;
-      font-family: var(--sans); font-weight: 600;
-    }
-    .toolbar__filter:hover { color: var(--text); border-color: var(--border2); }
-    .toolbar__filter--active { color: var(--accent); border-color: var(--accent); background: rgba(255,79,216,.06); }
+    .toolbar{padding:8px 16px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--border);background:var(--panel)}
+    .toolbar__search{flex:1;min-width:160px;padding:6px 12px;border-radius:7px;border:1px solid var(--border2);background:var(--surface);color:var(--text);font-size:13px;font-family:var(--sans)}
+    .toolbar__search:focus{outline:none;border-color:var(--accent)}
+    .tf{padding:5px 10px;border-radius:7px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:11px;cursor:pointer;font-family:var(--sans);font-weight:600}
+    .tf:hover{color:var(--text);border-color:var(--border2)}
+    .tf--active{color:var(--accent);border-color:var(--accent);background:rgba(255,79,216,.06)}
 
-    .batchbar {
-      display: none; padding: 10px 20px; gap: 10px; align-items: center;
-      background: var(--panel2); border-bottom: 1px solid var(--border);
-    }
-    .batchbar.active { display: flex; flex-wrap: wrap; }
-    .batchbar__count { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--accent); margin-right: 8px; }
-    .batchbar select, .batchbar input {
-      padding: 6px 10px; border-radius: 6px; border: 1px solid var(--border2);
-      background: var(--surface); color: var(--text); font-size: 13px; font-family: var(--sans);
-    }
+    .batchbar{display:none;padding:8px 16px;gap:6px;align-items:center;background:var(--panel2);border-bottom:1px solid var(--border)}
+    .batchbar.active{display:flex;flex-wrap:wrap}
+    .batchbar__count{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);margin-right:6px}
+    .batchbar select,.batchbar input{padding:5px 8px;border-radius:6px;border:1px solid var(--border2);background:var(--surface);color:var(--text);font-size:12px;font-family:var(--sans)}
 
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2px; padding: 2px; }
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:2px;padding:2px}
 
-    .card {
-      background: var(--panel); border: 1px solid transparent;
-      cursor: pointer; position: relative; transition: border-color .15s;
-    }
-    .card:hover { border-color: var(--border2); }
-    .card.selected { border-color: var(--accent); background: rgba(255,79,216,.04); }
-    .card__check {
-      position: absolute; top: 8px; left: 8px; z-index: 2;
-      width: 20px; height: 20px; border-radius: 4px;
-      border: 2px solid rgba(255,255,255,.3); background: rgba(0,0,0,.4);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 12px; color: transparent; transition: all .1s;
-    }
-    .card.selected .card__check { border-color: var(--accent); background: var(--accent); color: #fff; }
-    .card__img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
-    .card__body { padding: 10px; }
-    .card__title { font-weight: 700; font-size: 13px; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .card__meta { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-size: 11px; color: var(--muted); }
-    .card__badge { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; padding: 2px 6px; border-radius: 4px; }
-    .badge--metal { background: rgba(255,79,216,.12); color: var(--accent); }
-    .badge--photo { background: rgba(69,215,255,.12); color: var(--accent2); }
-    .badge--print { background: rgba(57,217,138,.12); color: var(--good); }
-    .card__edited { position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .card{background:var(--panel);border:2px solid transparent;cursor:pointer;position:relative;transition:border-color .1s}
+    .card:hover{border-color:var(--border2)}
+    .card.selected{border-color:var(--accent);background:rgba(255,79,216,.04)}
+    .card__img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+    .card__body{padding:8px}
+    .card__title{font-weight:700;font-size:12px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .card__meta{display:flex;justify-content:space-between;align-items:center;margin-top:3px;font-size:10px;color:var(--muted)}
+    .card__badge{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 5px;border-radius:3px}
+    .badge--metal{background:rgba(255,79,216,.12);color:var(--accent)}
+    .badge--photo{background:rgba(69,215,255,.12);color:var(--accent2)}
+    .badge--print{background:rgba(57,217,138,.12);color:var(--good)}
+    .badge--original{background:rgba(255,193,69,.12);color:var(--warn)}
+    .badge--textile{background:rgba(200,64,255,.12);color:#c840ff}
+    .badge--sold{position:absolute;top:6px;right:6px;background:var(--danger);color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:3px;text-transform:uppercase}
+    .card__edited{position:absolute;top:6px;left:6px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
 
-    .editpanel {
-      position: fixed; top: 0; right: 0; bottom: 0; width: min(500px, 90vw);
-      background: var(--panel); border-left: 1px solid var(--border);
-      z-index: 100; transform: translateX(100%); transition: transform .25s ease;
-      display: flex; flex-direction: column; overflow: hidden;
-    }
-    .editpanel.open { transform: translateX(0); }
-    .editpanel__backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 99; display: none; }
-    .editpanel__backdrop.open { display: block; }
-    .editpanel__header {
-      padding: 16px 20px; border-bottom: 1px solid var(--border);
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .editpanel__title { font-weight: 900; font-size: 16px; }
-    .editpanel__close { background: none; border: none; color: var(--muted); font-size: 24px; cursor: pointer; padding: 4px 8px; }
-    .editpanel__close:hover { color: var(--text); }
-    .editpanel__body { flex: 1; overflow-y: auto; padding: 20px; }
-    .editpanel__preview { width: 100%; max-height: 280px; object-fit: contain; border-radius: 8px; margin-bottom: 16px; background: #000; }
+    .ep{position:fixed;top:0;right:0;bottom:0;width:min(460px,90vw);background:var(--panel);border-left:1px solid var(--border);z-index:100;transform:translateX(100%);transition:transform .2s ease;display:flex;flex-direction:column;overflow:hidden}
+    .ep.open{transform:translateX(0)}
+    .ep__bk{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99;display:none}
+    .ep__bk.open{display:block}
+    .ep__hd{padding:12px 16px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+    .ep__title{font-weight:900;font-size:14px}
+    .ep__x{background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;padding:2px 6px}
+    .ep__x:hover{color:var(--text)}
+    .ep__body{flex:1;overflow-y:auto;padding:16px}
+    .ep__img{width:100%;max-height:240px;object-fit:contain;border-radius:8px;margin-bottom:12px;background:#000}
+    .f{margin-bottom:12px}
+    .f__l{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:3px}
+    .f__i,.f__s,.f__t{width:100%;padding:7px 10px;border-radius:7px;border:1px solid var(--border2);background:var(--surface);color:var(--text);font-size:13px;font-family:var(--sans)}
+    .f__i:focus,.f__s:focus,.f__t:focus{outline:none;border-color:var(--accent)}
+    .f__t{min-height:50px;resize:vertical}
+    .f__sku{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:6px}
+    .ep__ft{padding:10px 16px;border-top:1px solid var(--border);display:flex;gap:6px;justify-content:space-between}
 
-    .field { margin-bottom: 16px; }
-    .field__label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 4px; }
-    .field__input, .field__select, .field__textarea {
-      width: 100%; padding: 8px 12px; border-radius: 8px;
-      border: 1px solid var(--border2); background: var(--surface);
-      color: var(--text); font-size: 14px; font-family: var(--sans);
-    }
-    .field__input:focus, .field__select:focus, .field__textarea:focus { outline: none; border-color: var(--accent); }
-    .field__textarea { min-height: 60px; resize: vertical; }
-    .field__sku { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-bottom: 8px; }
-    .editpanel__footer { padding: 12px 20px; border-top: 1px solid var(--border); display: flex; gap: 8px; justify-content: flex-end; }
-
-    .toast {
-      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-      background: var(--good); color: #000; padding: 10px 20px; border-radius: 8px;
-      font-weight: 700; font-size: 14px; z-index: 200; opacity: 0; transition: opacity .3s;
-    }
-    .toast.show { opacity: 1; }
-    .empty { text-align: center; padding: 80px 20px; color: var(--muted); }
-    .empty__title { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+    .toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--good);color:#000;padding:8px 18px;border-radius:7px;font-weight:700;font-size:13px;z-index:200;opacity:0;transition:opacity .3s}
+    .toast.show{opacity:1}
   </style>
 </head>
 <body>
@@ -144,258 +88,282 @@
   <div class="topbar__title">arttra admin</div>
   <div class="topbar__actions">
     <span class="topbar__stat" id="statTotal">—</span>
-    <button class="btn btn--good" id="btnExport">Export overrides.json</button>
-    <button class="btn" id="btnImport">Import overrides</button>
+    <button class="btn btn--good" id="btnExport">Export overrides</button>
+    <button class="btn" id="btnImport">Import</button>
     <input type="file" id="importFile" accept=".json" style="display:none">
   </div>
 </div>
 
 <div class="toolbar">
-  <input class="toolbar__search" id="search" type="search" placeholder="Search titles, SKUs, styles..." />
-  <button class="toolbar__filter toolbar__filter--active" data-filter="all">All</button>
-  <button class="toolbar__filter" data-filter="Metal Art">Metal</button>
-  <button class="toolbar__filter" data-filter="Art Prints">Prints</button>
-  <button class="toolbar__filter" data-filter="Photography">Photo</button>
-  <button class="toolbar__filter" data-filter="unpriced">Unpriced</button>
-  <button class="toolbar__filter" data-filter="edited">Edited</button>
+  <input class="toolbar__search" id="search" type="search" placeholder="Search..." />
+  <button class="tf tf--active" data-f="all">All</button>
+  <button class="tf" data-f="Original">Originals</button>
+  <button class="tf" data-f="Metal Art">Metal</button>
+  <button class="tf" data-f="Art Prints">Prints</button>
+  <button class="tf" data-f="Photography">Photo</button>
+  <button class="tf" data-f="Textile">Textile</button>
+  <button class="tf" data-f="unpriced">Unpriced</button>
+  <button class="tf" data-f="edited">Edited</button>
+  <button class="btn btn--sm" id="selectAll">Select All Visible</button>
 </div>
 
 <div class="batchbar" id="batchbar">
   <span class="batchbar__count" id="batchCount">0</span>
-  <select id="batchCategory"><option value="">Category...</option><option>Metal Art</option><option>Art Prints</option><option>Photography</option></select>
-  <select id="batchStyle"><option value="">Style...</option><option>Ironwork</option><option>Chromata</option><option>Starkform</option><option>Naturalis</option><option>Luminos</option><option>Tenebrae</option><option>Intricata</option><option>Photography</option></select>
-  <input id="batchPrice" type="number" placeholder="Price" style="width:80px" />
-  <input id="batchMaterials" type="text" placeholder="Materials" style="width:150px" />
-  <button class="btn btn--accent btn--small" id="batchApply">Apply</button>
-  <button class="btn btn--small" id="batchDeselect">Clear</button>
-  <button class="btn btn--danger btn--small" id="batchRemoveBg">Flag bg removal</button>
-  <button class="btn btn--danger btn--small" id="batchHide">Hide</button>
+  <select id="bCat"><option value="">Category...</option><option>Original</option><option>Metal Art</option><option>Art Prints</option><option>Photography</option><option>Textile</option></select>
+  <select id="bStyle"><option value="">Style...</option><option>Ironwork</option><option>Chromata</option><option>Starkform</option><option>Naturalis</option><option>Luminos</option><option>Tenebrae</option><option>Intricata</option><option>Photography</option></select>
+  <input id="bPrice" type="number" placeholder="$" style="width:70px" />
+  <input id="bMat" type="text" placeholder="Materials" style="width:120px" />
+  <button class="btn btn--accent btn--sm" id="bApply">Apply</button>
+  <button class="btn btn--sm" id="bClear">Clear</button>
+  <button class="btn btn--warn btn--sm" id="bSold">Mark Sold</button>
+  <button class="btn btn--danger btn--sm" id="bBgRm">Flag bg removal</button>
+  <button class="btn btn--danger btn--sm" id="bHide">Hide</button>
 </div>
 
 <div id="grid" class="grid"></div>
 
-<div class="editpanel__backdrop" id="backdrop"></div>
-<div class="editpanel" id="editpanel">
-  <div class="editpanel__header">
-    <div class="editpanel__title">Edit</div>
-    <button class="editpanel__close" id="editClose">×</button>
+<div class="ep__bk" id="bk"></div>
+<div class="ep" id="ep">
+  <div class="ep__hd">
+    <div class="ep__title">Edit</div>
+    <button class="ep__x" id="epX">×</button>
   </div>
-  <div class="editpanel__body">
-    <img class="editpanel__preview" id="editImage" />
-    <div class="field__sku" id="editSku"></div>
-    <div class="field"><div class="field__label">Title</div><input class="field__input" id="editName" /></div>
-    <div class="field"><div class="field__label">Category</div>
-      <select class="field__select" id="editCategory"><option>Metal Art</option><option>Art Prints</option><option>Photography</option></select>
+  <div class="ep__body">
+    <img class="ep__img" id="eImg" />
+    <div class="f__sku" id="eSku"></div>
+    <div class="f"><div class="f__l">Title</div><input class="f__i" id="eName" /></div>
+    <div class="f"><div class="f__l">Category</div>
+      <select class="f__s" id="eCat"><option>Original</option><option>Metal Art</option><option>Art Prints</option><option>Photography</option><option>Textile</option></select>
     </div>
-    <div class="field"><div class="field__label">Style</div>
-      <select class="field__select" id="editStyle"><option>Ironwork</option><option>Chromata</option><option>Starkform</option><option>Naturalis</option><option>Luminos</option><option>Tenebrae</option><option>Intricata</option><option>Photography</option></select>
+    <div class="f"><div class="f__l">Style</div>
+      <select class="f__s" id="eStyle"><option>Ironwork</option><option>Chromata</option><option>Starkform</option><option>Naturalis</option><option>Luminos</option><option>Tenebrae</option><option>Intricata</option><option>Photography</option></select>
     </div>
-    <div class="field"><div class="field__label">Price ($)</div><input class="field__input" id="editPrice" type="number" step="1" /></div>
-    <div class="field"><div class="field__label">Materials</div><input class="field__input" id="editMaterials" placeholder="acrylic, ink, canvas" /></div>
-    <div class="field"><div class="field__label">Available products</div><input class="field__input" id="editProducts" placeholder="Laser-Cut Metal, Canvas, Framed Print" /></div>
-    <div class="field"><div class="field__label">Description</div><textarea class="field__textarea" id="editDesc"></textarea></div>
-    <div class="field"><label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="editRemoveBg" /><span class="field__label" style="margin:0">Flag for background removal</span></label></div>
-    <div class="field"><label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="editHidden" /><span class="field__label" style="margin:0">Hide from gallery</span></label></div>
-    <div class="field"><button class="btn btn--danger btn--small" id="editReset">Reset to auto-generated</button></div>
+    <div class="f"><div class="f__l">Price ($)</div><input class="f__i" id="ePrice" type="number" step="1" /></div>
+    <div class="f"><div class="f__l">Materials</div><input class="f__i" id="eMat" placeholder="acrylic, ink, canvas, steel" /></div>
+    <div class="f"><div class="f__l">Available products</div><input class="f__i" id="eProds" placeholder="Laser-Cut Metal, Canvas, Framed Print" /></div>
+    <div class="f"><div class="f__l">Description</div><textarea class="f__t" id="eDesc"></textarea></div>
+    <div class="f"><label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="eSold" /><span class="f__l" style="margin:0">Sold (one-of-a-kind)</span></label></div>
+    <div class="f"><label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="eBgRm" /><span class="f__l" style="margin:0">Flag for bg removal</span></label></div>
+    <div class="f"><label style="display:flex;align-items:center;gap:6px;cursor:pointer"><input type="checkbox" id="eHide" /><span class="f__l" style="margin:0">Hidden</span></label></div>
+    <div class="f"><button class="btn btn--danger btn--sm" id="eReset">Reset to auto</button></div>
   </div>
-  <div class="editpanel__footer">
-    <button class="btn" id="editPrev">← Prev</button>
-    <button class="btn" id="editNext">Next →</button>
-    <button class="btn btn--accent" id="editSave">Save</button>
+  <div class="ep__ft">
+    <div><button class="btn btn--sm" id="ePrev">← Prev</button> <button class="btn btn--sm" id="eNext">Next →</button></div>
+    <button class="btn btn--accent" id="eSave">Save</button>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
 <script>
-let artworks = [], overrides = {}, selected = new Set();
-let filterCategory = "all", searchQuery = "", editingId = null;
+let A=[],O={},sel=new Set(),filt="all",q="",eId=null,lastClicked=null;
 
-async function loadData() {
-  try { artworks = await (await fetch("./data/artworks.json", {cache:"no-store"})).json(); } catch { artworks = []; }
-  try { const s = localStorage.getItem("arttra_overrides"); if (s) overrides = JSON.parse(s); } catch {}
-  updateStats(); renderGrid();
+async function load(){
+  try{A=await(await fetch("./data/artworks.json",{cache:"no-store"})).json()}catch{A=[]}
+  try{const s=localStorage.getItem("arttra_overrides");if(s)O=JSON.parse(s)}catch{}
+  stats();render();
 }
-function save() { localStorage.setItem("arttra_overrides", JSON.stringify(overrides)); }
-function eff(art) { return {...art, ...(overrides[art.id]||{})}; }
-function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function save(){localStorage.setItem("arttra_overrides",JSON.stringify(O))}
+function eff(a){return{...a,...(O[a.id]||{})}}
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
 
-function updateStats() {
-  const oc = Object.keys(overrides).length;
-  document.getElementById("statTotal").textContent = `${artworks.length} pieces` + (oc ? ` · ${oc} edits` : "");
+function stats(){
+  const oc=Object.keys(O).length;
+  document.getElementById("statTotal").textContent=`${A.length} pieces`+(oc?` · ${oc} edits`:"");
 }
 
-function getFiltered() {
-  return artworks.filter(art => {
-    const e = eff(art);
-    if (filterCategory === "edited") return !!overrides[art.id];
-    if (filterCategory === "unpriced") return (e.priceTiers?.startingPrice ?? 79) === 79;
-    if (filterCategory !== "all" && e.category !== filterCategory) return false;
-    if (searchQuery) {
-      const h = [e.title, e.sku, e.style, e.category, e.materials||""].join(" ").toLowerCase();
-      if (!h.includes(searchQuery.toLowerCase())) return false;
-    }
+function filtered(){
+  return A.filter(a=>{
+    const e=eff(a);
+    if(filt==="edited")return!!O[a.id];
+    if(filt==="unpriced")return(e.priceTiers?.startingPrice??79)===79;
+    if(filt!=="all"&&e.category!==filt)return false;
+    if(q){const h=[e.title,e.sku,e.style,e.category,e.materials||""].join(" ").toLowerCase();if(!h.includes(q.toLowerCase()))return false}
     return true;
   });
 }
 
-function renderGrid() {
-  const grid = document.getElementById("grid");
-  const filtered = getFiltered();
-  if (!filtered.length) { grid.innerHTML = '<div class="empty"><div class="empty__title">No artworks</div></div>'; return; }
-
-  grid.innerHTML = filtered.map(art => {
-    const e = eff(art), sel = selected.has(art.id), edited = !!overrides[art.id];
-    const cc = e.category==="Metal Art" ? "badge--metal" : e.category==="Photography" ? "badge--photo" : "badge--print";
-    return `<div class="card ${sel?"selected":""}" data-id="${art.id}">
-      <div class="card__check">${sel?"✓":""}</div>
-      ${edited?'<div class="card__edited"></div>':""}
+function render(){
+  const g=document.getElementById("grid"),f=filtered();
+  if(!f.length){g.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:60px;color:var(--muted)">No artworks</div>';return}
+  g.innerHTML=f.map(a=>{
+    const e=eff(a),s=sel.has(a.id),ed=!!O[a.id];
+    const bc=e.category==="Metal Art"?"badge--metal":e.category==="Photography"?"badge--photo":e.category==="Original"?"badge--original":e.category==="Textile"?"badge--textile":"badge--print";
+    return`<div class="card ${s?"selected":""}" data-id="${a.id}">
+      ${ed?'<div class="card__edited"></div>':""}
+      ${e.sold?'<div class="badge--sold">Sold</div>':""}
       <img class="card__img" src="${e.thumb||e.image||""}" loading="lazy" alt="" />
       <div class="card__body">
         <div class="card__title" title="${esc(e.title)}">${esc(e.title)}</div>
         <div class="card__meta">
-          <span class="card__badge ${cc}">${esc(e.category||"?")}</span>
+          <span class="card__badge ${bc}">${esc(e.category||"?")}</span>
           <span>${e.priceTiers?.startingPrice?"$"+e.priceTiers.startingPrice:""}</span>
         </div>
       </div>
     </div>`;
   }).join("");
 
-  grid.querySelectorAll(".card").forEach(c => {
-    const id = c.dataset.id;
-    c.querySelector(".card__check").addEventListener("click", e => { e.stopPropagation(); toggleSelect(id); });
-    c.addEventListener("click", () => openEdit(id));
+  g.querySelectorAll(".card").forEach(c=>{
+    const id=c.dataset.id;
+    c.addEventListener("click",e=>{
+      if(e.shiftKey&&lastClicked){
+        // Range select
+        const f2=filtered(),i1=f2.findIndex(a=>a.id===lastClicked),i2=f2.findIndex(a=>a.id===id);
+        if(i1>=0&&i2>=0){
+          const lo=Math.min(i1,i2),hi=Math.max(i1,i2);
+          for(let i=lo;i<=hi;i++)sel.add(f2[i].id);
+        }
+        batch();render();return;
+      }
+      if(e.metaKey||e.ctrlKey){
+        // Toggle select
+        sel.has(id)?sel.delete(id):sel.add(id);
+        lastClicked=id;
+        batch();render();return;
+      }
+      // Single click = open edit
+      openEdit(id);
+    });
   });
 }
 
-function toggleSelect(id) { selected.has(id) ? selected.delete(id) : selected.add(id); updateBatch(); renderGrid(); }
-function updateBatch() {
-  const b = document.getElementById("batchbar");
-  b.classList.toggle("active", selected.size > 0);
-  document.getElementById("batchCount").textContent = selected.size + " selected";
+function batch(){
+  const b=document.getElementById("batchbar");
+  b.classList.toggle("active",sel.size>0);
+  document.getElementById("batchCount").textContent=sel.size+" selected";
 }
 
-// Batch
-document.getElementById("batchApply").addEventListener("click", () => {
-  const cat=document.getElementById("batchCategory").value, sty=document.getElementById("batchStyle").value;
-  const pr=document.getElementById("batchPrice").value, mat=document.getElementById("batchMaterials").value;
-  for (const id of selected) {
-    if (!overrides[id]) overrides[id] = {};
-    if (cat) overrides[id].category = cat;
-    if (sty) overrides[id].style = sty;
-    if (pr) overrides[id].priceTiers = {startingPrice: Number(pr)};
-    if (mat) overrides[id].materials = mat;
+// Select All Visible
+document.getElementById("selectAll").addEventListener("click",()=>{
+  filtered().forEach(a=>sel.add(a.id));
+  lastClicked=null;
+  batch();render();
+  toast(`Selected ${sel.size}`);
+});
+
+// Batch operations
+document.getElementById("bApply").addEventListener("click",()=>{
+  const cat=document.getElementById("bCat").value,sty=document.getElementById("bStyle").value;
+  const pr=document.getElementById("bPrice").value,mat=document.getElementById("bMat").value;
+  let c=0;
+  for(const id of sel){
+    if(!O[id])O[id]={};
+    if(cat)O[id].category=cat;
+    if(sty)O[id].style=sty;
+    if(pr)O[id].priceTiers={startingPrice:Number(pr)};
+    if(mat)O[id].materials=mat;
+    c++;
   }
-  save(); updateStats(); renderGrid(); toast(`Updated ${selected.size}`);
+  save();stats();render();toast(`Updated ${c}`);
+  document.getElementById("bCat").value="";document.getElementById("bStyle").value="";
+  document.getElementById("bPrice").value="";document.getElementById("bMat").value="";
 });
-document.getElementById("batchDeselect").addEventListener("click", () => { selected.clear(); updateBatch(); renderGrid(); });
-document.getElementById("batchRemoveBg").addEventListener("click", () => {
-  for (const id of selected) { if (!overrides[id]) overrides[id]={}; overrides[id].removeBg=true; }
-  save(); toast(`Flagged ${selected.size} for bg removal`);
+document.getElementById("bClear").addEventListener("click",()=>{sel.clear();lastClicked=null;batch();render()});
+document.getElementById("bSold").addEventListener("click",()=>{
+  for(const id of sel){if(!O[id])O[id]={};O[id].sold=true}
+  save();stats();render();toast(`Marked ${sel.size} sold`);
 });
-document.getElementById("batchHide").addEventListener("click", () => {
-  for (const id of selected) { if (!overrides[id]) overrides[id]={}; overrides[id].hidden=true; }
-  save(); updateStats(); renderGrid(); toast(`Hidden ${selected.size}`);
+document.getElementById("bBgRm").addEventListener("click",()=>{
+  for(const id of sel){if(!O[id])O[id]={};O[id].removeBg=true}
+  save();toast(`Flagged ${sel.size} for bg removal`);
+});
+document.getElementById("bHide").addEventListener("click",()=>{
+  for(const id of sel){if(!O[id])O[id]={};O[id].hidden=true}
+  save();stats();render();toast(`Hidden ${sel.size}`);
 });
 
 // Edit panel
-function openEdit(id) {
-  editingId = id;
-  const art = artworks.find(a=>a.id===id); if (!art) return;
-  const e = eff(art);
-  document.getElementById("editImage").src = e.image||e.thumb||"";
-  document.getElementById("editSku").textContent = e.sku||"";
-  document.getElementById("editName").value = e.title||"";
-  document.getElementById("editCategory").value = e.category||"Art Prints";
-  document.getElementById("editStyle").value = e.style||"Naturalis";
-  document.getElementById("editPrice").value = e.priceTiers?.startingPrice||"";
-  document.getElementById("editMaterials").value = e.materials||"";
-  document.getElementById("editProducts").value = (e.bestProducts||[]).join(", ");
-  document.getElementById("editDesc").value = e.description||"";
-  document.getElementById("editRemoveBg").checked = e.removeBg||false;
-  document.getElementById("editHidden").checked = e.hidden||false;
-  document.getElementById("editpanel").classList.add("open");
-  document.getElementById("backdrop").classList.add("open");
+function openEdit(id){
+  eId=id;lastClicked=id;
+  const a=A.find(x=>x.id===id);if(!a)return;
+  const e=eff(a);
+  document.getElementById("eImg").src=e.image||e.thumb||"";
+  document.getElementById("eSku").textContent=e.sku||"";
+  document.getElementById("eName").value=e.title||"";
+  document.getElementById("eCat").value=e.category||"Art Prints";
+  document.getElementById("eStyle").value=e.style||"Naturalis";
+  document.getElementById("ePrice").value=e.priceTiers?.startingPrice||"";
+  document.getElementById("eMat").value=e.materials||"";
+  document.getElementById("eProds").value=(e.bestProducts||[]).join(", ");
+  document.getElementById("eDesc").value=e.description||"";
+  document.getElementById("eSold").checked=e.sold||false;
+  document.getElementById("eBgRm").checked=e.removeBg||false;
+  document.getElementById("eHide").checked=e.hidden||false;
+  document.getElementById("ep").classList.add("open");
+  document.getElementById("bk").classList.add("open");
 }
-function closeEdit() {
-  document.getElementById("editpanel").classList.remove("open");
-  document.getElementById("backdrop").classList.remove("open");
-  editingId = null;
+function closeEdit(){
+  document.getElementById("ep").classList.remove("open");
+  document.getElementById("bk").classList.remove("open");
+  eId=null;
 }
-document.getElementById("editClose").addEventListener("click", closeEdit);
-document.getElementById("backdrop").addEventListener("click", closeEdit);
+document.getElementById("epX").addEventListener("click",closeEdit);
+document.getElementById("bk").addEventListener("click",closeEdit);
 
-document.getElementById("editSave").addEventListener("click", () => {
-  if (!editingId) return;
-  if (!overrides[editingId]) overrides[editingId] = {};
-  const o = overrides[editingId];
-  o.title = document.getElementById("editName").value;
-  o.category = document.getElementById("editCategory").value;
-  o.style = document.getElementById("editStyle").value;
-  o.description = document.getElementById("editDesc").value;
-  o.materials = document.getElementById("editMaterials").value;
-  o.removeBg = document.getElementById("editRemoveBg").checked;
-  o.hidden = document.getElementById("editHidden").checked;
-  const p = document.getElementById("editPrice").value;
-  if (p) o.priceTiers = {startingPrice: Number(p)};
-  const pr = document.getElementById("editProducts").value;
-  if (pr) o.bestProducts = pr.split(",").map(s=>s.trim()).filter(Boolean);
-  save(); updateStats(); renderGrid(); closeEdit(); toast("Saved");
+document.getElementById("eSave").addEventListener("click",()=>{
+  if(!eId)return;
+  if(!O[eId])O[eId]={};
+  const o=O[eId];
+  o.title=document.getElementById("eName").value;
+  o.category=document.getElementById("eCat").value;
+  o.style=document.getElementById("eStyle").value;
+  o.description=document.getElementById("eDesc").value;
+  o.materials=document.getElementById("eMat").value;
+  o.sold=document.getElementById("eSold").checked;
+  o.removeBg=document.getElementById("eBgRm").checked;
+  o.hidden=document.getElementById("eHide").checked;
+  const p=document.getElementById("ePrice").value;
+  if(p)o.priceTiers={startingPrice:Number(p)};
+  const pr=document.getElementById("eProds").value;
+  if(pr)o.bestProducts=pr.split(",").map(s=>s.trim()).filter(Boolean);
+  save();stats();render();closeEdit();toast("Saved");
 });
-
-document.getElementById("editReset").addEventListener("click", () => {
-  if (!editingId) return;
-  delete overrides[editingId];
-  save(); updateStats(); openEdit(editingId); toast("Reset to auto");
+document.getElementById("eReset").addEventListener("click",()=>{
+  if(!eId)return;delete O[eId];save();stats();openEdit(eId);toast("Reset");
 });
 
-// Prev/Next navigation
-document.getElementById("editPrev").addEventListener("click", () => {
-  if (!editingId) return;
-  const f = getFiltered(), idx = f.findIndex(a=>a.id===editingId);
-  if (idx > 0) { saveCurrentEdit(); openEdit(f[idx-1].id); }
+// Prev/Next
+document.getElementById("ePrev").addEventListener("click",()=>{
+  if(!eId)return;const f=filtered(),i=f.findIndex(a=>a.id===eId);
+  if(i>0){document.getElementById("eSave").click();openEdit(f[i-1].id)}
 });
-document.getElementById("editNext").addEventListener("click", () => {
-  if (!editingId) return;
-  const f = getFiltered(), idx = f.findIndex(a=>a.id===editingId);
-  if (idx < f.length-1) { saveCurrentEdit(); openEdit(f[idx+1].id); }
+document.getElementById("eNext").addEventListener("click",()=>{
+  if(!eId)return;const f=filtered(),i=f.findIndex(a=>a.id===eId);
+  if(i<f.length-1){document.getElementById("eSave").click();openEdit(f[i+1].id)}
 });
-function saveCurrentEdit() { document.getElementById("editSave").click(); }
 
 // Filters
-document.querySelectorAll(".toolbar__filter").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".toolbar__filter").forEach(b=>b.classList.remove("toolbar__filter--active"));
-    btn.classList.add("toolbar__filter--active");
-    filterCategory = btn.dataset.filter;
-    renderGrid();
+document.querySelectorAll(".tf").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll(".tf").forEach(x=>x.classList.remove("tf--active"));
+    b.classList.add("tf--active");filt=b.dataset.f;render();
   });
 });
-document.getElementById("search").addEventListener("input", e => { searchQuery = e.target.value; renderGrid(); });
+document.getElementById("search").addEventListener("input",e=>{q=e.target.value;render()});
 
 // Export/Import
-document.getElementById("btnExport").addEventListener("click", () => {
-  const b = new Blob([JSON.stringify(overrides, null, 2)], {type:"application/json"});
-  const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = "overrides.json"; a.click();
-  toast("Exported overrides.json — commit to repo");
+document.getElementById("btnExport").addEventListener("click",()=>{
+  const b=new Blob([JSON.stringify(O,null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="overrides.json";a.click();
+  toast("Exported — commit data/overrides.json to repo");
 });
-document.getElementById("btnImport").addEventListener("click", () => document.getElementById("importFile").click());
-document.getElementById("importFile").addEventListener("change", e => {
-  const f = e.target.files[0]; if (!f) return;
-  const r = new FileReader();
-  r.onload = () => { try { overrides={...overrides,...JSON.parse(r.result)}; save(); updateStats(); renderGrid(); toast("Imported"); } catch { toast("Bad JSON"); } };
-  r.readAsText(f); e.target.value="";
+document.getElementById("btnImport").addEventListener("click",()=>document.getElementById("importFile").click());
+document.getElementById("importFile").addEventListener("change",e=>{
+  const f=e.target.files[0];if(!f)return;
+  const r=new FileReader();
+  r.onload=()=>{try{O={...O,...JSON.parse(r.result)};save();stats();render();toast("Imported")}catch{toast("Bad JSON")}};
+  r.readAsText(f);e.target.value="";
 });
 
 // Keyboard
-window.addEventListener("keydown", e => {
-  if (e.key==="Escape") closeEdit();
-  if ((e.metaKey||e.ctrlKey) && e.key==="a") { e.preventDefault(); getFiltered().forEach(a=>selected.add(a.id)); updateBatch(); renderGrid(); }
+window.addEventListener("keydown",e=>{
+  if(e.key==="Escape")closeEdit();
+  if((e.metaKey||e.ctrlKey)&&e.key==="a"&&!eId){e.preventDefault();filtered().forEach(a=>sel.add(a.id));batch();render()}
 });
 
-function toast(m) { const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),2000); }
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2000)}
 
-loadData();
+load();
 </script>
 </body>
 </html>

@@ -21,7 +21,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Optional
 
 try:
-    from PIL import Image, ImageFilter, ImageEnhance, ImageStat
+    from PIL import Image, ImageFilter, ImageEnhance, ImageStat, ImageDraw, ImageFont
     from PIL.ExifTags import Base as ExifBase
 except ImportError:
     raise ImportError("Pillow is required: pip install Pillow")
@@ -481,6 +481,9 @@ def process_single(args: tuple) -> Optional[dict]:
                 web = img.resize((int(pw * ratio), int(ph * ratio)), Image.LANCZOS)
             else:
                 web = img.copy()
+            # Watermark web images (print files stay clean)
+            web = _apply_watermark(web)
+
             web_webp = Path(web_dir) / f"{stem}.webp"
             web.save(str(web_webp), "WEBP", quality=WEBP_QUALITY, optimize=True)
             web_jpg = Path(web_dir) / f"{stem}.jpg"
@@ -539,6 +542,53 @@ def process_single(args: tuple) -> Optional[dict]:
     except Exception as e:
         print(f"  [FAIL] {stem}: {e}")
         return None
+
+
+def _apply_watermark(img):
+    """Apply subtle diagonal ARTTRA.ART watermark to web display images."""
+    try:
+        w, h = img.size
+        overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(overlay)
+
+        # Try to get a decent font size
+        font_size = max(w, h) // 18
+        try:
+            font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", font_size)
+        except Exception:
+            try:
+                font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", font_size)
+            except Exception:
+                font = ImageFont.load_default()
+
+        text = "ARTTRA.ART"
+
+        # Tile the watermark diagonally across the image
+        import math
+        step_x = int(w * 0.4)
+        step_y = int(h * 0.35)
+
+        for y_off in range(-h, h * 2, step_y):
+            for x_off in range(-w, w * 2, step_x):
+                # Create rotated text
+                txt_img = Image.new("RGBA", (font_size * 8, font_size * 2), (0, 0, 0, 0))
+                txt_draw = ImageDraw.Draw(txt_img)
+                txt_draw.text((0, 0), text, fill=(255, 255, 255, 28), font=font)
+                rotated = txt_img.rotate(35, expand=True, resample=Image.BICUBIC)
+
+                # Paste onto overlay
+                paste_x = x_off
+                paste_y = y_off
+                if 0 - rotated.width < paste_x < w and 0 - rotated.height < paste_y < h:
+                    overlay.paste(rotated, (paste_x, paste_y), rotated)
+
+        # Composite
+        if img.mode != "RGBA":
+            img = img.convert("RGBA")
+        result = Image.alpha_composite(img, overlay)
+        return result.convert("RGB")
+    except Exception:
+        return img
 
 
 def _vectorize_true(input_path, output_path, color_precision=6):

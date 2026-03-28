@@ -466,6 +466,16 @@
       .catnav__brand { padding: 14px 12px; }
       .catnav__link { padding: 14px 10px; font-size: 12px; }
     }
+    /* ═══ COPY PROTECTION ═══ */
+    .card__img, .modal__image, .hero__logo {
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      pointer-events: none;
+    }
+    .card__imgWrap, .modal__media { pointer-events: auto; }
+    @media print {
+      body { display: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -589,6 +599,15 @@
       <a id="checkoutLink" class="btn btn--primary btn--full" href="#">Checkout</a>
     </div>
   </aside>
+
+  <!-- Copy protection -->
+  <script>
+    document.addEventListener('contextmenu', e => { if(e.target.tagName==='IMG') e.preventDefault(); });
+    document.addEventListener('dragstart', e => { if(e.target.tagName==='IMG') e.preventDefault(); });
+    document.addEventListener('keydown', e => {
+      if((e.ctrlKey||e.metaKey) && (e.key==='s'||e.key==='S'||e.key==='p'||e.key==='P')) e.preventDefault();
+    });
+  </script>
 
   <script src="./script.js" type="module"></script>
 </body>
