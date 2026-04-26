@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  arttra ingest LaunchAgent.
+
+  Polls the drops folder every 60s, materializes iCloud placeholders, stages
+  stable images into gallery-source/, commits, and pushes to GitHub. The
+  GitHub Actions workflow takes it from there.
+
+  Do NOT use WatchPaths here — FSEvents is unreliable on iCloud Drive,
+  network mounts, and external drives that sleep. Polling is boring but works.
+
+  Placeholders {{...}} are filled in by scripts/install-agent.sh.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.arttra.pipeline</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>{{REPO}}/scripts/ingest.sh</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key>
+    <string>{{HOME}}</string>
+    <key>ARTTRA_DROPS</key>
+    <string>{{DROPS}}</string>
+    <key>ARTTRA_REPO</key>
+    <string>{{REPO}}</string>
+    <key>ARTTRA_BRANCH</key>
+    <string>{{BRANCH}}</string>
+    <key>ARTTRA_STABLE_SECS</key>
+    <string>5</string>
+  </dict>
+
+  <key>StartInterval</key>
+  <integer>60</integer>
+
+  <key>ThrottleInterval</key>
+  <integer>30</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>{{HOME}}/Library/Logs/arttra-ingest.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>{{HOME}}/Library/Logs/arttra-ingest.err.log</string>
+
+  <key>WorkingDirectory</key>
+  <string>{{REPO}}</string>
+</dict>
+</plist>
