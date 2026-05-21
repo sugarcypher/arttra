@@ -56,6 +56,10 @@ DARK_PREFIX = [
     "Morrigan", "Tenebris", "Nocturne", "Obsidian", "Stygian", "Erebus",
     "Cimmerian", "Phantasm", "Revenant", "Sepulchre", "Eventide",
     "Gloaming", "Penumbral", "Hollowmere", "Ashgrove", "Duskfall",
+    "Caliginous", "Crepuscule", "Subfusc", "Fuliginous", "Acheron",
+    "Lethe", "Charnel", "Lichgate", "Corbeau", "Widdershin", "Mortcloth",
+    "Blackdamp", "Tenebrific", "Sablefell", "Grimfen", "Ravenmoor",
+    "Cinereous", "Nightjar", "Direling", "Umbrage",
 ]
 
 LIGHT_PREFIX = [
@@ -63,6 +67,10 @@ LIGHT_PREFIX = [
     "Alabast", "Gossamer", "Silvaine", "Ichor", "Halcyon", "Seraphine",
     "Opaline", "Pearlescent", "Glintmere", "Dawnspar", "Lucent",
     "Eidolon", "Luminesce", "Chandral", "Etherveil", "Starhollow",
+    "Effulgence", "Empyrean", "Refulgent", "Coruscant", "Nacre",
+    "Argent", "Eburnean", "Auroral", "Glister", "Limn", "Aubade",
+    "Heliotrope", "Lucida", "Phosphor", "Candent", "Pellucid",
+    "Selene", "Lambent", "Irradiance", "Sheen",
 ]
 
 WARM_PREFIX = [
@@ -70,6 +78,10 @@ WARM_PREFIX = [
     "Vulcan", "Amaranth", "Carnelian", "Sanguine", "Russet", "Titian",
     "Briarclaw", "Ironbloom", "Copperwynd", "Hearthstone", "Flamecrest",
     "Burnveil", "Ashenmoor", "Blazemark", "Scorchfield", "Kindlemere",
+    "Calenture", "Incarnadine", "Minium", "Rubescent", "Flambeau",
+    "Brimstone", "Pyrrhous", "Fervid", "Sienna", "Vermeil", "Ignescent",
+    "Coalfell", "Smoulderwick", "Foundry", "Embermoor", "Auburn",
+    "Cresset", "Ferrous", "Bellows", "Tindersphere",
 ]
 
 COOL_PREFIX = [
@@ -77,6 +89,10 @@ COOL_PREFIX = [
     "Lapis", "Cobalt", "Aquiline", "Tidewater", "Northveil", "Frostholme",
     "Wintermere", "Deepcurrent", "Slatewind", "Mistral", "Stormglass",
     "Bluevein", "Shorelight", "Pelagic", "Abyssen", "Harborglass",
+    "Gelid", "Hyperborean", "Brumal", "Niveous", "Hibernal", "Glaucous",
+    "Thalassic", "Hoarfrost", "Verglas", "Nereid", "Undine", "Cerule",
+    "Frostmarrow", "Sleetmere", "Glacis", "Floe", "Wintermark",
+    "Snowmelt", "Icebound", "Aquilon",
 ]
 
 # Suffix pools organized by structural character
@@ -84,25 +100,48 @@ GEOMETRIC_SUFFIX = [
     "Lattice", "Tessera", "Facet", "Shard", "Matrix", "Prism",
     "Axis", "Meridian", "Parallax", "Vertex", "Polygon", "Tangent",
     "Bisect", "Fulcrum", "Keystone", "Capstone", "Lintel",
+    "Quoin", "Gnomon", "Voussoir", "Plinth", "Mullion", "Spandrel",
+    "Crenel", "Merlon", "Architrave", "Chamfer", "Lozenge",
+    "Stellation", "Coffer", "Soffit", "Cornice", "Abacus",
 ]
 
 ORGANIC_SUFFIX = [
     "Bloom", "Tendril", "Helix", "Gyre", "Frond", "Rhizome",
     "Mycelium", "Canopy", "Thicket", "Undergrowth", "Lichen",
-    "Petalwork", "Branchweave", "Roothold", "Seedvault", "Thornset",
+    "Petalwork", "Roothold", "Seedvault", "Thornset",
+    "Boscage", "Spinney", "Coppice", "Bracken", "Verdure", "Calyx",
+    "Umbel", "Panicle", "Bosk", "Greenwood", "Witchgrass", "Sedge",
+    "Bindweed", "Heartwood", "Burgeon", "Mossbloom",
 ]
 
 MINIMAL_SUFFIX = [
     "Void", "Monolith", "Stele", "Cipher", "Null", "Vestige",
     "Fragment", "Remnant", "Trace", "Echo", "Silhouette", "Outline",
     "Husk", "Threshold", "Margin", "Plane", "Expanse",
+    "Lacuna", "Caesura", "Interstice", "Abeyance", "Quietus", "Nadir",
+    "Sere", "Effacement", "Hush", "Aphelion", "Tabula", "Attenuation",
+    "Quiescence", "Ebb", "Vacancy", "Pall",
 ]
 
 COMPLEX_SUFFIX = [
-    "Labyrinth", "Nexus", "Vortex", "Tangle", "Weave", "Tapestry",
-    "Confluence", "Maelstrom", "Chronicle", "Palimpsest", "Mosaic",
-    "Kaleidoscope", "Assemblage", "Compendium", "Phantasmagoria",
+    "Labyrinth", "Nexus", "Vortex", "Tangle", "Confluence", "Maelstrom",
+    "Chronicle", "Palimpsest", "Mosaic", "Kaleidoscope", "Assemblage",
+    "Compendium", "Phantasmagoria",
+    "Daedal", "Arabesque", "Imbroglio", "Welter", "Filigree", "Plexus",
+    "Reliquary", "Bestiary", "Cartouche", "Marginalia", "Involution",
+    "Convolution", "Concatenation", "Gordian", "Warren", "Rookery",
 ]
+
+
+# Words that must never appear in a generated name (banned AI-cliche vocabulary).
+# Matched as substrings, so "scaffold" also blocks "scaffolding", etc.
+BANNED_NAME_SUBSTRINGS = ("tapestry", "scaffold", "signal", "weave", "woven", "fabric", "realm")
+
+
+def _name_is_clean(word: str) -> bool:
+    """True if a candidate name-word contains no banned substring."""
+    wl = word.lower()
+    return not any(b in wl for b in BANNED_NAME_SUBSTRINGS)
 
 
 def generate_name(profile: dict, colors: list, seed_str: str) -> str:
@@ -137,6 +176,10 @@ def generate_name(profile: dict, colors: list, seed_str: str) -> str:
         spool = MINIMAL_SUFFIX
     else:
         spool = ORGANIC_SUFFIX
+
+    # Enforce the banned-word ban regardless of pool contents.
+    pool = [w for w in pool if _name_is_clean(w)]
+    spool = [w for w in spool if _name_is_clean(w)]
 
     prefix = rng.choice(pool)
     suffix = rng.choice(spool)
