@@ -12,6 +12,7 @@ import hashlib
 import shutil
 import subprocess
 import sys
+import tempfile
 import base64
 import random
 import colorsys
@@ -21,7 +22,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Optional
 
 try:
-    from PIL import Image, ImageFilter, ImageEnhance, ImageStat, ImageDraw, ImageFont
+    from PIL import Image, ImageFilter, ImageEnhance, ImageStat, ImageDraw, ImageFont, ImageOps
     from PIL.ExifTags import Base as ExifBase
 except ImportError:
     raise ImportError("Pillow is required: pip install Pillow")
@@ -428,21 +429,145 @@ def extract_colors(image_path: str, n: int = 6) -> list:
 
 
 # ═══════════════════════════════════════════════════════════════════
+# CANVAS DETECTION (photos of physical paintings)
+# ═══════════════════════════════════════════════════════════════════
+
+def _longest_run(arr, thresh):
+    """Start/end indices of the longest contiguous run of values above thresh."""
+    above = arr > thresh
+    best_len, best = 0, (0, len(arr))
+    i, n = 0, len(arr)
+    while i < n:
+        if above[i]:
+            j = i
+            while j < n and above[j]:
+                j += 1
+            if j - i > best_len:
+                best_len, best = j - i, (i, j)
+            i = j
+        else:
+            i += 1
+    return best
+
+
+def detect_and_crop_canvas(image_path: str):
+    """Locate a rectangular canvas in a photo of a physical painting, deskew it,
+    and crop to it. Returns a cropped PIL.Image, or None when no confident
+    canvas is found — the caller then leaves the image untouched.
+
+    Built for phone photos of paintings lying on a floor/surface: GrabCut
+    separates the canvas from the textured background, the canvas angle deskews
+    it, and a projection-profile crop trims thin edge clutter (cords, tools).
+    """
+    try:
+        import cv2
+        import numpy as np
+
+        pil = Image.open(image_path)
+        try:
+            pil = ImageOps.exif_transpose(pil)
+        except Exception:
+            pass
+        full = cv2.cvtColor(np.array(pil.convert("RGB")), cv2.COLOR_RGB2BGR)
+        H, W = full.shape[:2]
+        scale = 1000.0 / max(H, W)
+        small = cv2.resize(full, None, fx=scale, fy=scale) if scale < 1 else full.copy()
+        sH, sW = small.shape[:2]
+        frame_area = sH * sW
+
+        # GrabCut — outer 6% border is taken as definite background (the surface).
+        gc = np.zeros((sH, sW), np.uint8)
+        mx, my = int(sW * 0.06), int(sH * 0.06)
+        bgd, fgd = np.zeros((1, 65), np.float64), np.zeros((1, 65), np.float64)
+        cv2.grabCut(small, gc, (mx, my, sW - 2 * mx, sH - 2 * my),
+                    bgd, fgd, 5, cv2.GC_INIT_WITH_RECT)
+        fg = np.where((gc == cv2.GC_FGD) | (gc == cv2.GC_PR_FGD), 255, 0).astype(np.uint8)
+        k = max(9, int(min(sH, sW) * 0.02))
+        fg = cv2.morphologyEx(fg, cv2.MORPH_OPEN, np.ones((k, k), np.uint8))
+        fg = cv2.morphologyEx(fg, cv2.MORPH_CLOSE, np.ones((k, k), np.uint8))
+
+        cnts, _ = cv2.findContours(fg, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        if not cnts:
+            return None
+        c = max(cnts, key=cv2.contourArea)
+        if cv2.contourArea(c) < 0.10 * frame_area:
+            return None
+
+        # Filled canvas contour — drops detached clutter blobs.
+        filled = np.zeros((sH, sW), np.uint8)
+        cv2.drawContours(filled, [c], -1, 255, -1)
+
+        angle = cv2.minAreaRect(c)[-1] % 90
+        if angle > 45:
+            angle -= 90
+
+        mask_full = cv2.resize(filled, (W, H), interpolation=cv2.INTER_NEAREST)
+        cx, cy = W / 2.0, H / 2.0
+        M = cv2.getRotationMatrix2D((cx, cy), angle, 1.0)
+        cos, sin = abs(M[0, 0]), abs(M[0, 1])
+        nW, nH = int(H * sin + W * cos), int(H * cos + W * sin)
+        M[0, 2] += nW / 2.0 - cx
+        M[1, 2] += nH / 2.0 - cy
+        rot_img = cv2.warpAffine(full, M, (nW, nH))
+        rot_mask = cv2.warpAffine(mask_full, M, (nW, nH))
+
+        # Projection-profile crop: keep the longest contiguous band of rows/cols
+        # that are solidly canvas, which trims thin edge clutter.
+        rows = (rot_mask > 127).mean(axis=1)
+        cols = (rot_mask > 127).mean(axis=0)
+        if rows.max() < 0.2 or cols.max() < 0.2:
+            return None
+        y0, y1 = _longest_run(rows, 0.7 * rows.max())
+        x0, x1 = _longest_run(cols, 0.7 * cols.max())
+        crop = rot_img[y0:y1, x0:x1]
+        ch, cw = crop.shape[:2]
+        if cw < 50 or ch < 50:
+            return None
+        ar = cw / ch
+        if ar < 0.25 or ar > 4.0:
+            return None
+        return Image.fromarray(cv2.cvtColor(crop, cv2.COLOR_BGR2RGB))
+    except Exception as e:
+        print(f"  [canvas] detection failed on {Path(image_path).name}: {e}")
+        return None
+
+
+# ═══════════════════════════════════════════════════════════════════
 # SINGLE IMAGE PROCESSOR
 # ═══════════════════════════════════════════════════════════════════
 
 def process_single(args: tuple) -> Optional[dict]:
-    img_path_str, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer = args
+    img_path_str, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer, no_crop_ids = args
     img_path = Path(img_path_str)
     stem = img_path.stem
     stable_id = hashlib.md5(img_path.name.encode()).hexdigest()[:8].upper()
 
+    tmp_crop = None
     try:
-        profile = analyze_image(str(img_path))
-        raw_colors = extract_colors(str(img_path))
-        named_colors = classify_palette(raw_colors)
         has_exif = detect_exif(str(img_path))
-        style = classify_style(profile, has_exif)
+
+        # Photos of physical paintings (carpet/floor shots) carry camera EXIF —
+        # auto-detect the canvas and crop to it in memory (the source file is
+        # never modified). A successful crop means this is a physical painting,
+        # not a photograph — so it classifies by visual style and lands in the
+        # right gallery section with no manual override.
+        work_path = str(img_path)
+        canvas_cropped = False
+        if has_exif and stable_id not in no_crop_ids:
+            cropped = detect_and_crop_canvas(str(img_path))
+            if cropped is not None:
+                fd, tmp_crop = tempfile.mkstemp(suffix=".png", prefix="arttra-canvas-")
+                os.close(fd)
+                cropped.save(tmp_crop, "PNG")
+                work_path = tmp_crop
+                canvas_cropped = True
+
+        is_photograph = has_exif and not canvas_cropped
+
+        profile = analyze_image(work_path)
+        raw_colors = extract_colors(work_path)
+        named_colors = classify_palette(raw_colors)
+        style = classify_style(profile, is_photograph)
         category = assign_category(style, profile["route"])
         title = generate_name(profile, raw_colors, img_path.name)
 
@@ -451,7 +576,7 @@ def process_single(args: tuple) -> Optional[dict]:
         designation = f"BRC-{style_code}-{stable_id}"
 
         # ── Process image ──
-        with Image.open(str(img_path)) as img:
+        with Image.open(work_path) as img:
             img = img.convert("RGB")
             w, h = img.size
             current_long = max(w, h)
@@ -531,7 +656,7 @@ def process_single(args: tuple) -> Optional[dict]:
             },
             "vectorRoute": route,
             "imageProfile": profile,
-            "isPhotography": has_exif,
+            "isPhotography": is_photograph,
             "buyUrl": "#",
             "sourceFile": img_path.name,
             "timestamp": datetime.fromtimestamp(img_path.stat().st_mtime).isoformat(),
@@ -542,6 +667,12 @@ def process_single(args: tuple) -> Optional[dict]:
     except Exception as e:
         print(f"  [FAIL] {stem}: {e}")
         return None
+    finally:
+        if tmp_crop and os.path.exists(tmp_crop):
+            try:
+                os.remove(tmp_crop)
+            except OSError:
+                pass
 
 
 def _apply_watermark(img):
@@ -729,6 +860,11 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     # Check which images need bg removal (from overrides)
     bg_removal_ids = {k for k, v in overrides.items() if v.get("removeBg")}
 
+    # Stable-id suffixes opted out of canvas auto-crop (overrides: cropCanvas false)
+    no_crop_ids = frozenset(
+        k.rsplit("-", 1)[-1] for k, v in overrides.items() if v.get("cropCanvas") is False
+    )
+
     to_process = []
     cached_artworks = []
     for img_path in images:
@@ -791,7 +927,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     print(f"[build] Processing {len(to_process)} images with {workers} workers...")
 
     tasks = [
-        (str(p), str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer)
+        (str(p), str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer, no_crop_ids)
         for p in to_process
     ]
 

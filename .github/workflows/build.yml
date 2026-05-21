@@ -28,7 +28,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install Pillow vtracer "rembg[cpu]"
+        run: pip install Pillow vtracer opencv-python-headless
 
       - name: Pull latest
         run: git pull origin main

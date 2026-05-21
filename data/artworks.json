@@ -1,5 +1,400 @@
 [
   {
+    "id": "BRC-INT-8A947383",
+    "sku": "BRC-INT-8A947383",
+    "title": "Pyralis Mosaic",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#c1bf95",
+      "#a29e7a",
+      "#8c836a",
+      "#8b654a",
+      "#636059",
+      "#383b40"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#c1bf95"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8c836a"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#383b40"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5392.webp",
+    "image": "./assets/images/gallery/web/IMG_5392.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5392.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5392.svg",
+    "printDimensions": {
+      "widthInches": 18.1,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 5422,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.3129,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0602,
+      "detail_frequency": 0.8761,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.4408,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5392.jpg",
+    "timestamp": "2026-05-20T23:03:21.697709"
+  },
+  {
+    "id": "BRC-INT-F1FC261D",
+    "sku": "BRC-INT-F1FC261D",
+    "title": "Russet Tapestry",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#ead9c2",
+      "#d5b096",
+      "#9b7162",
+      "#824347",
+      "#553b43",
+      "#24232d"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#ead9c2"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#d5b096"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#9b7162"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#553b43"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5391.webp",
+    "image": "./assets/images/gallery/web/IMG_5391.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5391.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5391.svg",
+    "printDimensions": {
+      "widthInches": 16.3,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4900,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.2263,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0597,
+      "detail_frequency": 0.7604,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.431,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5391.jpg",
+    "timestamp": "2026-05-20T23:03:21.690471"
+  },
+  {
+    "id": "BRC-INT-C2EF2340",
+    "sku": "BRC-INT-C2EF2340",
+    "title": "Pyralis Phantasmagoria",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#d9ceba",
+      "#9b9281",
+      "#6e6355",
+      "#5b4039",
+      "#43352e",
+      "#252220"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d9ceba"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#9b9281"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#6e6355"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#5b4039"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5390.webp",
+    "image": "./assets/images/gallery/web/IMG_5390.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5390.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5390.svg",
+    "printDimensions": {
+      "widthInches": 15.7,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4705,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.3247,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0593,
+      "detail_frequency": 0.8742,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.3637,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5390.jpg",
+    "timestamp": "2026-05-20T23:03:21.681870"
+  },
+  {
+    "id": "BRC-INT-E7F325F0",
+    "sku": "BRC-INT-E7F325F0",
+    "title": "Copperwynd Assemblage",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#e4d2bb",
+      "#d9c9b2",
+      "#b0947e",
+      "#784442",
+      "#553737",
+      "#342123"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e4d2bb"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b0947e"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#784442"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#553737"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5389.webp",
+    "image": "./assets/images/gallery/web/IMG_5389.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5389.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5389.svg",
+    "printDimensions": {
+      "widthInches": 15.4,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4613,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.2382,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0609,
+      "detail_frequency": 0.746,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.4618,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5389.jpg",
+    "timestamp": "2026-05-20T23:03:21.675218"
+  },
+  {
+    "id": "BRC-INT-AA34E2B1",
+    "sku": "BRC-INT-AA34E2B1",
+    "title": "Copperwynd Palimpsest",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#d4c9b0",
+      "#aba087",
+      "#857666",
+      "#714e48",
+      "#6f272c",
+      "#272226"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#d4c9b0"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#aba087"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#857666"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#6f272c"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5387.webp",
+    "image": "./assets/images/gallery/web/IMG_5387.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5387.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5387.svg",
+    "printDimensions": {
+      "widthInches": 15.5,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4646,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.2852,
+      "color_complexity": 256,
+      "gradient_ratio": 0.058,
+      "detail_frequency": 0.8283,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.4015,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5387.jpg",
+    "timestamp": "2026-05-20T23:03:21.671049"
+  },
+  {
     "id": "BRC-NAT-B003834B",
     "sku": "BRC-NAT-B003834B",
     "title": "Shorelight Bloom",
@@ -148,406 +543,6 @@
     "buyUrl": "#",
     "sourceFile": "Stream-mirror-actors.JPG",
     "timestamp": "2026-03-28T15:58:39.092530"
-  },
-  {
-    "id": "BRC-PHO-8A947383",
-    "sku": "BRC-PHO-8A947383",
-    "title": "Pyralis Mosaic",
-    "description": "",
-    "style": "Photography",
-    "category": "Photography",
-    "colorPalette": [
-      "#dfcab0",
-      "#bdaf91",
-      "#b1906f",
-      "#888c77",
-      "#896c54",
-      "#4a4b4a"
-    ],
-    "namedColors": [
-      {
-        "name": "Bone",
-        "code": "BON",
-        "hex": "#dfcab0"
-      },
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#bdaf91"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#888c77"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#4a4b4a"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Acrylic",
-      "Poster"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "photography",
-      "photography",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5392.webp",
-    "image": "./assets/images/gallery/web/IMG_5392.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5392.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5392.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 15.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 4500
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.2618,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0599,
-      "detail_frequency": 0.7931,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.4993,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": true,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5392.jpg",
-    "timestamp": "2026-03-28T15:58:39.084531"
-  },
-  {
-    "id": "BRC-PHO-F1FC261D",
-    "sku": "BRC-PHO-F1FC261D",
-    "title": "Russet Tapestry",
-    "description": "",
-    "style": "Photography",
-    "category": "Photography",
-    "colorPalette": [
-      "#e7d6be",
-      "#c8a78d",
-      "#a6806a",
-      "#8b6153",
-      "#774144",
-      "#342e36"
-    ],
-    "namedColors": [
-      {
-        "name": "Bone",
-        "code": "BON",
-        "hex": "#e7d6be"
-      },
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#c8a78d"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#a6806a"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#342e36"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Acrylic",
-      "Poster"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "photography",
-      "photography",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5391.webp",
-    "image": "./assets/images/gallery/web/IMG_5391.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5391.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5391.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 15.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 4500
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.2279,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0599,
-      "detail_frequency": 0.7519,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.4625,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": true,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5391.jpg",
-    "timestamp": "2026-03-28T15:58:39.074531"
-  },
-  {
-    "id": "BRC-PHO-C2EF2340",
-    "sku": "BRC-PHO-C2EF2340",
-    "title": "Pyralis Phantasmagoria",
-    "description": "",
-    "style": "Photography",
-    "category": "Photography",
-    "colorPalette": [
-      "#d7c6af",
-      "#b19a83",
-      "#8e7965",
-      "#6c5947",
-      "#593f36",
-      "#312c29"
-    ],
-    "namedColors": [
-      {
-        "name": "Bone",
-        "code": "BON",
-        "hex": "#d7c6af"
-      },
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#b19a83"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#8e7965"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#593f36"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Acrylic",
-      "Poster"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "photography",
-      "photography",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5390.webp",
-    "image": "./assets/images/gallery/web/IMG_5390.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5390.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5390.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 15.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 4500
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.2975,
-      "color_complexity": 256,
-      "gradient_ratio": 0.06,
-      "detail_frequency": 0.8385,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.4149,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": true,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5390.jpg",
-    "timestamp": "2026-03-28T15:58:39.069530"
-  },
-  {
-    "id": "BRC-PHO-E7F325F0",
-    "sku": "BRC-PHO-E7F325F0",
-    "title": "Copperwynd Assemblage",
-    "description": "",
-    "style": "Photography",
-    "category": "Photography",
-    "colorPalette": [
-      "#e1d0b9",
-      "#d5c4ac",
-      "#ae957c",
-      "#90725b",
-      "#754d42",
-      "#3f2829"
-    ],
-    "namedColors": [
-      {
-        "name": "Bone",
-        "code": "BON",
-        "hex": "#e1d0b9"
-      },
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#ae957c"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#90725b"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#3f2829"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Acrylic",
-      "Poster"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "photography",
-      "photography",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5389.webp",
-    "image": "./assets/images/gallery/web/IMG_5389.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5389.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5389.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 15.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 4500
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.2238,
-      "color_complexity": 256,
-      "gradient_ratio": 0.061,
-      "detail_frequency": 0.7265,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.4618,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": true,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5389.jpg",
-    "timestamp": "2026-03-28T15:58:39.060531"
-  },
-  {
-    "id": "BRC-PHO-AA34E2B1",
-    "sku": "BRC-PHO-AA34E2B1",
-    "title": "Copperwynd Palimpsest",
-    "description": "",
-    "style": "Photography",
-    "category": "Photography",
-    "colorPalette": [
-      "#d1c4a9",
-      "#b2a287",
-      "#a1876e",
-      "#807966",
-      "#764b43",
-      "#362c2c"
-    ],
-    "namedColors": [
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#d1c4a9"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#a1876e"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#362c2c"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Acrylic",
-      "Poster"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "photography",
-      "photography",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5387.webp",
-    "image": "./assets/images/gallery/web/IMG_5387.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5387.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5387.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 15.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 4500
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.2888,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0589,
-      "detail_frequency": 0.8238,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.4289,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": true,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5387.jpg",
-    "timestamp": "2026-03-28T15:58:39.055531"
   },
   {
     "id": "BRC-NAT-47E261B8",
