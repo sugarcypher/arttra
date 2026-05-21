@@ -929,11 +929,14 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     print(f"[build] {len(images)} total, {len(cached_artworks)} cached, {len(to_process)} new/updated")
 
     if not to_process and cached_artworks:
-        # Still apply overrides to cached artworks
+        # Still apply overrides + de-duplicate titles on cached artworks
         cached_artworks = _apply_overrides(cached_artworks, overrides)
         cached_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
+        _dedup_titles(cached_artworks)
         with open(data_dir / "artworks.json", "w") as f:
             json.dump(cached_artworks, f, indent=2)
+        with open(manifest_path, "w") as f:
+            json.dump(manifest, f, indent=2)
         print(f"[build] No new images. Overrides applied. Done.")
         return
 
@@ -1009,6 +1012,8 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     # Filter hidden
     visible = [a for a in all_artworks if not a.get("hidden")]
 
+    _dedup_titles(visible)
+
     with open(data_dir / "artworks.json", "w") as f:
         json.dump(visible, f, indent=2)
     with open(manifest_path, "w") as f:
@@ -1028,6 +1033,32 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     if overrides:
         print(f"  Overrides applied: {len(overrides)}")
     print(f"{'='*60}")
+
+
+def _dedup_titles(artworks):
+    """Ensure every artwork has a unique title. Collisions are re-rolled with a
+    salted seed — deterministic, so the result is stable across rebuilds."""
+    seen = set()
+    for art in artworks:
+        title = art.get("title", "")
+        if title and title not in seen:
+            seen.add(title)
+            continue
+        n = 2
+        while n <= 999:
+            candidate = generate_name(
+                art.get("imageProfile", {}),
+                art.get("colorPalette", []),
+                f"{art.get('sourceFile') or art.get('id', '')}#{n}",
+            )
+            if candidate and candidate not in seen:
+                art["title"] = candidate
+                seen.add(candidate)
+                break
+            n += 1
+        else:
+            seen.add(title)  # pathological fallback — keep the duplicate
+    return artworks
 
 
 def _apply_overrides(artworks, overrides):
