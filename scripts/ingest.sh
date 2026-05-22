@@ -181,8 +181,27 @@ for src in "${stable[@]}"; do
     log "already in gallery — archived to dropped/: $base"
     continue
   fi
-  if ! /bin/cp "$src" "$dest"; then
-    log "cp to gallery-source failed — leaving in drops: $base"
+  # Plain streaming copy. /bin/cp uses fcopyfile/clonefile, which deadlocks
+  # on iCloud-backed sources ("Resource deadlock avoided") and can leave a
+  # zero-byte file behind. cat does a plain read->write: no clone, and the
+  # read itself forces iCloud to materialize a dataless placeholder.
+  if ! /bin/cat "$src" > "$dest" 2>/dev/null; then
+    /bin/rm -f "$dest"
+    log "copy failed — removed partial, leaving in drops: $base"
+    continue
+  fi
+  # Verify the copy: byte-complete vs the source, and an actual image.
+  # A truncated or bogus file must never reach the gallery or the build.
+  src_sz="$(file_size "$src")"
+  dest_sz="$(file_size "$dest")"
+  if [[ -z "$dest_sz" || "$dest_sz" == "0" || "$dest_sz" != "$src_sz" ]]; then
+    /bin/rm -f "$dest"
+    log "copy incomplete (${dest_sz:-?}/${src_sz:-?} bytes) — removed, leaving in drops: $base"
+    continue
+  fi
+  if ! /usr/bin/file --brief --mime-type "$dest" 2>/dev/null | /usr/bin/grep -q '^image/'; then
+    /bin/rm -f "$dest"
+    log "copied file is not a valid image — removed, leaving in drops: $base"
     continue
   fi
   /bin/mv "$src" "$DROPPED/$base"
