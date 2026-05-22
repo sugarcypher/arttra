@@ -2289,7 +2289,7 @@
     "artwork": {
       "id": "BRC-NAT-E228B495",
       "sku": "BRC-NAT-E228B495",
-      "title": "Chandral Imbroglio",
+      "title": "Phosphor Daedal",
       "description": "",
       "style": "Naturalis",
       "category": "Art Prints",
@@ -7955,6 +7955,5166 @@
       "buyUrl": "#",
       "sourceFile": "IMG_5392.jpg",
       "timestamp": "2026-05-20T23:03:21.697709"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "19304392-624D-4776-BE55-0C26A6F9ACD8": {
+    "hash": "41a41ea44433e1ebf781aff0d91f9d91",
+    "artwork": {
+      "id": "BRC-NAT-74E85843",
+      "sku": "BRC-NAT-74E85843",
+      "title": "Floe Heartwood",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ccd19b",
+        "#1494ac",
+        "#1477ac",
+        "#0177ae",
+        "#3f435d",
+        "#0358b6"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#ccd19b"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#1494ac"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#0177ae"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_19304392-624D-4776-BE55-0C26A6F9ACD8.webp",
+      "image": "./assets/images/gallery/web/19304392-624D-4776-BE55-0C26A6F9ACD8.webp",
+      "printFile": "./assets/images/gallery/print/19304392-624D-4776-BE55-0C26A6F9ACD8.png",
+      "vectorFile": "./assets/images/gallery/vector/19304392-624D-4776-BE55-0C26A6F9ACD8.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0884,
+        "color_complexity": 256,
+        "gradient_ratio": 0.053,
+        "detail_frequency": 0.4187,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4133,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "19304392-624D-4776-BE55-0C26A6F9ACD8.JPEG",
+      "timestamp": "2026-05-22T04:16:16.011700"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "18FFB756-4176-43B6-A9DC-A8646FAAC386": {
+    "hash": "6cddaf78834a61d9c28f567c0ce61832",
+    "artwork": {
+      "id": "BRC-NAT-02438266",
+      "sku": "BRC-NAT-02438266",
+      "title": "Umbra Nexus",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#935d67",
+        "#3b1337",
+        "#38053e",
+        "#0c0310",
+        "#120118",
+        "#09010f"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#935d67"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#3b1337"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#0c0310"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_18FFB756-4176-43B6-A9DC-A8646FAAC386.webp",
+      "image": "./assets/images/gallery/web/18FFB756-4176-43B6-A9DC-A8646FAAC386.webp",
+      "printFile": "./assets/images/gallery/print/18FFB756-4176-43B6-A9DC-A8646FAAC386.png",
+      "vectorFile": "./assets/images/gallery/vector/18FFB756-4176-43B6-A9DC-A8646FAAC386.svg",
+      "printDimensions": {
+        "widthInches": 9.5,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2859,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.109,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0451,
+        "detail_frequency": 0.5427,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.1386,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "18FFB756-4176-43B6-A9DC-A8646FAAC386.JPEG",
+      "timestamp": "2026-05-22T04:16:15.953699"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "22C8A9A4-679A-4710-B679-D282EB84DA4F": {
+    "hash": "12270da9a81db5ee1dd8fd001facf55f",
+    "artwork": {
+      "id": "BRC-INT-DD9DE2FB",
+      "sku": "BRC-INT-DD9DE2FB",
+      "title": "Crucible Reliquary",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#dbdbd7",
+        "#c4b296",
+        "#af8663",
+        "#9d6a5b",
+        "#6d666e",
+        "#69555f"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#dbdbd7"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#c4b296"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#af8663"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_22C8A9A4-679A-4710-B679-D282EB84DA4F.webp",
+      "image": "./assets/images/gallery/web/22C8A9A4-679A-4710-B679-D282EB84DA4F.webp",
+      "printFile": "./assets/images/gallery/print/22C8A9A4-679A-4710-B679-D282EB84DA4F.png",
+      "vectorFile": "./assets/images/gallery/vector/22C8A9A4-679A-4710-B679-D282EB84DA4F.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.177,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0615,
+        "detail_frequency": 0.6631,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.5313,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "22C8A9A4-679A-4710-B679-D282EB84DA4F.JPG",
+      "timestamp": "2026-05-22T04:16:16.065701"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "139626B0-8413-4AF2-9A8A-7F3E42192636": {
+    "hash": "c691d454722dc5d81b8b4424c98bd7b2",
+    "artwork": {
+      "id": "BRC-NAT-4C35AAF2",
+      "sku": "BRC-NAT-4C35AAF2",
+      "title": "Solace Coppice",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#f0f4f1",
+        "#b8c2c0",
+        "#99886e",
+        "#5f7978",
+        "#5d5035",
+        "#1e2b30"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#f0f4f1"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#b8c2c0"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#99886e"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#5d5035"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_139626B0-8413-4AF2-9A8A-7F3E42192636.webp",
+      "image": "./assets/images/gallery/web/139626B0-8413-4AF2-9A8A-7F3E42192636.webp",
+      "printFile": "./assets/images/gallery/print/139626B0-8413-4AF2-9A8A-7F3E42192636.png",
+      "vectorFile": "./assets/images/gallery/vector/139626B0-8413-4AF2-9A8A-7F3E42192636.svg",
+      "printDimensions": {
+        "widthInches": 14.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4203,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1083,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0632,
+        "detail_frequency": 0.4993,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4491,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "139626B0-8413-4AF2-9A8A-7F3E42192636.JPEG",
+      "timestamp": "2026-05-22T04:16:15.913698"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "20FADEED-C44E-49E1-9A73-3D5859565BD5": {
+    "hash": "ff1f1b33c1a918c2a276af18ac2eed03",
+    "artwork": {
+      "id": "BRC-NAT-7D8941DE",
+      "sku": "BRC-NAT-7D8941DE",
+      "title": "Minium Welter",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ffffff",
+        "#fdfefd",
+        "#f9eacc",
+        "#fbd8ac",
+        "#decfb5",
+        "#a7927d"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#fbd8ac"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#a7927d"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_20FADEED-C44E-49E1-9A73-3D5859565BD5.webp",
+      "image": "./assets/images/gallery/web/20FADEED-C44E-49E1-9A73-3D5859565BD5.webp",
+      "printFile": "./assets/images/gallery/print/20FADEED-C44E-49E1-9A73-3D5859565BD5.png",
+      "vectorFile": "./assets/images/gallery/vector/20FADEED-C44E-49E1-9A73-3D5859565BD5.svg",
+      "printDimensions": {
+        "widthInches": 19.6,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 5889,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1491,
+        "color_complexity": 255,
+        "gradient_ratio": 0.0809,
+        "detail_frequency": 0.5181,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.824,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "20FADEED-C44E-49E1-9A73-3D5859565BD5.PNG",
+      "timestamp": "2026-05-22T04:16:16.033701"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "0DD2444E-FC70-4DDF-BEDC-597F4329D8D5": {
+    "hash": "70ee0bf126239b0e246d282c65ccb10b",
+    "artwork": {
+      "id": "BRC-INT-705F2A71",
+      "sku": "BRC-INT-705F2A71",
+      "title": "Refulgent Reliquary",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#c3c2c2",
+        "#73a5a8",
+        "#666776",
+        "#622941",
+        "#2c2740",
+        "#0d0f24"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#c3c2c2"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#73a5a8"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#666776"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#622941"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#0d0f24"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_0DD2444E-FC70-4DDF-BEDC-597F4329D8D5.webp",
+      "image": "./assets/images/gallery/web/0DD2444E-FC70-4DDF-BEDC-597F4329D8D5.webp",
+      "printFile": "./assets/images/gallery/print/0DD2444E-FC70-4DDF-BEDC-597F4329D8D5.png",
+      "vectorFile": "./assets/images/gallery/vector/0DD2444E-FC70-4DDF-BEDC-597F4329D8D5.svg",
+      "printDimensions": {
+        "widthInches": 16.7,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 5002,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1681,
+        "color_complexity": 256,
+        "gradient_ratio": 0.054,
+        "detail_frequency": 0.6335,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3546,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "0DD2444E-FC70-4DDF-BEDC-597F4329D8D5.JPG",
+      "timestamp": "2026-05-22T04:16:15.895698"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "38FB0BC8-E076-4D78-AA1A-30B13B3535B4": {
+    "hash": "22cb276771de870a5a04f87e846149da",
+    "artwork": {
+      "id": "BRC-NAT-00F1EC53",
+      "sku": "BRC-NAT-00F1EC53",
+      "title": "Lumen Boscage",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#79d4b2",
+        "#35d2b0",
+        "#43989e",
+        "#63676e",
+        "#31659b",
+        "#3c3d77"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#79d4b2"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#35d2b0"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_38FB0BC8-E076-4D78-AA1A-30B13B3535B4.webp",
+      "image": "./assets/images/gallery/web/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.webp",
+      "printFile": "./assets/images/gallery/print/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.png",
+      "vectorFile": "./assets/images/gallery/vector/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4497,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0199,
+        "color_complexity": 251,
+        "gradient_ratio": 0.0577,
+        "detail_frequency": 0.1338,
+        "contrast_range": 0.9255,
+        "avg_luminance": 0.4591,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "38FB0BC8-E076-4D78-AA1A-30B13B3535B4.JPG",
+      "timestamp": "2026-05-22T04:16:16.181704"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "23078835-79B2-4CD6-87EB-19611B9C1A77": {
+    "hash": "457c9f0106880605ecb3918f46ff5fb9",
+    "artwork": {
+      "id": "BRC-NAT-62E4E3BB",
+      "sku": "BRC-NAT-62E4E3BB",
+      "title": "Ferrous Daedal",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#f6ddb8",
+        "#f6d6b1",
+        "#f1ceb1",
+        "#f2b598",
+        "#c5b19f",
+        "#846251"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#f6ddb8"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#c5b19f"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#846251"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_23078835-79B2-4CD6-87EB-19611B9C1A77.webp",
+      "image": "./assets/images/gallery/web/23078835-79B2-4CD6-87EB-19611B9C1A77.webp",
+      "printFile": "./assets/images/gallery/print/23078835-79B2-4CD6-87EB-19611B9C1A77.png",
+      "vectorFile": "./assets/images/gallery/vector/23078835-79B2-4CD6-87EB-19611B9C1A77.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 16.7,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4998
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1446,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0666,
+        "detail_frequency": 0.5356,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.6991,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "23078835-79B2-4CD6-87EB-19611B9C1A77.JPEG",
+      "timestamp": "2026-05-22T04:16:16.067702"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "2CC38928-2FED-4180-A0E0-26CAD45A6DDA": {
+    "hash": "2884f113736dbbcd8fcd7f9555ec43a5",
+    "artwork": {
+      "id": "BRC-NAT-53FCB0EC",
+      "sku": "BRC-NAT-53FCB0EC",
+      "title": "Lucida Vortex",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#e6ca7f",
+        "#a8b960",
+        "#8b827d",
+        "#a75061",
+        "#942da0",
+        "#182452"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#e6ca7f"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#8b827d"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#182452"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_2CC38928-2FED-4180-A0E0-26CAD45A6DDA.webp",
+      "image": "./assets/images/gallery/web/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.webp",
+      "printFile": "./assets/images/gallery/print/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.png",
+      "vectorFile": "./assets/images/gallery/vector/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.svg",
+      "printDimensions": {
+        "widthInches": 12.7,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 3804,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1296,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0598,
+        "detail_frequency": 0.5684,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4558,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "2CC38928-2FED-4180-A0E0-26CAD45A6DDA.JPG",
+      "timestamp": "2026-05-22T04:16:16.135703"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "349FFFE1-966A-412F-9724-B1B3E1B53298": {
+    "hash": "d5a568f9da74e494d9a504595783d84e",
+    "artwork": {
+      "id": "BRC-INT-43AC6929",
+      "sku": "BRC-INT-43AC6929",
+      "title": "Aubade Phantasmagoria",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#fdfdfd",
+        "#fcfcf4",
+        "#e7f5e0",
+        "#e4d7cd",
+        "#aed0b5",
+        "#a694a2"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#fdfdfd"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#e4d7cd"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#aed0b5"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_349FFFE1-966A-412F-9724-B1B3E1B53298.webp",
+      "image": "./assets/images/gallery/web/349FFFE1-966A-412F-9724-B1B3E1B53298.webp",
+      "printFile": "./assets/images/gallery/print/349FFFE1-966A-412F-9724-B1B3E1B53298.png",
+      "vectorFile": "./assets/images/gallery/vector/349FFFE1-966A-412F-9724-B1B3E1B53298.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 19.3,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5799
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2912,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0817,
+        "detail_frequency": 0.7311,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.8293,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "349FFFE1-966A-412F-9724-B1B3E1B53298.PNG",
+      "timestamp": "2026-05-22T04:16:16.179704"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC": {
+    "hash": "1ed3f473d21cec8e1a96ebef13ad1b50",
+    "artwork": {
+      "id": "BRC-NAT-EA38BC40",
+      "sku": "BRC-NAT-EA38BC40",
+      "title": "Fuliginous Witchgrass",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#abd3df",
+        "#6e96a4",
+        "#44565d",
+        "#34302e",
+        "#1d2a30",
+        "#0e1d24"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#abd3df"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#6e96a4"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#44565d"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#0e1d24"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.webp",
+      "image": "./assets/images/gallery/web/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.webp",
+      "printFile": "./assets/images/gallery/print/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.png",
+      "vectorFile": "./assets/images/gallery/vector/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 12.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 3603
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0965,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0619,
+        "detail_frequency": 0.4568,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3212,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.JPEG",
+      "timestamp": "2026-05-22T04:16:16.189704"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "3D85CA84-F5C7-4BB0-8C17-69EF7276A911": {
+    "hash": "846a916c21e087a23f5431825369b2a4",
+    "artwork": {
+      "id": "BRC-NAT-4B93C5CE",
+      "sku": "BRC-NAT-4B93C5CE",
+      "title": "Foundry Bosk",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#fbca03",
+        "#a34b3e",
+        "#a3107e",
+        "#590f8f",
+        "#af046c",
+        "#4c039f"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#fbca03"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#590f8f"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_3D85CA84-F5C7-4BB0-8C17-69EF7276A911.webp",
+      "image": "./assets/images/gallery/web/3D85CA84-F5C7-4BB0-8C17-69EF7276A911.webp",
+      "printFile": "./assets/images/gallery/print/3D85CA84-F5C7-4BB0-8C17-69EF7276A911.png",
+      "vectorFile": "./assets/images/gallery/vector/3D85CA84-F5C7-4BB0-8C17-69EF7276A911.svg",
+      "printDimensions": {
+        "widthInches": 9.5,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2859,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.08,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0503,
+        "detail_frequency": 0.3979,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3876,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "3D85CA84-F5C7-4BB0-8C17-69EF7276A911.JPEG",
+      "timestamp": "2026-05-22T04:16:16.194704"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "42B4708C-0CC7-4599-964D-FBB446183DB2": {
+    "hash": "5c43acddc52af04e295930cb57b6712b",
+    "artwork": {
+      "id": "BRC-INT-C903DF45",
+      "sku": "BRC-INT-C903DF45",
+      "title": "Vermeil Reliquary",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#f8f2c8",
+        "#e9d7af",
+        "#c3ae92",
+        "#9c8672",
+        "#7a746e",
+        "#483933"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#f8f2c8"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#c3ae92"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#9c8672"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#483933"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_42B4708C-0CC7-4599-964D-FBB446183DB2.webp",
+      "image": "./assets/images/gallery/web/42B4708C-0CC7-4599-964D-FBB446183DB2.webp",
+      "printFile": "./assets/images/gallery/print/42B4708C-0CC7-4599-964D-FBB446183DB2.png",
+      "vectorFile": "./assets/images/gallery/vector/42B4708C-0CC7-4599-964D-FBB446183DB2.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 19.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5704
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2679,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0635,
+        "detail_frequency": 0.7363,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.5669,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "42B4708C-0CC7-4599-964D-FBB446183DB2.PNG",
+      "timestamp": "2026-05-22T04:16:16.196704"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B": {
+    "hash": "95170be93bb5aed90363d0bc2d3420f5",
+    "artwork": {
+      "id": "BRC-NAT-72E1E9D1",
+      "sku": "BRC-NAT-72E1E9D1",
+      "title": "Gossamer Heartwood",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#a8895f",
+        "#7a7279",
+        "#94546d",
+        "#685375",
+        "#6c3055",
+        "#3e204b"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a8895f"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#6c3055"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.webp",
+      "image": "./assets/images/gallery/web/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.webp",
+      "printFile": "./assets/images/gallery/print/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.png",
+      "vectorFile": "./assets/images/gallery/vector/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 14.8,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4454
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1033,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0614,
+        "detail_frequency": 0.4737,
+        "contrast_range": 0.9922,
+        "avg_luminance": 0.3641,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.PNG",
+      "timestamp": "2026-05-22T04:16:16.191704"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "456199D5-6A56-45A8-B277-F635C9A8B792": {
+    "hash": "da45742051164a1bbb9b2768ad6ff0d9",
+    "artwork": {
+      "id": "BRC-NAT-EE93B247",
+      "sku": "BRC-NAT-EE93B247",
+      "title": "Lichgate Mycelium",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#79a2c2",
+        "#3f759a",
+        "#7e4784",
+        "#1e496e",
+        "#6b1d81",
+        "#10122f"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#79a2c2"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#3f759a"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#1e496e"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_456199D5-6A56-45A8-B277-F635C9A8B792.webp",
+      "image": "./assets/images/gallery/web/456199D5-6A56-45A8-B277-F635C9A8B792.webp",
+      "printFile": "./assets/images/gallery/print/456199D5-6A56-45A8-B277-F635C9A8B792.png",
+      "vectorFile": "./assets/images/gallery/vector/456199D5-6A56-45A8-B277-F635C9A8B792.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 10.8,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 3235
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0819,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0554,
+        "detail_frequency": 0.3902,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3367,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "456199D5-6A56-45A8-B277-F635C9A8B792.PNG",
+      "timestamp": "2026-05-22T04:16:16.201705"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "4BDD7AA1-4183-470E-8226-A835127BA68D": {
+    "hash": "80406dcc5c88780d72a72f921abe0e94",
+    "artwork": {
+      "id": "BRC-INT-95E8EC2F",
+      "sku": "BRC-INT-95E8EC2F",
+      "title": "Effulgence Plexus",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#d7e5e6",
+        "#82cccd",
+        "#6b9398",
+        "#5b6b72",
+        "#386570",
+        "#2d3f4a"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#d7e5e6"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#82cccd"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#6b9398"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#386570"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_4BDD7AA1-4183-470E-8226-A835127BA68D.webp",
+      "image": "./assets/images/gallery/web/4BDD7AA1-4183-470E-8226-A835127BA68D.webp",
+      "printFile": "./assets/images/gallery/print/4BDD7AA1-4183-470E-8226-A835127BA68D.png",
+      "vectorFile": "./assets/images/gallery/vector/4BDD7AA1-4183-470E-8226-A835127BA68D.svg",
+      "printDimensions": {
+        "widthInches": 14.3,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4283,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.3025,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0629,
+        "detail_frequency": 0.8235,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4859,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "4BDD7AA1-4183-470E-8226-A835127BA68D.JPEG",
+      "timestamp": "2026-05-22T04:16:16.225705"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "49EC5429-9440-48A1-A3B3-A9BB27D7D599": {
+    "hash": "a0b8fb664ab4a559f31a68b438288b1c",
+    "artwork": {
+      "id": "BRC-NAT-7EA71874",
+      "sku": "BRC-NAT-7EA71874",
+      "title": "Aurelius Verdure",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#eaeff3",
+        "#e2d9ee",
+        "#b5dde6",
+        "#86dae1",
+        "#b4b6e0",
+        "#5275ac"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#eaeff3"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#b5dde6"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#86dae1"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#5275ac"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_49EC5429-9440-48A1-A3B3-A9BB27D7D599.webp",
+      "image": "./assets/images/gallery/web/49EC5429-9440-48A1-A3B3-A9BB27D7D599.webp",
+      "printFile": "./assets/images/gallery/print/49EC5429-9440-48A1-A3B3-A9BB27D7D599.png",
+      "vectorFile": "./assets/images/gallery/vector/49EC5429-9440-48A1-A3B3-A9BB27D7D599.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0647,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0627,
+        "detail_frequency": 0.4007,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.7419,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "49EC5429-9440-48A1-A3B3-A9BB27D7D599.JPG",
+      "timestamp": "2026-05-22T04:16:16.203705"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "517F4557-CFBC-427E-990B-07AA40433BB3": {
+    "hash": "3f4dc7787f6854032aa89cbe9df67b2a",
+    "artwork": {
+      "id": "BRC-INT-EC0F93C0",
+      "sku": "BRC-INT-EC0F93C0",
+      "title": "Cinereous Daedal",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#739aa6",
+        "#3093b8",
+        "#375f8b",
+        "#44266c",
+        "#122169",
+        "#031554"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#739aa6"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#3093b8"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#44266c"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_517F4557-CFBC-427E-990B-07AA40433BB3.webp",
+      "image": "./assets/images/gallery/web/517F4557-CFBC-427E-990B-07AA40433BB3.webp",
+      "printFile": "./assets/images/gallery/print/517F4557-CFBC-427E-990B-07AA40433BB3.png",
+      "vectorFile": "./assets/images/gallery/vector/517F4557-CFBC-427E-990B-07AA40433BB3.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 16.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4798
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2485,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0518,
+        "detail_frequency": 0.6929,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3255,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "517F4557-CFBC-427E-990B-07AA40433BB3.JPG",
+      "timestamp": "2026-05-22T04:16:16.305707"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "4C54F694-133C-40F9-A794-926370305D6F": {
+    "hash": "94d95197c1402046de524db10dae9fb9",
+    "artwork": {
+      "id": "BRC-NAT-30C31AD2",
+      "sku": "BRC-NAT-30C31AD2",
+      "title": "Penumbral Bosk",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#d1ba97",
+        "#9e8c79",
+        "#6f655d",
+        "#4a3c32",
+        "#2c211a",
+        "#100b0a"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#d1ba97"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#9e8c79"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4a3c32"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#100b0a"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_4C54F694-133C-40F9-A794-926370305D6F.webp",
+      "image": "./assets/images/gallery/web/4C54F694-133C-40F9-A794-926370305D6F.webp",
+      "printFile": "./assets/images/gallery/print/4C54F694-133C-40F9-A794-926370305D6F.png",
+      "vectorFile": "./assets/images/gallery/vector/4C54F694-133C-40F9-A794-926370305D6F.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0545,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0575,
+        "detail_frequency": 0.3513,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3194,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "4C54F694-133C-40F9-A794-926370305D6F.JPEG",
+      "timestamp": "2026-05-22T04:16:16.229705"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "55B6D587-DAE0-4400-A448-B79C94E03224": {
+    "hash": "eca55f836caa945b89ecf7a2b9d89898",
+    "artwork": {
+      "id": "BRC-INT-0FD7CD63",
+      "sku": "BRC-INT-0FD7CD63",
+      "title": "Fuliginous Filigree",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#68726a",
+        "#504b47",
+        "#312f34",
+        "#1e1a1b",
+        "#111212",
+        "#030303"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#68726a"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#504b47"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#1e1a1b"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_55B6D587-DAE0-4400-A448-B79C94E03224.webp",
+      "image": "./assets/images/gallery/web/55B6D587-DAE0-4400-A448-B79C94E03224.webp",
+      "printFile": "./assets/images/gallery/print/55B6D587-DAE0-4400-A448-B79C94E03224.png",
+      "vectorFile": "./assets/images/gallery/vector/55B6D587-DAE0-4400-A448-B79C94E03224.svg",
+      "printDimensions": {
+        "widthInches": 14.3,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4297,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.171,
+        "color_complexity": 255,
+        "gradient_ratio": 0.047,
+        "detail_frequency": 0.6474,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.1667,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "55B6D587-DAE0-4400-A448-B79C94E03224.JPG",
+      "timestamp": "2026-05-22T04:16:16.310707"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "5031B42C-9FAC-4C63-BBF2-47072CDDD2E6": {
+    "hash": "2653ee68fb972c8a15689a056ad0d783",
+    "artwork": {
+      "id": "BRC-NAT-7F5E269E",
+      "sku": "BRC-NAT-7F5E269E",
+      "title": "Sanguine Panicle",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#a98b5f",
+        "#7b7279",
+        "#7e5471",
+        "#6e3e65",
+        "#682044",
+        "#3e204b"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a98b5f"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#6e3e65"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.webp",
+      "image": "./assets/images/gallery/web/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.webp",
+      "printFile": "./assets/images/gallery/print/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.png",
+      "vectorFile": "./assets/images/gallery/vector/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.svg",
+      "printDimensions": {
+        "widthInches": 14.8,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4426,
+        "pixelHeight": 5999
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1057,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0612,
+        "detail_frequency": 0.4809,
+        "contrast_range": 0.9843,
+        "avg_luminance": 0.3652,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.JPEG",
+      "timestamp": "2026-05-22T04:16:16.230705"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "6278F08A-498B-4BA1-903E-820ECAEFF96C": {
+    "hash": "6dfdee3ec9b046430d4141848858e93a",
+    "artwork": {
+      "id": "BRC-NAT-212227C6",
+      "sku": "BRC-NAT-212227C6",
+      "title": "Lumen Petalwork",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#e4d9a8",
+        "#b59a7b",
+        "#69472d",
+        "#000800",
+        "#000003",
+        "#000000"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#e4d9a8"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#b59a7b"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#69472d"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#000800"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_6278F08A-498B-4BA1-903E-820ECAEFF96C.webp",
+      "image": "./assets/images/gallery/web/6278F08A-498B-4BA1-903E-820ECAEFF96C.webp",
+      "printFile": "./assets/images/gallery/print/6278F08A-498B-4BA1-903E-820ECAEFF96C.png",
+      "vectorFile": "./assets/images/gallery/vector/6278F08A-498B-4BA1-903E-820ECAEFF96C.svg",
+      "printDimensions": {
+        "widthInches": 16.1,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4820,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0899,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0414,
+        "detail_frequency": 0.4315,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4177,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "6278F08A-498B-4BA1-903E-820ECAEFF96C.PNG",
+      "timestamp": "2026-05-22T04:16:16.372708"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "5C09557C-F18A-49BF-9986-803A517C2F8F": {
+    "hash": "467aa171de39353a5389ed5c20ae7b7f",
+    "artwork": {
+      "id": "BRC-INT-7AD01633",
+      "sku": "BRC-INT-7AD01633",
+      "title": "Subfusc Chronicle",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#929594",
+        "#575b59",
+        "#45424b",
+        "#38313d",
+        "#26292a",
+        "#101011"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#929594"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#575b59"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#101011"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_5C09557C-F18A-49BF-9986-803A517C2F8F.webp",
+      "image": "./assets/images/gallery/web/5C09557C-F18A-49BF-9986-803A517C2F8F.webp",
+      "printFile": "./assets/images/gallery/print/5C09557C-F18A-49BF-9986-803A517C2F8F.png",
+      "vectorFile": "./assets/images/gallery/vector/5C09557C-F18A-49BF-9986-803A517C2F8F.svg",
+      "printDimensions": {
+        "widthInches": 15.3,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4602,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1686,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0573,
+        "detail_frequency": 0.642,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2487,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "5C09557C-F18A-49BF-9986-803A517C2F8F.JPG",
+      "timestamp": "2026-05-22T04:16:16.333708"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "745938E5-816D-4623-BE85-1B8137AEFF8A": {
+    "hash": "3ece6d9bc191ebfa10e2cf16114abb36",
+    "artwork": {
+      "id": "BRC-INT-AE53F42C",
+      "sku": "BRC-INT-AE53F42C",
+      "title": "Wraith Chronicle",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#9c7fae",
+        "#76507e",
+        "#85336a",
+        "#353032",
+        "#43143b",
+        "#040505"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#9c7fae"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#76507e"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#353032"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#040505"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_745938E5-816D-4623-BE85-1B8137AEFF8A.webp",
+      "image": "./assets/images/gallery/web/745938E5-816D-4623-BE85-1B8137AEFF8A.webp",
+      "printFile": "./assets/images/gallery/print/745938E5-816D-4623-BE85-1B8137AEFF8A.png",
+      "vectorFile": "./assets/images/gallery/vector/745938E5-816D-4623-BE85-1B8137AEFF8A.svg",
+      "printDimensions": {
+        "widthInches": 11.2,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 3366,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2033,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0473,
+        "detail_frequency": 0.7555,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2537,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "745938E5-816D-4623-BE85-1B8137AEFF8A.PNG",
+      "timestamp": "2026-05-22T04:16:16.444710"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "5876AFA2-DDCA-4897-BE86-608E9BADAC2A": {
+    "hash": "1d74b9be7470e41ff08f37d5af95fdd9",
+    "artwork": {
+      "id": "BRC-NAT-5DD3EFAE",
+      "sku": "BRC-NAT-5DD3EFAE",
+      "title": "Ashenmoor Thicket",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#a78761",
+        "#797179",
+        "#7e5370",
+        "#6f3e65",
+        "#682144",
+        "#3e204b"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a78761"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#6f3e65"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_5876AFA2-DDCA-4897-BE86-608E9BADAC2A.webp",
+      "image": "./assets/images/gallery/web/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.webp",
+      "printFile": "./assets/images/gallery/print/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.png",
+      "vectorFile": "./assets/images/gallery/vector/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 14.9,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4469
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1009,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0613,
+        "detail_frequency": 0.466,
+        "contrast_range": 0.9922,
+        "avg_luminance": 0.3629,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "5876AFA2-DDCA-4897-BE86-608E9BADAC2A.PNG",
+      "timestamp": "2026-05-22T04:16:16.320707"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "744F4CBA-6120-4559-92C9-59D75C59E710": {
+    "hash": "b01ef06985cd32f90d522c0ce09913a4",
+    "artwork": {
+      "id": "BRC-NAT-48F36BBD",
+      "sku": "BRC-NAT-48F36BBD",
+      "title": "Subfusc Petalwork",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#abd3df",
+        "#6e96a4",
+        "#44565d",
+        "#34302e",
+        "#1d2a30",
+        "#0e1c24"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#abd3df"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#6e96a4"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#44565d"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#0e1c24"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_744F4CBA-6120-4559-92C9-59D75C59E710.webp",
+      "image": "./assets/images/gallery/web/744F4CBA-6120-4559-92C9-59D75C59E710.webp",
+      "printFile": "./assets/images/gallery/print/744F4CBA-6120-4559-92C9-59D75C59E710.png",
+      "vectorFile": "./assets/images/gallery/vector/744F4CBA-6120-4559-92C9-59D75C59E710.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 12.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 3603
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0957,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0619,
+        "detail_frequency": 0.4559,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3207,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "744F4CBA-6120-4559-92C9-59D75C59E710.JPEG",
+      "timestamp": "2026-05-22T04:16:16.429710"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "700FC8B9-D2A6-4486-8F4B-F4A7D200519A": {
+    "hash": "c4ac091db3ba11afda584e016af1a781",
+    "artwork": {
+      "id": "BRC-NAT-350A5C89",
+      "sku": "BRC-NAT-350A5C89",
+      "title": "Nocturne Thornset",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#e3b08a",
+        "#a6796d",
+        "#925f53",
+        "#5b585f",
+        "#4a3d3e",
+        "#16171a"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#e3b08a"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a6796d"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4a3d3e"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#16171a"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_700FC8B9-D2A6-4486-8F4B-F4A7D200519A.webp",
+      "image": "./assets/images/gallery/web/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.webp",
+      "printFile": "./assets/images/gallery/print/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.png",
+      "vectorFile": "./assets/images/gallery/vector/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.svg",
+      "printDimensions": {
+        "widthInches": 18.7,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 5611,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.076,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0605,
+        "detail_frequency": 0.4341,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3414,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "700FC8B9-D2A6-4486-8F4B-F4A7D200519A.JPG",
+      "timestamp": "2026-05-22T04:16:16.419709"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "74D7BBC0-2F81-41C0-BAB4-38D031007DDB": {
+    "hash": "d65ab3bb7ff96ae40855a3eb192eb1b5",
+    "artwork": {
+      "id": "BRC-INT-C365EC23",
+      "sku": "BRC-INT-C365EC23",
+      "title": "Refulgent Gordian",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#fbfaf5",
+        "#eadcc5",
+        "#99bcc2",
+        "#13b8f4",
+        "#628696",
+        "#4d2e36"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#fbfaf5"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#eadcc5"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#99bcc2"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#13b8f4"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4d2e36"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_74D7BBC0-2F81-41C0-BAB4-38D031007DDB.webp",
+      "image": "./assets/images/gallery/web/74D7BBC0-2F81-41C0-BAB4-38D031007DDB.webp",
+      "printFile": "./assets/images/gallery/print/74D7BBC0-2F81-41C0-BAB4-38D031007DDB.png",
+      "vectorFile": "./assets/images/gallery/vector/74D7BBC0-2F81-41C0-BAB4-38D031007DDB.svg",
+      "printDimensions": {
+        "widthInches": 9.2,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2770,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2482,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0693,
+        "detail_frequency": 0.6741,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.5749,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "74D7BBC0-2F81-41C0-BAB4-38D031007DDB.JPEG",
+      "timestamp": "2026-05-22T04:16:16.450710"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "77069273-6494-4C19-B87F-6C6FE7903D27": {
+    "hash": "cc33e90ecdfd486f45b9291b341d8d55",
+    "artwork": {
+      "id": "BRC-INT-3961735B",
+      "sku": "BRC-INT-3961735B",
+      "title": "Chandral Imbroglio",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#d2cfcc",
+        "#64c3ca",
+        "#66697f",
+        "#8f112f",
+        "#241430",
+        "#030615"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#d2cfcc"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#64c3ca"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#66697f"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#8f112f"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#030615"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_77069273-6494-4C19-B87F-6C6FE7903D27.webp",
+      "image": "./assets/images/gallery/web/77069273-6494-4C19-B87F-6C6FE7903D27.webp",
+      "printFile": "./assets/images/gallery/print/77069273-6494-4C19-B87F-6C6FE7903D27.png",
+      "vectorFile": "./assets/images/gallery/vector/77069273-6494-4C19-B87F-6C6FE7903D27.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4498,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2399,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0437,
+        "detail_frequency": 0.7837,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3542,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "77069273-6494-4C19-B87F-6C6FE7903D27.JPG",
+      "timestamp": "2026-05-22T04:16:16.474711"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "7E73BB53-08BE-46A4-AF61-00D7CB178182": {
+    "hash": "39ff9cc7de6f295900d888759744a838",
+    "artwork": {
+      "id": "BRC-INT-910AFCC8",
+      "sku": "BRC-INT-910AFCC8",
+      "title": "Phantasm Assemblage",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#5f6a52",
+        "#50464d",
+        "#3c363b",
+        "#2e262a",
+        "#1c1d20",
+        "#0b0d13"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#5f6a52"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#50464d"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#1c1d20"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_7E73BB53-08BE-46A4-AF61-00D7CB178182.webp",
+      "image": "./assets/images/gallery/web/7E73BB53-08BE-46A4-AF61-00D7CB178182.webp",
+      "printFile": "./assets/images/gallery/print/7E73BB53-08BE-46A4-AF61-00D7CB178182.png",
+      "vectorFile": "./assets/images/gallery/vector/7E73BB53-08BE-46A4-AF61-00D7CB178182.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4498,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1748,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0575,
+        "detail_frequency": 0.6646,
+        "contrast_range": 0.9451,
+        "avg_luminance": 0.1902,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "7E73BB53-08BE-46A4-AF61-00D7CB178182.JPEG",
+      "timestamp": "2026-05-22T04:16:16.505711"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "8262307C-DD87-4A90-9ECB-053B1D391A5E": {
+    "hash": "7b426a2ac92235ef2dbeb3da558fc1b5",
+    "artwork": {
+      "id": "BRC-NAT-5BAA11E2",
+      "sku": "BRC-NAT-5BAA11E2",
+      "title": "Effulgence Mosaic",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ffffff",
+        "#feffff",
+        "#fefffc",
+        "#fcfcfb",
+        "#cad6af",
+        "#586b4d"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#cad6af"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#586b4d"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_8262307C-DD87-4A90-9ECB-053B1D391A5E.webp",
+      "image": "./assets/images/gallery/web/8262307C-DD87-4A90-9ECB-053B1D391A5E.webp",
+      "printFile": "./assets/images/gallery/print/8262307C-DD87-4A90-9ECB-053B1D391A5E.png",
+      "vectorFile": "./assets/images/gallery/vector/8262307C-DD87-4A90-9ECB-053B1D391A5E.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.9,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4758
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1354,
+        "color_complexity": 256,
+        "gradient_ratio": 0.1001,
+        "detail_frequency": 0.5106,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.8247,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "8262307C-DD87-4A90-9ECB-053B1D391A5E.PNG",
+      "timestamp": "2026-05-22T04:16:16.507711"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "7D36C12F-D36B-4E29-B052-1D3760262B59": {
+    "hash": "8e58914ea14c41e038957aa51ce24b0e",
+    "artwork": {
+      "id": "BRC-NAT-BEFEA697",
+      "sku": "BRC-NAT-BEFEA697",
+      "title": "Eburnean Compendium",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#bbc9ad",
+        "#28d8bf",
+        "#957765",
+        "#46716b",
+        "#7c444f",
+        "#2a2f36"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#bbc9ad"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#28d8bf"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#2a2f36"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_7D36C12F-D36B-4E29-B052-1D3760262B59.webp",
+      "image": "./assets/images/gallery/web/7D36C12F-D36B-4E29-B052-1D3760262B59.webp",
+      "printFile": "./assets/images/gallery/print/7D36C12F-D36B-4E29-B052-1D3760262B59.png",
+      "vectorFile": "./assets/images/gallery/vector/7D36C12F-D36B-4E29-B052-1D3760262B59.svg",
+      "printDimensions": {
+        "widthInches": 19.4,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 5812,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1494,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0592,
+        "detail_frequency": 0.5838,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4098,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "7D36C12F-D36B-4E29-B052-1D3760262B59.JPG",
+      "timestamp": "2026-05-22T04:16:16.500711"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "860DE86E-D2BC-479A-9363-96BC62222540": {
+    "hash": "1b5930ed74e0ccab4cec8f1c499a8fd9",
+    "artwork": {
+      "id": "BRC-INT-ED3D7342",
+      "sku": "BRC-INT-ED3D7342",
+      "title": "Corbeau Reliquary",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#6e5b54",
+        "#4f3142",
+        "#3e1525",
+        "#17030b",
+        "#000103",
+        "#000000"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#6e5b54"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4f3142"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#17030b"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_860DE86E-D2BC-479A-9363-96BC62222540.webp",
+      "image": "./assets/images/gallery/web/860DE86E-D2BC-479A-9363-96BC62222540.webp",
+      "printFile": "./assets/images/gallery/print/860DE86E-D2BC-479A-9363-96BC62222540.png",
+      "vectorFile": "./assets/images/gallery/vector/860DE86E-D2BC-479A-9363-96BC62222540.svg",
+      "printDimensions": {
+        "widthInches": 12.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 3599,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1483,
+        "color_complexity": 256,
+        "gradient_ratio": 0.032,
+        "detail_frequency": 0.6704,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.1318,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "860DE86E-D2BC-479A-9363-96BC62222540.JPEG",
+      "timestamp": "2026-05-22T04:16:16.523712"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA": {
+    "hash": "1b9388ba106eebf66a00d7c60e8b35c1",
+    "artwork": {
+      "id": "BRC-NAT-3ABD0932",
+      "sku": "BRC-NAT-3ABD0932",
+      "title": "Pyrrhous Spinney",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#edb55a",
+        "#b6a78a",
+        "#85746c",
+        "#69403f",
+        "#2e3333",
+        "#111d20"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#edb55a"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#85746c"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#69403f"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#111d20"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA.webp",
+      "image": "./assets/images/gallery/web/88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA.webp",
+      "printFile": "./assets/images/gallery/print/88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA.png",
+      "vectorFile": "./assets/images/gallery/vector/88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA.svg",
+      "printDimensions": {
+        "widthInches": 9.5,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2858,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0826,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0572,
+        "detail_frequency": 0.4591,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3698,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA.JPEG",
+      "timestamp": "2026-05-22T04:16:16.525712"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "79D4A135-49A4-4FDE-BE48-A86A0F2B507C": {
+    "hash": "ce33f401862622a292eed926b0afcaa0",
+    "artwork": {
+      "id": "BRC-NAT-5F3BF89E",
+      "sku": "BRC-NAT-5F3BF89E",
+      "title": "Fervid Canopy",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#a8895f",
+        "#7a7279",
+        "#7e5371",
+        "#6f3e66",
+        "#682144",
+        "#3e204b"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a8895f"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#6f3e66"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_79D4A135-49A4-4FDE-BE48-A86A0F2B507C.webp",
+      "image": "./assets/images/gallery/web/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.webp",
+      "printFile": "./assets/images/gallery/print/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.png",
+      "vectorFile": "./assets/images/gallery/vector/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.svg",
+      "printDimensions": {
+        "widthInches": 14.8,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4437,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1022,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0612,
+        "detail_frequency": 0.4701,
+        "contrast_range": 0.9961,
+        "avg_luminance": 0.364,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "79D4A135-49A4-4FDE-BE48-A86A0F2B507C.JPEG",
+      "timestamp": "2026-05-22T04:16:16.481711"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "91C100EA-9CF6-4E0F-AEE1-9033F0C74222": {
+    "hash": "cd1e38154107639bee00cef5d4117538",
+    "artwork": {
+      "id": "BRC-NAT-DACA8E8A",
+      "sku": "BRC-NAT-DACA8E8A",
+      "title": "Eventide Filigree",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#d8d7d8",
+        "#6b6564",
+        "#252429",
+        "#111113",
+        "#020202",
+        "#000000"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#d8d7d8"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#6b6564"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#252429"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#111113"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_91C100EA-9CF6-4E0F-AEE1-9033F0C74222.webp",
+      "image": "./assets/images/gallery/web/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.webp",
+      "printFile": "./assets/images/gallery/print/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.png",
+      "vectorFile": "./assets/images/gallery/vector/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4498
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1529,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0423,
+        "detail_frequency": 0.5974,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.208,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "91C100EA-9CF6-4E0F-AEE1-9033F0C74222.PNG",
+      "timestamp": "2026-05-22T04:16:16.543712"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "90FE23C9-174B-41B2-BEE8-6B552ACC6F95": {
+    "hash": "a9366f01b46b5de20313b7d17db2b682",
+    "artwork": {
+      "id": "BRC-NAT-880CCD9C",
+      "sku": "BRC-NAT-880CCD9C",
+      "title": "Ashgrove Sedge",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#e3deba",
+        "#c39059",
+        "#be501a",
+        "#3c4133",
+        "#3c1608",
+        "#060c07"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#e3deba"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#c39059"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#be501a"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#3c4133"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#060c07"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_90FE23C9-174B-41B2-BEE8-6B552ACC6F95.webp",
+      "image": "./assets/images/gallery/web/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.webp",
+      "printFile": "./assets/images/gallery/print/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.png",
+      "vectorFile": "./assets/images/gallery/vector/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 18.7,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5612
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.089,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0498,
+        "detail_frequency": 0.4428,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2921,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "90FE23C9-174B-41B2-BEE8-6B552ACC6F95.PNG",
+      "timestamp": "2026-05-22T04:16:16.535712"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "A5400571-244D-4C2E-AD39-251114D3A916": {
+    "hash": "6fb480b7d921c255c49c164c9914916b",
+    "artwork": {
+      "id": "BRC-INT-2820FE93",
+      "sku": "BRC-INT-2820FE93",
+      "title": "Direling Concatenation",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#678267",
+        "#4a4f51",
+        "#352a3d",
+        "#210c27",
+        "#05050c",
+        "#020206"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#678267"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4a4f51"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#210c27"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_A5400571-244D-4C2E-AD39-251114D3A916.webp",
+      "image": "./assets/images/gallery/web/A5400571-244D-4C2E-AD39-251114D3A916.webp",
+      "printFile": "./assets/images/gallery/print/A5400571-244D-4C2E-AD39-251114D3A916.png",
+      "vectorFile": "./assets/images/gallery/vector/A5400571-244D-4C2E-AD39-251114D3A916.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 19.3,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5799
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2085,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0399,
+        "detail_frequency": 0.7313,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.1707,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "A5400571-244D-4C2E-AD39-251114D3A916.PNG",
+      "timestamp": "2026-05-22T04:16:16.615714"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "A42A250F-BEDC-44D0-A669-188486DED43D": {
+    "hash": "56c6c3823d941b5d005ea4644e898774",
+    "artwork": {
+      "id": "BRC-NAT-080C47BD",
+      "sku": "BRC-NAT-080C47BD",
+      "title": "Ichor Thicket",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#c2b6c9",
+        "#519fa2",
+        "#4a7282",
+        "#6e4c72",
+        "#622d56",
+        "#203d4e"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#c2b6c9"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#519fa2"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#622d56"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_A42A250F-BEDC-44D0-A669-188486DED43D.webp",
+      "image": "./assets/images/gallery/web/A42A250F-BEDC-44D0-A669-188486DED43D.webp",
+      "printFile": "./assets/images/gallery/print/A42A250F-BEDC-44D0-A669-188486DED43D.png",
+      "vectorFile": "./assets/images/gallery/vector/A42A250F-BEDC-44D0-A669-188486DED43D.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4506,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1031,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0601,
+        "detail_frequency": 0.4653,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4085,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "A42A250F-BEDC-44D0-A669-188486DED43D.JPG",
+      "timestamp": "2026-05-22T04:16:16.587713"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "C6111B16-6C5D-43E3-9551-748773D25D4E": {
+    "hash": "48181512c2a934a56d3d8de745ccd4ba",
+    "artwork": {
+      "id": "BRC-NAT-B84FE184",
+      "sku": "BRC-NAT-B84FE184",
+      "title": "Empyrean Canopy",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#81b8c5",
+        "#759faa",
+        "#599fb3",
+        "#4e91a0",
+        "#488090",
+        "#384d56"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#81b8c5"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#599fb3"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#384d56"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_C6111B16-6C5D-43E3-9551-748773D25D4E.webp",
+      "image": "./assets/images/gallery/web/C6111B16-6C5D-43E3-9551-748773D25D4E.webp",
+      "printFile": "./assets/images/gallery/print/C6111B16-6C5D-43E3-9551-748773D25D4E.png",
+      "vectorFile": "./assets/images/gallery/vector/C6111B16-6C5D-43E3-9551-748773D25D4E.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0482,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0609,
+        "detail_frequency": 0.273,
+        "contrast_range": 0.9569,
+        "avg_luminance": 0.4755,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "C6111B16-6C5D-43E3-9551-748773D25D4E.JPEG",
+      "timestamp": "2026-05-22T04:16:16.736717"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "CC8B21B5-97D2-4619-A770-6687E8C8DAF3": {
+    "hash": "3403a241800dc4421bd337506e3ec49d",
+    "artwork": {
+      "id": "BRC-INT-BDC78CB3",
+      "sku": "BRC-INT-BDC78CB3",
+      "title": "Obsidian Concatenation",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#648b8c",
+        "#49646c",
+        "#304659",
+        "#2b1f42",
+        "#08143c",
+        "#01072d"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#648b8c"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#304659"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#01072d"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_CC8B21B5-97D2-4619-A770-6687E8C8DAF3.webp",
+      "image": "./assets/images/gallery/web/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.webp",
+      "printFile": "./assets/images/gallery/print/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.png",
+      "vectorFile": "./assets/images/gallery/vector/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 19.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5710
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.2742,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0449,
+        "detail_frequency": 0.7077,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2342,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "CC8B21B5-97D2-4619-A770-6687E8C8DAF3.JPG",
+      "timestamp": "2026-05-22T04:16:16.801718"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "FEDE7753-90C6-4C1D-931A-3CAEFB90FE22": {
+    "hash": "d71fda26f611a6682bb9055aa44061e5",
+    "artwork": {
+      "id": "BRC-NAT-038EAD61",
+      "sku": "BRC-NAT-038EAD61",
+      "title": "Scorchfield Coppice",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#fef806",
+        "#fbe41d",
+        "#cc8782",
+        "#c308ff",
+        "#be18ee",
+        "#7411c3"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#fef806"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#cc8782"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_FEDE7753-90C6-4C1D-931A-3CAEFB90FE22.webp",
+      "image": "./assets/images/gallery/web/FEDE7753-90C6-4C1D-931A-3CAEFB90FE22.webp",
+      "printFile": "./assets/images/gallery/print/FEDE7753-90C6-4C1D-931A-3CAEFB90FE22.png",
+      "vectorFile": "./assets/images/gallery/vector/FEDE7753-90C6-4C1D-931A-3CAEFB90FE22.svg",
+      "printDimensions": {
+        "widthInches": 9.5,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2859,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0859,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0694,
+        "detail_frequency": 0.371,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.5766,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "FEDE7753-90C6-4C1D-931A-3CAEFB90FE22.JPEG",
+      "timestamp": "2026-05-22T04:16:16.949722"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "E39B300A-88D1-46B2-8B29-077EDD3BA9A2": {
+    "hash": "a40296e7ed7dc48d8f4504c0997686fa",
+    "artwork": {
+      "id": "BRC-NAT-6DE57B9E",
+      "sku": "BRC-NAT-6DE57B9E",
+      "title": "Pearlescent Filigree",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#89a39b",
+        "#6778a4",
+        "#905759",
+        "#455cb1",
+        "#6c3750",
+        "#442a67"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#89a39b"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#6778a4"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#6c3750"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_E39B300A-88D1-46B2-8B29-077EDD3BA9A2.webp",
+      "image": "./assets/images/gallery/web/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.webp",
+      "printFile": "./assets/images/gallery/print/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.png",
+      "vectorFile": "./assets/images/gallery/vector/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4497,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1211,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0603,
+        "detail_frequency": 0.5254,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3982,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "E39B300A-88D1-46B2-8B29-077EDD3BA9A2.JPEG",
+      "timestamp": "2026-05-22T04:16:16.825719"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_0506": {
+    "hash": "e39574487bf59a98d01fb72bb87fbeac",
+    "artwork": {
+      "id": "BRC-NAT-2B3352E4",
+      "sku": "BRC-NAT-2B3352E4",
+      "title": "Ichor Kaleidoscope",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ffffff",
+        "#fffffd",
+        "#fffdfd",
+        "#fdfdfd",
+        "#bdcfb9",
+        "#785270"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#bdcfb9"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#785270"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0506.webp",
+      "image": "./assets/images/gallery/web/IMG_0506.webp",
+      "printFile": "./assets/images/gallery/print/IMG_0506.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_0506.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 16.5,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4962
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1224,
+        "color_complexity": 251,
+        "gradient_ratio": 0.0909,
+        "detail_frequency": 0.5187,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.7976,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_0506.jpg",
+      "timestamp": "2026-05-22T04:16:16.952722"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "F4067060-0D44-4AB1-AEBE-1A47C49CE9AA": {
+    "hash": "140c1e10f1ef7d9154657c2d823c0a67",
+    "artwork": {
+      "id": "BRC-INT-03CDB36B",
+      "sku": "BRC-INT-03CDB36B",
+      "title": "Limn Welter",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#c5c6c2",
+        "#8f92a5",
+        "#7b7792",
+        "#606f9b",
+        "#784654",
+        "#3d4377"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#c5c6c2"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#8f92a5"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#7b7792"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.webp",
+      "image": "./assets/images/gallery/web/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.webp",
+      "printFile": "./assets/images/gallery/print/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.png",
+      "vectorFile": "./assets/images/gallery/vector/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4500
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1763,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0613,
+        "detail_frequency": 0.6535,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4664,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.JPEG",
+      "timestamp": "2026-05-22T04:16:16.933721"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_0419": {
+    "hash": "a395986b6d243d936f2fb25aeea5fc5b",
+    "artwork": {
+      "id": "BRC-NAT-549BC728",
+      "sku": "BRC-NAT-549BC728",
+      "title": "Subfusc Burgeon",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#9669a6",
+        "#018c30",
+        "#ca35b8",
+        "#731969",
+        "#070804",
+        "#000000"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#9669a6"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#018c30"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#070804"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0419.webp",
+      "image": "./assets/images/gallery/web/IMG_0419.webp",
+      "printFile": "./assets/images/gallery/print/IMG_0419.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_0419.svg",
+      "printDimensions": {
+        "widthInches": 11.2,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 3375,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0816,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0434,
+        "detail_frequency": 0.4446,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2907,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_0419.JPG",
+      "timestamp": "2026-05-22T04:16:16.949722"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_0509": {
+    "hash": "3c32a7fb83462cebcd2780be55959d44",
+    "artwork": {
+      "id": "BRC-INT-2E076682",
+      "sku": "BRC-INT-2E076682",
+      "title": "Lucent Reliquary",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#dadcdc",
+        "#80afb1",
+        "#57657c",
+        "#79398a",
+        "#3d3256",
+        "#131a29"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#dadcdc"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#80afb1"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#57657c"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#3d3256"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#131a29"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0509.webp",
+      "image": "./assets/images/gallery/web/IMG_0509.webp",
+      "printFile": "./assets/images/gallery/print/IMG_0509.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_0509.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4498
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.22,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0569,
+        "detail_frequency": 0.7123,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4007,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_0509.PNG",
+      "timestamp": "2026-05-22T04:16:16.975722"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_0848": {
+    "hash": "7485620c349ec6b9b408b9e22944cb88",
+    "artwork": {
+      "id": "BRC-NAT-00163639",
+      "sku": "BRC-NAT-00163639",
+      "title": "Selene Roothold",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ffffff",
+        "#fde9e4",
+        "#e7cabb",
+        "#e28b95",
+        "#8f7d99",
+        "#50415b"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#e7cabb"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#e28b95"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#8f7d99"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#50415b"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0848.webp",
+      "image": "./assets/images/gallery/web/IMG_0848.webp",
+      "printFile": "./assets/images/gallery/print/IMG_0848.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_0848.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4498,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1225,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0751,
+        "detail_frequency": 0.4946,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.6791,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_0848.jpg",
+      "timestamp": "2026-05-22T04:16:16.983722"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_0850": {
+    "hash": "37357f5294bee23d4c55a1d6172391c6",
+    "artwork": {
+      "id": "BRC-INT-5134F7EA",
+      "sku": "BRC-INT-5134F7EA",
+      "title": "Effulgence Concatenation",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#cdd9d8",
+        "#a6b5ba",
+        "#838d9b",
+        "#666774",
+        "#495673",
+        "#26293b"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#cdd9d8"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#a6b5ba"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#666774"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#26293b"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0850.webp",
+      "image": "./assets/images/gallery/web/IMG_0850.webp",
+      "printFile": "./assets/images/gallery/print/IMG_0850.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_0850.svg",
+      "printDimensions": {
+        "widthInches": 19.9,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 5974,
+        "pixelHeight": 5999
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.3252,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0597,
+        "detail_frequency": 0.8556,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4757,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_0850.jpg",
+      "timestamp": "2026-05-22T04:16:16.987722"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_1086": {
+    "hash": "8c5bbb98679332b8b89e013af1eb8d4a",
+    "artwork": {
+      "id": "BRC-NAT-C348A787",
+      "sku": "BRC-NAT-C348A787",
+      "title": "Nyx Verdure",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#b1a5c3",
+        "#5c6696",
+        "#924f90",
+        "#275178",
+        "#702e41",
+        "#1d1222"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#b1a5c3"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#5c6696"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#275178"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#1d1222"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_1086.webp",
+      "image": "./assets/images/gallery/web/IMG_1086.webp",
+      "printFile": "./assets/images/gallery/print/IMG_1086.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_1086.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4498
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0876,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0579,
+        "detail_frequency": 0.4574,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3454,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_1086.jpg",
+      "timestamp": "2026-05-22T04:16:17.028723"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_0851": {
+    "hash": "ea106b3a2cc0a0159b5526183c68d8a1",
+    "artwork": {
+      "id": "BRC-INT-39CC9EFB",
+      "sku": "BRC-INT-39CC9EFB",
+      "title": "Auroral Filigree",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ccb69f",
+        "#40acbc",
+        "#757582",
+        "#9c3e4b",
+        "#593447",
+        "#20254f"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#ccb69f"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#40acbc"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#593447"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0851.webp",
+      "image": "./assets/images/gallery/web/IMG_0851.webp",
+      "printFile": "./assets/images/gallery/print/IMG_0851.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_0851.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 19.9,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5962
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.225,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0593,
+        "detail_frequency": 0.7265,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4089,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_0851.jpg",
+      "timestamp": "2026-05-22T04:16:16.999723"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_1521": {
+    "hash": "e1d6028806b702d67594220596fbf9de",
+    "artwork": {
+      "id": "BRC-INT-A7F50DEA",
+      "sku": "BRC-INT-A7F50DEA",
+      "title": "Lichgate Arabesque",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#7b8a7f",
+        "#666364",
+        "#6d424c",
+        "#2d3f3c",
+        "#351d31",
+        "#06072e"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#7b8a7f"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#6d424c"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#06072e"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_1521.webp",
+      "image": "./assets/images/gallery/web/IMG_1521.webp",
+      "printFile": "./assets/images/gallery/print/IMG_1521.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_1521.svg",
+      "printDimensions": {
+        "widthInches": 11.2,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 3375,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1984,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0537,
+        "detail_frequency": 0.6836,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2442,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_1521.JPG",
+      "timestamp": "2026-05-22T04:16:17.093725"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_1088": {
+    "hash": "c894f2726a93a69419381f8f612277d0",
+    "artwork": {
+      "id": "BRC-NAT-44DD8E76",
+      "sku": "BRC-NAT-44DD8E76",
+      "title": "Subfusc Verdure",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#5aa3a5",
+        "#406888",
+        "#65534e",
+        "#622e31",
+        "#231b2c",
+        "#0d0a10"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#5aa3a5"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#622e31"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#0d0a10"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_1088.webp",
+      "image": "./assets/images/gallery/web/IMG_1088.webp",
+      "printFile": "./assets/images/gallery/print/IMG_1088.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_1088.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4498
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1028,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0542,
+        "detail_frequency": 0.4832,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2668,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_1088.jpg",
+      "timestamp": "2026-05-22T04:16:17.062724"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_1481": {
+    "hash": "9ded151518f932cdeafad97000aeb9b5",
+    "artwork": {
+      "id": "BRC-NAT-DD35CE73",
+      "sku": "BRC-NAT-DD35CE73",
+      "title": "Obsidian Bracken",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#f1b457",
+        "#e06f36",
+        "#b34517",
+        "#4b3b1a",
+        "#631604",
+        "#090e01"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#f1b457"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#e06f36"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4b3b1a"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#090e01"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_1481.webp",
+      "image": "./assets/images/gallery/web/IMG_1481.webp",
+      "printFile": "./assets/images/gallery/print/IMG_1481.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_1481.svg",
+      "printDimensions": {
+        "widthInches": 15.8,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4725,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.068,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0529,
+        "detail_frequency": 0.4048,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.269,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_1481.jpg",
+      "timestamp": "2026-05-22T04:16:17.086725"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_2204": {
+    "hash": "48977cc69d4dedddcb62bca636e72629",
+    "artwork": {
+      "id": "BRC-INT-38890325",
+      "sku": "BRC-INT-38890325",
+      "title": "Lethe Arabesque",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#bfd19f",
+        "#857f8d",
+        "#62556b",
+        "#782129",
+        "#352a33",
+        "#171920"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#bfd19f"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#857f8d"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#782129"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#171920"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2204.webp",
+      "image": "./assets/images/gallery/web/IMG_2204.webp",
+      "printFile": "./assets/images/gallery/print/IMG_2204.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_2204.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4497
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1844,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0605,
+        "detail_frequency": 0.6518,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3346,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_2204.PNG",
+      "timestamp": "2026-05-22T04:16:17.229728"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_2246": {
+    "hash": "95e387ba2311aa5283092ca0ed34cfc9",
+    "artwork": {
+      "id": "BRC-INT-268033B7",
+      "sku": "BRC-INT-268033B7",
+      "title": "Tindersphere Chronicle",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#e6cb64",
+        "#a7b37b",
+        "#a28f67",
+        "#6f8576",
+        "#655551",
+        "#28373f"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#e6cb64"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a28f67"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#28373f"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2246.webp",
+      "image": "./assets/images/gallery/web/IMG_2246.webp",
+      "printFile": "./assets/images/gallery/print/IMG_2246.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_2246.svg",
+      "printDimensions": {
+        "widthInches": 15.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 4498,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.3467,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0598,
+        "detail_frequency": 0.8962,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.4296,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_2246.PNG",
+      "timestamp": "2026-05-22T04:16:17.260729"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_2464": {
+    "hash": "5c7f48f5d38194447493a606b6a489a2",
+    "artwork": {
+      "id": "BRC-NAT-033CC0AD",
+      "sku": "BRC-NAT-033CC0AD",
+      "title": "Eventide Confluence",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#4e8266",
+        "#51615b",
+        "#434749",
+        "#1d1d1d",
+        "#171718",
+        "#131313"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#4e8266"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#51615b"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#1d1d1d"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2464.webp",
+      "image": "./assets/images/gallery/web/IMG_2464.webp",
+      "printFile": "./assets/images/gallery/print/IMG_2464.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_2464.svg",
+      "printDimensions": {
+        "widthInches": 9.2,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2770,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1008,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0787,
+        "detail_frequency": 0.5527,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2131,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_2464.PNG",
+      "timestamp": "2026-05-22T04:16:17.303730"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_2238": {
+    "hash": "a02cb30e8b56a7861b88610d37651646",
+    "artwork": {
+      "id": "BRC-INT-4280919D",
+      "sku": "BRC-INT-4280919D",
+      "title": "Aubade Daedal",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#c2bca4",
+        "#7d9185",
+        "#7c737b",
+        "#576566",
+        "#4f4659",
+        "#252731"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#c2bca4"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#7d9185"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#4f4659"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2238.webp",
+      "image": "./assets/images/gallery/web/IMG_2238.webp",
+      "printFile": "./assets/images/gallery/print/IMG_2238.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_2238.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 19.8,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5930
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.3012,
+        "color_complexity": 256,
+        "gradient_ratio": 0.059,
+        "detail_frequency": 0.8185,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3837,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_2238.jpg",
+      "timestamp": "2026-05-22T04:16:17.237728"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_4633": {
+    "hash": "53784f0eb289da63419393dad59f5071",
+    "artwork": {
+      "id": "BRC-NAT-613BD6AE",
+      "sku": "BRC-NAT-613BD6AE",
+      "title": "Seraphine Canopy",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ffffff",
+        "#fefefe",
+        "#fefdf7",
+        "#faf5d6",
+        "#bcd9d7",
+        "#4e7594"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#bcd9d7"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#4e7594"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_4633.webp",
+      "image": "./assets/images/gallery/web/IMG_4633.webp",
+      "printFile": "./assets/images/gallery/print/IMG_4633.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_4633.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4497
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1136,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0932,
+        "detail_frequency": 0.4984,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.8373,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_4633.jpg",
+      "timestamp": "2026-05-22T04:16:18.003745"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_2357": {
+    "hash": "694c5a326ec6058f79c3f8cff9dfaed3",
+    "artwork": {
+      "id": "BRC-NAT-387414B6",
+      "sku": "BRC-NAT-387414B6",
+      "title": "Luminesce Gyre",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#ffffff",
+        "#fffffe",
+        "#feffff",
+        "#a4a6c3",
+        "#423f76",
+        "#1b1246"
+      ],
+      "namedColors": [
+        {
+          "name": "Alabaster",
+          "code": "ALB",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#a4a6c3"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#423f76"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#1b1246"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2357.webp",
+      "image": "./assets/images/gallery/web/IMG_2357.webp",
+      "printFile": "./assets/images/gallery/print/IMG_2357.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_2357.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 15.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 4498
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0236,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0783,
+        "detail_frequency": 0.1545,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.5523,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_2357.PNG",
+      "timestamp": "2026-05-22T04:16:17.300730"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "PopPic00003": {
+    "hash": "dd8b94a440beb6b7b141693b6d91d1e6",
+    "artwork": {
+      "id": "BRC-INT-0661CE3E",
+      "sku": "BRC-INT-0661CE3E",
+      "title": "Fuliginous Reliquary",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#c7bfbd",
+        "#a38075",
+        "#934a78",
+        "#483d41",
+        "#58115c",
+        "#190a21"
+      ],
+      "namedColors": [
+        {
+          "name": "Bone",
+          "code": "BON",
+          "hex": "#c7bfbd"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#a38075"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#483d41"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#190a21"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_PopPic00003.webp",
+      "image": "./assets/images/gallery/web/PopPic00003.webp",
+      "printFile": "./assets/images/gallery/print/PopPic00003.png",
+      "vectorFile": "./assets/images/gallery/vector/PopPic00003.svg",
+      "printDimensions": {
+        "widthInches": 9.5,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 2856,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1786,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0558,
+        "detail_frequency": 0.7027,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.3388,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "PopPic00003.jpg",
+      "timestamp": "2026-05-22T04:16:18.046746"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_2508": {
+    "hash": "397aa5594ed8052da8d847c8a4e9c79c",
+    "artwork": {
+      "id": "BRC-NAT-E1262B0A",
+      "sku": "BRC-NAT-E1262B0A",
+      "title": "Acheron Witchgrass",
+      "description": "",
+      "style": "Naturalis",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#d1895d",
+        "#7e4036",
+        "#402323",
+        "#190e10",
+        "#080708",
+        "#010101"
+      ],
+      "namedColors": [
+        {
+          "name": "Ash",
+          "code": "ASH",
+          "hex": "#d1895d"
+        },
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#7e4036"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#402323"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#190e10"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "naturalis",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2508.webp",
+      "image": "./assets/images/gallery/web/IMG_2508.webp",
+      "printFile": "./assets/images/gallery/print/IMG_2508.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_2508.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 18.7,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 5619
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.0624,
+        "color_complexity": 256,
+        "gradient_ratio": 0.0452,
+        "detail_frequency": 0.4235,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.1752,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_2508.PNG",
+      "timestamp": "2026-05-22T04:16:17.333730"
+    },
+    "route": "raster",
+    "bg_removed": false
+  },
+  "IMG_6190": {
+    "hash": "67f035bbfcacae2d10f27b2f8051fdcc",
+    "artwork": {
+      "id": "BRC-INT-9EAF6A2C",
+      "sku": "BRC-INT-9EAF6A2C",
+      "title": "Ravenmoor Plexus",
+      "description": "",
+      "style": "Intricata",
+      "category": "Art Prints",
+      "colorPalette": [
+        "#918b82",
+        "#503d3f",
+        "#120b0e",
+        "#00050b",
+        "#000004",
+        "#000000"
+      ],
+      "namedColors": [
+        {
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#918b82"
+        },
+        {
+          "name": "Cinder",
+          "code": "CIN",
+          "hex": "#503d3f"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#120b0e"
+        }
+      ],
+      "bestProducts": [
+        "Framed Print",
+        "Canvas",
+        "Metal Print"
+      ],
+      "seoKeywords": [
+        "arttra",
+        "intricata",
+        "art prints",
+        "wall art",
+        "contemporary",
+        "handmade"
+      ],
+      "priceTiers": {
+        "startingPrice": 79
+      },
+      "thumb": "./assets/images/gallery/thumbs/thumb_IMG_6190.webp",
+      "image": "./assets/images/gallery/web/IMG_6190.webp",
+      "printFile": "./assets/images/gallery/print/IMG_6190.png",
+      "vectorFile": "./assets/images/gallery/vector/IMG_6190.svg",
+      "printDimensions": {
+        "widthInches": 20.0,
+        "heightInches": 20.0,
+        "dpi": 300,
+        "pixelWidth": 6000,
+        "pixelHeight": 6000
+      },
+      "vectorRoute": "raster",
+      "imageProfile": {
+        "edge_density": 0.1662,
+        "color_complexity": 256,
+        "gradient_ratio": 0.037,
+        "detail_frequency": 0.6721,
+        "contrast_range": 1.0,
+        "avg_luminance": 0.2161,
+        "route": "raster",
+        "route_reason": "Complex image"
+      },
+      "isPhotography": false,
+      "buyUrl": "#",
+      "sourceFile": "IMG_6190.JPG",
+      "timestamp": "2026-05-22T04:16:18.039746"
     },
     "route": "raster",
     "bg_removed": false
