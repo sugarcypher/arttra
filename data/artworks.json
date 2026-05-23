@@ -72,7 +72,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4781.jpg",
-    "timestamp": "2026-05-22T04:49:49.212081"
+    "timestamp": "2026-05-22T04:49:49.212081",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-B2CB2A4C",
@@ -157,7 +160,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4742.jpeg",
-    "timestamp": "2026-05-22T04:49:49.208081"
+    "timestamp": "2026-05-22T04:49:49.208081",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-83E6B05C",
@@ -232,12 +238,15 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4661.jpeg",
-    "timestamp": "2026-05-22T04:49:49.207082"
+    "timestamp": "2026-05-22T04:49:49.207082",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-B2367F03",
     "sku": "BRC-NAT-B2367F03",
-    "title": "Pellucid Petalwork",
+    "title": "Malucide Projections",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -307,7 +316,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4408.PNG",
-    "timestamp": "2026-05-22T04:49:49.195082"
+    "timestamp": "2026-05-22T04:49:49.195082",
+    "materials": "",
+    "sold": false,
+    "hidden": false
   },
   {
     "id": "BRC-NAT-7B080D3B",
@@ -762,7 +774,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_1358.jpg",
-    "timestamp": "2026-05-22T04:49:47.954108"
+    "timestamp": "2026-05-22T04:49:47.954108",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-E232503A",
@@ -2377,7 +2392,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "8DBBA162-2F0C-4EDE-BE0B-CE89BB559B10.PNG",
-    "timestamp": "2026-05-22T04:49:47.087126"
+    "timestamp": "2026-05-22T04:49:47.087126",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-4492019D",
@@ -2607,7 +2625,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "7F844DA0-3571-4A71-8FA0-58C14AC51DD4.JPEG",
-    "timestamp": "2026-05-22T04:49:47.045127"
+    "timestamp": "2026-05-22T04:49:47.045127",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-309463BC",
@@ -3447,7 +3468,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "18592964-5E2C-43F2-BEDF-319952C665BC.PNG",
-    "timestamp": "2026-05-22T04:49:46.259140"
+    "timestamp": "2026-05-22T04:49:46.259140",
+    "materials": "",
+    "sold": false,
+    "hidden": false
   },
   {
     "id": "BRC-NAT-83831B6D",
@@ -5002,7 +5026,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "FEDE7753-90C6-4C1D-931A-3CAEFB90FE22.JPEG",
-    "timestamp": "2026-05-22T04:16:16.949722"
+    "timestamp": "2026-05-22T04:16:16.949722",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-549BC728",
@@ -5772,7 +5799,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "88B402CD-4E0E-4C8F-8FA6-7C2474AAEBFA.JPEG",
-    "timestamp": "2026-05-22T04:16:16.525712"
+    "timestamp": "2026-05-22T04:16:16.525712",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-ED3D7342",
@@ -6472,7 +6502,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "744F4CBA-6120-4559-92C9-59D75C59E710.JPEG",
-    "timestamp": "2026-05-22T04:16:16.429710"
+    "timestamp": "2026-05-22T04:16:16.429710",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-350A5C89",
@@ -7462,7 +7495,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "3D85CA84-F5C7-4BB0-8C17-69EF7276A911.JPEG",
-    "timestamp": "2026-05-22T04:16:16.194704"
+    "timestamp": "2026-05-22T04:16:16.194704",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-72E1E9D1",
@@ -7907,7 +7943,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "23078835-79B2-4CD6-87EB-19611B9C1A77.JPEG",
-    "timestamp": "2026-05-22T04:16:16.067702"
+    "timestamp": "2026-05-22T04:16:16.067702",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-DD9DE2FB",
@@ -8057,7 +8096,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "20FADEED-C44E-49E1-9A73-3D5859565BD5.PNG",
-    "timestamp": "2026-05-22T04:16:16.033701"
+    "timestamp": "2026-05-22T04:16:16.033701",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-74E85843",
@@ -8207,7 +8249,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "18FFB756-4176-43B6-A9DC-A8646FAAC386.JPEG",
-    "timestamp": "2026-05-22T04:16:15.953699"
+    "timestamp": "2026-05-22T04:16:15.953699",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-4C35AAF2",
@@ -8372,7 +8417,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "0DD2444E-FC70-4DDF-BEDC-597F4329D8D5.JPG",
-    "timestamp": "2026-05-22T04:16:15.895698"
+    "timestamp": "2026-05-22T04:16:15.895698",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-8A947383",
@@ -9482,7 +9530,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4293.PNG",
-    "timestamp": "2026-03-28T15:58:38.786532"
+    "timestamp": "2026-03-28T15:58:38.786532",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-INT-F848E811",
@@ -9717,7 +9768,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_4207.jpg",
-    "timestamp": "2026-03-28T15:58:38.723532"
+    "timestamp": "2026-03-28T15:58:38.723532",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-56D0E9E3",
@@ -9937,7 +9991,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_3830.jpg",
-    "timestamp": "2026-03-28T15:58:38.635533"
+    "timestamp": "2026-03-28T15:58:38.635533",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-0D48D159",
@@ -10302,7 +10359,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_2697.jpg",
-    "timestamp": "2026-03-28T15:58:38.397534"
+    "timestamp": "2026-03-28T15:58:38.397534",
+    "materials": "",
+    "sold": false,
+    "hidden": false
   },
   {
     "id": "BRC-INT-5F9C0977",
@@ -12137,7 +12197,10 @@
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "AF6693CF-23AE-496A-9128-A34D47C51057.JPEG",
-    "timestamp": "2026-03-28T15:58:38.139535"
+    "timestamp": "2026-03-28T15:58:38.139535",
+    "materials": "",
+    "sold": false,
+    "hidden": true
   },
   {
     "id": "BRC-NAT-0DA08BE9",
