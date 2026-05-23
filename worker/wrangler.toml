@@ -1,0 +1,25 @@
+# Cloudflare Worker — arttra.art checkout (slice 1: Stripe payment skeleton).
+#
+# One-time setup, run from inside this worker/ directory:
+#   npx wrangler login                        # authorise wrangler with your Cloudflare account
+#   npx wrangler secret put STRIPE_SECRET_KEY # paste your Stripe TEST secret key (sk_test_...)
+#   npx wrangler deploy                       # deploys; prints the https://...workers.dev URL
+#
+# Then put that workers.dev URL into ../data/config.json  ->  "apiBase".
+# Re-deploy any time with:  npx wrangler deploy
+
+name = "arttra-checkout"
+main = "src/index.js"
+compatibility_date = "2026-05-21"
+
+[observability]
+enabled = true
+
+# Public, non-secret configuration. (The Stripe key is a SECRET — set it with
+# `wrangler secret put`, never put it here.)
+[vars]
+ALLOWED_ORIGIN = "https://arttra.art"
+ARTWORKS_URL   = "https://arttra.art/data/artworks.json"
+SUCCESS_URL    = "https://arttra.art/success.html"
+CANCEL_URL     = "https://arttra.art/?checkout=cancelled"
+DEV            = "false"

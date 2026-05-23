@@ -153,7 +153,7 @@ function openModal(art) {
   const price = art.priceTiers?.startingPrice;
   $("#modalPrice").textContent = price ? fmt(price) : "Contact for pricing";
   $("#modalBestProducts").textContent = (art.bestProducts||[]).join(", ") || "—";
-  $("#buyNowLink").href = art.buyUrl || "#";
+  $("#buyNowLink").onclick = (e) => { e.preventDefault(); startCheckout([{ id: String(art.id), qty: 1 }], e.currentTarget); };
   $("#addToCartBtn").onclick = () => addToCart(String(art.id));
   $("#modalOverlay").hidden = false;
   document.body.style.overflow = "hidden";
@@ -184,6 +184,38 @@ function renderCart() {
   }
 }
 
+// ---- Checkout (Stripe, via the Cloudflare Worker) ----
+function cartToItems() {
+  return getCart()
+    .map(i => ({ id: String(i.artId), qty: Number(i.qty) || 1 }))
+    .filter(i => i.id);
+}
+
+let checkoutBusy = false;
+async function startCheckout(items, button) {
+  if (checkoutBusy) return;
+  if (!items || !items.length) return;
+  const api = (config.apiBase || "").replace(/\/+$/, "");
+  if (!api) { alert("Checkout isn't switched on yet — the store is still being set up."); return; }
+  checkoutBusy = true;
+  const label = button ? button.textContent : "";
+  if (button) { button.textContent = "Starting checkout…"; button.style.pointerEvents = "none"; button.style.opacity = ".6"; }
+  try {
+    const res = await fetch(api + "/checkout", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ items })
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.url) throw new Error(data.error || "Checkout could not start.");
+    window.location.href = data.url;
+  } catch (err) {
+    alert("Sorry — checkout couldn't start. " + (err && err.message ? err.message : "Please try again."));
+    checkoutBusy = false;
+    if (button) { button.textContent = label; button.style.pointerEvents = ""; button.style.opacity = ""; }
+  }
+}
+
 (function() {
   const ov=document.getElementById("modalOverlay"); const dr=document.getElementById("cartDrawer");
   if (ov) ov.hidden=true; if (dr) dr.hidden=true; document.body.style.overflow="";
@@ -192,6 +224,10 @@ function renderCart() {
   window.addEventListener("keydown",e=>{ if(e.key==="Escape"){if(ov&&!ov.hidden)closeModal();if(dr&&!dr.hidden)closeCart();} });
   document.getElementById("cartButton")?.addEventListener("click",()=>{openCart();renderCart();});
   document.getElementById("cartCloseBtn")?.addEventListener("click",closeCart);
+  document.getElementById("checkoutLink")?.addEventListener("click", e => {
+    e.preventDefault();
+    startCheckout(cartToItems(), e.currentTarget);
+  });
 })();
 
 async function init() {
@@ -200,5 +236,8 @@ async function init() {
   document.title = "ARTTRA.ART — Original Art";
   initCatNav(); renderColorBar(); renderCards(); renderCart();
   $("#searchInput").addEventListener("input", e => { state.query=e.target.value||""; renderCards(); });
+  if (new URLSearchParams(location.search).get("checkout") === "cancelled") {
+    openCart(); renderCart();
+  }
 }
 init();

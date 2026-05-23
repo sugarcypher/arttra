@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — arttra.art</title>
+  <style>
+    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+      background:#06060c;color:#f0f0f8;font-family:'DM Sans',system-ui,-apple-system,sans-serif;
+      text-align:center;padding:24px;-webkit-font-smoothing:antialiased}
+    .card{max-width:520px}
+    h1{font-size:clamp(30px,6vw,48px);line-height:1.05;margin:0 0 18px;letter-spacing:-.02em;
+      background:linear-gradient(135deg,#45d7ff,#c840ff,#ff4fd8);
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    p{color:#9a9ab8;font-size:16px;line-height:1.75;margin:0 0 14px}
+    a.btn{display:inline-block;margin-top:20px;padding:12px 24px;border-radius:10px;
+      background:#c840ff;color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Thank you</h1>
+    <p>Your order has been received. Stripe will email a receipt to the address you used at checkout.</p>
+    <p>Prints are made to order — once payment clears, production begins and you'll get a note with tracking when it ships.</p>
+    <a class="btn" href="./">Back to the gallery</a>
+  </div>
+  <script>try { localStorage.removeItem("arttra_cart_v1"); } catch (e) {}</script>
+</body>
+</html>

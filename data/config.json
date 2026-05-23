@@ -1,6 +1,7 @@
 {
   "siteName": "arttra.art",
   "checkoutUrl": "#",
+  "apiBase": "https://arttra-checkout.xp76cpmjsg.workers.dev",
   "currency": "USD",
   "instagram": {
     "username": "skbriar",
