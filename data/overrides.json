@@ -1,0 +1,380 @@
+{
+  "BRC-NAT-3226D7DA": {
+    "title": "Sheen Marginalia",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-A7931DAF": {
+    "title": "Vermeil Bracken",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-B2CB2A4C": {
+    "title": "Embermoor Lichen",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-83E6B05C": {
+    "title": "Silvaine Coppice",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-B2367F03": {
+    "title": "Malucide Projections",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": false,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-41FD03D9": {
+    "title": "Bellows Thicket",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-82B42D9C": {
+    "title": "Dawnspar Marginalia",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-8847F663": {
+    "title": "Tenebrific Mycelium",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": false,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-3ABD0932": {
+    "title": "Pyrrhous Spinney",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-48F36BBD": {
+    "title": "Subfusc Petalwork",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-038EAD61": {
+    "title": "Scorchfield Coppice",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-4B93C5CE": {
+    "title": "Foundry Bosk",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-7D8941DE": {
+    "title": "Minium Welter",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-62E4E3BB": {
+    "title": "Ferrous Daedal",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-02438266": {
+    "title": "Umbra Nexus",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-705F2A71": {
+    "title": "Refulgent Reliquary",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-86D77DC3": {
+    "title": "Dawnspar Vortex",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-7DAC6C6D": {
+    "title": "Solace Mosaic",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-LUM-DC253D43": {
+    "title": "Lumen Rhizome",
+    "category": "Art Prints",
+    "style": "Luminos",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-95A558B7": {
+    "title": "Burnveil Labyrinth",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": false,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-25D6FD93": {
+    "title": "Wintermere Undergrowth",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  }
+}
