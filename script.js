@@ -10,7 +10,15 @@ function fmt(amount) {
   try { return new Intl.NumberFormat(undefined, { style: "currency", currency: config.currency }).format(amount); }
   catch { return `$${amount.toFixed(0)}`; }
 }
-function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;"); }
+function safeColor(s) { return /^#[0-9a-fA-F]{3,8}$/.test(String(s||"")) ? String(s) : "#000000"; }
+function safeUrl(s) {
+  const v = String(s || "").trim();
+  if (!v) return "";
+  if (/^(https?:|data:image\/)/i.test(v)) return esc(v);
+  if (/^[./]/.test(v) && !/^javascript:/i.test(v)) return esc(v);
+  return "";
+}
 function slugCode(value, fallback = "GEN") {
   const s = String(value || fallback).toUpperCase().replace(/[^A-Z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   return (s || fallback).split("-").map(part => part.slice(0, 3)).join("").slice(0, 8);
@@ -50,7 +58,9 @@ function normalizeArtworkIdentity(art) {
   return art;
 }
 function normalizeArtworks(list) {
-  return (Array.isArray(list) ? list : []).map(normalizeArtworkIdentity);
+  return (Array.isArray(list) ? list : [])
+    .filter(a => a && a.hidden !== true)
+    .map(normalizeArtworkIdentity);
 }
 
 function getCart() { try { const r=localStorage.getItem(STORAGE_KEY); return r?JSON.parse(r):[]; } catch { return []; } }
@@ -101,9 +111,9 @@ function renderCards() {
   grid.innerHTML = filtered.map(art => {
     const thumb = art.thumb || art.image || "";
     const swatches = (art.colorPalette||[]).slice(0,4);
-    return `<div class="card" data-id="${art.id}">
+    return `<div class="card" data-id="${esc(art.id)}">
       <div class="card__imgWrap">
-        <img class="card__img" src="${thumb}" alt="${esc(art.title)}" loading="lazy" />
+        <img class="card__img" src="${safeUrl(thumb)}" alt="${esc(art.title)}" loading="lazy" />
         ${art.category ? `<span class="card__category">${esc(art.category)}</span>` : ""}
       </div>
       <div class="card__body">
@@ -111,7 +121,7 @@ function renderCards() {
         <div class="card__sku">${esc(art.sku)}</div>
         <div class="card__sub">
           <span>${esc(art.style||"")}</span>
-          <span class="card__swatches">${swatches.map(h=>`<span class="swatch" style="--c:${h}"></span>`).join("")}</span>
+          <span class="card__swatches">${swatches.map(h=>`<span class="swatch" style="--c:${safeColor(h)}"></span>`).join("")}</span>
         </div>
       </div>
     </div>`;
@@ -126,7 +136,7 @@ function renderColorBar() {
   const sorted = Array.from(map.values()).sort((a,b)=>a.name.localeCompare(b.name));
   let html = '<span class="colorbar__label">Color</span>';
   html += `<button class="cpill cpill--active" data-color="">All</button>`;
-  for (const nc of sorted) html += `<button class="cpill" data-color="${esc(nc.name)}"><span class="cpill__dot" style="--c:${nc.hex}"></span>${esc(nc.name)}</button>`;
+  for (const nc of sorted) html += `<button class="cpill" data-color="${esc(nc.name)}"><span class="cpill__dot" style="--c:${safeColor(nc.hex)}"></span>${esc(nc.name)}</button>`;
   bar.innerHTML = html;
   bar.querySelectorAll(".cpill").forEach(btn => btn.addEventListener("click", () => { state.color = btn.dataset.color || null; bar.querySelectorAll(".cpill").forEach(b=>b.classList.remove("cpill--active")); btn.classList.add("cpill--active"); renderCards(); }));
 }
@@ -147,7 +157,7 @@ function openModal(art) {
   $("#modalImage").src = art.image || art.thumb || "";
   $("#modalImage").alt = art.title || "";
   const colorsEl = $("#modalColors");
-  colorsEl.innerHTML = (art.namedColors||[]).map(nc => `<div class="colorSwatch"><span class="colorSwatch__dot" style="--c:${nc.hex}"></span><span class="colorSwatch__hex">${nc.name}</span></div>`).join("");
+  colorsEl.innerHTML = (art.namedColors||[]).map(nc => `<div class="colorSwatch"><span class="colorSwatch__dot" style="--c:${safeColor(nc.hex)}"></span><span class="colorSwatch__hex">${esc(nc.name)}</span></div>`).join("");
   const identityEl = document.getElementById("modalIdentity");
   if (identityEl) identityEl.innerHTML = `<div>SKU: <strong>${esc(art.sku)}</strong></div><div>Identity hash: ${esc(art.identityHash)}</div><div>Edition: ${esc(art.editionType)}</div><div>Pipeline: ${esc(art.pipelineVersion)}</div>`;
   const price = art.priceTiers?.startingPrice;
@@ -178,7 +188,7 @@ function renderCart() {
     normalizeArtworkIdentity(art);
     const thumb=art.thumb||art.image||""; const price=art.priceTiers?.startingPrice||0;
     const row=document.createElement("div"); row.className="cartItem";
-    row.innerHTML=`<div class="cartItem__img"><img src="${thumb}" loading="lazy"/></div><div class="cartItem__main"><div class="cartItem__title">${esc(art.title)}</div><div class="cartItem__sku">${esc(art.sku)}</div><div class="cartItem__meta"><span>${esc(art.style||"")}</span><span>${price?fmt(price*it.qty):"—"}</span></div><div class="qtyRow"><button class="qtyBtn" data-d="-1">−</button><div class="qtyVal">${it.qty}</div><button class="qtyBtn" data-d="1">+</button></div></div>`;
+    row.innerHTML=`<div class="cartItem__img"><img src="${safeUrl(thumb)}" loading="lazy"/></div><div class="cartItem__main"><div class="cartItem__title">${esc(art.title)}</div><div class="cartItem__sku">${esc(art.sku)}</div><div class="cartItem__meta"><span>${esc(art.style||"")}</span><span>${price?esc(fmt(price*it.qty)):"—"}</span></div><div class="qtyRow"><button class="qtyBtn" data-d="-1">−</button><div class="qtyVal">${Number(it.qty)||0}</div><button class="qtyBtn" data-d="1">+</button></div></div>`;
     row.querySelectorAll(".qtyBtn").forEach(b=>b.addEventListener("click",()=>changeQty(it.artId,Number(b.dataset.d))));
     list.appendChild(row);
   }
