@@ -45,3 +45,11 @@ PRINTFUL_FALLBACK_PRINT_URL = ""
 # you've eyeballed a draft order in the Printful dashboard and verified the v2
 # payload shape. Flip to "true" only when ready to fulfill automatically.
 PRINTFUL_AUTO_CONFIRM = "false"
+
+# Print placement + technique for the chosen variant. PRODUCT-SPECIFIC — the
+# correct values depend on PRINTFUL_DEFAULT_VARIANT_ID. Defaults below suit a
+# flat wall-art print; a poster/framed product may need different values (check
+# the variant's available placements/techniques in the Printful v2 catalog).
+# Leaving them unset uses the defaults baked into the Worker.
+PRINTFUL_PLACEMENT = "default"
+PRINTFUL_TECHNIQUE = "digital-printing"

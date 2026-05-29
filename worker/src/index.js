@@ -418,8 +418,11 @@ async function onCheckoutSessionCompleted(session, env) {
       quantity: Math.max(1, Math.min(MAX_QTY, parseInt(li.quantity, 10) || 1)),
       placements: [
         {
-          placement: "default",
-          technique: "digital-printing",
+          // placement + technique are PRODUCT-SPECIFIC (e.g. a framed poster
+          // differs from apparel). Override per chosen variant via env so a
+          // mismatch doesn't require a code change. Defaults suit a flat print.
+          placement: env.PRINTFUL_PLACEMENT || "default",
+          technique: env.PRINTFUL_TECHNIQUE || "digital-printing",
           layers: [{ type: "file", url: printUrl }],
         },
       ],
@@ -427,10 +430,12 @@ async function onCheckoutSessionCompleted(session, env) {
     });
   }
 
+  // Printful API v2 expects the top-level array named `items` (not
+  // `order_items` — that was v1). Verified against the v2-beta docs.
   const draft = await printfulCreateDraft(env, {
     external_id: session.id.slice(0, 64),
     recipient,
-    order_items: printfulItems,
+    items: printfulItems,
   });
 
   // Optional auto-confirm. Defaults to OFF: drafts wait for human review.
@@ -475,14 +480,14 @@ async function stripeFetchLineItems(sessionId, env) {
   return Array.isArray(data && data.data) ? data.data : [];
 }
 
-// NOTE: Printful API v2 is in open beta. The field names below (catalog_variant_id,
-// placements/technique/layers, recipient.state_code/country_code, order_items)
-// follow v2 conventions but should be verified against the live docs at
-// https://developers.printful.com/docs/v2-beta/ before flipping
-// PRINTFUL_AUTO_CONFIRM=true. A bad shape will surface as a 4xx in the
-// printful create call and bubble up to a 500 webhook response, which makes
-// Stripe retry — keeping AUTO_CONFIRM off lets you eyeball the draft in the
-// Printful Dashboard first.
+// NOTE: Printful API v2 is in open beta. The order body uses `items` (verified
+// against the v2-beta docs — v1 used `order_items`); items carry
+// catalog_variant_id + placements/technique/layers; recipient uses
+// state_code/country_code. The confirm endpoint path (/confirmation) and the
+// per-product placement/technique should still be re-verified against the live
+// docs before flipping PRINTFUL_AUTO_CONFIRM=true. A bad shape surfaces as a
+// 4xx in the create call → 500 webhook response → Stripe retry, so keeping
+// AUTO_CONFIRM off lets you eyeball the draft in the Printful Dashboard first.
 async function printfulCreateDraft(env, body) {
   const res = await fetch("https://api.printful.com/v2/orders", {
     method: "POST",
