@@ -28,29 +28,29 @@ DEV            = "false"
 # Secrets (STRIPE_WEBHOOK_SECRET, PRINTFUL_API_KEY, STRIPE_SECRET_KEY) are NOT
 # here — they live in .dev.vars and upload via `wrangler secret bulk`.
 
-# Flat shipping the BUYER pays at checkout, in USD. Set to roughly cover
-# Printful's per-order shipping for the priciest shape (framed/canvas ~ $12-16
-# domestic) so shipping is pass-through. "0" = free shipping (loses money live).
-SHIPPING_FLAT_USD = "0"
+# Flat shipping the BUYER pays at checkout, in USD. Real Printful rate for a
+# single 18x24 canvas to the US is $9.99 (2-4 days), so $10 is pass-through.
+# Raise if you expect heavy international volume.
+SHIPPING_FLAT_USD = "10"
 
 # Printful catalog VARIANT ids, chosen per artwork SHAPE. The webhook computes
 # each artwork's shape from its print dimensions and maps:
-#   square  (≈1:1)  -> PRINTFUL_VARIANT_SQUARE
-#   portrait(tall)  -> PRINTFUL_VARIANT_PORTRAIT
-#   landscape(wide) -> PRINTFUL_VARIANT_LANDSCAPE
-# TODO: set the numeric variant id for each shape (e.g. a square canvas, a
-# portrait framed poster, a landscape framed poster). Found via the v2 catalog.
-PRINTFUL_VARIANT_SQUARE    = ""
-PRINTFUL_VARIANT_PORTRAIT  = ""
-PRINTFUL_VARIANT_LANDSCAPE = ""
+#   square  (≈1:1)  -> PRINTFUL_VARIANT_SQUARE    -> Canvas 18x18 ($32.25, ~59% margin @ $79)
+#   portrait(tall)  -> PRINTFUL_VARIANT_PORTRAIT  -> Canvas 18x24 vertical   ($36.25, ~54%)
+#   landscape(wide) -> PRINTFUL_VARIANT_LANDSCAPE -> Canvas 18x24 horizontal ($36.25, ~54%)
+# Portrait & landscape share variant 7 — orientation (set by the Worker) flips
+# it. All canvas, so one placement/technique fits all (below).
+PRINTFUL_VARIANT_SQUARE    = "19306"
+PRINTFUL_VARIANT_PORTRAIT  = "7"
+PRINTFUL_VARIANT_LANDSCAPE = "7"
 
 # Fallback variant for any shape left unset above. Optional once the three
-# shapes are filled.
-PRINTFUL_DEFAULT_VARIANT_ID = ""
+# shapes are filled; set to the square as a safe default.
+PRINTFUL_DEFAULT_VARIANT_ID = "19306"
 
-# Public URL of a print-resolution file used until slice 3 adds per-artwork
-# files. TODO: set to a publicly reachable image URL (e.g. an R2/arttra.art URL).
-PRINTFUL_FALLBACK_PRINT_URL = ""
+# Public URL of a print-resolution file used when an artwork has no per-SKU
+# printUrl in the catalog. Points at an already-uploaded R2 print file.
+PRINTFUL_FALLBACK_PRINT_URL = "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png"
 
 # "true" auto-confirms the Printful draft for fulfillment. Keep "false" until
 # you've eyeballed a draft order in the Printful dashboard and verified the v2
@@ -63,4 +63,4 @@ PRINTFUL_AUTO_CONFIRM = "false"
 # families (square canvas + rectangular framed), these would need to be
 # per-shape — revisit then. Check valid values in the v2 catalog per variant.
 PRINTFUL_PLACEMENT = "default"
-PRINTFUL_TECHNIQUE = "digital-printing"
+PRINTFUL_TECHNIQUE = "digital"

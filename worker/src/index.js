@@ -425,17 +425,21 @@ async function onCheckoutSessionCompleted(session, env) {
     if (!variantId) {
       throw new Error(`no Printful variant for ${bucket} shape (set PRINTFUL_VARIANT_${bucket.toUpperCase()} or PRINTFUL_DEFAULT_VARIANT_ID)`);
     }
+    // A rectangular variant prints either way up; orientation picks which.
+    // Portrait art -> vertical, landscape -> horizontal. Square is symmetric.
+    const orientation = bucket === "landscape" ? "horizontal" : "vertical";
     printfulItems.push({
       source: "catalog",
       catalog_variant_id: variantId,
       quantity: Math.max(1, Math.min(MAX_QTY, parseInt(li.quantity, 10) || 1)),
       placements: [
         {
-          // placement + technique are PRODUCT-SPECIFIC (e.g. a framed poster
-          // differs from apparel). Override per chosen variant via env so a
-          // mismatch doesn't require a code change. Defaults suit a flat print.
+          // placement + technique are PRODUCT-SPECIFIC. Override per product via
+          // env (canvas = placement "default", technique "digital"). Orientation
+          // selects vertical/horizontal print on a rectangular variant.
           placement: env.PRINTFUL_PLACEMENT || "default",
-          technique: env.PRINTFUL_TECHNIQUE || "digital-printing",
+          technique: env.PRINTFUL_TECHNIQUE || "digital",
+          orientation,
           layers: [{ type: "file", url: printUrl }],
         },
       ],
