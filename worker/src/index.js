@@ -12,11 +12,14 @@
  * Required secrets (set via `npx wrangler secret put NAME`):
  *   STRIPE_SECRET_KEY        sk_test_... or sk_live_...
  *   STRIPE_WEBHOOK_SECRET    whsec_... from Stripe Dashboard -> Webhooks
- *   PRINTFUL_API_TOKEN       Bearer token from Printful Dashboard
+ *   PRINTFUL_API_KEY         Bearer token from Printful Dashboard
  * Optional vars (set in wrangler.toml [vars]):
- *   PRINTFUL_DEFAULT_VARIANT_ID   numeric catalog variant id for slice 2's
- *                                 single-variant mapping (e.g. an 8x10 framed
- *                                 print). Required for /webhook to function.
+ *   PRINTFUL_VARIANT_SQUARE/_PORTRAIT/_LANDSCAPE  catalog variant ids, chosen
+ *                                 per artwork shape (square art -> square
+ *                                 product, etc). At least the shapes you sell
+ *                                 must be set for /webhook to fulfill.
+ *   PRINTFUL_DEFAULT_VARIANT_ID   fallback variant id used for any shape that
+ *                                 has no per-shape variant configured.
  *   PRINTFUL_AUTO_CONFIRM         "true" to auto-confirm the draft order for
  *                                 fulfillment. Default false (draft stays for
  *                                 human review in Printful Dashboard).
@@ -183,6 +186,7 @@ async function loadCatalog(env) {
     const id = String((a && (a.id || a.sku)) || "");
     if (!id) continue;
     if (a && a.hidden === true) continue;
+    const pd = (a && a.printDimensions) || {};
     map.set(id, {
       title: (a && a.title) || "Untitled artwork",
       price: Number(a && a.priceTiers && a.priceTiers.startingPrice) || 0,
@@ -190,6 +194,10 @@ async function loadCatalog(env) {
       // Public R2 print-file URL (set by the build pipeline). Empty until
       // slice 3's R2 upload runs; the webhook falls back when it's missing.
       printUrl: (a && a.printUrl) || "",
+      // Print dimensions drive which Printful variant (square / portrait /
+      // landscape) the order maps to.
+      w: Number(pd.pixelWidth || pd.widthInches) || 0,
+      h: Number(pd.pixelHeight || pd.heightInches) || 0,
     });
   }
   return map;
@@ -389,8 +397,6 @@ async function onCheckoutSessionCompleted(session, env) {
   const lineItems = await stripeFetchLineItems(session.id, env);
   if (!lineItems.length) throw new Error("no line items on session");
 
-  const variantId = env.PRINTFUL_DEFAULT_VARIANT_ID;
-  if (!variantId) throw new Error("PRINTFUL_DEFAULT_VARIANT_ID not set");
   const fallbackPrint = env.PRINTFUL_FALLBACK_PRINT_URL || "";
 
   // Per-SKU print-file URLs ride along in the catalog (slice 3: R2-hosted).
@@ -412,9 +418,16 @@ async function onCheckoutSessionCompleted(session, env) {
     const entry = catalog.get(sku);
     const printUrl = (entry && entry.printUrl) || fallbackPrint;
     if (!printUrl) throw new Error(`no print file for ${sku || name} and no PRINTFUL_FALLBACK_PRINT_URL set`);
+    // Map each artwork to a Printful variant by its shape, so square art goes
+    // on a square product, portrait on portrait, landscape on landscape.
+    const bucket = aspectBucket(entry && entry.w, entry && entry.h);
+    const variantId = variantForBucket(env, bucket);
+    if (!variantId) {
+      throw new Error(`no Printful variant for ${bucket} shape (set PRINTFUL_VARIANT_${bucket.toUpperCase()} or PRINTFUL_DEFAULT_VARIANT_ID)`);
+    }
     printfulItems.push({
       source: "catalog",
-      catalog_variant_id: Number(variantId),
+      catalog_variant_id: variantId,
       quantity: Math.max(1, Math.min(MAX_QTY, parseInt(li.quantity, 10) || 1)),
       placements: [
         {
@@ -442,6 +455,29 @@ async function onCheckoutSessionCompleted(session, env) {
   if (String(env.PRINTFUL_AUTO_CONFIRM || "").toLowerCase() === "true" && draft && draft.id) {
     await printfulConfirmDraft(env, draft.id);
   }
+}
+
+// Classify an artwork's shape from its print dimensions. Thresholds give a
+// ~15% tolerance band around 1:1 so near-square pieces map to the square
+// product. Unknown dimensions fall back to "square" (the most forgiving crop).
+function aspectBucket(w, h) {
+  if (!w || !h) return "square";
+  const r = w / h;
+  if (r >= 1.15) return "landscape";
+  if (r <= 0.87) return "portrait";
+  return "square";
+}
+
+// Resolve the Printful catalog_variant_id for a shape bucket, with the
+// single-variant PRINTFUL_DEFAULT_VARIANT_ID as a fallback when a per-shape
+// variant isn't configured.
+function variantForBucket(env, bucket) {
+  const perShape = {
+    square: env.PRINTFUL_VARIANT_SQUARE,
+    portrait: env.PRINTFUL_VARIANT_PORTRAIT,
+    landscape: env.PRINTFUL_VARIANT_LANDSCAPE,
+  }[bucket];
+  return Number(perShape || env.PRINTFUL_DEFAULT_VARIANT_ID) || 0;
 }
 
 function stripeShippingToPrintful(session) {
@@ -492,7 +528,7 @@ async function printfulCreateDraft(env, body) {
   const res = await fetch("https://api.printful.com/v2/orders", {
     method: "POST",
     headers: {
-      Authorization: "Bearer " + env.PRINTFUL_API_TOKEN,
+      Authorization: "Bearer " + env.PRINTFUL_API_KEY,
       "Content-Type": "application/json",
     },
     body: JSON.stringify(body),
@@ -510,7 +546,7 @@ async function printfulConfirmDraft(env, orderId) {
   const res = await fetch(`https://api.printful.com/v2/orders/${encodeURIComponent(orderId)}/confirmation`, {
     method: "POST",
     headers: {
-      Authorization: "Bearer " + env.PRINTFUL_API_TOKEN,
+      Authorization: "Bearer " + env.PRINTFUL_API_KEY,
       "Content-Type": "application/json",
     },
   });

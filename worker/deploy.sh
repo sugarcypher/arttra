@@ -18,7 +18,7 @@ fi
 
 if [[ ! -f .dev.vars ]]; then
   echo "error: .dev.vars not found. Create it (see .dev.vars template) and fill" >&2
-  echo "       in your STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTFUL_API_TOKEN." >&2
+  echo "       in your STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, PRINTFUL_API_KEY." >&2
   exit 1
 fi
 

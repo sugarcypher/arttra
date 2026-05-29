@@ -25,16 +25,27 @@ CANCEL_URL     = "https://arttra.art/?checkout=cancelled"
 DEV            = "false"
 
 # --- Slice 2 (webhook -> Printful) — NON-secret config -----------------------
-# Secrets (STRIPE_WEBHOOK_SECRET, PRINTFUL_API_TOKEN, STRIPE_SECRET_KEY) are NOT
+# Secrets (STRIPE_WEBHOOK_SECRET, PRINTFUL_API_KEY, STRIPE_SECRET_KEY) are NOT
 # here — they live in .dev.vars and upload via `wrangler secret bulk`.
 
-# Flat shipping charged to the buyer at checkout, in USD. "0" = free shipping
-# (fine for test mode; loses money on live Printful orders). Set e.g. "12" live.
+# Flat shipping the BUYER pays at checkout, in USD. Set to roughly cover
+# Printful's per-order shipping for the priciest shape (framed/canvas ~ $12-16
+# domestic) so shipping is pass-through. "0" = free shipping (loses money live).
 SHIPPING_FLAT_USD = "0"
 
-# Printful catalog VARIANT id the webhook maps every line item to (slice 2 is
-# single-variant). TODO: set the numeric id of your product/variant, e.g. an
-# 8x10 framed print. Find it via the Printful catalog API or dashboard.
+# Printful catalog VARIANT ids, chosen per artwork SHAPE. The webhook computes
+# each artwork's shape from its print dimensions and maps:
+#   square  (≈1:1)  -> PRINTFUL_VARIANT_SQUARE
+#   portrait(tall)  -> PRINTFUL_VARIANT_PORTRAIT
+#   landscape(wide) -> PRINTFUL_VARIANT_LANDSCAPE
+# TODO: set the numeric variant id for each shape (e.g. a square canvas, a
+# portrait framed poster, a landscape framed poster). Found via the v2 catalog.
+PRINTFUL_VARIANT_SQUARE    = ""
+PRINTFUL_VARIANT_PORTRAIT  = ""
+PRINTFUL_VARIANT_LANDSCAPE = ""
+
+# Fallback variant for any shape left unset above. Optional once the three
+# shapes are filled.
 PRINTFUL_DEFAULT_VARIANT_ID = ""
 
 # Public URL of a print-resolution file used until slice 3 adds per-artwork
@@ -46,10 +57,10 @@ PRINTFUL_FALLBACK_PRINT_URL = ""
 # payload shape. Flip to "true" only when ready to fulfill automatically.
 PRINTFUL_AUTO_CONFIRM = "false"
 
-# Print placement + technique for the chosen variant. PRODUCT-SPECIFIC — the
-# correct values depend on PRINTFUL_DEFAULT_VARIANT_ID. Defaults below suit a
-# flat wall-art print; a poster/framed product may need different values (check
-# the variant's available placements/techniques in the Printful v2 catalog).
-# Leaving them unset uses the defaults baked into the Worker.
+# Print placement + technique, applied to every shape. PRODUCT-SPECIFIC and
+# assumes all three shape variants are the SAME product family (e.g. all canvas,
+# or all framed posters) so one placement/technique fits all. If you mix
+# families (square canvas + rectangular framed), these would need to be
+# per-shape — revisit then. Check valid values in the v2 catalog per variant.
 PRINTFUL_PLACEMENT = "default"
 PRINTFUL_TECHNIQUE = "digital-printing"
