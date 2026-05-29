@@ -485,11 +485,17 @@ function variantForBucket(env, bucket) {
 }
 
 function stripeShippingToPrintful(session) {
-  // Stripe Checkout populates customer_details.address (and shipping_details
-  // for shipped orders). Prefer shipping_details when present.
-  const ship = (session.shipping_details && session.shipping_details.address) ||
+  // Where Stripe puts the collected shipping address has moved across API
+  // versions: newer versions use session.collected_information.shipping_details,
+  // older ones use session.shipping_details. Fall back to the billing address
+  // (customer_details) only as a last resort. Prefer the real shipping address.
+  const ci = (session.collected_information && session.collected_information.shipping_details) || null;
+  const legacy = session.shipping_details || null;
+  const ship = (ci && ci.address) ||
+    (legacy && legacy.address) ||
     (session.customer_details && session.customer_details.address) || null;
-  const name = (session.shipping_details && session.shipping_details.name) ||
+  const name = (ci && ci.name) ||
+    (legacy && legacy.name) ||
     (session.customer_details && session.customer_details.name) || "";
   const email = (session.customer_details && session.customer_details.email) || "";
   const phone = (session.customer_details && session.customer_details.phone) || "";
@@ -539,8 +545,17 @@ async function printfulCreateDraft(env, body) {
   });
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
-    const msg = (data && (data.detail || data.error || (data.result && data.result.message))) || `printful ${res.status}`;
-    throw new Error(`printful create: ${msg}`);
+    // Printful's error can be a string OR an object ({message,reason}/array);
+    // stringify robustly so the real reason surfaces instead of "[object Object]".
+    const e = data && data.error;
+    const msg =
+      (typeof data.detail === "string" && data.detail) ||
+      (e && typeof e === "object" && (e.message || e.reason)) ||
+      (typeof e === "string" && e) ||
+      (data && data.result && data.result.message) ||
+      JSON.stringify(data).slice(0, 300) ||
+      `status ${res.status}`;
+    throw new Error(`printful create ${res.status}: ${msg}`);
   }
   // v2 wraps the order under `data`.
   return (data && data.data) || data;
