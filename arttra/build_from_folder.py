@@ -45,6 +45,12 @@ GRADIENT_RATIO_THRESHOLD = 0.40
 BEST_PRODUCTS = ["Framed Print", "Canvas", "Metal Print", "Acrylic", "Poster"]
 DEFAULT_PRICE = {"startingPrice": 79}
 
+# Public base URL of the R2 bucket holding the 6000px print files. When set
+# (in CI via the build workflow), each artwork gets a `printUrl` derived from
+# its printFile name, which the checkout Worker hands to Printful for
+# fulfillment. Left empty for local builds that don't publish to R2.
+R2_PUBLIC_BASE = os.environ.get("R2_PUBLIC_BASE", "").rstrip("/")
+
 
 # ═══════════════════════════════════════════════════════════════════
 # ARCHAIC NAMING ENGINE
@@ -933,6 +939,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         cached_artworks = _apply_overrides(cached_artworks, overrides)
         cached_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
         _dedup_titles(cached_artworks)
+        cached_artworks = _apply_print_urls(cached_artworks)
         with open(data_dir / "artworks.json", "w") as f:
             json.dump(cached_artworks, f, indent=2)
         with open(manifest_path, "w") as f:
@@ -1013,6 +1020,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     visible = [a for a in all_artworks if not a.get("hidden")]
 
     _dedup_titles(visible)
+    visible = _apply_print_urls(visible)
 
     with open(data_dir / "artworks.json", "w") as f:
         json.dump(visible, f, indent=2)
@@ -1058,6 +1066,20 @@ def _dedup_titles(artworks):
             n += 1
         else:
             seen.add(title)  # pathological fallback — keep the duplicate
+    return artworks
+
+
+def _apply_print_urls(artworks):
+    """Attach a public R2 `printUrl` to each artwork, derived from its printFile
+    name (the file the CI upload step pushes to R2 under print/<name>). The URL
+    is a pure function of the filename, so this backfills every artwork — cached
+    or freshly built — the moment R2_PUBLIC_BASE is set. No-op when it isn't."""
+    if not R2_PUBLIC_BASE:
+        return artworks
+    for art in artworks:
+        print_file = art.get("printFile") or ""
+        if print_file:
+            art["printUrl"] = f"{R2_PUBLIC_BASE}/print/{Path(print_file).name}"
     return artworks
 
 

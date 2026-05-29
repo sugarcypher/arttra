@@ -6,6 +6,11 @@ on:
       - 'gallery-source/**'
       - 'data/overrides.json'
   workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: 'Clear the build cache and regenerate every artwork (use to backfill all print files to R2).'
+        type: boolean
+        default: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -33,9 +38,52 @@ jobs:
       - name: Pull latest
         run: git pull origin main
 
+      - name: Force full rebuild (clear cache)
+        if: ${{ inputs.force_rebuild }}
+        run: |
+          echo "force_rebuild requested — clearing build_manifest.json so every artwork regenerates."
+          rm -f data/build_manifest.json
+
       - name: Run pipeline
         working-directory: arttra
+        env:
+          # Public R2 base URL — the build derives each artwork's printUrl from
+          # this. Not secret (it's a public bucket URL).
+          R2_PUBLIC_BASE: https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev
         run: python3 build_from_folder.py --source ../gallery-source --output ..
+
+      - name: Upload print files to R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: a0abcb5fd9fb28c5aa65fb8841f889ae
+        run: |
+          set -euo pipefail
+          # Skip gracefully until the R2 token secret exists, so this never
+          # breaks the existing auto-update pipeline.
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+            echo "CLOUDFLARE_API_TOKEN not set — skipping R2 upload. Print files"
+            echo "will not be hosted this run; their printUrls will 404 until uploaded."
+            exit 0
+          fi
+          shopt -s nullglob
+          files=(assets/images/gallery/print/*.png)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No print files produced this run — nothing to upload."
+            exit 0
+          fi
+          # Install the version-locked wrangler from worker/package-lock.json
+          # (npm ci enforces the lockfile's sha512 integrity hashes — the npm
+          # equivalent of SHA-pinning, vs. pulling latest at runtime via npx).
+          echo "Installing pinned wrangler via npm ci..."
+          ( cd worker && npm ci )
+          WRANGLER="$GITHUB_WORKSPACE/worker/node_modules/.bin/wrangler"
+          echo "Uploading ${#files[@]} print file(s) to R2 bucket 'artimages'..."
+          for f in "${files[@]}"; do
+            name=$(basename "$f")
+            "$WRANGLER" r2 object put "artimages/print/$name" \
+              --file="$f" --remote --content-type=image/png
+          done
+          echo "R2 upload complete."
 
       - name: Commit and push
         run: |

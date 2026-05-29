@@ -23,3 +23,25 @@ ARTWORKS_URL   = "https://arttra.art/data/artworks.json"
 SUCCESS_URL    = "https://arttra.art/success.html"
 CANCEL_URL     = "https://arttra.art/?checkout=cancelled"
 DEV            = "false"
+
+# --- Slice 2 (webhook -> Printful) — NON-secret config -----------------------
+# Secrets (STRIPE_WEBHOOK_SECRET, PRINTFUL_API_TOKEN, STRIPE_SECRET_KEY) are NOT
+# here — they live in .dev.vars and upload via `wrangler secret bulk`.
+
+# Flat shipping charged to the buyer at checkout, in USD. "0" = free shipping
+# (fine for test mode; loses money on live Printful orders). Set e.g. "12" live.
+SHIPPING_FLAT_USD = "0"
+
+# Printful catalog VARIANT id the webhook maps every line item to (slice 2 is
+# single-variant). TODO: set the numeric id of your product/variant, e.g. an
+# 8x10 framed print. Find it via the Printful catalog API or dashboard.
+PRINTFUL_DEFAULT_VARIANT_ID = ""
+
+# Public URL of a print-resolution file used until slice 3 adds per-artwork
+# files. TODO: set to a publicly reachable image URL (e.g. an R2/arttra.art URL).
+PRINTFUL_FALLBACK_PRINT_URL = ""
+
+# "true" auto-confirms the Printful draft for fulfillment. Keep "false" until
+# you've eyeballed a draft order in the Printful dashboard and verified the v2
+# payload shape. Flip to "true" only when ready to fulfill automatically.
+PRINTFUL_AUTO_CONFIRM = "false"

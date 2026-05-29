@@ -20,9 +20,9 @@
  *   PRINTFUL_AUTO_CONFIRM         "true" to auto-confirm the draft order for
  *                                 fulfillment. Default false (draft stays for
  *                                 human review in Printful Dashboard).
- *   PRINTFUL_FALLBACK_PRINT_URL   public URL of a print file to use when an
- *                                 artwork has no print-resolution file (slice
- *                                 3 will replace this with per-artwork files).
+ *   PRINTFUL_FALLBACK_PRINT_URL   public URL of a print file used when an
+ *                                 artwork has no per-SKU `printUrl` in the
+ *                                 catalog (slice 3 publishes those to R2).
  */
 
 const MAX_ITEMS = 50;
@@ -187,6 +187,9 @@ async function loadCatalog(env) {
       title: (a && a.title) || "Untitled artwork",
       price: Number(a && a.priceTiers && a.priceTiers.startingPrice) || 0,
       image: absoluteUrl((a && (a.image || a.thumb)) || "", env),
+      // Public R2 print-file URL (set by the build pipeline). Empty until
+      // slice 3's R2 upload runs; the webhook falls back when it's missing.
+      printUrl: (a && a.printUrl) || "",
     });
   }
   return map;
@@ -390,13 +393,25 @@ async function onCheckoutSessionCompleted(session, env) {
   if (!variantId) throw new Error("PRINTFUL_DEFAULT_VARIANT_ID not set");
   const fallbackPrint = env.PRINTFUL_FALLBACK_PRINT_URL || "";
 
+  // Per-SKU print-file URLs ride along in the catalog (slice 3: R2-hosted).
+  // Load once; if it's unavailable we still proceed via the fallback URL so a
+  // transient catalog fetch failure doesn't trap a paid order in Stripe's
+  // retry loop.
+  let catalog;
+  try {
+    catalog = await loadCatalog(env);
+  } catch {
+    catalog = new Map();
+  }
+
   const printfulItems = [];
   for (const li of lineItems) {
     const sku = (li.price && li.price.product && li.price.product.metadata && li.price.product.metadata.sku) ||
       (li.price && li.price.metadata && li.price.metadata.sku) || "";
     const name = (li.price && li.price.product && li.price.product.name) || li.description || "Artwork";
-    const printUrl = await resolvePrintFileUrl(sku, env) || fallbackPrint;
-    if (!printUrl) throw new Error(`no print file for ${sku || name}`);
+    const entry = catalog.get(sku);
+    const printUrl = (entry && entry.printUrl) || fallbackPrint;
+    if (!printUrl) throw new Error(`no print file for ${sku || name} and no PRINTFUL_FALLBACK_PRINT_URL set`);
     printfulItems.push({
       source: "catalog",
       catalog_variant_id: Number(variantId),
@@ -458,12 +473,6 @@ async function stripeFetchLineItems(sessionId, env) {
   }
   const data = await res.json();
   return Array.isArray(data && data.data) ? data.data : [];
-}
-
-// Hook for slice 3: map sku -> per-artwork print-file URL (e.g. R2-hosted).
-// Until then, we return "" and the fallback URL is used.
-async function resolvePrintFileUrl(_sku, _env) {
-  return "";
 }
 
 // NOTE: Printful API v2 is in open beta. The field names below (catalog_variant_id,

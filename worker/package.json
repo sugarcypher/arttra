@@ -1,0 +1,9 @@
+{
+  "name": "arttra-checkout",
+  "private": true,
+  "version": "1.0.0",
+  "description": "arttra.art checkout + fulfillment Worker (deps pinned for CI supply-chain integrity)",
+  "devDependencies": {
+    "wrangler": "4.93.0"
+  }
+}
