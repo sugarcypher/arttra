@@ -1,0 +1,62 @@
+name: Deploy checkout Worker
+
+# Deploys the arttra-checkout Cloudflare Worker from CI, so you never need a
+# local `wrangler login`. Code-only deploy: it runs `wrangler deploy`, NOT
+# `wrangler secret bulk`, so the Worker's existing secrets (STRIPE_SECRET_KEY,
+# STRIPE_WEBHOOK_SECRET, PRINTFUL_API_KEY) are preserved untouched. Secrets
+# never enter GitHub — they already live on the live Worker.
+#
+# Requires one GitHub Actions secret: CLOUDFLARE_API_TOKEN, scoped to
+# "Workers Scripts: Edit" on account a0abcb5fd9fb28c5aa65fb8841f889ae.
+# (The existing R2 token may be R2-only; if a run fails with an auth error,
+# add the "Workers Scripts: Edit" permission to that token in the Cloudflare
+# dashboard — no CLI or login needed.)
+
+on:
+  push:
+    paths:
+      - 'worker/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4.3.1
+        with:
+          ref: main
+
+      - name: Install pinned wrangler
+        working-directory: worker
+        run: npm ci
+
+      - name: Deploy Worker
+        working-directory: worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: a0abcb5fd9fb28c5aa65fb8841f889ae
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+            echo "error: CLOUDFLARE_API_TOKEN secret is not set." >&2
+            exit 1
+          fi
+          npx wrangler deploy
+
+      - name: Verify webhook route is live
+        run: |
+          set -euo pipefail
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            -X POST https://arttra-checkout.xp76cpmjsg.workers.dev/webhook \
+            -H 'Content-Type: application/json' -d '{}')
+          echo "POST /webhook -> HTTP $code"
+          # A bare unsigned request must be 400 (missing signature), not 404.
+          if [ "$code" != "400" ]; then
+            echo "error: expected HTTP 400 from /webhook, got $code." >&2
+            exit 1
+          fi
+          echo "Webhook route is live."
