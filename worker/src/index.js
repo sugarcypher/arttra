@@ -411,7 +411,7 @@ async function onCheckoutSessionCompleted(session, env) {
   }
 
   const printfulItems = [];
-  for (const li of lineItems) {
+  for (const [i, li] of lineItems.entries()) {
     const sku = (li.price && li.price.product && li.price.product.metadata && li.price.product.metadata.sku) ||
       (li.price && li.price.metadata && li.price.metadata.sku) || "";
     const name = (li.price && li.price.product && li.price.product.name) || li.description || "Artwork";
@@ -443,14 +443,20 @@ async function onCheckoutSessionCompleted(session, env) {
           layers: [{ type: "file", url: printUrl }],
         },
       ],
-      external_id: `${session.id}:${sku || name}`.slice(0, 64),
+      // Printful caps external_id at 32 chars. Use the session id's
+      // high-entropy tail + item index: unique per item, stable across
+      // Stripe retries (same session -> same ids), and within the limit.
+      external_id: `${session.id.slice(-24)}-${i}`.slice(0, 32),
     });
   }
 
   // Printful API v2 expects the top-level array named `items` (not
   // `order_items` — that was v1). Verified against the v2-beta docs.
   const draft = await printfulCreateDraft(env, {
-    external_id: session.id.slice(0, 64),
+    // Printful caps external_id at 32 chars; the session id is ~66. The tail
+    // is the unique part (the cs_test_/cs_live_ prefix is constant), and it's
+    // stable per session, so it doubles as the idempotency key on retries.
+    external_id: session.id.slice(-32),
     recipient,
     items: printfulItems,
   });
