@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ARTTRA.ART — Original Art</title>
   <meta name="description" content="Original art shipped worldwide — prints, canvas, metal, photography, and made-to-order editions." />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://arttra-checkout.xp76cpmjsg.workers.dev; base-uri 'self'; form-action 'self' https://checkout.stripe.com; frame-ancestors 'none'; object-src 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://arttra-checkout.xp76cpmjsg.workers.dev; media-src 'self' https://merlin-cloudinary.b-cdn.net; base-uri 'self'; form-action 'self' https://checkout.stripe.com; frame-ancestors 'none'; object-src 'none'" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
@@ -134,21 +134,117 @@ a{color:inherit;text-decoration:none}
 @media(max-width:900px){.worksGrid,.philosophyPanel,.orderingPanel{grid-template-columns:1fr}.modal__body{grid-template-columns:1fr}.modal__media{border-right:none;border-bottom:1px solid var(--line);min-height:280px}.site-footer{grid-template-columns:1fr}.cardsGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.cardsGrid{grid-template-columns:1fr}.catnav__brand{padding:14px 12px}.catnav__link{padding:14px 10px;font-size:.66rem}.catnav__search{width:120px}}
 @media print{body{display:none!important}}
+/* ===== BRIAR layout ===== */
+.bnav{position:absolute;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 1.6rem;mix-blend-mode:difference}
+.bnav .brand{font-family:var(--display);font-size:1.2rem;letter-spacing:.06em;color:#fff}
+.bnav .nav-links{display:flex;gap:1.6rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#fff}
+.bnav .nav-links a{opacity:.8;transition:opacity .25s}
+.bnav .nav-links a:hover{opacity:1}
+@media(max-width:680px){.bnav .nav-links{display:none}}
+.bhero{position:relative;height:100svh;min-height:600px;overflow:hidden;display:flex;align-items:flex-end}
+.bhero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.6) saturate(1.02)}
+.bhero:after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--ink) 0%,transparent 55%)}
+.bhero__inner{position:relative;z-index:2;padding:0 1.6rem 5rem;width:100%;max-width:var(--max);margin:0 auto}
+.bhero__title{font-family:var(--display);font-weight:500;font-size:clamp(2.8rem,9vw,6.5rem);line-height:1.02;letter-spacing:.01em;color:var(--bone)}
+.bhero__title .glyphs{display:block;font-size:.32em;font-weight:400;opacity:.9;margin-top:.5rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.bhero__sub{margin-top:1.1rem;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-dim)}
+.bhero__cta{display:inline-block;margin-top:1.8rem;padding:.85rem 2rem;border:1px solid var(--bone);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone);transition:background .3s,color .3s}
+.bhero__cta:hover{background:var(--bone);color:var(--ink)}
+.bsection{padding:5.5rem 1.6rem;border-top:1px solid var(--line)}
+.wrap{max-width:var(--max);margin:0 auto}
+.label{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:2.2rem}
+.about-grid{display:grid;grid-template-columns:1fr;gap:2.4rem}
+@media(min-width:760px){.about-grid{grid-template-columns:5fr 6fr;align-items:center}}
+.portrait{aspect-ratio:4/5;object-fit:cover;width:100%;filter:saturate(.95)}
+.about-text{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.5;font-weight:400;color:var(--bone)}
+.about-meta{margin-top:1.6rem;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-dim)}
+.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.1rem 0}
+.ticker-track{display:flex;gap:3rem;white-space:nowrap;animation:bscroll 24s linear infinite;font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--bone-dim)}
+@keyframes bscroll{to{transform:translateX(-50%)}}
+.reel-row{display:flex;gap:.7rem;overflow:hidden;margin-bottom:.7rem}
+.reel-track{display:flex;gap:.7rem;animation:bscroll 60s linear infinite;will-change:transform}
+.reel-row.rev .reel-track{animation-direction:reverse;animation-duration:75s}
+.reel-track video{height:300px;width:auto;aspect-ratio:9/16;object-fit:cover;flex:none;background:#000}
+@media(max-width:680px){.reel-track video{height:210px}}
+.svc{padding:1.6rem 0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:1.4rem;transition:padding-left .3s;color:var(--bone)}
+.svc:hover{padding-left:.8rem}
+.svc .num{font-size:.7rem;letter-spacing:.2em;color:var(--gold)}
+.svc .svc-name{font-family:var(--display);font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:500}
+.svc .arrow{margin-left:auto;color:var(--bone-dim);transition:transform .3s,color .3s}
+.svc:hover .arrow{transform:translateX(6px);color:var(--gold)}
+.shop-head{max-width:var(--max);margin:0 auto;padding:5.5rem 1.6rem 1.5rem;border-top:1px solid var(--line)}
+.shop-head__title{font-family:var(--display);font-weight:500;font-size:clamp(2rem,5vw,3.4rem);color:var(--bone);line-height:1.05}
+.bcontact{display:grid;grid-template-columns:1fr;gap:2.5rem}
+@media(min-width:760px){.bcontact{grid-template-columns:1fr 1fr}}
+.bcontact h2{font-family:var(--display);font-size:clamp(2.2rem,6vw,4rem);font-weight:500;line-height:1.05;color:var(--bone)}
+.c-list{display:grid;gap:1rem;font-size:.95rem;color:var(--bone)}
+.c-list .k{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);display:block;margin-bottom:.2rem}
+.c-list a:hover{color:var(--gold)}
+@media(prefers-reduced-motion:reduce){.ticker-track,.reel-track{animation:none}}
 </style>
 </head>
 <body>
   <script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}</script>
-  <section class="hero">
-    <img class="hero__logo" src="./assets/images/logo.png" alt="ARTTRA" onerror="this.style.display='none'" />
-    <h1 class="hero__title">ARTTRA.ART</h1>
-    <p class="hero__sub">Original art for walls that deserve presence. Prints, canvas, metal, photography, and made-to-order editions, shipped worldwide.</p>
-    <div class="hero__video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/XynapdgcGSY" title="ARTTRA" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe></div>
+  <nav class="bnav">
+    <a class="brand" href="#top">ARTTRA</a>
+    <div class="nav-links"><a href="#about">About</a><a href="#media">Media</a><a href="#services">Services</a><a href="#shop">Shop</a><a href="#contact">Contact</a></div>
+  </nav>
+  <header class="bhero" id="top">
+    <video autoplay muted loop playsinline poster="https://merlin-cloudinary.b-cdn.net/dftjvuiin/image/upload/v1779392419/skbriar/qfcqwc3wyrehel62ha1y.jpg">
+      <source src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392588/skbriar/yohmiwh8xqajiynuxx6n.mp4" type="video/mp4">
+    </video>
+    <div class="bhero__inner">
+      <h1 class="bhero__title">ARTTRA.ART<span class="glyphs">original art · made to order</span></h1>
+      <p class="bhero__sub">Prints · Canvas · Metal · Photography — shipped worldwide</p>
+      <a class="bhero__cta" href="#shop">Explore the collection</a>
+    </div>
+  </header>
+  <section class="bsection" id="about">
+    <div class="wrap">
+      <div class="label">About</div>
+      <div class="about-grid">
+        <img class="portrait" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/image/upload/v1779392420/skbriar/sx0rws7yok7llsi04w0h.jpg" alt="arttra artwork" loading="lazy">
+        <div>
+          <p class="about-text">arttra is original art made for walls that deserve presence. Every piece begins as a single image — painted, photographed, or generated — then AI-enhanced, color-profiled, and produced to order as fine-art prints, canvas, metal, and photography. Art isn&rsquo;t just what we make; it&rsquo;s what we send out into the world.</p>
+          <p class="about-meta">@skbriar · made to order · shipped worldwide</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>original art</span><span>·</span><span>made to order</span><span>·</span><span>shipped worldwide</span><span>·</span><span>prints · canvas · metal · photography</span><span>·</span><span>original art</span><span>·</span><span>made to order</span><span>·</span><span>shipped worldwide</span><span>·</span><span>prints · canvas · metal · photography</span><span>·</span></div></div>
+  <section class="bsection" id="media" style="padding-left:0;padding-right:0">
+    <div class="wrap" style="padding:0 1.6rem"><div class="label">Media</div></div>
+    <div class="reel-row"><div class="reel-track"><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392421/skbriar/xbj4xagcpdxxt6pia7fm.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/pspavsplznfa8pn9yior.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/hxhgmxlu3rhckpgds8nf.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/ixouzgaduvsagjqtepws.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392421/skbriar/xbj4xagcpdxxt6pia7fm.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/pspavsplznfa8pn9yior.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/hxhgmxlu3rhckpgds8nf.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/ixouzgaduvsagjqtepws.mp4"></video></div></div>
+    <div class="reel-row rev"><div class="reel-track"><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/bxkq1tzdg7rjjpsetcwf.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/rnubvdircdjrb3jucnpp.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/rmrwn6j1zukvowmrxyc7.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/fhihkuwlhncjhbyk95gy.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/bxkq1tzdg7rjjpsetcwf.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/rnubvdircdjrb3jucnpp.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/rmrwn6j1zukvowmrxyc7.mp4"></video><video autoplay muted loop playsinline preload="none" src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392420/skbriar/fhihkuwlhncjhbyk95gy.mp4"></video></div></div>
+  </section>
+  <section class="bsection" id="services">
+    <div class="wrap">
+      <div class="label">Services</div>
+      <a class="svc" href="#shop"><span class="num">01</span><span class="svc-name">Fine-Art Prints</span><span class="arrow">&rarr;</span></a>
+      <a class="svc" href="#shop"><span class="num">02</span><span class="svc-name">Canvas</span><span class="arrow">&rarr;</span></a>
+      <a class="svc" href="#shop"><span class="num">03</span><span class="svc-name">Laser-Cut Metal</span><span class="arrow">&rarr;</span></a>
+      <a class="svc" href="#shop"><span class="num">04</span><span class="svc-name">Photography</span><span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+  <section class="shop-head" id="shop">
+    <div class="label">Shop</div>
+    <h2 class="shop-head__title">The collection</h2>
   </section>
   <nav class="catnav" id="catnav"><div class="catnav__inner"><a class="catnav__brand" href="./">ARTTRA</a><a class="catnav__link" href="./interactive.html">Interactive</a><button class="catnav__link catnav__link--active" data-cat="all">All</button><button class="catnav__link" data-cat="Art Prints">Original Art</button><button class="catnav__link" data-cat="painting">Paintings</button><button class="catnav__link" data-cat="digital">Digital Art</button><button class="catnav__link" data-cat="Metal Art">Laser-Cut Metal</button><button class="catnav__link" data-cat="Photography">Photography</button><button class="catnav__link" data-cat="multimedia">Multimedia</button><button class="catnav__link" data-cat="graphic">Graphic Art</button><div class="catnav__right"><input class="catnav__search" id="searchInput" type="search" placeholder="Search..." autocomplete="off" /><button class="catnav__cart" id="cartButton" aria-label="Cart">🛒 <span class="catnav__badge" id="cartCount">0</span></button></div></div></nav>
   <aside class="intCta" aria-label="Interactive works"><div class="intCta__inner"><div class="intCta__text"><div class="intCta__kicker">Also from ARTTRA</div><div class="intCta__title">Interactive algorithmic works</div><div class="intCta__sub">Living systems where the viewer tunes seed, aperture, and contribution.</div></div><a class="btn btn--accent intCta__cta" href="./interactive.html">Explore →</a></div></aside>
   <style>.intCta{max-width:var(--max);margin:24px auto 0;padding:0 16px}.intCta__inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(201,163,92,.05),transparent)}.intCta__kicker{font-size:.62rem;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);margin-bottom:4px}.intCta__title{font-family:var(--display);font-size:1.4rem;font-weight:500;color:var(--bone)}.intCta__sub{font-size:.82rem;color:var(--bone-dim);margin-top:2px}.intCta__cta{white-space:nowrap;flex-shrink:0}@media(max-width:600px){.intCta__inner{flex-direction:column;align-items:flex-start}.intCta__cta{align-self:stretch;text-align:center}}</style>
   <div class="colorbar" id="colorBar"><span class="colorbar__label">Color</span></div>
   <main class="gallery" id="gallery"><div class="gallery__meta" id="resultMeta"></div><div class="cardsGrid" id="cardsGrid"></div></main>
+  <section class="bsection" id="contact">
+    <div class="wrap bcontact">
+      <h2>Get in<br>touch</h2>
+      <div class="c-list">
+        <div><span class="k">Email</span><a href="mailto:b@twl.today">b@twl.today</a></div>
+        <div><span class="k">Instagram</span><a href="https://instagram.com/skbriar" target="_blank" rel="noopener">@skbriar</a></div>
+        <div><span class="k">Orders</span>Made to order · Shipped worldwide</div>
+      </div>
+    </div>
+  </section>
   <section class="site-footer"><div><div class="site-footer__title">ARTTRA.ART</div><div>Original and algorithmic art — prints, metal, photography, interactive systems, and custom generated editions.</div></div><div><div class="site-footer__title">Process</div><div>Images are AI-upscaled, color-profiled, style-classified, vectorized when possible, and now joined by interactive systems with readable philosophies.</div></div><div><div class="site-footer__title">Ordering</div><div>Gallery checkout via Stripe. Prints are made to order and shipped via Printful.</div></div></section>
   <footer style="margin-top:48px;padding:18px 0;border-top:1px solid rgba(236,231,221,.07);font-size:12px;color:rgba(236,231,221,.45);text-align:center;line-height:1.8"><span style="font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:10px;color:rgba(236,231,221,.35);display:block;margin-bottom:6px">A ThinkWell Labs offering</span><a href="https://twl.today" style="color:rgba(236,231,221,.6);text-decoration:none">TWL</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://arttra.art" style="color:rgba(236,231,221,.8);font-weight:600;text-decoration:none">arttra</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://cookiebouncer.app" style="color:rgba(236,231,221,.6);text-decoration:none">CookieBouncer</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://errorfect.com" style="color:rgba(236,231,221,.6);text-decoration:none">Errorfect</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://acepaste.xyz" style="color:rgba(236,231,221,.6);text-decoration:none">Acepaste</a></footer>
   <div id="modalOverlay" class="overlay" hidden><div class="modal" role="dialog" aria-modal="true"><button id="modalCloseBtn" class="modal__close" aria-label="Close">×</button><div class="modal__body"><div class="modal__media"><img id="modalImage" class="modal__image" alt="" /></div><div class="modal__content"><div class="modal__kicker" id="modalSku"></div><h2 id="modalTitle" class="modal__title"></h2><p id="modalDescription" class="modal__description"></p><div class="modal__badges"><div id="modalStyleBadge" class="badge"></div><div id="modalCategoryBadge" class="badge"></div></div><div class="modal__colors" id="modalColors"></div><div class="priceRow"><div class="priceRow__label">Starting at</div><div id="modalPrice" class="priceRow__value"></div></div><div class="actionRow"><button id="addToCartBtn" class="btn btn--accent">Add to cart</button><a id="buyNowLink" class="btn" href="#" target="_blank" rel="noreferrer">Buy now</a></div><div class="fineprint__line">Available as: <span id="modalBestProducts"></span></div></div></div></div></div>
