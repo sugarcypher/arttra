@@ -1,5 +1,228 @@
 [
   {
+    "id": "BRC-NAT-47E261B8",
+    "sku": "BRC-NAT-47E261B8",
+    "title": "Obsidian Compendium",
+    "description": "",
+    "style": "Naturalis",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#a893b4",
+      "#715772",
+      "#50374b",
+      "#3e1a38",
+      "#1c1424",
+      "#090914"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#a893b4"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#715772"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#50374b"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#1c1424"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "naturalis",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5184.webp",
+    "image": "./assets/images/gallery/web/IMG_5184.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5184.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5184.svg",
+    "printDimensions": {
+      "widthInches": 16.3,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4879,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.1133,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0556,
+      "detail_frequency": 0.5154,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.2528,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5184.jpg",
+    "timestamp": "2026-06-30T20:25:07.176809",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png"
+  },
+  {
+    "id": "BRC-INT-31046E7B",
+    "sku": "BRC-INT-31046E7B",
+    "title": "Starhollow Mosaic",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#cf9998",
+      "#ae7e89",
+      "#8f6c80",
+      "#9b5965",
+      "#665472",
+      "#344d7b"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#cf9998"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#8f6c80"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#344d7b"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_8533A705-3528-4D4A-8DC5-01100FAD6276.webp",
+    "image": "./assets/images/gallery/web/8533A705-3528-4D4A-8DC5-01100FAD6276.webp",
+    "printFile": "./assets/images/gallery/print/8533A705-3528-4D4A-8DC5-01100FAD6276.png",
+    "vectorFile": "./assets/images/gallery/vector/8533A705-3528-4D4A-8DC5-01100FAD6276.svg",
+    "printDimensions": {
+      "widthInches": 15.0,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4500,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.2282,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0621,
+      "detail_frequency": 0.829,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.4693,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "8533A705-3528-4D4A-8DC5-01100FAD6276.JPG",
+    "timestamp": "2026-06-30T20:25:05.166813",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8533A705-3528-4D4A-8DC5-01100FAD6276.png"
+  },
+  {
+    "id": "BRC-INT-ACAD147A",
+    "sku": "BRC-INT-ACAD147A",
+    "title": "Duskfall Tangle",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#685d41",
+      "#644642",
+      "#28573f",
+      "#812c42",
+      "#4e2e3e",
+      "#1f2426"
+    ],
+    "namedColors": [
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#685d41"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_1F561B55-4878-441C-8D13-A0DDE6EE9786.webp",
+    "image": "./assets/images/gallery/web/1F561B55-4878-441C-8D13-A0DDE6EE9786.webp",
+    "printFile": "./assets/images/gallery/print/1F561B55-4878-441C-8D13-A0DDE6EE9786.png",
+    "vectorFile": "./assets/images/gallery/vector/1F561B55-4878-441C-8D13-A0DDE6EE9786.svg",
+    "printDimensions": {
+      "widthInches": 15.0,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4500,
+      "pixelHeight": 6000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.2224,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0583,
+      "detail_frequency": 0.7431,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.2486,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "1F561B55-4878-441C-8D13-A0DDE6EE9786.PNG",
+    "timestamp": "2026-06-30T20:25:04.476815",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1F561B55-4878-441C-8D13-A0DDE6EE9786.png"
+  },
+  {
     "id": "BRC-NAT-CEF29D12",
     "sku": "BRC-NAT-CEF29D12",
     "title": "Gloaming Verdure",
@@ -1305,87 +1528,6 @@
     "sourceFile": "IMG_5387.jpg",
     "timestamp": "2026-05-31T20:26:08.465449",
     "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png"
-  },
-  {
-    "id": "BRC-NAT-47E261B8",
-    "sku": "BRC-NAT-47E261B8",
-    "title": "Obsidian Compendium",
-    "description": "",
-    "style": "Naturalis",
-    "category": "Art Prints",
-    "colorPalette": [
-      "#a893b4",
-      "#715772",
-      "#50374b",
-      "#3e1a38",
-      "#1c1424",
-      "#090914"
-    ],
-    "namedColors": [
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#a893b4"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#715772"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#50374b"
-      },
-      {
-        "name": "Obsidian",
-        "code": "OBS",
-        "hex": "#1c1424"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Metal Print"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "naturalis",
-      "art prints",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5184.webp",
-    "image": "./assets/images/gallery/web/IMG_5184.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5184.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5184.svg",
-    "printDimensions": {
-      "widthInches": 16.3,
-      "heightInches": 20.0,
-      "dpi": 300,
-      "pixelWidth": 4879,
-      "pixelHeight": 6000
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.1133,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0556,
-      "detail_frequency": 0.5154,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.2528,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": false,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5184.jpg",
-    "timestamp": "2026-05-31T20:26:08.460449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png"
   },
   {
     "id": "BRC-INT-BB3A4848",
