@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "description": "arttra.art checkout + fulfillment Worker (deps pinned for CI supply-chain integrity)",
   "devDependencies": {
-    "wrangler": "4.103.0"
+    "wrangler": "4.114.0"
   }
 }
