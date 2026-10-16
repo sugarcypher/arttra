@@ -16,6 +16,7 @@ on:
   push:
     paths:
       - 'worker/**'
+      - 'shared/**'
   workflow_dispatch:
 
 permissions:
