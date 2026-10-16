@@ -78,7 +78,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5184.jpg",
     "timestamp": "2026-06-30T20:25:07.176809",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png",
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1483
+    }
   },
   {
     "id": "BRC-INT-31046E7B",
@@ -154,7 +158,11 @@
     "buyUrl": "#",
     "sourceFile": "8533A705-3528-4D4A-8DC5-01100FAD6276.JPG",
     "timestamp": "2026-06-30T20:25:05.166813",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8533A705-3528-4D4A-8DC5-01100FAD6276.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8533A705-3528-4D4A-8DC5-01100FAD6276.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-INT-ACAD147A",
@@ -220,7 +228,11 @@
     "buyUrl": "#",
     "sourceFile": "1F561B55-4878-441C-8D13-A0DDE6EE9786.PNG",
     "timestamp": "2026-06-30T20:25:04.476815",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1F561B55-4878-441C-8D13-A0DDE6EE9786.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1F561B55-4878-441C-8D13-A0DDE6EE9786.png",
+    "sourcePixels": {
+      "w": 1575,
+      "h": 2100
+    }
   },
   {
     "id": "BRC-NAT-CEF29D12",
@@ -291,7 +303,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5212.png",
     "timestamp": "2026-06-24T23:21:34.976720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5212.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5212.png",
+    "sourcePixels": {
+      "w": 2480,
+      "h": 3506
+    }
   },
   {
     "id": "BRC-NAT-57407F2D",
@@ -372,7 +388,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5196.png",
     "timestamp": "2026-06-24T23:21:34.882720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5196.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5196.png",
+    "sourcePixels": {
+      "w": 3024,
+      "h": 4032
+    }
   },
   {
     "id": "BRC-LUM-95B5E644",
@@ -448,7 +468,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5184.png",
     "timestamp": "2026-06-24T23:21:34.775720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2048
+    }
   },
   {
     "id": "BRC-NAT-5E6B1531",
@@ -519,7 +543,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5176.png",
     "timestamp": "2026-06-24T23:21:34.724720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5176.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5176.png",
+    "sourcePixels": {
+      "w": 1773,
+      "h": 2365
+    }
   },
   {
     "id": "BRC-NAT-019899FB",
@@ -590,7 +618,11 @@
     "buyUrl": "#",
     "sourceFile": "D112B3DE-15E4-4D03-90F7-C6C4B1F9F8EE.png",
     "timestamp": "2026-06-24T23:21:33.170718",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D112B3DE-15E4-4D03-90F7-C6C4B1F9F8EE.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D112B3DE-15E4-4D03-90F7-C6C4B1F9F8EE.png",
+    "sourcePixels": {
+      "w": 1773,
+      "h": 2365
+    }
   },
   {
     "id": "BRC-INT-931D2F0D",
@@ -671,7 +703,11 @@
     "buyUrl": "#",
     "sourceFile": "C1608E81-28A4-4FCD-98D3-859D165D5B20.jpeg",
     "timestamp": "2026-06-24T23:21:33.009718",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C1608E81-28A4-4FCD-98D3-859D165D5B20.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C1608E81-28A4-4FCD-98D3-859D165D5B20.png",
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    }
   },
   {
     "id": "BRC-NAT-1A89E810",
@@ -742,7 +778,11 @@
     "buyUrl": "#",
     "sourceFile": "B9E24E95-5AEA-4CE1-AC30-2798E93E713D.png",
     "timestamp": "2026-06-24T23:21:32.993718",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/B9E24E95-5AEA-4CE1-AC30-2798E93E713D.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/B9E24E95-5AEA-4CE1-AC30-2798E93E713D.png",
+    "sourcePixels": {
+      "w": 2480,
+      "h": 3506
+    }
   },
   {
     "id": "BRC-INT-6C7D037A",
@@ -818,7 +858,11 @@
     "buyUrl": "#",
     "sourceFile": "33DEE185-2361-48C0-A6B9-395BFED7EB7F.png",
     "timestamp": "2026-06-24T23:21:32.221717",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/33DEE185-2361-48C0-A6B9-395BFED7EB7F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/33DEE185-2361-48C0-A6B9-395BFED7EB7F.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-NAT-B003834B",
@@ -889,7 +933,11 @@
     "buyUrl": "#",
     "sourceFile": "Tintbus.JPG",
     "timestamp": "2026-05-31T20:26:08.522450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Tintbus.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Tintbus.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-INT-FF5B7063",
@@ -970,7 +1018,11 @@
     "buyUrl": "#",
     "sourceFile": "Stream-mirror-actors.JPG",
     "timestamp": "2026-05-31T20:26:08.512450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Stream-mirror-actors.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Stream-mirror-actors.png",
+    "sourcePixels": {
+      "w": 3095,
+      "h": 2582
+    }
   },
   {
     "id": "BRC-INT-0661CE3E",
@@ -1051,7 +1103,11 @@
     "buyUrl": "#",
     "sourceFile": "PopPic00003.jpg",
     "timestamp": "2026-05-31T20:26:08.504450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/PopPic00003.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/PopPic00003.png",
+    "sourcePixels": {
+      "w": 1828,
+      "h": 3840
+    }
   },
   {
     "id": "BRC-INT-9EAF6A2C",
@@ -1127,7 +1183,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_6190.JPG",
     "timestamp": "2026-05-31T20:26:08.496449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_6190.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_6190.png",
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    }
   },
   {
     "id": "BRC-INT-8A947383",
@@ -1203,7 +1263,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5392.jpg",
     "timestamp": "2026-05-31T20:26:08.495450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5392.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5392.png",
+    "sourcePixels": {
+      "w": 3871,
+      "h": 4284
+    },
+    "canvasCropped": true
   },
   {
     "id": "BRC-INT-F1FC261D",
@@ -1284,7 +1349,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5391.jpg",
     "timestamp": "2026-05-31T20:26:08.485449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5391.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5391.png",
+    "sourcePixels": {
+      "w": 3498,
+      "h": 4284
+    },
+    "canvasCropped": true
   },
   {
     "id": "BRC-INT-C2EF2340",
@@ -1365,7 +1435,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5390.jpg",
     "timestamp": "2026-05-31T20:26:08.480449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5390.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5390.png",
+    "sourcePixels": {
+      "w": 3359,
+      "h": 4284
+    },
+    "canvasCropped": true
   },
   {
     "id": "BRC-INT-E7F325F0",
@@ -1446,7 +1521,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5389.jpg",
     "timestamp": "2026-05-31T20:26:08.470449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5389.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5389.png",
+    "sourcePixels": {
+      "w": 3293,
+      "h": 4284
+    },
+    "canvasCropped": true
   },
   {
     "id": "BRC-INT-AA34E2B1",
@@ -1527,7 +1607,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5387.jpg",
     "timestamp": "2026-05-31T20:26:08.465449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png",
+    "sourcePixels": {
+      "w": 3317,
+      "h": 4284
+    },
+    "canvasCropped": true
   },
   {
     "id": "BRC-INT-BB3A4848",
@@ -1613,7 +1698,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5183.jpg",
     "timestamp": "2026-05-31T20:26:08.458449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5183.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5183.png",
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1179
+    }
   },
   {
     "id": "BRC-NAT-108379DA",
@@ -1699,7 +1788,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5182.jpg",
     "timestamp": "2026-05-31T20:26:08.457449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5182.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5182.png",
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1403
+    }
   },
   {
     "id": "BRC-NAT-613BD6AE",
@@ -1775,7 +1868,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4633.jpg",
     "timestamp": "2026-05-31T20:26:08.449449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4633.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4633.png",
+    "sourcePixels": {
+      "w": 1941,
+      "h": 1455
+    }
   },
   {
     "id": "BRC-NAT-B2367F03",
@@ -1854,7 +1951,11 @@
     "materials": "",
     "sold": false,
     "hidden": false,
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4408.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4408.png",
+    "sourcePixels": {
+      "w": 2000,
+      "h": 2000
+    }
   },
   {
     "id": "BRC-NAT-843871D1",
@@ -1930,7 +2031,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4361.PNG",
     "timestamp": "2026-05-31T20:26:08.436449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4361.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4361.png",
+    "sourcePixels": {
+      "w": 2215,
+      "h": 1657
+    }
   },
   {
     "id": "BRC-NAT-209F4508",
@@ -2006,7 +2111,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4354.PNG",
     "timestamp": "2026-05-31T20:26:08.373449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4354.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4354.png",
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3180
+    }
   },
   {
     "id": "BRC-NAT-A7758179",
@@ -2092,7 +2201,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4321.PNG",
     "timestamp": "2026-05-31T20:26:08.341448",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4321.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4321.png",
+    "sourcePixels": {
+      "w": 4770,
+      "h": 3576
+    }
   },
   {
     "id": "BRC-INT-F848E811",
@@ -2173,7 +2286,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4292.jpg",
     "timestamp": "2026-05-31T20:26:08.115447",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4292.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4292.png",
+    "sourcePixels": {
+      "w": 2182,
+      "h": 2936
+    }
   },
   {
     "id": "BRC-INT-44DF47A0",
@@ -2249,7 +2366,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4221.jpg",
     "timestamp": "2026-05-31T20:26:08.112447",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4221.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4221.png",
+    "sourcePixels": {
+      "w": 2384,
+      "h": 1779
+    }
   },
   {
     "id": "BRC-NAT-56D0E9E3",
@@ -2325,7 +2446,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3971.JPG",
     "timestamp": "2026-05-31T20:26:08.109447",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3971.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3971.png",
+    "sourcePixels": {
+      "w": 6000,
+      "h": 4800
+    }
   },
   {
     "id": "BRC-INT-07E0A434",
@@ -2396,7 +2521,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3969.PNG",
     "timestamp": "2026-05-31T20:26:08.058446",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3969.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3969.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-NAT-0D48D159",
@@ -2467,7 +2596,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3385.PNG",
     "timestamp": "2026-05-31T20:26:08.020446",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3385.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3385.png",
+    "sourcePixels": {
+      "w": 3576,
+      "h": 4770
+    }
   },
   {
     "id": "BRC-NAT-CEEC5965",
@@ -2543,7 +2676,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3309.jpg",
     "timestamp": "2026-05-31T20:26:07.828444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3309.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3309.png",
+    "sourcePixels": {
+      "w": 1480,
+      "h": 1845
+    }
   },
   {
     "id": "BRC-NAT-3D050726",
@@ -2619,7 +2756,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3290.jpg",
     "timestamp": "2026-05-31T20:26:07.821444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3290.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3290.png",
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1437
+    }
   },
   {
     "id": "BRC-NAT-D2BEA999",
@@ -2695,7 +2836,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3087.PNG",
     "timestamp": "2026-05-31T20:26:07.820444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3087.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3087.png",
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3180
+    }
   },
   {
     "id": "BRC-INT-95A558B7",
@@ -2769,7 +2914,11 @@
     "materials": "",
     "sold": false,
     "hidden": false,
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2697.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2697.png",
+    "sourcePixels": {
+      "w": 2598,
+      "h": 2229
+    }
   },
   {
     "id": "BRC-INT-5F9C0977",
@@ -2850,7 +2999,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2696.jpg",
     "timestamp": "2026-05-31T20:26:07.757444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2696.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2696.png",
+    "sourcePixels": {
+      "w": 2485,
+      "h": 1863
+    }
   },
   {
     "id": "BRC-NAT-7BB0770F",
@@ -2931,7 +3084,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2645.PNG",
     "timestamp": "2026-05-31T20:26:07.733443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2645.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2645.png",
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "id": "BRC-NAT-E1262B0A",
@@ -3012,7 +3169,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2508.PNG",
     "timestamp": "2026-05-31T20:26:07.730443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2508.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2508.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 1918
+    }
   },
   {
     "id": "BRC-NAT-7B080D3B",
@@ -3093,7 +3254,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2506.PNG",
     "timestamp": "2026-05-31T20:26:07.699443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2506.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2506.png",
+    "sourcePixels": {
+      "w": 3578,
+      "h": 3350
+    }
   },
   {
     "id": "BRC-NAT-033CC0AD",
@@ -3169,7 +3334,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2464.PNG",
     "timestamp": "2026-05-31T20:26:07.605443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2464.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2464.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-NAT-387414B6",
@@ -3250,7 +3419,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2357.PNG",
     "timestamp": "2026-05-31T20:26:07.601443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2357.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2357.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-33A5F58C",
@@ -3326,7 +3499,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2349.JPG",
     "timestamp": "2026-05-31T20:26:07.558442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2349.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2349.png",
+    "sourcePixels": {
+      "w": 1536,
+      "h": 1151
+    }
   },
   {
     "id": "BRC-INT-268033B7",
@@ -3402,7 +3579,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2246.PNG",
     "timestamp": "2026-05-31T20:26:07.557442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2246.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2246.png",
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3180
+    }
   },
   {
     "id": "BRC-INT-4280919D",
@@ -3478,7 +3659,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2238.jpg",
     "timestamp": "2026-05-31T20:26:07.533442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2238.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2238.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 1112
+    }
   },
   {
     "id": "BRC-INT-38890325",
@@ -3559,7 +3744,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2204.PNG",
     "timestamp": "2026-05-31T20:26:07.525442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2204.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2204.png",
+    "sourcePixels": {
+      "w": 5464,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-31CE0BE3",
@@ -3635,7 +3824,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2051.JPG",
     "timestamp": "2026-05-31T20:26:07.381441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2051.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2051.png",
+    "sourcePixels": {
+      "w": 1164,
+      "h": 2093
+    }
   },
   {
     "id": "BRC-INT-8F8B70A4",
@@ -3706,7 +3899,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1940.PNG",
     "timestamp": "2026-05-31T20:26:07.379441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1940.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1940.png",
+    "sourcePixels": {
+      "w": 749,
+      "h": 999
+    }
   },
   {
     "id": "BRC-INT-D54A05A0",
@@ -3787,7 +3984,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1770.PNG",
     "timestamp": "2026-05-31T20:26:07.372441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1770.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1770.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-INT-A7F50DEA",
@@ -3863,7 +4064,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1521.JPG",
     "timestamp": "2026-05-31T20:26:07.360441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1521.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1521.png",
+    "sourcePixels": {
+      "w": 1536,
+      "h": 2730
+    }
   },
   {
     "id": "BRC-NAT-DD35CE73",
@@ -3944,7 +4149,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1481.jpg",
     "timestamp": "2026-05-31T20:26:07.352441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1481.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1481.png",
+    "sourcePixels": {
+      "w": 2150,
+      "h": 2730
+    }
   },
   {
     "id": "BRC-INT-E232503A",
@@ -4025,7 +4234,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1285.PNG",
     "timestamp": "2026-05-31T20:26:07.322440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1285.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1285.png",
+    "sourcePixels": {
+      "w": 720,
+      "h": 1280
+    }
   },
   {
     "id": "BRC-NAT-B0CF6685",
@@ -4101,7 +4314,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1284.PNG",
     "timestamp": "2026-05-31T20:26:07.317440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1284.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1284.png",
+    "sourcePixels": {
+      "w": 720,
+      "h": 1280
+    }
   },
   {
     "id": "BRC-NAT-02CCED97",
@@ -4177,7 +4394,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1118.PNG",
     "timestamp": "2026-05-31T20:26:07.305440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1118.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1118.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-792E46A4",
@@ -4258,7 +4479,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1091.jpg",
     "timestamp": "2026-05-31T20:26:07.280440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1091.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1091.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-44DD8E76",
@@ -4334,7 +4559,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1088.jpg",
     "timestamp": "2026-05-31T20:26:07.247440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1088.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1088.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-C348A787",
@@ -4415,7 +4644,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1086.jpg",
     "timestamp": "2026-05-31T20:26:07.211440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1086.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1086.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-INT-39CC9EFB",
@@ -4491,7 +4724,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0851.jpg",
     "timestamp": "2026-05-31T20:26:07.180439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0851.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0851.png",
+    "sourcePixels": {
+      "w": 1431,
+      "h": 1422
+    }
   },
   {
     "id": "BRC-INT-5134F7EA",
@@ -4572,7 +4809,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0850.jpg",
     "timestamp": "2026-05-31T20:26:07.169439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0850.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0850.png",
+    "sourcePixels": {
+      "w": 1412,
+      "h": 1418
+    }
   },
   {
     "id": "BRC-INT-7B00630E",
@@ -4653,7 +4894,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0849.jpg",
     "timestamp": "2026-05-31T20:26:07.164439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0849.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0849.png",
+    "sourcePixels": {
+      "w": 1429,
+      "h": 1411
+    }
   },
   {
     "id": "BRC-NAT-00163639",
@@ -4739,7 +4984,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0848.jpg",
     "timestamp": "2026-05-31T20:26:07.161439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0848.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0848.png",
+    "sourcePixels": {
+      "w": 1420,
+      "h": 1894
+    }
   },
   {
     "id": "BRC-INT-2E076682",
@@ -4825,7 +5074,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0509.PNG",
     "timestamp": "2026-05-31T20:26:07.152439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0509.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0509.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    }
   },
   {
     "id": "BRC-NAT-2B3352E4",
@@ -4901,7 +5154,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0506.jpg",
     "timestamp": "2026-05-31T20:26:07.126439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0506.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0506.png",
+    "sourcePixels": {
+      "w": 2226,
+      "h": 1841
+    }
   },
   {
     "id": "BRC-NAT-61DAE823",
@@ -4977,7 +5234,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0448.jpg",
     "timestamp": "2026-05-31T20:26:07.124439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0448.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0448.png",
+    "sourcePixels": {
+      "w": 1800,
+      "h": 1800
+    }
   },
   {
     "id": "BRC-NAT-549BC728",
@@ -5053,7 +5314,11 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0419.JPG",
     "timestamp": "2026-05-31T20:26:07.123439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0419.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0419.png",
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1920
+    }
   },
   {
     "id": "BRC-NAT-BC06A3AC",
@@ -5124,7 +5389,11 @@
     "buyUrl": "#",
     "sourceFile": "F95465A8-E9A1-4534-91EA-2E83503295A4.JPEG",
     "timestamp": "2026-05-31T20:26:07.119439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F95465A8-E9A1-4534-91EA-2E83503295A4.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F95465A8-E9A1-4534-91EA-2E83503295A4.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-5656090B",
@@ -5195,7 +5464,11 @@
     "buyUrl": "#",
     "sourceFile": "F7B49A62-2971-4011-8A1E-07D2E957B7D9.JPEG",
     "timestamp": "2026-05-31T20:26:07.114439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F7B49A62-2971-4011-8A1E-07D2E957B7D9.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F7B49A62-2971-4011-8A1E-07D2E957B7D9.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-8A3E5A30",
@@ -5261,7 +5534,11 @@
     "buyUrl": "#",
     "sourceFile": "F44C36AB-0992-4649-9CCC-0538E7B1F9BE.JPG",
     "timestamp": "2026-05-31T20:26:07.112439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F44C36AB-0992-4649-9CCC-0538E7B1F9BE.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F44C36AB-0992-4649-9CCC-0538E7B1F9BE.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-INT-03CDB36B",
@@ -5337,7 +5614,11 @@
     "buyUrl": "#",
     "sourceFile": "F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.JPEG",
     "timestamp": "2026-05-31T20:26:07.104439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 3000
+    }
   },
   {
     "id": "BRC-INT-D9395DBB",
@@ -5413,7 +5694,11 @@
     "buyUrl": "#",
     "sourceFile": "F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.PNG",
     "timestamp": "2026-05-31T20:26:07.099439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-INT-E5C726AB",
@@ -5494,7 +5779,11 @@
     "buyUrl": "#",
     "sourceFile": "F0670B0B-7A7C-434C-BCCA-A1583663F58C.JPG",
     "timestamp": "2026-05-31T20:26:07.095439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F0670B0B-7A7C-434C-BCCA-A1583663F58C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F0670B0B-7A7C-434C-BCCA-A1583663F58C.png",
+    "sourcePixels": {
+      "w": 1500,
+      "h": 1152
+    }
   },
   {
     "id": "BRC-INT-F1812BA8",
@@ -5570,7 +5859,11 @@
     "buyUrl": "#",
     "sourceFile": "EEC83CB1-ABFC-4845-8F45-E402319269E6.JPEG",
     "timestamp": "2026-05-31T20:26:07.093439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EEC83CB1-ABFC-4845-8F45-E402319269E6.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EEC83CB1-ABFC-4845-8F45-E402319269E6.png",
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    }
   },
   {
     "id": "BRC-NAT-78643909",
@@ -5641,7 +5934,11 @@
     "buyUrl": "#",
     "sourceFile": "ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.JPEG",
     "timestamp": "2026-05-31T20:26:07.091439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.png",
+    "sourcePixels": {
+      "w": 1728,
+      "h": 3072
+    }
   },
   {
     "id": "BRC-INT-46186F7E",
@@ -5717,7 +6014,11 @@
     "buyUrl": "#",
     "sourceFile": "EB906953-35FE-4F74-AB96-0BE7194B0A29.JPG",
     "timestamp": "2026-05-31T20:26:07.090439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB906953-35FE-4F74-AB96-0BE7194B0A29.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB906953-35FE-4F74-AB96-0BE7194B0A29.png",
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    }
   },
   {
     "id": "BRC-INT-C75EF6EA",
@@ -5788,7 +6089,11 @@
     "buyUrl": "#",
     "sourceFile": "EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.JPEG",
     "timestamp": "2026-05-31T20:26:07.042438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-E8DDB180",
@@ -5859,7 +6164,11 @@
     "buyUrl": "#",
     "sourceFile": "E8CA237E-62B2-4265-8BA6-7F4CC21AB133.JPEG",
     "timestamp": "2026-05-31T20:26:07.027438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E8CA237E-62B2-4265-8BA6-7F4CC21AB133.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E8CA237E-62B2-4265-8BA6-7F4CC21AB133.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-27BA7D9E",
@@ -5935,7 +6244,11 @@
     "buyUrl": "#",
     "sourceFile": "E84CC42E-F220-4A37-9994-B95A34A66FA6.JPEG",
     "timestamp": "2026-05-31T20:26:07.026438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E84CC42E-F220-4A37-9994-B95A34A66FA6.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E84CC42E-F220-4A37-9994-B95A34A66FA6.png",
+    "sourcePixels": {
+      "w": 1713,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-INT-1E92F8D3",
@@ -6011,7 +6324,11 @@
     "buyUrl": "#",
     "sourceFile": "E7B45927-4E5F-4764-BE2D-51A9914A9517.PNG",
     "timestamp": "2026-05-31T20:26:07.025438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E7B45927-4E5F-4764-BE2D-51A9914A9517.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E7B45927-4E5F-4764-BE2D-51A9914A9517.png",
+    "sourcePixels": {
+      "w": 3999,
+      "h": 2999
+    }
   },
   {
     "id": "BRC-NAT-A3FA4116",
@@ -6087,7 +6404,11 @@
     "buyUrl": "#",
     "sourceFile": "E6A35D67-17D3-4B69-9A0C-9627A1558DBB.JPG",
     "timestamp": "2026-05-31T20:26:07.012438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E6A35D67-17D3-4B69-9A0C-9627A1558DBB.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E6A35D67-17D3-4B69-9A0C-9627A1558DBB.png",
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "id": "BRC-INT-E2B9F448",
@@ -6163,7 +6484,11 @@
     "buyUrl": "#",
     "sourceFile": "E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.PNG",
     "timestamp": "2026-05-31T20:26:07.011438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4071
+    }
   },
   {
     "id": "BRC-NAT-6DE57B9E",
@@ -6239,7 +6564,11 @@
     "buyUrl": "#",
     "sourceFile": "E39B300A-88D1-46B2-8B29-077EDD3BA9A2.JPEG",
     "timestamp": "2026-05-31T20:26:06.970438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.png",
+    "sourcePixels": {
+      "w": 2998,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-INT-D8FACCC6",
@@ -6320,7 +6649,11 @@
     "buyUrl": "#",
     "sourceFile": "E2F3F8C9-80B4-4219-8FAA-C4350D44A6CA.JPEG",
     "timestamp": "2026-05-31T20:26:06.967438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E2F3F8C9-80B4-4219-8FAA-C4350D44A6CA.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E2F3F8C9-80B4-4219-8FAA-C4350D44A6CA.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 3000
+    }
   },
   {
     "id": "BRC-INT-1B817A3A",
@@ -6391,7 +6724,11 @@
     "buyUrl": "#",
     "sourceFile": "D8A8C501-17A1-435F-9F18-7153DAE6C801.JPEG",
     "timestamp": "2026-05-31T20:26:06.963438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D8A8C501-17A1-435F-9F18-7153DAE6C801.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D8A8C501-17A1-435F-9F18-7153DAE6C801.png",
+    "sourcePixels": {
+      "w": 2732,
+      "h": 2048
+    }
   },
   {
     "id": "BRC-NAT-1B447AC7",
@@ -6462,7 +6799,11 @@
     "buyUrl": "#",
     "sourceFile": "D7C9EB41-66C7-47E8-9225-5A23C70820D8.JPEG",
     "timestamp": "2026-05-31T20:26:06.949438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D7C9EB41-66C7-47E8-9225-5A23C70820D8.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D7C9EB41-66C7-47E8-9225-5A23C70820D8.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2210
+    }
   },
   {
     "id": "BRC-NAT-9EE0D039",
@@ -6533,7 +6874,11 @@
     "buyUrl": "#",
     "sourceFile": "CF745C11-EC35-403F-A6E0-79A18B341587.JPEG",
     "timestamp": "2026-05-31T20:26:06.945437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CF745C11-EC35-403F-A6E0-79A18B341587.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CF745C11-EC35-403F-A6E0-79A18B341587.png",
+    "sourcePixels": {
+      "w": 2120,
+      "h": 3769
+    }
   },
   {
     "id": "BRC-INT-FF61169F",
@@ -6614,7 +6959,11 @@
     "buyUrl": "#",
     "sourceFile": "CEFB1C73-35CD-4634-BBF5-570ECD004D32.JPG",
     "timestamp": "2026-05-31T20:26:06.936437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CEFB1C73-35CD-4634-BBF5-570ECD004D32.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CEFB1C73-35CD-4634-BBF5-570ECD004D32.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3276
+    }
   },
   {
     "id": "BRC-INT-BDC78CB3",
@@ -6690,7 +7039,11 @@
     "buyUrl": "#",
     "sourceFile": "CC8B21B5-97D2-4619-A770-6687E8C8DAF3.JPG",
     "timestamp": "2026-05-31T20:26:06.917437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.png",
+    "sourcePixels": {
+      "w": 3550,
+      "h": 3379
+    }
   },
   {
     "id": "BRC-NAT-695A8543",
@@ -6761,7 +7114,11 @@
     "buyUrl": "#",
     "sourceFile": "CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.JPEG",
     "timestamp": "2026-05-31T20:26:06.858437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2048
+    }
   },
   {
     "id": "BRC-NAT-0F63CA85",
@@ -6837,7 +7194,11 @@
     "buyUrl": "#",
     "sourceFile": "C8A7C6F1-C72C-4906-A153-E1642A54E19B.JPEG",
     "timestamp": "2026-05-31T20:26:06.856437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C8A7C6F1-C72C-4906-A153-E1642A54E19B.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C8A7C6F1-C72C-4906-A153-E1642A54E19B.png",
+    "sourcePixels": {
+      "w": 1728,
+      "h": 3072
+    }
   },
   {
     "id": "BRC-INT-A88F7E9D",
@@ -6918,7 +7279,11 @@
     "buyUrl": "#",
     "sourceFile": "C881A851-71EC-49A9-8D3B-FF2A642AC180.PNG",
     "timestamp": "2026-05-31T20:26:06.855437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C881A851-71EC-49A9-8D3B-FF2A642AC180.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C881A851-71EC-49A9-8D3B-FF2A642AC180.png",
+    "sourcePixels": {
+      "w": 2304,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-INT-78D20D9E",
@@ -6994,7 +7359,11 @@
     "buyUrl": "#",
     "sourceFile": "C7740735-538A-41D4-8D16-342804C3C984.JPEG",
     "timestamp": "2026-05-31T20:26:06.840437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C7740735-538A-41D4-8D16-342804C3C984.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C7740735-538A-41D4-8D16-342804C3C984.png",
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    }
   },
   {
     "id": "BRC-NAT-0936A641",
@@ -7065,7 +7434,11 @@
     "buyUrl": "#",
     "sourceFile": "C68BCB3F-184E-43AA-843E-4AC65AAB938A.JPEG",
     "timestamp": "2026-05-31T20:26:06.835437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C68BCB3F-184E-43AA-843E-4AC65AAB938A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C68BCB3F-184E-43AA-843E-4AC65AAB938A.png",
+    "sourcePixels": {
+      "w": 1790,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-1C3F3F18",
@@ -7141,7 +7514,11 @@
     "buyUrl": "#",
     "sourceFile": "C6A4F01D-886F-49C9-9DC6-ED54A80975A6.JPG",
     "timestamp": "2026-05-31T20:26:06.835437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6A4F01D-886F-49C9-9DC6-ED54A80975A6.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6A4F01D-886F-49C9-9DC6-ED54A80975A6.png",
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "id": "BRC-NAT-B84FE184",
@@ -7217,7 +7594,11 @@
     "buyUrl": "#",
     "sourceFile": "C6111B16-6C5D-43E3-9551-748773D25D4E.JPEG",
     "timestamp": "2026-05-31T20:26:06.830437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6111B16-6C5D-43E3-9551-748773D25D4E.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6111B16-6C5D-43E3-9551-748773D25D4E.png",
+    "sourcePixels": {
+      "w": 1800,
+      "h": 1800
+    }
   },
   {
     "id": "BRC-NAT-13C89697",
@@ -7298,7 +7679,11 @@
     "buyUrl": "#",
     "sourceFile": "C4B99173-F28E-4BA6-8583-1C1DD756657F.JPEG",
     "timestamp": "2026-05-31T20:26:06.829437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C4B99173-F28E-4BA6-8583-1C1DD756657F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C4B99173-F28E-4BA6-8583-1C1DD756657F.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2460
+    }
   },
   {
     "id": "BRC-NAT-2CE9FFD9",
@@ -7369,7 +7754,11 @@
     "buyUrl": "#",
     "sourceFile": "C46315D4-2A39-4BD3-84DB-983BA9FA0074.JPEG",
     "timestamp": "2026-05-31T20:26:06.826437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C46315D4-2A39-4BD3-84DB-983BA9FA0074.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C46315D4-2A39-4BD3-84DB-983BA9FA0074.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2048
+    }
   },
   {
     "id": "BRC-NAT-7FD39F92",
@@ -7445,7 +7834,11 @@
     "buyUrl": "#",
     "sourceFile": "C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.JPEG",
     "timestamp": "2026-05-31T20:26:06.825437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.png",
+    "sourcePixels": {
+      "w": 2215,
+      "h": 1657
+    }
   },
   {
     "id": "BRC-INT-9317A779",
@@ -7526,7 +7919,11 @@
     "buyUrl": "#",
     "sourceFile": "C2A09830-EEF8-4F3E-BC68-D76B96CE3658.PNG",
     "timestamp": "2026-05-31T20:26:06.823436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2A09830-EEF8-4F3E-BC68-D76B96CE3658.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2A09830-EEF8-4F3E-BC68-D76B96CE3658.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-NAT-0B74339A",
@@ -7602,7 +7999,11 @@
     "buyUrl": "#",
     "sourceFile": "C0190AFF-6596-4359-8F1F-4900663FCFA1.JPEG",
     "timestamp": "2026-05-31T20:26:06.795436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C0190AFF-6596-4359-8F1F-4900663FCFA1.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C0190AFF-6596-4359-8F1F-4900663FCFA1.png",
+    "sourcePixels": {
+      "w": 2215,
+      "h": 1657
+    }
   },
   {
     "id": "BRC-NAT-2F6DA352",
@@ -7688,7 +8089,11 @@
     "buyUrl": "#",
     "sourceFile": "Behind.JPEG",
     "timestamp": "2026-05-31T20:26:06.790436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Behind.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Behind.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 1787
+    }
   },
   {
     "id": "BRC-NAT-FFAAA749",
@@ -7759,7 +8164,11 @@
     "buyUrl": "#",
     "sourceFile": "BFBD99F9-E59F-47C4-A541-87397C5D8931.JPEG",
     "timestamp": "2026-05-31T20:26:06.789436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BFBD99F9-E59F-47C4-A541-87397C5D8931.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BFBD99F9-E59F-47C4-A541-87397C5D8931.png",
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    }
   },
   {
     "id": "BRC-NAT-1EB46DCF",
@@ -7835,7 +8244,11 @@
     "buyUrl": "#",
     "sourceFile": "BAE460B1-E1F6-4590-9FE9-41D1840BFF36.JPEG",
     "timestamp": "2026-05-31T20:26:06.785436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BAE460B1-E1F6-4590-9FE9-41D1840BFF36.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BAE460B1-E1F6-4590-9FE9-41D1840BFF36.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2048
+    }
   },
   {
     "id": "BRC-NAT-0DA08BE9",
@@ -7906,7 +8319,11 @@
     "buyUrl": "#",
     "sourceFile": "AF6693CF-23AE-496A-9128-A34D47C51057 2.JPEG",
     "timestamp": "2026-05-31T20:26:06.783436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AF6693CF-23AE-496A-9128-A34D47C51057 2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AF6693CF-23AE-496A-9128-A34D47C51057 2.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-C7DD50FD",
@@ -7977,7 +8394,11 @@
     "buyUrl": "#",
     "sourceFile": "AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.JPEG",
     "timestamp": "2026-05-31T20:26:06.782436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-NAT-F6FE587B",
@@ -8048,7 +8469,11 @@
     "buyUrl": "#",
     "sourceFile": "AE948792-02E2-4443-B1A4-28CA422F79A3.JPEG",
     "timestamp": "2026-05-31T20:26:06.770436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE948792-02E2-4443-B1A4-28CA422F79A3.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE948792-02E2-4443-B1A4-28CA422F79A3.png",
+    "sourcePixels": {
+      "w": 4095,
+      "h": 4095
+    }
   },
   {
     "id": "BRC-INT-2E5CB0A9",
@@ -8129,7 +8554,11 @@
     "buyUrl": "#",
     "sourceFile": "AE5CE634-BDA0-45D5-BA68-57DAFADD5329.JPG",
     "timestamp": "2026-05-31T20:26:06.731436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE5CE634-BDA0-45D5-BA68-57DAFADD5329.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE5CE634-BDA0-45D5-BA68-57DAFADD5329.png",
+    "sourcePixels": {
+      "w": 3265,
+      "h": 2447
+    }
   },
   {
     "id": "BRC-INT-40BB53C1",
@@ -8200,7 +8629,11 @@
     "buyUrl": "#",
     "sourceFile": "AC6232A5-AC25-4397-8730-138C47059CB6.PNG",
     "timestamp": "2026-05-31T20:26:06.714436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AC6232A5-AC25-4397-8730-138C47059CB6.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AC6232A5-AC25-4397-8730-138C47059CB6.png",
+    "sourcePixels": {
+      "w": 1728,
+      "h": 3072
+    }
   },
   {
     "id": "BRC-NAT-54094D55",
@@ -8281,7 +8714,11 @@
     "buyUrl": "#",
     "sourceFile": "AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.JPEG",
     "timestamp": "2026-05-31T20:26:06.705436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.png",
+    "sourcePixels": {
+      "w": 4095,
+      "h": 4095
+    }
   },
   {
     "id": "BRC-INT-89588D17",
@@ -8362,7 +8799,11 @@
     "buyUrl": "#",
     "sourceFile": "AA527DAF-992C-49E8-9E09-2AABE009751E.JPEG",
     "timestamp": "2026-05-31T20:26:06.683435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AA527DAF-992C-49E8-9E09-2AABE009751E.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AA527DAF-992C-49E8-9E09-2AABE009751E.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    }
   },
   {
     "id": "BRC-INT-8F54BA1F",
@@ -8443,7 +8884,11 @@
     "buyUrl": "#",
     "sourceFile": "A7829018-AF75-4338-A297-C0E538536188.PNG",
     "timestamp": "2026-05-31T20:26:06.656435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A7829018-AF75-4338-A297-C0E538536188.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A7829018-AF75-4338-A297-C0E538536188.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-INT-2820FE93",
@@ -8519,7 +8964,11 @@
     "buyUrl": "#",
     "sourceFile": "A5400571-244D-4C2E-AD39-251114D3A916.PNG",
     "timestamp": "2026-05-31T20:26:06.652435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A5400571-244D-4C2E-AD39-251114D3A916.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A5400571-244D-4C2E-AD39-251114D3A916.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    }
   },
   {
     "id": "BRC-NAT-080C47BD",
@@ -8595,7 +9044,11 @@
     "buyUrl": "#",
     "sourceFile": "A42A250F-BEDC-44D0-A669-188486DED43D.JPG",
     "timestamp": "2026-05-31T20:26:06.621435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A42A250F-BEDC-44D0-A669-188486DED43D.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A42A250F-BEDC-44D0-A669-188486DED43D.png",
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    }
   },
   {
     "id": "BRC-INT-5CC16193",
@@ -8671,7 +9124,11 @@
     "buyUrl": "#",
     "sourceFile": "9D6C26FA-1272-4C49-A93F-9583FFB3F750.JPG",
     "timestamp": "2026-05-31T20:26:06.620435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9D6C26FA-1272-4C49-A93F-9583FFB3F750.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9D6C26FA-1272-4C49-A93F-9583FFB3F750.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 3000
+    }
   },
   {
     "id": "BRC-NAT-F3653351",
@@ -8747,7 +9204,11 @@
     "buyUrl": "#",
     "sourceFile": "9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.PNG",
     "timestamp": "2026-05-31T20:26:06.609435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.png",
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1974
+    }
   },
   {
     "id": "BRC-INT-19C02E80",
@@ -8823,7 +9284,11 @@
     "buyUrl": "#",
     "sourceFile": "9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.JPEG",
     "timestamp": "2026-05-31T20:26:06.604435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.png",
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    }
   },
   {
     "id": "BRC-INT-1272D54A",
@@ -8894,7 +9359,11 @@
     "buyUrl": "#",
     "sourceFile": "99A99193-D29D-48EB-B32A-C65EEA06AE14.PNG",
     "timestamp": "2026-05-31T20:26:06.603435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/99A99193-D29D-48EB-B32A-C65EEA06AE14.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/99A99193-D29D-48EB-B32A-C65EEA06AE14.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    }
   },
   {
     "id": "BRC-INT-2028C8C3",
@@ -8970,7 +9439,11 @@
     "buyUrl": "#",
     "sourceFile": "982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.JPEG",
     "timestamp": "2026-05-31T20:26:06.580435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-NAT-7116BE12",
@@ -9046,7 +9519,11 @@
     "buyUrl": "#",
     "sourceFile": "95D1183F-21C3-489C-83E2-154CF1072442.JPEG",
     "timestamp": "2026-05-31T20:26:06.569435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/95D1183F-21C3-489C-83E2-154CF1072442.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/95D1183F-21C3-489C-83E2-154CF1072442.png",
+    "sourcePixels": {
+      "w": 1022,
+      "h": 2044
+    }
   },
   {
     "id": "BRC-NAT-550FC367",
@@ -9117,7 +9594,11 @@
     "buyUrl": "#",
     "sourceFile": "92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.JPG",
     "timestamp": "2026-05-31T20:26:06.568435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-NAT-DACA8E8A",
@@ -9198,7 +9679,11 @@
     "buyUrl": "#",
     "sourceFile": "91C100EA-9CF6-4E0F-AEE1-9033F0C74222.PNG",
     "timestamp": "2026-05-31T20:26:06.558434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-880CCD9C",
@@ -9284,7 +9769,11 @@
     "buyUrl": "#",
     "sourceFile": "90FE23C9-174B-41B2-BEE8-6B552ACC6F95.PNG",
     "timestamp": "2026-05-31T20:26:06.550435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.png",
+    "sourcePixels": {
+      "w": 2384,
+      "h": 2230
+    }
   },
   {
     "id": "BRC-INT-F07C4AC4",
@@ -9370,7 +9859,11 @@
     "buyUrl": "#",
     "sourceFile": "8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.JPG",
     "timestamp": "2026-05-31T20:26:06.545434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.png",
+    "sourcePixels": {
+      "w": 688,
+      "h": 915
+    }
   },
   {
     "id": "BRC-INT-4492019D",
@@ -9446,7 +9939,11 @@
     "buyUrl": "#",
     "sourceFile": "8BC722A2-8D32-416B-B8F7-E6FD5231277B.PNG",
     "timestamp": "2026-05-31T20:26:06.541435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8BC722A2-8D32-416B-B8F7-E6FD5231277B.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8BC722A2-8D32-416B-B8F7-E6FD5231277B.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-INT-8C3AC630",
@@ -9522,7 +10019,11 @@
     "buyUrl": "#",
     "sourceFile": "8AD582E1-AD5A-4F81-BB94-43547594F3CD.PNG",
     "timestamp": "2026-05-31T20:26:06.533434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8AD582E1-AD5A-4F81-BB94-43547594F3CD.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8AD582E1-AD5A-4F81-BB94-43547594F3CD.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-LUM-FBB401AD",
@@ -9603,7 +10104,11 @@
     "buyUrl": "#",
     "sourceFile": "86EA7635-E114-4658-9138-9DC2C0EC6802.JPEG",
     "timestamp": "2026-05-31T20:26:06.528434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/86EA7635-E114-4658-9138-9DC2C0EC6802.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/86EA7635-E114-4658-9138-9DC2C0EC6802.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2998
+    }
   },
   {
     "id": "BRC-INT-ED3D7342",
@@ -9679,7 +10184,11 @@
     "buyUrl": "#",
     "sourceFile": "860DE86E-D2BC-479A-9363-96BC62222540.JPEG",
     "timestamp": "2026-05-31T20:26:06.524434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/860DE86E-D2BC-479A-9363-96BC62222540.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/860DE86E-D2BC-479A-9363-96BC62222540.png",
+    "sourcePixels": {
+      "w": 2457,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-96EE21E7",
@@ -9755,7 +10264,11 @@
     "buyUrl": "#",
     "sourceFile": "84BEA453-2B5C-4B7E-8890-9C25E885AAEB.JPG",
     "timestamp": "2026-05-31T20:26:06.508434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.png",
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    }
   },
   {
     "id": "BRC-NAT-5BAA11E2",
@@ -9831,7 +10344,11 @@
     "buyUrl": "#",
     "sourceFile": "8262307C-DD87-4A90-9ECB-053B1D391A5E.PNG",
     "timestamp": "2026-05-31T20:26:06.507434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8262307C-DD87-4A90-9ECB-053B1D391A5E.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8262307C-DD87-4A90-9ECB-053B1D391A5E.png",
+    "sourcePixels": {
+      "w": 1247,
+      "h": 989
+    }
   },
   {
     "id": "BRC-INT-910AFCC8",
@@ -9907,7 +10424,11 @@
     "buyUrl": "#",
     "sourceFile": "7E73BB53-08BE-46A4-AF61-00D7CB178182.JPEG",
     "timestamp": "2026-05-31T20:26:06.503434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7E73BB53-08BE-46A4-AF61-00D7CB178182.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7E73BB53-08BE-46A4-AF61-00D7CB178182.png",
+    "sourcePixels": {
+      "w": 749,
+      "h": 999
+    }
   },
   {
     "id": "BRC-INT-35F1D660",
@@ -9988,7 +10509,11 @@
     "buyUrl": "#",
     "sourceFile": "7D9CFF4C-2931-4638-8783-D16BF803D66C.JPG",
     "timestamp": "2026-05-31T20:26:06.500434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7D9CFF4C-2931-4638-8783-D16BF803D66C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7D9CFF4C-2931-4638-8783-D16BF803D66C.png",
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    }
   },
   {
     "id": "BRC-NAT-BEFEA697",
@@ -10064,7 +10589,11 @@
     "buyUrl": "#",
     "sourceFile": "7D36C12F-D36B-4E29-B052-1D3760262B59.JPG",
     "timestamp": "2026-05-31T20:26:06.498434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7D36C12F-D36B-4E29-B052-1D3760262B59.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7D36C12F-D36B-4E29-B052-1D3760262B59.png",
+    "sourcePixels": {
+      "w": 1980,
+      "h": 2044
+    }
   },
   {
     "id": "BRC-INT-CD818078",
@@ -10145,7 +10674,11 @@
     "buyUrl": "#",
     "sourceFile": "79DDA607-6D45-45B7-9A6A-1D754AED3D98.JPEG",
     "timestamp": "2026-05-31T20:26:06.493434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79DDA607-6D45-45B7-9A6A-1D754AED3D98.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79DDA607-6D45-45B7-9A6A-1D754AED3D98.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-NAT-5F3BF89E",
@@ -10216,7 +10749,11 @@
     "buyUrl": "#",
     "sourceFile": "79D4A135-49A4-4FDE-BE48-A86A0F2B507C.JPEG",
     "timestamp": "2026-05-31T20:26:06.478434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.png",
+    "sourcePixels": {
+      "w": 1048,
+      "h": 1417
+    }
   },
   {
     "id": "BRC-NAT-106BE197",
@@ -10287,7 +10824,11 @@
     "buyUrl": "#",
     "sourceFile": "79499B46-588B-4336-8B21-0A6E936CF53C.JPEG",
     "timestamp": "2026-05-31T20:26:06.477434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79499B46-588B-4336-8B21-0A6E936CF53C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79499B46-588B-4336-8B21-0A6E936CF53C.png",
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    }
   },
   {
     "id": "BRC-INT-3961735B",
@@ -10373,7 +10914,11 @@
     "buyUrl": "#",
     "sourceFile": "77069273-6494-4C19-B87F-6C6FE7903D27.JPG",
     "timestamp": "2026-05-31T20:26:06.471434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/77069273-6494-4C19-B87F-6C6FE7903D27.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/77069273-6494-4C19-B87F-6C6FE7903D27.png",
+    "sourcePixels": {
+      "w": 2999,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-INT-056CEE1D",
@@ -10449,7 +10994,11 @@
     "buyUrl": "#",
     "sourceFile": "75603145-7A28-466A-A29D-AB78DB6D297A.JPEG",
     "timestamp": "2026-05-31T20:26:06.451434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/75603145-7A28-466A-A29D-AB78DB6D297A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/75603145-7A28-466A-A29D-AB78DB6D297A.png",
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    }
   },
   {
     "id": "BRC-INT-C365EC23",
@@ -10535,7 +11084,11 @@
     "buyUrl": "#",
     "sourceFile": "74D7BBC0-2F81-41C0-BAB4-38D031007DDB.JPEG",
     "timestamp": "2026-05-31T20:26:06.446434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/74D7BBC0-2F81-41C0-BAB4-38D031007DDB.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/74D7BBC0-2F81-41C0-BAB4-38D031007DDB.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-INT-AE53F42C",
@@ -10616,7 +11169,11 @@
     "buyUrl": "#",
     "sourceFile": "745938E5-816D-4623-BE85-1B8137AEFF8A.PNG",
     "timestamp": "2026-05-31T20:26:06.440434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/745938E5-816D-4623-BE85-1B8137AEFF8A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/745938E5-816D-4623-BE85-1B8137AEFF8A.png",
+    "sourcePixels": {
+      "w": 2298,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-INT-93DC0210",
@@ -10692,7 +11249,11 @@
     "buyUrl": "#",
     "sourceFile": "733C6621-6D4F-4CA4-9E47-0332E33E52F2.JPEG",
     "timestamp": "2026-05-31T20:26:06.422434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/733C6621-6D4F-4CA4-9E47-0332E33E52F2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/733C6621-6D4F-4CA4-9E47-0332E33E52F2.png",
+    "sourcePixels": {
+      "w": 960,
+      "h": 1568
+    }
   },
   {
     "id": "BRC-NAT-E228B495",
@@ -10763,7 +11324,11 @@
     "buyUrl": "#",
     "sourceFile": "70C651B6-1D9D-4429-B261-8E1528095686.JPG",
     "timestamp": "2026-05-31T20:26:06.414433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/70C651B6-1D9D-4429-B261-8E1528095686.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/70C651B6-1D9D-4429-B261-8E1528095686.png",
+    "sourcePixels": {
+      "w": 1206,
+      "h": 2144
+    }
   },
   {
     "id": "BRC-NAT-350A5C89",
@@ -10844,7 +11409,11 @@
     "buyUrl": "#",
     "sourceFile": "700FC8B9-D2A6-4486-8F4B-F4A7D200519A.JPG",
     "timestamp": "2026-05-31T20:26:06.413434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.png",
+    "sourcePixels": {
+      "w": 3831,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-AFEB099B",
@@ -10910,7 +11479,11 @@
     "buyUrl": "#",
     "sourceFile": "6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.JPG",
     "timestamp": "2026-05-31T20:26:06.408433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2006
+    }
   },
   {
     "id": "BRC-INT-D110210B",
@@ -10981,7 +11554,11 @@
     "buyUrl": "#",
     "sourceFile": "6B6E55B4-0E18-406B-9742-1CE3038EF73E.JPEG",
     "timestamp": "2026-05-31T20:26:06.405433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6B6E55B4-0E18-406B-9742-1CE3038EF73E.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6B6E55B4-0E18-406B-9742-1CE3038EF73E.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-INT-309463BC",
@@ -11057,7 +11634,11 @@
     "buyUrl": "#",
     "sourceFile": "6AD18AF0-7571-4676-AF56-5819A86FABC7.JPG",
     "timestamp": "2026-05-31T20:26:06.363433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6AD18AF0-7571-4676-AF56-5819A86FABC7.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6AD18AF0-7571-4676-AF56-5819A86FABC7.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-NAT-BD6CFD1F",
@@ -11133,7 +11714,11 @@
     "buyUrl": "#",
     "sourceFile": "67116CEA-23E7-4FE7-9C31-000F3A4005E9.PNG",
     "timestamp": "2026-05-31T20:26:06.361433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/67116CEA-23E7-4FE7-9C31-000F3A4005E9.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/67116CEA-23E7-4FE7-9C31-000F3A4005E9.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    }
   },
   {
     "id": "BRC-NAT-B0012792",
@@ -11219,7 +11804,11 @@
     "buyUrl": "#",
     "sourceFile": "64C4B3EC-3B22-472B-BD87-DE987258EB5C.JPG",
     "timestamp": "2026-05-31T20:26:06.324433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/64C4B3EC-3B22-472B-BD87-DE987258EB5C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/64C4B3EC-3B22-472B-BD87-DE987258EB5C.png",
+    "sourcePixels": {
+      "w": 3350,
+      "h": 3581
+    }
   },
   {
     "id": "BRC-NAT-212227C6",
@@ -11300,7 +11889,11 @@
     "buyUrl": "#",
     "sourceFile": "6278F08A-498B-4BA1-903E-820ECAEFF96C.PNG",
     "timestamp": "2026-05-31T20:26:06.312433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6278F08A-498B-4BA1-903E-820ECAEFF96C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6278F08A-498B-4BA1-903E-820ECAEFF96C.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 3734
+    }
   },
   {
     "id": "BRC-INT-7AD01633",
@@ -11376,7 +11969,11 @@
     "buyUrl": "#",
     "sourceFile": "5C09557C-F18A-49BF-9986-803A517C2F8F.JPG",
     "timestamp": "2026-05-31T20:26:06.270432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5C09557C-F18A-49BF-9986-803A517C2F8F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5C09557C-F18A-49BF-9986-803A517C2F8F.png",
+    "sourcePixels": {
+      "w": 3142,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-5DD3EFAE",
@@ -11447,7 +12044,11 @@
     "buyUrl": "#",
     "sourceFile": "5876AFA2-DDCA-4897-BE86-608E9BADAC2A.PNG",
     "timestamp": "2026-05-31T20:26:06.257432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.png",
+    "sourcePixels": {
+      "w": 1407,
+      "h": 1048
+    }
   },
   {
     "id": "BRC-INT-DE55F5CF",
@@ -11523,7 +12124,11 @@
     "buyUrl": "#",
     "sourceFile": "582A90C6-BE15-4E42-BE51-5EB08F8694D5.PNG",
     "timestamp": "2026-05-31T20:26:06.255432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/582A90C6-BE15-4E42-BE51-5EB08F8694D5.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/582A90C6-BE15-4E42-BE51-5EB08F8694D5.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-NAT-B820182A",
@@ -11594,7 +12199,11 @@
     "buyUrl": "#",
     "sourceFile": "57B433A6-62A8-472F-9F0A-30A1E4A21382.JPEG",
     "timestamp": "2026-05-31T20:26:06.248432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/57B433A6-62A8-472F-9F0A-30A1E4A21382.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/57B433A6-62A8-472F-9F0A-30A1E4A21382.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-INT-0FD7CD63",
@@ -11670,7 +12279,11 @@
     "buyUrl": "#",
     "sourceFile": "55B6D587-DAE0-4400-A448-B79C94E03224.JPG",
     "timestamp": "2026-05-31T20:26:06.247432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/55B6D587-DAE0-4400-A448-B79C94E03224.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/55B6D587-DAE0-4400-A448-B79C94E03224.png",
+    "sourcePixels": {
+      "w": 1464,
+      "h": 2044
+    }
   },
   {
     "id": "BRC-INT-AAE70052",
@@ -11751,7 +12364,11 @@
     "buyUrl": "#",
     "sourceFile": "550EA1F2-F472-4107-A912-3810B97E38C1.JPEG",
     "timestamp": "2026-05-31T20:26:06.244432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/550EA1F2-F472-4107-A912-3810B97E38C1.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/550EA1F2-F472-4107-A912-3810B97E38C1.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2685
+    }
   },
   {
     "id": "BRC-NAT-9326B863",
@@ -11827,7 +12444,11 @@
     "buyUrl": "#",
     "sourceFile": "52DE7F0A-08C7-4E34-AFD6-15A738E7399B.JPEG",
     "timestamp": "2026-05-31T20:26:06.232432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52DE7F0A-08C7-4E34-AFD6-15A738E7399B.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52DE7F0A-08C7-4E34-AFD6-15A738E7399B.png",
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    }
   },
   {
     "id": "BRC-NAT-4DFC2381",
@@ -11908,7 +12529,11 @@
     "buyUrl": "#",
     "sourceFile": "52602792-DAA5-452D-A8C7-61F49BE5917C.PNG",
     "timestamp": "2026-05-31T20:26:06.229432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52602792-DAA5-452D-A8C7-61F49BE5917C.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52602792-DAA5-452D-A8C7-61F49BE5917C.png",
+    "sourcePixels": {
+      "w": 1221,
+      "h": 717
+    }
   },
   {
     "id": "BRC-INT-EC0F93C0",
@@ -11984,7 +12609,11 @@
     "buyUrl": "#",
     "sourceFile": "517F4557-CFBC-427E-990B-07AA40433BB3.JPG",
     "timestamp": "2026-05-31T20:26:06.227432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/517F4557-CFBC-427E-990B-07AA40433BB3.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/517F4557-CFBC-427E-990B-07AA40433BB3.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3276
+    }
   },
   {
     "id": "BRC-INT-2E1A04AD",
@@ -12065,7 +12694,11 @@
     "buyUrl": "#",
     "sourceFile": "50DEDE64-8AB0-4151-B641-7A9A80828680.JPEG",
     "timestamp": "2026-05-31T20:26:06.161432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/50DEDE64-8AB0-4151-B641-7A9A80828680.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/50DEDE64-8AB0-4151-B641-7A9A80828680.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2203
+    }
   },
   {
     "id": "BRC-INT-A359FE5E",
@@ -12136,7 +12769,11 @@
     "buyUrl": "#",
     "sourceFile": "5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.JPEG",
     "timestamp": "2026-05-31T20:26:06.151431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.png",
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    }
   },
   {
     "id": "BRC-NAT-7F5E269E",
@@ -12207,7 +12844,11 @@
     "buyUrl": "#",
     "sourceFile": "5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.JPEG",
     "timestamp": "2026-05-31T20:26:06.147431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.png",
+    "sourcePixels": {
+      "w": 1052,
+      "h": 1426
+    }
   },
   {
     "id": "BRC-INT-E1FEB5B4",
@@ -12283,7 +12924,11 @@
     "buyUrl": "#",
     "sourceFile": "4EC89707-8DA8-4859-AD3A-06F112DB5014.JPG",
     "timestamp": "2026-05-31T20:26:06.146431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4EC89707-8DA8-4859-AD3A-06F112DB5014.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4EC89707-8DA8-4859-AD3A-06F112DB5014.png",
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    }
   },
   {
     "id": "BRC-INT-8B068C7F",
@@ -12359,7 +13004,11 @@
     "buyUrl": "#",
     "sourceFile": "4CF2A811-4E88-412C-A66E-0A9C97977DF2.PNG",
     "timestamp": "2026-05-31T20:26:06.144431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4CF2A811-4E88-412C-A66E-0A9C97977DF2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4CF2A811-4E88-412C-A66E-0A9C97977DF2.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    }
   },
   {
     "id": "BRC-NAT-30C31AD2",
@@ -12440,7 +13089,11 @@
     "buyUrl": "#",
     "sourceFile": "4C54F694-133C-40F9-A794-926370305D6F.JPEG",
     "timestamp": "2026-05-31T20:26:06.115431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C54F694-133C-40F9-A794-926370305D6F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C54F694-133C-40F9-A794-926370305D6F.png",
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    }
   },
   {
     "id": "BRC-NAT-1F1DB559",
@@ -12511,7 +13164,11 @@
     "buyUrl": "#",
     "sourceFile": "4C189297-B982-47BE-8EB2-DE1F82E0CA85.JPEG",
     "timestamp": "2026-05-31T20:26:06.111431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C189297-B982-47BE-8EB2-DE1F82E0CA85.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C189297-B982-47BE-8EB2-DE1F82E0CA85.png",
+    "sourcePixels": {
+      "w": 1790,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-INT-95E8EC2F",
@@ -12592,7 +13249,11 @@
     "buyUrl": "#",
     "sourceFile": "4BDD7AA1-4183-470E-8226-A835127BA68D.JPEG",
     "timestamp": "2026-05-31T20:26:06.106431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4BDD7AA1-4183-470E-8226-A835127BA68D.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4BDD7AA1-4183-470E-8226-A835127BA68D.png",
+    "sourcePixels": {
+      "w": 2924,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-7EA71874",
@@ -12673,7 +13334,11 @@
     "buyUrl": "#",
     "sourceFile": "49EC5429-9440-48A1-A3B3-A9BB27D7D599.JPG",
     "timestamp": "2026-05-31T20:26:06.082431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/49EC5429-9440-48A1-A3B3-A9BB27D7D599.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/49EC5429-9440-48A1-A3B3-A9BB27D7D599.png",
+    "sourcePixels": {
+      "w": 2044,
+      "h": 2044
+    }
   },
   {
     "id": "BRC-NAT-EE93B247",
@@ -12749,7 +13414,11 @@
     "buyUrl": "#",
     "sourceFile": "456199D5-6A56-45A8-B277-F635C9A8B792.PNG",
     "timestamp": "2026-05-31T20:26:06.080431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/456199D5-6A56-45A8-B277-F635C9A8B792.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/456199D5-6A56-45A8-B277-F635C9A8B792.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 1715
+    }
   },
   {
     "id": "BRC-INT-C903DF45",
@@ -12830,7 +13499,11 @@
     "buyUrl": "#",
     "sourceFile": "42B4708C-0CC7-4599-964D-FBB446183DB2.PNG",
     "timestamp": "2026-05-31T20:26:06.074431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/42B4708C-0CC7-4599-964D-FBB446183DB2.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/42B4708C-0CC7-4599-964D-FBB446183DB2.png",
+    "sourcePixels": {
+      "w": 812,
+      "h": 772
+    }
   },
   {
     "id": "BRC-NAT-72E1E9D1",
@@ -12901,7 +13574,11 @@
     "buyUrl": "#",
     "sourceFile": "3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.PNG",
     "timestamp": "2026-05-31T20:26:06.069431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.png",
+    "sourcePixels": {
+      "w": 1417,
+      "h": 1052
+    }
   },
   {
     "id": "BRC-NAT-EA38BC40",
@@ -12982,7 +13659,11 @@
     "buyUrl": "#",
     "sourceFile": "395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.JPEG",
     "timestamp": "2026-05-31T20:26:06.066431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2460
+    }
   },
   {
     "id": "BRC-NAT-7A3E8027",
@@ -13068,7 +13749,11 @@
     "buyUrl": "#",
     "sourceFile": "395222F3-5DC3-4252-9002-151A2350054E.JPEG",
     "timestamp": "2026-05-31T20:26:06.063431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395222F3-5DC3-4252-9002-151A2350054E.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395222F3-5DC3-4252-9002-151A2350054E.png",
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2203
+    }
   },
   {
     "id": "BRC-NAT-00F1EC53",
@@ -13139,7 +13824,11 @@
     "buyUrl": "#",
     "sourceFile": "38FB0BC8-E076-4D78-AA1A-30B13B3535B4.JPG",
     "timestamp": "2026-05-31T20:26:06.058431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-INT-43AC6929",
@@ -13215,7 +13904,11 @@
     "buyUrl": "#",
     "sourceFile": "349FFFE1-966A-412F-9724-B1B3E1B53298.PNG",
     "timestamp": "2026-05-31T20:26:06.055431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/349FFFE1-966A-412F-9724-B1B3E1B53298.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/349FFFE1-966A-412F-9724-B1B3E1B53298.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    }
   },
   {
     "id": "BRC-NAT-63B20F6F",
@@ -13291,7 +13984,11 @@
     "buyUrl": "#",
     "sourceFile": "346847BA-144F-4CDA-ACF5-7230B48CED72.JPG",
     "timestamp": "2026-05-31T20:26:06.024431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/346847BA-144F-4CDA-ACF5-7230B48CED72.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/346847BA-144F-4CDA-ACF5-7230B48CED72.png",
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    }
   },
   {
     "id": "BRC-NAT-D3937CC3",
@@ -13367,7 +14064,11 @@
     "buyUrl": "#",
     "sourceFile": "3187CC58-463C-427D-83E8-66975E41067B.JPEG",
     "timestamp": "2026-05-31T20:26:06.023430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3187CC58-463C-427D-83E8-66975E41067B.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3187CC58-463C-427D-83E8-66975E41067B.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-INT-914B4AB0",
@@ -13443,7 +14144,11 @@
     "buyUrl": "#",
     "sourceFile": "30239C48-D6FE-4EB2-BB78-3F7FF2639037.JPEG",
     "timestamp": "2026-05-31T20:26:06.022430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/30239C48-D6FE-4EB2-BB78-3F7FF2639037.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/30239C48-D6FE-4EB2-BB78-3F7FF2639037.png",
+    "sourcePixels": {
+      "w": 2121,
+      "h": 2828
+    }
   },
   {
     "id": "BRC-NAT-53FCB0EC",
@@ -13519,7 +14224,11 @@
     "buyUrl": "#",
     "sourceFile": "2CC38928-2FED-4180-A0E0-26CAD45A6DDA.JPG",
     "timestamp": "2026-05-31T20:26:06.008430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.png",
+    "sourcePixels": {
+      "w": 1296,
+      "h": 2044
+    }
   },
   {
     "id": "BRC-INT-6632ACF8",
@@ -13590,7 +14299,11 @@
     "buyUrl": "#",
     "sourceFile": "2BF96480-619F-4B98-8905-4E7C55CAA596.JPEG",
     "timestamp": "2026-05-31T20:26:06.006430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2BF96480-619F-4B98-8905-4E7C55CAA596.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2BF96480-619F-4B98-8905-4E7C55CAA596.png",
+    "sourcePixels": {
+      "w": 2120,
+      "h": 3769
+    }
   },
   {
     "id": "BRC-NAT-0EBF46EC",
@@ -13676,7 +14389,11 @@
     "buyUrl": "#",
     "sourceFile": "2B06D9AB-4BF5-4910-9119-7CEFB8172E38.JPEG",
     "timestamp": "2026-05-31T20:26:05.979430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2B06D9AB-4BF5-4910-9119-7CEFB8172E38.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2B06D9AB-4BF5-4910-9119-7CEFB8172E38.png",
+    "sourcePixels": {
+      "w": 2384,
+      "h": 2356
+    }
   },
   {
     "id": "BRC-INT-97F1FF12",
@@ -13747,7 +14464,11 @@
     "buyUrl": "#",
     "sourceFile": "293C3657-601E-4626-9CE2-BC1E611727E7.JPEG",
     "timestamp": "2026-05-31T20:26:05.977430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/293C3657-601E-4626-9CE2-BC1E611727E7.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/293C3657-601E-4626-9CE2-BC1E611727E7.png",
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    }
   },
   {
     "id": "BRC-NAT-FAA5294F",
@@ -13818,7 +14539,11 @@
     "buyUrl": "#",
     "sourceFile": "270FFEAA-79DA-4187-AD0D-A20DE0092446.JPEG",
     "timestamp": "2026-05-31T20:26:05.972430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/270FFEAA-79DA-4187-AD0D-A20DE0092446.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/270FFEAA-79DA-4187-AD0D-A20DE0092446.png",
+    "sourcePixels": {
+      "w": 4095,
+      "h": 4095
+    }
   },
   {
     "id": "BRC-NAT-302AE541",
@@ -13889,7 +14614,11 @@
     "buyUrl": "#",
     "sourceFile": "2532931F-1C05-461B-8A2E-430EF102D77B.PNG",
     "timestamp": "2026-05-31T20:26:05.939430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2532931F-1C05-461B-8A2E-430EF102D77B.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2532931F-1C05-461B-8A2E-430EF102D77B.png",
+    "sourcePixels": {
+      "w": 2003,
+      "h": 2007
+    }
   },
   {
     "id": "BRC-INT-9D114300",
@@ -13965,7 +14694,11 @@
     "buyUrl": "#",
     "sourceFile": "24C73992-2C9D-47AF-9A04-EC6479BC3936.PNG",
     "timestamp": "2026-05-31T20:26:05.926430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/24C73992-2C9D-47AF-9A04-EC6479BC3936.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/24C73992-2C9D-47AF-9A04-EC6479BC3936.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-INT-DD9DE2FB",
@@ -14041,7 +14774,11 @@
     "buyUrl": "#",
     "sourceFile": "22C8A9A4-679A-4710-B679-D282EB84DA4F.JPG",
     "timestamp": "2026-05-31T20:26:05.918430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/22C8A9A4-679A-4710-B679-D282EB84DA4F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/22C8A9A4-679A-4710-B679-D282EB84DA4F.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-FCA6AA8E",
@@ -14117,7 +14854,11 @@
     "buyUrl": "#",
     "sourceFile": "2263D61F-338F-4FB8-B35D-AD6760D4FBDE.JPG",
     "timestamp": "2026-05-31T20:26:05.885429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2263D61F-338F-4FB8-B35D-AD6760D4FBDE.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2263D61F-338F-4FB8-B35D-AD6760D4FBDE.png",
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    }
   },
   {
     "id": "BRC-NAT-19063F46",
@@ -14188,7 +14929,11 @@
     "buyUrl": "#",
     "sourceFile": "20B727AC-A3EF-4E8F-8023-DC5D29510AE1.JPEG",
     "timestamp": "2026-05-31T20:26:05.882429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/20B727AC-A3EF-4E8F-8023-DC5D29510AE1.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/20B727AC-A3EF-4E8F-8023-DC5D29510AE1.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-48C63EA0",
@@ -14259,7 +15004,11 @@
     "buyUrl": "#",
     "sourceFile": "1E5D6985-596E-418C-8589-5A192976EF31.JPEG",
     "timestamp": "2026-05-31T20:26:05.874429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1E5D6985-596E-418C-8589-5A192976EF31.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1E5D6985-596E-418C-8589-5A192976EF31.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-1CEBD24B",
@@ -14335,7 +15084,11 @@
     "buyUrl": "#",
     "sourceFile": "1A324592-2430-447C-B21B-342BFDB845D7.JPEG",
     "timestamp": "2026-05-31T20:26:05.865429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1A324592-2430-447C-B21B-342BFDB845D7.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1A324592-2430-447C-B21B-342BFDB845D7.png",
+    "sourcePixels": {
+      "w": 1534,
+      "h": 2044
+    }
   },
   {
     "id": "BRC-NAT-9AD67482",
@@ -14416,7 +15169,11 @@
     "buyUrl": "#",
     "sourceFile": "196CA4D5-37D8-458D-88C7-6C025741016F.JPEG",
     "timestamp": "2026-05-31T20:26:05.864429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/196CA4D5-37D8-458D-88C7-6C025741016F.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/196CA4D5-37D8-458D-88C7-6C025741016F.png",
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    }
   },
   {
     "id": "BRC-NAT-74E85843",
@@ -14492,7 +15249,11 @@
     "buyUrl": "#",
     "sourceFile": "19304392-624D-4776-BE55-0C26A6F9ACD8.JPEG",
     "timestamp": "2026-05-31T20:26:05.860429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/19304392-624D-4776-BE55-0C26A6F9ACD8.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/19304392-624D-4776-BE55-0C26A6F9ACD8.png",
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-NAT-8847F663",
@@ -14566,7 +15327,11 @@
     "materials": "",
     "sold": false,
     "hidden": false,
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/18592964-5E2C-43F2-BEDF-319952C665BC.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/18592964-5E2C-43F2-BEDF-319952C665BC.png",
+    "sourcePixels": {
+      "w": 584,
+      "h": 1427
+    }
   },
   {
     "id": "BRC-NAT-5047970E",
@@ -14637,7 +15402,11 @@
     "buyUrl": "#",
     "sourceFile": "13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.JPEG",
     "timestamp": "2026-05-31T20:26:05.793429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.png",
+    "sourcePixels": {
+      "w": 3474,
+      "h": 3453
+    }
   },
   {
     "id": "BRC-NAT-4C35AAF2",
@@ -14718,7 +15487,11 @@
     "buyUrl": "#",
     "sourceFile": "139626B0-8413-4AF2-9A8A-7F3E42192636.JPEG",
     "timestamp": "2026-05-31T20:26:05.753428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/139626B0-8413-4AF2-9A8A-7F3E42192636.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/139626B0-8413-4AF2-9A8A-7F3E42192636.png",
+    "sourcePixels": {
+      "w": 1670,
+      "h": 2384
+    }
   },
   {
     "id": "BRC-NAT-D214008C",
@@ -14794,7 +15567,11 @@
     "buyUrl": "#",
     "sourceFile": "10AEFDA4-62A1-41B9-8A74-CDDF261B4051.JPEG",
     "timestamp": "2026-05-31T20:26:05.752428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/10AEFDA4-62A1-41B9-8A74-CDDF261B4051.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/10AEFDA4-62A1-41B9-8A74-CDDF261B4051.png",
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    }
   },
   {
     "id": "BRC-NAT-A6530E65",
@@ -14870,7 +15647,11 @@
     "buyUrl": "#",
     "sourceFile": "108553BB-3EFA-4816-A4B0-571E39BB9EA0.PNG",
     "timestamp": "2026-05-31T20:26:05.739428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/108553BB-3EFA-4816-A4B0-571E39BB9EA0.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/108553BB-3EFA-4816-A4B0-571E39BB9EA0.png",
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    }
   },
   {
     "id": "BRC-NAT-E614AA35",
@@ -14946,7 +15727,11 @@
     "buyUrl": "#",
     "sourceFile": "0E421941-E0FD-4E46-B1BC-21F730CB6369.JPEG",
     "timestamp": "2026-05-31T20:26:05.735428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0E421941-E0FD-4E46-B1BC-21F730CB6369.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0E421941-E0FD-4E46-B1BC-21F730CB6369.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-0B264A11",
@@ -15012,7 +15797,11 @@
     "buyUrl": "#",
     "sourceFile": "0A6768C6-C021-4DE9-B561-301E204DE235.JPEG",
     "timestamp": "2026-05-31T20:26:05.730428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0A6768C6-C021-4DE9-B561-301E204DE235.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0A6768C6-C021-4DE9-B561-301E204DE235.png",
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    }
   },
   {
     "id": "BRC-NAT-83831B6D",
@@ -15093,7 +15882,11 @@
     "buyUrl": "#",
     "sourceFile": "0756EC79-5BA4-40F5-AE7B-B85B5C04FD67.JPG",
     "timestamp": "2026-05-31T20:26:05.721428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0756EC79-5BA4-40F5-AE7B-B85B5C04FD67.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0756EC79-5BA4-40F5-AE7B-B85B5C04FD67.png",
+    "sourcePixels": {
+      "w": 3350,
+      "h": 3581
+    }
   },
   {
     "id": "BRC-INT-8E3FCFCB",
@@ -15169,7 +15962,11 @@
     "buyUrl": "#",
     "sourceFile": "070AC899-5D62-43E0-8205-574048ED81FD.PNG",
     "timestamp": "2026-05-31T20:26:05.718428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/070AC899-5D62-43E0-8205-574048ED81FD.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/070AC899-5D62-43E0-8205-574048ED81FD.png",
+    "sourcePixels": {
+      "w": 2731,
+      "h": 4096
+    }
   },
   {
     "id": "BRC-INT-4379F1E3",
@@ -15245,7 +16042,11 @@
     "buyUrl": "#",
     "sourceFile": "056CD596-6B3E-456F-819C-180DA6876CCE.JPEG",
     "timestamp": "2026-05-31T20:26:05.697428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/056CD596-6B3E-456F-819C-180DA6876CCE.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/056CD596-6B3E-456F-819C-180DA6876CCE.png",
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    }
   },
   {
     "id": "BRC-INT-45844E75",
@@ -15321,7 +16122,11 @@
     "buyUrl": "#",
     "sourceFile": "024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.JPEG",
     "timestamp": "2026-05-31T20:26:05.685428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.png",
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    }
   },
   {
     "id": "BRC-NAT-9BC80EAB",
@@ -15397,6 +16202,10 @@
     "buyUrl": "#",
     "sourceFile": "00619E4E-AFF8-4A86-8EE6-D823D4BC2580.JPEG",
     "timestamp": "2026-05-31T20:26:05.682428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/00619E4E-AFF8-4A86-8EE6-D823D4BC2580.png"
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/00619E4E-AFF8-4A86-8EE6-D823D4BC2580.png",
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    }
   }
 ]
