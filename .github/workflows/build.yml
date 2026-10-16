@@ -95,5 +95,14 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Auto-update: $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git push origin main --force
+            # No --force: a force push here used to wipe images the Mac ingest
+            # agent pushed while the build was running. Rebase and retry.
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then exit 0; fi
+              echo "push rejected (attempt $attempt) — rebasing on latest main"
+              sleep $((attempt * 3))
+              git pull --rebase origin main
+            done
+            echo "push failed after 5 attempts" >&2
+            exit 1
           fi
