@@ -8,3 +8,7 @@ assets/images/gallery/vector/
 
 # Local MCP deploy server (not part of the site)
 mcp-deploy-server/
+
+# Python bytecode
+__pycache__/
+*.pyc
