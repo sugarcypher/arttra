@@ -51,6 +51,11 @@ DEFAULT_PRICE = {"startingPrice": 79}
 # fulfillment. Left empty for local builds that don't publish to R2.
 R2_PUBLIC_BASE = os.environ.get("R2_PUBLIC_BASE", "").rstrip("/")
 
+# AI enlargement happens ON DEMAND in the checkout Worker: the first paid order
+# for a size beyond a piece's real pixels runs Real-ESRGAN once and saves the
+# result to R2 (enhanced/<sku>.png) for every later order. The build only
+# records the real pixels (`sourcePixels`) so the store can size things honestly.
+
 
 # ═══════════════════════════════════════════════════════════════════
 # ARCHAIC NAMING ENGINE
@@ -628,6 +633,7 @@ def process_single(args: tuple) -> Optional[dict]:
         with Image.open(work_path) as img:
             img = img.convert("RGB")
             w, h = img.size
+            source_pixels = {"w": w, "h": h}
             current_long = max(w, h)
 
             if current_long != PRINT_LONG_EDGE:
@@ -703,6 +709,12 @@ def process_single(args: tuple) -> Optional[dict]:
                 "heightInches": round(ph / 300, 1),
                 "dpi": 300, "pixelWidth": pw, "pixelHeight": ph,
             },
+            # Real resolution, used by shared/options.js to decide which
+            # print sizes stay sharp. printDimensions is the resampled file.
+            "sourcePixels": source_pixels,
+            # Physical-painting photos cropped to the canvas: the original
+            # file includes the floor, so it is never sent for AI upscaling.
+            **({"canvasCropped": True} if canvas_cropped else {}),
             "vectorRoute": route,
             "imageProfile": profile,
             "isPhotography": is_photograph,
@@ -940,6 +952,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         cached_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
         _dedup_titles(cached_artworks)
         cached_artworks = _apply_print_urls(cached_artworks)
+        cached_artworks = _backfill_source_pixels(cached_artworks, source)
         with open(data_dir / "artworks.json", "w") as f:
             json.dump(cached_artworks, f, indent=2)
         with open(manifest_path, "w") as f:
@@ -1021,6 +1034,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
 
     _dedup_titles(visible)
     visible = _apply_print_urls(visible)
+    visible = _backfill_source_pixels(visible, source)
 
     with open(data_dir / "artworks.json", "w") as f:
         json.dump(visible, f, indent=2)
@@ -1066,6 +1080,35 @@ def _dedup_titles(artworks):
             n += 1
         else:
             seen.add(title)  # pathological fallback — keep the duplicate
+    return artworks
+
+
+def _backfill_source_pixels(artworks, source_dir):
+    """Cached artworks built before sourcePixels existed: read the original's
+    size from its header (cheap, no reprocessing)."""
+    src = Path(source_dir)
+    for art in artworks:
+        if art.get("sourcePixels"):
+            continue
+        f = src / str(art.get("sourceFile") or "")
+        if not f.is_file():
+            continue
+        try:
+            with Image.open(f) as im:
+                # No EXIF transpose: the print path doesn't transpose either,
+                # so this matches printDimensions' orientation.
+                w, h = im.size
+            pd = art.get("printDimensions") or {}
+            pr = (pd.get("pixelWidth") or w) / (pd.get("pixelHeight") or h)
+            if abs(w / h - pr) / pr > 0.02:
+                # Canvas-cropped: largest box of the print's shape inside it.
+                cw = min(w, h * pr)
+                art["sourcePixels"] = {"w": int(cw), "h": int(cw / pr)}
+                art["canvasCropped"] = True
+            else:
+                art["sourcePixels"] = {"w": w, "h": h}
+        except Exception:
+            pass
     return artworks
 
 
