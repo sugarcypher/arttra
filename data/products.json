@@ -1,0 +1,902 @@
+{
+ "version": 2,
+ "currency": "USD",
+ "quality": {
+  "note": "A size is offered only when the artwork's effective pixels / size long edge >= the material's minPpi, and the aspect ratio is within aspectTolerance."
+ },
+ "aspectTolerance": 0.08,
+ "materials": [
+  {
+   "id": "paper",
+   "label": "Fine-art matte paper",
+   "short": "Matte paper",
+   "minPpi": 150,
+   "placement": "default",
+   "technique": "digital",
+   "blurb": "Museum-grade 189 gsm archival matte, giclée printed. Ships rolled.",
+   "printfulProduct": 1,
+   "shipping": 6,
+   "sizes": [
+    {
+     "id": "12x12",
+     "label": "12″ × 12″",
+     "w": 12.0,
+     "h": 12.0,
+     "price": 29,
+     "variants": {
+      "default": 4464
+     }
+    },
+    {
+     "id": "8x20",
+     "label": "8″ × 20″",
+     "w": 8.0,
+     "h": 20.0,
+     "price": 39,
+     "variants": {
+      "default": 48491
+     }
+    },
+    {
+     "id": "12x16",
+     "label": "12″ × 16″",
+     "w": 12.0,
+     "h": 16.0,
+     "price": 39,
+     "variants": {
+      "default": 1349
+     }
+    },
+    {
+     "id": "12x18",
+     "label": "12″ × 18″",
+     "w": 12.0,
+     "h": 18.0,
+     "price": 39,
+     "variants": {
+      "default": 3876
+     }
+    },
+    {
+     "id": "10x24",
+     "label": "10″ × 24″",
+     "w": 10.0,
+     "h": 24.0,
+     "price": 39,
+     "variants": {
+      "default": 48493
+     }
+    },
+    {
+     "id": "16x16",
+     "label": "16″ × 16″",
+     "w": 16.0,
+     "h": 16.0,
+     "price": 39,
+     "variants": {
+      "default": 4465
+     }
+    },
+    {
+     "id": "16x20",
+     "label": "16″ × 20″",
+     "w": 16.0,
+     "h": 20.0,
+     "price": 39,
+     "variants": {
+      "default": 3877
+     }
+    },
+    {
+     "id": "18x18",
+     "label": "18″ × 18″",
+     "w": 18.0,
+     "h": 18.0,
+     "price": 49,
+     "variants": {
+      "default": 6242
+     }
+    },
+    {
+     "id": "16x24",
+     "label": "16″ × 24″",
+     "w": 16.0,
+     "h": 24.0,
+     "price": 49,
+     "variants": {
+      "default": 48495
+     }
+    },
+    {
+     "id": "20x20",
+     "label": "20″ × 20″",
+     "w": 20.0,
+     "h": 20.0,
+     "price": 49,
+     "variants": {
+      "default": 48496
+     }
+    },
+    {
+     "id": "18x24",
+     "label": "18″ × 24″",
+     "w": 18.0,
+     "h": 24.0,
+     "price": 49,
+     "variants": {
+      "default": 1
+     }
+    },
+    {
+     "id": "24x24",
+     "label": "24″ × 24″",
+     "w": 24.0,
+     "h": 24.0,
+     "price": 49,
+     "variants": {
+      "default": 48499
+     }
+    },
+    {
+     "id": "20x30",
+     "label": "20″ × 30″",
+     "w": 20.0,
+     "h": 30.0,
+     "price": 49,
+     "variants": {
+      "default": 16365
+     }
+    },
+    {
+     "id": "28x28",
+     "label": "28″ × 28″",
+     "w": 28.0,
+     "h": 28.0,
+     "price": 59,
+     "variants": {
+      "default": 48502
+     }
+    },
+    {
+     "id": "24x36",
+     "label": "24″ × 36″",
+     "w": 24.0,
+     "h": 36.0,
+     "price": 59,
+     "variants": {
+      "default": 2
+     }
+    },
+    {
+     "id": "28x40",
+     "label": "28″ × 40″",
+     "w": 28.0,
+     "h": 40.0,
+     "price": 69,
+     "variants": {
+      "default": 48501
+     }
+    },
+    {
+     "id": "30x40",
+     "label": "30″ × 40″",
+     "w": 30.0,
+     "h": 40.0,
+     "price": 79,
+     "variants": {
+      "default": 48503
+     }
+    }
+   ],
+   "description": "Museum-grade 189 gsm archival matte, giclée printed. Ships rolled."
+  },
+  {
+   "id": "framed",
+   "label": "Framed fine-art print",
+   "short": "Framed",
+   "minPpi": 150,
+   "placement": "default",
+   "technique": "digital",
+   "blurb": "Matte archival paper in a semi-hardwood frame with acrylite front. Ready to hang.",
+   "printfulProduct": 2,
+   "shipping": 12,
+   "frames": [
+    "Black",
+    "White",
+    "Red Oak"
+   ],
+   "sizes": [
+    {
+     "id": "8x10",
+     "label": "8″ × 10″",
+     "w": 8.0,
+     "h": 10.0,
+     "price": 69,
+     "variants": {
+      "Black": 4651,
+      "Red Oak": 15021,
+      "White": 10754
+     }
+    },
+    {
+     "id": "10x10",
+     "label": "10″ × 10″",
+     "w": 10.0,
+     "h": 10.0,
+     "price": 69,
+     "variants": {
+      "Black": 4652,
+      "Red Oak": 15022,
+      "White": 10755
+     }
+    },
+    {
+     "id": "12x12",
+     "label": "12″ × 12″",
+     "w": 12.0,
+     "h": 12.0,
+     "price": 69,
+     "variants": {
+      "Black": 4653,
+      "Red Oak": 15024,
+      "White": 10756
+     }
+    },
+    {
+     "id": "11x14",
+     "label": "11″ × 14″",
+     "w": 11.0,
+     "h": 14.0,
+     "price": 79,
+     "variants": {
+      "Black": 14292,
+      "Red Oak": 15023,
+      "White": 14293
+     }
+    },
+    {
+     "id": "12x16",
+     "label": "12″ × 16″",
+     "w": 12.0,
+     "h": 16.0,
+     "price": 79,
+     "variants": {
+      "Black": 1350,
+      "Red Oak": 15025,
+      "White": 10751
+     }
+    },
+    {
+     "id": "14x14",
+     "label": "14″ × 14″",
+     "w": 14.0,
+     "h": 14.0,
+     "price": 79,
+     "variants": {
+      "Black": 4654,
+      "Red Oak": 15027,
+      "White": 10757
+     }
+    },
+    {
+     "id": "12x18",
+     "label": "12″ × 18″",
+     "w": 12.0,
+     "h": 18.0,
+     "price": 79,
+     "variants": {
+      "Black": 4398,
+      "Red Oak": 15026,
+      "White": 10752
+     }
+    },
+    {
+     "id": "16x16",
+     "label": "16″ × 16″",
+     "w": 16.0,
+     "h": 16.0,
+     "price": 89,
+     "variants": {
+      "Black": 4655,
+      "Red Oak": 15028,
+      "White": 10758
+     }
+    },
+    {
+     "id": "16x20",
+     "label": "16″ × 20″",
+     "w": 16.0,
+     "h": 20.0,
+     "price": 99,
+     "variants": {
+      "Black": 4399,
+      "Red Oak": 15029,
+      "White": 10753
+     }
+    },
+    {
+     "id": "18x18",
+     "label": "18″ × 18″",
+     "w": 18.0,
+     "h": 18.0,
+     "price": 99,
+     "variants": {
+      "Black": 4656,
+      "Red Oak": 15030,
+      "White": 10759
+     }
+    },
+    {
+     "id": "18x24",
+     "label": "18″ × 24″",
+     "w": 18.0,
+     "h": 24.0,
+     "price": 109,
+     "variants": {
+      "Black": 3,
+      "Red Oak": 15031,
+      "White": 10749
+     }
+    },
+    {
+     "id": "20x30",
+     "label": "20″ × 30″",
+     "w": 20.0,
+     "h": 30.0,
+     "price": 129,
+     "variants": {
+      "Black": 19520,
+      "Red Oak": 19521,
+      "White": 19522
+     }
+    },
+    {
+     "id": "24x36",
+     "label": "24″ × 36″",
+     "w": 24.0,
+     "h": 36.0,
+     "price": 179,
+     "variants": {
+      "Black": 4,
+      "Red Oak": 15032,
+      "White": 10750
+     }
+    }
+   ],
+   "description": "Matte archival paper in a semi-hardwood frame with acrylite front. Ready to hang."
+  },
+  {
+   "id": "canvas",
+   "label": "Gallery-wrapped canvas",
+   "short": "Canvas",
+   "minPpi": 100,
+   "placement": "default",
+   "technique": "digital",
+   "blurb": "1.25″ stretcher bars, fade-resistant inks, mirrored edges. Ready to hang.",
+   "printfulProduct": 3,
+   "shipping": 12,
+   "sizes": [
+    {
+     "id": "8x10",
+     "label": "8″ × 10″",
+     "w": 8.0,
+     "h": 10.0,
+     "price": 59,
+     "variants": {
+      "default": 19293
+     }
+    },
+    {
+     "id": "8x12",
+     "label": "8″ × 12″",
+     "w": 8.0,
+     "h": 12.0,
+     "price": 59,
+     "variants": {
+      "default": 19294
+     }
+    },
+    {
+     "id": "10x10",
+     "label": "10″ × 10″",
+     "w": 10.0,
+     "h": 10.0,
+     "price": 59,
+     "variants": {
+      "default": 19296
+     }
+    },
+    {
+     "id": "9x12",
+     "label": "9″ × 12″",
+     "w": 9.0,
+     "h": 12.0,
+     "price": 59,
+     "variants": {
+      "default": 19295
+     }
+    },
+    {
+     "id": "12x12",
+     "label": "12″ × 12″",
+     "w": 12.0,
+     "h": 12.0,
+     "price": 59,
+     "variants": {
+      "default": 823
+     }
+    },
+    {
+     "id": "11x14",
+     "label": "11″ × 14″",
+     "w": 11.0,
+     "h": 14.0,
+     "price": 59,
+     "variants": {
+      "default": 19298
+     }
+    },
+    {
+     "id": "12x16",
+     "label": "12″ × 16″",
+     "w": 12.0,
+     "h": 16.0,
+     "price": 59,
+     "variants": {
+      "default": 5
+     }
+    },
+    {
+     "id": "14x14",
+     "label": "14″ × 14″",
+     "w": 14.0,
+     "h": 14.0,
+     "price": 59,
+     "variants": {
+      "default": 19302
+     }
+    },
+    {
+     "id": "10x20",
+     "label": "10″ × 20″",
+     "w": 10.0,
+     "h": 20.0,
+     "price": 69,
+     "variants": {
+      "default": 19297
+     }
+    },
+    {
+     "id": "12x18",
+     "label": "12″ × 18″",
+     "w": 12.0,
+     "h": 18.0,
+     "price": 59,
+     "variants": {
+      "default": 19299
+     }
+    },
+    {
+     "id": "16x16",
+     "label": "16″ × 16″",
+     "w": 16.0,
+     "h": 16.0,
+     "price": 69,
+     "variants": {
+      "default": 824
+     }
+    },
+    {
+     "id": "12x24",
+     "label": "12″ × 24″",
+     "w": 12.0,
+     "h": 24.0,
+     "price": 69,
+     "variants": {
+      "default": 19300
+     }
+    },
+    {
+     "id": "16x20",
+     "label": "16″ × 20″",
+     "w": 16.0,
+     "h": 20.0,
+     "price": 69,
+     "variants": {
+      "default": 6
+     }
+    },
+    {
+     "id": "18x18",
+     "label": "18″ × 18″",
+     "w": 18.0,
+     "h": 18.0,
+     "price": 79,
+     "variants": {
+      "default": 19306
+     }
+    },
+    {
+     "id": "16x24",
+     "label": "16″ × 24″",
+     "w": 16.0,
+     "h": 24.0,
+     "price": 79,
+     "variants": {
+      "default": 19303
+     }
+    },
+    {
+     "id": "20x20",
+     "label": "20″ × 20″",
+     "w": 20.0,
+     "h": 20.0,
+     "price": 89,
+     "variants": {
+      "default": 19308
+     }
+    },
+    {
+     "id": "12x36",
+     "label": "12″ × 36″",
+     "w": 12.0,
+     "h": 36.0,
+     "price": 119,
+     "variants": {
+      "default": 19301
+     }
+    },
+    {
+     "id": "18x24",
+     "label": "18″ × 24″",
+     "w": 18.0,
+     "h": 24.0,
+     "price": 79,
+     "variants": {
+      "default": 7
+     }
+    },
+    {
+     "id": "18x26",
+     "label": "18″ × 26″",
+     "w": 18.0,
+     "h": 26.0,
+     "price": 89,
+     "variants": {
+      "default": 19307
+     }
+    },
+    {
+     "id": "20x24",
+     "label": "20″ × 24″",
+     "w": 20.0,
+     "h": 24.0,
+     "price": 89,
+     "variants": {
+      "default": 19309
+     }
+    },
+    {
+     "id": "16x32",
+     "label": "16″ × 32″",
+     "w": 16.0,
+     "h": 32.0,
+     "price": 129,
+     "variants": {
+      "default": 19304
+     }
+    },
+    {
+     "id": "20x28",
+     "label": "20″ × 28″",
+     "w": 20.0,
+     "h": 28.0,
+     "price": 89,
+     "variants": {
+      "default": 19310
+     }
+    },
+    {
+     "id": "24x24",
+     "label": "24″ × 24″",
+     "w": 24.0,
+     "h": 24.0,
+     "price": 109,
+     "variants": {
+      "default": 19314
+     }
+    },
+    {
+     "id": "20x30",
+     "label": "20″ × 30″",
+     "w": 20.0,
+     "h": 30.0,
+     "price": 89,
+     "variants": {
+      "default": 19311
+     }
+    },
+    {
+     "id": "26x26",
+     "label": "26″ × 26″",
+     "w": 26.0,
+     "h": 26.0,
+     "price": 129,
+     "variants": {
+      "default": 19318
+     }
+    },
+    {
+     "id": "24x30",
+     "label": "24″ × 30″",
+     "w": 24.0,
+     "h": 30.0,
+     "price": 119,
+     "variants": {
+      "default": 19315
+     }
+    },
+    {
+     "id": "16x48",
+     "label": "16″ × 48″",
+     "w": 16.0,
+     "h": 48.0,
+     "price": 149,
+     "variants": {
+      "default": 19305
+     }
+    },
+    {
+     "id": "24x32",
+     "label": "24″ × 32″",
+     "w": 24.0,
+     "h": 32.0,
+     "price": 119,
+     "variants": {
+      "default": 19316
+     }
+    },
+    {
+     "id": "28x28",
+     "label": "28″ × 28″",
+     "w": 28.0,
+     "h": 28.0,
+     "price": 139,
+     "variants": {
+      "default": 19320
+     }
+    },
+    {
+     "id": "20x40",
+     "label": "20″ × 40″",
+     "w": 20.0,
+     "h": 40.0,
+     "price": 139,
+     "variants": {
+      "default": 19312
+     }
+    },
+    {
+     "id": "24x36",
+     "label": "24″ × 36″",
+     "w": 24.0,
+     "h": 36.0,
+     "price": 129,
+     "variants": {
+      "default": 825
+     }
+    },
+    {
+     "id": "30x30",
+     "label": "30″ × 30″",
+     "w": 30.0,
+     "h": 30.0,
+     "price": 149,
+     "variants": {
+      "default": 19322
+     }
+    },
+    {
+     "id": "32x32",
+     "label": "32″ × 32″",
+     "w": 32.0,
+     "h": 32.0,
+     "price": 129,
+     "variants": {
+      "default": 19325
+     }
+    },
+    {
+     "id": "26x40",
+     "label": "26″ × 40″",
+     "w": 26.0,
+     "h": 40.0,
+     "price": 209,
+     "variants": {
+      "default": 19319
+     }
+    },
+    {
+     "id": "28x40",
+     "label": "28″ × 40″",
+     "w": 28.0,
+     "h": 40.0,
+     "price": 169,
+     "variants": {
+      "default": 19321
+     }
+    },
+    {
+     "id": "24x48",
+     "label": "24″ × 48″",
+     "w": 24.0,
+     "h": 48.0,
+     "price": 169,
+     "variants": {
+      "default": 19317
+     }
+    },
+    {
+     "id": "20x60",
+     "label": "20″ × 60″",
+     "w": 20.0,
+     "h": 60.0,
+     "price": 239,
+     "variants": {
+      "default": 19313
+     }
+    },
+    {
+     "id": "30x40",
+     "label": "30″ × 40″",
+     "w": 30.0,
+     "h": 40.0,
+     "price": 159,
+     "variants": {
+      "default": 19323
+     }
+    },
+    {
+     "id": "36x36",
+     "label": "36″ × 36″",
+     "w": 36.0,
+     "h": 36.0,
+     "price": 209,
+     "variants": {
+      "default": 19327
+     }
+    },
+    {
+     "id": "37x37",
+     "label": "37″ × 37″",
+     "w": 37.0,
+     "h": 37.0,
+     "price": 329,
+     "variants": {
+      "default": 19328
+     }
+    },
+    {
+     "id": "32x48",
+     "label": "32″ × 48″",
+     "w": 32.0,
+     "h": 48.0,
+     "price": 219,
+     "variants": {
+      "default": 19326
+     }
+    },
+    {
+     "id": "30x60",
+     "label": "30″ × 60″",
+     "w": 30.0,
+     "h": 60.0,
+     "price": 269,
+     "variants": {
+      "default": 19324
+     }
+    },
+    {
+     "id": "40x55",
+     "label": "40″ × 55″",
+     "w": 40.0,
+     "h": 55.0,
+     "price": 289,
+     "variants": {
+      "default": 19329
+     }
+    },
+    {
+     "id": "40x60",
+     "label": "40″ × 60″",
+     "w": 40.0,
+     "h": 60.0,
+     "price": 329,
+     "variants": {
+      "default": 19330
+     }
+    }
+   ],
+   "description": "1.25″ stretcher bars, fade-resistant inks, mirrored edges. Ready to hang."
+  },
+  {
+   "id": "metal",
+   "label": "Glossy metal print",
+   "short": "Metal",
+   "minPpi": 150,
+   "placement": "default",
+   "technique": "digital",
+   "blurb": "Dye-sublimated aluminum with a high-gloss finish and float mount.",
+   "printfulProduct": 588,
+   "shipping": 15,
+   "sizes": [
+    {
+     "id": "8x10",
+     "label": "8″ × 10″",
+     "w": 8.0,
+     "h": 10.0,
+     "price": 89,
+     "variants": {
+      "White": 15134
+     }
+    },
+    {
+     "id": "12x12",
+     "label": "12″ × 12″",
+     "w": 12.0,
+     "h": 12.0,
+     "price": 99,
+     "variants": {
+      "White": 15135
+     }
+    },
+    {
+     "id": "11x14",
+     "label": "11″ × 14″",
+     "w": 11.0,
+     "h": 14.0,
+     "price": 109,
+     "variants": {
+      "White": 15136
+     }
+    },
+    {
+     "id": "16x20",
+     "label": "16″ × 20″",
+     "w": 16.0,
+     "h": 20.0,
+     "price": 159,
+     "variants": {
+      "White": 15137
+     }
+    },
+    {
+     "id": "20x30",
+     "label": "20″ × 30″",
+     "w": 20.0,
+     "h": 30.0,
+     "price": 289,
+     "variants": {
+      "White": 15138
+     }
+    },
+    {
+     "id": "24x36",
+     "label": "24″ × 36″",
+     "w": 24.0,
+     "h": 36.0,
+     "price": 409,
+     "variants": {
+      "White": 15139
+     }
+    }
+   ],
+   "description": "Dye-sublimated aluminum with a high-gloss finish and float mount."
+  }
+ ],
+ "upscale": {
+  "factor": 4,
+  "maxLongEdge": 12000,
+  "note": "Sizes beyond what the real pixels support are offered when an AI upscale (Real-ESRGAN x4) would cover them. The first order for such a size triggers the upscale in the Worker; the result is saved to R2 (enhanced/<sku>.png) and reused."
+ }
+}
