@@ -20,6 +20,7 @@ enabled = true
 [vars]
 ALLOWED_ORIGIN = "https://arttra.art"
 ARTWORKS_URL   = "https://arttra.art/data/artworks.json"
+PRODUCTS_URL   = "https://arttra.art/data/products.json"
 SUCCESS_URL    = "https://arttra.art/success.html"
 CANCEL_URL     = "https://arttra.art/?checkout=cancelled"
 DEV            = "false"
@@ -48,9 +49,6 @@ PRINTFUL_VARIANT_LANDSCAPE = "7"
 # shapes are filled; set to the square as a safe default.
 PRINTFUL_DEFAULT_VARIANT_ID = "19306"
 
-# Public URL of a print-resolution file used when an artwork has no per-SKU
-# printUrl in the catalog. Points at an already-uploaded R2 print file.
-PRINTFUL_FALLBACK_PRINT_URL = "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png"
 
 # "true" auto-confirms the Printful draft for fulfillment. Keep "false" until
 # you've eyeballed a draft order in the Printful dashboard and verified the v2
@@ -64,3 +62,18 @@ PRINTFUL_AUTO_CONFIRM = "false"
 # per-shape — revisit then. Check valid values in the v2 catalog per variant.
 PRINTFUL_PLACEMENT = "default"
 PRINTFUL_TECHNIQUE = "digital"
+
+# --- On-demand AI upscale (large orders) --------------------------------------
+# When a paid order includes a size bigger than the piece's real pixels print
+# sharp, the Worker runs Real-ESRGAN on Replicate once, saves the result to R2
+# (enhanced/<sku>.png) and uses it for this and every later order.
+# Secret needed: `wrangler secret put REPLICATE_API_TOKEN`
+# (optional `UPSCALE_CALLBACK_SECRET`; defaults to STRIPE_WEBHOOK_SECRET).
+R2_PUBLIC_BASE        = "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev"
+WORKER_URL            = "https://arttra-checkout.xp76cpmjsg.workers.dev"
+REPLICATE_MODEL       = "nightmareai/real-esrgan"
+UPSCALE_MAX_LONG_EDGE = "12000"
+
+[[r2_buckets]]
+binding     = "ART_BUCKET"
+bucket_name = "artimages"
