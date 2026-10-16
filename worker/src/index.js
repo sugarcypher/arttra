@@ -1,7 +1,12 @@
 /**
- * arttra.art checkout Worker — slices 1 + 2.
+ * arttra.art checkout Worker — slices 1 + 2 + size/material options.
  *
- *   POST /checkout   body: { items: [{ id, qty }] }       -> { url }
+ *   POST /checkout   body: { items: [{ id, option, qty }] } -> { url }
+ *                    `option` is "material:size[:frame]" (e.g. "canvas:24x36",
+ *                    "framed:18x24:black"). It is validated against
+ *                    data/products.json + the artwork's real resolution by the
+ *                    SAME shared/options.js the storefront uses. Missing option
+ *                    -> the artwork's default option (legacy carts keep working).
  *   POST /webhook    Stripe -> on checkout.session.completed, creates a
  *                    Printful v2 draft order (auto-confirms if env says so).
  *
@@ -23,10 +28,13 @@
  *   PRINTFUL_AUTO_CONFIRM         "true" to auto-confirm the draft order for
  *                                 fulfillment. Default false (draft stays for
  *                                 human review in Printful Dashboard).
- *   PRINTFUL_FALLBACK_PRINT_URL   public URL of a print file used when an
- *                                 artwork has no per-SKU `printUrl` in the
- *                                 catalog (slice 3 publishes those to R2).
+ *   REPLICATE_API_TOKEN (secret)  enables on-demand AI upscaling for sizes
+ *                                 beyond a piece's real pixels; result saved
+ *                                 to R2 (binding ART_BUCKET) as
+ *                                 enhanced/<sku>.png and reused.
  */
+
+import { resolveOption, defaultOptionKey } from "../../shared/options.js";
 
 const MAX_ITEMS = 50;
 const MAX_QTY = 20;
@@ -46,7 +54,7 @@ export default {
     const { pathname } = new URL(request.url);
 
     if (request.method === "GET" && pathname === "/") {
-      return new Response("arttra checkout worker — POST /checkout", {
+      return new Response("arttra checkout worker — POST /checkout (options-v2)", {
         status: 200,
         headers: { "Content-Type": "text/plain", ...corsHeaders(origin) },
       });
@@ -65,6 +73,11 @@ export default {
         return json({ error: "Request too large." }, 413, origin);
       }
       return handleCheckout(request, env, origin);
+    }
+
+    // Replicate calls back here when an on-demand AI upscale finishes.
+    if (request.method === "POST" && pathname === "/upscale-done") {
+      return handleUpscaleDone(request, env);
     }
 
     // Stripe webhook — no CORS (Stripe is server-to-server, not browser).
@@ -148,9 +161,9 @@ async function handleCheckout(request, env, origin) {
   if (items.length === 0) return json({ error: "Your cart is empty." }, 400, origin);
   if (items.length > MAX_ITEMS) return json({ error: "Too many items." }, 400, origin);
 
-  let catalog;
+  let catalog, products;
   try {
-    catalog = await loadCatalog(env);
+    [catalog, products] = await Promise.all([loadCatalog(env), loadProducts(env)]);
   } catch {
     return json({ error: "Could not load the catalog. Please try again." }, 502, origin);
   }
@@ -163,8 +176,16 @@ async function handleCheckout(request, env, origin) {
     const art = catalog.get(id);
     // Reject unknown ids loudly — silently skipping would mean a $0 order.
     if (!art) return json({ error: "An item is no longer available." }, 400, origin);
-    if (!(art.price > 0)) return json({ error: "An item is not available for online purchase." }, 400, origin);
-    lineItems.push({ qty, sku: id, name: art.title, amount: Math.round(art.price * 100), image: art.image });
+    const optKey = String((raw && raw.option) || "") || defaultOptionKey(art.raw, products);
+    // Price, Printful variant and orientation all come from the server-side
+    // product table; an option the artwork can't print sharp is rejected.
+    const opt = resolveOption(art.raw, products, optKey);
+    if (!opt) return json({ error: `"${art.title}" isn't available in that size or material.` }, 400, origin);
+    lineItems.push({
+      qty, sku: id, name: `${art.title} \u2014 ${opt.label}`, amount: Math.round(opt.price * 100), image: art.image,
+      option: opt.key, variantId: opt.variantId, orientation: opt.orientation,
+      placement: opt.placement, technique: opt.technique, needsUpscale: opt.needsUpscale, shipping: opt.shipping,
+    });
   }
 
   try {
@@ -198,9 +219,23 @@ async function loadCatalog(env) {
       // landscape) the order maps to.
       w: Number(pd.pixelWidth || pd.widthInches) || 0,
       h: Number(pd.pixelHeight || pd.heightInches) || 0,
+      // Full record: shared/options.js reads sourcePixels / printDimensions.
+      raw: a,
+      sourceFile: (a && a.sourceFile) || "",
+      canvasCropped: !!(a && a.canvasCropped),
     });
   }
   return map;
+}
+
+// data/products.json -> sizes, materials, prices, Printful variant ids.
+async function loadProducts(env) {
+  const src = env.PRODUCTS_URL || "https://arttra.art/data/products.json";
+  const res = await fetch(src, { cf: { cacheTtl: 300, cacheEverything: true } });
+  if (!res.ok) throw new Error("products unavailable");
+  const data = await res.json();
+  if (!data || !Array.isArray(data.materials)) throw new Error("products malformed");
+  return data;
 }
 
 function absoluteUrl(path, env) {
@@ -217,14 +252,18 @@ async function createCheckoutSession(env, lineItems) {
   form.set("cancel_url", env.CANCEL_URL || "https://arttra.art/?checkout=cancelled");
 
   // Printful needs a shipping address — collect it.
-  for (const country of ["US", "CA", "GB", "AU", "DE", "FR"]) {
+  // Printful ships worldwide; this list covers its main markets. Extend freely.
+  for (const country of ["US", "CA", "GB", "AU", "NZ", "IE", "DE", "FR", "NL", "BE", "LU", "AT", "CH",
+    "IT", "ES", "PT", "DK", "SE", "NO", "FI", "PL", "CZ", "JP", "SG", "HK", "KR", "MX", "AE", "IL"]) {
     form.append("shipping_address_collection[allowed_countries][]", country);
   }
 
   // Flat shipping: covers Printful's per-order shipping cost (~$10-15). Set
   // SHIPPING_FLAT_USD on the Worker to enable. When unset, shipping is free,
   // which is fine for test mode but loses money on live orders.
-  const shipUsd = parseFloat(env.SHIPPING_FLAT_USD || "0");
+  // Shipping: the largest per-item rate in products.json (big canvas ships
+  // dearer than a rolled print), never below SHIPPING_FLAT_USD.
+  const shipUsd = Math.max(parseFloat(env.SHIPPING_FLAT_USD || "0") || 0, ...lineItems.map(li => Number(li.shipping) || 0));
   if (shipUsd > 0) {
     const cents = Math.round(shipUsd * 100);
     form.set("shipping_options[0][shipping_rate_data][type]", "fixed_amount");
@@ -242,6 +281,16 @@ async function createCheckoutSession(env, lineItems) {
     if (li.image) form.set(`${p}[price_data][product_data][images][0]`, li.image);
     // SKU rides along so slice 2's webhook can map the order to Printful.
     form.set(`${p}[price_data][product_data][metadata][sku]`, li.sku);
+    // The resolved option rides along so the webhook orders the exact
+    // Printful variant the buyer paid for.
+    if (li.option) {
+      form.set(`${p}[price_data][product_data][metadata][option]`, li.option);
+      form.set(`${p}[price_data][product_data][metadata][variant_id]`, String(li.variantId));
+      form.set(`${p}[price_data][product_data][metadata][orientation]`, li.orientation);
+      form.set(`${p}[price_data][product_data][metadata][placement]`, li.placement);
+      form.set(`${p}[price_data][product_data][metadata][technique]`, li.technique);
+      if (li.needsUpscale) form.set(`${p}[price_data][product_data][metadata][needs_upscale]`, "1");
+    }
   });
 
   // Idempotency: a double-click within the same minute reuses one session
@@ -397,7 +446,6 @@ async function onCheckoutSessionCompleted(session, env) {
   const lineItems = await stripeFetchLineItems(session.id, env);
   if (!lineItems.length) throw new Error("no line items on session");
 
-  const fallbackPrint = env.PRINTFUL_FALLBACK_PRINT_URL || "";
 
   // Per-SKU print-file URLs ride along in the catalog (slice 3: R2-hosted).
   // Load once; if it's unavailable we still proceed via the fallback URL so a
@@ -410,24 +458,52 @@ async function onCheckoutSessionCompleted(session, env) {
     catalog = new Map();
   }
 
+  // On-demand AI upscale: any line whose size needs more than the real pixels
+  // uses the saved enhanced file (R2 enhanced/<sku>.png). If it isn't there
+  // yet, kick off one Real-ESRGAN job per artwork and stop; /upscale-done
+  // re-runs this function for the session once the file is saved.
+  const enhancedUrl = {};
+  const pendingUpscale = [];
+  for (const li of lineItems) {
+    const meta = (li.price && li.price.product && li.price.product.metadata) || {};
+    if (meta.needs_upscale !== "1" || !meta.sku || enhancedUrl[meta.sku] !== undefined) continue;
+    const url = await enhancedFileUrl(env, meta.sku);
+    enhancedUrl[meta.sku] = url || "";
+    if (!url) pendingUpscale.push(meta.sku);
+  }
+  if (pendingUpscale.length && env.REPLICATE_API_TOKEN && env.ART_BUCKET) {
+    let started = 0;
+    for (const sku of pendingUpscale) {
+      const entry = catalog.get(sku);
+      if (!entry || entry.canvasCropped) continue;
+      if (await startUpscale(env, sku, entry, session.id)) started++;
+    }
+    if (started) return; // fulfillment resumes from /upscale-done
+  }
+
   const printfulItems = [];
   for (const [i, li] of lineItems.entries()) {
-    const sku = (li.price && li.price.product && li.price.product.metadata && li.price.product.metadata.sku) ||
-      (li.price && li.price.metadata && li.price.metadata.sku) || "";
+    const meta = (li.price && li.price.product && li.price.product.metadata) || (li.price && li.price.metadata) || {};
+    const sku = meta.sku || "";
     const name = (li.price && li.price.product && li.price.product.name) || li.description || "Artwork";
     const entry = catalog.get(sku);
-    const printUrl = (entry && entry.printUrl) || fallbackPrint;
-    if (!printUrl) throw new Error(`no print file for ${sku || name} and no PRINTFUL_FALLBACK_PRINT_URL set`);
+    // Enhanced (AI-upscaled) file when this size needed one, else the print file.
+    // Never substitute another artwork's file: a missing print file is an error
+    // (Stripe retries; the paid order is visible in the dashboard).
+    const printUrl = (meta.needs_upscale === "1" && enhancedUrl[sku]) || (entry && entry.printUrl) || "";
+    if (!printUrl) throw new Error(`no print file for ${sku || name}`);
     // Map each artwork to a Printful variant by its shape, so square art goes
     // on a square product, portrait on portrait, landscape on landscape.
+    // Option orders (metadata set server-side at /checkout) carry their exact
+    // variant. Legacy orders without one fall back to the per-shape mapping.
     const bucket = aspectBucket(entry && entry.w, entry && entry.h);
-    const variantId = variantForBucket(env, bucket);
+    const variantId = Number(meta.variant_id) || variantForBucket(env, bucket);
     if (!variantId) {
       throw new Error(`no Printful variant for ${bucket} shape (set PRINTFUL_VARIANT_${bucket.toUpperCase()} or PRINTFUL_DEFAULT_VARIANT_ID)`);
     }
     // A rectangular variant prints either way up; orientation picks which.
     // Portrait art -> vertical, landscape -> horizontal. Square is symmetric.
-    const orientation = bucket === "landscape" ? "horizontal" : "vertical";
+    const orientation = meta.orientation || (bucket === "landscape" ? "horizontal" : "vertical");
     printfulItems.push({
       source: "catalog",
       catalog_variant_id: variantId,
@@ -437,8 +513,8 @@ async function onCheckoutSessionCompleted(session, env) {
           // placement + technique are PRODUCT-SPECIFIC. Override per product via
           // env (canvas = placement "default", technique "digital"). Orientation
           // selects vertical/horizontal print on a rectangular variant.
-          placement: env.PRINTFUL_PLACEMENT || "default",
-          technique: env.PRINTFUL_TECHNIQUE || "digital",
+          placement: meta.placement || env.PRINTFUL_PLACEMENT || "default",
+          technique: meta.technique || env.PRINTFUL_TECHNIQUE || "digital",
           orientation,
           layers: [{ type: "file", url: printUrl }],
         },
@@ -465,6 +541,101 @@ async function onCheckoutSessionCompleted(session, env) {
   if (String(env.PRINTFUL_AUTO_CONFIRM || "").toLowerCase() === "true" && draft && draft.id) {
     await printfulConfirmDraft(env, draft.id);
   }
+}
+
+// --- On-demand AI upscale (Replicate Real-ESRGAN -> R2) -----------------------
+
+function enhancedKey(sku) { return `enhanced/${sku}.png`; }
+
+async function enhancedFileUrl(env, sku) {
+  if (!env.ART_BUCKET || !env.R2_PUBLIC_BASE) return "";
+  const head = await env.ART_BUCKET.head(enhancedKey(sku));
+  return head ? `${env.R2_PUBLIC_BASE.replace(/\/+$/, "")}/${enhancedKey(sku)}` : "";
+}
+
+function sourceUrl(env, entry) {
+  const base = (env.SOURCE_BASE_URL || "https://raw.githubusercontent.com/sugarcypher/arttra/main/gallery-source").replace(/\/+$/, "");
+  return `${base}/${encodeURIComponent(entry.sourceFile)}`;
+}
+
+async function startUpscale(env, sku, entry, sessionId) {
+  if (!entry.sourceFile) return false;
+  // One job per artwork at a time: a marker in R2 dedupes concurrent orders.
+  const marker = `enhancing/${sku}.json`;
+  const existing = await env.ART_BUCKET.get(marker);
+  const sessions = existing ? (await existing.json()).sessions || [] : [];
+  if (!sessions.includes(sessionId)) sessions.push(sessionId);
+  if (existing) {
+    await env.ART_BUCKET.put(marker, JSON.stringify({ sessions, started: Date.now() }));
+    return true;
+  }
+  const w = Number(entry.raw && entry.raw.sourcePixels && entry.raw.sourcePixels.w) || 0;
+  const h = Number(entry.raw && entry.raw.sourcePixels && entry.raw.sourcePixels.h) || 0;
+  const maxLong = Number(env.UPSCALE_MAX_LONG_EDGE || 12000);
+  const scale = Math.max(2, Math.min(4, Math.floor(maxLong / Math.max(w, h, 1))));
+  const token = await hmacSha256Hex(env.UPSCALE_CALLBACK_SECRET || env.STRIPE_WEBHOOK_SECRET, sku);
+  const callback = `${(env.WORKER_URL || "").replace(/\/+$/, "")}/upscale-done?sku=${encodeURIComponent(sku)}&t=${token}`;
+  const model = await fetch(`https://api.replicate.com/v1/models/${env.REPLICATE_MODEL || "nightmareai/real-esrgan"}`, {
+    headers: { Authorization: "Bearer " + env.REPLICATE_API_TOKEN },
+  }).then(r => r.json()).catch(() => ({}));
+  const version = model && model.latest_version && model.latest_version.id;
+  if (!version) return false;
+  const res = await fetch("https://api.replicate.com/v1/predictions", {
+    method: "POST",
+    headers: { Authorization: "Bearer " + env.REPLICATE_API_TOKEN, "Content-Type": "application/json" },
+    body: JSON.stringify({
+      version,
+      input: { image: sourceUrl(env, entry), scale, face_enhance: false },
+      webhook: callback,
+      webhook_events_filter: ["completed"],
+    }),
+  });
+  if (!res.ok) return false;
+  await env.ART_BUCKET.put(marker, JSON.stringify({ sessions, started: Date.now() }));
+  return true;
+}
+
+async function handleUpscaleDone(request, env) {
+  const reply = (status, msg) => new Response(msg, { status, headers: { "Content-Type": "text/plain", ...securityHeaders() } });
+  const u = new URL(request.url);
+  const sku = u.searchParams.get("sku") || "";
+  if (!ID_PATTERN.test(sku)) return reply(400, "bad sku");
+  const expected = await hmacSha256Hex(env.UPSCALE_CALLBACK_SECRET || env.STRIPE_WEBHOOK_SECRET, sku);
+  if (!timingSafeEqualHex(u.searchParams.get("t") || "", expected)) return reply(403, "bad token");
+  let body;
+  try { body = await request.json(); } catch { return reply(400, "bad json"); }
+  // Don't trust the callback body: re-read the prediction from Replicate.
+  const id = String((body && body.id) || "");
+  if (!/^[a-z0-9]{8,64}$/i.test(id)) return reply(400, "bad id");
+  const pred = await fetch(`https://api.replicate.com/v1/predictions/${id}`, {
+    headers: { Authorization: "Bearer " + env.REPLICATE_API_TOKEN },
+  }).then(r => r.json()).catch(() => ({}));
+  const marker = `enhancing/${sku}.json`;
+  const m = await env.ART_BUCKET.get(marker);
+  const sessions = m ? (await m.json()).sessions || [] : [];
+  if (pred.status === "succeeded") {
+    const out = Array.isArray(pred.output) ? pred.output[0] : pred.output;
+    const img = await fetch(out);
+    if (!img.ok || !img.body) return reply(502, "output fetch failed");
+    // Saved once, reused for every later order of this piece.
+    await env.ART_BUCKET.put(enhancedKey(sku), img.body, { httpMetadata: { contentType: "image/png" } });
+  }
+  await env.ART_BUCKET.delete(marker);
+  // Resume fulfillment for every order that was waiting on this piece. On a
+  // failed upscale the re-run falls back to the standard print file.
+  for (const sid of sessions) {
+    try {
+      const sres = await fetch(`https://api.stripe.com/v1/checkout/sessions/${encodeURIComponent(sid)}`, {
+        headers: { Authorization: "Bearer " + env.STRIPE_SECRET_KEY },
+      });
+      if (!sres.ok) continue;
+      const session = await sres.json();
+      await onCheckoutSessionCompleted(session, { ...env, REPLICATE_API_TOKEN: pred.status === "succeeded" ? env.REPLICATE_API_TOKEN : "" });
+    } catch (e) {
+      console.log("resume failed", sid, e && e.message);
+    }
+  }
+  return reply(200, "ok");
 }
 
 // Classify an artwork's shape from its print dimensions. Thresholds give a
