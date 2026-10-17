@@ -2,222 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>ARTTRA.ART — Original Art</title>
-  <meta name="description" content="Original art shipped worldwide — prints, canvas, photography, and made-to-order editions." />
+  <meta name="description" content="Original art shipped worldwide — large-format fine-art prints, gallery canvas, framed and metal prints, made to order. See every piece at true scale on your wall." />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://arttra-checkout.xp76cpmjsg.workers.dev; media-src 'self' https://merlin-cloudinary.b-cdn.net; base-uri 'self'; form-action 'self' https://checkout.stripe.com; frame-ancestors 'none'; object-src 'none'" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="./assets/images/placeholder-favicon.svg" />
+  <meta name="theme-color" content="#0c0b09" />
+  <meta name="color-scheme" content="dark" />
   <link rel="canonical" href="https://arttra.art/" />
-  <style>
-:root{--ink:#0c0b09;--bg:#0c0b09;--panel:#100f0c;--surface:#16140f;--line:rgba(236,231,221,.14);--border:rgba(236,231,221,.14);--bone:#ece7dd;--text:#ece7dd;--bone-dim:#a59e90;--muted:#a59e90;--gold:#c9a35c;--accent:#c9a35c;--accent2:#c9a35c;--pink:#c9a35c;--max:1280px;--sans:'Manrope',system-ui,sans-serif;--display:'Cormorant Garamond',serif}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--bg);color:var(--text);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-::selection{background:var(--gold);color:var(--ink)}
-.hero{position:relative;min-height:72vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 24px 64px;overflow:hidden}
-.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--ink) 0%,transparent 55%),radial-gradient(900px 500px at 50% 18%,rgba(201,163,92,.06),transparent 70%);pointer-events:none}
-.hero__logo{width:120px;height:120px;object-fit:contain;margin-bottom:24px;position:relative;z-index:1;opacity:.95}
-.hero__title{font-family:var(--display);font-weight:500;font-size:clamp(40px,8vw,84px);letter-spacing:.015em;line-height:1.02;color:var(--bone);position:relative;z-index:1;margin-bottom:18px}
-.hero__sub{font-family:var(--display);font-style:italic;font-size:clamp(1rem,2vw,1.3rem);color:var(--bone-dim);max-width:640px;line-height:1.5;position:relative;z-index:1}
-.hero__video{margin-top:32px;width:min(560px,100%);aspect-ratio:16/9;position:relative;z-index:1;overflow:hidden;border:1px solid var(--line)}
-.catnav{position:sticky;top:0;z-index:50;background:rgba(12,11,9,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.catnav__inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:0;overflow-x:auto;scrollbar-width:none}
-.catnav__inner::-webkit-scrollbar{display:none}
-.catnav__brand{font-family:var(--display);font-weight:600;font-size:1.05rem;letter-spacing:.08em;padding:14px 20px;white-space:nowrap;color:var(--gold);flex-shrink:0}
-.catnav__link{padding:16px 16px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:400;color:var(--bone-dim);white-space:nowrap;cursor:pointer;transition:color .2s;border:0;border-bottom:1px solid transparent;background:transparent;font-family:var(--sans);flex-shrink:0}
-.catnav__link:hover{color:var(--bone)}
-.catnav__link--active{color:var(--bone);border-bottom-color:var(--gold)}
-.catnav__right{margin-left:auto;display:flex;align-items:center;gap:8px;padding-right:16px;flex-shrink:0}
-.catnav__search{padding:8px 14px;border:1px solid var(--line);background:transparent;color:var(--text);font-size:.75rem;letter-spacing:.08em;font-family:var(--sans);width:180px}
-.catnav__search::placeholder{color:var(--bone-dim);text-transform:uppercase;letter-spacing:.16em;font-size:.66rem}
-.catnav__cart{background:none;border:1px solid var(--line);padding:8px 12px;color:var(--bone-dim);cursor:pointer;font-size:14px;position:relative}
-.catnav__badge{position:absolute;top:-4px;right:-4px;background:var(--gold);color:var(--ink);font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.section{max-width:var(--max);margin:0 auto;padding:72px 20px}
-.section__kicker{font-family:var(--sans);font-size:.68rem;font-weight:500;text-transform:uppercase;letter-spacing:.28em;color:var(--gold);margin-bottom:14px}
-.section__title{font-family:var(--display);font-weight:500;font-size:clamp(30px,4.5vw,52px);line-height:1.05;letter-spacing:.01em;margin-bottom:18px}
-.section__lead{font-family:var(--display);font-size:clamp(1.1rem,2vw,1.4rem);color:var(--bone-dim);max-width:820px;line-height:1.6;font-weight:400}
-.worksGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
-.workCard{border:1px solid var(--line);background:transparent;padding:28px;min-height:340px;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.workCard:before{content:'';position:absolute;inset:0;background:radial-gradient(420px 200px at 20% 0%,rgba(201,163,92,.05),transparent 70%);pointer-events:none}
-.workCard>*{position:relative}
-.workCard__tag{font-size:.62rem;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-weight:500;margin-bottom:18px}
-.workCard__title{font-family:var(--display);font-weight:500;font-size:1.6rem;line-height:1.1;margin-bottom:14px}
-.workCard__text{color:var(--bone-dim);font-size:.9rem;line-height:1.7;margin-bottom:18px}
-.workCard__philosophy{border-top:1px solid var(--line);padding-top:16px;color:var(--bone-dim);font-size:.85rem;line-height:1.7;margin-top:auto;font-style:italic;font-family:var(--display)}
-.workCard__actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
-.btn{padding:.8rem 1.4rem;border:1px solid var(--line);background:transparent;color:var(--bone);cursor:pointer;font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;transition:background .3s,color .3s,border-color .3s}
-.btn:hover{border-color:var(--bone);background:var(--bone);color:var(--ink)}
-.btn--accent{background:transparent;border-color:var(--gold);color:var(--gold)}
-.btn--accent:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-.philosophyPanel{margin-top:18px;border:1px solid var(--line);background:transparent;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.philosophyPanel p{color:var(--bone-dim);font-size:.9rem;line-height:1.85}
-.orderingPanel{margin-top:36px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(201,163,92,.05),transparent);padding:28px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
-.orderingPanel h3{font-family:var(--display);font-weight:500;font-size:1.6rem;margin-bottom:10px}
-.orderingPanel p,.orderingPanel li{color:var(--bone-dim);font-size:.9rem;line-height:1.75}
-.orderingPanel ul{padding-left:18px}
-.colorbar{max-width:var(--max);margin:0 auto;padding:14px 20px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.colorbar__label{font-size:.62rem;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:var(--bone-dim);margin-right:6px}
-.cpill{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--bone-dim);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .2s;font-family:var(--sans)}
-.cpill:hover{color:var(--bone)}
-.cpill--active{color:var(--bone);border-color:var(--gold);background:rgba(201,163,92,.1)}
-.cpill__dot{width:10px;height:10px;border-radius:50%;background:var(--c);border:1px solid rgba(236,231,221,.2)}
-.gallery{max-width:var(--max);margin:0 auto;padding:8px 16px}
-.gallery__meta{padding:10px 4px;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim)}
-.cardsGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.card{border:1px solid var(--line);background:var(--panel);overflow:hidden;cursor:pointer;transition:transform .25s ease,border-color .25s ease;position:relative}
-.card:hover{transform:translateY(-3px);border-color:rgba(201,163,92,.4)}
-.card__imgWrap{width:100%;aspect-ratio:1;background:#000;position:relative;overflow:hidden}
-.card__img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease,filter .35s}
-.card:hover .card__img{transform:scale(1.04);filter:brightness(1.08)}
-.card__category{position:absolute;top:10px;left:10px;background:rgba(12,11,9,.7);backdrop-filter:blur(6px);color:var(--bone);font-size:.58rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:4px 9px}
-.card__body{padding:14px}
-.card__title{font-family:var(--display);font-weight:500;font-size:1.15rem;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.card__sku{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-dim);margin-top:3px}
-.card__sub{margin-top:6px;color:var(--bone-dim);font-size:.72rem;letter-spacing:.04em;display:flex;justify-content:space-between;align-items:center}
-.card__swatches{display:flex;gap:4px}
-.swatch{width:10px;height:10px;border-radius:50%;background:var(--c);border:1px solid rgba(236,231,221,.15)}
-.emptyState{grid-column:1/-1;text-align:center;padding:72px 20px;color:var(--bone-dim);font-family:var(--display);font-style:italic;font-size:1.1rem}
-.overlay{position:fixed;inset:0;background:rgba(6,5,4,.72);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:18px;z-index:90}
-.overlay[hidden]{display:none!important}
-.modal{width:min(980px,100%);background:var(--panel);border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden;position:relative}
-.modal__close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--bone-dim);font-size:28px;cursor:pointer;z-index:5;transition:color .2s}
-.modal__close:hover{color:var(--bone)}
-.modal__body{display:grid;grid-template-columns:1fr 1fr}
-.modal__media{background:#000;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--line)}
-.modal__image{width:100%;height:100%;object-fit:contain;max-height:600px}
-.modal__content{padding:32px;overflow-y:auto;max-height:600px}
-.modal__kicker{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.modal__title{font-family:var(--display);font-weight:500;font-size:2rem;line-height:1.1;margin-bottom:10px}
-.modal__description{color:var(--bone-dim);font-size:.9rem;line-height:1.7;margin-bottom:16px}
-.modal__badges{display:flex;gap:8px;margin-bottom:16px}
-.badge{font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:5px 11px;border:1px solid var(--line);background:transparent;color:var(--bone-dim)}
-.modal__colors{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-.colorSwatch{display:flex;align-items:center;gap:6px}
-.colorSwatch__dot{width:14px;height:14px;border-radius:50%;background:var(--c);border:1px solid rgba(236,231,221,.15)}
-.colorSwatch__hex{font-size:.66rem;letter-spacing:.08em;color:var(--bone-dim)}
-.priceRow{margin-bottom:14px}
-.modal__options{margin-bottom:14px}
-.opt{margin-bottom:14px}
-.opt__label{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:6px}
-.opt__chips{display:flex;flex-wrap:wrap;gap:6px}
-.opt__desc{font-size:.72rem;color:var(--bone-dim);margin-top:6px;line-height:1.5}
-.chip{font:inherit;font-size:.72rem;letter-spacing:.06em;padding:7px 12px;border:1px solid var(--line);background:transparent;color:var(--bone);cursor:pointer;transition:border-color .2s,color .2s}
-.chip:hover{border-color:var(--gold)}
-.chip--on{border-color:var(--gold);color:var(--gold)}
-.opt__sizes{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px;max-height:190px;overflow-y:auto;padding-right:2px}
-.size{font:inherit;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:8px 10px;border:1px solid var(--line);background:transparent;color:var(--bone);cursor:pointer;font-size:.76rem;text-align:left;transition:border-color .2s}
-.size:hover{border-color:var(--gold)}
-.size--on{border-color:var(--gold);background:rgba(201,163,92,.08)}
-.size__price{font-size:.68rem;color:var(--bone-dim)}
-.size--on .size__price{color:var(--gold)}
-.priceRow__label{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:4px}
-.priceRow__value{font-family:var(--display);font-size:1.9rem;font-weight:500}
-.actionRow{display:flex;gap:8px;margin-bottom:16px}
-.fineprint__line{font-size:.72rem;letter-spacing:.04em;color:var(--bone-dim);margin-bottom:4px}
-.site-footer{max-width:var(--max);margin:56px auto 0;padding:32px 20px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);gap:24px;font-size:.8rem;color:var(--bone-dim);line-height:1.7}
-.site-footer__title{font-family:var(--display);font-weight:500;color:var(--bone);margin-bottom:6px;font-size:1.05rem;letter-spacing:.02em}
-.drawer{position:fixed;right:16px;top:16px;bottom:16px;width:min(400px,calc(100vw - 32px));background:var(--panel);border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.6);z-index:80;overflow:hidden;display:flex;flex-direction:column}
-.drawer[hidden]{display:none!important}
-.drawer__header{padding:16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
-.drawer__title{font-family:var(--display);font-weight:500;font-size:1.3rem}
-.drawer__body{flex:1;overflow-y:auto;padding:16px}
-.drawer__footer{padding:16px;border-top:1px solid var(--line)}
-.cartItem{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
-.cartItem__img{width:60px;height:60px;overflow:hidden;border:1px solid var(--line)}
-.cartItem__img img{width:100%;height:100%;object-fit:cover}
-.cartItem__main{flex:1}
-.cartItem__title{font-family:var(--display);font-weight:500;font-size:1rem}
-.cartItem__sku{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim);margin-top:2px}
-.cartItem__meta{font-size:.72rem;color:var(--bone-dim);display:flex;justify-content:space-between;margin-top:4px}
-.qtyRow{display:flex;align-items:center;gap:8px;margin-top:8px}
-.qtyBtn{width:26px;height:26px;border:1px solid var(--line);background:transparent;color:var(--bone);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:border-color .2s}
-.qtyBtn:hover{border-color:var(--gold)}
-.qtyVal{font-size:.8rem;font-weight:600;min-width:20px;text-align:center}
-.totals{margin-bottom:12px}
-.totals__row{display:flex;justify-content:space-between;font-size:.85rem;padding:5px 0;color:var(--bone-dim)}
-.totals__value{font-weight:600;color:var(--bone)}
-.btn--full{width:100%;text-align:center;display:block}
-.btn--primary{background:var(--gold);border-color:var(--gold);color:var(--ink)}
-.btn--primary:hover{background:transparent;color:var(--gold);border-color:var(--gold)}
-.iconbtn{background:none;border:none;cursor:pointer;color:var(--bone-dim);font-size:18px}
-.card__img,.modal__image,.hero__logo{-webkit-user-drag:none;-webkit-touch-callout:none;pointer-events:none}
-.card__imgWrap,.modal__media{pointer-events:auto}
-@media(max-width:900px){.worksGrid,.philosophyPanel,.orderingPanel{grid-template-columns:1fr}.modal__body{grid-template-columns:1fr}.modal__media{border-right:none;border-bottom:1px solid var(--line);min-height:280px}.site-footer{grid-template-columns:1fr}.cardsGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:480px){.cardsGrid{grid-template-columns:1fr}.catnav__brand{padding:14px 12px}.catnav__link{padding:14px 10px;font-size:.66rem}.catnav__search{width:120px}}
-@media print{body{display:none!important}}
-/* ===== BRIAR layout ===== */
-.bnav{position:absolute;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:1.4rem 1.6rem;mix-blend-mode:difference}
-.bnav .brand{font-family:var(--display);font-size:1.2rem;letter-spacing:.06em;color:#fff}
-.bnav .nav-links{display:flex;gap:1.6rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#fff}
-.bnav .nav-links a{opacity:.8;transition:opacity .25s}
-.bnav .nav-links a:hover{opacity:1}
-@media(max-width:680px){.bnav .nav-links{display:none}}
-.bhero{position:relative;height:100svh;min-height:600px;overflow:hidden;display:flex;align-items:flex-end}
-.bhero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.6) saturate(1.02)}
-.bhero:after{content:'';position:absolute;inset:0;background:linear-gradient(to top,var(--ink) 0%,transparent 55%)}
-.bhero__inner{position:relative;z-index:2;padding:0 1.6rem 5rem;width:100%;max-width:var(--max);margin:0 auto}
-.bhero__title{font-family:var(--display);font-weight:500;font-size:clamp(2.8rem,9vw,6.5rem);line-height:1.02;letter-spacing:.01em;color:var(--bone)}
-.bhero__title .glyphs{display:block;font-size:.32em;font-weight:400;opacity:.9;margin-top:.5rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.bhero__sub{margin-top:1.1rem;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-dim)}
-.bhero__cta{display:inline-block;margin-top:1.8rem;padding:.85rem 2rem;border:1px solid var(--bone);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone);transition:background .3s,color .3s}
-.bhero__cta:hover{background:var(--bone);color:var(--ink)}
-.bsection{padding:5.5rem 1.6rem;border-top:1px solid var(--line)}
-.wrap{max-width:var(--max);margin:0 auto}
-.label{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:2.2rem}
-.about-grid{display:grid;grid-template-columns:1fr;gap:2.4rem}
-@media(min-width:760px){.about-grid{grid-template-columns:5fr 6fr;align-items:center}}
-.portrait{aspect-ratio:2/3;object-fit:cover;width:100%;filter:saturate(.95)}
-.about-text{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.8rem);line-height:1.5;font-weight:400;color:var(--bone)}
-.about-meta{margin-top:1.6rem;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--bone-dim)}
-.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.1rem 0}
-.ticker-track{display:flex;gap:3rem;white-space:nowrap;animation:bscroll 24s linear infinite;font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--bone-dim)}
-@keyframes bscroll{to{transform:translateX(-50%)}}
-.reel-row{display:flex;gap:.7rem;overflow:hidden;margin-bottom:.7rem}
-.reel-track{display:flex;gap:.7rem;animation:bscroll 60s linear infinite;will-change:transform}
-.reel-row.rev .reel-track{animation-direction:reverse;animation-duration:75s}
-.reel-track video{height:300px;width:auto;aspect-ratio:9/16;object-fit:cover;flex:none;background:#000}
-@media(max-width:680px){.reel-track video{height:210px}}
-.svc{padding:1.6rem 0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:1.4rem;transition:padding-left .3s;color:var(--bone)}
-.svc:hover{padding-left:.8rem}
-.svc .num{font-size:.7rem;letter-spacing:.2em;color:var(--gold)}
-.svc .svc-name{font-family:var(--display);font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:500}
-.svc .arrow{margin-left:auto;color:var(--bone-dim);transition:transform .3s,color .3s}
-.svc:hover .arrow{transform:translateX(6px);color:var(--gold)}
-.shop-head{max-width:var(--max);margin:0 auto;padding:5.5rem 1.6rem 1.5rem;border-top:1px solid var(--line)}
-.shop-head__title{font-family:var(--display);font-weight:500;font-size:clamp(2rem,5vw,3.4rem);color:var(--bone);line-height:1.05}
-.bcontact{display:grid;grid-template-columns:1fr;gap:2.5rem}
-@media(min-width:760px){.bcontact{grid-template-columns:1fr 1fr}}
-.bcontact h2{font-family:var(--display);font-size:clamp(2.2rem,6vw,4rem);font-weight:500;line-height:1.05;color:var(--bone)}
-.c-list{display:grid;gap:1rem;font-size:.95rem;color:var(--bone)}
-.c-list .k{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--bone-dim);display:block;margin-bottom:.2rem}
-.c-list a:hover{color:var(--gold)}
-@media(prefers-reduced-motion:reduce){.ticker-track,.reel-track{animation:none}}
-</style>
+  <link rel="icon" type="image/svg+xml" href="./assets/images/placeholder-favicon.svg" />
+  <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ARTTRA.ART" />
+  <meta property="og:title" content="ARTTRA.ART — Original art, printed large" />
+  <meta property="og:description" content="Large-format fine-art prints, gallery canvas, framed and metal — made to order and shipped worldwide. Preview every piece at true scale." />
+  <meta property="og:url" content="https://arttra.art/" />
+  <meta property="og:image" content="https://arttra.art/assets/images/about-dancer.jpg" />
+  <meta property="og:image:width" content="1074" />
+  <meta property="og:image:height" content="1600" />
+  <meta property="og:image:alt" content="Line drawing of a bird-headed dancer poised on one leg over a field of prismatic light" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ARTTRA.ART — Original art, printed large" />
+  <meta name="twitter:description" content="Large-format fine-art prints, canvas, framed and metal — made to order, shipped worldwide." />
+  <meta name="twitter:image" content="https://arttra.art/assets/images/about-dancer.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="modulepreload" href="./shared/options.js" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Manrope:wght@300;500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Manrope:wght@300;500&display=swap" /></noscript>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://arttra.art/#org","name":"ARTTRA.ART","url":"https://arttra.art/","logo":"https://arttra.art/assets/images/logo.png","email":"b@twl.today","sameAs":["https://instagram.com/skbriar"],"parentOrganization":{"@type":"Organization","name":"ThinkWell Labs","url":"https://twl.today"}},{"@type":"WebSite","@id":"https://arttra.art/#site","url":"https://arttra.art/","name":"ARTTRA.ART","publisher":{"@id":"https://arttra.art/#org"}}]}</script>
 </head>
 <body>
   <script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}</script>
-  <nav class="bnav">
+  <a class="skip" href="#gallery">Skip to the collection</a>
+  <nav class="bnav" aria-label="Site">
     <a class="brand" href="#top">ARTTRA</a>
     <div class="nav-links"><a href="#about">About</a><a href="#media">Media</a><a href="#services">Services</a><a href="#shop">Shop</a><a href="#contact">Contact</a></div>
   </nav>
-  <header class="bhero" id="top">
-    <video autoplay muted loop playsinline poster="https://merlin-cloudinary.b-cdn.net/dftjvuiin/image/upload/v1779392419/skbriar/qfcqwc3wyrehel62ha1y.jpg">
-      <source src="https://merlin-cloudinary.b-cdn.net/dftjvuiin/video/upload/q_auto/v1779392588/skbriar/yohmiwh8xqajiynuxx6n.mp4" type="video/mp4">
-    </video>
-    <div class="bhero__inner">
-      <h1 class="bhero__title">ARTTRA.ART<span class="glyphs">original art · made to order</span></h1>
-      <p class="bhero__sub">Prints · Canvas · Photography — shipped worldwide</p>
-      <a class="bhero__cta" href="#shop">Explore the collection</a>
+
+  <header class="hero" id="top">
+    <div class="mosaic" id="mosaic" aria-hidden="true"><div class="mosaic__plane" id="mosaicPlane"></div></div>
+    <div class="hero__veil"></div>
+    <div class="hero__inner">
+      <p class="hero__kicker">Original art · made to order</p>
+      <h1 class="hero__title">ARTTRA<span class="dot">.</span>ART</h1>
+      <span class="hero__glyphs" id="heroLine">Original art, printed large — and previewed at true scale on your wall before you buy.</span>
+      <p class="hero__sub">Prints · Canvas · Photography — shipped worldwide</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#shop">Explore the collection</a>
+        <button class="btn" type="button" data-surprise>Surprise me</button>
+      </div>
     </div>
+    <div class="hero__scroll" aria-hidden="true">Scroll</div>
   </header>
+
   <section class="bsection" id="about">
-    <div class="wrap">
+    <div class="wrap" data-reveal>
       <div class="label">About</div>
       <div class="about-grid">
-        <img class="portrait" src="assets/images/about-dancer.jpg" alt="Line drawing of a bird-headed dancer poised on one leg over a field of prismatic light" loading="lazy">
+        <img class="portrait" src="assets/images/about-dancer.jpg" width="1074" height="1600" alt="Line drawing of a bird-headed dancer poised on one leg over a field of prismatic light" loading="lazy" decoding="async">
         <div>
           <p class="about-text">arttra is original art made for walls that deserve presence. Every piece begins as a single image — painted, photographed, or generated — then AI-enhanced, color-profiled, and produced to order as fine-art prints, canvas, and photography. Art isn&rsquo;t just what we make; it&rsquo;s what we send out into the world.</p>
           <p class="about-meta">@skbriar · made to order · shipped worldwide</p>
@@ -225,31 +71,83 @@ a{color:inherit;text-decoration:none}
       </div>
     </div>
   </section>
+
   <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>original art</span><span>·</span><span>made to order</span><span>·</span><span>shipped worldwide</span><span>·</span><span>prints · canvas · photography</span><span>·</span><span>original art</span><span>·</span><span>made to order</span><span>·</span><span>shipped worldwide</span><span>·</span><span>prints · canvas · photography</span><span>·</span></div></div>
+
   <section class="bsection" id="media" style="padding-left:0;padding-right:0">
     <div class="wrap" style="padding:0 1.6rem"><div class="label">Media</div></div>
-    <div class="reel-row"><div class="reel-track"><video autoplay muted loop playsinline preload="auto" src="assets/video/logo-loop-a.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/figures-chase.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/three-faces.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/logo-loop-a.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/figures-chase.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/three-faces.mp4"></video></div></div>
-    <div class="reel-row rev"><div class="reel-track"><video autoplay muted loop playsinline preload="auto" src="assets/video/logo-loop-b.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/locate-figures.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/animate-tall.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/logo-loop-b.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/locate-figures.mp4"></video><video autoplay muted loop playsinline preload="auto" src="assets/video/animate-tall.mp4"></video></div></div>
+    <div class="reel" id="reel" tabindex="0" aria-label="Short films">
+      <div class="reel__item"><video muted loop playsinline preload="none" data-src="assets/video/logo-loop-a.mp4" aria-label="ARTTRA logo loop"></video></div>
+      <div class="reel__item"><video muted loop playsinline preload="none" data-src="assets/video/figures-chase.mp4" aria-label="Figures chase"></video></div>
+      <div class="reel__item"><video muted loop playsinline preload="none" data-src="assets/video/three-faces.mp4" aria-label="Three faces"></video></div>
+      <div class="reel__item"><video muted loop playsinline preload="none" data-src="assets/video/logo-loop-b.mp4" aria-label="ARTTRA logo loop, second cut"></video></div>
+      <div class="reel__item"><video muted loop playsinline preload="none" data-src="assets/video/locate-figures.mp4" aria-label="Locate figures"></video></div>
+      <div class="reel__item"><video muted loop playsinline preload="none" data-src="assets/video/animate-tall.mp4" aria-label="Animated study"></video></div>
+    </div>
   </section>
+
   <section class="bsection" id="services">
-    <div class="wrap">
+    <div class="wrap" data-reveal>
       <div class="label">Services</div>
       <a class="svc" href="#shop"><span class="num">01</span><span class="svc-name">Fine-Art Prints</span><span class="arrow">&rarr;</span></a>
       <a class="svc" href="#shop"><span class="num">02</span><span class="svc-name">Canvas</span><span class="arrow">&rarr;</span></a>
       <a class="svc" href="#shop"><span class="num">03</span><span class="svc-name">Photography</span><span class="arrow">&rarr;</span></a>
     </div>
   </section>
+
   <section class="shop-head" id="shop">
-    <div class="label">Shop</div>
-    <h2 class="shop-head__title">The collection</h2>
+    <div>
+      <div class="label">Shop</div>
+      <h2 class="shop-head__title">The collection, <em>at wall scale</em></h2>
+    </div>
+    <p class="shop-head__lead">Drag the spectrum to pull every piece toward a color. Open any work to hang it — at its real printed size — on a wall beside a sofa and a 5′9″ figure.</p>
   </section>
-  <nav class="catnav" id="catnav"><div class="catnav__inner"><a class="catnav__brand" href="./">ARTTRA</a><a class="catnav__link" href="./interactive.html">Interactive</a><button class="catnav__link catnav__link--active" data-cat="all">All</button><button class="catnav__link" data-cat="Art Prints">Original Art</button><button class="catnav__link" data-cat="painting">Paintings</button><button class="catnav__link" data-cat="digital">Digital Art</button><button class="catnav__link" data-cat="Photography">Photography</button><button class="catnav__link" data-cat="multimedia">Multimedia</button><button class="catnav__link" data-cat="graphic">Graphic Art</button><div class="catnav__right"><input class="catnav__search" id="searchInput" type="search" placeholder="Search..." autocomplete="off" /><button class="catnav__cart" id="cartButton" aria-label="Cart">🛒 <span class="catnav__badge" id="cartCount">0</span></button></div></div></nav>
-  <aside class="intCta" aria-label="Interactive works"><div class="intCta__inner"><div class="intCta__text"><div class="intCta__kicker">Also from ARTTRA</div><div class="intCta__title">Interactive algorithmic works</div><div class="intCta__sub">Living systems where the viewer tunes seed, aperture, and contribution.</div></div><a class="btn btn--accent intCta__cta" href="./interactive.html">Explore →</a></div></aside>
-  <style>.intCta{max-width:var(--max);margin:24px auto 0;padding:0 16px}.intCta__inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(201,163,92,.05),transparent)}.intCta__kicker{font-size:.62rem;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);margin-bottom:4px}.intCta__title{font-family:var(--display);font-size:1.4rem;font-weight:500;color:var(--bone)}.intCta__sub{font-size:.82rem;color:var(--bone-dim);margin-top:2px}.intCta__cta{white-space:nowrap;flex-shrink:0}@media(max-width:600px){.intCta__inner{flex-direction:column;align-items:flex-start}.intCta__cta{align-self:stretch;text-align:center}}</style>
+
+  <nav class="catnav" id="catnav" aria-label="Collection">
+    <div class="catnav__inner">
+      <a class="catnav__brand" href="./">ARTTRA</a>
+      <div class="catnav__scroll">
+        <a class="catnav__link" href="./interactive.html">Interactive</a>
+        <button class="catnav__link catnav__link--active" data-cat="all" aria-pressed="true">All</button>
+        <button class="catnav__link" data-cat="Art Prints" aria-pressed="false">Original Art</button>
+        <button class="catnav__link" data-cat="painting" aria-pressed="false">Paintings</button>
+        <button class="catnav__link" data-cat="digital" aria-pressed="false">Digital Art</button>
+        <button class="catnav__link" data-cat="Photography" aria-pressed="false">Photography</button>
+        <button class="catnav__link" data-cat="multimedia" aria-pressed="false">Multimedia</button>
+        <button class="catnav__link" data-cat="graphic" aria-pressed="false">Graphic Art</button>
+      </div>
+      <button class="iconbtn catnav__cart" id="cartButton" type="button" aria-label="Open cart" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="catnav__badge is-zero" id="cartCount">0</span>
+      </button>
+    </div>
+    <div class="tools">
+      <div class="spectrum" id="spectrum" role="slider" tabindex="0" aria-label="Sort the collection by color" aria-valuemin="0" aria-valuemax="359" aria-valuenow="0" aria-valuetext="Not sorted">
+        <span class="spectrum__hint"><span aria-hidden="true">⟷</span> Drag to sort by color</span>
+        <span class="spectrum__knob"><span class="spectrum__name" id="spectrumName"></span></span>
+      </div>
+      <button class="chipbtn tools__clear" id="spectrumClear" type="button" hidden aria-label="Clear color sort">✕ <span class="sr-only">Clear</span></button>
+      <input class="catnav__search" id="searchInput" type="search" placeholder="Search…" autocomplete="off" aria-label="Search the collection" />
+    </div>
+  </nav>
+
+  <div class="filters">
+    <button class="chipbtn chipbtn--gold" type="button" data-surprise><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/></svg>Surprise me</button>
+    <button class="chipbtn" type="button" id="bigToggle" aria-pressed="false">Prints 40″+</button>
+    <button class="chipbtn" type="button" id="monoToggle" aria-pressed="false">Monochrome first</button>
+    <div class="filters__meta" id="resultMeta" aria-live="polite"></div>
+  </div>
   <div class="colorbar" id="colorBar"><span class="colorbar__label">Color</span></div>
-  <main class="gallery" id="gallery"><div class="gallery__meta" id="resultMeta"></div><div class="cardsGrid" id="cardsGrid"></div></main>
+
+  <aside class="intCta" aria-label="Interactive works"><div class="intCta__inner"><div class="intCta__text"><div class="intCta__kicker">Also from ARTTRA</div><div class="intCta__title">Interactive algorithmic works</div><div class="intCta__sub">Living systems where the viewer tunes seed, aperture, and contribution.</div></div><a class="btn btn--accent intCta__cta" href="./interactive.html">Explore →</a></div></aside>
+
+  <main class="gallery" id="gallery" tabindex="-1">
+    <div class="cardsGrid" id="cardsGrid" role="list" aria-label="Artworks"></div>
+    <div class="emptyState" id="emptyState" hidden>No matches. Try a different category or clear search.</div>
+  </main>
+
   <section class="bsection" id="contact">
-    <div class="wrap bcontact">
+    <div class="wrap bcontact" data-reveal>
       <h2>Get in<br>touch</h2>
       <div class="c-list">
         <div><span class="k">Email</span><a href="mailto:b@twl.today">b@twl.today</a></div>
@@ -259,9 +157,71 @@ a{color:inherit;text-decoration:none}
     </div>
   </section>
   <section class="site-footer"><div><div class="site-footer__title">ARTTRA.ART</div><div>Original and algorithmic art — prints, photography, interactive systems, and custom generated editions.</div></div><div><div class="site-footer__title">Process</div><div>Images are AI-upscaled, color-profiled, style-classified, vectorized when possible, and now joined by interactive systems with readable philosophies.</div></div><div><div class="site-footer__title">Ordering</div><div>Gallery checkout via Stripe. Prints are made to order and shipped via Printful.</div></div></section>
-  <footer style="margin-top:48px;padding:18px 0;border-top:1px solid rgba(236,231,221,.07);font-size:12px;color:rgba(236,231,221,.45);text-align:center;line-height:1.8"><span style="font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:10px;color:rgba(236,231,221,.35);display:block;margin-bottom:6px">A ThinkWell Labs offering</span><a href="https://twl.today" style="color:rgba(236,231,221,.6);text-decoration:none">TWL</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://arttra.art" style="color:rgba(236,231,221,.8);font-weight:600;text-decoration:none">arttra</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://cookiebouncer.app" style="color:rgba(236,231,221,.6);text-decoration:none">CookieBouncer</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://errorfect.com" style="color:rgba(236,231,221,.6);text-decoration:none">Errorfect</a><span style="margin:0 6px;opacity:.3">·</span><a href="https://acepaste.xyz" style="color:rgba(236,231,221,.6);text-decoration:none">Acepaste</a></footer>
-  <div id="modalOverlay" class="overlay" hidden><div class="modal" role="dialog" aria-modal="true"><button id="modalCloseBtn" class="modal__close" aria-label="Close">×</button><div class="modal__body"><div class="modal__media"><img id="modalImage" class="modal__image" alt="" /></div><div class="modal__content"><div class="modal__kicker" id="modalSku"></div><h2 id="modalTitle" class="modal__title"></h2><p id="modalDescription" class="modal__description"></p><div class="modal__badges"><div id="modalStyleBadge" class="badge"></div><div id="modalCategoryBadge" class="badge"></div></div><div class="modal__colors" id="modalColors"></div><div id="modalOptions" class="modal__options"></div><div class="priceRow"><div id="modalPriceLabel" class="priceRow__label"></div><div id="modalPrice" class="priceRow__value"></div></div><div class="actionRow"><button id="addToCartBtn" class="btn btn--accent">Add to cart</button><a id="buyNowLink" class="btn" href="#" target="_blank" rel="noreferrer">Buy now</a></div></div></div></div></div>
-  <aside id="cartDrawer" class="drawer" hidden><div class="drawer__header"><div class="drawer__title">Cart</div><button id="cartCloseBtn" class="iconbtn" aria-label="Close cart">✕</button></div><div class="drawer__body"><div id="cartEmpty" class="emptyState" hidden>Your cart is empty.</div><div id="cartItems" class="cartItems"></div></div><div class="drawer__footer"><div class="totals"><div class="totals__row"><span>Items</span><span id="cartItemsCount" class="totals__value">0</span></div><div class="totals__row"><span>Estimated total</span><span id="cartTotal" class="totals__value">$0</span></div></div><a id="checkoutLink" class="btn btn--primary btn--full" href="#">Checkout</a></div></aside>
+  <footer class="twl"><span class="twl__k">A ThinkWell Labs offering</span><a href="https://twl.today">TWL</a><span class="sep">·</span><a class="is-self" href="https://arttra.art">arttra</a><span class="sep">·</span><a href="https://cookiebouncer.app">CookieBouncer</a><span class="sep">·</span><a href="https://errorfect.com">Errorfect</a><span class="sep">·</span><a href="https://acepaste.xyz">Acepaste</a></footer>
+
+  <!-- Detail viewer: true-scale wall preview -->
+  <div id="modalOverlay" class="viewer" hidden>
+    <div class="viewer__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalCloseBtn" class="viewer__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <div class="stage" id="stage">
+        <div class="stage__bar">
+          <div class="seg" role="group" aria-label="View">
+            <button type="button" id="modeWall" aria-pressed="true">On the wall</button>
+            <button type="button" id="modeDetail" aria-pressed="false">Detail</button>
+          </div>
+          <div class="walls" id="wallSwatches" role="group" aria-label="Wall color"></div>
+        </div>
+        <div class="wall" id="wall">
+          <div class="wall__light"></div>
+          <div class="scaleTag" id="scaleTag" aria-live="polite"><span class="scaleTag__size" id="scaleSize"></span><span class="scaleTag__note" id="scaleNote"></span></div>
+          <svg class="sofa" id="sofa" viewBox="0 0 84 33" preserveAspectRatio="none" aria-hidden="true"><path d="M6 13.2c0-1.4.9-2.2 2.2-2.2h67.6c1.3 0 2.2.8 2.2 2.2V20H6z" opacity=".9"/><path d="M0 15.5C0 13.6 1.4 13 3 13s3 .6 3 2.5V20h72v-4.5c0-1.9 1.4-2.5 3-2.5s3 .6 3 2.5V29c0 1-.8 1.6-1.8 1.6H1.8C.8 30.6 0 30 0 29z"/><path d="M5 1.5C5 .6 5.8 0 7 0h70c1.2 0 2 .6 2 1.5V12H5z" opacity=".78"/><path d="M4 30.6h2.4l-.6 2.4H4.6zM77.6 30.6H80l-.6 2.4h-1.2z"/></svg>
+          <svg class="person" id="person" viewBox="0 0 22 69" preserveAspectRatio="none" aria-hidden="true"><path d="M11 0c2.4 0 4.1 1.9 4.1 4.4 0 2.6-1.8 4.6-4.1 4.6S6.9 7 6.9 4.4C6.9 1.9 8.6 0 11 0zM7.4 10.2h7.2c2.3 0 3.6 1.3 3.9 3.5l1.7 14.1c.2 1.2-.6 2.1-1.6 2.1s-1.6-.6-1.8-1.7L15.4 17v14.9l-.9 35.4c0 1-.8 1.7-1.8 1.7s-1.8-.8-1.8-1.8L10.6 39h-.2l-.4 28.2c0 1-.8 1.8-1.8 1.8s-1.8-.7-1.8-1.7L5.6 31.9V17l-1.4 11.2c-.2 1.1-.8 1.7-1.8 1.7s-1.8-.9-1.6-2.1l1.7-14.1c.3-2.2 1.6-3.5 3.9-3.5z"/></svg>
+          <div class="piece" id="piece" role="img" aria-label="">
+            <div class="piece__frame"></div>
+            <div class="piece__shadow"></div>
+            <div class="piece__edgeR"></div><div class="piece__edgeB"></div>
+            <div class="piece__face"><img id="modalImage" alt="" decoding="async" /></div>
+            <div class="piece__sheen"></div>
+            <div class="dim dim--w"><span id="dimW"></span></div>
+            <div class="dim dim--h"><span id="dimH"></span></div>
+          </div>
+          <div class="wall__floor"></div>
+          <div class="stage__caption" id="stageCaption"></div>
+        </div>
+        <div class="loupeView" id="loupeView" hidden>
+          <img id="detailImage" alt="" decoding="async" />
+          <div class="loupe" id="loupe"></div>
+          <div class="loupeView__hint" id="loupeHint">Hover to magnify</div>
+        </div>
+        <button class="stage__nav stage__nav--prev" id="prevArt" type="button" aria-label="Previous work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="stage__nav stage__nav--next" id="nextArt" type="button" aria-label="Next work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <div class="panel" id="panel">
+        <div class="modal__kicker" id="modalSku"></div>
+        <h2 id="modalTitle" class="modal__title"></h2>
+        <p id="modalDescription" class="modal__description"></p>
+        <div class="modal__badges"><div id="modalStyleBadge" class="badge"></div><div id="modalCategoryBadge" class="badge"></div></div>
+        <div class="modal__colors" id="modalColors"></div>
+        <div id="modalOptions" class="modal__options"></div>
+        <div class="buybar">
+          <div class="priceRow"><div id="modalPriceLabel" class="priceRow__label"></div><div id="modalPrice" class="priceRow__value"></div></div>
+          <div class="actionRow"><button id="addToCartBtn" class="btn btn--accent" type="button">Add to cart</button><a id="buyNowLink" class="btn btn--primary" href="#" target="_blank" rel="noreferrer">Buy now</a></div>
+          <div class="buybar__note">Printed to order · Secure checkout via Stripe · Ships worldwide</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrim" id="cartScrim" hidden></div>
+  <aside id="cartDrawer" class="drawer" hidden role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="drawer__header"><div class="drawer__title" id="cartTitle">Cart<small><span id="cartItemsCount">0</span> items</small></div><button id="cartCloseBtn" class="iconbtn" type="button" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="drawer__body"><div id="cartEmpty" class="emptyState" hidden>Your cart is empty.</div><div id="cartItems" class="cartItems"></div></div>
+    <div class="drawer__footer"><div class="totals"><div class="totals__row totals__row--big"><span>Estimated total</span><span id="cartTotal" class="totals__value">$0</span></div></div><a id="checkoutLink" class="btn btn--primary btn--full" href="#">Checkout</a><div class="drawer__note">Shipping &amp; tax calculated at checkout</div></div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText">Added to cart</span><button type="button" id="toastView">View cart</button></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span>View</span></div>
+
   <script>document.addEventListener('contextmenu',e=>{if(e.target.tagName==='IMG')e.preventDefault()});document.addEventListener('dragstart',e=>{if(e.target.tagName==='IMG')e.preventDefault()});document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&(e.key==='s'||e.key==='S'||e.key==='p'||e.key==='P'))e.preventDefault()});</script>
   <script src="./script.js" type="module"></script>
 </body>
