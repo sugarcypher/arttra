@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 Disallow: /admin.js
+Disallow: /success.html
 
 Sitemap: https://arttra.art/sitemap.xml
