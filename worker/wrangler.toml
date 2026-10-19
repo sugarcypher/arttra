@@ -53,7 +53,8 @@ PRINTFUL_DEFAULT_VARIANT_ID = "19306"
 # "true" auto-confirms the Printful draft for fulfillment. Keep "false" until
 # you've eyeballed a draft order in the Printful dashboard and verified the v2
 # payload shape. Flip to "true" only when ready to fulfill automatically.
-PRINTFUL_AUTO_CONFIRM = "false"
+# Live-mode Stripe orders only; test-mode orders always stay drafts.
+PRINTFUL_AUTO_CONFIRM = "true"
 
 # Print placement + technique, applied to every shape. PRODUCT-SPECIFIC and
 # assumes all three shape variants are the SAME product family (e.g. all canvas,
