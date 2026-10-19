@@ -538,7 +538,9 @@ async function onCheckoutSessionCompleted(session, env) {
   });
 
   // Optional auto-confirm. Defaults to OFF: drafts wait for human review.
-  if (String(env.PRINTFUL_AUTO_CONFIRM || "").toLowerCase() === "true" && draft && draft.id) {
+  // Never auto-confirm a Stripe TEST-mode order: confirming makes Printful charge
+  // and ship for real. Test orders stay as drafts.
+  if (String(env.PRINTFUL_AUTO_CONFIRM || "").toLowerCase() === "true" && session.livemode === true && draft && draft.id) {
     await printfulConfirmDraft(env, draft.id);
   }
 }
