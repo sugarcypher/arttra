@@ -952,17 +952,14 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     print(f"[build] {len(images)} total, {len(cached_artworks)} cached, {len(to_process)} new/updated")
 
     if not to_process and cached_artworks:
-        # Still apply overrides + de-duplicate titles on cached artworks
-        cached_artworks = _apply_overrides(cached_artworks, overrides)
-        cached_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
-        _dedup_titles(cached_artworks)
-        cached_artworks = _apply_print_urls(cached_artworks)
-        cached_artworks = _backfill_source_pixels(cached_artworks, source)
+        # Still apply overrides (incl. hidden) + de-duplicate titles on cached artworks
+        visible = _publishable(cached_artworks, overrides, source)
         with open(data_dir / "artworks.json", "w") as f:
-            json.dump(cached_artworks, f, indent=2)
+            json.dump(visible, f, indent=2)
         with open(manifest_path, "w") as f:
             json.dump(manifest, f, indent=2)
-        print(f"[build] No new images. Overrides applied. Done.")
+        print(f"[build] No new images. Overrides applied: {len(visible)} visible, "
+              f"{len(cached_artworks) - len(visible)} hidden. Done.")
         return
 
     has_vtracer = setup_vtracer()
@@ -1028,18 +1025,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
                 print(f"  [{done}/{len(to_process)}] {src} — ERROR: {e}")
 
     all_artworks = cached_artworks + new_artworks
-
-    # Apply overrides on top of auto-generated data
-    all_artworks = _apply_overrides(all_artworks, overrides)
-
-    all_artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
-
-    # Filter hidden
-    visible = [a for a in all_artworks if not a.get("hidden")]
-
-    _dedup_titles(visible)
-    visible = _apply_print_urls(visible)
-    visible = _backfill_source_pixels(visible, source)
+    visible = _publishable(all_artworks, overrides, source)
 
     with open(data_dir / "artworks.json", "w") as f:
         json.dump(visible, f, indent=2)
@@ -1082,6 +1068,20 @@ def _output_stems(images):
         for m in members:
             stems[m] = f"{m.stem}-{m.suffix[1:].lower()}"
     return stems
+
+
+def _publishable(artworks, overrides, source_dir):
+    """What goes into artworks.json: overrides applied, newest first, hidden
+    pieces dropped, titles de-duplicated, print URLs and source sizes filled in.
+    Both build paths (new images / cache-only) must publish through here — the
+    cache-only path once skipped the hidden filter and republished every
+    hidden piece on a no-new-images rebuild."""
+    artworks = _apply_overrides(artworks, overrides)
+    artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
+    visible = [a for a in artworks if not a.get("hidden")]
+    _dedup_titles(visible)
+    visible = _apply_print_urls(visible)
+    return _backfill_source_pixels(visible, source_dir)
 
 
 def _dedup_titles(artworks):
