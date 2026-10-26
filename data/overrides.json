@@ -376,5 +376,77 @@
       "Canvas",
       "Metal Print"
     ]
+  },
+  "BRC-LUM-95B5E644": {
+    "title": "Selene Tendril",
+    "category": "Art Prints",
+    "style": "Luminos",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-E1262B0A": {
+    "title": "Acheron Witchgrass",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-A7F50DEA": {
+    "title": "Lichgate Arabesque",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-CEF29D12": {
+    "title": "Gloaming Verdure",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
   }
 }

@@ -11,12 +11,19 @@
 #
 # Optional:
 #   ARTTRA_STABLE_SECS — seconds a file size must be stable before ingesting (default: 5)
-#   ARTTRA_REJECTED    — folder of basenames to skip (default: $(dirname DROPS)/arttra-rejected)
-#                        if a candidate's basename matches anything here, ingest skips it and
-#                        moves the candidate from DROPS into this folder (sticky memory).
+#   ARTTRA_REJECTED    — folder of files to never ingest (default: $(dirname DROPS)/arttra-rejected)
+#                        a candidate byte-identical to a file here is moved into this folder
+#                        instead of being ingested. Matched by content, not by name.
 #   ARTTRA_DROPPED     — archive folder for successfully-handled originals
 #                        (default: $DROPS/artra-dropped). Each successful ingest moves the
 #                        source file out of DROPS into here, so DROPS empties itself.
+#
+# Naming: a drop keeps its filename unless that stem is already used in
+# gallery-source/ or the archive (generic names like "PNG image.png" and
+# IMG_1234 recur constantly). Then it becomes <stem>-<first 6 of its md5>.
+# The archived original is renamed to the same name, so archive, gallery
+# and site (image URLs, artwork ID) all line up. Only byte-identical
+# re-drops are skipped; nothing in the archive is ever overwritten.
 
 set -u
 
@@ -34,9 +41,61 @@ file_size() {
   /usr/bin/stat -f%z "$1" 2>/dev/null || /usr/bin/stat -c%s "$1" 2>/dev/null || echo ""
 }
 
-# True if basename "$1" exists in the rejected folder (sticky memory of skips).
-in_rejected() {
-  [[ -n "${REJECTED:-}" && -d "$REJECTED" && -e "$REJECTED/$1" ]]
+lower() { echo "$1" | /usr/bin/tr '[:upper:]' '[:lower:]'; }
+
+# Print the basename of a file in dir "$2" byte-identical to "$1"; fail if none.
+# Sizes are compared first so only same-size files get hashed.
+identical_in() {
+  local f="$1" dir="$2" sz h="" cand
+  [[ -d "$dir" ]] || return 1
+  sz="$(file_size "$f")"
+  for cand in "$dir"/*; do
+    [[ -f "$cand" && "$(file_size "$cand")" == "$sz" ]] || continue
+    [[ -n "$h" ]] || h="$(/sbin/md5 -q "$f")"
+    if [[ "$(/sbin/md5 -q "$cand")" == "$h" ]]; then
+      basename "$cand"
+      return 0
+    fi
+  done
+  return 1
+}
+
+# True if stem "$1" (any extension, any case) is used in the gallery or archive.
+stem_taken() {
+  { /bin/ls -1 "$GALLERY_SRC"; /bin/ls -1 "$DROPPED"; } 2>/dev/null \
+    | /usr/bin/sed -E 's/\.[^.]*$//' | /usr/bin/tr '[:upper:]' '[:lower:]' \
+    | /usr/bin/grep -Fxq -- "$(lower "$1")"
+}
+
+# Gallery stem for new file "$2" dropped as stem "$1": unchanged when free,
+# else <stem>-<md5 prefix> (plus -2, -3… in the vanishingly rare tie).
+unique_stem() {
+  local stem="$1" h candidate n=2
+  if ! stem_taken "$stem"; then
+    echo "$stem"
+    return
+  fi
+  h="$(/sbin/md5 -q "$2" | /usr/bin/cut -c1-6)"
+  candidate="${stem}-${h}"
+  while stem_taken "$candidate"; do
+    candidate="${stem}-${h}-${n}"
+    n=$((n + 1))
+  done
+  echo "$candidate"
+}
+
+# Move "$1" into dir "$2" as name "$3", never overwriting: a taken name
+# becomes "<stem> (2).<ext>", "(3)"… Prints the basename it landed as.
+safe_mv() {
+  local src="$1" dir="$2" name="$3" stem ext target n=2
+  stem="${name%.*}"
+  ext="${name##*.}"
+  target="$dir/$name"
+  while [[ -e "$target" ]]; do
+    target="$dir/$stem ($n).$ext"
+    n=$((n + 1))
+  done
+  /bin/mv -n "$src" "$target" && [[ -e "$target" && ! -e "$src" ]] && basename "$target"
 }
 
 if [[ -z "$DROPS" || -z "$REPO" ]]; then
@@ -120,34 +179,33 @@ fi
 cd "$REPO" || { log "cd to repo failed"; exit 1; }
 
 # Get latest before staging — push --force-with-lease later relies on this.
+# --autostash: uncommitted edits elsewhere in the checkout (worker/, data/)
+# would otherwise make every pull --rebase refuse and stall ingest entirely.
 /usr/bin/git fetch origin "$BRANCH" --quiet || true
 /usr/bin/git checkout "$BRANCH" --quiet 2>/dev/null || /usr/bin/git checkout -B "$BRANCH" --quiet
-/usr/bin/git pull --rebase origin "$BRANCH" --quiet || {
+/usr/bin/git pull --rebase --autostash origin "$BRANCH" --quiet || {
   log "git pull --rebase failed; aborting this run"
   exit 1
 }
 
-# Per-file processing. Three buckets per source file:
-#   1) basename in REJECTED  → move source from DROPS into REJECTED, no ingest
-#   2) basename already in GALLERY_SRC → archive source into DROPPED, no re-ingest
-#   3) new file → cp into GALLERY_SRC, then move source into DROPPED
-# Net effect: DROPS empties itself every run; DROPPED is the archive of originals;
-# REJECTED is sticky memory of "do not ingest this basename ever".
+# Per-file processing. Four buckets per source file:
+#   1) byte-identical to a file in REJECTED → move into REJECTED, no ingest
+#   2) byte-identical to something already published → archive, no re-ingest
+#   3) HEIC → convert to JPEG under a unique stem, archive original under it
+#   4) anything else → copy into GALLERY_SRC under a unique name, archive
+#      the original under that same name
+# Net effect: DROPS empties itself every run; DROPPED is the archive of
+# originals, named exactly as they appear in the gallery and on the site.
 moved=()
 for src in "${stable[@]}"; do
   base="$(basename "$src")"
-  ext_lc="$(echo "${base##*.}" | /usr/bin/tr '[:upper:]' '[:lower:]')"
+  ext="${base##*.}"
+  ext_lc="$(lower "$ext")"
   stem="${base%.*}"
 
-  if in_rejected "$base"; then
-    # mv-with-overwrite back into REJECTED; if mv fails for any reason, just rm
-    # the source so the file doesn't keep triggering this branch every poll.
-    if /bin/mv -f "$src" "$REJECTED/$base" 2>/dev/null; then
-      log "rejected (matched $REJECTED/$base) — moved source back to rejected/: $base"
-    else
-      /bin/rm -f "$src"
-      log "rejected (matched $REJECTED/$base) — removed source from drops/: $base"
-    fi
+  if rej="$(identical_in "$src" "$REJECTED")"; then
+    landed="$(safe_mv "$src" "$REJECTED" "$base")" || landed="(move failed, left in drops)"
+    log "rejected (identical to rejected/$rej) — moved to rejected/: $landed"
     continue
   fi
 
@@ -156,12 +214,17 @@ for src in "${stable[@]}"; do
       log "HEIC found but sips not available — leaving in drops: $base"
       continue
     fi
-    dest="$GALLERY_SRC/${stem}.jpg"
-    if [[ -e "$dest" ]]; then
-      /bin/mv "$src" "$DROPPED/$base"
-      log "already in gallery as ${stem}.jpg — archived HEIC to dropped/: $base"
+    # The gallery holds the converted JPEG, so match re-drops against the
+    # archived HEIC originals whose stem is published.
+    if arch="$(identical_in "$src" "$DROPPED")" \
+        && /bin/ls -1 "$GALLERY_SRC" | /usr/bin/sed -E 's/\.[^.]*$//' \
+           | /usr/bin/grep -Fxiq -- "${arch%.*}"; then
+      landed="$(safe_mv "$src" "$DROPPED" "${arch%.*}.${ext}")" || landed="(move failed)"
+      log "duplicate of published ${arch%.*} — not re-ingested, archived as: $landed"
       continue
     fi
+    new_stem="$(unique_stem "$stem" "$src")"
+    dest="$GALLERY_SRC/${new_stem}.jpg"
     tmp_jpg="$(/usr/bin/mktemp -t arttra).jpg"
     if ! sips -s format jpeg "$src" --out "$tmp_jpg" >/dev/null 2>&1; then
       /bin/rm -f "$tmp_jpg"
@@ -169,18 +232,20 @@ for src in "${stable[@]}"; do
       continue
     fi
     /bin/mv "$tmp_jpg" "$dest"
-    /bin/mv "$src" "$DROPPED/$base"
+    landed="$(safe_mv "$src" "$DROPPED" "${new_stem}.${ext}")" || landed="(archive move failed, still in drops)"
     moved+=("$dest")
-    log "converted HEIC → JPEG (original archived): ${stem}.jpg"
+    log "converted HEIC → ${new_stem}.jpg (dropped as $base, original archived as $landed)"
     continue
   fi
 
-  dest="$GALLERY_SRC/$base"
-  if [[ -e "$dest" ]]; then
-    /bin/mv "$src" "$DROPPED/$base"
-    log "already in gallery — archived to dropped/: $base"
+  if dup="$(identical_in "$src" "$GALLERY_SRC")"; then
+    landed="$(safe_mv "$src" "$DROPPED" "${dup%.*}.${ext}")" || landed="(move failed)"
+    log "duplicate of gallery-source/$dup — not re-ingested, archived as: $landed"
     continue
   fi
+
+  new_stem="$(unique_stem "$stem" "$src")"
+  dest="$GALLERY_SRC/${new_stem}.${ext}"
   # Plain streaming copy. /bin/cp uses fcopyfile/clonefile, which deadlocks
   # on iCloud-backed sources ("Resource deadlock avoided") and can leave a
   # zero-byte file behind. cat does a plain read->write: no clone, and the
@@ -204,9 +269,13 @@ for src in "${stable[@]}"; do
     log "copied file is not a valid image — removed, leaving in drops: $base"
     continue
   fi
-  /bin/mv "$src" "$DROPPED/$base"
+  landed="$(safe_mv "$src" "$DROPPED" "${new_stem}.${ext}")" || landed="(archive move failed, still in drops)"
   moved+=("$dest")
-  log "ingested + archived: $base"
+  if [[ "$new_stem" == "$stem" ]]; then
+    log "ingested + archived: $base"
+  else
+    log "ingested as $(basename "$dest") (dropped as $base — name was taken), archived as: $landed"
+  fi
 done
 
 if (( ${#moved[@]} == 0 )); then
@@ -214,7 +283,9 @@ if (( ${#moved[@]} == 0 )); then
   exit 0
 fi
 
-/usr/bin/git add gallery-source
+# Stage only what this run ingested — never unrelated edits or stray files
+# that happen to be sitting in gallery-source/.
+/usr/bin/git add -- "${moved[@]}"
 if /usr/bin/git diff --staged --quiet; then
   log "git sees no staged changes after add — exiting"
   exit 0
@@ -234,7 +305,7 @@ for attempt in 1 2 3 4 5; do
   fi
   log "push attempt $attempt failed — pulling and retrying in ${delay}s"
   /bin/sleep "$delay"
-  /usr/bin/git pull --rebase origin "$BRANCH" --quiet || true
+  /usr/bin/git pull --rebase --autostash origin "$BRANCH" --quiet || true
   delay=$(( delay * 2 ))
 done
 

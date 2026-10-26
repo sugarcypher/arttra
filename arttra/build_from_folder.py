@@ -591,9 +591,11 @@ def detect_and_crop_canvas(image_path: str):
 # ═══════════════════════════════════════════════════════════════════
 
 def process_single(args: tuple) -> Optional[dict]:
-    img_path_str, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer, no_crop_ids = args
+    img_path_str, out_stem, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer, no_crop_ids = args
     img_path = Path(img_path_str)
-    stem = img_path.stem
+    # Output basename for thumb/web/print/vector files and the manifest key.
+    # Usually the file stem; build() disambiguates sources that share one.
+    stem = out_stem
     stable_id = hashlib.md5(img_path.name.encode()).hexdigest()[:8].upper()
 
     tmp_crop = None
@@ -888,6 +890,8 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         print(f"[build] No images found in {source}")
         return
 
+    out_stems = _output_stems(images)
+
     gallery_dir = output / "assets" / "images" / "gallery"
     thumb_dir = gallery_dir / "thumbs"
     web_dir = gallery_dir / "web"
@@ -929,7 +933,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     to_process = []
     cached_artworks = []
     for img_path in images:
-        stem = img_path.stem
+        stem = out_stems[img_path]
         file_hash = hashlib.md5(open(img_path, "rb").read()).hexdigest()
 
         # Check if this image's artwork ID is flagged for bg removal
@@ -972,7 +976,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         bg_done_dir = source.parent / ".bg-removed"
         bg_done_dir.mkdir(exist_ok=True)
         for img_path in to_process:
-            stem = img_path.stem
+            stem = out_stems[img_path]
             stable_id = hashlib.md5(img_path.name.encode()).hexdigest()[:8].upper()
             # Check all possible artwork IDs this image could map to
             for style_prefix in ["IRO", "CHR", "STA", "NAT", "LUM", "TEN", "INT", "PHO"]:
@@ -993,7 +997,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     print(f"[build] Processing {len(to_process)} images with {workers} workers...")
 
     tasks = [
-        (str(p), str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer, no_crop_ids)
+        (str(p), out_stems[p], str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer, no_crop_ids)
         for p in to_process
     ]
 
@@ -1055,6 +1059,28 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     if overrides:
         print(f"  Overrides applied: {len(overrides)}")
     print(f"{'='*60}")
+
+
+def _output_stems(images):
+    """Map each source image to the basename its outputs are written under.
+    Sources that share a stem (IMG_5184.jpg + IMG_5184.png) would overwrite
+    each other's thumb/web/print files and manifest entry, so every member of
+    such a group gets its extension appended (IMG_5184-jpg, IMG_5184-png).
+    Compared case-insensitively — macOS checkouts can't hold both cases.
+    Artwork IDs hash the full filename, so they never change here."""
+    groups = {}
+    for p in images:
+        groups.setdefault(p.stem.lower(), []).append(p)
+    stems = {}
+    for members in groups.values():
+        if len(members) == 1:
+            stems[members[0]] = members[0].stem
+            continue
+        names = ", ".join(m.name for m in members)
+        print(f"[build] stem collision ({names}) — disambiguating output names")
+        for m in members:
+            stems[m] = f"{m.stem}-{m.suffix[1:].lower()}"
+    return stems
 
 
 def _dedup_titles(artworks):
