@@ -1698,7 +1698,10 @@
       "sourcePixels": {
         "w": 4096,
         "h": 4096
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -2124,7 +2127,10 @@
       "sourcePixels": {
         "w": 1024,
         "h": 1024
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
