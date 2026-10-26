@@ -1082,6 +1082,14 @@ function initReel() {
   vids.forEach(v => io.observe(v));
 }
 
+// ---- Meet the artist: links to #artist open the bio ----
+function initArtist() {
+  const d = document.getElementById("artist");
+  if (!d) return;
+  if (location.hash === "#artist") d.open = true;
+  $$('a[href="#artist"]').forEach(a => a.addEventListener("click", () => { d.open = true; }));
+}
+
 // ---- Featured film: swap the thumbnail for the YouTube player on click ----
 function initFilm() {
   $$(".film__frame[data-yt]").forEach(a => a.addEventListener("click", (e) => {
@@ -1165,7 +1173,7 @@ function heroLine() {
 
 async function getJson(url) { const r = await fetch(url, { cache: "no-store" }); return r.json(); }
 async function init() {
-  initReveal(); initReel(); initFilm(); initCursor(); initViewerControls(); initSpectrum();
+  initReveal(); initReel(); initFilm(); initArtist(); initCursor(); initViewerControls(); initSpectrum();
   const [cfg, arts, prods] = await Promise.all([
     getJson("./data/config.json").catch(() => null),
     getJson("./data/artworks.json").catch(() => null),
