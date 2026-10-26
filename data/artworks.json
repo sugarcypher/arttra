@@ -1,5 +1,80 @@
 [
   {
+    "id": "BRC-INT-B08F2BCA",
+    "sku": "BRC-INT-B08F2BCA",
+    "title": "Ironbloom Involution",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#d9bf93",
+      "#d8ae60",
+      "#c3af9b",
+      "#74b5cf",
+      "#a49978",
+      "#4c4f4b"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#d9bf93"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#4c4f4b"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5528.webp",
+    "image": "./assets/images/gallery/web/IMG_5528.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5528.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5528.svg",
+    "printDimensions": {
+      "widthInches": 15.0,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4500,
+      "pixelHeight": 6000
+    },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3178
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.1753,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0575,
+      "detail_frequency": 0.6221,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.5599,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5528.PNG",
+    "timestamp": "2026-10-26T16:02:34.010603",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5528.png"
+  },
+  {
     "id": "BRC-NAT-47E261B8",
     "sku": "BRC-NAT-47E261B8",
     "title": "Obsidian Compendium",
@@ -8,9 +83,9 @@
     "category": "Art Prints",
     "colorPalette": [
       "#a893b4",
-      "#715772",
-      "#50374b",
-      "#3e1a38",
+      "#715771",
+      "#50384b",
+      "#3e1938",
       "#1c1424",
       "#090914"
     ],
@@ -23,12 +98,12 @@
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#715772"
+        "hex": "#715771"
       },
       {
         "name": "Cinder",
         "code": "CIN",
-        "hex": "#50374b"
+        "hex": "#50384b"
       },
       {
         "name": "Obsidian",
@@ -52,10 +127,10 @@
     "priceTiers": {
       "startingPrice": 79
     },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5184.webp",
-    "image": "./assets/images/gallery/web/IMG_5184.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5184.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5184.svg",
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5184-jpg.webp",
+    "image": "./assets/images/gallery/web/IMG_5184-jpg.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5184-jpg.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5184-jpg.svg",
     "printDimensions": {
       "widthInches": 16.3,
       "heightInches": 20.0,
@@ -63,26 +138,26 @@
       "pixelWidth": 4879,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1483
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1133,
+      "edge_density": 0.1128,
       "color_complexity": 256,
-      "gradient_ratio": 0.0556,
-      "detail_frequency": 0.5154,
+      "gradient_ratio": 0.0555,
+      "detail_frequency": 0.5144,
       "contrast_range": 1.0,
-      "avg_luminance": 0.2528,
+      "avg_luminance": 0.2527,
       "route": "raster",
       "route_reason": "Complex image"
     },
     "isPhotography": false,
     "buyUrl": "#",
     "sourceFile": "IMG_5184.jpg",
-    "timestamp": "2026-06-30T20:25:07.176809",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png",
-    "sourcePixels": {
-      "w": 1206,
-      "h": 1483
-    }
+    "timestamp": "2026-10-26T16:02:33.702599",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184-jpg.png"
   },
   {
     "id": "BRC-INT-31046E7B",
@@ -235,81 +310,6 @@
     }
   },
   {
-    "id": "BRC-NAT-CEF29D12",
-    "sku": "BRC-NAT-CEF29D12",
-    "title": "Gloaming Verdure",
-    "description": "",
-    "style": "Naturalis",
-    "category": "Art Prints",
-    "colorPalette": [
-      "#4cb217",
-      "#3a7624",
-      "#3e443f",
-      "#4f1d76",
-      "#391669",
-      "#230f55"
-    ],
-    "namedColors": [
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#4cb217"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#3a7624"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Metal Print"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "naturalis",
-      "art prints",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5212.webp",
-    "image": "./assets/images/gallery/web/IMG_5212.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5212.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5212.svg",
-    "printDimensions": {
-      "widthInches": 14.1,
-      "heightInches": 20.0,
-      "dpi": 300,
-      "pixelWidth": 4244,
-      "pixelHeight": 6000
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.0641,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0595,
-      "detail_frequency": 0.3216,
-      "contrast_range": 0.9765,
-      "avg_luminance": 0.2548,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": false,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5212.png",
-    "timestamp": "2026-06-24T23:21:34.976720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5212.png",
-    "sourcePixels": {
-      "w": 2480,
-      "h": 3506
-    }
-  },
-  {
     "id": "BRC-NAT-57407F2D",
     "sku": "BRC-NAT-57407F2D",
     "title": "Minium Witchgrass",
@@ -392,86 +392,6 @@
     "sourcePixels": {
       "w": 3024,
       "h": 4032
-    }
-  },
-  {
-    "id": "BRC-LUM-95B5E644",
-    "sku": "BRC-LUM-95B5E644",
-    "title": "Selene Tendril",
-    "description": "",
-    "style": "Luminos",
-    "category": "Art Prints",
-    "colorPalette": [
-      "#e1ebe5",
-      "#d7dce0",
-      "#bbdcce",
-      "#bac0c3",
-      "#9bb4b3",
-      "#7a7ea3"
-    ],
-    "namedColors": [
-      {
-        "name": "Alabaster",
-        "code": "ALB",
-        "hex": "#e1ebe5"
-      },
-      {
-        "name": "Bone",
-        "code": "BON",
-        "hex": "#d7dce0"
-      },
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#bac0c3"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Metal Print"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "luminos",
-      "art prints",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5184.webp",
-    "image": "./assets/images/gallery/web/IMG_5184.webp",
-    "printFile": "./assets/images/gallery/print/IMG_5184.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_5184.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 20.0,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 6000
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.0468,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0585,
-      "detail_frequency": 0.2444,
-      "contrast_range": 0.9961,
-      "avg_luminance": 0.7348,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": false,
-    "buyUrl": "#",
-    "sourceFile": "IMG_5184.png",
-    "timestamp": "2026-06-24T23:21:34.775720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5184.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2048
     }
   },
   {
@@ -3091,91 +3011,6 @@
     }
   },
   {
-    "id": "BRC-NAT-E1262B0A",
-    "sku": "BRC-NAT-E1262B0A",
-    "title": "Acheron Witchgrass",
-    "description": "",
-    "style": "Naturalis",
-    "category": "Art Prints",
-    "colorPalette": [
-      "#d1895d",
-      "#7e4036",
-      "#402323",
-      "#190e10",
-      "#080708",
-      "#010101"
-    ],
-    "namedColors": [
-      {
-        "name": "Ash",
-        "code": "ASH",
-        "hex": "#d1895d"
-      },
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#7e4036"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#402323"
-      },
-      {
-        "name": "Obsidian",
-        "code": "OBS",
-        "hex": "#190e10"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Metal Print"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "naturalis",
-      "art prints",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2508.webp",
-    "image": "./assets/images/gallery/web/IMG_2508.webp",
-    "printFile": "./assets/images/gallery/print/IMG_2508.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_2508.svg",
-    "printDimensions": {
-      "widthInches": 20.0,
-      "heightInches": 18.7,
-      "dpi": 300,
-      "pixelWidth": 6000,
-      "pixelHeight": 5619
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.0624,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0452,
-      "detail_frequency": 0.4235,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.1752,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": false,
-    "buyUrl": "#",
-    "sourceFile": "IMG_2508.PNG",
-    "timestamp": "2026-05-31T20:26:07.730443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2508.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 1918
-    }
-  },
-  {
     "id": "BRC-NAT-7B080D3B",
     "sku": "BRC-NAT-7B080D3B",
     "title": "Crepuscule Sedge",
@@ -3988,86 +3823,6 @@
     "sourcePixels": {
       "w": 1125,
       "h": 2436
-    }
-  },
-  {
-    "id": "BRC-INT-A7F50DEA",
-    "sku": "BRC-INT-A7F50DEA",
-    "title": "Lichgate Arabesque",
-    "description": "",
-    "style": "Intricata",
-    "category": "Art Prints",
-    "colorPalette": [
-      "#7b8a7f",
-      "#666364",
-      "#6d424c",
-      "#2d3f3c",
-      "#351d31",
-      "#06072e"
-    ],
-    "namedColors": [
-      {
-        "name": "Pewter",
-        "code": "PEW",
-        "hex": "#7b8a7f"
-      },
-      {
-        "name": "Cinder",
-        "code": "CIN",
-        "hex": "#6d424c"
-      },
-      {
-        "name": "Obsidian",
-        "code": "OBS",
-        "hex": "#06072e"
-      }
-    ],
-    "bestProducts": [
-      "Framed Print",
-      "Canvas",
-      "Metal Print"
-    ],
-    "seoKeywords": [
-      "arttra",
-      "intricata",
-      "art prints",
-      "wall art",
-      "contemporary",
-      "handmade"
-    ],
-    "priceTiers": {
-      "startingPrice": 79
-    },
-    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_1521.webp",
-    "image": "./assets/images/gallery/web/IMG_1521.webp",
-    "printFile": "./assets/images/gallery/print/IMG_1521.png",
-    "vectorFile": "./assets/images/gallery/vector/IMG_1521.svg",
-    "printDimensions": {
-      "widthInches": 11.2,
-      "heightInches": 20.0,
-      "dpi": 300,
-      "pixelWidth": 3375,
-      "pixelHeight": 6000
-    },
-    "vectorRoute": "raster",
-    "imageProfile": {
-      "edge_density": 0.1984,
-      "color_complexity": 256,
-      "gradient_ratio": 0.0537,
-      "detail_frequency": 0.6836,
-      "contrast_range": 1.0,
-      "avg_luminance": 0.2442,
-      "route": "raster",
-      "route_reason": "Complex image"
-    },
-    "isPhotography": false,
-    "buyUrl": "#",
-    "sourceFile": "IMG_1521.JPG",
-    "timestamp": "2026-05-31T20:26:07.360441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1521.png",
-    "sourcePixels": {
-      "w": 1536,
-      "h": 2730
     }
   },
   {
