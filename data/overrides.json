@@ -448,5 +448,41 @@
       "Canvas",
       "Metal Print"
     ]
+  },
+  "BRC-NAT-FCA6AA8E": {
+    "title": "Auroral Gordian",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-DD9DE2FB": {
+    "title": "Crucible Reliquary",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
   }
 }
