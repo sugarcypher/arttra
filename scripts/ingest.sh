@@ -1,6 +1,11 @@
 #!/bin/bash
 # arttra ingest — pull dropped images into gallery-source/ and push.
 #
+# NOTE FOR CLAUDE: don't run this file — bash/sh are denied in this Mac's
+# Claude Code settings. Run the Python twin instead, which follows the same
+# rules: `arttra/.venv/bin/python -I scripts/ingest.py [--dry-run]`. Keep
+# the two in sync when changing ingest rules. (launchd still runs this file.)
+#
 # Designed to be invoked by launchd on a polling interval (StartInterval),
 # NOT WatchPaths — FSEvents is unreliable on iCloud Drive and network mounts.
 #

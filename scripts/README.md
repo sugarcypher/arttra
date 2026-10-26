@@ -27,6 +27,9 @@ half-synced file.
 - `ingest.sh` — the polling worker. Materializes iCloud placeholders,
   filters to stable files, optionally converts HEIC -> JPEG with `sips`,
   moves into `gallery-source/`, commits, and pushes with retry.
+- `ingest.py` — the same rules in Python, for running by hand or from
+  Claude Code (which can't run bash on this Mac). Uses `arttra/.venv`.
+  Supports `--dry-run`. Keep it in sync with `ingest.sh`.
 - `com.arttra.pipeline.plist.template` — launchd plist template. Polls
   every 60s, runs at load, logs to `~/Library/Logs/arttra-ingest.{out,err}.log`.
 - `install-agent.sh` — renders the template with this Mac's paths and
@@ -58,6 +61,22 @@ ARTTRA_REPO="$(pwd)" \
 ARTTRA_BRANCH=main \
 bash -x scripts/ingest.sh
 ```
+
+Or, without bash (this is the path Claude Code uses):
+
+```bash
+arttra/.venv/bin/python -I scripts/ingest.py --dry-run   # show the plan
+arttra/.venv/bin/python -I scripts/ingest.py             # ingest + push
+```
+
+## Naming rules
+
+A drop keeps its filename unless that stem is already used in
+`gallery-source/` or the archive (`artra-dropped/`). Then it's published as
+`<stem>-<first 6 of its md5>`, e.g. `PNG image-929a4a.png`. The archived
+original is renamed to the same name, so the archive, the gallery and the
+site line up. Only byte-identical re-drops are skipped. The rejected folder
+matches by content, not name, and nothing is ever overwritten.
 
 ## Logs
 
