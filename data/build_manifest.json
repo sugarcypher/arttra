@@ -2635,7 +2635,10 @@
       "sourcePixels": {
         "w": 2827,
         "h": 2827
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -6071,7 +6074,10 @@
       "sourcePixels": {
         "w": 1125,
         "h": 2436
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -6341,7 +6347,10 @@
       "sourcePixels": {
         "w": 2827,
         "h": 2827
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -6591,7 +6600,10 @@
       "sourcePixels": {
         "w": 688,
         "h": 916
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -10458,7 +10470,10 @@
       "sourcePixels": {
         "w": 2827,
         "h": 2827
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -12711,7 +12726,10 @@
       "sourcePixels": {
         "w": 4096,
         "h": 4096
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -14042,7 +14060,10 @@
       "sourcePixels": {
         "w": 1125,
         "h": 2436
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
@@ -17019,7 +17040,10 @@
       "sourcePixels": {
         "w": 1206,
         "h": 1179
-      }
+      },
+      "materials": "",
+      "sold": false,
+      "hidden": true
     },
     "route": "raster",
     "bg_removed": false
