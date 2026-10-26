@@ -140,12 +140,14 @@ img{max-width:100%}
 .reel__play span{border:1px solid var(--line-2);padding:.6rem 1rem;background:rgba(12,11,9,.5)}
 @media(max-width:680px){.reel__item{height:330px}}
 
-.svc{padding:1.6rem 0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:1.4rem;transition:padding-left .3s;color:var(--bone)}
-.svc:hover{padding-left:.8rem}
-.svc .num{font-size:.7rem;letter-spacing:.2em;color:var(--gold)}
-.svc .svc-name{font-family:var(--display);font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:500}
-.svc .arrow{margin-left:auto;color:var(--bone-dim);transition:transform .3s,color .3s}
-.svc:hover .arrow{transform:translateX(6px);color:var(--gold)}
+/* commissions call to action — opens an email to help@ */
+.offer{display:grid;gap:1.8rem}
+@media(min-width:900px){.offer{grid-template-columns:7fr 5fr;align-items:end;gap:3rem}}
+.offer__title{font-family:var(--display);font-weight:500;font-size:clamp(2.2rem,5.5vw,4rem);line-height:1.02;color:var(--bone)}
+.offer__title em{font-style:italic;color:var(--gold)}
+.offer__note{max-width:40ch;margin-bottom:1.6rem;color:var(--bone-dim);font-size:.92rem;line-height:1.7}
+.offer__mail{display:block;width:max-content;margin-top:.9rem;font-size:.8rem;letter-spacing:.04em;color:var(--bone-dim);transition:color .2s}
+.offer__mail:hover{color:var(--gold)}
 
 [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease-out),transform 1s var(--ease-out)}
 [data-reveal].is-in{opacity:1;transform:none}
