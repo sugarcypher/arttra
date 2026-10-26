@@ -1,5 +1,175 @@
 [
   {
+    "id": "BRC-NAT-651BCFD8",
+    "sku": "BRC-NAT-651BCFD8",
+    "title": "Silvaine Witchgrass",
+    "description": "",
+    "style": "Naturalis",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#cdc0b8",
+      "#b4a197",
+      "#9a8982",
+      "#837571",
+      "#726868",
+      "#544a49"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#cdc0b8"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#b4a197"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#837571"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#544a49"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "naturalis",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5606.webp",
+    "image": "./assets/images/gallery/web/IMG_5606.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5606.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5606.svg",
+    "printDimensions": {
+      "widthInches": 20.0,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 6000,
+      "pixelHeight": 6000
+    },
+    "sourcePixels": {
+      "w": 1377,
+      "h": 1377
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.0979,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0609,
+      "detail_frequency": 0.4763,
+      "contrast_range": 0.9922,
+      "avg_luminance": 0.5028,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5606.PNG",
+    "timestamp": "2026-10-26T18:29:35.364711",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5606.png"
+  },
+  {
+    "id": "BRC-INT-8200DF7F",
+    "sku": "BRC-INT-8200DF7F",
+    "title": "Meridian Compendium",
+    "description": "",
+    "style": "Intricata",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#e2c8ac",
+      "#7fb185",
+      "#ad6f93",
+      "#576680",
+      "#722289",
+      "#150f50"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e2c8ac"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#7fb185"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#576680"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#722289"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "intricata",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_10AD0B7F-59DA-47FA-843B-5D402032830F.webp",
+    "image": "./assets/images/gallery/web/10AD0B7F-59DA-47FA-843B-5D402032830F.webp",
+    "printFile": "./assets/images/gallery/print/10AD0B7F-59DA-47FA-843B-5D402032830F.png",
+    "vectorFile": "./assets/images/gallery/vector/10AD0B7F-59DA-47FA-843B-5D402032830F.svg",
+    "printDimensions": {
+      "widthInches": 20.0,
+      "heightInches": 13.3,
+      "dpi": 300,
+      "pixelWidth": 6000,
+      "pixelHeight": 3999
+    },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2730
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.2706,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0569,
+      "detail_frequency": 0.7863,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.4236,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "10AD0B7F-59DA-47FA-843B-5D402032830F.JPEG",
+    "timestamp": "2026-10-26T18:29:31.903695",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/10AD0B7F-59DA-47FA-843B-5D402032830F.png"
+  },
+  {
     "id": "BRC-NAT-56C7749D",
     "sku": "BRC-NAT-56C7749D",
     "title": "Halcyon Concatenation",
