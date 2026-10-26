@@ -18,6 +18,7 @@ import random
 import colorsys
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Optional
 
@@ -1148,7 +1149,9 @@ def _apply_print_urls(artworks):
     for art in artworks:
         print_file = art.get("printFile") or ""
         if print_file:
-            art["printUrl"] = f"{R2_PUBLIC_BASE}/print/{Path(print_file).name}"
+            # Encoded: names like "PNG image 2.png" have spaces, and Printful
+            # fetches this URL verbatim when fulfilling an order.
+            art["printUrl"] = f"{R2_PUBLIC_BASE}/print/{quote(Path(print_file).name)}"
     return artworks
 
 
