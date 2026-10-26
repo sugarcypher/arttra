@@ -89,6 +89,19 @@ img{max-width:100%}
 .ticker-track{display:flex;gap:3rem;white-space:nowrap;width:max-content;animation:bscroll 28s linear infinite;font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--bone-dim)}
 @keyframes bscroll{to{transform:translateX(-50%)}}
 
+/* featured film — YouTube player loads on click */
+.film{display:grid;gap:1.4rem;margin-bottom:2.8rem}
+@media(min-width:900px){.film{grid-template-columns:7fr 3fr;align-items:end;gap:2.4rem}}
+.film__frame{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(160deg,#1b1813,#0f0e0b);border:1px solid var(--line)}
+.film__frame img,.film__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.film__frame img{object-fit:cover;transition:transform .8s var(--ease-out)}
+.film__frame:hover img{transform:scale(1.02)}
+.film__play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bone);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase}
+.film__play span{border:1px solid var(--line-2);padding:.75rem 1.2rem;background:rgba(12,11,9,.55);transition:background .3s,color .3s,border-color .3s}
+.film__frame:hover .film__play span,.film__frame:focus-visible .film__play span{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.film__title{font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.15;color:var(--bone)}
+.film .about-meta{margin-top:.9rem}
+
 /* media filmstrip */
 .reel{display:flex;gap:.8rem;overflow-x:auto;padding:0 1.6rem 1rem;scroll-snap-type:x mandatory;scroll-padding-inline:1.6rem;scrollbar-width:thin;scrollbar-color:var(--line-2) transparent;overscroll-behavior-x:contain}
 .reel__item{position:relative;flex:none;height:min(440px,62vh);aspect-ratio:9/16;background:linear-gradient(160deg,#1b1813,#0f0e0b);scroll-snap-align:start;overflow:hidden;border:1px solid var(--line)}

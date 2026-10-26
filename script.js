@@ -1082,6 +1082,24 @@ function initReel() {
   vids.forEach(v => io.observe(v));
 }
 
+// ---- Featured film: swap the thumbnail for the YouTube player on click ----
+function initFilm() {
+  $$(".film__frame[data-yt]").forEach(a => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    const f = document.createElement("iframe");
+    f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(a.dataset.yt)}?autoplay=1&rel=0`;
+    f.title = a.dataset.title || "Film";
+    f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    f.allowFullscreen = true;
+    f.referrerPolicy = "strict-origin-when-cross-origin";
+    const box = document.createElement("div");
+    box.className = "film__frame";
+    box.appendChild(f);
+    a.replaceWith(box);
+    f.focus();
+  }, { once: true }));
+}
+
 // ---- Scroll reveal ----
 function initReveal() {
   const els = $$("[data-reveal]");
@@ -1113,6 +1131,8 @@ function initCursor() {
   document.addEventListener("pointerdown", () => c.classList.add("is-down"));
   document.addEventListener("pointerup", () => c.classList.remove("is-down"));
   document.documentElement.addEventListener("mouseleave", () => c.classList.remove("is-on"));
+  // Inside an iframe (the film player) moves stop reaching this page — hide the ring instead of leaving it frozen on top
+  document.addEventListener("pointerover", (e) => { if (e.target.tagName === "IFRAME") c.classList.remove("is-on", "is-big"); });
 }
 
 // ---- Structured data: ItemList of Products (built from the live catalogue) ----
@@ -1145,7 +1165,7 @@ function heroLine() {
 
 async function getJson(url) { const r = await fetch(url, { cache: "no-store" }); return r.json(); }
 async function init() {
-  initReveal(); initReel(); initCursor(); initViewerControls(); initSpectrum();
+  initReveal(); initReel(); initFilm(); initCursor(); initViewerControls(); initSpectrum();
   const [cfg, arts, prods] = await Promise.all([
     getJson("./data/config.json").catch(() => null),
     getJson("./data/artworks.json").catch(() => null),
