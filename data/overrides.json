@@ -484,5 +484,149 @@
       "Canvas",
       "Metal Print"
     ]
+  },
+  "BRC-INT-D54A05A0": {
+    "title": "Charnel Marginalia",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-35F1D660": {
+    "title": "Lumen Kaleidoscope",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-BB3A4848": {
+    "title": "Irradiance Warren",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-C365EC23": {
+    "title": "Refulgent Gordian",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-NAT-BC06A3AC": {
+    "title": "Selene Bestiary",
+    "category": "Art Prints",
+    "style": "Naturalis",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-97F1FF12": {
+    "title": "Limn Assemblage",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-056CEE1D": {
+    "title": "Silvaine Filigree",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
+  },
+  "BRC-INT-78D20D9E": {
+    "title": "Phosphor Confluence",
+    "category": "Art Prints",
+    "style": "Intricata",
+    "description": "",
+    "materials": "",
+    "sold": false,
+    "removeBg": false,
+    "hidden": true,
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ]
   }
 }
