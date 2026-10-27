@@ -1095,7 +1095,9 @@ function initFilm() {
   $$(".film__frame[data-yt]").forEach(a => a.addEventListener("click", (e) => {
     e.preventDefault();
     const f = document.createElement("iframe");
-    f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(a.dataset.yt)}?autoplay=1&rel=0`;
+    // data-yt-list plays on through a playlist (e.g. a channel's uploads) after the first video
+    const list = a.dataset.ytList ? `list=${encodeURIComponent(a.dataset.ytList)}&` : "";
+    f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(a.dataset.yt)}?${list}autoplay=1&rel=0`;
     f.title = a.dataset.title || "Film";
     f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     f.allowFullscreen = true;

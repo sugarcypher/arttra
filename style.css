@@ -129,6 +129,11 @@ img{max-width:100%}
 .film__frame:hover .film__play span,.film__frame:focus-visible .film__play span{background:var(--gold);border-color:var(--gold);color:var(--ink)}
 .film__title{font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.15;color:var(--bone)}
 .film .about-meta{margin-top:.9rem}
+@media(min-width:900px){.film--flip{grid-template-columns:3fr 7fr}.film--flip .film__frame{order:2}}
+.film__kicker{margin-bottom:.7rem;font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+.film__note{margin-top:.8rem;max-width:34ch;color:var(--bone-dim);font-size:.92rem;line-height:1.7}
+.film__link{border-bottom:1px solid var(--line-2);transition:color .2s,border-color .2s}
+.film__link:hover{color:var(--gold);border-color:var(--gold)}
 
 /* media filmstrip */
 .reel{display:flex;gap:.8rem;overflow-x:auto;padding:0 1.6rem 1rem;scroll-snap-type:x mandatory;scroll-padding-inline:1.6rem;scrollbar-width:thin;scrollbar-color:var(--line-2) transparent;overscroll-behavior-x:contain}
