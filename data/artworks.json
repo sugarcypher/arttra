@@ -1,5 +1,340 @@
 [
   {
+    "id": "BRC-NAT-1DB89647",
+    "sku": "BRC-NAT-1DB89647",
+    "title": "Gossamer Undergrowth",
+    "description": "",
+    "style": "Naturalis",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#e7e7d2",
+      "#d9d8c3",
+      "#8ed7dc",
+      "#89a39c",
+      "#64746d",
+      "#28302e"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e7e7d2"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#8ed7dc"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#64746d"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#28302e"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "naturalis",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_IMG_5659.webp",
+    "image": "./assets/images/gallery/web/IMG_5659.webp",
+    "printFile": "./assets/images/gallery/print/IMG_5659.png",
+    "vectorFile": "./assets/images/gallery/vector/IMG_5659.svg",
+    "printDimensions": {
+      "widthInches": 15.0,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4497,
+      "pixelHeight": 6000
+    },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.0764,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0607,
+      "detail_frequency": 0.3625,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.5754,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "IMG_5659.JPG",
+    "timestamp": "2026-11-18T15:00:21.256244",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5659.png"
+  },
+  {
+    "id": "BRC-NAT-EFDB769C",
+    "sku": "BRC-NAT-EFDB769C",
+    "title": "Dawnspar Chronicle",
+    "description": "",
+    "style": "Naturalis",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#e9e7b6",
+      "#b9d9ae",
+      "#919f8e",
+      "#635b78",
+      "#384d6f",
+      "#1f1a44"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#e9e7b6"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#919f8e"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#635b78"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#384d6f"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "naturalis",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_EF12E5E9-3617-4F22-956D-FB1877EAED68.webp",
+    "image": "./assets/images/gallery/web/EF12E5E9-3617-4F22-956D-FB1877EAED68.webp",
+    "printFile": "./assets/images/gallery/print/EF12E5E9-3617-4F22-956D-FB1877EAED68.png",
+    "vectorFile": "./assets/images/gallery/vector/EF12E5E9-3617-4F22-956D-FB1877EAED68.svg",
+    "printDimensions": {
+      "widthInches": 20.0,
+      "heightInches": 15.0,
+      "dpi": 300,
+      "pixelWidth": 6000,
+      "pixelHeight": 4498
+    },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.1488,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0574,
+      "detail_frequency": 0.5602,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.4783,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "EF12E5E9-3617-4F22-956D-FB1877EAED68.JPEG",
+    "timestamp": "2026-11-18T15:00:19.545267",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EF12E5E9-3617-4F22-956D-FB1877EAED68.png"
+  },
+  {
+    "id": "BRC-NAT-AC8EDB22",
+    "sku": "BRC-NAT-AC8EDB22",
+    "title": "Calenture Vortex",
+    "description": "",
+    "style": "Naturalis",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#fcefc3",
+      "#f0d8b1",
+      "#f1a96c",
+      "#d7a087",
+      "#c5736a",
+      "#862b80"
+    ],
+    "namedColors": [
+      {
+        "name": "Bone",
+        "code": "BON",
+        "hex": "#fcefc3"
+      },
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#f1a96c"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#862b80"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "naturalis",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_CBA5C861-8291-424A-A91B-62AF5F14592E.webp",
+    "image": "./assets/images/gallery/web/CBA5C861-8291-424A-A91B-62AF5F14592E.webp",
+    "printFile": "./assets/images/gallery/print/CBA5C861-8291-424A-A91B-62AF5F14592E.png",
+    "vectorFile": "./assets/images/gallery/vector/CBA5C861-8291-424A-A91B-62AF5F14592E.svg",
+    "printDimensions": {
+      "widthInches": 14.1,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4243,
+      "pixelHeight": 6000
+    },
+    "sourcePixels": {
+      "w": 2377,
+      "h": 3361
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.1906,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0631,
+      "detail_frequency": 0.5943,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.6223,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "CBA5C861-8291-424A-A91B-62AF5F14592E.JPEG",
+    "timestamp": "2026-11-18T15:00:19.301270",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CBA5C861-8291-424A-A91B-62AF5F14592E.png"
+  },
+  {
+    "id": "BRC-NAT-7BF9838D",
+    "sku": "BRC-NAT-7BF9838D",
+    "title": "Sablefell Witchgrass",
+    "description": "",
+    "style": "Naturalis",
+    "category": "Art Prints",
+    "colorPalette": [
+      "#bc8b79",
+      "#a67867",
+      "#856051",
+      "#6d3322",
+      "#502b1d",
+      "#18120e"
+    ],
+    "namedColors": [
+      {
+        "name": "Ash",
+        "code": "ASH",
+        "hex": "#bc8b79"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#a67867"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#6d3322"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#18120e"
+      }
+    ],
+    "bestProducts": [
+      "Framed Print",
+      "Canvas",
+      "Metal Print"
+    ],
+    "seoKeywords": [
+      "arttra",
+      "naturalis",
+      "art prints",
+      "wall art",
+      "contemporary",
+      "handmade"
+    ],
+    "priceTiers": {
+      "startingPrice": 79
+    },
+    "thumb": "./assets/images/gallery/thumbs/thumb_A78ED5FD-08DE-4CC1-BEDE-D0DE20B8762E.webp",
+    "image": "./assets/images/gallery/web/A78ED5FD-08DE-4CC1-BEDE-D0DE20B8762E.webp",
+    "printFile": "./assets/images/gallery/print/A78ED5FD-08DE-4CC1-BEDE-D0DE20B8762E.png",
+    "vectorFile": "./assets/images/gallery/vector/A78ED5FD-08DE-4CC1-BEDE-D0DE20B8762E.svg",
+    "printDimensions": {
+      "widthInches": 13.6,
+      "heightInches": 20.0,
+      "dpi": 300,
+      "pixelWidth": 4070,
+      "pixelHeight": 6000
+    },
+    "sourcePixels": {
+      "w": 2035,
+      "h": 3000
+    },
+    "vectorRoute": "raster",
+    "imageProfile": {
+      "edge_density": 0.064,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0572,
+      "detail_frequency": 0.4057,
+      "contrast_range": 1.0,
+      "avg_luminance": 0.3168,
+      "route": "raster",
+      "route_reason": "Complex image"
+    },
+    "isPhotography": false,
+    "buyUrl": "#",
+    "sourceFile": "A78ED5FD-08DE-4CC1-BEDE-D0DE20B8762E.JPEG",
+    "timestamp": "2026-11-18T15:00:19.077273",
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A78ED5FD-08DE-4CC1-BEDE-D0DE20B8762E.png"
+  },
+  {
     "id": "BRC-NAT-651BCFD8",
     "sku": "BRC-NAT-651BCFD8",
     "title": "Silvaine Witchgrass",
