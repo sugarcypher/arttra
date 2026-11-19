@@ -81,6 +81,8 @@ export function optionsForArtwork(art, catalog) {
       const needsUpscale = realPpi < (Number(m.minPpi) || 150);
       sizes.push({ id: s.id, w: dispW, h: dispH, price: Number(s.price), ppi, needsUpscale, label: `${dispW}\u2033 \u00d7 ${dispH}\u2033` });
     }
+    // Small to large, so a bigger print is never listed before a smaller one.
+    sizes.sort((x, y) => (x.w * x.h - y.w * y.h) || (Math.max(x.w, x.h) - Math.max(y.w, y.h)));
     if (sizes.length) out.push({ material: m, sizes });
   }
   return out;
