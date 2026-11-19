@@ -2,7 +2,7 @@
   {
     "id": "BRC-NAT-1DB89647",
     "sku": "BRC-NAT-1DB89647",
-    "title": "Gossamer Undergrowth",
+    "title": "Something Landed Near Morongo",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -87,7 +87,7 @@
   {
     "id": "BRC-NAT-EFDB769C",
     "sku": "BRC-NAT-EFDB769C",
-    "title": "Dawnspar Chronicle",
+    "title": "Weather Inside a Marble",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -172,7 +172,7 @@
   {
     "id": "BRC-NAT-AC8EDB22",
     "sku": "BRC-NAT-AC8EDB22",
-    "title": "Calenture Vortex",
+    "title": "The Firebird Learns Geometry",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -252,7 +252,7 @@
   {
     "id": "BRC-NAT-7BF9838D",
     "sku": "BRC-NAT-7BF9838D",
-    "title": "Sablefell Witchgrass",
+    "title": "A Crack Taught to Write",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -337,7 +337,7 @@
   {
     "id": "BRC-NAT-651BCFD8",
     "sku": "BRC-NAT-651BCFD8",
-    "title": "Silvaine Witchgrass",
+    "title": "Porthole, Lukewarm",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -422,7 +422,7 @@
   {
     "id": "BRC-INT-8200DF7F",
     "sku": "BRC-INT-8200DF7F",
-    "title": "Meridian Compendium",
+    "title": "Inventory of a Self",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -507,7 +507,7 @@
   {
     "id": "BRC-NAT-56C7749D",
     "sku": "BRC-NAT-56C7749D",
-    "title": "Halcyon Concatenation",
+    "title": "Camouflage for Deep Water",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -587,7 +587,7 @@
   {
     "id": "BRC-INT-7BA2A305",
     "sku": "BRC-INT-7BA2A305",
-    "title": "Chandral Chronicle",
+    "title": "Oil Slick Dreaming of Orchids",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -667,7 +667,7 @@
   {
     "id": "BRC-INT-7EE6885A",
     "sku": "BRC-INT-7EE6885A",
-    "title": "Hollowmere Vortex",
+    "title": "The Zipper Between Two Oceans",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -747,7 +747,7 @@
   {
     "id": "BRC-NAT-05CEA009",
     "sku": "BRC-NAT-05CEA009",
-    "title": "Stygian Seedvault",
+    "title": "Night Market, Crossed Out",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -827,7 +827,7 @@
   {
     "id": "BRC-NAT-D91155BB",
     "sku": "BRC-NAT-D91155BB",
-    "title": "Ignescent Spinney",
+    "title": "The Beetle Reads Its Own Pulse",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -917,7 +917,7 @@
   {
     "id": "BRC-NAT-BD3D2CEA",
     "sku": "BRC-NAT-BD3D2CEA",
-    "title": "Cimmerian Roothold",
+    "title": "Afterparty at the Edge of the Galaxy",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -992,7 +992,7 @@
   {
     "id": "BRC-INT-B08F2BCA",
     "sku": "BRC-INT-B08F2BCA",
-    "title": "Ironbloom Involution",
+    "title": "The Startled One",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1067,7 +1067,7 @@
   {
     "id": "BRC-NAT-47E261B8",
     "sku": "BRC-NAT-47E261B8",
-    "title": "Obsidian Compendium",
+    "title": "Remote Work, Very Remote",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -1152,7 +1152,7 @@
   {
     "id": "BRC-INT-31046E7B",
     "sku": "BRC-INT-31046E7B",
-    "title": "Starhollow Mosaic",
+    "title": "Coral Arguing with the Tide",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1208,6 +1208,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2282,
@@ -1223,16 +1227,12 @@
     "buyUrl": "#",
     "sourceFile": "8533A705-3528-4D4A-8DC5-01100FAD6276.JPG",
     "timestamp": "2026-06-30T20:25:05.166813",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8533A705-3528-4D4A-8DC5-01100FAD6276.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8533A705-3528-4D4A-8DC5-01100FAD6276.png"
   },
   {
     "id": "BRC-INT-ACAD147A",
     "sku": "BRC-INT-ACAD147A",
-    "title": "Duskfall Tangle",
+    "title": "Neon Undergrowth, 3 a.m.",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1278,6 +1278,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1575,
+      "h": 2100
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2224,
@@ -1293,16 +1297,12 @@
     "buyUrl": "#",
     "sourceFile": "1F561B55-4878-441C-8D13-A0DDE6EE9786.PNG",
     "timestamp": "2026-06-30T20:25:04.476815",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1F561B55-4878-441C-8D13-A0DDE6EE9786.png",
-    "sourcePixels": {
-      "w": 1575,
-      "h": 2100
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1F561B55-4878-441C-8D13-A0DDE6EE9786.png"
   },
   {
     "id": "BRC-NAT-57407F2D",
     "sku": "BRC-NAT-57407F2D",
-    "title": "Minium Witchgrass",
+    "title": "S\u00e9ance in the Waiting Room",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -1363,6 +1363,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3024,
+      "h": 4032
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0871,
@@ -1378,16 +1382,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5196.png",
     "timestamp": "2026-06-24T23:21:34.882720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5196.png",
-    "sourcePixels": {
-      "w": 3024,
-      "h": 4032
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5196.png"
   },
   {
     "id": "BRC-NAT-5E6B1531",
     "sku": "BRC-NAT-5E6B1531",
-    "title": "Nacre Bindweed",
+    "title": "A Meadow at Mach One",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -1438,6 +1438,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1773,
+      "h": 2365
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0595,
@@ -1453,16 +1457,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5176.png",
     "timestamp": "2026-06-24T23:21:34.724720",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5176.png",
-    "sourcePixels": {
-      "w": 1773,
-      "h": 2365
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5176.png"
   },
   {
     "id": "BRC-NAT-019899FB",
     "sku": "BRC-NAT-019899FB",
-    "title": "Aurelius Heartwood",
+    "title": "Low Tide in a Pastel Country",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -1513,6 +1513,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1773,
+      "h": 2365
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0707,
@@ -1528,16 +1532,12 @@
     "buyUrl": "#",
     "sourceFile": "D112B3DE-15E4-4D03-90F7-C6C4B1F9F8EE.png",
     "timestamp": "2026-06-24T23:21:33.170718",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D112B3DE-15E4-4D03-90F7-C6C4B1F9F8EE.png",
-    "sourcePixels": {
-      "w": 1773,
-      "h": 2365
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D112B3DE-15E4-4D03-90F7-C6C4B1F9F8EE.png"
   },
   {
     "id": "BRC-INT-931D2F0D",
     "sku": "BRC-INT-931D2F0D",
-    "title": "Opaline Gordian",
+    "title": "Diagram of a Thought Leaving the Head",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1598,6 +1598,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.159,
@@ -1613,16 +1617,12 @@
     "buyUrl": "#",
     "sourceFile": "C1608E81-28A4-4FCD-98D3-859D165D5B20.jpeg",
     "timestamp": "2026-06-24T23:21:33.009718",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C1608E81-28A4-4FCD-98D3-859D165D5B20.png",
-    "sourcePixels": {
-      "w": 3464,
-      "h": 3464
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C1608E81-28A4-4FCD-98D3-859D165D5B20.png"
   },
   {
     "id": "BRC-NAT-1A89E810",
     "sku": "BRC-NAT-1A89E810",
-    "title": "Crepuscule Frond",
+    "title": "Green Lightning, Violet Room",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -1673,6 +1673,10 @@
       "pixelWidth": 4244,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2480,
+      "h": 3506
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0961,
@@ -1688,16 +1692,12 @@
     "buyUrl": "#",
     "sourceFile": "B9E24E95-5AEA-4CE1-AC30-2798E93E713D.png",
     "timestamp": "2026-06-24T23:21:32.993718",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/B9E24E95-5AEA-4CE1-AC30-2798E93E713D.png",
-    "sourcePixels": {
-      "w": 2480,
-      "h": 3506
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/B9E24E95-5AEA-4CE1-AC30-2798E93E713D.png"
   },
   {
     "id": "BRC-INT-6C7D037A",
     "sku": "BRC-INT-6C7D037A",
-    "title": "Crucible Confluence",
+    "title": "Mercury with a Paper Cut",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1753,6 +1753,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2193,
@@ -1768,16 +1772,12 @@
     "buyUrl": "#",
     "sourceFile": "33DEE185-2361-48C0-A6B9-395BFED7EB7F.png",
     "timestamp": "2026-06-24T23:21:32.221717",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/33DEE185-2361-48C0-A6B9-395BFED7EB7F.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/33DEE185-2361-48C0-A6B9-395BFED7EB7F.png"
   },
   {
     "id": "BRC-NAT-B003834B",
     "sku": "BRC-NAT-B003834B",
-    "title": "Glacis Bosk",
+    "title": "Pool Skin",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -1828,6 +1828,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0755,
@@ -1843,16 +1847,12 @@
     "buyUrl": "#",
     "sourceFile": "Tintbus.JPG",
     "timestamp": "2026-05-31T20:26:08.522450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Tintbus.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Tintbus.png"
   },
   {
     "id": "BRC-INT-FF5B7063",
     "sku": "BRC-INT-FF5B7063",
-    "title": "Lethe Palimpsest",
+    "title": "Small Witnesses",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1913,6 +1913,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5005
     },
+    "sourcePixels": {
+      "w": 3095,
+      "h": 2582
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1849,
@@ -1928,16 +1932,12 @@
     "buyUrl": "#",
     "sourceFile": "Stream-mirror-actors.JPG",
     "timestamp": "2026-05-31T20:26:08.512450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Stream-mirror-actors.png",
-    "sourcePixels": {
-      "w": 3095,
-      "h": 2582
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Stream-mirror-actors.png"
   },
   {
     "id": "BRC-INT-0661CE3E",
     "sku": "BRC-INT-0661CE3E",
-    "title": "Fuliginous Reliquary",
+    "title": "Cathedral for a Synthesizer",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -1998,6 +1998,10 @@
       "pixelWidth": 2856,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1828,
+      "h": 3840
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1786,
@@ -2013,16 +2017,12 @@
     "buyUrl": "#",
     "sourceFile": "PopPic00003.jpg",
     "timestamp": "2026-05-31T20:26:08.504450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/PopPic00003.png",
-    "sourcePixels": {
-      "w": 1828,
-      "h": 3840
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/PopPic00003.png"
   },
   {
     "id": "BRC-INT-9EAF6A2C",
     "sku": "BRC-INT-9EAF6A2C",
-    "title": "Ravenmoor Plexus",
+    "title": "A Square Remembering Itself",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -2078,6 +2078,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1662,
@@ -2093,37 +2097,33 @@
     "buyUrl": "#",
     "sourceFile": "IMG_6190.JPG",
     "timestamp": "2026-05-31T20:26:08.496449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_6190.png",
-    "sourcePixels": {
-      "w": 1024,
-      "h": 1024
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_6190.png"
   },
   {
     "id": "BRC-INT-8A947383",
     "sku": "BRC-INT-8A947383",
-    "title": "Vulcan Cartouche",
+    "title": "Everyone in Here Is Looking",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
-      "#c1bf95",
-      "#a29e7a",
-      "#8c836a",
-      "#8b654a",
-      "#636059",
+      "#cdc5a0",
+      "#a5a27d",
+      "#8c856b",
+      "#8c664b",
+      "#646159",
       "#383b40"
     ],
     "namedColors": [
       {
         "name": "Ash",
         "code": "ASH",
-        "hex": "#c1bf95"
+        "hex": "#cdc5a0"
       },
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#8c836a"
+        "hex": "#8c856b"
       },
       {
         "name": "Cinder",
@@ -2152,20 +2152,25 @@
     "printFile": "./assets/images/gallery/print/IMG_5392.png",
     "vectorFile": "./assets/images/gallery/vector/IMG_5392.svg",
     "printDimensions": {
-      "widthInches": 18.1,
+      "widthInches": 16.7,
       "heightInches": 20.0,
       "dpi": 300,
-      "pixelWidth": 5422,
+      "pixelWidth": 5019,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3370,
+      "h": 4028
+    },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.3129,
+      "edge_density": 0.3054,
       "color_complexity": 256,
-      "gradient_ratio": 0.0602,
-      "detail_frequency": 0.8761,
+      "gradient_ratio": 0.06,
+      "detail_frequency": 0.8652,
       "contrast_range": 1.0,
-      "avg_luminance": 0.4408,
+      "avg_luminance": 0.4491,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -2173,17 +2178,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5392.jpg",
     "timestamp": "2026-05-31T20:26:08.495450",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5392.png",
-    "sourcePixels": {
-      "w": 3871,
-      "h": 4284
-    },
-    "canvasCropped": true
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5392.png"
   },
   {
     "id": "BRC-INT-F1FC261D",
     "sku": "BRC-INT-F1FC261D",
-    "title": "Scorchfield Compendium",
+    "title": "Conductor and Passenger",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -2244,6 +2244,11 @@
       "pixelWidth": 4900,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3695,
+      "h": 4524
+    },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2263,
@@ -2259,17 +2264,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5391.jpg",
     "timestamp": "2026-05-31T20:26:08.485449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5391.png",
-    "sourcePixels": {
-      "w": 3498,
-      "h": 4284
-    },
-    "canvasCropped": true
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5391.png"
   },
   {
     "id": "BRC-INT-C2EF2340",
     "sku": "BRC-INT-C2EF2340",
-    "title": "Vulcan Maelstrom",
+    "title": "Four-Leaf Engine",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -2330,6 +2330,11 @@
       "pixelWidth": 4705,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3553,
+      "h": 4530
+    },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.3247,
@@ -2345,17 +2350,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5390.jpg",
     "timestamp": "2026-05-31T20:26:08.480449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5390.png",
-    "sourcePixels": {
-      "w": 3359,
-      "h": 4284
-    },
-    "canvasCropped": true
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5390.png"
   },
   {
     "id": "BRC-INT-E7F325F0",
     "sku": "BRC-INT-E7F325F0",
-    "title": "Fervid Concatenation",
+    "title": "The Spill Grew Circuitry",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -2416,6 +2416,11 @@
       "pixelWidth": 4613,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3553,
+      "h": 4621
+    },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2382,
@@ -2431,17 +2436,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5389.jpg",
     "timestamp": "2026-05-31T20:26:08.470449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5389.png",
-    "sourcePixels": {
-      "w": 3293,
-      "h": 4284
-    },
-    "canvasCropped": true
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5389.png"
   },
   {
     "id": "BRC-INT-AA34E2B1",
     "sku": "BRC-INT-AA34E2B1",
-    "title": "Pyrrhous Plexus",
+    "title": "Crowd Scene, Red Thread",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -2502,6 +2502,11 @@
       "pixelWidth": 4646,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3636,
+      "h": 4695
+    },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2852,
@@ -2517,17 +2522,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5387.jpg",
     "timestamp": "2026-05-31T20:26:08.465449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png",
-    "sourcePixels": {
-      "w": 3317,
-      "h": 4284
-    },
-    "canvasCropped": true
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5387.png"
   },
   {
     "id": "BRC-NAT-108379DA",
     "sku": "BRC-NAT-108379DA",
-    "title": "Heliotrope Chronicle",
+    "title": "The Wave Has Two Eyes and One Dragon",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -2593,6 +2593,10 @@
       "pixelWidth": 5157,
       "pixelHeight": 5999
     },
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1403
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1337,
@@ -2608,16 +2612,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_5182.jpg",
     "timestamp": "2026-05-31T20:26:08.457449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5182.png",
-    "sourcePixels": {
-      "w": 1206,
-      "h": 1403
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_5182.png"
   },
   {
     "id": "BRC-NAT-613BD6AE",
     "sku": "BRC-NAT-613BD6AE",
-    "title": "Seraphine Canopy",
+    "title": "Blue Thought, Black Afterthought",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -2673,6 +2673,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4497
     },
+    "sourcePixels": {
+      "w": 1941,
+      "h": 1455
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1136,
@@ -2688,16 +2692,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4633.jpg",
     "timestamp": "2026-05-31T20:26:08.449449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4633.png",
-    "sourcePixels": {
-      "w": 1941,
-      "h": 1455
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4633.png"
   },
   {
     "id": "BRC-NAT-B2367F03",
     "sku": "BRC-NAT-B2367F03",
-    "title": "Malucide Projections",
+    "title": "How the Television Gets In",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -2753,6 +2753,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2000,
+      "h": 2000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1097,
@@ -2771,16 +2775,12 @@
     "materials": "",
     "sold": false,
     "hidden": false,
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4408.png",
-    "sourcePixels": {
-      "w": 2000,
-      "h": 2000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4408.png"
   },
   {
     "id": "BRC-NAT-843871D1",
     "sku": "BRC-NAT-843871D1",
-    "title": "Blazemark Tangle",
+    "title": "Candy Reef",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -2836,6 +2836,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4488
     },
+    "sourcePixels": {
+      "w": 2215,
+      "h": 1657
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1458,
@@ -2851,16 +2855,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4361.PNG",
     "timestamp": "2026-05-31T20:26:08.436449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4361.png",
-    "sourcePixels": {
-      "w": 2215,
-      "h": 1657
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4361.png"
   },
   {
     "id": "BRC-NAT-209F4508",
     "sku": "BRC-NAT-209F4508",
-    "title": "Ravenmoor Greenwood",
+    "title": "Profile in Molten Sunset",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -2916,6 +2916,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3180
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1058,
@@ -2931,16 +2935,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4354.PNG",
     "timestamp": "2026-05-31T20:26:08.373449",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4354.png",
-    "sourcePixels": {
-      "w": 2384,
-      "h": 3180
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4354.png"
   },
   {
     "id": "BRC-NAT-A7758179",
     "sku": "BRC-NAT-A7758179",
-    "title": "Aether Bracken",
+    "title": "Gold Leaf Lost at Sea",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3006,6 +3006,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 4770,
+      "h": 3576
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0736,
@@ -3021,16 +3025,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4321.PNG",
     "timestamp": "2026-05-31T20:26:08.341448",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4321.png",
-    "sourcePixels": {
-      "w": 4770,
-      "h": 3576
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4321.png"
   },
   {
     "id": "BRC-INT-F848E811",
     "sku": "BRC-INT-F848E811",
-    "title": "Auroral Imbroglio",
+    "title": "Ribbons Refusing to Be a Bow",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -3091,6 +3091,10 @@
       "pixelWidth": 4459,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2182,
+      "h": 2936
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2247,
@@ -3106,16 +3110,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4292.jpg",
     "timestamp": "2026-05-31T20:26:08.115447",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4292.png",
-    "sourcePixels": {
-      "w": 2182,
-      "h": 2936
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4292.png"
   },
   {
     "id": "BRC-INT-44DF47A0",
     "sku": "BRC-INT-44DF47A0",
-    "title": "Selene Involution",
+    "title": "Arcade Under the Aqueduct",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -3171,6 +3171,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4477
     },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 1779
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2413,
@@ -3186,16 +3190,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_4221.jpg",
     "timestamp": "2026-05-31T20:26:08.112447",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4221.png",
-    "sourcePixels": {
-      "w": 2384,
-      "h": 1779
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4221.png"
   },
   {
     "id": "BRC-NAT-56D0E9E3",
     "sku": "BRC-NAT-56D0E9E3",
-    "title": "Phosphor Bloom",
+    "title": "Three Birds Swimming Through Paint",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3251,6 +3251,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4800
     },
+    "sourcePixels": {
+      "w": 6000,
+      "h": 4800
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1371,
@@ -3266,16 +3270,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3971.JPG",
     "timestamp": "2026-05-31T20:26:08.109447",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3971.png",
-    "sourcePixels": {
-      "w": 6000,
-      "h": 4800
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3971.png"
   },
   {
     "id": "BRC-INT-07E0A434",
     "sku": "BRC-INT-07E0A434",
-    "title": "Fuliginous Palimpsest",
+    "title": "Everything I Drew Before Breakfast",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -3326,6 +3326,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1778,
@@ -3341,16 +3345,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3969.PNG",
     "timestamp": "2026-05-31T20:26:08.058446",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3969.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3969.png"
   },
   {
     "id": "BRC-NAT-0D48D159",
     "sku": "BRC-NAT-0D48D159",
-    "title": "Opaline Undergrowth",
+    "title": "Parrot Weather",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3401,6 +3401,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3576,
+      "h": 4770
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1075,
@@ -3416,16 +3420,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3385.PNG",
     "timestamp": "2026-05-31T20:26:08.020446",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3385.png",
-    "sourcePixels": {
-      "w": 3576,
-      "h": 4770
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3385.png"
   },
   {
     "id": "BRC-NAT-CEEC5965",
     "sku": "BRC-NAT-CEEC5965",
-    "title": "Mortcloth Tendril",
+    "title": "Four Tents Pitched in the Dark",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3481,6 +3481,10 @@
       "pixelWidth": 4813,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1480,
+      "h": 1845
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0675,
@@ -3496,16 +3500,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3309.jpg",
     "timestamp": "2026-05-31T20:26:07.828444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3309.png",
-    "sourcePixels": {
-      "w": 1480,
-      "h": 1845
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3309.png"
   },
   {
     "id": "BRC-NAT-3D050726",
     "sku": "BRC-NAT-3D050726",
-    "title": "Umbra Lichen",
+    "title": "Compass for Somewhere Else",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3561,6 +3561,10 @@
       "pixelWidth": 5035,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1437
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0299,
@@ -3576,16 +3580,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3290.jpg",
     "timestamp": "2026-05-31T20:26:07.821444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3290.png",
-    "sourcePixels": {
-      "w": 1206,
-      "h": 1437
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3290.png"
   },
   {
     "id": "BRC-NAT-D2BEA999",
     "sku": "BRC-NAT-D2BEA999",
-    "title": "Vermeil Marginalia",
+    "title": "4:23, Still Melting",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3641,6 +3641,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3180
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1516,
@@ -3656,16 +3660,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_3087.PNG",
     "timestamp": "2026-05-31T20:26:07.820444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3087.png",
-    "sourcePixels": {
-      "w": 2384,
-      "h": 3180
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3087.png"
   },
   {
     "id": "BRC-INT-95A558B7",
     "sku": "BRC-INT-95A558B7",
-    "title": "Burnveil Labyrinth",
+    "title": "Wallpaper for a Room That Hums",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -3716,6 +3716,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5147
     },
+    "sourcePixels": {
+      "w": 2598,
+      "h": 2229
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2698,
@@ -3734,16 +3738,12 @@
     "materials": "",
     "sold": false,
     "hidden": false,
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2697.png",
-    "sourcePixels": {
-      "w": 2598,
-      "h": 2229
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2697.png"
   },
   {
     "id": "BRC-INT-5F9C0977",
     "sku": "BRC-INT-5F9C0977",
-    "title": "Effulgence Gordian",
+    "title": "Loop Season",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -3804,6 +3804,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 2485,
+      "h": 1863
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2525,
@@ -3819,16 +3823,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2696.jpg",
     "timestamp": "2026-05-31T20:26:07.757444",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2696.png",
-    "sourcePixels": {
-      "w": 2485,
-      "h": 1863
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2696.png"
   },
   {
     "id": "BRC-NAT-7BB0770F",
     "sku": "BRC-NAT-7BB0770F",
-    "title": "Selene Palimpsest",
+    "title": "Harlequin Static",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3889,6 +3889,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1297,
@@ -3904,16 +3908,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2645.PNG",
     "timestamp": "2026-05-31T20:26:07.733443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2645.png",
-    "sourcePixels": {
-      "w": 1080,
-      "h": 1080
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2645.png"
   },
   {
     "id": "BRC-NAT-7B080D3B",
     "sku": "BRC-NAT-7B080D3B",
-    "title": "Crepuscule Sedge",
+    "title": "Lips at Ninety Miles an Hour",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -3974,6 +3974,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5617
     },
+    "sourcePixels": {
+      "w": 3578,
+      "h": 3350
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0885,
@@ -3989,16 +3993,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2506.PNG",
     "timestamp": "2026-05-31T20:26:07.699443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2506.png",
-    "sourcePixels": {
-      "w": 3578,
-      "h": 3350
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2506.png"
   },
   {
     "id": "BRC-NAT-033CC0AD",
     "sku": "BRC-NAT-033CC0AD",
-    "title": "Eventide Confluence",
+    "title": "Blend Mode: Difference",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4054,12 +4054,16 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1008,
+      "edge_density": 0.1009,
       "color_complexity": 256,
       "gradient_ratio": 0.0787,
-      "detail_frequency": 0.5527,
+      "detail_frequency": 0.553,
       "contrast_range": 1.0,
       "avg_luminance": 0.2131,
       "route": "raster",
@@ -4069,16 +4073,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2464.PNG",
     "timestamp": "2026-05-31T20:26:07.605443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2464.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2464.png"
   },
   {
     "id": "BRC-NAT-387414B6",
     "sku": "BRC-NAT-387414B6",
-    "title": "Luminesce Gyre",
+    "title": "Two Clouds Having a Conversation",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4139,6 +4139,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0236,
@@ -4154,16 +4158,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2357.PNG",
     "timestamp": "2026-05-31T20:26:07.601443",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2357.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2357.png"
   },
   {
     "id": "BRC-NAT-33A5F58C",
     "sku": "BRC-NAT-33A5F58C",
-    "title": "Floe Nexus",
+    "title": "Deep Water Paisley",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4219,6 +4219,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4496
     },
+    "sourcePixels": {
+      "w": 1536,
+      "h": 1151
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1608,
@@ -4234,16 +4238,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2349.JPG",
     "timestamp": "2026-05-31T20:26:07.558442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2349.png",
-    "sourcePixels": {
-      "w": 1536,
-      "h": 1151
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2349.png"
   },
   {
     "id": "BRC-INT-268033B7",
     "sku": "BRC-INT-268033B7",
-    "title": "Tindersphere Chronicle",
+    "title": "Yellow Rope Mathematics",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -4299,6 +4299,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 3180
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.3467,
@@ -4314,16 +4318,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2246.PNG",
     "timestamp": "2026-05-31T20:26:07.557442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2246.png",
-    "sourcePixels": {
-      "w": 2384,
-      "h": 3180
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2246.png"
   },
   {
     "id": "BRC-INT-4280919D",
     "sku": "BRC-INT-4280919D",
-    "title": "Aubade Daedal",
+    "title": "The City the Machines Built for Themselves",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -4379,6 +4379,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5930
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 1112
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.3012,
@@ -4394,16 +4398,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2238.jpg",
     "timestamp": "2026-05-31T20:26:07.533442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2238.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 1112
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2238.png"
   },
   {
     "id": "BRC-INT-38890325",
     "sku": "BRC-INT-38890325",
-    "title": "Lethe Arabesque",
+    "title": "Grin of the Trilobite",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -4464,6 +4464,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4497
     },
+    "sourcePixels": {
+      "w": 5464,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1844,
@@ -4479,16 +4483,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2204.PNG",
     "timestamp": "2026-05-31T20:26:07.525442",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2204.png",
-    "sourcePixels": {
-      "w": 5464,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2204.png"
   },
   {
     "id": "BRC-NAT-31CE0BE3",
     "sku": "BRC-NAT-31CE0BE3",
-    "title": "Morrigan Canopy",
+    "title": "The Orb Was Already There When We Pulled Over",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4544,9 +4544,13 @@
       "pixelWidth": 3336,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1164,
+      "h": 2093
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.0505,
+      "edge_density": 0.0506,
       "color_complexity": 256,
       "gradient_ratio": 0.0554,
       "detail_frequency": 0.334,
@@ -4559,16 +4563,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_2051.JPG",
     "timestamp": "2026-05-31T20:26:07.381441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2051.png",
-    "sourcePixels": {
-      "w": 1164,
-      "h": 2093
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2051.png"
   },
   {
     "id": "BRC-INT-8F8B70A4",
     "sku": "BRC-INT-8F8B70A4",
-    "title": "Grimfen Rookery",
+    "title": "Lime Vein in Grey Country",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -4619,6 +4619,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 749,
+      "h": 999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1636,
@@ -4634,16 +4638,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1940.PNG",
     "timestamp": "2026-05-31T20:26:07.379441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1940.png",
-    "sourcePixels": {
-      "w": 749,
-      "h": 999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1940.png"
   },
   {
     "id": "BRC-NAT-DD35CE73",
     "sku": "BRC-NAT-DD35CE73",
-    "title": "Obsidian Bracken",
+    "title": "The Eye in the Furnace Door",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4704,6 +4704,10 @@
       "pixelWidth": 4725,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2150,
+      "h": 2730
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.068,
@@ -4719,16 +4723,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1481.jpg",
     "timestamp": "2026-05-31T20:26:07.352441",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1481.png",
-    "sourcePixels": {
-      "w": 2150,
-      "h": 2730
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1481.png"
   },
   {
     "id": "BRC-INT-E232503A",
     "sku": "BRC-INT-E232503A",
-    "title": "Corvid Tangle",
+    "title": "Lava Wearing Silk",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -4789,14 +4789,18 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 720,
+      "h": 1280
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1961,
+      "edge_density": 0.1962,
       "color_complexity": 256,
-      "gradient_ratio": 0.0519,
-      "detail_frequency": 0.7259,
+      "gradient_ratio": 0.0518,
+      "detail_frequency": 0.7261,
       "contrast_range": 1.0,
-      "avg_luminance": 0.2687,
+      "avg_luminance": 0.2686,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -4804,16 +4808,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1285.PNG",
     "timestamp": "2026-05-31T20:26:07.322440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1285.png",
-    "sourcePixels": {
-      "w": 720,
-      "h": 1280
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1285.png"
   },
   {
     "id": "BRC-NAT-B0CF6685",
     "sku": "BRC-NAT-B0CF6685",
-    "title": "Blackdamp Coppice",
+    "title": "A Hand Made of Embers",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4869,6 +4869,10 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 720,
+      "h": 1280
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0792,
@@ -4884,16 +4888,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1284.PNG",
     "timestamp": "2026-05-31T20:26:07.317440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1284.png",
-    "sourcePixels": {
-      "w": 720,
-      "h": 1280
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1284.png"
   },
   {
     "id": "BRC-NAT-02CCED97",
     "sku": "BRC-NAT-02CCED97",
-    "title": "Lichgate Daedal",
+    "title": "Magenta District, After Curfew",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -4949,6 +4949,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.143,
@@ -4964,16 +4968,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1118.PNG",
     "timestamp": "2026-05-31T20:26:07.305440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1118.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1118.png"
   },
   {
     "id": "BRC-NAT-792E46A4",
     "sku": "BRC-NAT-792E46A4",
-    "title": "Gloaming Calyx",
+    "title": "Upside-Down City, Outlined in Lightning",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5034,6 +5034,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0959,
@@ -5049,16 +5053,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1091.jpg",
     "timestamp": "2026-05-31T20:26:07.280440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1091.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1091.png"
   },
   {
     "id": "BRC-NAT-44DD8E76",
     "sku": "BRC-NAT-44DD8E76",
-    "title": "Subfusc Verdure",
+    "title": "Upside-Down City, Corrupted File",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5114,6 +5114,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1028,
@@ -5129,16 +5133,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1088.jpg",
     "timestamp": "2026-05-31T20:26:07.247440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1088.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1088.png"
   },
   {
     "id": "BRC-NAT-C348A787",
     "sku": "BRC-NAT-C348A787",
-    "title": "Nyx Verdure",
+    "title": "Upside-Down City, Pink Leak",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5199,6 +5199,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0876,
@@ -5214,16 +5218,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_1086.jpg",
     "timestamp": "2026-05-31T20:26:07.211440",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1086.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_1086.png"
   },
   {
     "id": "BRC-INT-39CC9EFB",
     "sku": "BRC-INT-39CC9EFB",
-    "title": "Auroral Filigree",
+    "title": "Reef Under Construction",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -5279,6 +5279,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5962
     },
+    "sourcePixels": {
+      "w": 1431,
+      "h": 1422
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.225,
@@ -5294,16 +5298,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0851.jpg",
     "timestamp": "2026-05-31T20:26:07.180439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0851.png",
-    "sourcePixels": {
-      "w": 1431,
-      "h": 1422
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0851.png"
   },
   {
     "id": "BRC-INT-5134F7EA",
     "sku": "BRC-INT-5134F7EA",
-    "title": "Effulgence Concatenation",
+    "title": "Every Synapse at Once",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -5364,6 +5364,10 @@
       "pixelWidth": 5974,
       "pixelHeight": 5999
     },
+    "sourcePixels": {
+      "w": 1412,
+      "h": 1418
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.3252,
@@ -5379,16 +5383,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0850.jpg",
     "timestamp": "2026-05-31T20:26:07.169439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0850.png",
-    "sourcePixels": {
-      "w": 1412,
-      "h": 1418
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0850.png"
   },
   {
     "id": "BRC-INT-7B00630E",
     "sku": "BRC-INT-7B00630E",
-    "title": "Nightjar Phantasmagoria",
+    "title": "Open The",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -5449,6 +5449,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5924
     },
+    "sourcePixels": {
+      "w": 1429,
+      "h": 1411
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2149,
@@ -5464,16 +5468,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0849.jpg",
     "timestamp": "2026-05-31T20:26:07.164439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0849.png",
-    "sourcePixels": {
-      "w": 1429,
-      "h": 1411
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0849.png"
   },
   {
     "id": "BRC-NAT-00163639",
     "sku": "BRC-NAT-00163639",
-    "title": "Selene Roothold",
+    "title": "Pink Canyon with Teeth",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5539,6 +5539,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1420,
+      "h": 1894
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1225,
@@ -5554,16 +5558,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0848.jpg",
     "timestamp": "2026-05-31T20:26:07.161439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0848.png",
-    "sourcePixels": {
-      "w": 1420,
-      "h": 1894
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0848.png"
   },
   {
     "id": "BRC-INT-2E076682",
     "sku": "BRC-INT-2E076682",
-    "title": "Lucent Reliquary",
+    "title": "Spider's Planetarium",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -5629,6 +5629,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.22,
@@ -5644,16 +5648,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0509.PNG",
     "timestamp": "2026-05-31T20:26:07.152439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0509.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 2999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0509.png"
   },
   {
     "id": "BRC-NAT-2B3352E4",
     "sku": "BRC-NAT-2B3352E4",
-    "title": "Ichor Kaleidoscope",
+    "title": "Six Sides of a Sunrise",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5709,6 +5709,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4962
     },
+    "sourcePixels": {
+      "w": 2226,
+      "h": 1841
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1224,
@@ -5724,16 +5728,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0506.jpg",
     "timestamp": "2026-05-31T20:26:07.126439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0506.png",
-    "sourcePixels": {
-      "w": 2226,
-      "h": 1841
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0506.png"
   },
   {
     "id": "BRC-NAT-61DAE823",
     "sku": "BRC-NAT-61DAE823",
-    "title": "Rubescent Sedge",
+    "title": "Two Golden Idols Find a Marble",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5789,6 +5789,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1800,
+      "h": 1800
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0623,
@@ -5804,16 +5808,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0448.jpg",
     "timestamp": "2026-05-31T20:26:07.124439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0448.png",
-    "sourcePixels": {
-      "w": 1800,
-      "h": 1800
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0448.png"
   },
   {
     "id": "BRC-NAT-549BC728",
     "sku": "BRC-NAT-549BC728",
-    "title": "Subfusc Burgeon",
+    "title": "Rorschach for Orchids",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5869,9 +5869,13 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1920
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.0816,
+      "edge_density": 0.0817,
       "color_complexity": 256,
       "gradient_ratio": 0.0434,
       "detail_frequency": 0.4446,
@@ -5884,16 +5888,12 @@
     "buyUrl": "#",
     "sourceFile": "IMG_0419.JPG",
     "timestamp": "2026-05-31T20:26:07.123439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0419.png",
-    "sourcePixels": {
-      "w": 1080,
-      "h": 1920
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0419.png"
   },
   {
     "id": "BRC-NAT-5656090B",
     "sku": "BRC-NAT-5656090B",
-    "title": "Aquiline Warren",
+    "title": "Keys Dropped in the Deep End",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -5944,6 +5944,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1192,
@@ -5959,16 +5963,12 @@
     "buyUrl": "#",
     "sourceFile": "F7B49A62-2971-4011-8A1E-07D2E957B7D9.JPEG",
     "timestamp": "2026-05-31T20:26:07.114439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F7B49A62-2971-4011-8A1E-07D2E957B7D9.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F7B49A62-2971-4011-8A1E-07D2E957B7D9.png"
   },
   {
     "id": "BRC-NAT-8A3E5A30",
     "sku": "BRC-NAT-8A3E5A30",
-    "title": "Eventide Greenwood",
+    "title": "Ultraviolet Skin",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -6014,6 +6014,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0586,
@@ -6029,16 +6033,12 @@
     "buyUrl": "#",
     "sourceFile": "F44C36AB-0992-4649-9CCC-0538E7B1F9BE.JPG",
     "timestamp": "2026-05-31T20:26:07.112439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F44C36AB-0992-4649-9CCC-0538E7B1F9BE.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F44C36AB-0992-4649-9CCC-0538E7B1F9BE.png"
   },
   {
     "id": "BRC-INT-03CDB36B",
     "sku": "BRC-INT-03CDB36B",
-    "title": "Limn Welter",
+    "title": "Skyline, Thawing",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6094,6 +6094,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4500
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 3000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1763,
@@ -6109,24 +6113,20 @@
     "buyUrl": "#",
     "sourceFile": "F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.JPEG",
     "timestamp": "2026-05-31T20:26:07.104439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 3000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F4067060-0D44-4AB1-AEBE-1A47C49CE9AA.png"
   },
   {
     "id": "BRC-INT-D9395DBB",
     "sku": "BRC-INT-D9395DBB",
-    "title": "Caliginous Daedal",
+    "title": "Constellation Laid Over a Mountain",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
       "#d1a671",
-      "#432a5b",
-      "#060138",
-      "#000046",
+      "#41295a",
+      "#050139",
+      "#000041",
       "#000100",
       "#000000"
     ],
@@ -6139,12 +6139,12 @@
       {
         "name": "Cinder",
         "code": "CIN",
-        "hex": "#432a5b"
+        "hex": "#41295a"
       },
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#060138"
+        "hex": "#050139"
       }
     ],
     "bestProducts": [
@@ -6174,14 +6174,18 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1928,
-      "color_complexity": 255,
-      "gradient_ratio": 0.0291,
-      "detail_frequency": 0.6583,
+      "edge_density": 0.1925,
+      "color_complexity": 256,
+      "gradient_ratio": 0.0292,
+      "detail_frequency": 0.6582,
       "contrast_range": 1.0,
-      "avg_luminance": 0.243,
+      "avg_luminance": 0.2431,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -6189,16 +6193,12 @@
     "buyUrl": "#",
     "sourceFile": "F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.PNG",
     "timestamp": "2026-05-31T20:26:07.099439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F1B5768D-45DE-4D04-946E-ED8A1BF3B58F.png"
   },
   {
     "id": "BRC-INT-E5C726AB",
     "sku": "BRC-INT-E5C726AB",
-    "title": "Opaline Filigree",
+    "title": "Dice, Cards, and a Look",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6259,6 +6259,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4608
     },
+    "sourcePixels": {
+      "w": 1500,
+      "h": 1152
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2072,
@@ -6274,16 +6278,12 @@
     "buyUrl": "#",
     "sourceFile": "F0670B0B-7A7C-434C-BCCA-A1583663F58C.JPG",
     "timestamp": "2026-05-31T20:26:07.095439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F0670B0B-7A7C-434C-BCCA-A1583663F58C.png",
-    "sourcePixels": {
-      "w": 1500,
-      "h": 1152
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/F0670B0B-7A7C-434C-BCCA-A1583663F58C.png"
   },
   {
     "id": "BRC-INT-F1812BA8",
     "sku": "BRC-INT-F1812BA8",
-    "title": "Grimshaw Maelstrom",
+    "title": "Twin Guardians of the Black Door",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6339,6 +6339,10 @@
       "pixelWidth": 4506,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1927,
@@ -6354,16 +6358,12 @@
     "buyUrl": "#",
     "sourceFile": "EEC83CB1-ABFC-4845-8F45-E402319269E6.JPEG",
     "timestamp": "2026-05-31T20:26:07.093439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EEC83CB1-ABFC-4845-8F45-E402319269E6.png",
-    "sourcePixels": {
-      "w": 688,
-      "h": 916
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EEC83CB1-ABFC-4845-8F45-E402319269E6.png"
   },
   {
     "id": "BRC-NAT-78643909",
     "sku": "BRC-NAT-78643909",
-    "title": "Corbeau Palimpsest",
+    "title": "Dusk, Applied with a Knife",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -6414,6 +6414,10 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1728,
+      "h": 3072
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0999,
@@ -6429,16 +6433,12 @@
     "buyUrl": "#",
     "sourceFile": "ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.JPEG",
     "timestamp": "2026-05-31T20:26:07.091439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.png",
-    "sourcePixels": {
-      "w": 1728,
-      "h": 3072
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/ED822FF2-C4C0-469C-8F39-FD4BEC8C62A1.png"
   },
   {
     "id": "BRC-INT-46186F7E",
     "sku": "BRC-INT-46186F7E",
-    "title": "Argent Imbroglio",
+    "title": "Agate, Printed in Halftone",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6494,6 +6494,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.3146,
@@ -6509,16 +6513,12 @@
     "buyUrl": "#",
     "sourceFile": "EB906953-35FE-4F74-AB96-0BE7194B0A29.JPG",
     "timestamp": "2026-05-31T20:26:07.090439",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB906953-35FE-4F74-AB96-0BE7194B0A29.png",
-    "sourcePixels": {
-      "w": 3464,
-      "h": 3464
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB906953-35FE-4F74-AB96-0BE7194B0A29.png"
   },
   {
     "id": "BRC-INT-C75EF6EA",
     "sku": "BRC-INT-C75EF6EA",
-    "title": "Vermeil Concatenation",
+    "title": "Wildflowers on Fire, Unbothered",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6569,6 +6569,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1815,
@@ -6584,16 +6588,12 @@
     "buyUrl": "#",
     "sourceFile": "EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.JPEG",
     "timestamp": "2026-05-31T20:26:07.042438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/EB8E485D-9B24-4DB0-BCE8-AC9FC0EBCE15.png"
   },
   {
     "id": "BRC-NAT-E8DDB180",
     "sku": "BRC-NAT-E8DDB180",
-    "title": "Cobalt Frond",
+    "title": "Keys at the Bottom of the Bowl",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -6644,6 +6644,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1084,
@@ -6659,16 +6663,12 @@
     "buyUrl": "#",
     "sourceFile": "E8CA237E-62B2-4265-8BA6-7F4CC21AB133.JPEG",
     "timestamp": "2026-05-31T20:26:07.027438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E8CA237E-62B2-4265-8BA6-7F4CC21AB133.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E8CA237E-62B2-4265-8BA6-7F4CC21AB133.png"
   },
   {
     "id": "BRC-NAT-27BA7D9E",
     "sku": "BRC-NAT-27BA7D9E",
-    "title": "Starhollow Lichen",
+    "title": "Rose with a Pearl in Its Throat",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -6724,6 +6724,10 @@
       "pixelWidth": 4311,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1713,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.059,
@@ -6739,16 +6743,12 @@
     "buyUrl": "#",
     "sourceFile": "E84CC42E-F220-4A37-9994-B95A34A66FA6.JPEG",
     "timestamp": "2026-05-31T20:26:07.026438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E84CC42E-F220-4A37-9994-B95A34A66FA6.png",
-    "sourcePixels": {
-      "w": 1713,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E84CC42E-F220-4A37-9994-B95A34A66FA6.png"
   },
   {
     "id": "BRC-INT-1E92F8D3",
     "sku": "BRC-INT-1E92F8D3",
-    "title": "Sepulchre Rookery",
+    "title": "The Dancers Dripped",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6804,6 +6804,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4499
     },
+    "sourcePixels": {
+      "w": 3999,
+      "h": 2999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1923,
@@ -6819,16 +6823,12 @@
     "buyUrl": "#",
     "sourceFile": "E7B45927-4E5F-4764-BE2D-51A9914A9517.PNG",
     "timestamp": "2026-05-31T20:26:07.025438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E7B45927-4E5F-4764-BE2D-51A9914A9517.png",
-    "sourcePixels": {
-      "w": 3999,
-      "h": 2999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E7B45927-4E5F-4764-BE2D-51A9914A9517.png"
   },
   {
     "id": "BRC-NAT-A3FA4116",
     "sku": "BRC-NAT-A3FA4116",
-    "title": "Lethe Panicle",
+    "title": "X-Ray of a Theater Curtain",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -6884,6 +6884,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0778,
@@ -6899,16 +6903,12 @@
     "buyUrl": "#",
     "sourceFile": "E6A35D67-17D3-4B69-9A0C-9627A1558DBB.JPG",
     "timestamp": "2026-05-31T20:26:07.012438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E6A35D67-17D3-4B69-9A0C-9627A1558DBB.png",
-    "sourcePixels": {
-      "w": 1080,
-      "h": 1080
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E6A35D67-17D3-4B69-9A0C-9627A1558DBB.png"
   },
   {
     "id": "BRC-INT-E2B9F448",
     "sku": "BRC-INT-E2B9F448",
-    "title": "Lumen Welter",
+    "title": "Totem in a Purple Downpour",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -6964,6 +6964,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5963
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4071
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2168,
@@ -6979,16 +6983,12 @@
     "buyUrl": "#",
     "sourceFile": "E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.PNG",
     "timestamp": "2026-05-31T20:26:07.011438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 4071
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E5BB47CE-4BE4-45EA-9D5F-269EFF82F45A.png"
   },
   {
     "id": "BRC-NAT-6DE57B9E",
     "sku": "BRC-NAT-6DE57B9E",
-    "title": "Pearlescent Filigree",
+    "title": "Sunrise Over the Motherboard",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7044,6 +7044,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2998,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1211,
@@ -7059,16 +7063,12 @@
     "buyUrl": "#",
     "sourceFile": "E39B300A-88D1-46B2-8B29-077EDD3BA9A2.JPEG",
     "timestamp": "2026-05-31T20:26:06.970438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.png",
-    "sourcePixels": {
-      "w": 2998,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E39B300A-88D1-46B2-8B29-077EDD3BA9A2.png"
   },
   {
     "id": "BRC-INT-D8FACCC6",
     "sku": "BRC-INT-D8FACCC6",
-    "title": "Empyrean Warren",
+    "title": "Brass Rain",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -7129,6 +7129,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4500
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 3000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1831,
@@ -7144,16 +7148,12 @@
     "buyUrl": "#",
     "sourceFile": "E2F3F8C9-80B4-4219-8FAA-C4350D44A6CA.JPEG",
     "timestamp": "2026-05-31T20:26:06.967438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E2F3F8C9-80B4-4219-8FAA-C4350D44A6CA.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 3000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/E2F3F8C9-80B4-4219-8FAA-C4350D44A6CA.png"
   },
   {
     "id": "BRC-INT-1B817A3A",
     "sku": "BRC-INT-1B817A3A",
-    "title": "Alabast Convolution",
+    "title": "Flamingo Dissolving in the Pool",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -7204,6 +7204,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4497
     },
+    "sourcePixels": {
+      "w": 2732,
+      "h": 2048
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1702,
@@ -7219,16 +7223,12 @@
     "buyUrl": "#",
     "sourceFile": "D8A8C501-17A1-435F-9F18-7153DAE6C801.JPEG",
     "timestamp": "2026-05-31T20:26:06.963438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D8A8C501-17A1-435F-9F18-7153DAE6C801.png",
-    "sourcePixels": {
-      "w": 2732,
-      "h": 2048
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D8A8C501-17A1-435F-9F18-7153DAE6C801.png"
   },
   {
     "id": "BRC-NAT-1B447AC7",
     "sku": "BRC-NAT-1B447AC7",
-    "title": "Cinnabar Involution",
+    "title": "Something Bright Behind the Red",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7279,6 +7279,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3237
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2210
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0914,
@@ -7294,16 +7298,12 @@
     "buyUrl": "#",
     "sourceFile": "D7C9EB41-66C7-47E8-9225-5A23C70820D8.JPEG",
     "timestamp": "2026-05-31T20:26:06.949438",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D7C9EB41-66C7-47E8-9225-5A23C70820D8.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 2210
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/D7C9EB41-66C7-47E8-9225-5A23C70820D8.png"
   },
   {
     "id": "BRC-NAT-9EE0D039",
     "sku": "BRC-NAT-9EE0D039",
-    "title": "Etherveil Sedge",
+    "title": "Mint, Lilac, and the Morning After",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7354,6 +7354,10 @@
       "pixelWidth": 3374,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2120,
+      "h": 3769
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.102,
@@ -7369,16 +7373,12 @@
     "buyUrl": "#",
     "sourceFile": "CF745C11-EC35-403F-A6E0-79A18B341587.JPEG",
     "timestamp": "2026-05-31T20:26:06.945437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CF745C11-EC35-403F-A6E0-79A18B341587.png",
-    "sourcePixels": {
-      "w": 2120,
-      "h": 3769
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CF745C11-EC35-403F-A6E0-79A18B341587.png"
   },
   {
     "id": "BRC-INT-FF61169F",
     "sku": "BRC-INT-FF61169F",
-    "title": "Phosphor Chronicle",
+    "title": "Blue Paper Storm, One Straight Line",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -7439,6 +7439,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4798
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3276
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2546,
@@ -7454,16 +7458,12 @@
     "buyUrl": "#",
     "sourceFile": "CEFB1C73-35CD-4634-BBF5-570ECD004D32.JPG",
     "timestamp": "2026-05-31T20:26:06.936437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CEFB1C73-35CD-4634-BBF5-570ECD004D32.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 3276
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CEFB1C73-35CD-4634-BBF5-570ECD004D32.png"
   },
   {
     "id": "BRC-INT-BDC78CB3",
     "sku": "BRC-INT-BDC78CB3",
-    "title": "Obsidian Concatenation",
+    "title": "The Turtle Crosses the Train Yard",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -7519,6 +7519,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5710
     },
+    "sourcePixels": {
+      "w": 3550,
+      "h": 3379
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2742,
@@ -7534,16 +7538,12 @@
     "buyUrl": "#",
     "sourceFile": "CC8B21B5-97D2-4619-A770-6687E8C8DAF3.JPG",
     "timestamp": "2026-05-31T20:26:06.917437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.png",
-    "sourcePixels": {
-      "w": 3550,
-      "h": 3379
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CC8B21B5-97D2-4619-A770-6687E8C8DAF3.png"
   },
   {
     "id": "BRC-NAT-695A8543",
     "sku": "BRC-NAT-695A8543",
-    "title": "Irradiance Umbel",
+    "title": "Small Slab of Weather",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7594,6 +7594,10 @@
       "pixelWidth": 5994,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2048
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0828,
@@ -7609,16 +7613,12 @@
     "buyUrl": "#",
     "sourceFile": "CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.JPEG",
     "timestamp": "2026-05-31T20:26:06.858437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 2048
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/CA5AC1E6-B865-4FBC-A7F6-D0EF1423A2C2.png"
   },
   {
     "id": "BRC-NAT-0F63CA85",
     "sku": "BRC-NAT-0F63CA85",
-    "title": "Selene Maelstrom",
+    "title": "Pond Seen Through Frosted Glass",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7674,6 +7674,10 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1728,
+      "h": 3072
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1039,
@@ -7689,16 +7693,12 @@
     "buyUrl": "#",
     "sourceFile": "C8A7C6F1-C72C-4906-A153-E1642A54E19B.JPEG",
     "timestamp": "2026-05-31T20:26:06.856437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C8A7C6F1-C72C-4906-A153-E1642A54E19B.png",
-    "sourcePixels": {
-      "w": 1728,
-      "h": 3072
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C8A7C6F1-C72C-4906-A153-E1642A54E19B.png"
   },
   {
     "id": "BRC-INT-A88F7E9D",
     "sku": "BRC-INT-A88F7E9D",
-    "title": "Sepulchre Reliquary",
+    "title": "Mask for the Festival of Heat",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -7759,6 +7759,10 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2304,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1946,
@@ -7774,16 +7778,12 @@
     "buyUrl": "#",
     "sourceFile": "C881A851-71EC-49A9-8D3B-FF2A642AC180.PNG",
     "timestamp": "2026-05-31T20:26:06.855437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C881A851-71EC-49A9-8D3B-FF2A642AC180.png",
-    "sourcePixels": {
-      "w": 2304,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C881A851-71EC-49A9-8D3B-FF2A642AC180.png"
   },
   {
     "id": "BRC-NAT-0936A641",
     "sku": "BRC-NAT-0936A641",
-    "title": "Aether Cartouche",
+    "title": "Flame Standing Up in a River",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7834,6 +7834,10 @@
       "pixelWidth": 4505,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1790,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1514,
@@ -7849,16 +7853,12 @@
     "buyUrl": "#",
     "sourceFile": "C68BCB3F-184E-43AA-843E-4AC65AAB938A.JPEG",
     "timestamp": "2026-05-31T20:26:06.835437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C68BCB3F-184E-43AA-843E-4AC65AAB938A.png",
-    "sourcePixels": {
-      "w": 1790,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C68BCB3F-184E-43AA-843E-4AC65AAB938A.png"
   },
   {
     "id": "BRC-NAT-1C3F3F18",
     "sku": "BRC-NAT-1C3F3F18",
-    "title": "Wraith Seedvault",
+    "title": "Portrait Pulled Through Moss",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7914,6 +7914,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0942,
@@ -7929,16 +7933,12 @@
     "buyUrl": "#",
     "sourceFile": "C6A4F01D-886F-49C9-9DC6-ED54A80975A6.JPG",
     "timestamp": "2026-05-31T20:26:06.835437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6A4F01D-886F-49C9-9DC6-ED54A80975A6.png",
-    "sourcePixels": {
-      "w": 1080,
-      "h": 1080
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6A4F01D-886F-49C9-9DC6-ED54A80975A6.png"
   },
   {
     "id": "BRC-NAT-B84FE184",
     "sku": "BRC-NAT-B84FE184",
-    "title": "Empyrean Canopy",
+    "title": "The Fur of a Glacier",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -7994,6 +7994,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1800,
+      "h": 1800
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0482,
@@ -8009,16 +8013,12 @@
     "buyUrl": "#",
     "sourceFile": "C6111B16-6C5D-43E3-9551-748773D25D4E.JPEG",
     "timestamp": "2026-05-31T20:26:06.830437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6111B16-6C5D-43E3-9551-748773D25D4E.png",
-    "sourcePixels": {
-      "w": 1800,
-      "h": 1800
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C6111B16-6C5D-43E3-9551-748773D25D4E.png"
   },
   {
     "id": "BRC-NAT-13C89697",
     "sku": "BRC-NAT-13C89697",
-    "title": "Umbrage Petalwork",
+    "title": "This Is Not a Cliff",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8079,6 +8079,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3603
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2460
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0945,
@@ -8094,16 +8098,12 @@
     "buyUrl": "#",
     "sourceFile": "C4B99173-F28E-4BA6-8583-1C1DD756657F.JPEG",
     "timestamp": "2026-05-31T20:26:06.829437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C4B99173-F28E-4BA6-8583-1C1DD756657F.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 2460
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C4B99173-F28E-4BA6-8583-1C1DD756657F.png"
   },
   {
     "id": "BRC-NAT-2CE9FFD9",
     "sku": "BRC-NAT-2CE9FFD9",
-    "title": "Irradiance Bracken",
+    "title": "Small Slab of Weather, Escaping",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8154,6 +8154,10 @@
       "pixelWidth": 5994,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2048
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0846,
@@ -8169,16 +8173,12 @@
     "buyUrl": "#",
     "sourceFile": "C46315D4-2A39-4BD3-84DB-983BA9FA0074.JPEG",
     "timestamp": "2026-05-31T20:26:06.826437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C46315D4-2A39-4BD3-84DB-983BA9FA0074.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 2048
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C46315D4-2A39-4BD3-84DB-983BA9FA0074.png"
   },
   {
     "id": "BRC-NAT-7FD39F92",
     "sku": "BRC-NAT-7FD39F92",
-    "title": "Sheen Vortex",
+    "title": "Sherbet Reef",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8234,6 +8234,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4488
     },
+    "sourcePixels": {
+      "w": 2215,
+      "h": 1657
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1429,
@@ -8249,16 +8253,12 @@
     "buyUrl": "#",
     "sourceFile": "C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.JPEG",
     "timestamp": "2026-05-31T20:26:06.825437",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.png",
-    "sourcePixels": {
-      "w": 2215,
-      "h": 1657
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2F57E14-9DB5-485B-B9B9-4B8BD3EBF0F0.png"
   },
   {
     "id": "BRC-INT-9317A779",
     "sku": "BRC-INT-9317A779",
-    "title": "Eburnean Rookery",
+    "title": "Greed Is Your God",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -8319,6 +8319,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2656,
@@ -8334,16 +8338,12 @@
     "buyUrl": "#",
     "sourceFile": "C2A09830-EEF8-4F3E-BC68-D76B96CE3658.PNG",
     "timestamp": "2026-05-31T20:26:06.823436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2A09830-EEF8-4F3E-BC68-D76B96CE3658.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C2A09830-EEF8-4F3E-BC68-D76B96CE3658.png"
   },
   {
     "id": "BRC-NAT-0B74339A",
     "sku": "BRC-NAT-0B74339A",
-    "title": "Effulgence Cartouche",
+    "title": "Blacklight Reef",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8399,6 +8399,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4488
     },
+    "sourcePixels": {
+      "w": 2215,
+      "h": 1657
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1489,
@@ -8414,16 +8418,12 @@
     "buyUrl": "#",
     "sourceFile": "C0190AFF-6596-4359-8F1F-4900663FCFA1.JPEG",
     "timestamp": "2026-05-31T20:26:06.795436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C0190AFF-6596-4359-8F1F-4900663FCFA1.png",
-    "sourcePixels": {
-      "w": 2215,
-      "h": 1657
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/C0190AFF-6596-4359-8F1F-4900663FCFA1.png"
   },
   {
     "id": "BRC-NAT-2F6DA352",
     "sku": "BRC-NAT-2F6DA352",
-    "title": "Acheron Canopy",
+    "title": "Three Channels of the Same Night",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8489,6 +8489,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3371
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 1787
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1059,
@@ -8504,16 +8508,12 @@
     "buyUrl": "#",
     "sourceFile": "Behind.JPEG",
     "timestamp": "2026-05-31T20:26:06.790436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Behind.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 1787
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/Behind.png"
   },
   {
     "id": "BRC-NAT-FFAAA749",
     "sku": "BRC-NAT-FFAAA749",
-    "title": "Ignescent Helix",
+    "title": "Pressed Flowers, Rusting",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8564,6 +8564,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1226,
@@ -8579,16 +8583,12 @@
     "buyUrl": "#",
     "sourceFile": "BFBD99F9-E59F-47C4-A541-87397C5D8931.JPEG",
     "timestamp": "2026-05-31T20:26:06.789436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BFBD99F9-E59F-47C4-A541-87397C5D8931.png",
-    "sourcePixels": {
-      "w": 2827,
-      "h": 2827
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BFBD99F9-E59F-47C4-A541-87397C5D8931.png"
   },
   {
     "id": "BRC-NAT-1EB46DCF",
     "sku": "BRC-NAT-1EB46DCF",
-    "title": "Pellucid Greenwood",
+    "title": "Small Slab of Weather, Captured",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8644,6 +8644,10 @@
       "pixelWidth": 5994,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2048
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0855,
@@ -8659,16 +8663,12 @@
     "buyUrl": "#",
     "sourceFile": "BAE460B1-E1F6-4590-9FE9-41D1840BFF36.JPEG",
     "timestamp": "2026-05-31T20:26:06.785436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BAE460B1-E1F6-4590-9FE9-41D1840BFF36.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 2048
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/BAE460B1-E1F6-4590-9FE9-41D1840BFF36.png"
   },
   {
     "id": "BRC-NAT-0DA08BE9",
     "sku": "BRC-NAT-0DA08BE9",
-    "title": "Wintermark Frond",
+    "title": "The Keys, Surfacing",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8719,6 +8719,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0978,
@@ -8734,16 +8738,12 @@
     "buyUrl": "#",
     "sourceFile": "AF6693CF-23AE-496A-9128-A34D47C51057 2.JPEG",
     "timestamp": "2026-05-31T20:26:06.783436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AF6693CF-23AE-496A-9128-A34D47C51057%202.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AF6693CF-23AE-496A-9128-A34D47C51057%202.png"
   },
   {
     "id": "BRC-NAT-C7DD50FD",
     "sku": "BRC-NAT-C7DD50FD",
-    "title": "Widdershin Imbroglio",
+    "title": "Three Blue Tears on a Yellow Screen",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8794,6 +8794,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1343,
@@ -8809,16 +8813,12 @@
     "buyUrl": "#",
     "sourceFile": "AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.JPEG",
     "timestamp": "2026-05-31T20:26:06.782436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AEC1D9B3-B9DB-4190-9AB3-795D6E3DAAB2.png"
   },
   {
     "id": "BRC-NAT-F6FE587B",
     "sku": "BRC-NAT-F6FE587B",
-    "title": "Sablefell Canopy",
+    "title": "Moth, Remembered Wrong",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -8869,6 +8869,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 4095,
+      "h": 4095
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0706,
@@ -8884,16 +8888,12 @@
     "buyUrl": "#",
     "sourceFile": "AE948792-02E2-4443-B1A4-28CA422F79A3.JPEG",
     "timestamp": "2026-05-31T20:26:06.770436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE948792-02E2-4443-B1A4-28CA422F79A3.png",
-    "sourcePixels": {
-      "w": 4095,
-      "h": 4095
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE948792-02E2-4443-B1A4-28CA422F79A3.png"
   },
   {
     "id": "BRC-INT-2E5CB0A9",
     "sku": "BRC-INT-2E5CB0A9",
-    "title": "Morrigan Convolution",
+    "title": "Circuit Board Having a Dream",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -8954,6 +8954,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4496
     },
+    "sourcePixels": {
+      "w": 3265,
+      "h": 2447
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2371,
@@ -8969,16 +8973,12 @@
     "buyUrl": "#",
     "sourceFile": "AE5CE634-BDA0-45D5-BA68-57DAFADD5329.JPG",
     "timestamp": "2026-05-31T20:26:06.731436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE5CE634-BDA0-45D5-BA68-57DAFADD5329.png",
-    "sourcePixels": {
-      "w": 3265,
-      "h": 2447
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AE5CE634-BDA0-45D5-BA68-57DAFADD5329.png"
   },
   {
     "id": "BRC-INT-40BB53C1",
     "sku": "BRC-INT-40BB53C1",
-    "title": "Etherveil Marginalia",
+    "title": "Sunset, Scratched Into",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9029,6 +9029,10 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1728,
+      "h": 3072
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1433,
@@ -9044,16 +9048,12 @@
     "buyUrl": "#",
     "sourceFile": "AC6232A5-AC25-4397-8730-138C47059CB6.PNG",
     "timestamp": "2026-05-31T20:26:06.714436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AC6232A5-AC25-4397-8730-138C47059CB6.png",
-    "sourcePixels": {
-      "w": 1728,
-      "h": 3072
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AC6232A5-AC25-4397-8730-138C47059CB6.png"
   },
   {
     "id": "BRC-NAT-54094D55",
     "sku": "BRC-NAT-54094D55",
-    "title": "Lambent Bindweed",
+    "title": "Angel Seen Through a Fogged Window",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -9114,6 +9114,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 4095,
+      "h": 4095
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0791,
@@ -9129,16 +9133,12 @@
     "buyUrl": "#",
     "sourceFile": "AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.JPEG",
     "timestamp": "2026-05-31T20:26:06.705436",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.png",
-    "sourcePixels": {
-      "w": 4095,
-      "h": 4095
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AB1CCDCA-D075-4DB5-BC09-F6760CE39B21.png"
   },
   {
     "id": "BRC-INT-89588D17",
     "sku": "BRC-INT-89588D17",
-    "title": "Erebus Confluence",
+    "title": "Record of a Pond",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9199,6 +9199,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5799
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2622,
@@ -9214,47 +9218,43 @@
     "buyUrl": "#",
     "sourceFile": "AA527DAF-992C-49E8-9E09-2AABE009751E.JPEG",
     "timestamp": "2026-05-31T20:26:06.683435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AA527DAF-992C-49E8-9E09-2AABE009751E.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 3959
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/AA527DAF-992C-49E8-9E09-2AABE009751E.png"
   },
   {
     "id": "BRC-INT-8F54BA1F",
     "sku": "BRC-INT-8F54BA1F",
-    "title": "Duskfall Gordian",
+    "title": "Chandelier of Coordinates",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
-      "#eaad43",
-      "#c17d40",
-      "#6f4749",
-      "#190b34",
-      "#00001b",
-      "#000000"
+      "#e9ad43",
+      "#c07c40",
+      "#6e4649",
+      "#29114f",
+      "#03020f",
+      "#000007"
     ],
     "namedColors": [
       {
         "name": "Ash",
         "code": "ASH",
-        "hex": "#eaad43"
+        "hex": "#e9ad43"
       },
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#c17d40"
+        "hex": "#c07c40"
       },
       {
         "name": "Cinder",
         "code": "CIN",
-        "hex": "#190b34"
+        "hex": "#29114f"
       },
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#00001b"
+        "hex": "#03020f"
       }
     ],
     "bestProducts": [
@@ -9284,12 +9284,16 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.2304,
+      "edge_density": 0.2302,
       "color_complexity": 256,
-      "gradient_ratio": 0.037,
-      "detail_frequency": 0.7635,
+      "gradient_ratio": 0.0371,
+      "detail_frequency": 0.7632,
       "contrast_range": 1.0,
       "avg_luminance": 0.2508,
       "route": "raster",
@@ -9299,16 +9303,12 @@
     "buyUrl": "#",
     "sourceFile": "A7829018-AF75-4338-A297-C0E538536188.PNG",
     "timestamp": "2026-05-31T20:26:06.656435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A7829018-AF75-4338-A297-C0E538536188.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A7829018-AF75-4338-A297-C0E538536188.png"
   },
   {
     "id": "BRC-INT-2820FE93",
     "sku": "BRC-INT-2820FE93",
-    "title": "Direling Concatenation",
+    "title": "Record of a Pond, Skipping",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9364,6 +9364,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5799
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2085,
@@ -9379,16 +9383,12 @@
     "buyUrl": "#",
     "sourceFile": "A5400571-244D-4C2E-AD39-251114D3A916.PNG",
     "timestamp": "2026-05-31T20:26:06.652435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A5400571-244D-4C2E-AD39-251114D3A916.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 3959
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A5400571-244D-4C2E-AD39-251114D3A916.png"
   },
   {
     "id": "BRC-NAT-080C47BD",
     "sku": "BRC-NAT-080C47BD",
-    "title": "Ichor Thicket",
+    "title": "Jade Staircase with a Pink Secret",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -9444,6 +9444,10 @@
       "pixelWidth": 4506,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1031,
@@ -9459,16 +9463,12 @@
     "buyUrl": "#",
     "sourceFile": "A42A250F-BEDC-44D0-A669-188486DED43D.JPG",
     "timestamp": "2026-05-31T20:26:06.621435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A42A250F-BEDC-44D0-A669-188486DED43D.png",
-    "sourcePixels": {
-      "w": 688,
-      "h": 916
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/A42A250F-BEDC-44D0-A669-188486DED43D.png"
   },
   {
     "id": "BRC-INT-5CC16193",
     "sku": "BRC-INT-5CC16193",
-    "title": "Erebus Chronicle",
+    "title": "Coals Under a Pewter Sea",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9524,6 +9524,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4500
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 3000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1738,
@@ -9539,16 +9543,12 @@
     "buyUrl": "#",
     "sourceFile": "9D6C26FA-1272-4C49-A93F-9583FFB3F750.JPG",
     "timestamp": "2026-05-31T20:26:06.620435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9D6C26FA-1272-4C49-A93F-9583FFB3F750.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 3000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9D6C26FA-1272-4C49-A93F-9583FFB3F750.png"
   },
   {
     "id": "BRC-NAT-F3653351",
     "sku": "BRC-NAT-F3653351",
-    "title": "Ravenmoor Canopy",
+    "title": "Two Figures Inside the Red Sun",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -9604,6 +9604,10 @@
       "pixelWidth": 3665,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1206,
+      "h": 1974
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0629,
@@ -9619,16 +9623,12 @@
     "buyUrl": "#",
     "sourceFile": "9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.PNG",
     "timestamp": "2026-05-31T20:26:06.609435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.png",
-    "sourcePixels": {
-      "w": 1206,
-      "h": 1974
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A6EBB9B-9C13-4ADA-B273-23EAE4C74415.png"
   },
   {
     "id": "BRC-INT-19C02E80",
     "sku": "BRC-INT-19C02E80",
-    "title": "Caliginous Gordian",
+    "title": "Golden Insect Deity, Front View",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9684,6 +9684,10 @@
       "pixelWidth": 4506,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1334,
@@ -9699,16 +9703,12 @@
     "buyUrl": "#",
     "sourceFile": "9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.JPEG",
     "timestamp": "2026-05-31T20:26:06.604435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.png",
-    "sourcePixels": {
-      "w": 688,
-      "h": 916
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/9A5DB06E-3ACE-4B64-8865-C3D3CB54C453.png"
   },
   {
     "id": "BRC-INT-1272D54A",
     "sku": "BRC-INT-1272D54A",
-    "title": "Halcyon Arabesque",
+    "title": "The Pool, a Minute Later",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9759,6 +9759,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1607,
@@ -9774,16 +9778,12 @@
     "buyUrl": "#",
     "sourceFile": "99A99193-D29D-48EB-B32A-C65EEA06AE14.PNG",
     "timestamp": "2026-05-31T20:26:06.603435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/99A99193-D29D-48EB-B32A-C65EEA06AE14.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 2999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/99A99193-D29D-48EB-B32A-C65EEA06AE14.png"
   },
   {
     "id": "BRC-INT-2028C8C3",
     "sku": "BRC-INT-2028C8C3",
-    "title": "Coruscant Compendium",
+    "title": "The Same Scribble, Forgiven",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -9839,6 +9839,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2533,
@@ -9854,26 +9858,22 @@
     "buyUrl": "#",
     "sourceFile": "982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.JPEG",
     "timestamp": "2026-05-31T20:26:06.580435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/982FB1A3-EA8B-4B73-B7FA-FA81B95DC9E8.png"
   },
   {
     "id": "BRC-NAT-7116BE12",
     "sku": "BRC-NAT-7116BE12",
-    "title": "Aurelius Convolution",
+    "title": "A Mouth Full of City",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
       "#a99cb0",
-      "#897897",
+      "#897896",
       "#685e7a",
       "#4d3f62",
       "#3b3856",
-      "#222336"
+      "#222335"
     ],
     "namedColors": [
       {
@@ -9884,7 +9884,7 @@
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#897897"
+        "hex": "#897896"
       },
       {
         "name": "Cinder",
@@ -9919,11 +9919,15 @@
       "pixelWidth": 3000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1022,
+      "h": 2044
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1282,
       "color_complexity": 256,
-      "gradient_ratio": 0.0605,
+      "gradient_ratio": 0.0606,
       "detail_frequency": 0.5376,
       "contrast_range": 1.0,
       "avg_luminance": 0.3681,
@@ -9934,16 +9938,12 @@
     "buyUrl": "#",
     "sourceFile": "95D1183F-21C3-489C-83E2-154CF1072442.JPEG",
     "timestamp": "2026-05-31T20:26:06.569435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/95D1183F-21C3-489C-83E2-154CF1072442.png",
-    "sourcePixels": {
-      "w": 1022,
-      "h": 2044
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/95D1183F-21C3-489C-83E2-154CF1072442.png"
   },
   {
     "id": "BRC-NAT-550FC367",
     "sku": "BRC-NAT-550FC367",
-    "title": "Lumen Bindweed",
+    "title": "Magenta Skin",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -9994,6 +9994,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0764,
@@ -10009,16 +10013,12 @@
     "buyUrl": "#",
     "sourceFile": "92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.JPG",
     "timestamp": "2026-05-31T20:26:06.568435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/92ADAF3C-EA2F-42F1-98EA-9AD3F5A7107F.png"
   },
   {
     "id": "BRC-NAT-DACA8E8A",
     "sku": "BRC-NAT-DACA8E8A",
-    "title": "Eventide Filigree",
+    "title": "Upside-Down City, Negative",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -10079,6 +10079,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1529,
@@ -10094,16 +10098,12 @@
     "buyUrl": "#",
     "sourceFile": "91C100EA-9CF6-4E0F-AEE1-9033F0C74222.PNG",
     "timestamp": "2026-05-31T20:26:06.558434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/91C100EA-9CF6-4E0F-AEE1-9033F0C74222.png"
   },
   {
     "id": "BRC-NAT-880CCD9C",
     "sku": "BRC-NAT-880CCD9C",
-    "title": "Ashgrove Sedge",
+    "title": "Furnace Door at Warp Speed",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -10169,6 +10169,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5612
     },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 2230
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.089,
@@ -10184,16 +10188,12 @@
     "buyUrl": "#",
     "sourceFile": "90FE23C9-174B-41B2-BEE8-6B552ACC6F95.PNG",
     "timestamp": "2026-05-31T20:26:06.550435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.png",
-    "sourcePixels": {
-      "w": 2384,
-      "h": 2230
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/90FE23C9-174B-41B2-BEE8-6B552ACC6F95.png"
   },
   {
     "id": "BRC-INT-F07C4AC4",
     "sku": "BRC-INT-F07C4AC4",
-    "title": "Scorchfield Chronicle",
+    "title": "Snow Leopard, Disassembled",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -10259,6 +10259,10 @@
       "pixelWidth": 4511,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 688,
+      "h": 915
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2134,
@@ -10274,16 +10278,12 @@
     "buyUrl": "#",
     "sourceFile": "8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.JPG",
     "timestamp": "2026-05-31T20:26:06.545434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.png",
-    "sourcePixels": {
-      "w": 688,
-      "h": 915
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8DBFDECB-02A4-42E4-A0FE-2E1A7A520C3A.png"
   },
   {
     "id": "BRC-INT-4492019D",
     "sku": "BRC-INT-4492019D",
-    "title": "Nocturne Marginalia",
+    "title": "Citrus Supernova",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -10339,6 +10339,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.147,
@@ -10354,32 +10358,28 @@
     "buyUrl": "#",
     "sourceFile": "8BC722A2-8D32-416B-B8F7-E6FD5231277B.PNG",
     "timestamp": "2026-05-31T20:26:06.541435",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8BC722A2-8D32-416B-B8F7-E6FD5231277B.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8BC722A2-8D32-416B-B8F7-E6FD5231277B.png"
   },
   {
     "id": "BRC-INT-8C3AC630",
     "sku": "BRC-INT-8C3AC630",
-    "title": "Grimfen Vortex",
+    "title": "The Same Constellation, in Cold Water",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
-      "#a7d3e5",
+      "#a8d4e5",
       "#4a79af",
-      "#141829",
-      "#010037",
-      "#030000",
+      "#121726",
+      "#010031",
+      "#010000",
       "#000000"
     ],
     "namedColors": [
       {
         "name": "Bone",
         "code": "BON",
-        "hex": "#a7d3e5"
+        "hex": "#a8d4e5"
       },
       {
         "name": "Pewter",
@@ -10389,7 +10389,7 @@
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#141829"
+        "hex": "#121726"
       }
     ],
     "bestProducts": [
@@ -10419,14 +10419,18 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.2002,
-      "color_complexity": 252,
-      "gradient_ratio": 0.0396,
-      "detail_frequency": 0.708,
+      "edge_density": 0.2,
+      "color_complexity": 251,
+      "gradient_ratio": 0.0397,
+      "detail_frequency": 0.7079,
       "contrast_range": 1.0,
-      "avg_luminance": 0.3392,
+      "avg_luminance": 0.3395,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -10434,16 +10438,12 @@
     "buyUrl": "#",
     "sourceFile": "8AD582E1-AD5A-4F81-BB94-43547594F3CD.PNG",
     "timestamp": "2026-05-31T20:26:06.533434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8AD582E1-AD5A-4F81-BB94-43547594F3CD.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8AD582E1-AD5A-4F81-BB94-43547594F3CD.png"
   },
   {
     "id": "BRC-LUM-FBB401AD",
     "sku": "BRC-LUM-FBB401AD",
-    "title": "Eburnean Bindweed",
+    "title": "Two Clouds Having an Argument",
     "description": "",
     "style": "Luminos",
     "category": "Art Prints",
@@ -10504,6 +10504,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4497
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2998
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0312,
@@ -10519,16 +10523,12 @@
     "buyUrl": "#",
     "sourceFile": "86EA7635-E114-4658-9138-9DC2C0EC6802.JPEG",
     "timestamp": "2026-05-31T20:26:06.528434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/86EA7635-E114-4658-9138-9DC2C0EC6802.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 2998
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/86EA7635-E114-4658-9138-9DC2C0EC6802.png"
   },
   {
     "id": "BRC-INT-ED3D7342",
     "sku": "BRC-INT-ED3D7342",
-    "title": "Corbeau Reliquary",
+    "title": "Masked One, Crowned in Frequencies",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -10584,6 +10584,10 @@
       "pixelWidth": 3599,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2457,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1483,
@@ -10599,16 +10603,12 @@
     "buyUrl": "#",
     "sourceFile": "860DE86E-D2BC-479A-9363-96BC62222540.JPEG",
     "timestamp": "2026-05-31T20:26:06.524434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/860DE86E-D2BC-479A-9363-96BC62222540.png",
-    "sourcePixels": {
-      "w": 2457,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/860DE86E-D2BC-479A-9363-96BC62222540.png"
   },
   {
     "id": "BRC-NAT-96EE21E7",
     "sku": "BRC-NAT-96EE21E7",
-    "title": "Refulgent Canopy",
+    "title": "Peach Skin, Deep Water",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -10664,6 +10664,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0841,
@@ -10679,16 +10683,12 @@
     "buyUrl": "#",
     "sourceFile": "84BEA453-2B5C-4B7E-8890-9C25E885AAEB.JPG",
     "timestamp": "2026-05-31T20:26:06.508434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.png",
-    "sourcePixels": {
-      "w": 1024,
-      "h": 1024
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/84BEA453-2B5C-4B7E-8890-9C25E885AAEB.png"
   },
   {
     "id": "BRC-NAT-5BAA11E2",
     "sku": "BRC-NAT-5BAA11E2",
-    "title": "Effulgence Mosaic",
+    "title": "High on Oxytocin",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -10744,6 +10744,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4758
     },
+    "sourcePixels": {
+      "w": 1247,
+      "h": 989
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1354,
@@ -10759,16 +10763,12 @@
     "buyUrl": "#",
     "sourceFile": "8262307C-DD87-4A90-9ECB-053B1D391A5E.PNG",
     "timestamp": "2026-05-31T20:26:06.507434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8262307C-DD87-4A90-9ECB-053B1D391A5E.png",
-    "sourcePixels": {
-      "w": 1247,
-      "h": 989
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8262307C-DD87-4A90-9ECB-053B1D391A5E.png"
   },
   {
     "id": "BRC-INT-910AFCC8",
     "sku": "BRC-INT-910AFCC8",
-    "title": "Phantasm Assemblage",
+    "title": "Orchid Frieze on a Dead Channel",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -10824,6 +10824,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 749,
+      "h": 999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1748,
@@ -10839,16 +10843,12 @@
     "buyUrl": "#",
     "sourceFile": "7E73BB53-08BE-46A4-AF61-00D7CB178182.JPEG",
     "timestamp": "2026-05-31T20:26:06.503434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7E73BB53-08BE-46A4-AF61-00D7CB178182.png",
-    "sourcePixels": {
-      "w": 749,
-      "h": 999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7E73BB53-08BE-46A4-AF61-00D7CB178182.png"
   },
   {
     "id": "BRC-NAT-BEFEA697",
     "sku": "BRC-NAT-BEFEA697",
-    "title": "Eburnean Compendium",
+    "title": "Fathom, on the Steps",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -10904,6 +10904,10 @@
       "pixelWidth": 5812,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1980,
+      "h": 2044
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1494,
@@ -10919,16 +10923,12 @@
     "buyUrl": "#",
     "sourceFile": "7D36C12F-D36B-4E29-B052-1D3760262B59.JPG",
     "timestamp": "2026-05-31T20:26:06.498434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7D36C12F-D36B-4E29-B052-1D3760262B59.png",
-    "sourcePixels": {
-      "w": 1980,
-      "h": 2044
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/7D36C12F-D36B-4E29-B052-1D3760262B59.png"
   },
   {
     "id": "BRC-INT-CD818078",
     "sku": "BRC-INT-CD818078",
-    "title": "Blackdamp Imbroglio",
+    "title": "Target Practice for a Sun",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -10989,6 +10989,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2113,
@@ -11004,16 +11008,12 @@
     "buyUrl": "#",
     "sourceFile": "79DDA607-6D45-45B7-9A6A-1D754AED3D98.JPEG",
     "timestamp": "2026-05-31T20:26:06.493434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79DDA607-6D45-45B7-9A6A-1D754AED3D98.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79DDA607-6D45-45B7-9A6A-1D754AED3D98.png"
   },
   {
     "id": "BRC-NAT-5F3BF89E",
     "sku": "BRC-NAT-5F3BF89E",
-    "title": "Fervid Canopy",
+    "title": "Horse in a Violet Wind",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11064,6 +11064,10 @@
       "pixelWidth": 4437,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1048,
+      "h": 1417
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1022,
@@ -11079,16 +11083,12 @@
     "buyUrl": "#",
     "sourceFile": "79D4A135-49A4-4FDE-BE48-A86A0F2B507C.JPEG",
     "timestamp": "2026-05-31T20:26:06.478434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.png",
-    "sourcePixels": {
-      "w": 1048,
-      "h": 1417
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79D4A135-49A4-4FDE-BE48-A86A0F2B507C.png"
   },
   {
     "id": "BRC-NAT-106BE197",
     "sku": "BRC-NAT-106BE197",
-    "title": "Eventide Gordian",
+    "title": "Swamp Under a Magenta Sky",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11139,6 +11139,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.133,
@@ -11154,16 +11158,12 @@
     "buyUrl": "#",
     "sourceFile": "79499B46-588B-4336-8B21-0A6E936CF53C.JPEG",
     "timestamp": "2026-05-31T20:26:06.477434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79499B46-588B-4336-8B21-0A6E936CF53C.png",
-    "sourcePixels": {
-      "w": 3464,
-      "h": 3464
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/79499B46-588B-4336-8B21-0A6E936CF53C.png"
   },
   {
     "id": "BRC-INT-3961735B",
     "sku": "BRC-INT-3961735B",
-    "title": "Chandral Imbroglio",
+    "title": "Geode with a Blue Yolk",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -11229,6 +11229,10 @@
       "pixelWidth": 4498,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2999,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2399,
@@ -11244,16 +11248,12 @@
     "buyUrl": "#",
     "sourceFile": "77069273-6494-4C19-B87F-6C6FE7903D27.JPG",
     "timestamp": "2026-05-31T20:26:06.471434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/77069273-6494-4C19-B87F-6C6FE7903D27.png",
-    "sourcePixels": {
-      "w": 2999,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/77069273-6494-4C19-B87F-6C6FE7903D27.png"
   },
   {
     "id": "BRC-INT-AE53F42C",
     "sku": "BRC-INT-AE53F42C",
-    "title": "Wraith Chronicle",
+    "title": "Purple Seer, Weeping Light",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -11314,6 +11314,10 @@
       "pixelWidth": 3366,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2298,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2033,
@@ -11329,16 +11333,12 @@
     "buyUrl": "#",
     "sourceFile": "745938E5-816D-4623-BE85-1B8137AEFF8A.PNG",
     "timestamp": "2026-05-31T20:26:06.440434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/745938E5-816D-4623-BE85-1B8137AEFF8A.png",
-    "sourcePixels": {
-      "w": 2298,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/745938E5-816D-4623-BE85-1B8137AEFF8A.png"
   },
   {
     "id": "BRC-INT-93DC0210",
     "sku": "BRC-INT-93DC0210",
-    "title": "Alabast Plexus",
+    "title": "Tangerine Vein in Opal",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -11394,6 +11394,10 @@
       "pixelWidth": 3673,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 960,
+      "h": 1568
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2292,
@@ -11409,16 +11413,12 @@
     "buyUrl": "#",
     "sourceFile": "733C6621-6D4F-4CA4-9E47-0332E33E52F2.JPEG",
     "timestamp": "2026-05-31T20:26:06.422434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/733C6621-6D4F-4CA4-9E47-0332E33E52F2.png",
-    "sourcePixels": {
-      "w": 960,
-      "h": 1568
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/733C6621-6D4F-4CA4-9E47-0332E33E52F2.png"
   },
   {
     "id": "BRC-NAT-E228B495",
     "sku": "BRC-NAT-E228B495",
-    "title": "Selene Assemblage",
+    "title": "Woodpecker over a Pink Sun",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11469,12 +11469,16 @@
       "pixelWidth": 3375,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1206,
+      "h": 2144
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1163,
+      "edge_density": 0.1164,
       "color_complexity": 256,
       "gradient_ratio": 0.0603,
-      "detail_frequency": 0.534,
+      "detail_frequency": 0.5341,
       "contrast_range": 1.0,
       "avg_luminance": 0.5829,
       "route": "raster",
@@ -11484,16 +11488,12 @@
     "buyUrl": "#",
     "sourceFile": "70C651B6-1D9D-4429-B261-8E1528095686.JPG",
     "timestamp": "2026-05-31T20:26:06.414433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/70C651B6-1D9D-4429-B261-8E1528095686.png",
-    "sourcePixels": {
-      "w": 1206,
-      "h": 2144
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/70C651B6-1D9D-4429-B261-8E1528095686.png"
   },
   {
     "id": "BRC-NAT-350A5C89",
     "sku": "BRC-NAT-350A5C89",
-    "title": "Nocturne Thornset",
+    "title": "Rush Hour, Long Exposure",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11554,6 +11554,10 @@
       "pixelWidth": 5611,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3831,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.076,
@@ -11569,16 +11573,12 @@
     "buyUrl": "#",
     "sourceFile": "700FC8B9-D2A6-4486-8F4B-F4A7D200519A.JPG",
     "timestamp": "2026-05-31T20:26:06.413434",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.png",
-    "sourcePixels": {
-      "w": 3831,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/700FC8B9-D2A6-4486-8F4B-F4A7D200519A.png"
   },
   {
     "id": "BRC-NAT-AFEB099B",
     "sku": "BRC-NAT-AFEB099B",
-    "title": "Blazemark Spinney",
+    "title": "Man Reclining with Rooster",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11624,6 +11624,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5882
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 2006
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0776,
@@ -11639,16 +11643,12 @@
     "buyUrl": "#",
     "sourceFile": "6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.JPG",
     "timestamp": "2026-05-31T20:26:06.408433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 2006
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6C8FBF8B-862F-4927-8CD2-CCF5BFCD646A.png"
   },
   {
     "id": "BRC-INT-D110210B",
     "sku": "BRC-INT-D110210B",
-    "title": "Dawnspar Confluence",
+    "title": "Stained Glass, Still Liquid",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -11699,6 +11699,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2842,
@@ -11714,16 +11718,12 @@
     "buyUrl": "#",
     "sourceFile": "6B6E55B4-0E18-406B-9742-1CE3038EF73E.JPEG",
     "timestamp": "2026-05-31T20:26:06.405433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6B6E55B4-0E18-406B-9742-1CE3038EF73E.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6B6E55B4-0E18-406B-9742-1CE3038EF73E.png"
   },
   {
     "id": "BRC-INT-309463BC",
     "sku": "BRC-INT-309463BC",
-    "title": "Minium Filigree",
+    "title": "Moon Caught in Honey",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -11779,6 +11779,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.141,
@@ -11794,16 +11798,12 @@
     "buyUrl": "#",
     "sourceFile": "6AD18AF0-7571-4676-AF56-5819A86FABC7.JPG",
     "timestamp": "2026-05-31T20:26:06.363433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6AD18AF0-7571-4676-AF56-5819A86FABC7.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6AD18AF0-7571-4676-AF56-5819A86FABC7.png"
   },
   {
     "id": "BRC-NAT-BD6CFD1F",
     "sku": "BRC-NAT-BD6CFD1F",
-    "title": "Tenebris Concatenation",
+    "title": "Spider's Planetarium, Lights Out",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11859,6 +11859,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1239,
@@ -11874,16 +11878,12 @@
     "buyUrl": "#",
     "sourceFile": "67116CEA-23E7-4FE7-9C31-000F3A4005E9.PNG",
     "timestamp": "2026-05-31T20:26:06.361433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/67116CEA-23E7-4FE7-9C31-000F3A4005E9.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 2999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/67116CEA-23E7-4FE7-9C31-000F3A4005E9.png"
   },
   {
     "id": "BRC-NAT-B0012792",
     "sku": "BRC-NAT-B0012792",
-    "title": "Aether Canopy",
+    "title": "Kaleidoscope of a Swimming Pool",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -11949,6 +11949,10 @@
       "pixelWidth": 5612,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3350,
+      "h": 3581
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1353,
@@ -11964,16 +11968,12 @@
     "buyUrl": "#",
     "sourceFile": "64C4B3EC-3B22-472B-BD87-DE987258EB5C.JPG",
     "timestamp": "2026-05-31T20:26:06.324433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/64C4B3EC-3B22-472B-BD87-DE987258EB5C.png",
-    "sourcePixels": {
-      "w": 3350,
-      "h": 3581
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/64C4B3EC-3B22-472B-BD87-DE987258EB5C.png"
   },
   {
     "id": "BRC-NAT-212227C6",
     "sku": "BRC-NAT-212227C6",
-    "title": "Lumen Petalwork",
+    "title": "Avocado-Eyed Sentinel",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -12034,6 +12034,10 @@
       "pixelWidth": 4820,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 3734
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0899,
@@ -12049,16 +12053,12 @@
     "buyUrl": "#",
     "sourceFile": "6278F08A-498B-4BA1-903E-820ECAEFF96C.PNG",
     "timestamp": "2026-05-31T20:26:06.312433",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6278F08A-498B-4BA1-903E-820ECAEFF96C.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 3734
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/6278F08A-498B-4BA1-903E-820ECAEFF96C.png"
   },
   {
     "id": "BRC-INT-7AD01633",
     "sku": "BRC-INT-7AD01633",
-    "title": "Subfusc Chronicle",
+    "title": "The Monk of Parallel Lines Meets the Chrome",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12114,6 +12114,10 @@
       "pixelWidth": 4602,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3142,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1686,
@@ -12129,16 +12133,12 @@
     "buyUrl": "#",
     "sourceFile": "5C09557C-F18A-49BF-9986-803A517C2F8F.JPG",
     "timestamp": "2026-05-31T20:26:06.270432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5C09557C-F18A-49BF-9986-803A517C2F8F.png",
-    "sourcePixels": {
-      "w": 3142,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5C09557C-F18A-49BF-9986-803A517C2F8F.png"
   },
   {
     "id": "BRC-NAT-5DD3EFAE",
     "sku": "BRC-NAT-5DD3EFAE",
-    "title": "Ashenmoor Thicket",
+    "title": "The Horse Dreams It Is Lying Down",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -12189,6 +12189,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4469
     },
+    "sourcePixels": {
+      "w": 1407,
+      "h": 1048
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1009,
@@ -12204,16 +12208,12 @@
     "buyUrl": "#",
     "sourceFile": "5876AFA2-DDCA-4897-BE86-608E9BADAC2A.PNG",
     "timestamp": "2026-05-31T20:26:06.257432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.png",
-    "sourcePixels": {
-      "w": 1407,
-      "h": 1048
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5876AFA2-DDCA-4897-BE86-608E9BADAC2A.png"
   },
   {
     "id": "BRC-INT-DE55F5CF",
     "sku": "BRC-INT-DE55F5CF",
-    "title": "Grimfen Concatenation",
+    "title": "Tiger Totem, Liquid State",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12222,8 +12222,8 @@
       "#b46729",
       "#854828",
       "#6e2933",
-      "#3f2033",
-      "#0e091f"
+      "#3e2032",
+      "#0d091e"
     ],
     "namedColors": [
       {
@@ -12239,7 +12239,7 @@
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#0e091f"
+        "hex": "#0d091e"
       }
     ],
     "bestProducts": [
@@ -12269,6 +12269,10 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2352,
@@ -12276,7 +12280,7 @@
       "gradient_ratio": 0.0505,
       "detail_frequency": 0.8161,
       "contrast_range": 1.0,
-      "avg_luminance": 0.279,
+      "avg_luminance": 0.2787,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -12284,16 +12288,12 @@
     "buyUrl": "#",
     "sourceFile": "582A90C6-BE15-4E42-BE51-5EB08F8694D5.PNG",
     "timestamp": "2026-05-31T20:26:06.255432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/582A90C6-BE15-4E42-BE51-5EB08F8694D5.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/582A90C6-BE15-4E42-BE51-5EB08F8694D5.png"
   },
   {
     "id": "BRC-NAT-B820182A",
     "sku": "BRC-NAT-B820182A",
-    "title": "Gelid Bosk",
+    "title": "Keys Dropped in the Deep End, Again",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -12344,6 +12344,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1018,
@@ -12359,16 +12363,12 @@
     "buyUrl": "#",
     "sourceFile": "57B433A6-62A8-472F-9F0A-30A1E4A21382.JPEG",
     "timestamp": "2026-05-31T20:26:06.248432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/57B433A6-62A8-472F-9F0A-30A1E4A21382.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/57B433A6-62A8-472F-9F0A-30A1E4A21382.png"
   },
   {
     "id": "BRC-INT-0FD7CD63",
     "sku": "BRC-INT-0FD7CD63",
-    "title": "Fuliginous Filigree",
+    "title": "The Monk of Parallel Lines",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12424,6 +12424,10 @@
       "pixelWidth": 4297,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1464,
+      "h": 2044
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.171,
@@ -12439,16 +12443,12 @@
     "buyUrl": "#",
     "sourceFile": "55B6D587-DAE0-4400-A448-B79C94E03224.JPG",
     "timestamp": "2026-05-31T20:26:06.247432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/55B6D587-DAE0-4400-A448-B79C94E03224.png",
-    "sourcePixels": {
-      "w": 1464,
-      "h": 2044
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/55B6D587-DAE0-4400-A448-B79C94E03224.png"
   },
   {
     "id": "BRC-INT-AAE70052",
     "sku": "BRC-INT-AAE70052",
-    "title": "Corbeau Assemblage",
+    "title": "Night Drive Through the Magenta District",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12509,6 +12509,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3933
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2685
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1615,
@@ -12524,16 +12528,12 @@
     "buyUrl": "#",
     "sourceFile": "550EA1F2-F472-4107-A912-3810B97E38C1.JPEG",
     "timestamp": "2026-05-31T20:26:06.244432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/550EA1F2-F472-4107-A912-3810B97E38C1.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 2685
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/550EA1F2-F472-4107-A912-3810B97E38C1.png"
   },
   {
     "id": "BRC-NAT-9326B863",
     "sku": "BRC-NAT-9326B863",
-    "title": "Etherveil Vortex",
+    "title": "Light on the Floor of a Shallow Sea",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -12589,6 +12589,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1234,
@@ -12604,16 +12608,12 @@
     "buyUrl": "#",
     "sourceFile": "52DE7F0A-08C7-4E34-AFD6-15A738E7399B.JPEG",
     "timestamp": "2026-05-31T20:26:06.232432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52DE7F0A-08C7-4E34-AFD6-15A738E7399B.png",
-    "sourcePixels": {
-      "w": 2827,
-      "h": 2827
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52DE7F0A-08C7-4E34-AFD6-15A738E7399B.png"
   },
   {
     "id": "BRC-NAT-4DFC2381",
     "sku": "BRC-NAT-4DFC2381",
-    "title": "Blackdamp Mycelium",
+    "title": "Barns at the End of the Day",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -12674,6 +12674,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3523
     },
+    "sourcePixels": {
+      "w": 1221,
+      "h": 717
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0612,
@@ -12689,16 +12693,12 @@
     "buyUrl": "#",
     "sourceFile": "52602792-DAA5-452D-A8C7-61F49BE5917C.PNG",
     "timestamp": "2026-05-31T20:26:06.229432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52602792-DAA5-452D-A8C7-61F49BE5917C.png",
-    "sourcePixels": {
-      "w": 1221,
-      "h": 717
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/52602792-DAA5-452D-A8C7-61F49BE5917C.png"
   },
   {
     "id": "BRC-INT-EC0F93C0",
     "sku": "BRC-INT-EC0F93C0",
-    "title": "Cinereous Daedal",
+    "title": "Blue Paper Storm, After Dark",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12754,6 +12754,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4798
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3276
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2485,
@@ -12769,16 +12773,12 @@
     "buyUrl": "#",
     "sourceFile": "517F4557-CFBC-427E-990B-07AA40433BB3.JPG",
     "timestamp": "2026-05-31T20:26:06.227432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/517F4557-CFBC-427E-990B-07AA40433BB3.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 3276
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/517F4557-CFBC-427E-990B-07AA40433BB3.png"
   },
   {
     "id": "BRC-INT-2E1A04AD",
     "sku": "BRC-INT-2E1A04AD",
-    "title": "Aubade Plexus",
+    "title": "A Loud Shape on a Quiet Wall",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12839,6 +12839,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4156
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2203
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1633,
@@ -12854,16 +12858,12 @@
     "buyUrl": "#",
     "sourceFile": "50DEDE64-8AB0-4151-B641-7A9A80828680.JPEG",
     "timestamp": "2026-05-31T20:26:06.161432",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/50DEDE64-8AB0-4151-B641-7A9A80828680.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2203
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/50DEDE64-8AB0-4151-B641-7A9A80828680.png"
   },
   {
     "id": "BRC-INT-A359FE5E",
     "sku": "BRC-INT-A359FE5E",
-    "title": "Phosphor Bestiary",
+    "title": "Pressed Flowers, Still Green",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -12914,6 +12914,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2827,
+      "h": 2827
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.14,
@@ -12929,16 +12933,12 @@
     "buyUrl": "#",
     "sourceFile": "5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.JPEG",
     "timestamp": "2026-05-31T20:26:06.151431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.png",
-    "sourcePixels": {
-      "w": 2827,
-      "h": 2827
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5094D2B2-0B6C-4E42-B7AA-FBA4E90FFA58.png"
   },
   {
     "id": "BRC-NAT-7F5E269E",
     "sku": "BRC-NAT-7F5E269E",
-    "title": "Sanguine Panicle",
+    "title": "The Horse's Eye, Closer",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -12989,6 +12989,10 @@
       "pixelWidth": 4426,
       "pixelHeight": 5999
     },
+    "sourcePixels": {
+      "w": 1052,
+      "h": 1426
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1057,
@@ -13004,16 +13008,12 @@
     "buyUrl": "#",
     "sourceFile": "5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.JPEG",
     "timestamp": "2026-05-31T20:26:06.147431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.png",
-    "sourcePixels": {
-      "w": 1052,
-      "h": 1426
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/5031B42C-9FAC-4C63-BBF2-47072CDDD2E6.png"
   },
   {
     "id": "BRC-INT-E1FEB5B4",
     "sku": "BRC-INT-E1FEB5B4",
-    "title": "Limn Concatenation",
+    "title": "Dark, It Said, and Melted",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -13069,6 +13069,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1080,
+      "h": 1080
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1761,
@@ -13084,16 +13088,12 @@
     "buyUrl": "#",
     "sourceFile": "4EC89707-8DA8-4859-AD3A-06F112DB5014.JPG",
     "timestamp": "2026-05-31T20:26:06.146431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4EC89707-8DA8-4859-AD3A-06F112DB5014.png",
-    "sourcePixels": {
-      "w": 1080,
-      "h": 1080
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4EC89707-8DA8-4859-AD3A-06F112DB5014.png"
   },
   {
     "id": "BRC-INT-8B068C7F",
     "sku": "BRC-INT-8B068C7F",
-    "title": "Corvid Rookery",
+    "title": "Record of a Pond, Watching Back",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -13149,6 +13149,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5799
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.231,
@@ -13164,16 +13168,12 @@
     "buyUrl": "#",
     "sourceFile": "4CF2A811-4E88-412C-A66E-0A9C97977DF2.PNG",
     "timestamp": "2026-05-31T20:26:06.144431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4CF2A811-4E88-412C-A66E-0A9C97977DF2.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 3959
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4CF2A811-4E88-412C-A66E-0A9C97977DF2.png"
   },
   {
     "id": "BRC-NAT-30C31AD2",
     "sku": "BRC-NAT-30C31AD2",
-    "title": "Penumbral Bosk",
+    "title": "The Hour Assembles Itself Over the Desert",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13234,6 +13234,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0545,
@@ -13249,16 +13253,12 @@
     "buyUrl": "#",
     "sourceFile": "4C54F694-133C-40F9-A794-926370305D6F.JPEG",
     "timestamp": "2026-05-31T20:26:06.115431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C54F694-133C-40F9-A794-926370305D6F.png",
-    "sourcePixels": {
-      "w": 3464,
-      "h": 3464
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C54F694-133C-40F9-A794-926370305D6F.png"
   },
   {
     "id": "BRC-NAT-1F1DB559",
     "sku": "BRC-NAT-1F1DB559",
-    "title": "Seraphine Confluence",
+    "title": "Heat Rising Through a Pattern",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13309,6 +13309,10 @@
       "pixelWidth": 4505,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1790,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1513,
@@ -13324,16 +13328,12 @@
     "buyUrl": "#",
     "sourceFile": "4C189297-B982-47BE-8EB2-DE1F82E0CA85.JPEG",
     "timestamp": "2026-05-31T20:26:06.111431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C189297-B982-47BE-8EB2-DE1F82E0CA85.png",
-    "sourcePixels": {
-      "w": 1790,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4C189297-B982-47BE-8EB2-DE1F82E0CA85.png"
   },
   {
     "id": "BRC-INT-95E8EC2F",
     "sku": "BRC-INT-95E8EC2F",
-    "title": "Effulgence Plexus",
+    "title": "Shattered Aquarium, Fine Print",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -13394,6 +13394,10 @@
       "pixelWidth": 4283,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2924,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.3025,
@@ -13409,16 +13413,12 @@
     "buyUrl": "#",
     "sourceFile": "4BDD7AA1-4183-470E-8226-A835127BA68D.JPEG",
     "timestamp": "2026-05-31T20:26:06.106431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4BDD7AA1-4183-470E-8226-A835127BA68D.png",
-    "sourcePixels": {
-      "w": 2924,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/4BDD7AA1-4183-470E-8226-A835127BA68D.png"
   },
   {
     "id": "BRC-NAT-7EA71874",
     "sku": "BRC-NAT-7EA71874",
-    "title": "Aurelius Verdure",
+    "title": "Portrait Hung in the Sky Above the Sea",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13479,6 +13479,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2044,
+      "h": 2044
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0647,
@@ -13494,16 +13498,12 @@
     "buyUrl": "#",
     "sourceFile": "49EC5429-9440-48A1-A3B3-A9BB27D7D599.JPG",
     "timestamp": "2026-05-31T20:26:06.082431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/49EC5429-9440-48A1-A3B3-A9BB27D7D599.png",
-    "sourcePixels": {
-      "w": 2044,
-      "h": 2044
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/49EC5429-9440-48A1-A3B3-A9BB27D7D599.png"
   },
   {
     "id": "BRC-NAT-EE93B247",
     "sku": "BRC-NAT-EE93B247",
-    "title": "Lichgate Mycelium",
+    "title": "Half the Valley Has Already Melted",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13559,6 +13559,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3235
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 1715
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0819,
@@ -13574,16 +13578,12 @@
     "buyUrl": "#",
     "sourceFile": "456199D5-6A56-45A8-B277-F635C9A8B792.PNG",
     "timestamp": "2026-05-31T20:26:06.080431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/456199D5-6A56-45A8-B277-F635C9A8B792.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 1715
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/456199D5-6A56-45A8-B277-F635C9A8B792.png"
   },
   {
     "id": "BRC-INT-C903DF45",
     "sku": "BRC-INT-C903DF45",
-    "title": "Vermeil Reliquary",
+    "title": "Aquarium, Remembered in Sepia",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -13644,6 +13644,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5704
     },
+    "sourcePixels": {
+      "w": 812,
+      "h": 772
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2679,
@@ -13659,16 +13663,12 @@
     "buyUrl": "#",
     "sourceFile": "42B4708C-0CC7-4599-964D-FBB446183DB2.PNG",
     "timestamp": "2026-05-31T20:26:06.074431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/42B4708C-0CC7-4599-964D-FBB446183DB2.png",
-    "sourcePixels": {
-      "w": 812,
-      "h": 772
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/42B4708C-0CC7-4599-964D-FBB446183DB2.png"
   },
   {
     "id": "BRC-NAT-72E1E9D1",
     "sku": "BRC-NAT-72E1E9D1",
-    "title": "Gossamer Heartwood",
+    "title": "The Horse Dreams It Is Upside Down",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13719,6 +13719,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4454
     },
+    "sourcePixels": {
+      "w": 1417,
+      "h": 1052
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1033,
@@ -13734,16 +13738,12 @@
     "buyUrl": "#",
     "sourceFile": "3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.PNG",
     "timestamp": "2026-05-31T20:26:06.069431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.png",
-    "sourcePixels": {
-      "w": 1417,
-      "h": 1052
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3AB5C8BD-28C2-41F7-A12A-E53B77C42E7B.png"
   },
   {
     "id": "BRC-NAT-EA38BC40",
     "sku": "BRC-NAT-EA38BC40",
-    "title": "Fuliginous Witchgrass",
+    "title": "It Looks Like a Cliff, But It Is Not",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13804,6 +13804,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 3603
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 2460
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0965,
@@ -13819,16 +13823,12 @@
     "buyUrl": "#",
     "sourceFile": "395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.JPEG",
     "timestamp": "2026-05-31T20:26:06.066431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 2460
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395ABB4A-AD7E-4C45-A88B-E0061CBB0DCC.png"
   },
   {
     "id": "BRC-NAT-7A3E8027",
     "sku": "BRC-NAT-7A3E8027",
-    "title": "Tidewater Marginalia",
+    "title": "Hexagon Giving Off Sparks",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13894,6 +13894,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4156
     },
+    "sourcePixels": {
+      "w": 3180,
+      "h": 2203
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1096,
@@ -13909,16 +13913,12 @@
     "buyUrl": "#",
     "sourceFile": "395222F3-5DC3-4252-9002-151A2350054E.JPEG",
     "timestamp": "2026-05-31T20:26:06.063431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395222F3-5DC3-4252-9002-151A2350054E.png",
-    "sourcePixels": {
-      "w": 3180,
-      "h": 2203
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/395222F3-5DC3-4252-9002-151A2350054E.png"
   },
   {
     "id": "BRC-NAT-00F1EC53",
     "sku": "BRC-NAT-00F1EC53",
-    "title": "Lumen Boscage",
+    "title": "Out of Focus on Purpose",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -13969,6 +13969,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0199,
@@ -13984,16 +13988,12 @@
     "buyUrl": "#",
     "sourceFile": "38FB0BC8-E076-4D78-AA1A-30B13B3535B4.JPG",
     "timestamp": "2026-05-31T20:26:06.058431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/38FB0BC8-E076-4D78-AA1A-30B13B3535B4.png"
   },
   {
     "id": "BRC-INT-43AC6929",
     "sku": "BRC-INT-43AC6929",
-    "title": "Aubade Phantasmagoria",
+    "title": "Record of a Pond, in Daylight",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -14049,6 +14049,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5799
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 3959
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2912,
@@ -14064,16 +14068,12 @@
     "buyUrl": "#",
     "sourceFile": "349FFFE1-966A-412F-9724-B1B3E1B53298.PNG",
     "timestamp": "2026-05-31T20:26:06.055431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/349FFFE1-966A-412F-9724-B1B3E1B53298.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 3959
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/349FFFE1-966A-412F-9724-B1B3E1B53298.png"
   },
   {
     "id": "BRC-NAT-63B20F6F",
     "sku": "BRC-NAT-63B20F6F",
-    "title": "Zenith Cartouche",
+    "title": "The Drain at the Center of the Sunset",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14129,6 +14129,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1024,
+      "h": 1024
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1234,
@@ -14144,16 +14148,12 @@
     "buyUrl": "#",
     "sourceFile": "346847BA-144F-4CDA-ACF5-7230B48CED72.JPG",
     "timestamp": "2026-05-31T20:26:06.024431",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/346847BA-144F-4CDA-ACF5-7230B48CED72.png",
-    "sourcePixels": {
-      "w": 1024,
-      "h": 1024
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/346847BA-144F-4CDA-ACF5-7230B48CED72.png"
   },
   {
     "id": "BRC-NAT-D3937CC3",
     "sku": "BRC-NAT-D3937CC3",
-    "title": "Slatewind Heartwood",
+    "title": "The Keys, Finally Framed",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14209,6 +14209,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0791,
@@ -14224,16 +14228,12 @@
     "buyUrl": "#",
     "sourceFile": "3187CC58-463C-427D-83E8-66975E41067B.JPEG",
     "timestamp": "2026-05-31T20:26:06.023430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3187CC58-463C-427D-83E8-66975E41067B.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/3187CC58-463C-427D-83E8-66975E41067B.png"
   },
   {
     "id": "BRC-INT-914B4AB0",
     "sku": "BRC-INT-914B4AB0",
-    "title": "Silvaine Tangle",
+    "title": "Porcelain Weather",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -14289,6 +14289,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2121,
+      "h": 2828
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.185,
@@ -14304,16 +14308,12 @@
     "buyUrl": "#",
     "sourceFile": "30239C48-D6FE-4EB2-BB78-3F7FF2639037.JPEG",
     "timestamp": "2026-05-31T20:26:06.022430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/30239C48-D6FE-4EB2-BB78-3F7FF2639037.png",
-    "sourcePixels": {
-      "w": 2121,
-      "h": 2828
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/30239C48-D6FE-4EB2-BB78-3F7FF2639037.png"
   },
   {
     "id": "BRC-NAT-53FCB0EC",
     "sku": "BRC-NAT-53FCB0EC",
-    "title": "Lucida Vortex",
+    "title": "Melting Giants Above the Desert Road",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14369,6 +14369,10 @@
       "pixelWidth": 3804,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1296,
+      "h": 2044
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1296,
@@ -14384,16 +14388,12 @@
     "buyUrl": "#",
     "sourceFile": "2CC38928-2FED-4180-A0E0-26CAD45A6DDA.JPG",
     "timestamp": "2026-05-31T20:26:06.008430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.png",
-    "sourcePixels": {
-      "w": 1296,
-      "h": 2044
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2CC38928-2FED-4180-A0E0-26CAD45A6DDA.png"
   },
   {
     "id": "BRC-INT-6632ACF8",
     "sku": "BRC-INT-6632ACF8",
-    "title": "Aurelius Vortex",
+    "title": "Violet Thicket with Gold Leaks",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -14444,6 +14444,10 @@
       "pixelWidth": 3374,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2120,
+      "h": 3769
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1661,
@@ -14459,16 +14463,12 @@
     "buyUrl": "#",
     "sourceFile": "2BF96480-619F-4B98-8905-4E7C55CAA596.JPEG",
     "timestamp": "2026-05-31T20:26:06.006430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2BF96480-619F-4B98-8905-4E7C55CAA596.png",
-    "sourcePixels": {
-      "w": 2120,
-      "h": 3769
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2BF96480-619F-4B98-8905-4E7C55CAA596.png"
   },
   {
     "id": "BRC-NAT-0EBF46EC",
     "sku": "BRC-NAT-0EBF46EC",
-    "title": "Dawnspar Reliquary",
+    "title": "The Crown Hovers While the Court Melts",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14534,6 +14534,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5929
     },
+    "sourcePixels": {
+      "w": 2384,
+      "h": 2356
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1822,
@@ -14549,16 +14553,12 @@
     "buyUrl": "#",
     "sourceFile": "2B06D9AB-4BF5-4910-9119-7CEFB8172E38.JPEG",
     "timestamp": "2026-05-31T20:26:05.979430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2B06D9AB-4BF5-4910-9119-7CEFB8172E38.png",
-    "sourcePixels": {
-      "w": 2384,
-      "h": 2356
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2B06D9AB-4BF5-4910-9119-7CEFB8172E38.png"
   },
   {
     "id": "BRC-NAT-FAA5294F",
     "sku": "BRC-NAT-FAA5294F",
-    "title": "Fervid Witchgrass",
+    "title": "The Same Angel, Running a Fever",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14609,6 +14609,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 4095,
+      "h": 4095
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.065,
@@ -14624,16 +14628,12 @@
     "buyUrl": "#",
     "sourceFile": "270FFEAA-79DA-4187-AD0D-A20DE0092446.JPEG",
     "timestamp": "2026-05-31T20:26:05.972430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/270FFEAA-79DA-4187-AD0D-A20DE0092446.png",
-    "sourcePixels": {
-      "w": 4095,
-      "h": 4095
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/270FFEAA-79DA-4187-AD0D-A20DE0092446.png"
   },
   {
     "id": "BRC-NAT-302AE541",
     "sku": "BRC-NAT-302AE541",
-    "title": "Alabast Gyre",
+    "title": "Pinwheel for a Windless Day",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14684,6 +14684,10 @@
       "pixelWidth": 5988,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2003,
+      "h": 2007
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0556,
@@ -14699,16 +14703,12 @@
     "buyUrl": "#",
     "sourceFile": "2532931F-1C05-461B-8A2E-430EF102D77B.PNG",
     "timestamp": "2026-05-31T20:26:05.939430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2532931F-1C05-461B-8A2E-430EF102D77B.png",
-    "sourcePixels": {
-      "w": 2003,
-      "h": 2007
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/2532931F-1C05-461B-8A2E-430EF102D77B.png"
   },
   {
     "id": "BRC-INT-9D114300",
     "sku": "BRC-INT-9D114300",
-    "title": "Umbrage Vortex",
+    "title": "Girders of an Orange Cathedral",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -14717,7 +14717,7 @@
       "#b47434",
       "#a75320",
       "#67493c",
-      "#522630",
+      "#522530",
       "#0a0719"
     ],
     "namedColors": [
@@ -14764,14 +14764,18 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.2677,
+      "edge_density": 0.2676,
       "color_complexity": 256,
       "gradient_ratio": 0.0495,
-      "detail_frequency": 0.8615,
+      "detail_frequency": 0.8614,
       "contrast_range": 1.0,
-      "avg_luminance": 0.2838,
+      "avg_luminance": 0.2837,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -14779,16 +14783,12 @@
     "buyUrl": "#",
     "sourceFile": "24C73992-2C9D-47AF-9A04-EC6479BC3936.PNG",
     "timestamp": "2026-05-31T20:26:05.926430",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/24C73992-2C9D-47AF-9A04-EC6479BC3936.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/24C73992-2C9D-47AF-9A04-EC6479BC3936.png"
   },
   {
     "id": "BRC-NAT-19063F46",
     "sku": "BRC-NAT-19063F46",
-    "title": "Wintermere Welter",
+    "title": "The Keys Grow a Tail",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14839,6 +14839,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1554,
@@ -14854,16 +14858,12 @@
     "buyUrl": "#",
     "sourceFile": "20B727AC-A3EF-4E8F-8023-DC5D29510AE1.JPEG",
     "timestamp": "2026-05-31T20:26:05.882429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/20B727AC-A3EF-4E8F-8023-DC5D29510AE1.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/20B727AC-A3EF-4E8F-8023-DC5D29510AE1.png"
   },
   {
     "id": "BRC-NAT-48C63EA0",
     "sku": "BRC-NAT-48C63EA0",
-    "title": "Lapis Filigree",
+    "title": "The Keys Become a Crab",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14914,6 +14914,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1895,
@@ -14929,16 +14933,12 @@
     "buyUrl": "#",
     "sourceFile": "1E5D6985-596E-418C-8589-5A192976EF31.JPEG",
     "timestamp": "2026-05-31T20:26:05.874429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1E5D6985-596E-418C-8589-5A192976EF31.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1E5D6985-596E-418C-8589-5A192976EF31.png"
   },
   {
     "id": "BRC-NAT-1CEBD24B",
     "sku": "BRC-NAT-1CEBD24B",
-    "title": "Aurelius Reliquary",
+    "title": "Three Tears in a Violet Snowfall",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -14994,6 +14994,10 @@
       "pixelWidth": 4502,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1534,
+      "h": 2044
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.118,
@@ -15009,16 +15013,12 @@
     "buyUrl": "#",
     "sourceFile": "1A324592-2430-447C-B21B-342BFDB845D7.JPEG",
     "timestamp": "2026-05-31T20:26:05.865429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1A324592-2430-447C-B21B-342BFDB845D7.png",
-    "sourcePixels": {
-      "w": 1534,
-      "h": 2044
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/1A324592-2430-447C-B21B-342BFDB845D7.png"
   },
   {
     "id": "BRC-NAT-9AD67482",
     "sku": "BRC-NAT-9AD67482",
-    "title": "Eidolon Tendril",
+    "title": "Spectacles Lost in a Cloud",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15079,6 +15079,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4498
     },
+    "sourcePixels": {
+      "w": 4000,
+      "h": 2999
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1074,
@@ -15094,16 +15098,12 @@
     "buyUrl": "#",
     "sourceFile": "196CA4D5-37D8-458D-88C7-6C025741016F.JPEG",
     "timestamp": "2026-05-31T20:26:05.864429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/196CA4D5-37D8-458D-88C7-6C025741016F.png",
-    "sourcePixels": {
-      "w": 4000,
-      "h": 2999
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/196CA4D5-37D8-458D-88C7-6C025741016F.png"
   },
   {
     "id": "BRC-NAT-74E85843",
     "sku": "BRC-NAT-74E85843",
-    "title": "Floe Heartwood",
+    "title": "Four Sparks Underwater",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15159,6 +15159,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 4096,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0884,
@@ -15174,23 +15178,19 @@
     "buyUrl": "#",
     "sourceFile": "19304392-624D-4776-BE55-0C26A6F9ACD8.JPEG",
     "timestamp": "2026-05-31T20:26:05.860429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/19304392-624D-4776-BE55-0C26A6F9ACD8.png",
-    "sourcePixels": {
-      "w": 4096,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/19304392-624D-4776-BE55-0C26A6F9ACD8.png"
   },
   {
     "id": "BRC-NAT-8847F663",
     "sku": "BRC-NAT-8847F663",
-    "title": "Tenebrific Mycelium",
+    "title": "A Glass of Something That Remembers",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
       "#97857e",
       "#716362",
-      "#584f52",
+      "#574f52",
       "#4c3f42",
       "#3f3e47",
       "#2d2b31"
@@ -15204,7 +15204,7 @@
       {
         "name": "Cinder",
         "code": "CIN",
-        "hex": "#584f52"
+        "hex": "#574f52"
       }
     ],
     "bestProducts": [
@@ -15234,12 +15234,16 @@
       "pixelWidth": 2455,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 584,
+      "h": 1427
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.0571,
+      "edge_density": 0.0572,
       "color_complexity": 256,
       "gradient_ratio": 0.0587,
-      "detail_frequency": 0.3347,
+      "detail_frequency": 0.3348,
       "contrast_range": 1.0,
       "avg_luminance": 0.312,
       "route": "raster",
@@ -15252,16 +15256,12 @@
     "materials": "",
     "sold": false,
     "hidden": false,
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/18592964-5E2C-43F2-BEDF-319952C665BC.png",
-    "sourcePixels": {
-      "w": 584,
-      "h": 1427
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/18592964-5E2C-43F2-BEDF-319952C665BC.png"
   },
   {
     "id": "BRC-NAT-5047970E",
     "sku": "BRC-NAT-5047970E",
-    "title": "Ashgrove Reliquary",
+    "title": "The Totem Tunes to Every Channel",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15312,6 +15312,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 5963
     },
+    "sourcePixels": {
+      "w": 3474,
+      "h": 3453
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1605,
@@ -15327,16 +15331,12 @@
     "buyUrl": "#",
     "sourceFile": "13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.JPEG",
     "timestamp": "2026-05-31T20:26:05.793429",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.png",
-    "sourcePixels": {
-      "w": 3474,
-      "h": 3453
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/13ED2DF7-04D8-4F87-B3BB-1F44467E23C0.png"
   },
   {
     "id": "BRC-NAT-4C35AAF2",
     "sku": "BRC-NAT-4C35AAF2",
-    "title": "Solace Coppice",
+    "title": "No Return Groceries & Mart",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15397,6 +15397,10 @@
       "pixelWidth": 4203,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1670,
+      "h": 2384
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1083,
@@ -15412,16 +15416,12 @@
     "buyUrl": "#",
     "sourceFile": "139626B0-8413-4AF2-9A8A-7F3E42192636.JPEG",
     "timestamp": "2026-05-31T20:26:05.753428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/139626B0-8413-4AF2-9A8A-7F3E42192636.png",
-    "sourcePixels": {
-      "w": 1670,
-      "h": 2384
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/139626B0-8413-4AF2-9A8A-7F3E42192636.png"
   },
   {
     "id": "BRC-NAT-D214008C",
     "sku": "BRC-NAT-D214008C",
-    "title": "Coruscant Sedge",
+    "title": "Three Tears on a Mint Screen",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15477,6 +15477,10 @@
       "pixelWidth": 4497,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2048,
+      "h": 2732
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1433,
@@ -15492,23 +15496,19 @@
     "buyUrl": "#",
     "sourceFile": "10AEFDA4-62A1-41B9-8A74-CDDF261B4051.JPEG",
     "timestamp": "2026-05-31T20:26:05.752428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/10AEFDA4-62A1-41B9-8A74-CDDF261B4051.png",
-    "sourcePixels": {
-      "w": 2048,
-      "h": 2732
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/10AEFDA4-62A1-41B9-8A74-CDDF261B4051.png"
   },
   {
     "id": "BRC-NAT-A6530E65",
     "sku": "BRC-NAT-A6530E65",
-    "title": "Tenebrific Rookery",
+    "title": "The Same Constellation, Blushing",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
       "#818ea2",
       "#8c4868",
-      "#1a0609",
+      "#190608",
       "#000101",
       "#000001",
       "#000000"
@@ -15527,7 +15527,7 @@
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#1a0609"
+        "hex": "#190608"
       }
     ],
     "bestProducts": [
@@ -15557,14 +15557,18 @@
       "pixelWidth": 2770,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 1125,
+      "h": 2436
+    },
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1363,
+      "edge_density": 0.1364,
       "color_complexity": 256,
       "gradient_ratio": 0.033,
-      "detail_frequency": 0.5803,
+      "detail_frequency": 0.5801,
       "contrast_range": 1.0,
-      "avg_luminance": 0.254,
+      "avg_luminance": 0.2537,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -15572,16 +15576,12 @@
     "buyUrl": "#",
     "sourceFile": "108553BB-3EFA-4816-A4B0-571E39BB9EA0.PNG",
     "timestamp": "2026-05-31T20:26:05.739428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/108553BB-3EFA-4816-A4B0-571E39BB9EA0.png",
-    "sourcePixels": {
-      "w": 1125,
-      "h": 2436
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/108553BB-3EFA-4816-A4B0-571E39BB9EA0.png"
   },
   {
     "id": "BRC-NAT-E614AA35",
     "sku": "BRC-NAT-E614AA35",
-    "title": "Lapis Bosk",
+    "title": "The Keys Meet a Swordfish",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15637,6 +15637,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0919,
@@ -15652,16 +15656,12 @@
     "buyUrl": "#",
     "sourceFile": "0E421941-E0FD-4E46-B1BC-21F730CB6369.JPEG",
     "timestamp": "2026-05-31T20:26:05.735428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0E421941-E0FD-4E46-B1BC-21F730CB6369.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0E421941-E0FD-4E46-B1BC-21F730CB6369.png"
   },
   {
     "id": "BRC-NAT-0B264A11",
     "sku": "BRC-NAT-0B264A11",
-    "title": "Aquilon Gordian",
+    "title": "The Keys Grow a Face",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15707,6 +15707,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 4492
     },
+    "sourcePixels": {
+      "w": 2046,
+      "h": 1532
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1595,
@@ -15722,16 +15726,12 @@
     "buyUrl": "#",
     "sourceFile": "0A6768C6-C021-4DE9-B561-301E204DE235.JPEG",
     "timestamp": "2026-05-31T20:26:05.730428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0A6768C6-C021-4DE9-B561-301E204DE235.png",
-    "sourcePixels": {
-      "w": 2046,
-      "h": 1532
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0A6768C6-C021-4DE9-B561-301E204DE235.png"
   },
   {
     "id": "BRC-NAT-83831B6D",
     "sku": "BRC-NAT-83831B6D",
-    "title": "Aubade Calyx",
+    "title": "Rush Hour, Bleached",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -15792,6 +15792,10 @@
       "pixelWidth": 5612,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3350,
+      "h": 3581
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.0807,
@@ -15807,16 +15811,12 @@
     "buyUrl": "#",
     "sourceFile": "0756EC79-5BA4-40F5-AE7B-B85B5C04FD67.JPG",
     "timestamp": "2026-05-31T20:26:05.721428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0756EC79-5BA4-40F5-AE7B-B85B5C04FD67.png",
-    "sourcePixels": {
-      "w": 3350,
-      "h": 3581
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/0756EC79-5BA4-40F5-AE7B-B85B5C04FD67.png"
   },
   {
     "id": "BRC-INT-8E3FCFCB",
     "sku": "BRC-INT-8E3FCFCB",
-    "title": "Gloaming Nexus",
+    "title": "Midnight Agate",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -15872,6 +15872,10 @@
       "pixelWidth": 4000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 2731,
+      "h": 4096
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1951,
@@ -15887,16 +15891,12 @@
     "buyUrl": "#",
     "sourceFile": "070AC899-5D62-43E0-8205-574048ED81FD.PNG",
     "timestamp": "2026-05-31T20:26:05.718428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/070AC899-5D62-43E0-8205-574048ED81FD.png",
-    "sourcePixels": {
-      "w": 2731,
-      "h": 4096
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/070AC899-5D62-43E0-8205-574048ED81FD.png"
   },
   {
     "id": "BRC-INT-4379F1E3",
     "sku": "BRC-INT-4379F1E3",
-    "title": "Smoulderwick Nexus",
+    "title": "Lizards Crossing a Lava Field",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -15952,6 +15952,10 @@
       "pixelWidth": 4500,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3000,
+      "h": 4000
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.2136,
@@ -15967,16 +15971,12 @@
     "buyUrl": "#",
     "sourceFile": "056CD596-6B3E-456F-819C-180DA6876CCE.JPEG",
     "timestamp": "2026-05-31T20:26:05.697428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/056CD596-6B3E-456F-819C-180DA6876CCE.png",
-    "sourcePixels": {
-      "w": 3000,
-      "h": 4000
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/056CD596-6B3E-456F-819C-180DA6876CCE.png"
   },
   {
     "id": "BRC-INT-45844E75",
     "sku": "BRC-INT-45844E75",
-    "title": "Nyx Maelstrom",
+    "title": "The Black Door, Left Open",
     "description": "",
     "style": "Intricata",
     "category": "Art Prints",
@@ -16032,6 +16032,10 @@
       "pixelWidth": 4506,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 688,
+      "h": 916
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.1927,
@@ -16047,16 +16051,12 @@
     "buyUrl": "#",
     "sourceFile": "024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.JPEG",
     "timestamp": "2026-05-31T20:26:05.685428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.png",
-    "sourcePixels": {
-      "w": 688,
-      "h": 916
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/024980BE-6011-4B81-AEB3-6CF4B5C3E3BC.png"
   },
   {
     "id": "BRC-NAT-9BC80EAB",
     "sku": "BRC-NAT-9BC80EAB",
-    "title": "Irradiance Maelstrom",
+    "title": "Bright Nerves Spilled on Concrete",
     "description": "",
     "style": "Naturalis",
     "category": "Art Prints",
@@ -16112,6 +16112,10 @@
       "pixelWidth": 6000,
       "pixelHeight": 6000
     },
+    "sourcePixels": {
+      "w": 3464,
+      "h": 3464
+    },
     "vectorRoute": "raster",
     "imageProfile": {
       "edge_density": 0.171,
@@ -16127,10 +16131,6 @@
     "buyUrl": "#",
     "sourceFile": "00619E4E-AFF8-4A86-8EE6-D823D4BC2580.JPEG",
     "timestamp": "2026-05-31T20:26:05.682428",
-    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/00619E4E-AFF8-4A86-8EE6-D823D4BC2580.png",
-    "sourcePixels": {
-      "w": 3464,
-      "h": 3464
-    }
+    "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/00619E4E-AFF8-4A86-8EE6-D823D4BC2580.png"
   }
 ]
