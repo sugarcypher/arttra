@@ -33,6 +33,25 @@ A piece that already carries a hand signature must opt out with
 `"sign": false` in `data/overrides.json` — check new pieces for one when
 titling them.
 
+## Screenshots must not look like screenshots
+
+Some drops are screenshots: the art with a status bar, an app toolbar, an
+Instagram/Reddit frame or an export watermark around it. The owner wants each
+one edited so it reads as the artwork alone, or hidden. Check new pieces for
+this when titling them (look at the edges at full size, not just the thumb).
+
+Fix it in `data/overrides.json`, never by changing the file in
+`gallery-source/`. Coordinates are pixels of the original file:
+
+- `"crop": [left, top, right, bottom]` keeps only that box.
+- `"erase": [[left, top, right, bottom], ...]` paints over a small mark from
+  the pixels around it (a thin guide line, an icon on calm ground). It cannot
+  rebuild detail, so crop instead when the mark sits on busy artwork.
+
+The build applies them before everything else, keeps the piece's id, and
+re-processes only that piece. If the chrome can't be cropped or erased
+cleanly, hide the piece (`"hidden": true` + `"hiddenReason"`).
+
 ## Pipeline in one line
 
 Drop images in iCloud `arttra-drops/` → ingest copies them into

@@ -618,12 +618,110 @@ def detect_and_crop_canvas(image_path: str):
 
 
 # ═══════════════════════════════════════════════════════════════════
+# HAND EDITS (overrides.json "crop" / "erase")
+# ═══════════════════════════════════════════════════════════════════
+# Some drops are screenshots: the artwork with a status bar, an app toolbar, a
+# social-media frame or an export watermark around it. overrides.json can carry
+#   "crop":  [left, top, right, bottom]         keep only this box
+#   "erase": [[left, top, right, bottom], ...]  paint over a small mark
+# in pixels of the original file ("erase" is applied first, so both use the
+# original's coordinates). The source file is never modified; the thumb, web
+# and print files are all made from the edited image.
+
+def _edit_box(box, size, what):
+    try:
+        x0, y0, x1, y1 = (int(v) for v in box)
+    except (TypeError, ValueError):
+        raise ValueError(f"{what} must be [left, top, right, bottom], got {box!r}")
+    w, h = size
+    if not (0 <= x0 < x1 <= w and 0 <= y0 < y1 <= h):
+        raise ValueError(f"{what} {box!r} does not fit the {w}x{h} original")
+    return x0, y0, x1, y1
+
+
+def _smooth_edge(pixels, radius=2):
+    """Box-average a run of boundary pixels so one noisy pixel can't streak
+    across the whole patch."""
+    n = len(pixels)
+    out = []
+    for i in range(n):
+        lo, hi = max(0, i - radius), min(n, i + radius + 1)
+        out.append(tuple(sum(p[c] for p in pixels[lo:hi]) / (hi - lo) for c in range(3)))
+    return out
+
+
+def _erase_region(img, box):
+    """Paint over `box` using only the pixels around it. A thin box (a 1-3 px
+    guide line) is blended straight across its short side, which continues the
+    texture on either side; anything else gets a Coons patch that meets all
+    four edges. Meant for small marks on calm ground, not for rebuilding
+    detail."""
+    x0, y0, x1, y1 = box
+    w, h = x1 - x0, y1 - y0
+    W, H = img.size
+    px = img.load()
+    lx, rx = max(x0 - 1, 0), min(x1, W - 1)
+    ty, by = max(y0 - 1, 0), min(y1, H - 1)
+    left = [px[lx, y] for y in range(y0, y1)]
+    right = [px[rx, y] for y in range(y0, y1)]
+    top = [px[x, ty] for x in range(x0, x1)]
+    bottom = [px[x, by] for x in range(x0, x1)]
+    across = w <= 12 and h >= 3 * w      # vertical line: blend left -> right
+    down = h <= 12 and w >= 3 * h        # horizontal line: blend top -> bottom
+    if not (across or down):
+        left, right, top, bottom = (_smooth_edge(e) for e in (left, right, top, bottom))
+        c00, c10, c01, c11 = left[0], right[0], left[-1], right[-1]
+    for j in range(h):
+        v = (j + 1) / (h + 1)
+        for i in range(w):
+            u = (i + 1) / (w + 1)
+            if across:
+                val = [left[j][c] * (1 - u) + right[j][c] * u for c in range(3)]
+            elif down:
+                val = [top[i][c] * (1 - v) + bottom[i][c] * v for c in range(3)]
+            else:
+                val = [
+                    left[j][c] * (1 - u) + right[j][c] * u
+                    + top[i][c] * (1 - v) + bottom[i][c] * v
+                    - (c00[c] * (1 - u) * (1 - v) + c10[c] * u * (1 - v)
+                       + c01[c] * (1 - u) * v + c11[c] * u * v)
+                    for c in range(3)
+                ]
+            px[x0 + i, y0 + j] = tuple(max(0, min(255, int(round(t)))) for t in val)
+
+
+def apply_source_edit(img, edit):
+    """Apply an overrides.json hand edit to an RGB image; returns the edited
+    image. Raises ValueError on a box that doesn't fit, so a bad edit fails
+    the piece loudly instead of publishing the unedited screenshot."""
+    img = img.convert("RGB")
+    for box in edit.get("erase") or []:
+        _erase_region(img, _edit_box(box, img.size, "erase box"))
+    if edit.get("crop"):
+        img = img.crop(_edit_box(edit["crop"], img.size, "crop"))
+    return img
+
+
+def _source_edits(overrides):
+    """Stable-id suffix -> {"crop", "erase", "id"} for every override that edits
+    its source. "id" is the override's own key: an edited piece keeps that id
+    even if the crop changes how its style classifies, so its title and other
+    overrides stay attached."""
+    edits = {}
+    for key, ovr in overrides.items():
+        spec = {k: ovr[k] for k in ("crop", "erase") if ovr.get(k)}
+        if spec:
+            edits[key.rsplit("-", 1)[-1]] = {**spec, "id": key}
+    return edits
+
+
+# ═══════════════════════════════════════════════════════════════════
 # SINGLE IMAGE PROCESSOR
 # ═══════════════════════════════════════════════════════════════════
 
 def process_single(args: tuple) -> Optional[dict]:
     (img_path_str, out_stem, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer,
-     no_crop_ids, want_sign, prev_timestamp) = args
+     no_crop_ids, want_sign, prev_timestamp, edit) = args
     img_path = Path(img_path_str)
     # A piece being re-processed keeps the timestamp it was first published
     # with: on CI the file's mtime is just the checkout time.
@@ -644,7 +742,18 @@ def process_single(args: tuple) -> Optional[dict]:
         # right gallery section with no manual override.
         work_path = str(img_path)
         canvas_cropped = False
-        if has_exif and stable_id not in no_crop_ids:
+        edited = False
+        if edit:
+            # A hand edit (screenshot chrome cropped / painted out) replaces
+            # canvas auto-detection: the owner has already said what to keep.
+            with Image.open(img_path) as src:
+                fixed = apply_source_edit(src, edit)
+            fd, tmp_crop = tempfile.mkstemp(suffix=".png", prefix="arttra-edit-")
+            os.close(fd)
+            fixed.save(tmp_crop, "PNG")
+            work_path = tmp_crop
+            edited = True
+        elif has_exif and stable_id not in no_crop_ids:
             cropped = detect_and_crop_canvas(str(img_path))
             if cropped is not None:
                 fd, tmp_crop = tempfile.mkstemp(suffix=".png", prefix="arttra-canvas-")
@@ -664,7 +773,7 @@ def process_single(args: tuple) -> Optional[dict]:
 
         # Designation code: BRC-[STYLE_3]-[ID]
         style_code = style[:3].upper()
-        designation = f"BRC-{style_code}-{stable_id}"
+        designation = (edit or {}).get("id") or f"BRC-{style_code}-{stable_id}"
 
         # ── Process image ──
         with Image.open(work_path) as img:
@@ -768,9 +877,10 @@ def process_single(args: tuple) -> Optional[dict]:
             # Real resolution, used by shared/options.js to decide which
             # print sizes stay sharp. printDimensions is the resampled file.
             "sourcePixels": source_pixels,
-            # Physical-painting photos cropped to the canvas: the original
-            # file includes the floor, so it is never sent for AI upscaling.
-            **({"canvasCropped": True} if canvas_cropped else {}),
+            # Physical-painting photos cropped to the canvas, and hand-edited
+            # screenshots: the original file includes the floor / the app
+            # chrome, so it is never sent for AI upscaling.
+            **({"canvasCropped": True} if canvas_cropped or edited else {}),
             "vectorRoute": route,
             "imageProfile": profile,
             "isPhotography": is_photograph,
@@ -1093,24 +1203,34 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         k.rsplit("-", 1)[-1] for k, v in overrides.items() if v.get("sign") is False
     )
 
+    # Hand edits to the source (overrides: crop / erase), by stable-id suffix.
+    edits = _source_edits(overrides)
+
     to_process = []
     cached_artworks = []
     want_sign = {}       # img_path -> should this piece be auto-signed
     prev_timestamp = {}  # img_path -> timestamp to keep when re-processing an unchanged file
+    edit_for = {}        # img_path -> its hand edit, if any
+    edit_key = {}        # img_path -> that edit as a string, for the cache check
     for img_path in images:
         stem = out_stems[img_path]
         file_hash = hashlib.md5(open(img_path, "rb").read()).hexdigest()
         stable_id = hashlib.md5(img_path.name.encode()).hexdigest()[:8].upper()
         want_sign[img_path] = stable_id not in no_sign_ids
+        edit_for[img_path] = edits.get(stable_id)
+        edit_key[img_path] = (json.dumps(edit_for[img_path], sort_keys=True)
+                              if edit_for[img_path] else None)
 
         # Check if this image's artwork ID is flagged for bg removal
         # If so, check if bg removal was already done
         cached = manifest.get(stem, {})
         artwork_id = cached.get("artwork", {}).get("id", "")
         needs_bg_redo = artwork_id in bg_removal_ids and not cached.get("bg_removed")
-        # Built by an older pipeline, or its sign opt-out has since changed.
+        # Built by an older pipeline, or its sign opt-out or hand edit has
+        # since changed.
         stale = (cached.get("pipeline") != PIPELINE_VERSION
-                 or cached.get("signed") != want_sign[img_path])
+                 or cached.get("signed") != want_sign[img_path]
+                 or cached.get("edit") != edit_key[img_path])
 
         if stem in manifest and cached.get("hash") == file_hash and not needs_bg_redo and not stale:
             if "artwork" in cached:
@@ -1167,7 +1287,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
 
     tasks = [
         (str(p), out_stems[p], str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer,
-         no_crop_ids, want_sign[p], prev_timestamp.get(p))
+         no_crop_ids, want_sign[p], prev_timestamp.get(p), edit_for[p])
         for p in to_process
     ]
     task_paths = {str(p): p for p in to_process}
@@ -1199,6 +1319,8 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
                         # retried on every build — the warning above flags it.
                         "signed": wanted,
                     }
+                    if edit_key[task_paths[futures[future]]]:
+                        manifest[stem]["edit"] = edit_key[task_paths[futures[future]]]
                     print(f"  [{done}/{len(to_process)}] {src} → {result['title']} [{result['style']}] [{result['category']}]")
                 else:
                     print(f"  [{done}/{len(to_process)}] {src} — FAILED")
@@ -1485,7 +1607,7 @@ def _apply_overrides(artworks, overrides):
                     art["priceTiers"].update(val)
                 elif key == "bestProducts" and isinstance(val, list):
                     art["bestProducts"] = val
-                elif key in ("removeBg", "sign", "titled", "hiddenReason"):
+                elif key in ("removeBg", "sign", "titled", "hiddenReason", "crop", "erase"):
                     # Build/workflow flags only, don't copy to artwork output
                     continue
                 else:

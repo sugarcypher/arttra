@@ -700,7 +700,7 @@
     "titled": true
   },
   "BRC-NAT-57407F2D": {
-    "title": "Séance in the Waiting Room",
+    "title": "S\u00e9ance in the Waiting Room",
     "titled": true
   },
   "BRC-NAT-5E6B1531": {
@@ -776,7 +776,13 @@
   },
   "BRC-NAT-209F4508": {
     "title": "Profile in Molten Sunset",
-    "titled": true
+    "titled": true,
+    "crop": [
+      0,
+      64,
+      2384,
+      3180
+    ]
   },
   "BRC-NAT-A7758179": {
     "title": "Gold Leaf Lost at Sea",
@@ -798,7 +804,13 @@
   },
   "BRC-INT-07E0A434": {
     "title": "Everything I Drew Before Breakfast",
-    "titled": true
+    "titled": true,
+    "crop": [
+      0,
+      0,
+      2048,
+      2325
+    ]
   },
   "BRC-NAT-0D48D159": {
     "title": "Parrot Weather",
@@ -831,8 +843,14 @@
     "titled": true
   },
   "BRC-NAT-033CC0AD": {
-    "title": "Blend Mode: Difference",
-    "titled": true
+    "title": "Low Tide at the Train Yard",
+    "titled": true,
+    "crop": [
+      0,
+      678,
+      1125,
+      1747
+    ]
   },
   "BRC-NAT-387414B6": {
     "title": "Two Clouds Having a Conversation",
@@ -844,7 +862,39 @@
   },
   "BRC-INT-268033B7": {
     "title": "Yellow Rope Mathematics",
-    "titled": true
+    "titled": true,
+    "erase": [
+      [
+        594,
+        1141,
+        598,
+        2039
+      ],
+      [
+        1786,
+        1141,
+        1790,
+        2039
+      ],
+      [
+        594,
+        1141,
+        1790,
+        1145
+      ],
+      [
+        594,
+        2035,
+        1790,
+        2039
+      ]
+    ],
+    "crop": [
+      3,
+      699,
+      2381,
+      2378
+    ]
   },
   "BRC-INT-4280919D": {
     "title": "The City the Machines Built for Themselves",
@@ -857,7 +907,21 @@
   "BRC-NAT-31CE0BE3": {
     "title": "The Orb Was Already There When We Pulled Over",
     "titled": true,
-    "sign": false
+    "sign": false,
+    "erase": [
+      [
+        972,
+        1894,
+        1090,
+        2016
+      ]
+    ],
+    "crop": [
+      52,
+      141,
+      1112,
+      2041
+    ]
   },
   "BRC-INT-8F8B70A4": {
     "title": "Lime Vein in Grey Country",
@@ -905,7 +969,13 @@
   },
   "BRC-NAT-00163639": {
     "title": "Pink Canyon with Teeth",
-    "titled": true
+    "titled": true,
+    "crop": [
+      5,
+      256,
+      1420,
+      1684
+    ]
   },
   "BRC-INT-2E076682": {
     "title": "Spider's Planetarium",
@@ -1173,7 +1243,13 @@
   },
   "BRC-NAT-5BAA11E2": {
     "title": "High on Oxytocin",
-    "titled": true
+    "titled": true,
+    "crop": [
+      15,
+      16,
+      1235,
+      976
+    ]
   },
   "BRC-INT-910AFCC8": {
     "title": "Orchid Frieze on a Dead Channel",
