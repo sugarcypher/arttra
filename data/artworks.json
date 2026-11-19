@@ -2725,23 +2725,28 @@
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
-      "#8a8e56",
-      "#795149",
-      "#8b2335",
+      "#8c8d54",
+      "#784f48",
+      "#8b2336",
       "#50274a",
-      "#69122e",
-      "#150529"
+      "#68122e",
+      "#140529"
     ],
     "namedColors": [
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#8a8e56"
+        "hex": "#8c8d54"
+      },
+      {
+        "name": "Vermillion",
+        "code": "VRM",
+        "hex": "#784f48"
       },
       {
         "name": "Carmine",
         "code": "CRM",
-        "hex": "#8b2335"
+        "hex": "#8b2336"
       },
       {
         "name": "Tyrian",
@@ -2751,7 +2756,7 @@
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#150529"
+        "hex": "#140529"
       }
     ],
     "bestProducts": [
@@ -2772,24 +2777,25 @@
     "thumb": "./assets/images/gallery/thumbs/thumb_IMG_4354.webp",
     "image": "./assets/images/gallery/web/IMG_4354.webp",
     "printDimensions": {
-      "widthInches": 15.0,
+      "widthInches": 15.3,
       "heightInches": 20.0,
       "dpi": 300,
-      "pixelWidth": 4498,
+      "pixelWidth": 4590,
       "pixelHeight": 6000
     },
     "sourcePixels": {
       "w": 2384,
-      "h": 3180
+      "h": 3116
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1058,
+      "edge_density": 0.1048,
       "color_complexity": 256,
-      "gradient_ratio": 0.0556,
-      "detail_frequency": 0.4914,
-      "contrast_range": 0.9255,
-      "avg_luminance": 0.2533,
+      "gradient_ratio": 0.0554,
+      "detail_frequency": 0.4895,
+      "contrast_range": 0.6627,
+      "avg_luminance": 0.2516,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -3116,32 +3122,37 @@
     "id": "BRC-INT-07E0A434",
     "sku": "BRC-INT-07E0A434",
     "title": "Everything I Drew Before Breakfast",
-    "description": "A tall composition in gold, red and navy, built from dense, intricate detail. The darker passages hold most of the detail.",
+    "description": "A tall composition in gold, red and navy, built from dense, intricate detail. Color and structure pull against each other.",
     "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
-      "#baa94a",
-      "#7c9969",
-      "#6f655b",
-      "#882c46",
-      "#41304e",
-      "#131c46"
+      "#bcac49",
+      "#7e9e68",
+      "#766b5b",
+      "#932d42",
+      "#453454",
+      "#131e4d"
     ],
     "namedColors": [
       {
         "name": "Aureate",
         "code": "AUR",
-        "hex": "#baa94a"
+        "hex": "#bcac49"
       },
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#7c9969"
+        "hex": "#7e9e68"
+      },
+      {
+        "name": "Carmine",
+        "code": "CRM",
+        "hex": "#932d42"
       },
       {
         "name": "Lapis",
         "code": "LAP",
-        "hex": "#131c46"
+        "hex": "#131e4d"
       }
     ],
     "bestProducts": [
@@ -3162,24 +3173,25 @@
     "thumb": "./assets/images/gallery/thumbs/thumb_IMG_3969.webp",
     "image": "./assets/images/gallery/web/IMG_3969.webp",
     "printDimensions": {
-      "widthInches": 15.0,
+      "widthInches": 17.6,
       "heightInches": 20.0,
       "dpi": 300,
-      "pixelWidth": 4497,
+      "pixelWidth": 5285,
       "pixelHeight": 6000
     },
     "sourcePixels": {
       "w": 2048,
-      "h": 2732
+      "h": 2325
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1778,
+      "edge_density": 0.1642,
       "color_complexity": 256,
-      "gradient_ratio": 0.057,
-      "detail_frequency": 0.6698,
+      "gradient_ratio": 0.0575,
+      "detail_frequency": 0.641,
       "contrast_range": 1.0,
-      "avg_luminance": 0.3432,
+      "avg_luminance": 0.3556,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -3735,33 +3747,33 @@
   {
     "id": "BRC-NAT-033CC0AD",
     "sku": "BRC-NAT-033CC0AD",
-    "title": "Blend Mode: Difference",
-    "description": "A tall composition in green, grey and charcoal with organic texture and drifting forms. It rewards a long look in low light.",
-    "style": "Naturalis",
+    "title": "Low Tide at the Train Yard",
+    "description": "A square composition in green, red and teal with dense, intricate detail. It rewards a long look in low light.",
+    "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
-      "#4e8266",
-      "#51615b",
-      "#434749",
-      "#1d1d1d",
-      "#171718",
-      "#131313"
+      "#488f61",
+      "#3f725e",
+      "#51635b",
+      "#785051",
+      "#514f53",
+      "#2c4b50"
     ],
     "namedColors": [
       {
         "name": "Viridian",
         "code": "VRD",
-        "hex": "#4e8266"
+        "hex": "#488f61"
+      },
+      {
+        "name": "Pewter",
+        "code": "PEW",
+        "hex": "#51635b"
       },
       {
         "name": "Cinder",
         "code": "CIN",
-        "hex": "#51615b"
-      },
-      {
-        "name": "Obsidian",
-        "code": "OBS",
-        "hex": "#1d1d1d"
+        "hex": "#514f53"
       }
     ],
     "bestProducts": [
@@ -3771,7 +3783,7 @@
     ],
     "seoKeywords": [
       "arttra",
-      "naturalis",
+      "intricata",
       "art prints",
       "wall art",
       "contemporary"
@@ -3782,24 +3794,25 @@
     "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2464.webp",
     "image": "./assets/images/gallery/web/IMG_2464.webp",
     "printDimensions": {
-      "widthInches": 9.2,
-      "heightInches": 20.0,
+      "widthInches": 20.0,
+      "heightInches": 19.0,
       "dpi": 300,
-      "pixelWidth": 2770,
-      "pixelHeight": 6000
+      "pixelWidth": 6000,
+      "pixelHeight": 5701
     },
     "sourcePixels": {
       "w": 1125,
-      "h": 2436
+      "h": 1069
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1009,
+      "edge_density": 0.2048,
       "color_complexity": 256,
-      "gradient_ratio": 0.0787,
-      "detail_frequency": 0.553,
+      "gradient_ratio": 0.0609,
+      "detail_frequency": 0.7743,
       "contrast_range": 1.0,
-      "avg_luminance": 0.2131,
+      "avg_luminance": 0.3349,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -3968,32 +3981,37 @@
     "id": "BRC-INT-268033B7",
     "sku": "BRC-INT-268033B7",
     "title": "Yellow Rope Mathematics",
-    "description": "A tall composition in gold, yellow and charcoal with layer on layer of fine detail. Color and structure pull against each other.",
+    "description": "A wide composition in gold, yellow and rust with layer on layer of fine detail. Color and structure pull against each other.",
     "style": "Intricata",
     "category": "Art Prints",
     "colorPalette": [
-      "#e6cb64",
-      "#a7b37b",
-      "#a28f67",
-      "#6f8576",
-      "#655551",
-      "#28373f"
+      "#f9df65",
+      "#adbc80",
+      "#878874",
+      "#6a5d5f",
+      "#574038",
+      "#20313d"
     ],
     "namedColors": [
       {
         "name": "Aureate",
         "code": "AUR",
-        "hex": "#e6cb64"
+        "hex": "#f9df65"
       },
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#a7b37b"
+        "hex": "#adbc80"
       },
       {
-        "name": "Ochre",
-        "code": "OCH",
-        "hex": "#a28f67"
+        "name": "Russet",
+        "code": "RSS",
+        "hex": "#574038"
+      },
+      {
+        "name": "Obsidian",
+        "code": "OBS",
+        "hex": "#20313d"
       }
     ],
     "bestProducts": [
@@ -4014,24 +4032,25 @@
     "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2246.webp",
     "image": "./assets/images/gallery/web/IMG_2246.webp",
     "printDimensions": {
-      "widthInches": 15.0,
-      "heightInches": 20.0,
+      "widthInches": 20.0,
+      "heightInches": 14.1,
       "dpi": 300,
-      "pixelWidth": 4498,
-      "pixelHeight": 6000
+      "pixelWidth": 6000,
+      "pixelHeight": 4236
     },
     "sourcePixels": {
-      "w": 2384,
-      "h": 3180
+      "w": 2378,
+      "h": 1679
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.3467,
+      "edge_density": 0.3192,
       "color_complexity": 256,
       "gradient_ratio": 0.0598,
-      "detail_frequency": 0.8962,
+      "detail_frequency": 0.876,
       "contrast_range": 1.0,
-      "avg_luminance": 0.4296,
+      "avg_luminance": 0.4325,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -4190,37 +4209,42 @@
     "id": "BRC-NAT-31CE0BE3",
     "sku": "BRC-NAT-31CE0BE3",
     "title": "The Orb Was Already There When We Pulled Over",
-    "description": "A tall composition in deep red, grey and black, worked in textures that read like weather. The darker passages hold most of the detail.",
+    "description": "A tall composition in deep red, black and grey, worked in textures that read like weather. The darker passages hold most of the detail.",
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
-      "#796467",
-      "#40333b",
-      "#2d2326",
-      "#630c10",
-      "#1d0d10",
-      "#0a1115"
+      "#826b6d",
+      "#453841",
+      "#492727",
+      "#12242d",
+      "#530b0e",
+      "#0b1319"
     ],
     "namedColors": [
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#796467"
+        "hex": "#826b6d"
       },
       {
         "name": "Cinder",
         "code": "CIN",
-        "hex": "#40333b"
+        "hex": "#453841"
       },
       {
-        "name": "Carmine",
-        "code": "CRM",
-        "hex": "#630c10"
+        "name": "Vermillion",
+        "code": "VRM",
+        "hex": "#492727"
       },
       {
         "name": "Obsidian",
         "code": "OBS",
-        "hex": "#1d0d10"
+        "hex": "#12242d"
+      },
+      {
+        "name": "Carmine",
+        "code": "CRM",
+        "hex": "#530b0e"
       }
     ],
     "bestProducts": [
@@ -4241,24 +4265,25 @@
     "thumb": "./assets/images/gallery/thumbs/thumb_IMG_2051.webp",
     "image": "./assets/images/gallery/web/IMG_2051.webp",
     "printDimensions": {
-      "widthInches": 11.1,
+      "widthInches": 11.2,
       "heightInches": 20.0,
       "dpi": 300,
-      "pixelWidth": 3336,
+      "pixelWidth": 3347,
       "pixelHeight": 6000
     },
     "sourcePixels": {
-      "w": 1164,
-      "h": 2093
+      "w": 1060,
+      "h": 1900
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.0506,
+      "edge_density": 0.0501,
       "color_complexity": 256,
-      "gradient_ratio": 0.0554,
-      "detail_frequency": 0.334,
+      "gradient_ratio": 0.054,
+      "detail_frequency": 0.3254,
       "contrast_range": 1.0,
-      "avg_luminance": 0.1688,
+      "avg_luminance": 0.1856,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -5148,27 +5173,37 @@
     "id": "BRC-NAT-00163639",
     "sku": "BRC-NAT-00163639",
     "title": "Pink Canyon with Teeth",
-    "description": "A tall composition in red, orange and grey, built from soft, organic movement. It opens up a wall rather than filling it.",
+    "description": "A square composition in red, orange and violet, built from soft, organic movement. Each viewing turns up something new in it.",
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
-      "#ffffff",
-      "#fde9e4",
-      "#e7cabb",
-      "#e28b95",
-      "#8f7d99",
-      "#50415b"
+      "#fbd6c9",
+      "#edd5bd",
+      "#da9ea1",
+      "#c3758a",
+      "#6e6591",
+      "#433849"
     ],
     "namedColors": [
       {
         "name": "Alabaster",
         "code": "ALB",
-        "hex": "#ffffff"
+        "hex": "#fbd6c9"
       },
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#e28b95"
+        "hex": "#da9ea1"
+      },
+      {
+        "name": "Damask",
+        "code": "DMK",
+        "hex": "#c3758a"
+      },
+      {
+        "name": "Cinder",
+        "code": "CIN",
+        "hex": "#433849"
       }
     ],
     "bestProducts": [
@@ -5189,24 +5224,25 @@
     "thumb": "./assets/images/gallery/thumbs/thumb_IMG_0848.webp",
     "image": "./assets/images/gallery/web/IMG_0848.webp",
     "printDimensions": {
-      "widthInches": 15.0,
+      "widthInches": 19.8,
       "heightInches": 20.0,
       "dpi": 300,
-      "pixelWidth": 4498,
+      "pixelWidth": 5945,
       "pixelHeight": 6000
     },
     "sourcePixels": {
-      "w": 1420,
-      "h": 1894
+      "w": 1415,
+      "h": 1428
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1225,
+      "edge_density": 0.1245,
       "color_complexity": 256,
-      "gradient_ratio": 0.0751,
-      "detail_frequency": 0.4946,
+      "gradient_ratio": 0.0619,
+      "detail_frequency": 0.4961,
       "contrast_range": 1.0,
-      "avg_luminance": 0.6791,
+      "avg_luminance": 0.589,
       "route": "raster",
       "route_reason": "Complex image"
     },
@@ -10104,7 +10140,7 @@
     "id": "BRC-NAT-5BAA11E2",
     "sku": "BRC-NAT-5BAA11E2",
     "title": "High on Oxytocin",
-    "description": "A wide composition in yellow, grey and white, built from soft, organic movement. It opens up a wall rather than filling it.",
+    "description": "A wide composition in yellow, green and white, built from soft, organic movement. It opens up a wall rather than filling it.",
     "style": "Naturalis",
     "category": "Art Prints",
     "colorPalette": [
@@ -10112,8 +10148,8 @@
       "#feffff",
       "#fefffc",
       "#fcfcfb",
-      "#cad6af",
-      "#586b4d"
+      "#cedab1",
+      "#6a8058"
     ],
     "namedColors": [
       {
@@ -10124,7 +10160,7 @@
       {
         "name": "Pewter",
         "code": "PEW",
-        "hex": "#cad6af"
+        "hex": "#cedab1"
       }
     ],
     "bestProducts": [
@@ -10146,23 +10182,24 @@
     "image": "./assets/images/gallery/web/8262307C-DD87-4A90-9ECB-053B1D391A5E.webp",
     "printDimensions": {
       "widthInches": 20.0,
-      "heightInches": 15.9,
+      "heightInches": 15.7,
       "dpi": 300,
       "pixelWidth": 6000,
-      "pixelHeight": 4758
+      "pixelHeight": 4721
     },
     "sourcePixels": {
-      "w": 1247,
-      "h": 989
+      "w": 1220,
+      "h": 960
     },
+    "canvasCropped": true,
     "vectorRoute": "raster",
     "imageProfile": {
-      "edge_density": 0.1354,
+      "edge_density": 0.1308,
       "color_complexity": 256,
-      "gradient_ratio": 0.1001,
-      "detail_frequency": 0.5106,
+      "gradient_ratio": 0.1034,
+      "detail_frequency": 0.4769,
       "contrast_range": 1.0,
-      "avg_luminance": 0.8247,
+      "avg_luminance": 0.863,
       "route": "raster",
       "route_reason": "Complex image"
     },

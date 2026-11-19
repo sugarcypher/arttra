@@ -6842,7 +6842,7 @@
     "artwork": {
       "id": "BRC-NAT-5BAA11E2",
       "sku": "BRC-NAT-5BAA11E2",
-      "title": "High on Oxytocin",
+      "title": "Effulgence Thicket",
       "description": "",
       "style": "Naturalis",
       "category": "Art Prints",
@@ -6851,8 +6851,8 @@
         "#feffff",
         "#fefffc",
         "#fcfcfb",
-        "#cad6af",
-        "#586b4d"
+        "#cedab1",
+        "#6a8058"
       ],
       "namedColors": [
         {
@@ -6861,14 +6861,9 @@
           "hex": "#ffffff"
         },
         {
-          "name": "Bone",
-          "code": "BON",
-          "hex": "#cad6af"
-        },
-        {
           "name": "Pewter",
           "code": "PEW",
-          "hex": "#586b4d"
+          "hex": "#cedab1"
         }
       ],
       "bestProducts": [
@@ -6881,8 +6876,7 @@
         "naturalis",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -6893,36 +6887,37 @@
       "vectorFile": "./assets/images/gallery/vector/8262307C-DD87-4A90-9ECB-053B1D391A5E.svg",
       "printDimensions": {
         "widthInches": 20.0,
-        "heightInches": 15.9,
+        "heightInches": 15.7,
         "dpi": 300,
         "pixelWidth": 6000,
-        "pixelHeight": 4758
+        "pixelHeight": 4721
       },
       "sourcePixels": {
-        "w": 1247,
-        "h": 989
+        "w": 1220,
+        "h": 960
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.1354,
+        "edge_density": 0.1308,
         "color_complexity": 256,
-        "gradient_ratio": 0.1001,
-        "detail_frequency": 0.5106,
+        "gradient_ratio": 0.1034,
+        "detail_frequency": 0.4769,
         "contrast_range": 1.0,
-        "avg_luminance": 0.8247,
+        "avg_luminance": 0.863,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "8262307C-DD87-4A90-9ECB-053B1D391A5E.PNG",
-      "timestamp": "2026-05-31T20:26:06.507434",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/8262307C-DD87-4A90-9ECB-053B1D391A5E.png"
+      "timestamp": "2026-05-31T20:26:06.507434"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": true
+    "signed": true,
+    "edit": "{\"crop\": [15, 16, 1235, 976], \"id\": \"BRC-NAT-5BAA11E2\"}"
   },
   "7D36C12F-D36B-4E29-B052-1D3760262B59": {
     "hash": "8e58914ea14c41e038957aa51ce24b0e",
@@ -13202,43 +13197,38 @@
     "artwork": {
       "id": "BRC-NAT-00163639",
       "sku": "BRC-NAT-00163639",
-      "title": "Pink Canyon with Teeth",
+      "title": "Selene Roothold",
       "description": "",
       "style": "Naturalis",
       "category": "Art Prints",
       "colorPalette": [
-        "#ffffff",
-        "#fde9e4",
-        "#e7cabb",
-        "#e28b95",
-        "#8f7d99",
-        "#50415b"
+        "#fbd6c9",
+        "#edd5bd",
+        "#da9ea1",
+        "#c3758a",
+        "#6e6591",
+        "#433849"
       ],
       "namedColors": [
         {
           "name": "Alabaster",
           "code": "ALB",
-          "hex": "#ffffff"
-        },
-        {
-          "name": "Bone",
-          "code": "BON",
-          "hex": "#e7cabb"
-        },
-        {
-          "name": "Ash",
-          "code": "ASH",
-          "hex": "#e28b95"
+          "hex": "#fbd6c9"
         },
         {
           "name": "Pewter",
           "code": "PEW",
-          "hex": "#8f7d99"
+          "hex": "#da9ea1"
+        },
+        {
+          "name": "Damask",
+          "code": "DMK",
+          "hex": "#c3758a"
         },
         {
           "name": "Cinder",
           "code": "CIN",
-          "hex": "#50415b"
+          "hex": "#433849"
         }
       ],
       "bestProducts": [
@@ -13251,8 +13241,7 @@
         "naturalis",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -13262,37 +13251,38 @@
       "printFile": "./assets/images/gallery/print/IMG_0848.png",
       "vectorFile": "./assets/images/gallery/vector/IMG_0848.svg",
       "printDimensions": {
-        "widthInches": 15.0,
+        "widthInches": 19.8,
         "heightInches": 20.0,
         "dpi": 300,
-        "pixelWidth": 4498,
+        "pixelWidth": 5945,
         "pixelHeight": 6000
       },
       "sourcePixels": {
-        "w": 1420,
-        "h": 1894
+        "w": 1415,
+        "h": 1428
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.1225,
+        "edge_density": 0.1245,
         "color_complexity": 256,
-        "gradient_ratio": 0.0751,
-        "detail_frequency": 0.4946,
+        "gradient_ratio": 0.0619,
+        "detail_frequency": 0.4961,
         "contrast_range": 1.0,
-        "avg_luminance": 0.6791,
+        "avg_luminance": 0.589,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "IMG_0848.jpg",
-      "timestamp": "2026-05-31T20:26:07.161439",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_0848.png"
+      "timestamp": "2026-05-31T20:26:07.161439"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": true
+    "signed": true,
+    "edit": "{\"crop\": [5, 256, 1420, 1684], \"id\": \"BRC-NAT-00163639\"}"
   },
   "IMG_0850": {
     "hash": "37357f5294bee23d4c55a1d6172391c6",
@@ -14379,33 +14369,43 @@
     "artwork": {
       "id": "BRC-NAT-31CE0BE3",
       "sku": "BRC-NAT-31CE0BE3",
-      "title": "The Orb Was Already There When We Pulled Over",
+      "title": "Morrigan Canopy",
       "description": "",
       "style": "Naturalis",
       "category": "Art Prints",
       "colorPalette": [
-        "#796467",
-        "#40333b",
-        "#2d2326",
-        "#630c10",
-        "#1d0d10",
-        "#0a1115"
+        "#826b6d",
+        "#453841",
+        "#492727",
+        "#12242d",
+        "#530b0e",
+        "#0b1319"
       ],
       "namedColors": [
         {
           "name": "Pewter",
           "code": "PEW",
-          "hex": "#796467"
+          "hex": "#826b6d"
         },
         {
           "name": "Cinder",
           "code": "CIN",
-          "hex": "#40333b"
+          "hex": "#453841"
+        },
+        {
+          "name": "Vermillion",
+          "code": "VRM",
+          "hex": "#492727"
         },
         {
           "name": "Obsidian",
           "code": "OBS",
-          "hex": "#1d0d10"
+          "hex": "#12242d"
+        },
+        {
+          "name": "Carmine",
+          "code": "CRM",
+          "hex": "#530b0e"
         }
       ],
       "bestProducts": [
@@ -14418,8 +14418,7 @@
         "naturalis",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -14429,37 +14428,38 @@
       "printFile": "./assets/images/gallery/print/IMG_2051.png",
       "vectorFile": "./assets/images/gallery/vector/IMG_2051.svg",
       "printDimensions": {
-        "widthInches": 11.1,
+        "widthInches": 11.2,
         "heightInches": 20.0,
         "dpi": 300,
-        "pixelWidth": 3336,
+        "pixelWidth": 3347,
         "pixelHeight": 6000
       },
       "sourcePixels": {
-        "w": 1164,
-        "h": 2093
+        "w": 1060,
+        "h": 1900
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.0506,
+        "edge_density": 0.0501,
         "color_complexity": 256,
-        "gradient_ratio": 0.0554,
-        "detail_frequency": 0.334,
+        "gradient_ratio": 0.054,
+        "detail_frequency": 0.3254,
         "contrast_range": 1.0,
-        "avg_luminance": 0.1688,
+        "avg_luminance": 0.1856,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "IMG_2051.JPG",
-      "timestamp": "2026-05-31T20:26:07.381441",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2051.png"
+      "timestamp": "2026-05-31T20:26:07.381441"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": false
+    "signed": false,
+    "edit": "{\"crop\": [52, 141, 1112, 2041], \"erase\": [[972, 1894, 1090, 2016]], \"id\": \"BRC-NAT-31CE0BE3\"}"
   },
   "IMG_1940": {
     "hash": "1f464b930985227803fc789c4d7d8535",
@@ -14732,33 +14732,38 @@
     "artwork": {
       "id": "BRC-INT-268033B7",
       "sku": "BRC-INT-268033B7",
-      "title": "Yellow Rope Mathematics",
+      "title": "Tindersphere Chronicle",
       "description": "",
       "style": "Intricata",
       "category": "Art Prints",
       "colorPalette": [
-        "#e6cb64",
-        "#a7b37b",
-        "#a28f67",
-        "#6f8576",
-        "#655551",
-        "#28373f"
+        "#f9df65",
+        "#adbc80",
+        "#878874",
+        "#6a5d5f",
+        "#574038",
+        "#20313d"
       ],
       "namedColors": [
         {
-          "name": "Ash",
-          "code": "ASH",
-          "hex": "#e6cb64"
+          "name": "Aureate",
+          "code": "AUR",
+          "hex": "#f9df65"
         },
         {
           "name": "Pewter",
           "code": "PEW",
-          "hex": "#a28f67"
+          "hex": "#adbc80"
         },
         {
-          "name": "Cinder",
-          "code": "CIN",
-          "hex": "#28373f"
+          "name": "Russet",
+          "code": "RSS",
+          "hex": "#574038"
+        },
+        {
+          "name": "Obsidian",
+          "code": "OBS",
+          "hex": "#20313d"
         }
       ],
       "bestProducts": [
@@ -14771,8 +14776,7 @@
         "intricata",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -14782,70 +14786,71 @@
       "printFile": "./assets/images/gallery/print/IMG_2246.png",
       "vectorFile": "./assets/images/gallery/vector/IMG_2246.svg",
       "printDimensions": {
-        "widthInches": 15.0,
-        "heightInches": 20.0,
+        "widthInches": 20.0,
+        "heightInches": 14.1,
         "dpi": 300,
-        "pixelWidth": 4498,
-        "pixelHeight": 6000
+        "pixelWidth": 6000,
+        "pixelHeight": 4236
       },
       "sourcePixels": {
-        "w": 2384,
-        "h": 3180
+        "w": 2378,
+        "h": 1679
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.3467,
+        "edge_density": 0.3192,
         "color_complexity": 256,
         "gradient_ratio": 0.0598,
-        "detail_frequency": 0.8962,
+        "detail_frequency": 0.876,
         "contrast_range": 1.0,
-        "avg_luminance": 0.4296,
+        "avg_luminance": 0.4325,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "IMG_2246.PNG",
-      "timestamp": "2026-05-31T20:26:07.557442",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2246.png"
+      "timestamp": "2026-05-31T20:26:07.557442"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": true
+    "signed": true,
+    "edit": "{\"crop\": [3, 699, 2381, 2378], \"erase\": [[594, 1141, 598, 2039], [1786, 1141, 1790, 2039], [594, 1141, 1790, 1145], [594, 2035, 1790, 2039]], \"id\": \"BRC-INT-268033B7\"}"
   },
   "IMG_2464": {
     "hash": "5c7f48f5d38194447493a606b6a489a2",
     "artwork": {
       "id": "BRC-NAT-033CC0AD",
       "sku": "BRC-NAT-033CC0AD",
-      "title": "Blend Mode: Difference",
+      "title": "Eventide Confluence",
       "description": "",
-      "style": "Naturalis",
+      "style": "Intricata",
       "category": "Art Prints",
       "colorPalette": [
-        "#4e8266",
-        "#51615b",
-        "#434749",
-        "#1d1d1d",
-        "#171718",
-        "#131313"
+        "#488f61",
+        "#3f725e",
+        "#51635b",
+        "#785051",
+        "#514f53",
+        "#2c4b50"
       ],
       "namedColors": [
         {
+          "name": "Viridian",
+          "code": "VRD",
+          "hex": "#488f61"
+        },
+        {
           "name": "Pewter",
           "code": "PEW",
-          "hex": "#4e8266"
+          "hex": "#51635b"
         },
         {
           "name": "Cinder",
           "code": "CIN",
-          "hex": "#51615b"
-        },
-        {
-          "name": "Obsidian",
-          "code": "OBS",
-          "hex": "#1d1d1d"
+          "hex": "#514f53"
         }
       ],
       "bestProducts": [
@@ -14855,11 +14860,10 @@
       ],
       "seoKeywords": [
         "arttra",
-        "naturalis",
+        "intricata",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -14869,37 +14873,38 @@
       "printFile": "./assets/images/gallery/print/IMG_2464.png",
       "vectorFile": "./assets/images/gallery/vector/IMG_2464.svg",
       "printDimensions": {
-        "widthInches": 9.2,
-        "heightInches": 20.0,
+        "widthInches": 20.0,
+        "heightInches": 19.0,
         "dpi": 300,
-        "pixelWidth": 2770,
-        "pixelHeight": 6000
+        "pixelWidth": 6000,
+        "pixelHeight": 5701
       },
       "sourcePixels": {
         "w": 1125,
-        "h": 2436
+        "h": 1069
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.1009,
+        "edge_density": 0.2048,
         "color_complexity": 256,
-        "gradient_ratio": 0.0787,
-        "detail_frequency": 0.553,
+        "gradient_ratio": 0.0609,
+        "detail_frequency": 0.7743,
         "contrast_range": 1.0,
-        "avg_luminance": 0.2131,
+        "avg_luminance": 0.3349,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "IMG_2464.PNG",
-      "timestamp": "2026-05-31T20:26:07.605443",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_2464.png"
+      "timestamp": "2026-05-31T20:26:07.605443"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": true
+    "signed": true,
+    "edit": "{\"crop\": [0, 678, 1125, 1747], \"id\": \"BRC-NAT-033CC0AD\"}"
   },
   "IMG_2349": {
     "hash": "72f10f594c9e67d672504105858002e5",
@@ -16153,28 +16158,38 @@
     "artwork": {
       "id": "BRC-INT-07E0A434",
       "sku": "BRC-INT-07E0A434",
-      "title": "Everything I Drew Before Breakfast",
+      "title": "Nacre Palimpsest",
       "description": "",
       "style": "Intricata",
       "category": "Art Prints",
       "colorPalette": [
-        "#baa94a",
-        "#7c9969",
-        "#6f655b",
-        "#882c46",
-        "#41304e",
-        "#131c46"
+        "#bcac49",
+        "#7e9e68",
+        "#766b5b",
+        "#932d42",
+        "#453454",
+        "#131e4d"
       ],
       "namedColors": [
         {
-          "name": "Pewter",
-          "code": "PEW",
-          "hex": "#baa94a"
+          "name": "Aureate",
+          "code": "AUR",
+          "hex": "#bcac49"
         },
         {
-          "name": "Cinder",
-          "code": "CIN",
-          "hex": "#41304e"
+          "name": "Pewter",
+          "code": "PEW",
+          "hex": "#7e9e68"
+        },
+        {
+          "name": "Carmine",
+          "code": "CRM",
+          "hex": "#932d42"
+        },
+        {
+          "name": "Lapis",
+          "code": "LAP",
+          "hex": "#131e4d"
         }
       ],
       "bestProducts": [
@@ -16187,8 +16202,7 @@
         "intricata",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -16198,37 +16212,38 @@
       "printFile": "./assets/images/gallery/print/IMG_3969.png",
       "vectorFile": "./assets/images/gallery/vector/IMG_3969.svg",
       "printDimensions": {
-        "widthInches": 15.0,
+        "widthInches": 17.6,
         "heightInches": 20.0,
         "dpi": 300,
-        "pixelWidth": 4497,
+        "pixelWidth": 5285,
         "pixelHeight": 6000
       },
       "sourcePixels": {
         "w": 2048,
-        "h": 2732
+        "h": 2325
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.1778,
+        "edge_density": 0.1642,
         "color_complexity": 256,
-        "gradient_ratio": 0.057,
-        "detail_frequency": 0.6698,
+        "gradient_ratio": 0.0575,
+        "detail_frequency": 0.641,
         "contrast_range": 1.0,
-        "avg_luminance": 0.3432,
+        "avg_luminance": 0.3556,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "IMG_3969.PNG",
-      "timestamp": "2026-05-31T20:26:08.058446",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_3969.png"
+      "timestamp": "2026-05-31T20:26:08.058446"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": true
+    "signed": true,
+    "edit": "{\"crop\": [0, 0, 2048, 2325], \"id\": \"BRC-INT-07E0A434\"}"
   },
   "IMG_4221": {
     "hash": "b8377ff9c584bf188d1f2f87cd77cb0e",
@@ -16782,33 +16797,43 @@
     "artwork": {
       "id": "BRC-NAT-209F4508",
       "sku": "BRC-NAT-209F4508",
-      "title": "Profile in Molten Sunset",
+      "title": "Ravenmoor Greenwood",
       "description": "",
       "style": "Naturalis",
       "category": "Art Prints",
       "colorPalette": [
-        "#8a8e56",
-        "#795149",
-        "#8b2335",
+        "#8c8d54",
+        "#784f48",
+        "#8b2336",
         "#50274a",
-        "#69122e",
-        "#150529"
+        "#68122e",
+        "#140529"
       ],
       "namedColors": [
         {
           "name": "Pewter",
           "code": "PEW",
-          "hex": "#8a8e56"
+          "hex": "#8c8d54"
         },
         {
-          "name": "Cinder",
-          "code": "CIN",
-          "hex": "#8b2335"
+          "name": "Vermillion",
+          "code": "VRM",
+          "hex": "#784f48"
+        },
+        {
+          "name": "Carmine",
+          "code": "CRM",
+          "hex": "#8b2336"
+        },
+        {
+          "name": "Tyrian",
+          "code": "TYR",
+          "hex": "#50274a"
         },
         {
           "name": "Obsidian",
           "code": "OBS",
-          "hex": "#150529"
+          "hex": "#140529"
         }
       ],
       "bestProducts": [
@@ -16821,8 +16846,7 @@
         "naturalis",
         "art prints",
         "wall art",
-        "contemporary",
-        "handmade"
+        "contemporary"
       ],
       "priceTiers": {
         "startingPrice": 79
@@ -16832,37 +16856,38 @@
       "printFile": "./assets/images/gallery/print/IMG_4354.png",
       "vectorFile": "./assets/images/gallery/vector/IMG_4354.svg",
       "printDimensions": {
-        "widthInches": 15.0,
+        "widthInches": 15.3,
         "heightInches": 20.0,
         "dpi": 300,
-        "pixelWidth": 4498,
+        "pixelWidth": 4590,
         "pixelHeight": 6000
       },
       "sourcePixels": {
         "w": 2384,
-        "h": 3180
+        "h": 3116
       },
+      "canvasCropped": true,
       "vectorRoute": "raster",
       "imageProfile": {
-        "edge_density": 0.1058,
+        "edge_density": 0.1048,
         "color_complexity": 256,
-        "gradient_ratio": 0.0556,
-        "detail_frequency": 0.4914,
-        "contrast_range": 0.9255,
-        "avg_luminance": 0.2533,
+        "gradient_ratio": 0.0554,
+        "detail_frequency": 0.4895,
+        "contrast_range": 0.6627,
+        "avg_luminance": 0.2516,
         "route": "raster",
         "route_reason": "Complex image"
       },
       "isPhotography": false,
       "buyUrl": "#",
       "sourceFile": "IMG_4354.PNG",
-      "timestamp": "2026-05-31T20:26:08.373449",
-      "printUrl": "https://pub-69fa4f68c1d2412aa0490337e3396916.r2.dev/print/IMG_4354.png"
+      "timestamp": "2026-05-31T20:26:08.373449"
     },
     "route": "raster",
     "bg_removed": false,
     "pipeline": 2,
-    "signed": true
+    "signed": true,
+    "edit": "{\"crop\": [0, 64, 2384, 3180], \"id\": \"BRC-NAT-209F4508\"}"
   },
   "IMG_4661": {
     "hash": "1079f7484a2218ebae6deb847aaa64dc",
