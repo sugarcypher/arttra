@@ -40,6 +40,27 @@ function rawUrl(s) {
   return "";
 }
 function cssUrl(s) { const v = rawUrl(s); return v ? `url("${v.replace(/["\\\n\r]/g, "")}")` : "none"; }
+// Image resilience: the host occasionally answers an image request with a 503.
+// Rather than leave a broken-image icon, re-request a failed image a few times
+// with backoff. The retry URL carries ?r=N so no cache replays the failure.
+// (error events don't bubble, hence the capture-phase listener.)
+const IMG_RETRIES = 3;
+const retryBase = (u) => String(u || "").replace(/[?&]r=\d+$/, "");
+document.addEventListener("error", (e) => {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement)) return;
+  const base = retryBase(img.getAttribute("src"));
+  if (!base || /^data:/i.test(base)) return;
+  if (img.dataset.retrySrc !== base) { img.dataset.retrySrc = base; img.dataset.retries = "0"; }
+  const n = Number(img.dataset.retries) + 1;
+  if (n > IMG_RETRIES) return;
+  img.dataset.retries = String(n);
+  setTimeout(() => {
+    // Skip if the element is gone or has since been pointed at another image.
+    if (!img.isConnected || retryBase(img.getAttribute("src")) !== base) return;
+    img.src = base + (base.includes("?") ? "&" : "?") + "r=" + n;
+  }, 700 * 2 ** (n - 1) + Math.random() * 400);
+}, true);
 function slugCode(value, fallback = "GEN") {
   const s = String(value || fallback).toUpperCase().replace(/[^A-Z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   return (s || fallback).split("-").map(part => part.slice(0, 3)).join("").slice(0, 8);
@@ -274,8 +295,9 @@ function buildCards() {
     a.dataset.cursor = "View";
     a.innerHTML = cardHtml(art);
     const img = a.querySelector("img");
-    const done = () => img.classList.add("is-loaded");
-    img.addEventListener("load", done, { once: true }); img.addEventListener("error", done, { once: true });
+    // Reveal only on a real load: a failed thumb stays hidden behind the card's
+    // colour wash (and is retried above) instead of showing a broken image.
+    img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
     cardEls.set(String(art.id), a);
     frag.appendChild(a);
   }
