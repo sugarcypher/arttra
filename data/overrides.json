@@ -700,7 +700,7 @@
     "titled": true
   },
   "BRC-NAT-57407F2D": {
-    "title": "S\u00e9ance in the Waiting Room",
+    "title": "Séance in the Waiting Room",
     "titled": true
   },
   "BRC-NAT-5E6B1531": {
@@ -814,7 +814,9 @@
   },
   "BRC-NAT-D2BEA999": {
     "title": "4:23, Still Melting",
-    "titled": true
+    "titled": true,
+    "hidden": true,
+    "hiddenReason": "Duplicate: screenshot copy of 'Profile in Molten Sunset' with a phone clock over it"
   },
   "BRC-INT-5F9C0977": {
     "title": "Loop Season",
@@ -948,7 +950,9 @@
   },
   "BRC-NAT-78643909": {
     "title": "Dusk, Applied with a Knife",
-    "titled": true
+    "titled": true,
+    "hidden": true,
+    "hiddenReason": "Duplicate of 'Sunset, Scratched Into' (same piece, slightly duller colour)"
   },
   "BRC-INT-46186F7E": {
     "title": "Agate, Printed in Halftone",
@@ -1251,7 +1255,9 @@
   },
   "BRC-NAT-B820182A": {
     "title": "Keys Dropped in the Deep End, Again",
-    "titled": true
+    "titled": true,
+    "hidden": true,
+    "hiddenReason": "Duplicate of 'Keys Dropped in the Deep End' (near-identical re-export)"
   },
   "BRC-INT-0FD7CD63": {
     "title": "The Monk of Parallel Lines",
@@ -1325,7 +1331,9 @@
   "BRC-NAT-EA38BC40": {
     "title": "It Looks Like a Cliff, But It Is Not",
     "titled": true,
-    "sign": false
+    "sign": false,
+    "hidden": true,
+    "hiddenReason": "Duplicate of 'This Is Not a Cliff' (same composite; only the sign doodle and a coat colour differ)"
   },
   "BRC-NAT-7A3E8027": {
     "title": "Hexagon Giving Off Sparks",

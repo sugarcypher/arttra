@@ -40,3 +40,23 @@ Drop images in iCloud `arttra-drops/` → ingest copies them into
 `arttra/build_from_folder.py` → R2 upload + `data/artworks.json`.
 `data/overrides.json` is the only hand-edited data file. Hidden pieces stay
 hidden unless the owner says otherwise.
+
+## Public data vs. private print files
+
+`data/artworks.json` is public, so the build strips `printUrl`, `printFile`,
+`vectorFile` and `sourceFile` from it. The SKU -> print-file map is written to
+`.arttra-work/print-map.json` (gitignored) and CI uploads it to R2 at
+`private/print-map.json`; the checkout Worker reads it through its bucket
+binding (falling back to `data/build_manifest.json`). Don't add print or
+source paths back into artworks.json.
+
+The build also writes a short plain description for any piece without one
+(used as alt text). A hand-written `"description"` in overrides.json wins.
+Duplicates are hidden with `"hidden": true` plus a `"hiddenReason"`.
+
+## Philosophy pages
+
+`residual-warmth.md`, `umwelt.md` and `the-accumulation-principle.md` are the
+source texts. After editing one, run
+`arttra/.venv/bin/python -I scripts/render_philosophy.py` (needs `markdown`)
+to rebuild `philosophy/*.html`, and commit both.

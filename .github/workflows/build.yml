@@ -2,6 +2,9 @@ name: Build arttra.art
 
 on:
   push:
+    # main only: pushes to review branches (e.g. award-polish) must not run
+    # the build, which checks out and commits to main.
+    branches: [main]
     paths:
       - 'gallery-source/**'
       - 'data/overrides.json'
@@ -84,6 +87,22 @@ jobs:
               --file="$f" --remote --content-type=image/png
           done
           echo "R2 upload complete."
+
+      - name: Upload private print map to R2
+        # SKU -> print file map for the checkout Worker (read through its R2
+        # binding). Print locations are no longer published in artworks.json.
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: a0abcb5fd9fb28c5aa65fb8841f889ae
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ] || [ ! -f .arttra-work/print-map.json ]; then
+            echo "No token or no print map — skipping (the Worker falls back to the build manifest)."
+            exit 0
+          fi
+          [ -x worker/node_modules/.bin/wrangler ] || ( cd worker && npm ci )
+          worker/node_modules/.bin/wrangler r2 object put "artimages/private/print-map.json" \
+            --file=.arttra-work/print-map.json --remote --content-type=application/json
 
       - name: Commit and push
         run: |

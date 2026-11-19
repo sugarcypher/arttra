@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>The Accumulation Principle — Philosophy — ARTTRA.ART</title>
+  <meta name="description" content="The companion document to Residual Warmth specifies a single generative system in precise detail. This one argues for something larger: that the system is…" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#0c0b09" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://arttra.art/philosophy/the-accumulation-principle.html" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../shared/works.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Manrope:wght@300;500&display=swap" />
+  <script src="../shared/frame-guard.js"></script>
+</head>
+<body class="w-page">
+  <header class="w-top">
+    <div class="w-top__in">
+      <a class="w-brand" href="../">ARTTRA</a>
+      <nav class="w-nav" aria-label="Site"><a href="../#shop">Gallery</a><a href="../interactive.html">Interactive</a><a class="w-hide-s" href="../#commissions">Commissions</a><a href="../#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main class="w-doc">
+    <a class="w-back w-doc__back" href="../interactive.html">&larr; Interactive works</a>
+    <p class="w-kicker">Philosophy</p>
+    <h1>The Accumulation Principle</h1>
+    <h2>Residual Warmth as an instance of a general form</h2>
+    <p>The companion document to Residual Warmth specifies a single generative system in precise detail. This one argues for something larger: that the system is an instance of a pattern that recurs across domains, and that the pattern itself — not any particular visual output — is what the aesthetic is pointing at.</p>
+    <h2>The pattern, stated abstractly</h2>
+    <p>A system exhibits <strong>the accumulation principle</strong> when it satisfies three conditions:</p>
+    <ol>
+    <li><strong>Persistent substrate.</strong> A state <code>S(t)</code> that carries forward across steps. Nothing is erased; the substrate is the record of its own history.</li>
+    <li><strong>Bounded additive contribution.</strong> Each step contributes <code>c_t</code> such that <code>S(t+1) = S(t) + f(c_t)</code>, where <code>f</code> has bounded magnitude. No single step can dominate; influence arrives in small, repeatable increments.</li>
+    <li><strong>Structural constraint <code>C</code>.</strong> A mechanism — decay, normalization, bounded range, or constrained input distribution — that prevents the accumulation from collapsing into saturation, blow-up, or drift.</li>
+    </ol>
+    <p>All three are required. Remove the substrate and you have a sequence, not an accumulation — each moment replaces the prior. Remove bounded contribution and you have punctuation, not layering — single events dominate. Remove <code>C</code> and the system trends toward entropy saturation, whose visual, computational, or economic signature is the same: undifferentiated gray, numerical blow-up, capital hypertrophy, heat death.</p>
+    <p>The principle is neutral about substrate. It is load-bearing about the interaction of the three conditions.</p>
+    <h2>Instances</h2>
+    <p>Five systems that satisfy all three conditions, with their <code>C</code> surfaced:</p>
+    <p><strong>Transformer residual streams.</strong> <code>x_{n+1} = x_n + f(x_n)</code> at each layer. <code>C</code> = LayerNorm, which rescales the stream to unit variance and prevents activation drift. Without LN, residual streams diverge across depth and training fails. The residual itself is the substrate; the constraint is what makes additive depth possible.</p>
+    <p><strong>Hebbian synaptic potentiation.</strong> <code>w_{ij}(t+1) = w_{ij}(t) + η · a_i · a_j</code>. <code>C</code> = homeostatic normalization and weight decay, which bound total synaptic mass so that learning in one region does not silently rewrite another. Without <code>C</code>, Hebbian networks runaway-potentiate into pathological states. Learning is accumulation; forgetting curves are the constraint.</p>
+    <p><strong>Oil painting, glazing technique.</strong> Each transparent pigment layer modifies the optical mixture of the layer beneath without obscuring it. <code>C</code> = the tonal range of the palette, curated such that successive glazes deepen saturation without crossing into opacity. The Old Masters' warmth is a property of this constraint, not of the pigments individually.</p>
+    <p><strong>Capital in Solow growth.</strong> <code>K(t+1) = K(t) + I(t) − δ · K(t)</code>. <code>C</code> = depreciation rate δ. Without depreciation, capital accumulates without bound and the model becomes meaningless. With it, the system exhibits convergence to a steady state determined by the ratio of investment to depreciation — the same ratio, in different guise, that determines the character of every accumulation system.</p>
+    <p><strong>Leaky integrator (signal processing).</strong> <code>y[n] = α · y[n−1] + (1 − α) · x[n]</code>. <code>C</code> = leak coefficient α. This is the accumulation principle in its most distilled form: a single parameter controlling the balance between memory and forgetting, yielding low-pass filtering, moving averages, exponential smoothing, and the core mechanism behind RNN hidden states.</p>
+    <h2>The shared mathematics</h2>
+    <p>Every instance above reaches a fixed point determined by the ratio of input rate to constraint strength. In Solow: <code>K* = sY/δ</code>. In the leaky integrator: <code>y* = x</code> when <code>x</code> is constant. In Hebbian learning with normalization: weight mass converges to the homeostatic set-point. In transformers: activations stabilize within the LayerNorm manifold.</p>
+    <p>But fixed points are not where the interesting structure lives. The aesthetic — the warmth, the learning, the growth, the compositional depth — emerges in the <strong>transient regime</strong>, before equilibrium. A finished oil painting is not at equilibrium; it is a snapshot of a specific point in the accumulation trajectory, chosen by the painter. A trained transformer is not at fixed-point; training stops when the loss curve flattens sufficiently. Residual Warmth, likewise, terminates at a specific pass-count — not at the saturation point, where it would collapse, but at the moment of maximum differentiation, where structure and substrate remain in productive tension.</p>
+    <p><em>The principle is not about reaching equilibrium. It is about navigating the space between empty and saturated with enough patience to find the interesting regions.</em></p>
+    <h2>Where the pattern fails</h2>
+    <p>Three failure modes, visible across all five domains:</p>
+    <ul>
+    <li><strong>No <code>C</code>, unbounded growth.</strong> Capital hypertrophy. Hebbian runaway. Residual activation explosion. Chromatic sludge.</li>
+    <li><strong><code>C</code> too strong, over-normalization.</strong> Everything regresses to the mean. No learning. No growth. No image — only the substrate.</li>
+    <li><strong>Contribution unbounded, single-event dominance.</strong> One transaction reshapes the economy. One training example overwrites the network. One stroke obliterates the painting. No accumulation — just punctuated overwrites wearing the costume of a process.</li>
+    </ul>
+    <p>In every case, the failure looks different on the surface (a gray canvas, a diverged training run, an inflated currency) but the formal structure is identical: one of the three conditions is not being enforced.</p>
+    <h2>What Residual Warmth is, restated</h2>
+    <p>Residual Warmth is an instance of the accumulation principle implemented in a visual substrate. The correspondences are direct:</p>
+    <div class="w-table"><table>
+    <thead>
+    <tr>
+    <th>Accumulation principle</th>
+    <th>Residual Warmth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Substrate <code>S(t)</code></td>
+    <td>The canvas — warm paper, persistent across passes</td>
+    </tr>
+    <tr>
+    <td>Contribution <code>c_t</code></td>
+    <td>A single stroke along an attention-steered flow line</td>
+    </tr>
+    <tr>
+    <td>Function <code>f</code></td>
+    <td>Alpha blending (α ∈ [0.035, 0.060])</td>
+    </tr>
+    <tr>
+    <td>Constraint <code>C</code></td>
+    <td>Palette luminance band (L ∈ [0.22, 0.60])</td>
+    </tr>
+    </tbody>
+    </table></div>
+    <p>The aesthetic character of the piece — the warmth, the depth, the compositional foci — is not a property of the strokes, the palette, or the attention mechanism individually. It is a property of all four elements satisfying the accumulation principle simultaneously, in a visual medium, at a specific point in the transient regime.</p>
+    <p>Swap the substrate for neural weights, the strokes for training examples, and the palette constraint for LayerNorm, and the same system yields a language model. Swap them for pigment, canvas, brush, and palette range, and it yields a Rembrandt. The phenomenology travels.</p>
+    <h2>Why the generalization matters</h2>
+    <p>A useful aesthetic is not a vocabulary of surface features. It is a claim about what conditions produce a certain kind of integrity. The accumulation principle names those conditions: persistence, boundedness, constraint. Any system satisfying them exhibits a family resemblance — a patience, a depth, a sense of being the product of sustained attention rather than sudden gesture.</p>
+    <p>Residual Warmth is one expression of that family. The transformer residual stream is another. The Rembrandt glaze is a third. They share a phenomenology because they share a form. The form is the movement's real territory; the visual instance is a single point on a much larger map.</p>
+    <p>What this means for implementers: if you satisfy the three conditions with honesty, you will produce work that reads as of-this-lineage — regardless of medium, regardless of whether you ever look at the Residual Warmth specification. The specification describes one implementation. The principle describes the space of implementations.</p>
+    <p>That is what makes it a movement rather than a style.</p>
+    <div class="w-doc__cta"><a class="w-btn w-btn--gold" href="../ink-blooms.html">Open Ink Blooms</a><a class="w-btn" href="../residual-warmth.html">Open Residual Warmth</a><a class="w-btn" href="../interactive.html">All interactive works</a><a class="w-btn" href="../#shop">Back to the gallery</a></div>
+  </main>
+  <footer class="w-foot">
+    <div><div class="w-foot__t">ARTTRA.ART</div>Original and algorithmic art by Briar Morgan Greenway.</div>
+    <div><div class="w-foot__t">Interactive</div>Generative works written in p5.js; any state can be made into a print.</div>
+    <div><div class="w-foot__t">Contact</div><a href="mailto:help@arttra.art">help@arttra.art</a></div>
+  </footer>
+</body>
+</html>

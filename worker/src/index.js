@@ -28,6 +28,20 @@
  *   PRINTFUL_AUTO_CONFIRM         "true" to auto-confirm the draft order for
  *                                 fulfillment. Default false (draft stays for
  *                                 human review in Printful Dashboard).
+ *   PRINT_PROXY                   "true" hands Printful a signed, expiring
+ *                                 Worker URL (GET /file) that streams the
+ *                                 print file from R2 through the bucket
+ *                                 binding, so the bucket's public r2.dev
+ *                                 access can be switched off. Default: the
+ *                                 public R2 URL (R2_PUBLIC_BASE), as before.
+ *   MANIFEST_URL                  fallback source for the SKU -> print-file
+ *                                 map while private/print-map.json is not in
+ *                                 R2 yet (default: the site's build manifest).
+ *
+ * Print files are never listed in the public artworks.json. The Worker
+ * resolves a SKU's print file server-side: R2 private/print-map.json (written
+ * by the build, uploaded by CI), else the build manifest.
+ *
  *   REPLICATE_API_TOKEN (secret)  enables on-demand AI upscaling for sizes
  *                                 beyond a piece's real pixels; result saved
  *                                 to R2 (binding ART_BUCKET) as
@@ -52,6 +66,11 @@ export default {
     }
 
     const { pathname } = new URL(request.url);
+
+    // Signed, expiring print-file download for Printful (PRINT_PROXY mode).
+    if (request.method === "GET" && pathname === "/file") {
+      return handleSignedFile(request, env);
+    }
 
     if (request.method === "GET" && pathname === "/") {
       return new Response("arttra checkout worker — POST /checkout (options-v2)", {
@@ -212,8 +231,8 @@ async function loadCatalog(env) {
       title: (a && a.title) || "Untitled artwork",
       price: Number(a && a.priceTiers && a.priceTiers.startingPrice) || 0,
       image: absoluteUrl((a && (a.image || a.thumb)) || "", env),
-      // Public R2 print-file URL (set by the build pipeline). Empty until
-      // slice 3's R2 upload runs; the webhook falls back when it's missing.
+      // Legacy: older artworks.json builds listed a public printUrl. Current
+      // builds don't; the print file is resolved by SKU (resolvePrint).
       printUrl: (a && a.printUrl) || "",
       // Print dimensions drive which Printful variant (square / portrait /
       // landscape) the order maps to.
@@ -236,6 +255,90 @@ async function loadProducts(env) {
   const data = await res.json();
   if (!data || !Array.isArray(data.materials)) throw new Error("products malformed");
   return data;
+}
+
+// --- Print files: SKU -> R2 object, resolved server-side ---------------------
+
+let printMapCache = { at: 0, map: null };
+
+// SKU -> { print: "print/<file>.png", sourceFile, canvasCropped }.
+async function loadPrintMap(env) {
+  if (printMapCache.map && Date.now() - printMapCache.at < 300000) return printMapCache.map;
+  let map = null;
+  try {
+    if (env.ART_BUCKET) {
+      const obj = await env.ART_BUCKET.get("private/print-map.json");
+      if (obj) map = await obj.json();
+    }
+  } catch { map = null; }
+  if (!map) {
+    // Fallback until CI has uploaded the private map: the build manifest
+    // records every piece's print file under its cached artwork.
+    try {
+      const src = env.MANIFEST_URL || "https://arttra.art/data/build_manifest.json";
+      const res = await fetch(src, { cf: { cacheTtl: 300, cacheEverything: true } });
+      if (res.ok) {
+        const manifest = await res.json();
+        map = {};
+        for (const entry of Object.values(manifest || {})) {
+          const a = entry && entry.artwork;
+          if (!a || !a.id || !a.printFile) continue;
+          map[a.id] = {
+            print: "print/" + String(a.printFile).split("/").pop(),
+            sourceFile: a.sourceFile || "",
+            canvasCropped: !!a.canvasCropped,
+          };
+        }
+      }
+    } catch { map = null; }
+  }
+  if (map) printMapCache = { at: Date.now(), map };
+  return map || {};
+}
+
+async function resolvePrint(env, sku) {
+  const map = await loadPrintMap(env);
+  return map[sku] || null;
+}
+
+// URL Printful fetches for an R2 object key (print/... or enhanced/...).
+async function fileUrlFor(env, key) {
+  if (String(env.PRINT_PROXY || "").toLowerCase() === "true" && env.ART_BUCKET && env.WORKER_URL) {
+    // Valid for 30 days: Printful may re-fetch while an order is on hold.
+    const exp = Math.floor(Date.now() / 1000) + 30 * 86400;
+    const sig = await hmacSha256Hex(fileSecret(env), `${key}|${exp}`);
+    return `${env.WORKER_URL.replace(/\/+$/, "")}/file?key=${encodeURIComponent(key)}&exp=${exp}&sig=${sig}`;
+  }
+  if (!env.R2_PUBLIC_BASE) return "";
+  const parts = key.split("/");
+  return `${env.R2_PUBLIC_BASE.replace(/\/+$/, "")}/${parts.slice(0, -1).join("/")}/${encodeURIComponent(parts[parts.length - 1])}`;
+}
+
+function fileSecret(env) {
+  return env.PRINT_URL_SECRET || env.UPSCALE_CALLBACK_SECRET || env.STRIPE_WEBHOOK_SECRET || "";
+}
+
+async function handleSignedFile(request, env) {
+  const plain = (status, msg) => new Response(msg, { status, headers: { "Content-Type": "text/plain", ...securityHeaders() } });
+  if (!env.ART_BUCKET || !fileSecret(env)) return plain(404, "Not found");
+  const u = new URL(request.url);
+  const key = u.searchParams.get("key") || "";
+  const exp = parseInt(u.searchParams.get("exp") || "0", 10);
+  if (!/^(print|enhanced)\/[^/]{1,200}$/.test(key) || !Number.isFinite(exp)) return plain(400, "Bad request");
+  if (exp < Math.floor(Date.now() / 1000)) return plain(403, "Link expired");
+  const expected = await hmacSha256Hex(fileSecret(env), `${key}|${exp}`);
+  if (!timingSafeEqualHex(u.searchParams.get("sig") || "", expected)) return plain(403, "Bad signature");
+  const obj = await env.ART_BUCKET.get(key);
+  if (!obj) return plain(404, "Not found");
+  return new Response(obj.body, {
+    status: 200,
+    headers: {
+      "Content-Type": (obj.httpMetadata && obj.httpMetadata.contentType) || "image/png",
+      "Cache-Control": "private, no-store",
+      "X-Content-Type-Options": "nosniff",
+      "X-Robots-Tag": "noindex",
+    },
+  });
 }
 
 function absoluteUrl(path, env) {
@@ -475,7 +578,13 @@ async function onCheckoutSessionCompleted(session, env) {
     let started = 0;
     for (const sku of pendingUpscale) {
       const entry = catalog.get(sku);
-      if (!entry || entry.canvasCropped) continue;
+      if (!entry) continue;
+      const pinfo = await resolvePrint(env, sku);
+      if (pinfo) {
+        entry.sourceFile = entry.sourceFile || pinfo.sourceFile || "";
+        entry.canvasCropped = entry.canvasCropped || !!pinfo.canvasCropped;
+      }
+      if (entry.canvasCropped) continue;
       if (await startUpscale(env, sku, entry, session.id)) started++;
     }
     if (started) return; // fulfillment resumes from /upscale-done
@@ -490,7 +599,11 @@ async function onCheckoutSessionCompleted(session, env) {
     // Enhanced (AI-upscaled) file when this size needed one, else the print file.
     // Never substitute another artwork's file: a missing print file is an error
     // (Stripe retries; the paid order is visible in the dashboard).
-    const printUrl = (meta.needs_upscale === "1" && enhancedUrl[sku]) || (entry && entry.printUrl) || "";
+    let printUrl = (meta.needs_upscale === "1" && enhancedUrl[sku]) || "";
+    if (!printUrl) {
+      const pinfo = sku ? await resolvePrint(env, sku) : null;
+      printUrl = (pinfo && pinfo.print && await fileUrlFor(env, pinfo.print)) || (entry && entry.printUrl) || "";
+    }
     if (!printUrl) throw new Error(`no print file for ${sku || name}`);
     // Map each artwork to a Printful variant by its shape, so square art goes
     // on a square product, portrait on portrait, landscape on landscape.
@@ -550,9 +663,9 @@ async function onCheckoutSessionCompleted(session, env) {
 function enhancedKey(sku) { return `enhanced/${sku}.png`; }
 
 async function enhancedFileUrl(env, sku) {
-  if (!env.ART_BUCKET || !env.R2_PUBLIC_BASE) return "";
+  if (!env.ART_BUCKET) return "";
   const head = await env.ART_BUCKET.head(enhancedKey(sku));
-  return head ? `${env.R2_PUBLIC_BASE.replace(/\/+$/, "")}/${enhancedKey(sku)}` : "";
+  return head ? fileUrlFor(env, enhancedKey(sku)) : "";
 }
 
 function sourceUrl(env, entry) {

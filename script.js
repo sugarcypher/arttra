@@ -61,6 +61,18 @@ document.addEventListener("error", (e) => {
     img.src = base + (base.includes("?") ? "&" : "?") + "r=" + n;
   }, 700 * 2 ** (n - 1) + Math.random() * 400);
 }, true);
+// ---- Artwork image protection ----
+// Deters casual saving: no context menu, drag, long-press callout or
+// save/print shortcuts on artwork imagery. (Nothing on the web can stop a
+// screenshot; display images are also capped at ~1600px / ~250 KB and carry
+// a faint watermark, so what can be grabbed is not print quality.)
+const PROTECTED = ".card__imgWrap, .rotator__bg, .rotator__art, .piece, .loupeView, .cartItem__img, .flyer, img";
+document.addEventListener("contextmenu", (e) => { if (e.target.closest && e.target.closest(PROTECTED)) e.preventDefault(); });
+document.addEventListener("dragstart", (e) => { if (e.target.closest && e.target.closest(PROTECTED)) e.preventDefault(); });
+document.addEventListener("keydown", (e) => {
+  if ((e.ctrlKey || e.metaKey) && /^[sSpP]$/.test(e.key) && !/^(INPUT|TEXTAREA)$/.test(e.target.tagName)) e.preventDefault();
+});
+
 function slugCode(value, fallback = "GEN") {
   const s = String(value || fallback).toUpperCase().replace(/[^A-Z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   return (s || fallback).split("-").map(part => part.slice(0, 3)).join("").slice(0, 8);
@@ -170,11 +182,21 @@ function matchesFilters(art) {
   return true;
 }
 
+// Card price line. Always a price or a clear next step — never a bare SKU.
 function fromLine(art) {
+  if (!optionsLive) {
+    const legacy = Number(art.priceTiers && art.priceTiers.startingPrice) || 0;
+    return legacy ? `From ${esc(fmt(legacy))}` : "Prints on request";
+  }
   const p = startingPrice(art, products);
-  if (!p) return esc(art.sku);
-  const maxLong = Math.max(...optionsForArtwork(art, products).flatMap(g => g.sizes.map(s => Math.max(s.w, s.h))));
-  return `From ${esc(fmt(p))} \u00b7 up to ${esc(String(maxLong))}\u2033`;
+  if (!p) return "Prints on request";
+  // The same option list the detail view offers, so "up to" is always a size
+  // a buyer can actually pick.
+  return `<span class="card__pfx">Prints from</span><span class="card__pfx-m">From</span> ${esc(fmt(p))} \u00b7 up to ${esc(String(art._maxLong))}\u2033`;
+}
+function altText(art) {
+  const d = String(art.description || "").trim();
+  return d ? `${art.title || "Artwork"}. ${d}` : (art.title || "Artwork");
 }
 
 // ---- Color math (palette -> HSL) ----
@@ -283,7 +305,8 @@ function cardHtml(art) {
   const thumb = art.thumb || art.image || "";
   const swatches = (art.colorPalette||[]).slice(0,4);
   const from = fromLine(art);
-  return `<span class="card__in"><span class="card__imgWrap" style="--c:${safeColor(art._dom)}"><img class="card__img" data-src="${safeUrl(thumb)}" alt="${esc(art.title)}" width="${art._w}" height="${art._h}" loading="lazy" decoding="async" />${art._maxLong >= 55 ? `<span class="card__big">Large format</span>` : ""}<span class="card__glare"></span></span><span class="card__body"><span class="card__title">${esc(art.title)}</span><span class="card__sku">${from}</span><span class="card__sub"><span>${esc(art.style||"")}</span><span class="card__swatches">${swatches.map(h=>`<span class="swatch" style="--c:${safeColor(h)}"></span>`).join("")}</span></span></span></span>`;
+  const swatchLabel = (art.namedColors || []).map(c => c.name).slice(0, 4).join(", ");
+  return `<span class="card__in"><span class="card__imgWrap" style="--c:${safeColor(art._dom)}"><img class="card__img" data-src="${safeUrl(thumb)}" alt="${esc(altText(art))}" width="${art._w}" height="${art._h}" loading="lazy" decoding="async" />${art._maxLong >= 55 ? `<span class="card__big">Large format</span>` : ""}<span class="card__glare"></span></span><span class="card__body"><span class="card__title">${esc(art.title)}</span><span class="card__sku">${from}</span><span class="card__sub"><span>${esc(art.style||"")}</span><span class="card__swatches" ${swatchLabel ? `title="${esc(swatchLabel)}"` : ""} aria-hidden="true">${swatches.map(h=>`<span class="swatch" style="--c:${safeColor(h)}"></span>`).join("")}</span></span></span></span>`;
 }
 function buildCards() {
   const frag = document.createDocumentFragment();
@@ -555,6 +578,77 @@ function buildMosaic() {
   if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => hero.classList.toggle("is-paused", !en.isIntersecting)).observe(hero);
 }
 
+// ABOUT — random rotating artwork, crossfading every ~6s; click opens the piece
+const ABOUT_INTERVAL = 6000;
+function initAboutRotator() {
+  const root = $("#aboutArt"); if (!root || !artworks.length) return;
+  const layers = $$(".aboutArt__layer", root);
+  const caption = $("#aboutArtCap"), capTitle = $("#aboutArtTitle");
+  const hero = root;
+  const pool = artworks.filter(a => a.image || a.thumb);
+  if (!pool.length) return;
+  // Shuffle-bag: every piece once per cycle, random order, and never the same
+  // piece twice in a row across a reshuffle.
+  let bag = [], last = null;
+  const nextArt = () => {
+    if (!bag.length) {
+      bag = pool.slice();
+      for (let i = bag.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [bag[i], bag[j]] = [bag[j], bag[i]]; }
+      if (bag.length > 1 && bag[bag.length - 1] === last) [bag[0], bag[bag.length - 1]] = [bag[bag.length - 1], bag[0]];
+    }
+    return (last = bag.pop());
+  };
+  const srcFor = (a) => rawUrl(saveData ? (a.thumb || a.image) : (a.image || a.thumb));
+  // Resolve once the image is decoded (or failed), so a crossfade never
+  // reveals a half-painted frame.
+  const load = (a) => new Promise((resolve) => {
+    const im = new Image(); im.decoding = "async";
+    const done = () => resolve(a);
+    im.onload = () => (im.decode ? im.decode().then(done, done) : done());
+    im.onerror = done;
+    im.src = srcFor(a);
+  });
+  let front = 0, current = null, timer = 0, pending = null, running = false;
+  function paint(layer, a) {
+    layer.querySelector(".aboutArt__bg").style.backgroundImage = cssUrl(a.thumb || a.image);
+    const img = layer.querySelector("img");
+    img.src = srcFor(a);
+    img.width = a._w; img.height = a._h;
+    img.alt = a.description || a.title || "";
+  }
+  function show(a) {
+    const back = layers[1 - front];
+    paint(back, a);
+    back.classList.add("is-on");
+    layers[front].classList.remove("is-on");
+    front = 1 - front;
+    current = a;
+    capTitle.textContent = a.title || "Untitled";
+    root.setAttribute("aria-label", `${a.title || "Untitled"}. Open this work`);
+    caption.hidden = false;
+  }
+  function queue() {
+    // Preload the next piece while the current one is on screen.
+    pending = load(nextArt());
+    clearTimeout(timer);
+    timer = setTimeout(async () => { if (!running) return; show(await pending); queue(); }, ABOUT_INTERVAL);
+  }
+  function start() { if (running || reduceMotion()) return; running = true; queue(); }
+  function stop() { running = false; clearTimeout(timer); }
+  root.addEventListener("click", (e) => { if (!current) return; e.preventDefault(); openDetail(current, { push: true, fromEl: layers[front].querySelector("img") }); });
+  // First piece: random, shown as soon as it has decoded.
+  load(nextArt()).then((a) => {
+    show(a);
+    if (reduceMotion()) return; // static random pick
+    let onScreen = true;
+    const sync = () => (onScreen && !document.hidden ? start() : stop());
+    document.addEventListener("visibilitychange", sync);
+    if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => { onScreen = en.isIntersecting; sync(); }).observe(hero);
+    reducedMotionMQ.addEventListener && reducedMotionMQ.addEventListener("change", () => (reduceMotion() ? stop() : sync()));
+    sync();
+  });
+}
+
 // =====================================================================
 // DETAIL VIEWER — true-scale wall preview
 // =====================================================================
@@ -682,7 +776,7 @@ function setMode(mode) {
   if (mode === "detail" && viewer.art) {
     const src = rawUrl(viewer.art.image || viewer.art.thumb);
     const di = $("#detailImage"); if (di.getAttribute("src") !== src) di.src = src;
-    di.alt = viewer.art.title || "";
+    di.alt = altText(viewer.art);
     $("#loupeHint").textContent = finePointer ? "Hover to magnify" : "Press and hold to magnify";
   }
 }
@@ -746,7 +840,7 @@ function populatePanel(art) {
 function setPieceImage(art, dir) {
   const img = $("#modalImage");
   const thumb = rawUrl(art.thumb || art.image), web = rawUrl(art.image || art.thumb);
-  img.alt = art.title || "";
+  img.alt = altText(art);
   const token = (setPieceImage.t = (setPieceImage.t || 0) + 1);
   if (dir && !reduceMotion()) img.classList.add("is-swapping");
   img.src = thumb;
@@ -899,8 +993,8 @@ function renderPicker(changed) {
     return;
   }
   if (!groups.length) {
-    box.innerHTML = '<div class="fineprint__line">This piece isn\u2019t available as a print yet. <a href="#contact" data-close-viewer>Ask about it</a>.</div>';
-    $("#modalPrice").textContent = "Contact for pricing";
+    box.innerHTML = '<div class="fineprint__line">This piece\u2019s proportions don\u2019t match a standard print size yet. <a href="#contact" data-close-viewer>Ask about a custom print</a>.</div>';
+    $("#modalPrice").textContent = "Prints on request";
     $("#modalPriceLabel").textContent = "";
     buy.hidden = true; add.hidden = true;
     const ask = box.querySelector("[data-close-viewer]");
@@ -930,8 +1024,11 @@ function renderPicker(changed) {
     html += `<div class="opt"><div class="opt__label">Frame</div><div class="opt__chips" role="group" aria-label="Frame">` +
       frames.map(f => `<button type="button" class="chip${slug(f)===pick.frame?" chip--on":""}" data-frame="${esc(slug(f))}" aria-pressed="${slug(f)===pick.frame}"><span class="chip__dot" style="background:${FRAME_COLORS[slug(f)] || "#161514"}"></span>${esc(f)}</button>`).join("") + `</div></div>`;
   }
-  const maxLong = Math.max(...groups.flatMap(x => x.sizes.map(s => Math.max(s.w, s.h))));
-  html += `<div class="fineprint__line">Up to ${esc(String(maxLong))}\u2033 for this piece \u00b7 sizes are limited to what its file prints sharp.</div>`;
+  // Name where the largest size lives, so "up to" on the card always matches
+  // a size the buyer can find here.
+  let big = null;
+  for (const x of groups) for (const sz of x.sizes) if (!big || Math.max(sz.w, sz.h) > Math.max(big.s.w, big.s.h) || (Math.max(sz.w, sz.h) === Math.max(big.s.w, big.s.h) && sz.w * sz.h > big.s.w * big.s.h)) big = { s: sz, m: x.material };
+  if (big) html += `<div class="fineprint__line">Largest for this piece: ${esc(big.s.label)} in ${esc(big.m.short || big.m.label)} \u00b7 sizes are limited to what its file prints sharp.</div>`;
   box.innerHTML = html;
   $("#modalPriceLabel").textContent = sel ? sel.label : "";
   $("#modalPrice").textContent = sel ? fmt(sel.price) : "";
@@ -1078,29 +1175,49 @@ async function startCheckout(items, button) {
 })();
 
 // =====================================================================
-// Media reel: preload=none, play only while visible
+// Media reel: muted autoplay while in view, plus a clear play/pause control
 // =====================================================================
+const PLAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>';
+const PAUSE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>';
 function initReel() {
   const vids = $$("#reel video");
-  const auto = !reduceMotion() && !saveData;
+  // Autoplay only when motion is welcome and data isn't being saved; the
+  // visible button always works (tap or click), including on touch.
+  const auto = () => !reduceMotion() && !saveData;
   const ensureSrc = (v) => { if (!v.getAttribute("src")) { v.src = v.dataset.src; v.addEventListener("loadeddata", () => v.classList.add("is-ready"), { once: true }); } };
   vids.forEach(v => {
+    const item = v.parentElement;
+    const name = v.getAttribute("aria-label") || "video";
     const btn = document.createElement("button");
-    btn.type = "button"; btn.className = "reel__play"; btn.innerHTML = "<span>Play</span>";
-    btn.setAttribute("aria-label", "Play " + (v.getAttribute("aria-label") || "video"));
-    btn.hidden = auto;
-    btn.addEventListener("click", () => { ensureSrc(v); if (v.paused) { v.play().catch(() => {}); btn.hidden = true; } });
-    v.addEventListener("click", () => { if (!v.paused) { v.pause(); btn.hidden = false; } });
-    v.parentElement.appendChild(btn);
+    btn.type = "button"; btn.className = "reel__play";
+    const sync = () => {
+      const playing = !v.paused;
+      item.classList.toggle("is-playing", playing);
+      btn.innerHTML = (playing ? PAUSE_ICON : PLAY_ICON) + `<span class="sr-only">${playing ? "Pause" : "Play"} ${esc(name)}</span>`;
+      btn.setAttribute("aria-pressed", String(playing));
+    };
+    v.addEventListener("play", sync); v.addEventListener("pause", sync);
+    const toggle = () => {
+      ensureSrc(v);
+      if (v.paused) { v.dataset.userPaused = ""; v.play().catch(() => {}); }
+      else { v.pause(); v.dataset.userPaused = "1"; }
+    };
+    btn.addEventListener("click", (e) => { e.stopPropagation(); toggle(); });
+    v.addEventListener("click", toggle);
+    item.appendChild(btn);
+    // Show a still frame before playback: load metadata + first frame lazily.
+    sync();
   });
   if (!("IntersectionObserver" in window)) return;
   const io = new IntersectionObserver((entries) => {
     for (const en of entries) {
       const v = en.target;
-      if (en.isIntersecting) { if (auto) { ensureSrc(v); const p = v.play(); if (p) p.catch(() => { const b = v.parentElement.querySelector(".reel__play"); if (b) b.hidden = false; }); } }
-      else if (!v.paused) v.pause();
+      if (en.isIntersecting) {
+        ensureSrc(v);
+        if (auto() && !v.dataset.userPaused) { const p = v.play(); if (p) p.catch(() => {}); }
+      } else if (!v.paused) v.pause();
     }
-  }, { threshold: .35 });
+  }, { threshold: .5 });
   vids.forEach(v => io.observe(v));
 }
 
@@ -1195,7 +1312,7 @@ function heroLine() {
   if (max >= 30) $("#heroLine").textContent = `Original art, printed up to ${max}\u2033 \u2014 and previewed at true scale on your wall before you buy.`;
 }
 
-async function getJson(url) { const r = await fetch(url, { cache: "no-store" }); return r.json(); }
+async function getJson(url) { const r = await fetch(url); return r.json(); }
 async function init() {
   initReveal(); initReel(); initFilm(); initArtist(); initCursor(); initViewerControls(); initSpectrum();
   const [cfg, arts, prods] = await Promise.all([
@@ -1210,6 +1327,7 @@ async function init() {
   // Hero after first paint, without waiting for the checkout health check.
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 30));
   requestAnimationFrame(() => idle(buildMosaic, { timeout: 600 }));
+  requestAnimationFrame(() => idle(initAboutRotator, { timeout: 900 }));
   try {
     const api = (config.apiBase || "").replace(/\/+$/, "");
     optionsLive = !!api && (await (await fetch(api + "/", { cache: "no-store" })).text()).includes("options-v2");
