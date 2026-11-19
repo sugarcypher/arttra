@@ -75,6 +75,16 @@ WORKER_URL            = "https://arttra-checkout.xp76cpmjsg.workers.dev"
 REPLICATE_MODEL       = "nightmareai/real-esrgan"
 UPSCALE_MAX_LONG_EDGE = "12000"
 
+# --- Print-file access ---------------------------------------------------------
+# Print files are not listed in the public artworks.json; the Worker resolves
+# them by SKU from R2 private/print-map.json (uploaded by the build), falling
+# back to this manifest until that file exists.
+MANIFEST_URL = "https://arttra.art/data/build_manifest.json"
+# "true" = hand Printful a signed, 30-day Worker URL (GET /file) that streams
+# the file from R2 through the binding below. Turn this on, test one order,
+# then disable the bucket's public r2.dev URL in the Cloudflare dashboard.
+PRINT_PROXY = "false"
+
 [[r2_buckets]]
 binding     = "ART_BUCKET"
 bucket_name = "artimages"

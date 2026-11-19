@@ -16,6 +16,7 @@ import tempfile
 import base64
 import random
 import colorsys
+import copy
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
@@ -33,8 +34,11 @@ except ImportError:
 
 PRINT_LONG_EDGE = 6000
 THUMB_WIDTH = 400
-WEB_MAX_DIMENSION = 2000
-WEBP_QUALITY = 85
+# Display copies only: big enough for a 2x-density detail view, small enough
+# (~250 KB) that what a visitor can save is nowhere near print quality.
+WEB_MAX_DIMENSION = 1600
+WEBP_QUALITY = 78
+WEB_MAX_BYTES = 380_000
 THUMB_QUALITY = 75
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".tiff", ".bmp"}
 MAX_WORKERS = 4
@@ -290,13 +294,17 @@ def classify_color(hex_color: str) -> dict:
 
     for name, code, h_min, h_max, s_min, l_min, l_max in COLOR_FAMILIES:
         # Check saturation threshold for chromatic vs achromatic
+        # Achromatic families (s_min 0) only take low-saturation colours, and
+        # chromatic families only saturated ones — previously the grey bands
+        # (hue 0-360) also swallowed every saturated colour in their lightness
+        # range, so the Color filter offered nothing but greys.
         if s_min == 0.0 and l_min <= l <= l_max and s < 0.15:
             # Achromatic match
             score = 10  # prefer achromatic matches when saturation is low
             if best_score < score:
                 best = {"name": name, "code": code, "hex": hex_color}
                 best_score = score
-        elif s >= s_min and l_min <= l <= l_max:
+        elif s_min > 0.0 and s >= max(s_min, 0.15) and l_min <= l <= l_max:
             # Hue match (handle wrap-around for reds)
             if h_min <= h_max:
                 if h_min <= h_deg <= h_max:
@@ -707,7 +715,13 @@ def process_single(args: tuple) -> Optional[dict]:
             web = _apply_watermark(web)
 
             web_webp = Path(web_dir) / f"{stem}.webp"
-            web.save(str(web_webp), "WEBP", quality=WEBP_QUALITY, optimize=True)
+            web.save(str(web_webp), "WEBP", quality=WEBP_QUALITY, optimize=True, method=6)
+            # Busy, noisy pieces compress badly; step quality down until the
+            # display copy is a modest download (~380 KB ceiling).
+            for q in (70, 62, 55):
+                if web_webp.stat().st_size <= WEB_MAX_BYTES:
+                    break
+                web.save(str(web_webp), "WEBP", quality=q, optimize=True, method=6)
             web_jpg = Path(web_dir) / f"{stem}.jpg"
             web.save(str(web_jpg), "JPEG", quality=WEBP_QUALITY, optimize=True)
 
@@ -740,7 +754,7 @@ def process_single(args: tuple) -> Optional[dict]:
             "colorPalette": raw_colors,
             "namedColors": named_colors,
             "bestProducts": products,
-            "seoKeywords": ["arttra", style.lower(), category.lower(), "wall art", "contemporary", "handmade"],
+            "seoKeywords": ["arttra", style.lower(), category.lower(), "wall art", "contemporary"],
             "priceTiers": DEFAULT_PRICE.copy(),
             "thumb": f"./assets/images/gallery/thumbs/thumb_{stem}.webp",
             "image": f"./assets/images/gallery/web/{stem}.webp",
@@ -1243,12 +1257,145 @@ def _publishable(artworks, overrides, source_dir):
     Both build paths (new images / cache-only) must publish through here — the
     cache-only path once skipped the hidden filter and republished every
     hidden piece on a no-new-images rebuild."""
+    # Work on copies: the manifest's cached records must stay as the build
+    # produced them, not pick up overrides or publish-time fields.
+    artworks = copy.deepcopy(artworks)
     artworks = _apply_overrides(artworks, overrides)
     artworks.sort(key=lambda a: a.get("timestamp", ""), reverse=True)
     visible = [a for a in artworks if not a.get("hidden")]
     _dedup_titles(visible)
     visible = _apply_print_urls(visible)
-    return _backfill_source_pixels(visible, source_dir)
+    visible = _backfill_source_pixels(visible, source_dir)
+    _write_print_map(visible)
+    for art in visible:
+        art_ovr = overrides.get(art.get("id", ""), {})
+        if art.get("colorPalette") and "namedColors" not in art_ovr:
+            art["namedColors"] = classify_palette(art["colorPalette"])
+        if not str(art.get("description") or "").strip():
+            art["description"] = describe(art)
+        art["seoKeywords"] = [k for k in art.get("seoKeywords") or [] if k != "handmade"]
+        # artworks.json is public. Print, vector and source file locations stay
+        # server-side (see _write_print_map); the checkout Worker resolves the
+        # print file by SKU.
+        for key in PRIVATE_FIELDS:
+            art.pop(key, None)
+    return visible
+
+
+# Fields that must never reach the public artworks.json.
+PRIVATE_FIELDS = ("printUrl", "printFile", "vectorFile", "sourceFile", "buyUrl")
+
+# Private SKU -> print file map. Written outside the published tree (the
+# work dir is gitignored) and uploaded by CI to R2 at private/print-map.json,
+# where the checkout Worker reads it through its bucket binding.
+PRINT_MAP_PATH = Path(__file__).resolve().parent.parent / ".arttra-work" / "print-map.json"
+
+
+def _write_print_map(artworks):
+    entries = {}
+    for art in artworks:
+        pf = art.get("printFile") or ""
+        if not pf:
+            continue
+        entries[art["id"]] = {
+            "print": f"print/{Path(pf).name}",
+            "printUrl": art.get("printUrl", ""),
+            "sourceFile": art.get("sourceFile", ""),
+            "canvasCropped": bool(art.get("canvasCropped")),
+        }
+    try:
+        PRINT_MAP_PATH.parent.mkdir(parents=True, exist_ok=True)
+        with open(PRINT_MAP_PATH, "w") as f:
+            json.dump(entries, f, indent=1)
+    except OSError as e:
+        print(f"[build] could not write print map: {e}")
+
+
+# ── Descriptions ──
+# A short, plain description per piece, built only from what the build can
+# see (palette, light, structure, shape). It never invents a story, medium or
+# provenance. A hand-written "description" in overrides.json always wins.
+_STYLE_PHRASES = {
+    "Ironwork": ["hard edges and bold geometry", "crisp, graphic structure", "strong lines and flat shape"],
+    "Chromata": ["loose, painterly colour", "colour pushed and layered", "a painterly push of colour"],
+    "Starkform": ["high contrast and a spare palette", "stark light against dark", "a pared-back, graphic contrast"],
+    "Naturalis": ["organic texture and drifting forms", "soft, organic movement", "textures that read like weather"],
+    "Luminos": ["a light-filled, airy field", "pale, luminous space", "light doing most of the work"],
+    "Tenebrae": ["deep shadow and slow gradients", "a dark, atmospheric ground", "forms surfacing out of shadow"],
+    "Intricata": ["dense, intricate detail", "a crowded field of small marks", "layer on layer of fine detail"],
+    "Photography": ["a captured moment", "a found, photographic view", "a camera's-eye view"],
+}
+_OPENERS = ["{a} with {b}.", "{a}, built from {b}.", "{a} — {b}.", "{a}, worked in {b}."]
+_CLOSERS = {
+    "dark": ["It rewards a long look in low light.", "Quiet from across a room, busy up close.", "The darker passages hold most of the detail."],
+    "light": ["It opens up a wall rather than filling it.", "Bright enough to lift a plain room.", "Best given some space around it."],
+    "mid": ["Each viewing turns up something new in it.", "It reads differently from across the room than up close.", "Colour and structure pull against each other."],
+}
+
+
+_HUE_WORDS = [(15, "red"), (40, "orange"), (65, "gold"), (80, "yellow"), (160, "green"),
+              (195, "teal"), (250, "blue"), (290, "violet"), (330, "magenta"), (361, "red")]
+
+
+def _palette_words(hex_colors):
+    """Plain colour words for a palette, most colourful first, no repeats."""
+    scored = []
+    for hx in hex_colors:
+        try:
+            v = hx.lstrip("#")
+            r, g, b = (int(v[i:i + 2], 16) / 255 for i in (0, 2, 4))
+        except Exception:
+            continue
+        h, l, s = colorsys.rgb_to_hls(r, g, b)
+        chroma = (max(r, g, b) - min(r, g, b))
+        if chroma < 0.12:
+            word = "black" if l < 0.14 else "charcoal" if l < 0.33 else "grey" if l < 0.7 else "white" if l > 0.9 else "pale grey"
+        else:
+            hd = h * 360
+            word = next(w for lim, w in _HUE_WORDS if hd < lim)
+            if word in ("orange", "red") and l < 0.32:
+                word = "rust" if word == "orange" else "deep red"
+            elif word == "gold" and l < 0.35:
+                word = "olive"
+            elif word == "magenta" and l > 0.72:
+                word = "pink"
+            elif word == "blue" and l < 0.25:
+                word = "navy"
+            elif word in ("green", "blue", "teal", "violet") and l > 0.75:
+                word = "pale " + word
+        scored.append((chroma, word))
+    out = []
+    for _, w in sorted(scored, key=lambda t: -t[0]):
+        if w not in out:
+            out.append(w)
+    return out
+
+
+def describe(art) -> str:
+    """One or two short sentences describing a piece from its own data."""
+    rng = random.Random("desc:" + str(art.get("id", "")))
+    tones = _palette_words(art.get("colorPalette") or [])[:3]
+    if len(tones) >= 3:
+        palette = f"{tones[0]}, {tones[1]} and {tones[2]}"
+    elif len(tones) == 2:
+        palette = f"{tones[0]} and {tones[1]}"
+    elif tones:
+        palette = tones[0]
+    else:
+        palette = "a restrained palette"
+    pd = art.get("printDimensions") or {}
+    w, h = pd.get("pixelWidth") or 1, pd.get("pixelHeight") or 1
+    shape = "square" if 0.92 <= w / h <= 1.08 else ("tall" if h > w else "wide")
+    shape_word = {"square": "A square composition", "tall": "A tall composition", "wide": "A wide composition"}[shape]
+    a = f"{shape_word} in {palette}"
+    style = art.get("style") or "Naturalis"
+    b = rng.choice(_STYLE_PHRASES.get(style, _STYLE_PHRASES["Naturalis"]))
+    first = rng.choice(_OPENERS).format(a=a, b=b)
+    lum = (art.get("imageProfile") or {}).get("avg_luminance", 0.5)
+    mood = "dark" if lum < 0.35 else ("light" if lum > 0.62 else "mid")
+    out = f"{first} {rng.choice(_CLOSERS[mood])}"
+    # Same banned vocabulary as the title generator.
+    return out if _name_is_clean(out.replace("-", " ")) else first
 
 
 def _dedup_titles(artworks):
@@ -1338,7 +1485,7 @@ def _apply_overrides(artworks, overrides):
                     art["priceTiers"].update(val)
                 elif key == "bestProducts" and isinstance(val, list):
                     art["bestProducts"] = val
-                elif key in ("removeBg", "sign", "titled"):
+                elif key in ("removeBg", "sign", "titled", "hiddenReason"):
                     # Build/workflow flags only, don't copy to artwork output
                     continue
                 else:
