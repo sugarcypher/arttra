@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umwelt — Aperture Principle</title>
+    <title>Umwelt — Interactive — ARTTRA.ART</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Manrope:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <meta name="theme-color" content="#0c0b09">
     <style>
         :root {
             --anthropic-dark: #141413;
@@ -112,12 +114,20 @@
             .sidebar { width: 100%; max-height: none; }
         }
     </style>
+    <link rel="stylesheet" href="./shared/works.css">
 </head>
-<body>
+<body class="w-page w-gen">
+    <header class="w-top">
+        <div class="w-top__in">
+            <a class="w-brand" href="./">ARTTRA</a>
+            <nav class="w-nav" aria-label="Site"><a href="./#shop">Gallery</a><a href="./interactive.html">Interactive</a><a class="w-hide-s" href="./#contact">Contact</a></nav>
+        </div>
+    </header>
     <div class="container">
         <div class="sidebar">
             <h1>Umwelt</h1>
             <div class="subtitle">A field exists below this canvas at many simultaneous spatial frequencies. You see only what the aperture admits. Move the aperture to inhabit a different creature's world — the underlying reality does not change; your instrument does.</div>
+            <a class="w-philink" href="./philosophy/umwelt.html">Read the philosophy &rarr;</a>
 
             <div class="control-section">
                 <h3>Seed</h3>

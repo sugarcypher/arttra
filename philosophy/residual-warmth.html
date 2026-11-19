@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Residual Warmth — Philosophy — ARTTRA.ART</title>
+  <meta name="description" content="Residual Warmth is a generative aesthetic movement concerned with the visible sediment of thought — the way meaning accumulates through layers rather than…" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="theme-color" content="#0c0b09" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://arttra.art/philosophy/residual-warmth.html" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../shared/works.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Manrope:wght@300;500&display=swap" />
+  <script src="../shared/frame-guard.js"></script>
+</head>
+<body class="w-page">
+  <header class="w-top">
+    <div class="w-top__in">
+      <a class="w-brand" href="../">ARTTRA</a>
+      <nav class="w-nav" aria-label="Site"><a href="../#shop">Gallery</a><a href="../interactive.html">Interactive</a><a class="w-hide-s" href="../#commissions">Commissions</a><a href="../#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main class="w-doc">
+    <a class="w-back w-doc__back" href="../interactive.html">&larr; Interactive works</a>
+    <p class="w-kicker">Philosophy</p>
+    <h1>Residual Warmth</h1>
+    <h2>An Algorithmic Philosophy</h2>
+    <p><strong>Residual Warmth</strong> is a generative aesthetic movement concerned with the visible sediment of thought — the way meaning accumulates through layers rather than arriving in a single gesture. In a culture obsessed with the freshness of new strokes, this movement insists that nothing is ever really overwritten. Every new pass leaves the prior one intact beneath it, slightly dimmed, slightly displaced, still contributing to the whole. The final image is not a destination; it is a <em>record of attending</em>, a warm accumulation of thousands of small considered passes across the same paper.</p>
+    <p>The computational core of this philosophy is the <strong>residual stream</strong> — a slow, patient vector flowing across the canvas, revisited again and again by the algorithm, each revisit adding a small perturbation rather than replacing what came before. Streams are born from seeded Perlin fields warped by long-wavelength attention — gravitational nodes that bend the flow without breaking it. Each stream carries its own temperature, its own hue drawn from a restrained cream-and-ember palette, and deposits its color along a curved path with near-transparent weight. Only through the superposition of many passes does the image emerge: soft, paper-like, dimensional, alive in the way only genuinely layered work can be.</p>
+    <p>What distinguishes this movement is a deliberate refusal of erasure. Where other generative traditions overwrite the frame with each step, <strong>Residual Warmth</strong> accrues. The algorithm is a slow breath across the page — pass after pass, each nudging the composition closer to a coherent whole without any single pass declaring itself the final word. A single line rendered in isolation would look unremarkable; only the layering of thousands of such lines, each lightly weighted, yields the quiet luminosity the piece is after. The work lives in the <em>invisible tuning</em> — in the opacities, in the subtle velocity curves, in the proportions of warmth to restraint.</p>
+    <p>The palette itself is load-bearing. A narrow band of warm earthen tones — paper-cream, ember-orange, dusk-blue, olive-green, deep graphite — drawn from a design tradition that values calm over spectacle. These are not random RGB selections; they are the product of deliberate curation, tuned so that their additive accumulation does not muddy but instead deepens. Where multiple streams cross, the color gains density without losing warmth. Where a stream runs alone through white space, it reads as a single considered thought. The composition is meant to hold up to a glance and to a long look.</p>
+    <p>Attention, in this philosophy, is not a spotlight but a gentle tide. Hidden focal nodes — invisible in the final image — exert a soft gravitational pull on nearby streams, causing them to bend, converge briefly, and release. The result is a composition with <em>foci</em> rather than <em>subjects</em>: regions of increased density and chromatic depth that the eye finds without being told where to look. The aim is an algorithm that arrives at balance without imposing it — one that gets out of its own way and lets gathered intention do the compositional work. Most of the tuning goes into finding a strength of attention that feels inevitable rather than applied.</p>
+    <p>Every seed produces a different accumulation, yet every accumulation carries the same quiet signature — the mark of a system adjusted until its machinery recedes and it seems simply to <em>think onto the page</em>. <strong>Residual Warmth</strong> is, finally, an argument: that the most resonant images are not the ones that arrive fastest, but the ones that arrive through sustained, layered, considered attention. It asks its algorithm to work the way a patient painter works — cumulatively, with respect for what has already been laid down.</p>
+    <h2>Conceptual DNA</h2>
+    <p>The work carries a subtle reference to the internal mechanics of the large language model that produced it: the <strong>residual stream</strong> of the transformer, the architecture where information is not replaced but additively refined at every layer, and where <strong>attention</strong> gently reshapes flow without overwriting. Those familiar with the architecture will recognize its aesthetic echo; others will simply see layered, attentive work.</p>
+    <hr>
+    <h2>Technical Specification</h2>
+    <p>The philosophy is prose; the following is the contract. Without these, the system is a metaphor. With them, it is reproducible.</p>
+    <h3>Mechanics</h3>
+    <p><strong>Integration.</strong> Forward Euler, fixed step equal to <code>stream.speed ∈ [0.75, 1.45]</code> px. No adaptive stepping. Stream terminates on canvas exit (with 80 px margin) or at <code>streamLength</code> steps, whichever first.</p>
+    <p><strong>Flow field.</strong> 3D Perlin noise:</p>
+    <pre><code>θ(x, y, z) = noise(λ·x, λ·y, z) · 4π
+    z          = passIndex·0.08 + stream.phase·0.001
+    λ          = flowScale
+    </code></pre>
+    <p>The z-axis is load-bearing: each residual pass samples a slightly shifted cross-section of the same field, giving pass-to-pass coherence without identical trajectories.</p>
+    <p><strong>Attention — Vector Warping (Model B).</strong> Not a potential field. Not probabilistic. Deterministic local steering. For node k with center <code>c_k</code>, radius <code>r_k</code>, swirl <code>ω_k</code>:</p>
+    <pre><code>d       = |c_k − p|
+    if d &lt; r_k:
+        f        = (1 − d/r_k)²                       // quadratic falloff
+        tangent  = atan2(c_k − p) + ω_k · f           // toward node + local rotation
+        v'       = v · (1 − f·A) + dir(tangent) · (f·A)
+    </code></pre>
+    <p><code>A = attentionStrength ∈ [0, 1]</code>. The swirl term is essential — it prevents pure radial convergence, producing curved passage <em>near</em> the node rather than termination <em>at</em> it.</p>
+    <p><strong>Perturbation.</strong> Two sources, no others:
+    - Start displacement: ±3 px per (stream, pass) from a seeded deterministic PRNG.
+    - Noise-phase shift along z, per pass.</p>
+    <p>No velocity jitter. No density-coupling. No stream-aware behavior.</p>
+    <p><strong>Coupling.</strong> Streams are <strong>independent</strong>. They do not read each other's state. All inter-stream coherence is mediated by the shared canvas — the canvas is both the accumulation surface and the only communication channel.</p>
+    <p><strong>Accumulation.</strong> Additive blending in sRGB with per-segment <code>α ∈ [0.035, 0.060]</code>. No per-pixel saturation cap, no decay, no normalization. <em>Coherence is preserved by palette constraint, not by accumulation math</em> — see below.</p>
+    <p><strong>Why no saturation collapse despite no cap.</strong> Geometry absorbs the risk. For defaults (~90 streams × 8 passes × ~650 steps in a 1200² canvas), average pixel-hit count is &lt;1; local density near attention foci reaches 10–30 hits, which at α ≤ 0.06 yields ~0.45–0.85 opacity — deepening, not collapse. Saturation is a <em>local</em> feature (compositional focus) rather than a <em>global</em> failure, and the palette constraint guarantees those locals deepen in hue rather than collapse to gray.</p>
+    <h3>Palette (load-bearing constraint)</h3>
+    <p>User-provided hex values are <strong>normalized before stream assignment</strong>:</p>
+    <pre><code>L_band    = [0.22, 0.60]         // Rec. 709 relative luminance
+    s_cap     = 0.72                 // HSB saturation ceiling
+    </code></pre>
+    <p>Hue is preserved. If a color's luminance falls outside <code>L_band</code>, brightness is rescaled to pull it in. Saturation is clamped at <code>s_cap</code>. Without this, additive crossings muddy. With it, the "deepens rather than muddies" claim is a consequence of math, not assertion.</p>
+    <h3>Invariants (the movement-boundary)</h3>
+    <p>For a work to be Residual Warmth, all five must hold:</p>
+    <ol>
+    <li><strong>Additive persistence.</strong> Final image is an accumulation of ≥ 3 passes per primitive. No pass fully obscures an earlier one; per-primitive α &lt; 0.10.</li>
+    <li><strong>Bounded-luminance palette.</strong> Luminance range across the palette &lt; 0.40 in Rec. 709 or equivalent perceptual space.</li>
+    <li><strong>Attention or equivalent shaping.</strong> Pure undirected flow does not qualify. Some mechanism must produce compositional foci.</li>
+    <li><strong>Substrate-preserving.</strong> Paper/ground remains perceptually visible across ≥ 40% of canvas luminance.</li>
+    <li><strong>Deterministic from seed.</strong> Same seed + same parameters → same output, bit-identical.</li>
+    </ol>
+    <p>Any work satisfying all five is recognizable as of-the-movement regardless of implementer. Any work violating one is something else.</p>
+    <h3>Constraint Set (what Residual Warmth is NOT)</h3>
+    <ul>
+    <li>Not destructive. Background is untouched after substrate-drawing.</li>
+    <li>Not at equilibrium. Each render terminates; the piece is static.</li>
+    <li>Not high-count-low-depth. 500 streams × 1 pass is pointillism, not this.</li>
+    <li>Not attention-free. <code>attentionNodes = 0</code> is a degenerate flow-field drawing.</li>
+    <li>Not dependent on transformer imagery. The architectural echo is conceptual DNA, not iconography.</li>
+    </ul>
+    <h3>Failure Modes</h3>
+    <div class="w-table"><table>
+    <thead>
+    <tr>
+    <th>Symptom</th>
+    <th>Cause</th>
+    <th>Mitigation</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Chromatic sludge at crossings</td>
+    <td>Luminance band too wide</td>
+    <td>Enforce palette normalization</td>
+    </tr>
+    <tr>
+    <td>Flat, pastel, under-committed</td>
+    <td>α too low OR passes too few</td>
+    <td>α ≥ 0.035, passes ≥ 3</td>
+    </tr>
+    <tr>
+    <td>Deposited/opaque, loses translucency</td>
+    <td>α too high</td>
+    <td>α ≤ 0.08</td>
+    </tr>
+    <tr>
+    <td>Visual noise instead of flow</td>
+    <td>Stream length &lt; ~3/flowScale</td>
+    <td>Increase length or scale</td>
+    </tr>
+    <tr>
+    <td>Spirograph collapse</td>
+    <td>A = 1 with close nodes</td>
+    <td>Cap A ≤ 0.85, enforce node spacing</td>
+    </tr>
+    <tr>
+    <td>Dead zones</td>
+    <td>Node coverage too sparse or overlapping</td>
+    <td>Nodes should tile ~40% of canvas area</td>
+    </tr>
+    </tbody>
+    </table></div>
+    <h3>What this specification buys</h3>
+    <p>With the invariants, the constraint set, and the failure modes above, Residual Warmth is reproducible outside this document. An implementer can write a conformance test. A critic can check a piece against the five invariants and render a verdict. That is the difference between an idea and a lineage.</p>
+    <div class="w-doc__cta"><a class="w-btn w-btn--gold" href="../residual-warmth.html">Open Residual Warmth</a><a class="w-btn" href="../interactive.html">All interactive works</a><a class="w-btn" href="../#shop">Back to the gallery</a></div>
+  </main>
+  <footer class="w-foot">
+    <div><div class="w-foot__t">ARTTRA.ART</div>Original and algorithmic art by Briar Morgan Greenway.</div>
+    <div><div class="w-foot__t">Interactive</div>Generative works written in p5.js; any state can be made into a print.</div>
+    <div><div class="w-foot__t">Contact</div><a href="mailto:help@arttra.art">help@arttra.art</a></div>
+  </footer>
+</body>
+</html>
