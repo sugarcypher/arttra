@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 900">
+<g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+<!-- B -->
+<path d="M250 720 L300 360" stroke-width="40"/>
+<path d="M300 380 C420 330 470 410 400 470 C360 500 320 500 300 495" stroke-width="36"/>
+<path d="M300 500 C440 470 510 560 410 640 C370 670 320 675 290 660" stroke-width="36"/>
+<!-- R -->
+<path d="M470 700 L520 360" stroke-width="40"/>
+<path d="M520 375 C650 335 700 430 600 500 C560 525 520 525 505 518" stroke-width="36"/>
+<path d="M560 510 L660 700" stroke-width="40"/>
+<!-- I with ticks -->
+<path d="M730 690 L778 380" stroke-width="40"/>
+<path d="M735 320 L755 295" stroke-width="22"/>
+<path d="M775 318 L798 290" stroke-width="22"/>
+<path d="M812 320 L838 292" stroke-width="22"/>
+<!-- A -->
+<path d="M860 700 L985 340 L1090 690" stroke-width="40"/>
+<path d="M905 560 L1050 560" stroke-width="34"/>
+<!-- R -->
+<path d="M1130 690 L1185 350" stroke-width="40"/>
+<path d="M1185 365 C1320 325 1372 422 1268 494 C1228 519 1188 519 1172 512" stroke-width="36"/>
+<path d="M1228 504 L1335 695" stroke-width="40"/>
+<!-- checkmark tail dip then long rising sweep -->
+<path d="M1335 695 C1410 760 1470 770 1520 690 C1560 620 1620 470 1880 215" stroke-width="42"/>
+<!-- end flick ticks on tail -->
+<path d="M1845 250 L1872 232" stroke-width="16"/>
+<path d="M1862 268 L1888 250" stroke-width="16"/>
+<!-- drip accents off B and A -->
+<path d="M290 660 L288 730" stroke-width="14"/>
+<path d="M985 600 L985 660" stroke-width="12"/>
+</g>
+<!-- tiny BRIAR wordmark on the tail -->
+<text x="1700" y="300" font-family="Arial, sans-serif" font-size="34" letter-spacing="6"
+  fill="#FFFFFF" transform="rotate(-40 1700 300)" opacity="0.9">BRIAR</text>
+</svg>

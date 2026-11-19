@@ -52,6 +52,28 @@ DEFAULT_PRICE = {"startingPrice": 79}
 # fulfillment. Left empty for local builds that don't publish to R2.
 R2_PUBLIC_BASE = os.environ.get("R2_PUBLIC_BASE", "").rstrip("/")
 
+# Bumped whenever the image-processing output changes (v2: artist signature).
+# Every manifest entry records the version that built it; entries from an older
+# version are reprocessed on the next build, so a pipeline change reaches the
+# whole back catalogue without wiping the cache (and without losing each
+# piece's original publish timestamp, which a cache wipe used to reset).
+PIPELINE_VERSION = 2
+
+# ── Signature ──
+# Every piece is signed in the bottom-right corner with the BRIAR tag and a
+# "© year" line. The master is solid white strokes on transparent; it is
+# tinted light or dark to suit the corner it lands on. A piece that already
+# carries a hand signature opts out with `"sign": false` in overrides.json.
+SIGNATURE_MASTER = Path(__file__).resolve().parent / "assets" / "signatures" / "sig-a-tag.png"
+SIGN_PRINT_FILES = True   # False = sign only the web/thumb images, leave print files clean
+SIG_WIDTH_FRAC = 0.134    # tag stroke width as a fraction of the image's long edge
+SIG_MARGIN_FRAC = 0.04    # inset from the corner, same basis
+SIG_HALO = 0.55           # strength of the soft opposite-tone halo behind the marks (0 = off)
+SIG_YEAR_FONTS = (
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",   # GitHub Actions runner
+    "/System/Library/Fonts/MarkerFelt.ttc",                    # local macOS runs
+)
+
 # AI enlargement happens ON DEMAND in the checkout Worker: the first paid order
 # for a size beyond a piece's real pixels runs Real-ESRGAN once and saves the
 # result to R2 (enhanced/<sku>.png) for every later order. The build only
@@ -592,8 +614,12 @@ def detect_and_crop_canvas(image_path: str):
 # ═══════════════════════════════════════════════════════════════════
 
 def process_single(args: tuple) -> Optional[dict]:
-    img_path_str, out_stem, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer, no_crop_ids = args
+    (img_path_str, out_stem, thumb_dir, web_dir, print_dir, vector_dir, has_vtracer,
+     no_crop_ids, want_sign, prev_timestamp) = args
     img_path = Path(img_path_str)
+    # A piece being re-processed keeps the timestamp it was first published
+    # with: on CI the file's mtime is just the checkout time.
+    timestamp = prev_timestamp or datetime.fromtimestamp(img_path.stat().st_mtime).isoformat()
     # Output basename for thumb/web/print/vector files and the manifest key.
     # Usually the file stem; build() disambiguates sources that share one.
     stem = out_stem
@@ -647,9 +673,22 @@ def process_single(args: tuple) -> Optional[dict]:
             img = ImageEnhance.Contrast(img).enhance(1.04)
             img = ImageEnhance.Color(img).enhance(1.05)
 
+            # Signature — applied once at print resolution so the thumb, web
+            # and print versions all carry the identical mark.
+            signed = False
+            if want_sign:
+                signed_img, signed = _apply_signature(img, _capture_year(str(img_path), timestamp[:4]))
+                if signed:
+                    if SIGN_PRINT_FILES:
+                        img = signed_img
+                    display = signed_img
+            if not signed:
+                display = img
+
             pw, ph = img.size
             print_path = Path(print_dir) / f"{stem}.png"
             img.save(str(print_path), "PNG", optimize=True)
+            img = display   # thumb + web derive from the signed image
 
             # Thumbnail
             th = int(ph * (THUMB_WIDTH / pw))
@@ -723,9 +762,10 @@ def process_single(args: tuple) -> Optional[dict]:
             "isPhotography": is_photograph,
             "buyUrl": "#",
             "sourceFile": img_path.name,
-            "timestamp": datetime.fromtimestamp(img_path.stat().st_mtime).isoformat(),
+            "timestamp": timestamp,
             "_hash": hashlib.md5(open(str(img_path), "rb").read()).hexdigest(),
             "_stem": stem,
+            "_signed": signed,
         }
 
     except Exception as e:
@@ -784,6 +824,108 @@ def _apply_watermark(img):
         return result.convert("RGB")
     except Exception:
         return img
+
+
+_signature_master_cache = {}
+
+
+def _signature_master():
+    """The tag master as an alpha mask (L), trimmed to its strokes. None if the
+    file is missing or unreadable — the build then publishes unsigned and says so."""
+    if "mask" not in _signature_master_cache:
+        mask = None
+        try:
+            with Image.open(SIGNATURE_MASTER) as im:
+                alpha = im.convert("RGBA").split()[-1]
+            box = alpha.getbbox()
+            mask = alpha.crop(box) if box else None
+        except Exception as e:
+            print(f"  [sign] signature master unavailable ({SIGNATURE_MASTER.name}): {e}")
+        _signature_master_cache["mask"] = mask
+    return _signature_master_cache["mask"]
+
+
+def _signature_font(size):
+    for path in SIG_YEAR_FONTS:
+        try:
+            return ImageFont.truetype(path, size)
+        except Exception:
+            continue
+    try:
+        return ImageFont.load_default(size)   # Pillow >= 10.1: scalable built-in
+    except TypeError:
+        return ImageFont.load_default()
+
+
+def _capture_year(image_path, fallback):
+    """EXIF capture year if the file has one, else `fallback`."""
+    try:
+        with Image.open(image_path) as im:
+            exif = im.getexif()
+            for tag in (36867, 306):  # DateTimeOriginal, DateTime
+                v = str(exif.get(tag) or "")
+                if len(v) >= 4 and v[:4].isdigit() and 1990 <= int(v[:4]) <= 2100:
+                    return v[:4]
+    except Exception:
+        pass
+    return fallback
+
+
+def _apply_signature(img, year):
+    """Sign `img` (RGB) bottom-right with the BRIAR tag and "© year".
+    Returns (image, signed?) — the original image and False if signing can't run."""
+    master = _signature_master()
+    if master is None:
+        return img, False
+    try:
+        W, H = img.size
+        long_edge = max(W, H)
+        tag_w = max(1, int(long_edge * SIG_WIDTH_FRAC))
+        tag_h = max(1, int(master.height * tag_w / master.width))
+        tag = master.resize((tag_w, tag_h), Image.LANCZOS)
+        margin = int(long_edge * SIG_MARGIN_FRAC)
+
+        font = _signature_font(max(14, int(tag_h * 0.20)))
+        txt = f"© {year}"
+        tb = ImageDraw.Draw(Image.new("L", (1, 1))).textbbox((0, 0), txt, font=font)
+        txt_w, txt_h = tb[2] - tb[0], tb[3] - tb[1]
+        gap = int(tag_h * 0.04)
+        block_w, block_h = max(tag_w, txt_w), tag_h + gap + txt_h
+
+        # Block (tag over year line), right-aligned in the corner.
+        bx1, by1 = W - margin, H - margin
+        bx0, by0 = bx1 - block_w, by1 - block_h
+        if bx0 < 0 or by0 < 0:
+            return img, False
+
+        # Work on just the corner region (block + room for the halo blur).
+        blur = max(2, int(tag_h * 0.06))
+        pad = blur * 3
+        rx0, ry0 = max(0, bx0 - pad), max(0, by0 - pad)
+        rx1, ry1 = min(W, bx1 + pad), min(H, by1 + pad)
+        region = img.crop((rx0, ry0, rx1, ry1)).convert("RGB")
+
+        ink = Image.new("L", region.size, 0)
+        ink.paste(tag, (bx1 - tag_w - rx0, by0 - ry0))
+        ImageDraw.Draw(ink).text(
+            (bx1 - txt_w - tb[0] - rx0, by0 + tag_h + gap - tb[1] - ry0), txt, font=font, fill=255)
+
+        # Light ink on a dark corner, dark ink on a light one — judged over the
+        # whole block so the year line can't be stranded on the wrong tone.
+        lum = ImageStat.Stat(img.crop((bx0, by0, bx1, by1)).convert("L")).mean[0]
+        ink_rgb, halo_rgb = ((245, 245, 245), (0, 0, 0)) if lum < 128 else ((20, 20, 20), (255, 255, 255))
+
+        if SIG_HALO > 0:
+            halo = ink.filter(ImageFilter.GaussianBlur(blur)).point(lambda v: int(v * min(1.0, SIG_HALO)))
+            region.paste(Image.new("RGB", region.size, halo_rgb), mask=halo)
+        region.paste(Image.new("RGB", region.size, ink_rgb), mask=ink)
+
+        out = img.copy()
+        out.paste(region, (rx0, ry0))
+        return out, True
+    except Exception as e:
+        print(f"  [sign] failed: {e}")
+        return img, False
 
 
 def _vectorize_true(input_path, output_path, color_precision=6):
@@ -931,22 +1073,37 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         k.rsplit("-", 1)[-1] for k, v in overrides.items() if v.get("cropCanvas") is False
     )
 
+    # Stable-id suffixes opted out of the auto-signature (overrides: sign false) —
+    # pieces that already carry a hand signature.
+    no_sign_ids = frozenset(
+        k.rsplit("-", 1)[-1] for k, v in overrides.items() if v.get("sign") is False
+    )
+
     to_process = []
     cached_artworks = []
+    want_sign = {}       # img_path -> should this piece be auto-signed
+    prev_timestamp = {}  # img_path -> timestamp to keep when re-processing an unchanged file
     for img_path in images:
         stem = out_stems[img_path]
         file_hash = hashlib.md5(open(img_path, "rb").read()).hexdigest()
+        stable_id = hashlib.md5(img_path.name.encode()).hexdigest()[:8].upper()
+        want_sign[img_path] = stable_id not in no_sign_ids
 
         # Check if this image's artwork ID is flagged for bg removal
         # If so, check if bg removal was already done
         cached = manifest.get(stem, {})
         artwork_id = cached.get("artwork", {}).get("id", "")
         needs_bg_redo = artwork_id in bg_removal_ids and not cached.get("bg_removed")
+        # Built by an older pipeline, or its sign opt-out has since changed.
+        stale = (cached.get("pipeline") != PIPELINE_VERSION
+                 or cached.get("signed") != want_sign[img_path])
 
-        if stem in manifest and cached.get("hash") == file_hash and not needs_bg_redo:
+        if stem in manifest and cached.get("hash") == file_hash and not needs_bg_redo and not stale:
             if "artwork" in cached:
                 cached_artworks.append(cached["artwork"])
             continue
+        if cached.get("hash") == file_hash:
+            prev_timestamp[img_path] = cached.get("artwork", {}).get("timestamp")
         to_process.append(img_path)
 
     print(f"[build] {len(images)} total, {len(cached_artworks)} cached, {len(to_process)} new/updated")
@@ -995,9 +1152,11 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
     print(f"[build] Processing {len(to_process)} images with {workers} workers...")
 
     tasks = [
-        (str(p), out_stems[p], str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer, no_crop_ids)
+        (str(p), out_stems[p], str(thumb_dir), str(web_dir), str(print_dir), str(vector_dir), has_vtracer,
+         no_crop_ids, want_sign[p], prev_timestamp.get(p))
         for p in to_process
     ]
+    task_paths = {str(p): p for p in to_process}
 
     new_artworks = []
     with ProcessPoolExecutor(max_workers=workers) as executor:
@@ -1011,12 +1170,20 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
                 if result:
                     stem = result.pop("_stem")
                     file_hash = result.pop("_hash")
+                    signed = result.pop("_signed")
+                    wanted = want_sign[task_paths[futures[future]]]
+                    if wanted and not signed:
+                        print(f"  [sign] WARNING: {src} was published UNSIGNED (signing failed)")
                     new_artworks.append(result)
                     manifest[stem] = {
                         "hash": file_hash,
                         "artwork": result,
                         "route": result["vectorRoute"],
                         "bg_removed": manifest.get(stem, {}).get("bg_removed", False),
+                        "pipeline": PIPELINE_VERSION,
+                        # Records what was asked for, so a failed signing isn't
+                        # retried on every build — the warning above flags it.
+                        "signed": wanted,
                     }
                     print(f"  [{done}/{len(to_process)}] {src} → {result['title']} [{result['style']}] [{result['category']}]")
                 else:
@@ -1171,8 +1338,8 @@ def _apply_overrides(artworks, overrides):
                     art["priceTiers"].update(val)
                 elif key == "bestProducts" and isinstance(val, list):
                     art["bestProducts"] = val
-                elif key in ("removeBg",):
-                    # Flag only, don't copy to artwork output
+                elif key in ("removeBg", "sign", "titled"):
+                    # Build/workflow flags only, don't copy to artwork output
                     continue
                 else:
                     art[key] = val

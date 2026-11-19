@@ -72,7 +72,7 @@
     ]
   },
   "BRC-NAT-B2367F03": {
-    "title": "Malucide Projections",
+    "title": "How the Television Gets In",
     "category": "Art Prints",
     "style": "Naturalis",
     "description": "",
@@ -87,7 +87,8 @@
       "Framed Print",
       "Canvas",
       "Metal Print"
-    ]
+    ],
+    "titled": true
   },
   "BRC-NAT-41FD03D9": {
     "title": "Bellows Thicket",
@@ -126,7 +127,7 @@
     ]
   },
   "BRC-NAT-8847F663": {
-    "title": "Tenebrific Mycelium",
+    "title": "A Glass of Something That Remembers",
     "category": "Art Prints",
     "style": "Naturalis",
     "description": "",
@@ -141,7 +142,8 @@
       "Framed Print",
       "Canvas",
       "Metal Print"
-    ]
+    ],
+    "titled": true
   },
   "BRC-NAT-3ABD0932": {
     "title": "Pyrrhous Spinney",
@@ -342,7 +344,7 @@
     ]
   },
   "BRC-INT-95A558B7": {
-    "title": "Burnveil Labyrinth",
+    "title": "Wallpaper for a Room That Hums",
     "category": "Art Prints",
     "style": "Intricata",
     "description": "",
@@ -357,7 +359,8 @@
       "Framed Print",
       "Canvas",
       "Metal Print"
-    ]
+    ],
+    "titled": true
   },
   "BRC-NAT-25D6FD93": {
     "title": "Wintermere Undergrowth",
@@ -628,5 +631,813 @@
       "Canvas",
       "Metal Print"
     ]
+  },
+  "BRC-NAT-1DB89647": {
+    "title": "Something Landed Near Morongo",
+    "titled": true
+  },
+  "BRC-NAT-EFDB769C": {
+    "title": "Weather Inside a Marble",
+    "titled": true
+  },
+  "BRC-NAT-AC8EDB22": {
+    "title": "The Firebird Learns Geometry",
+    "titled": true
+  },
+  "BRC-NAT-7BF9838D": {
+    "title": "A Crack Taught to Write",
+    "titled": true
+  },
+  "BRC-NAT-651BCFD8": {
+    "title": "Porthole, Lukewarm",
+    "titled": true
+  },
+  "BRC-INT-8200DF7F": {
+    "title": "Inventory of a Self",
+    "titled": true
+  },
+  "BRC-NAT-56C7749D": {
+    "title": "Camouflage for Deep Water",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-7BA2A305": {
+    "title": "Oil Slick Dreaming of Orchids",
+    "titled": true
+  },
+  "BRC-INT-7EE6885A": {
+    "title": "The Zipper Between Two Oceans",
+    "titled": true
+  },
+  "BRC-NAT-05CEA009": {
+    "title": "Night Market, Crossed Out",
+    "titled": true
+  },
+  "BRC-NAT-D91155BB": {
+    "title": "The Beetle Reads Its Own Pulse",
+    "titled": true
+  },
+  "BRC-NAT-BD3D2CEA": {
+    "title": "Afterparty at the Edge of the Galaxy",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-B08F2BCA": {
+    "title": "The Startled One",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-47E261B8": {
+    "title": "Remote Work, Very Remote",
+    "titled": true
+  },
+  "BRC-INT-31046E7B": {
+    "title": "Coral Arguing with the Tide",
+    "titled": true
+  },
+  "BRC-INT-ACAD147A": {
+    "title": "Neon Undergrowth, 3 a.m.",
+    "titled": true
+  },
+  "BRC-NAT-57407F2D": {
+    "title": "S\u00e9ance in the Waiting Room",
+    "titled": true
+  },
+  "BRC-NAT-5E6B1531": {
+    "title": "A Meadow at Mach One",
+    "titled": true
+  },
+  "BRC-NAT-019899FB": {
+    "title": "Low Tide in a Pastel Country",
+    "titled": true
+  },
+  "BRC-INT-931D2F0D": {
+    "title": "Diagram of a Thought Leaving the Head",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-1A89E810": {
+    "title": "Green Lightning, Violet Room",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-6C7D037A": {
+    "title": "Mercury with a Paper Cut",
+    "titled": true
+  },
+  "BRC-NAT-B003834B": {
+    "title": "Pool Skin",
+    "titled": true
+  },
+  "BRC-INT-FF5B7063": {
+    "title": "Small Witnesses",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-0661CE3E": {
+    "title": "Cathedral for a Synthesizer",
+    "titled": true
+  },
+  "BRC-INT-9EAF6A2C": {
+    "title": "A Square Remembering Itself",
+    "titled": true
+  },
+  "BRC-INT-8A947383": {
+    "title": "Everyone in Here Is Looking",
+    "titled": true
+  },
+  "BRC-INT-F1FC261D": {
+    "title": "Conductor and Passenger",
+    "titled": true
+  },
+  "BRC-INT-C2EF2340": {
+    "title": "Four-Leaf Engine",
+    "titled": true
+  },
+  "BRC-INT-E7F325F0": {
+    "title": "The Spill Grew Circuitry",
+    "titled": true
+  },
+  "BRC-INT-AA34E2B1": {
+    "title": "Crowd Scene, Red Thread",
+    "titled": true
+  },
+  "BRC-NAT-108379DA": {
+    "title": "The Wave Has Two Eyes and One Dragon",
+    "titled": true
+  },
+  "BRC-NAT-613BD6AE": {
+    "title": "Blue Thought, Black Afterthought",
+    "titled": true
+  },
+  "BRC-NAT-843871D1": {
+    "title": "Candy Reef",
+    "titled": true
+  },
+  "BRC-NAT-209F4508": {
+    "title": "Profile in Molten Sunset",
+    "titled": true
+  },
+  "BRC-NAT-A7758179": {
+    "title": "Gold Leaf Lost at Sea",
+    "titled": true
+  },
+  "BRC-INT-F848E811": {
+    "title": "Ribbons Refusing to Be a Bow",
+    "titled": true
+  },
+  "BRC-INT-44DF47A0": {
+    "title": "Arcade Under the Aqueduct",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-56D0E9E3": {
+    "title": "Three Birds Swimming Through Paint",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-07E0A434": {
+    "title": "Everything I Drew Before Breakfast",
+    "titled": true
+  },
+  "BRC-NAT-0D48D159": {
+    "title": "Parrot Weather",
+    "titled": true
+  },
+  "BRC-NAT-CEEC5965": {
+    "title": "Four Tents Pitched in the Dark",
+    "titled": true
+  },
+  "BRC-NAT-3D050726": {
+    "title": "Compass for Somewhere Else",
+    "titled": true
+  },
+  "BRC-NAT-D2BEA999": {
+    "title": "4:23, Still Melting",
+    "titled": true
+  },
+  "BRC-INT-5F9C0977": {
+    "title": "Loop Season",
+    "titled": true
+  },
+  "BRC-NAT-7BB0770F": {
+    "title": "Harlequin Static",
+    "titled": true
+  },
+  "BRC-NAT-7B080D3B": {
+    "title": "Lips at Ninety Miles an Hour",
+    "titled": true
+  },
+  "BRC-NAT-033CC0AD": {
+    "title": "Blend Mode: Difference",
+    "titled": true
+  },
+  "BRC-NAT-387414B6": {
+    "title": "Two Clouds Having a Conversation",
+    "titled": true
+  },
+  "BRC-NAT-33A5F58C": {
+    "title": "Deep Water Paisley",
+    "titled": true
+  },
+  "BRC-INT-268033B7": {
+    "title": "Yellow Rope Mathematics",
+    "titled": true
+  },
+  "BRC-INT-4280919D": {
+    "title": "The City the Machines Built for Themselves",
+    "titled": true
+  },
+  "BRC-INT-38890325": {
+    "title": "Grin of the Trilobite",
+    "titled": true
+  },
+  "BRC-NAT-31CE0BE3": {
+    "title": "The Orb Was Already There When We Pulled Over",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-8F8B70A4": {
+    "title": "Lime Vein in Grey Country",
+    "titled": true
+  },
+  "BRC-NAT-DD35CE73": {
+    "title": "The Eye in the Furnace Door",
+    "titled": true
+  },
+  "BRC-INT-E232503A": {
+    "title": "Lava Wearing Silk",
+    "titled": true
+  },
+  "BRC-NAT-B0CF6685": {
+    "title": "A Hand Made of Embers",
+    "titled": true
+  },
+  "BRC-NAT-02CCED97": {
+    "title": "Magenta District, After Curfew",
+    "titled": true
+  },
+  "BRC-NAT-792E46A4": {
+    "title": "Upside-Down City, Outlined in Lightning",
+    "titled": true
+  },
+  "BRC-NAT-44DD8E76": {
+    "title": "Upside-Down City, Corrupted File",
+    "titled": true
+  },
+  "BRC-NAT-C348A787": {
+    "title": "Upside-Down City, Pink Leak",
+    "titled": true
+  },
+  "BRC-INT-39CC9EFB": {
+    "title": "Reef Under Construction",
+    "titled": true
+  },
+  "BRC-INT-5134F7EA": {
+    "title": "Every Synapse at Once",
+    "titled": true
+  },
+  "BRC-INT-7B00630E": {
+    "title": "Open The",
+    "titled": true
+  },
+  "BRC-NAT-00163639": {
+    "title": "Pink Canyon with Teeth",
+    "titled": true
+  },
+  "BRC-INT-2E076682": {
+    "title": "Spider's Planetarium",
+    "titled": true
+  },
+  "BRC-NAT-2B3352E4": {
+    "title": "Six Sides of a Sunrise",
+    "titled": true
+  },
+  "BRC-NAT-61DAE823": {
+    "title": "Two Golden Idols Find a Marble",
+    "titled": true
+  },
+  "BRC-NAT-549BC728": {
+    "title": "Rorschach for Orchids",
+    "titled": true
+  },
+  "BRC-NAT-5656090B": {
+    "title": "Keys Dropped in the Deep End",
+    "titled": true
+  },
+  "BRC-NAT-8A3E5A30": {
+    "title": "Ultraviolet Skin",
+    "titled": true
+  },
+  "BRC-INT-03CDB36B": {
+    "title": "Skyline, Thawing",
+    "titled": true
+  },
+  "BRC-INT-D9395DBB": {
+    "title": "Constellation Laid Over a Mountain",
+    "titled": true
+  },
+  "BRC-INT-E5C726AB": {
+    "title": "Dice, Cards, and a Look",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-F1812BA8": {
+    "title": "Twin Guardians of the Black Door",
+    "titled": true
+  },
+  "BRC-NAT-78643909": {
+    "title": "Dusk, Applied with a Knife",
+    "titled": true
+  },
+  "BRC-INT-46186F7E": {
+    "title": "Agate, Printed in Halftone",
+    "titled": true
+  },
+  "BRC-INT-C75EF6EA": {
+    "title": "Wildflowers on Fire, Unbothered",
+    "titled": true
+  },
+  "BRC-NAT-E8DDB180": {
+    "title": "Keys at the Bottom of the Bowl",
+    "titled": true
+  },
+  "BRC-NAT-27BA7D9E": {
+    "title": "Rose with a Pearl in Its Throat",
+    "titled": true
+  },
+  "BRC-INT-1E92F8D3": {
+    "title": "The Dancers Dripped",
+    "titled": true
+  },
+  "BRC-NAT-A3FA4116": {
+    "title": "X-Ray of a Theater Curtain",
+    "titled": true
+  },
+  "BRC-INT-E2B9F448": {
+    "title": "Totem in a Purple Downpour",
+    "titled": true
+  },
+  "BRC-NAT-6DE57B9E": {
+    "title": "Sunrise Over the Motherboard",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-D8FACCC6": {
+    "title": "Brass Rain",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-1B817A3A": {
+    "title": "Flamingo Dissolving in the Pool",
+    "titled": true
+  },
+  "BRC-NAT-1B447AC7": {
+    "title": "Something Bright Behind the Red",
+    "titled": true
+  },
+  "BRC-NAT-9EE0D039": {
+    "title": "Mint, Lilac, and the Morning After",
+    "titled": true
+  },
+  "BRC-INT-FF61169F": {
+    "title": "Blue Paper Storm, One Straight Line",
+    "titled": true
+  },
+  "BRC-INT-BDC78CB3": {
+    "title": "The Turtle Crosses the Train Yard",
+    "titled": true
+  },
+  "BRC-NAT-695A8543": {
+    "title": "Small Slab of Weather",
+    "titled": true
+  },
+  "BRC-NAT-0F63CA85": {
+    "title": "Pond Seen Through Frosted Glass",
+    "titled": true
+  },
+  "BRC-INT-A88F7E9D": {
+    "title": "Mask for the Festival of Heat",
+    "titled": true
+  },
+  "BRC-NAT-0936A641": {
+    "title": "Flame Standing Up in a River",
+    "titled": true
+  },
+  "BRC-NAT-1C3F3F18": {
+    "title": "Portrait Pulled Through Moss",
+    "titled": true
+  },
+  "BRC-NAT-B84FE184": {
+    "title": "The Fur of a Glacier",
+    "titled": true
+  },
+  "BRC-NAT-13C89697": {
+    "title": "This Is Not a Cliff",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-2CE9FFD9": {
+    "title": "Small Slab of Weather, Escaping",
+    "titled": true
+  },
+  "BRC-NAT-7FD39F92": {
+    "title": "Sherbet Reef",
+    "titled": true
+  },
+  "BRC-INT-9317A779": {
+    "title": "Greed Is Your God",
+    "titled": true
+  },
+  "BRC-NAT-0B74339A": {
+    "title": "Blacklight Reef",
+    "titled": true
+  },
+  "BRC-NAT-2F6DA352": {
+    "title": "Three Channels of the Same Night",
+    "titled": true
+  },
+  "BRC-NAT-FFAAA749": {
+    "title": "Pressed Flowers, Rusting",
+    "titled": true
+  },
+  "BRC-NAT-1EB46DCF": {
+    "title": "Small Slab of Weather, Captured",
+    "titled": true
+  },
+  "BRC-NAT-0DA08BE9": {
+    "title": "The Keys, Surfacing",
+    "titled": true
+  },
+  "BRC-NAT-C7DD50FD": {
+    "title": "Three Blue Tears on a Yellow Screen",
+    "titled": true
+  },
+  "BRC-NAT-F6FE587B": {
+    "title": "Moth, Remembered Wrong",
+    "titled": true
+  },
+  "BRC-INT-2E5CB0A9": {
+    "title": "Circuit Board Having a Dream",
+    "titled": true
+  },
+  "BRC-INT-40BB53C1": {
+    "title": "Sunset, Scratched Into",
+    "titled": true
+  },
+  "BRC-NAT-54094D55": {
+    "title": "Angel Seen Through a Fogged Window",
+    "titled": true
+  },
+  "BRC-INT-89588D17": {
+    "title": "Record of a Pond",
+    "titled": true
+  },
+  "BRC-INT-8F54BA1F": {
+    "title": "Chandelier of Coordinates",
+    "titled": true
+  },
+  "BRC-INT-2820FE93": {
+    "title": "Record of a Pond, Skipping",
+    "titled": true
+  },
+  "BRC-NAT-080C47BD": {
+    "title": "Jade Staircase with a Pink Secret",
+    "titled": true
+  },
+  "BRC-INT-5CC16193": {
+    "title": "Coals Under a Pewter Sea",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-F3653351": {
+    "title": "Two Figures Inside the Red Sun",
+    "titled": true
+  },
+  "BRC-INT-19C02E80": {
+    "title": "Golden Insect Deity, Front View",
+    "titled": true
+  },
+  "BRC-INT-1272D54A": {
+    "title": "The Pool, a Minute Later",
+    "titled": true
+  },
+  "BRC-INT-2028C8C3": {
+    "title": "The Same Scribble, Forgiven",
+    "titled": true
+  },
+  "BRC-NAT-7116BE12": {
+    "title": "A Mouth Full of City",
+    "titled": true
+  },
+  "BRC-NAT-550FC367": {
+    "title": "Magenta Skin",
+    "titled": true
+  },
+  "BRC-NAT-DACA8E8A": {
+    "title": "Upside-Down City, Negative",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-880CCD9C": {
+    "title": "Furnace Door at Warp Speed",
+    "titled": true
+  },
+  "BRC-INT-F07C4AC4": {
+    "title": "Snow Leopard, Disassembled",
+    "titled": true
+  },
+  "BRC-INT-4492019D": {
+    "title": "Citrus Supernova",
+    "titled": true
+  },
+  "BRC-INT-8C3AC630": {
+    "title": "The Same Constellation, in Cold Water",
+    "titled": true
+  },
+  "BRC-LUM-FBB401AD": {
+    "title": "Two Clouds Having an Argument",
+    "titled": true
+  },
+  "BRC-INT-ED3D7342": {
+    "title": "Masked One, Crowned in Frequencies",
+    "titled": true
+  },
+  "BRC-NAT-96EE21E7": {
+    "title": "Peach Skin, Deep Water",
+    "titled": true
+  },
+  "BRC-NAT-5BAA11E2": {
+    "title": "High on Oxytocin",
+    "titled": true
+  },
+  "BRC-INT-910AFCC8": {
+    "title": "Orchid Frieze on a Dead Channel",
+    "titled": true
+  },
+  "BRC-NAT-BEFEA697": {
+    "title": "Fathom, on the Steps",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-INT-CD818078": {
+    "title": "Target Practice for a Sun",
+    "titled": true
+  },
+  "BRC-NAT-5F3BF89E": {
+    "title": "Horse in a Violet Wind",
+    "titled": true
+  },
+  "BRC-NAT-106BE197": {
+    "title": "Swamp Under a Magenta Sky",
+    "titled": true
+  },
+  "BRC-INT-3961735B": {
+    "title": "Geode with a Blue Yolk",
+    "titled": true
+  },
+  "BRC-INT-AE53F42C": {
+    "title": "Purple Seer, Weeping Light",
+    "titled": true
+  },
+  "BRC-INT-93DC0210": {
+    "title": "Tangerine Vein in Opal",
+    "titled": true
+  },
+  "BRC-NAT-E228B495": {
+    "title": "Woodpecker over a Pink Sun",
+    "titled": true
+  },
+  "BRC-NAT-350A5C89": {
+    "title": "Rush Hour, Long Exposure",
+    "titled": true
+  },
+  "BRC-NAT-AFEB099B": {
+    "title": "Man Reclining with Rooster",
+    "titled": true
+  },
+  "BRC-INT-D110210B": {
+    "title": "Stained Glass, Still Liquid",
+    "titled": true
+  },
+  "BRC-INT-309463BC": {
+    "title": "Moon Caught in Honey",
+    "titled": true
+  },
+  "BRC-NAT-BD6CFD1F": {
+    "title": "Spider's Planetarium, Lights Out",
+    "titled": true
+  },
+  "BRC-NAT-B0012792": {
+    "title": "Kaleidoscope of a Swimming Pool",
+    "titled": true
+  },
+  "BRC-NAT-212227C6": {
+    "title": "Avocado-Eyed Sentinel",
+    "titled": true
+  },
+  "BRC-INT-7AD01633": {
+    "title": "The Monk of Parallel Lines Meets the Chrome",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-5DD3EFAE": {
+    "title": "The Horse Dreams It Is Lying Down",
+    "titled": true
+  },
+  "BRC-INT-DE55F5CF": {
+    "title": "Tiger Totem, Liquid State",
+    "titled": true
+  },
+  "BRC-NAT-B820182A": {
+    "title": "Keys Dropped in the Deep End, Again",
+    "titled": true
+  },
+  "BRC-INT-0FD7CD63": {
+    "title": "The Monk of Parallel Lines",
+    "titled": true
+  },
+  "BRC-INT-AAE70052": {
+    "title": "Night Drive Through the Magenta District",
+    "titled": true
+  },
+  "BRC-NAT-9326B863": {
+    "title": "Light on the Floor of a Shallow Sea",
+    "titled": true
+  },
+  "BRC-NAT-4DFC2381": {
+    "title": "Barns at the End of the Day",
+    "titled": true
+  },
+  "BRC-INT-EC0F93C0": {
+    "title": "Blue Paper Storm, After Dark",
+    "titled": true
+  },
+  "BRC-INT-2E1A04AD": {
+    "title": "A Loud Shape on a Quiet Wall",
+    "titled": true
+  },
+  "BRC-INT-A359FE5E": {
+    "title": "Pressed Flowers, Still Green",
+    "titled": true
+  },
+  "BRC-NAT-7F5E269E": {
+    "title": "The Horse's Eye, Closer",
+    "titled": true
+  },
+  "BRC-INT-E1FEB5B4": {
+    "title": "Dark, It Said, and Melted",
+    "titled": true
+  },
+  "BRC-INT-8B068C7F": {
+    "title": "Record of a Pond, Watching Back",
+    "titled": true
+  },
+  "BRC-NAT-30C31AD2": {
+    "title": "The Hour Assembles Itself Over the Desert",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-1F1DB559": {
+    "title": "Heat Rising Through a Pattern",
+    "titled": true
+  },
+  "BRC-INT-95E8EC2F": {
+    "title": "Shattered Aquarium, Fine Print",
+    "titled": true
+  },
+  "BRC-NAT-7EA71874": {
+    "title": "Portrait Hung in the Sky Above the Sea",
+    "titled": true
+  },
+  "BRC-NAT-EE93B247": {
+    "title": "Half the Valley Has Already Melted",
+    "titled": true
+  },
+  "BRC-INT-C903DF45": {
+    "title": "Aquarium, Remembered in Sepia",
+    "titled": true
+  },
+  "BRC-NAT-72E1E9D1": {
+    "title": "The Horse Dreams It Is Upside Down",
+    "titled": true
+  },
+  "BRC-NAT-EA38BC40": {
+    "title": "It Looks Like a Cliff, But It Is Not",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-7A3E8027": {
+    "title": "Hexagon Giving Off Sparks",
+    "titled": true
+  },
+  "BRC-NAT-00F1EC53": {
+    "title": "Out of Focus on Purpose",
+    "titled": true
+  },
+  "BRC-INT-43AC6929": {
+    "title": "Record of a Pond, in Daylight",
+    "titled": true
+  },
+  "BRC-NAT-63B20F6F": {
+    "title": "The Drain at the Center of the Sunset",
+    "titled": true
+  },
+  "BRC-NAT-D3937CC3": {
+    "title": "The Keys, Finally Framed",
+    "titled": true
+  },
+  "BRC-INT-914B4AB0": {
+    "title": "Porcelain Weather",
+    "titled": true
+  },
+  "BRC-NAT-53FCB0EC": {
+    "title": "Melting Giants Above the Desert Road",
+    "titled": true
+  },
+  "BRC-INT-6632ACF8": {
+    "title": "Violet Thicket with Gold Leaks",
+    "titled": true
+  },
+  "BRC-NAT-0EBF46EC": {
+    "title": "The Crown Hovers While the Court Melts",
+    "titled": true,
+    "sign": false
+  },
+  "BRC-NAT-FAA5294F": {
+    "title": "The Same Angel, Running a Fever",
+    "titled": true
+  },
+  "BRC-NAT-302AE541": {
+    "title": "Pinwheel for a Windless Day",
+    "titled": true
+  },
+  "BRC-INT-9D114300": {
+    "title": "Girders of an Orange Cathedral",
+    "titled": true
+  },
+  "BRC-NAT-19063F46": {
+    "title": "The Keys Grow a Tail",
+    "titled": true
+  },
+  "BRC-NAT-48C63EA0": {
+    "title": "The Keys Become a Crab",
+    "titled": true
+  },
+  "BRC-NAT-1CEBD24B": {
+    "title": "Three Tears in a Violet Snowfall",
+    "titled": true
+  },
+  "BRC-NAT-9AD67482": {
+    "title": "Spectacles Lost in a Cloud",
+    "titled": true
+  },
+  "BRC-NAT-74E85843": {
+    "title": "Four Sparks Underwater",
+    "titled": true
+  },
+  "BRC-NAT-5047970E": {
+    "title": "The Totem Tunes to Every Channel",
+    "titled": true
+  },
+  "BRC-NAT-4C35AAF2": {
+    "title": "No Return Groceries & Mart",
+    "titled": true
+  },
+  "BRC-NAT-D214008C": {
+    "title": "Three Tears on a Mint Screen",
+    "titled": true
+  },
+  "BRC-NAT-A6530E65": {
+    "title": "The Same Constellation, Blushing",
+    "titled": true
+  },
+  "BRC-NAT-E614AA35": {
+    "title": "The Keys Meet a Swordfish",
+    "titled": true
+  },
+  "BRC-NAT-0B264A11": {
+    "title": "The Keys Grow a Face",
+    "titled": true
+  },
+  "BRC-NAT-83831B6D": {
+    "title": "Rush Hour, Bleached",
+    "titled": true
+  },
+  "BRC-INT-8E3FCFCB": {
+    "title": "Midnight Agate",
+    "titled": true
+  },
+  "BRC-INT-4379F1E3": {
+    "title": "Lizards Crossing a Lava Field",
+    "titled": true
+  },
+  "BRC-INT-45844E75": {
+    "title": "The Black Door, Left Open",
+    "titled": true
+  },
+  "BRC-NAT-9BC80EAB": {
+    "title": "Bright Nerves Spilled on Concrete",
+    "titled": true
   }
 }
