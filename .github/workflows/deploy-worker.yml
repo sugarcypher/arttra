@@ -14,6 +14,8 @@ name: Deploy checkout Worker
 
 on:
   push:
+    # main only: a review branch touching worker/ must not deploy.
+    branches: [main]
     paths:
       - 'worker/**'
       - 'shared/**'
