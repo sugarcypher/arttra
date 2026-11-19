@@ -539,14 +539,52 @@ function initSpectrum() {
 }
 
 // =====================================================================
-// HERO — random rotating artwork, crossfading every ~6s
+// HERO — living mosaic of real thumbs (loaded after first paint)
 // =====================================================================
-const HERO_INTERVAL = 6000;
-function initHeroRotator() {
-  const root = $("#rotator"); if (!root || !artworks.length) return;
-  const layers = $$(".rotator__layer", root);
-  const caption = $("#rotatorCaption"), capTitle = $("#rotatorTitle");
+function buildMosaic() {
+  const plane = $("#mosaicPlane"); if (!plane || !artworks.length) return;
+  const narrow = isNarrow();
+  const cols = narrow ? 5 : 8, per = saveData ? 2 : 3;
+  const pool = artworks.filter(a => a.thumb).slice();
+  for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  const picks = pool.slice(0, cols * per);
+  const vw = window.innerWidth, heroH = ($(".hero") || document.body).clientHeight || window.innerHeight;
+  const colW = narrow ? vw * .34 : Math.min(240, Math.max(120, vw * .14)), gap = narrow ? 10 : 16;
+  const planeH = heroH * 1.8;
+  let html = "";
+  for (let c = 0; c < cols; c++) {
+    const set = picks.slice(c * per, c * per + per);
+    if (!set.length) break;
+    const tiles = set.map(a => `<button type="button" class="mtile" tabindex="-1" data-id="${esc(a.id)}" data-cursor="View" style="--c:${safeColor(a._dom)};aspect-ratio:${a._w}/${a._h}"><img src="${safeUrl(a.thumb)}" alt="" decoding="async" width="${a._w}" height="${a._h}" /></button>`).join("");
+    // Repeat the set (same URLs -> one download each) so the drift loops
+    // seamlessly and always covers the tilted plane.
+    const setPx = set.reduce((s, a) => s + colW * a._ratio + gap, 0);
+    const copies = reduceMotion() ? Math.max(1, Math.ceil(planeH / setPx)) : Math.max(2, Math.ceil(planeH / setPx) + 1);
+    const dur = ((60 + Math.random() * 40) * copies / 2).toFixed(0);
+    const offset = (-Math.random() * dur).toFixed(1);
+    html += `<div class="mcol" style="--dur:${dur}s;--shift:${(-100 / copies).toFixed(4)}%;animation-delay:${offset}s">${tiles.repeat(copies)}</div>`;
+  }
+  plane.innerHTML = html;
+  $$("img", plane).forEach(img => { const done = () => img.classList.add("is-loaded"); if (img.complete && img.naturalWidth) done(); else img.addEventListener("load", done, { once: true }); });
+  plane.addEventListener("click", (e) => { const t = e.target.closest(".mtile"); if (t) openDetail(findArt(t.dataset.id), { push: true, fromEl: t }); });
+  // Pointer / gyro parallax.
   const hero = $(".hero");
+  if (!reduceMotion()) {
+    let raf = 0, mx = 0, my = 0;
+    const apply = () => { raf = 0; plane.style.setProperty("--mx", mx.toFixed(3)); plane.style.setProperty("--my", my.toFixed(3)); };
+    hero.addEventListener("pointermove", (e) => { if (e.pointerType !== "mouse") return; mx = (e.clientX / window.innerWidth - .5) * 2; my = (e.clientY / window.innerHeight - .5) * 2; if (!raf) raf = requestAnimationFrame(apply); });
+    window.addEventListener("deviceorientation", (e) => { if (e.gamma == null) return; mx = Math.max(-1, Math.min(1, e.gamma / 25)); my = Math.max(-1, Math.min(1, ((e.beta || 45) - 45) / 25)); if (!raf) raf = requestAnimationFrame(apply); }, { passive: true });
+  }
+  if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => hero.classList.toggle("is-paused", !en.isIntersecting)).observe(hero);
+}
+
+// ABOUT — random rotating artwork, crossfading every ~6s; click opens the piece
+const ABOUT_INTERVAL = 6000;
+function initAboutRotator() {
+  const root = $("#aboutArt"); if (!root || !artworks.length) return;
+  const layers = $$(".aboutArt__layer", root);
+  const caption = $("#aboutArtCap"), capTitle = $("#aboutArtTitle");
+  const hero = root;
   const pool = artworks.filter(a => a.image || a.thumb);
   if (!pool.length) return;
   // Shuffle-bag: every piece once per cycle, random order, and never the same
@@ -572,35 +610,32 @@ function initHeroRotator() {
   });
   let front = 0, current = null, timer = 0, pending = null, running = false;
   function paint(layer, a) {
-    layer.querySelector(".rotator__bg").style.backgroundImage = cssUrl(a.thumb || a.image);
+    layer.querySelector(".aboutArt__bg").style.backgroundImage = cssUrl(a.thumb || a.image);
     const img = layer.querySelector("img");
     img.src = srcFor(a);
     img.width = a._w; img.height = a._h;
-    layer.style.setProperty("--ratio", String(a._w / a._h));
-    layer.classList.toggle("is-wide", a._w / a._h > 1.25);
+    img.alt = a.description || a.title || "";
   }
   function show(a) {
     const back = layers[1 - front];
     paint(back, a);
-    back.classList.remove("is-zoom"); void back.offsetWidth;
-    back.classList.add("is-on", "is-zoom");
+    back.classList.add("is-on");
     layers[front].classList.remove("is-on");
     front = 1 - front;
     current = a;
     capTitle.textContent = a.title || "Untitled";
-    caption.href = "#art=" + encodeURIComponent(a.id);
-    caption.setAttribute("aria-label", `Now showing: ${a.title || "Untitled"}. Open this work`);
+    root.setAttribute("aria-label", `${a.title || "Untitled"}. Open this work`);
     caption.hidden = false;
   }
   function queue() {
     // Preload the next piece while the current one is on screen.
     pending = load(nextArt());
     clearTimeout(timer);
-    timer = setTimeout(async () => { if (!running) return; show(await pending); queue(); }, HERO_INTERVAL);
+    timer = setTimeout(async () => { if (!running) return; show(await pending); queue(); }, ABOUT_INTERVAL);
   }
   function start() { if (running || reduceMotion()) return; running = true; queue(); }
   function stop() { running = false; clearTimeout(timer); }
-  caption.addEventListener("click", (e) => { if (!current) return; e.preventDefault(); openDetail(current, { push: true, fromEl: layers[front].querySelector("img") }); });
+  root.addEventListener("click", (e) => { if (!current) return; e.preventDefault(); openDetail(current, { push: true, fromEl: layers[front].querySelector("img") }); });
   // First piece: random, shown as soon as it has decoded.
   load(nextArt()).then((a) => {
     show(a);
@@ -608,7 +643,7 @@ function initHeroRotator() {
     let onScreen = true;
     const sync = () => (onScreen && !document.hidden ? start() : stop());
     document.addEventListener("visibilitychange", sync);
-    if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => { onScreen = en.isIntersecting; hero.classList.toggle("is-paused", !onScreen); sync(); }).observe(hero);
+    if ("IntersectionObserver" in window) new IntersectionObserver(([en]) => { onScreen = en.isIntersecting; sync(); }).observe(hero);
     reducedMotionMQ.addEventListener && reducedMotionMQ.addEventListener("change", () => (reduceMotion() ? stop() : sync()));
     sync();
   });
@@ -1291,7 +1326,8 @@ async function init() {
   products = prods || { materials: [] };
   // Hero after first paint, without waiting for the checkout health check.
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 30));
-  requestAnimationFrame(() => idle(initHeroRotator, { timeout: 600 }));
+  requestAnimationFrame(() => idle(buildMosaic, { timeout: 600 }));
+  requestAnimationFrame(() => idle(initAboutRotator, { timeout: 900 }));
   try {
     const api = (config.apiBase || "").replace(/\/+$/, "");
     optionsLive = !!api && (await (await fetch(api + "/", { cache: "no-store" })).text()).includes("options-v2");

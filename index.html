@@ -44,11 +44,7 @@
   </nav>
 
   <header class="hero" id="top">
-    <div class="rotator" id="rotator">
-      <div class="rotator__layer" aria-hidden="true"><div class="rotator__bg"></div><div class="rotator__art"><img alt="" decoding="async" /></div></div>
-      <div class="rotator__layer" aria-hidden="true"><div class="rotator__bg"></div><div class="rotator__art"><img alt="" decoding="async" /></div></div>
-      <a class="rotator__caption" id="rotatorCaption" href="#shop" hidden><span class="rotator__k">Now showing</span><span class="rotator__t" id="rotatorTitle"></span></a>
-    </div>
+    <div class="mosaic" id="mosaic" aria-hidden="true"><div class="mosaic__plane" id="mosaicPlane"></div></div>
     <div class="hero__veil"></div>
     <div class="hero__inner">
       <p class="hero__kicker">Original art · made to order</p>
@@ -67,7 +63,11 @@
     <div class="wrap" data-reveal>
       <div class="label">About</div>
       <div class="about-grid">
-        <img class="portrait" src="assets/images/about-dancer.jpg" width="1074" height="1600" alt="Line drawing of a bird-headed dancer poised on one leg over a field of prismatic light" loading="lazy" decoding="async">
+        <button type="button" class="aboutArt portrait" id="aboutArt" aria-label="Open this work">
+          <span class="aboutArt__layer is-on"><span class="aboutArt__bg"></span><img src="assets/images/about-dancer.jpg" width="1074" height="1600" alt="Line drawing of a bird-headed dancer poised on one leg over a field of prismatic light" decoding="async"></span>
+          <span class="aboutArt__layer"><span class="aboutArt__bg"></span><img alt="" decoding="async"></span>
+          <span class="aboutArt__cap" id="aboutArtCap" hidden><span class="aboutArt__k">From the collection</span><span class="aboutArt__t" id="aboutArtTitle"></span></span>
+        </button>
         <div>
           <p class="about-text">arttra is original art made for walls that deserve presence. Every piece begins as a single image — painted, photographed, or generated — then AI-enhanced, color-profiled, and produced to order as fine-art prints and canvas. Art isn&rsquo;t just what we make; it&rsquo;s what we send out into the world.</p>
           <p class="about-meta">@skbriar · made to order · shipped worldwide</p>
