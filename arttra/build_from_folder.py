@@ -1317,7 +1317,7 @@ def _write_print_map(artworks):
 # provenance. A hand-written "description" in overrides.json always wins.
 _STYLE_PHRASES = {
     "Ironwork": ["hard edges and bold geometry", "crisp, graphic structure", "strong lines and flat shape"],
-    "Chromata": ["loose, painterly colour", "colour pushed and layered", "a painterly push of colour"],
+    "Chromata": ["loose, painterly color", "color pushed and layered", "a painterly push of color"],
     "Starkform": ["high contrast and a spare palette", "stark light against dark", "a pared-back, graphic contrast"],
     "Naturalis": ["organic texture and drifting forms", "soft, organic movement", "textures that read like weather"],
     "Luminos": ["a light-filled, airy field", "pale, luminous space", "light doing most of the work"],
@@ -1329,7 +1329,7 @@ _OPENERS = ["{a} with {b}.", "{a}, built from {b}.", "{a} — {b}.", "{a}, worke
 _CLOSERS = {
     "dark": ["It rewards a long look in low light.", "Quiet from across a room, busy up close.", "The darker passages hold most of the detail."],
     "light": ["It opens up a wall rather than filling it.", "Bright enough to lift a plain room.", "Best given some space around it."],
-    "mid": ["Each viewing turns up something new in it.", "It reads differently from across the room than up close.", "Colour and structure pull against each other."],
+    "mid": ["Each viewing turns up something new in it.", "It reads differently from across the room than up close.", "Color and structure pull against each other."],
 }
 
 
