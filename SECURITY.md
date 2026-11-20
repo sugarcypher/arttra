@@ -65,9 +65,10 @@ in the Cloudflare dashboard. Until then `print/*` and
 
 - No API keys, tokens or private keys in the repo or anywhere in its history.
   Worker secrets (`STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
-  `PRINTFUL_API_KEY`, optionally `REPLICATE_API_TOKEN`) live only in
-  Cloudflare. The one GitHub Actions secret is `CLOUDFLARE_API_TOKEN`.
-  `worker/.dev.vars` is gitignored.
+  `PRINTFUL_API_KEY`, optionally `REPLICATE_API_TOKEN`) are set on the Worker
+  in Cloudflare and are not in the repo. The one GitHub Actions secret is
+  `CLOUDFLARE_API_TOKEN`. `worker/.dev.vars` (a local copy, on the owner's
+  Mac) is gitignored.
 - Checkout prices are computed in the Worker from `data/products.json`; the
   browser only names the item, option and quantity.
 - `/checkout` rejects requests whose `Origin` is not `https://arttra.art`.

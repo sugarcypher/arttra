@@ -87,7 +87,7 @@ MANIFEST_URL = "https://arttra.art/data/build_manifest.json"
 #   1. Place one test-card order and confirm the artwork shows in the Printful
 #      draft (this is the only test of the signed-link path).
 #   2. Then disable the bucket's public r2.dev URL in the Cloudflare dashboard
-#      (R2 -> artimages -> Settings -> Public Development URL -> Disable).
+#      (the artimages bucket's settings, under public access).
 # Until step 2, every print file and private/print-map.json are still public.
 # If step 1 fails, set this back to "false" and push.
 PRINT_PROXY = "true"
