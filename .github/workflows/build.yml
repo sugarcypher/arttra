@@ -39,8 +39,15 @@ jobs:
         with:
           python-version: '3.11'
 
+      # The pinned wrangler (worker/package-lock.json) needs Node 22.12 or
+      # newer; don't depend on whatever the runner image ships.
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38  # v6.5.0
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
       - name: Install dependencies
-        run: pip install Pillow vtracer opencv-python-headless
+        run: pip install -r arttra/requirements-build.txt
 
       - name: Pull latest
         run: git pull origin main

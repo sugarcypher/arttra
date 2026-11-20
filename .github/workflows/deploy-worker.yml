@@ -33,6 +33,13 @@ jobs:
         with:
           ref: main
 
+      # The pinned wrangler needs Node 22.12 or newer; don't depend on
+      # whatever the runner image ships.
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38  # v6.5.0
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
       - name: Install pinned wrangler
         working-directory: worker
         run: npm ci

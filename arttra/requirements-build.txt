@@ -1,0 +1,11 @@
+# Exact versions the site build installs on GitHub Actions (Python 3.11).
+# Pinned so a new or tampered release can't enter the build unnoticed, and so
+# a library update can't silently change how the artwork is rendered.
+#
+# These are the versions the build was already resolving on 2026-11-20. To
+# update: change a version here, run the "Build arttra.art" workflow by hand,
+# and check that a few thumbnails and one print file still look right.
+Pillow==13.0.0
+numpy==2.4.6
+opencv-python-headless==5.1.0.95
+vtracer==0.6.15
