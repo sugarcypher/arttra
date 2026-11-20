@@ -11,9 +11,5 @@
     "enabled": false,
     "artworksCollection": "artworks",
     "config": {}
-  },
-  "admin": {
-    "uploadUrl": "#",
-    "passwordHeader": "x-admin-password"
   }
 }

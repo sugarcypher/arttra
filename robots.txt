@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /admin.html
-Disallow: /admin.js
 Disallow: /success.html
 # Unprocessed originals: the pages show the signed, web-sized versions.
 Disallow: /gallery-source/
