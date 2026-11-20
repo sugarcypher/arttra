@@ -73,6 +73,24 @@ The build also writes a short plain description for any piece without one
 (used as alt text). A hand-written `"description"` in overrides.json wins.
 Duplicates are hidden with `"hidden": true` plus a `"hiddenReason"`.
 
+## Search pages (art/ and sitemap.xml)
+
+The home-page gallery is drawn by JavaScript, so search engines can't read it.
+`arttra/seo_pages.py` writes a static page per visible piece (`art/<id>.html`),
+an index of all of them (`art/index.html`) and `sitemap.xml`. The build runs it
+every time; by hand: `arttra/.venv/bin/python -I arttra/seo_pages.py`.
+
+- Don't edit anything in `art/` or `sitemap.xml` by hand — it is overwritten,
+  and pages for removed or hidden pieces are deleted. Change the template in
+  `seo_pages.py` (styles in `shared/art.css`).
+- A page's address is the 8-character hash at the end of the piece's id. Never
+  put the title or style in the URL: both change, and GitHub Pages can't
+  redirect.
+- The pages only state what the build knows. No price or "in stock" markup
+  (add an Offer only once live checkout is confirmed, using the real starting
+  price from `shared/options.js`, not `priceTiers`), no medium, no colour names.
+- A new hand-written page needs a line in `STATIC_PAGES` to reach the sitemap.
+
 ## Philosophy pages
 
 `residual-warmth.md`, `umwelt.md` and `the-accumulation-principle.md` are the

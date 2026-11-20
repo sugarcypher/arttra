@@ -162,6 +162,8 @@ img{max-width:100%}
 .shop-head__title{font-family:var(--display);font-weight:500;font-size:clamp(2.2rem,5.5vw,4rem);color:var(--bone);line-height:1}
 .shop-head__title em{font-style:italic;color:var(--gold)}
 .shop-head__lead{max-width:44ch;color:var(--bone-dim);font-size:.92rem;line-height:1.7}
+.shop-head__all{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;white-space:nowrap}
+.shop-head__all:hover{border-bottom-color:var(--gold)}
 .shop-head .label{margin-bottom:1rem}
 
 /* ---------- sticky catnav + tools ---------- */

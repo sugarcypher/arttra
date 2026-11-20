@@ -8,6 +8,10 @@ on:
     paths:
       - 'gallery-source/**'
       - 'data/overrides.json'
+      # The build scripts themselves: a change to how pages are generated
+      # should regenerate them without waiting for the next art drop.
+      - 'arttra/build_from_folder.py'
+      - 'arttra/seo_pages.py'
   workflow_dispatch:
     inputs:
       force_rebuild:

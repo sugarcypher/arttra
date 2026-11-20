@@ -1249,6 +1249,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
             json.dump(visible, f, indent=2)
         with open(manifest_path, "w") as f:
             json.dump(manifest, f, indent=2)
+        _write_site_pages(visible, output)
         print(f"[build] No new images. Overrides applied: {len(visible)} visible, "
               f"{len(cached_artworks) - len(visible)} hidden. Done.")
         return
@@ -1334,6 +1335,7 @@ def build(source_dir, output_root, workers=MAX_WORKERS):
         json.dump(visible, f, indent=2)
     with open(manifest_path, "w") as f:
         json.dump(manifest, f, indent=2)
+    _write_site_pages(visible, output)
 
     # Stats
     categories = {}
@@ -1371,6 +1373,18 @@ def _output_stems(images):
         for m in members:
             stems[m] = f"{m.stem}-{m.suffix[1:].lower()}"
     return stems
+
+
+def _write_site_pages(visible, output_root):
+    """Static artwork pages + sitemap for search engines (seo_pages.py), from
+    the published list only. A failure here is reported loudly but never
+    blocks publishing the gallery itself."""
+    try:
+        from seo_pages import write_site_pages
+        n = write_site_pages(visible, output_root)
+        print(f"[build] Search pages: {n} artwork pages, art/index.html, sitemap.xml")
+    except Exception as e:
+        print(f"[build] WARNING: search pages were NOT regenerated ({type(e).__name__}: {e})")
 
 
 def _publishable(artworks, overrides, source_dir):
