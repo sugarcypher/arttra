@@ -81,9 +81,16 @@ UPSCALE_MAX_LONG_EDGE = "12000"
 # back to this manifest until that file exists.
 MANIFEST_URL = "https://arttra.art/data/build_manifest.json"
 # "true" = hand Printful a signed, 30-day Worker URL (GET /file) that streams
-# the file from R2 through the binding below. Turn this on, test one order,
-# then disable the bucket's public r2.dev URL in the Cloudflare dashboard.
-PRINT_PROXY = "false"
+# the file from R2 through the binding below.
+#
+# Turned on 2026-11-20. STILL TO DO, in this order:
+#   1. Place one test-card order and confirm the artwork shows in the Printful
+#      draft (this is the only test of the signed-link path).
+#   2. Then disable the bucket's public r2.dev URL in the Cloudflare dashboard
+#      (R2 -> artimages -> Settings -> Public Development URL -> Disable).
+# Until step 2, every print file and private/print-map.json are still public.
+# If step 1 fails, set this back to "false" and push.
+PRINT_PROXY = "true"
 
 [[r2_buckets]]
 binding     = "ART_BUCKET"
