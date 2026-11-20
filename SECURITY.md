@@ -1,69 +1,104 @@
 # Security
 
-arttra.art is a static site served from GitHub Pages off the `main` branch of
-`github.com/sugarcypher/arttra`. There is no application server in this repo —
-the attack surface is the GitHub account, the repo, the Actions pipeline, and
-the static assets. This file is the hardening checklist for that surface.
+arttra.art is a static site served by GitHub Pages from the `main` branch of
+the public repo `github.com/sugarcypher/arttra`, plus one Cloudflare Worker
+(`worker/`, deployed as `arttra-checkout`) that creates Stripe checkouts and
+turns paid orders into Printful orders. Print files live in the Cloudflare R2
+bucket `artimages`.
+
+The attack surface is: the GitHub account, the repo and its Actions workflows,
+the Cloudflare account, the Worker's public routes, and the DNS at Porkbun.
+
+Last reviewed: 2026-11-20. Items marked "checked" were verified that day.
 
 ## Reporting a vulnerability
 
-Email the repo owner. Do not open a public issue for security problems.
+Email help@arttra.art. Do not open a public issue for security problems.
 
-## Account & repo settings (do these in the GitHub web UI)
+## Open items
 
-These are not enforceable from code — they must be set on the account/repo.
+**Everything in the repo is public, including the full-size originals.**
+`gallery-source/` holds every original, for hidden pieces too, and anything
+removed is still in the git history. The right-click blocking on the site is a
+courtesy, not protection. Closing this means a private repo (GitHub Pages then
+needs a paid plan, and the Worker's upscale source, `SOURCE_BASE_URL`, has to
+move) or keeping originals outside the repo.
 
-- [ ] **Enable 2FA on the `sugarcypher` account.** Currently OFF. This is the
-      single highest-impact action here: the whole site can be replaced by
-      anyone who phishes or reuses this password. Use an authenticator app or
-      hardware key, not SMS. Settings → Password and authentication.
-- [ ] **Branch protection on `main`.** Settings → Branches → add rule for
-      `main`: require pull requests, block force-push from humans, do not allow
-      deletions. Note: the build workflow force-pushes to `main` as `arttra-bot`
-      — keep the protection rule compatible (allow the Actions token, or have
-      the workflow commit normally instead of `--force`).
-- [ ] **Restrict who can push.** Keep collaborators to the minimum. Review
-      Settings → Collaborators periodically.
-- [ ] **Enforce HTTPS on Pages.** Settings → Pages → "Enforce HTTPS" checked.
-- [ ] **Verify the custom domain.** Settings → Pages → verify `arttra.art` so a
-      lapsed/misconfigured DNS record cannot be claimed by someone else
-      (subdomain/domain takeover).
-- [ ] **Enable Dependabot alerts.** Settings → Code security → Dependabot
-      alerts + security updates. The Python pipeline pulls Pillow / vtracer /
-      opencv at build time.
-- [ ] **Limit Actions permissions.** Settings → Actions → General → set
-      "Workflow permissions" no broader than needed; the build only needs
-      `contents: write` (already scoped in `build.yml`).
+**Print files are still public until the R2 public URL is switched off.**
+`PRINT_PROXY` is on, so Printful gets signed Worker links. Two steps remain,
+recorded in `worker/wrangler.toml`: place one test-card order and confirm the
+Printful draft shows the artwork, then disable the bucket's public r2.dev URL
+in the Cloudflare dashboard. Until then `print/*` and
+`private/print-map.json` can be fetched by anyone who knows the file name, and
+`data/build_manifest.json` lists the names.
 
-## Pipeline supply chain (in this repo)
+**Account and repo settings (GitHub web UI)**
 
-- [x] **Pin third-party Actions to a commit SHA, not a tag.** Tags are mutable;
-      a compromised upstream can repoint `v4` to malicious code. `build.yml`
-      pins `actions/checkout` and `actions/setup-python` to full SHAs with the
-      version in a trailing comment. When bumping, update both.
-- [ ] **Pin Python build dependencies.** `build.yml` currently installs
-      `Pillow vtracer opencv-python-headless` unpinned. Consider pinning to
-      known-good versions (or a `requirements.txt` with hashes) so a malicious
-      release cannot enter the build.
+- [ ] Two-factor login on the `sugarcypher` account. Not verifiable from the
+      API; an earlier version of this file recorded it as off. This is the
+      highest-impact item: whoever controls the account controls the site.
+- [ ] Protect `main` against force-pushes and deletion (Settings → Rules).
+      Nothing in the pipeline force-pushes any more, so a rule that blocks
+      force-push and deletion is compatible with the build and with ingest.
+- [ ] Turn on secret scanning and push protection (Settings → Code security).
+      Both are off.
+- [ ] Verify `arttra.art` under the account's Pages settings, so the domain
+      can't be claimed by another GitHub account if DNS is ever misconfigured.
 
-## Static assets & admin page
+**DNS (Porkbun)**
 
-- [x] **`admin.html` is `noindex,nofollow,noarchive`** and disallowed in
-      `robots.txt` so it stays out of search results. This is obscurity, not
-      access control — see below.
-- [ ] **`admin.html` is not access-controlled by GitHub Pages.** The page is
-      world-readable; its client-side password "lock" is cosmetic. Real
-      protection must come from the backend that `admin.js` calls (the
-      `x-admin-password` header check). Keep that backend the source of truth;
-      never put a usable secret in `admin.js` or any committed file.
-- [ ] **Before adding any user-generated content**, fix the unescaped string
-      interpolation in `script.js` (artwork fields are injected into the DOM
-      without escaping). Safe today because all content is owner-authored; it
-      becomes a stored-XSS vector the moment third-party input is rendered.
+- [ ] Add a DMARC record. SPF exists (`include:icloud.com ~all`) but with no
+      DMARC record anyone can send mail that appears to come from
+      `@arttra.art`.
 
-## Secrets
+**Before taking payments live**
 
-- No secrets belong in this repo. The `uploadUrl` in `admin.js` is currently
-  unset (`"#"`). When the upload backend and the future Stripe/Printful
-  integration land, their keys live in the serverless platform's secret store
-  (Cloudflare Workers secrets), never in committed files.
+- [ ] `PRINTFUL_AUTO_CONFIRM` is `"true"`: the first live order is charged and
+      sent to print with no human review. Decide whether the first few live
+      orders should stay drafts.
+- [ ] A paid order that fails to reach Printful raises no alert. Stripe
+      retries the webhook, and the failure is visible in the Worker logs and
+      the Stripe dashboard, but nobody is notified.
+- [ ] The site has no terms, refund, shipping or privacy pages.
+
+## In place (checked 2026-11-20)
+
+- No API keys, tokens or private keys in the repo or anywhere in its history.
+  Worker secrets (`STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
+  `PRINTFUL_API_KEY`, optionally `REPLICATE_API_TOKEN`) live only in
+  Cloudflare. The one GitHub Actions secret is `CLOUDFLARE_API_TOKEN`.
+  `worker/.dev.vars` is gitignored.
+- Checkout prices are computed in the Worker from `data/products.json`; the
+  browser only names the item, option and quantity.
+- `/checkout` rejects requests whose `Origin` is not `https://arttra.art`.
+  This stops other websites, not scripts: the header is trivial to forge
+  outside a browser, and the route has no rate limit.
+- `/webhook` verifies Stripe's signature and timestamp; `/file` and
+  `/upscale-done` verify an HMAC.
+- `data/artworks.json` carries no print or source file paths.
+- HTTPS is enforced on Pages. The domain has transfer and delete locks.
+- Third-party Actions are pinned to commit SHAs. The default workflow token is
+  read-only; `build.yml` asks for `contents: write`, the other two for
+  `contents: read`.
+- Build tooling is pinned: wrangler by exact version with a lock file
+  (`worker/package-lock.json`, installed with `npm ci`), Node by
+  `actions/setup-node`, Python packages by `arttra/requirements-build.txt`.
+- Every hand-written page sets a Content-Security-Policy. p5.js, the one
+  script loaded from a CDN, carries a subresource-integrity hash.
+- Dependabot alerts and security updates are on.
+
+## Working rules
+
+- No secret belongs in this repo. Keys go in the platform's secret store
+  (`wrangler secret put` for the Worker, Actions secrets for CI).
+- Never run `git add -A` or `git add .` here. This folder also holds files
+  from other projects; they are hidden from git only by this Mac's
+  `.git/info/exclude`, which a fresh clone does not have. Stage by path.
+- When adding a GitHub Action, pin it to a full commit SHA with the version in
+  a trailing comment.
+- Artwork fields reach the page through `innerHTML`. `script.js` escapes them
+  (`esc`, `safeUrl`, `safeColor`) and all content is owner-authored today.
+  Re-audit every `innerHTML` use before rendering anything a visitor typed.
+- CSP `frame-ancestors` is ignored in a `<meta>` tag and GitHub Pages can't
+  send headers, so `shared/frame-guard.js` is what stops framing on the pages
+  that load it.
