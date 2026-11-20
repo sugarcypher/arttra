@@ -46,8 +46,6 @@ STATIC_PAGES = [
     ("philosophy/residual-warmth.html", "yearly", "0.4"),
     ("philosophy/the-accumulation-principle.html", "yearly", "0.4"),
     ("philosophy/umwelt.html", "yearly", "0.4"),
-    # video-gallery.html is left out: it loads a stylesheet that doesn't exist
-    # and nothing links to it. Add it back once the page is repaired.
 ]
 
 HEAD = """<!doctype html>

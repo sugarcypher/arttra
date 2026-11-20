@@ -144,7 +144,6 @@ def cmd_serve(args):
 
     print(f"Serving arttra.art at http://localhost:{port}")
     print(f"  Gallery:  http://localhost:{port}/")
-    print(f"  Videos:   http://localhost:{port}/video-gallery.html")
     print(f"  Admin:    http://localhost:{port}/admin.html")
     print("Press Ctrl+C to stop.\n")
 
